@@ -1,5 +1,5 @@
 import filter from "../object/filter.js";
-import isEmpty from "./object/isEmpty.js";
+import none from "../object/none.js";
 
 import isArray from "../is/array.js";
 import isDate from "../is/date.js";
@@ -75,7 +75,7 @@ const diff = (obj1, obj2) => {
 
   return filter(
     value =>
-      value !== null && !(value && "object" === typeof value && isEmpty(value))
+      value !== null && !(value && "object" === typeof value && none(value))
   )(result);
 };
 

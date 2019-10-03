@@ -9,3 +9,5 @@ export const toBase64Url = base64 =>
 
 export const fromBase64Url = base64 =>
   base64.replace(/-/g, "+").replace(/_/g, "/");
+
+export default { encode };

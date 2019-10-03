@@ -1,9 +1,9 @@
-import { isNotNaN } from "../is.js";
+import isNumber from "../is/number.js";
 import clamp from "../math/clamp.js";
 import empty from "./empty.js";
 
-export const split = (used, sourceRange = [-Infinity, Infinity]) => range => {
-  if (empty(range) || !range.every(isNotNaN)) {
+export default (used, sourceRange = [-Infinity, Infinity]) => range => {
+  if (empty(range) || !range.every(isNumber)) {
     return [];
   }
 
