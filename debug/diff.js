@@ -4,7 +4,6 @@ import isEmpty from "./object/isEmpty.js";
 import isArray from "../is/array.js";
 import isDate from "../is/date.js";
 import isFunction from "../is/function.js";
-import isFunction from "../is/function.js";
 import isObject from "../is/object.js";
 
 export const VALUE_CREATED = "+";
