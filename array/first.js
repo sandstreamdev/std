@@ -1,1 +1,1 @@
-export default first = ([x]) => x;
+export default ([x]) => x;

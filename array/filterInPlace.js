@@ -1,4 +1,4 @@
-export default filterInPlace = f => xs => {
+export default f => xs => {
   let i = 0;
   let j = 0;
 
