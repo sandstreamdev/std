@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "module": "index.js",
   "type": "module",
   "sideEffects": false,
   "scripts": {
