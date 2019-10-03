@@ -11,7 +11,10 @@ const mapping = {
 
 const ignoredFiles = [
   ".gitignore",
+  ".npmignore",
+  "index.cjs.js",
   "index.js",
+  "index.umd.js",
   "LICENSE",
   "package-lock.json",
   "package.json",
