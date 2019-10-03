@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
+  "sideEffects": false,
   "scripts": {
     "prettier": "prettier \"**/*.{js,json,md}\"",
     "prettier:fix": "npm run prettier -- --write",
