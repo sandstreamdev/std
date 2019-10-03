@@ -1,0 +1,23 @@
+{
+  "name": "@sandstreamdev/std",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandstreamdev/std.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sandstream Development",
+    "url": "https://www.sandstream.pl/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandstreamdev/std/issues"
+  },
+  "homepage": "https://github.com/sandstreamdev/std#readme"
+}
