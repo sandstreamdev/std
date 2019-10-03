@@ -2,14 +2,18 @@
   "name": "@sandstreamdev/std",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
-  "module": "index.js",
   "type": "module",
+  "module": "index.js",
+  "main": "index.cjs.js",
+  "browser": "index.umd.js",
   "sideEffects": false,
   "scripts": {
-    "prettier": "prettier \"**/*.{js,json,md}\"",
+    "build": "npm run regenerate && rollup -c",
+    "prepare": "npm run build",
+    "prettier:check": "npm run prettier -- --check",
     "prettier:fix": "npm run prettier -- --write",
-    "prettier:check": "npm run prettier -- --check"
+    "prettier": "prettier \"**/*.{js,json,md}\"",
+    "regenerate": "node --experimental-modules regenerate.js && npm run prettier:fix"
   },
   "repository": {
     "type": "git",
@@ -26,6 +30,7 @@
   },
   "homepage": "https://github.com/sandstreamdev/std#readme",
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "rollup": "^1.22.0"
   }
 }
