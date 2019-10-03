@@ -12,7 +12,7 @@ export const equalsDeep = (a, b) => {
   }
   return isObject(a) && isObject(b)
     ? a === b || keySet(a, b).every(key => equalsDeep(a[key], b[key]))
-    : _isEqual(a, b);
+    : a === b;
 };
 
 export const equalsDeepWith = f => (a, b) => {
