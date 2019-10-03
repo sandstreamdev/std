@@ -17,7 +17,6 @@ import fromMinutes from "./fromMinutes.js";
 import fromSeconds from "./fromSeconds.js";
 import joinDateTime from "./joinDateTime.js";
 import leapYear from "./leapYear.js";
-import monthRange from "./monthRange.js";
 import offsetByBit from "./offsetByBit.js";
 import parseHourMinutePair from "./parseHourMinutePair.js";
 import splitDateTime from "./splitDateTime.js";
@@ -33,8 +32,6 @@ import toLocalDateTime from "./toLocalDateTime.js";
 import toMinutes from "./toMinutes.js";
 import toSeconds from "./toSeconds.js";
 import valid from "./valid.js";
-import weekRange from "./weekRange.js";
-import yearRange from "./yearRange.js";
 
 export {
   byDateWithFallback,
@@ -56,7 +53,6 @@ export {
   fromSeconds,
   joinDateTime,
   leapYear,
-  monthRange,
   offsetByBit,
   parseHourMinutePair,
   splitDateTime,
@@ -71,9 +67,7 @@ export {
   toLocalDateTime,
   toMinutes,
   toSeconds,
-  valid,
-  weekRange,
-  yearRange
+  valid
 };
 
 export default {
@@ -96,7 +90,6 @@ export default {
   fromSeconds,
   joinDateTime,
   leapYear,
-  monthRange,
   offsetByBit,
   parseHourMinutePair,
   splitDateTime,
@@ -111,7 +104,5 @@ export default {
   toLocalDateTime,
   toMinutes,
   toSeconds,
-  valid,
-  weekRange,
-  yearRange
+  valid
 };
