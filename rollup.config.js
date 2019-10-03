@@ -7,6 +7,7 @@ export default {
       format: "cjs"
     },
     {
+      exports: "named",
       file: "index.umd.js",
       format: "umd",
       name: "@sandstreamdev/std"
