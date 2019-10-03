@@ -1,5 +1,5 @@
-import transform from "./transform";
-import translate from "./translate";
+import transform from "./transform.js";
+import translate from "./translate.js";
 
 const { cos, sin } = Math;
 

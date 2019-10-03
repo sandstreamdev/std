@@ -1,5 +1,5 @@
-import sort from "../array/sort";
-import subtract from "./subtract";
+import sort from "../array/sort.js";
+import subtract from "./subtract.js";
 
 export default xs => {
   const sorted = sort(subtract)(xs);

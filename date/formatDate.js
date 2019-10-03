@@ -1,4 +1,4 @@
-import toLocalDateTime from "./toLocalDateTime";
+import toLocalDateTime from "./toLocalDateTime.js";
 
 export default (sourceDate, timezoneOffset = 0) => {
   const localDate = toLocalDateTime(sourceDate, timezoneOffset);

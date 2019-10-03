@@ -1,4 +1,4 @@
-import equals from "../object/equals";
-import memoizeWith from "./memoizeWith";
+import equals from "../object/equals.js";
+import memoizeWith from "./memoizeWith.js";
 
 export default memoizeWith(equals);

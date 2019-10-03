@@ -1,5 +1,5 @@
-import formatDate from "./formatDate";
-import formatTime from "./formatTime";
+import formatDate from "./formatDate.js";
+import formatTime from "./formatTime.js";
 
 export default (sourceDate, showSeconds = false, timezoneOffset = 0) => {
   const date = formatDate(sourceDate, timezoneOffset);

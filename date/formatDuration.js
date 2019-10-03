@@ -1,9 +1,9 @@
-import fromHours from "./fromHours";
-import fromMinutes from "./fromMinutes";
-import toHours from "./toHours";
-import toMinutes from "./toMinutes";
-import toSeconds from "./toSeconds";
-import displayTime from "./displayTime";
+import fromHours from "./fromHours.js";
+import fromMinutes from "./fromMinutes.js";
+import toHours from "./toHours.js";
+import toMinutes from "./toMinutes.js";
+import toSeconds from "./toSeconds.js";
+import displayTime from "./displayTime.js";
 
 export default (duration, showSeconds = false) => {
   const hours = Math.floor(toHours(duration));

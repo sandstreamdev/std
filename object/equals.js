@@ -1,6 +1,6 @@
-import isObject from "../is/object";
-import areArrays from "../array/are";
-import lengthDiffers from "../array/lengthDiffers";
+import isObject from "../is/object.js";
+import areArrays from "../array/are.js";
+import lengthDiffers from "../array/lengthDiffers.js";
 
 const keySet = (a, b) => [...new Set([...keys(a), ...keys(b)])];
 
