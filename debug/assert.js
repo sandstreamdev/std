@@ -1,9 +1,9 @@
-import isNumber from "../is/number";
-import isInteger from "../is/integer";
-import isByte from "../is/byte";
-import isNormal from "../is/normal";
-import isString from "../is/string";
-import isDefined from "../is/defined";
+import isNumber from "../is/number.js";
+import isInteger from "../is/integer.js";
+import isByte from "../is/byte.js";
+import isNormal from "../is/normal.js";
+import isString from "../is/string.js";
+import isDefined from "../is/defined.js";
 
 const assert = (condition, callbackOrMessage) => {
   if (!condition) {

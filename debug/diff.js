@@ -1,11 +1,11 @@
-import filter from "../object/filter";
-import isEmpty from "./object/isEmpty";
+import filter from "../object/filter.js";
+import isEmpty from "./object/isEmpty.js";
 
-import isArray from "../is/array";
-import isDate from "../is/date";
-import isFunction from "../is/function";
-import isFunction from "../is/function";
-import isObject from "../is/object";
+import isArray from "../is/array.js";
+import isDate from "../is/date.js";
+import isFunction from "../is/function.js";
+import isFunction from "../is/function.js";
+import isObject from "../is/object.js";
 
 export const VALUE_CREATED = "+";
 export const VALUE_DELETED = "-";

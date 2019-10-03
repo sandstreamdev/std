@@ -1,5 +1,5 @@
-import prevent from "./prevent";
-import stop from "./stop";
+import prevent from "./prevent.js";
+import stop from "./stop.js";
 
 export default event => {
   prevent(event);

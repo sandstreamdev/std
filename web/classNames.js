@@ -1,5 +1,5 @@
-import entries from "../object/entries";
-import isString from "../is/string";
+import entries from "../object/entries.js";
+import isString from "../is/string.js";
 
 const booleanKeys = x =>
   entries(x)

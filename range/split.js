@@ -1,6 +1,6 @@
-import { isNotNaN } from "../is";
-import clamp from "../math/clamp";
-import empty from "./empty";
+import { isNotNaN } from "../is.js";
+import clamp from "../math/clamp.js";
+import empty from "./empty.js";
 
 export const split = (used, sourceRange = [-Infinity, Infinity]) => range => {
   if (empty(range) || !range.every(isNotNaN)) {

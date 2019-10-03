@@ -1,9 +1,9 @@
-import endOfWeek from "./endOfWeek";
-import offsetByBit from "./offsetByBit";
-import splitDateTime from "./splitDateTime";
-import startOfWeek from "./startOfWeek";
-import toISO from "./toISO";
-import toISOFromLocalDateTime from "./toISOFromLocalDateTime";
+import endOfWeek from "./endOfWeek.js";
+import offsetByBit from "./offsetByBit.js";
+import splitDateTime from "./splitDateTime.js";
+import startOfWeek from "./startOfWeek.js";
+import toISO from "./toISO.js";
+import toISOFromLocalDateTime from "./toISOFromLocalDateTime.js";
 
 export default ({
   iso = false,

@@ -1,4 +1,4 @@
-import fromMinutes from "./fromMinutes";
+import fromMinutes from "./fromMinutes.js";
 
 export default date =>
   new Date(

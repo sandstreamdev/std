@@ -1,5 +1,5 @@
-import fromEntries from "../object/fromEntries";
-import startsWith from "../string/startsWith";
+import fromEntries from "../object/fromEntries.js";
+import startsWith from "../string/startsWith.js";
 
 const startsWithQuestionMark = startsWith("?");
 

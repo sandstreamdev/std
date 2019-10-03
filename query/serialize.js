@@ -1,4 +1,4 @@
-import entries from "../object/entries";
+import entries from "../object/entries.js";
 
 export default (xs = {}) =>
   entries(xs)
