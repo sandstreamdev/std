@@ -3,6 +3,7 @@ import average from "./average.js";
 import ceilToNearestPowerOfTwo from "./ceilToNearestPowerOfTwo.js";
 import clamp from "./clamp.js";
 import clampNormal from "./clampNormal.js";
+import clampPercentage from "./clampPercentage.js";
 import delta from "./delta.js";
 import inRectangleRange from "./inRectangleRange.js";
 import lerp from "./lerp.js";
@@ -20,6 +21,7 @@ export {
   ceilToNearestPowerOfTwo,
   clamp,
   clampNormal,
+  clampPercentage,
   delta,
   inRectangleRange,
   lerp,
@@ -38,6 +40,7 @@ export default {
   ceilToNearestPowerOfTwo,
   clamp,
   clampNormal,
+  clampPercentage,
   delta,
   inRectangleRange,
   lerp,

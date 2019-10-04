@@ -5,10 +5,12 @@ import dateInRange from "./dateInRange.js";
 import dayRange from "./dayRange.js";
 import daysInMonths from "./daysInMonths.js";
 import daysInYear from "./daysInYear.js";
+import displayMonth from "./displayMonth.js";
 import displayTime from "./displayTime.js";
 import endOfDay from "./endOfDay.js";
 import formatDate from "./formatDate.js";
 import formatDateTime from "./formatDateTime.js";
+import formatDisplayDate from "./formatDisplayDate.js";
 import formatDuration from "./formatDuration.js";
 import formatTime from "./formatTime.js";
 import fromDays from "./fromDays.js";
@@ -17,6 +19,7 @@ import fromMinutes from "./fromMinutes.js";
 import fromSeconds from "./fromSeconds.js";
 import joinDateTime from "./joinDateTime.js";
 import leapYear from "./leapYear.js";
+import monthNames from "./monthNames.js";
 import offsetByBit from "./offsetByBit.js";
 import parseHourMinutePair from "./parseHourMinutePair.js";
 import splitDateTime from "./splitDateTime.js";
@@ -41,10 +44,12 @@ export {
   dayRange,
   daysInMonths,
   daysInYear,
+  displayMonth,
   displayTime,
   endOfDay,
   formatDate,
   formatDateTime,
+  formatDisplayDate,
   formatDuration,
   formatTime,
   fromDays,
@@ -53,6 +58,7 @@ export {
   fromSeconds,
   joinDateTime,
   leapYear,
+  monthNames,
   offsetByBit,
   parseHourMinutePair,
   splitDateTime,
@@ -78,10 +84,12 @@ export default {
   dayRange,
   daysInMonths,
   daysInYear,
+  displayMonth,
   displayTime,
   endOfDay,
   formatDate,
   formatDateTime,
+  formatDisplayDate,
   formatDuration,
   formatTime,
   fromDays,
@@ -90,6 +98,7 @@ export default {
   fromSeconds,
   joinDateTime,
   leapYear,
+  monthNames,
   offsetByBit,
   parseHourMinutePair,
   splitDateTime,
