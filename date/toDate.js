@@ -4,8 +4,8 @@ export default date => {
   const year = date.getFullYear();
 
   return [
-    toString(year).padStart(4, "0"),
-    toString(month).padStart(2, "0"),
-    toString(day).padStart(2, "0")
+    `${year}`.padStart(4, "0"),
+    `${month}`.padStart(2, "0"),
+    `${day}`.padStart(2, "0")
   ].join("-");
 };
