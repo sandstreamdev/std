@@ -2,7 +2,7 @@ import isNumber from "../is/number.js";
 import clamp from "../math/clamp.js";
 import empty from "./empty.js";
 
-export default (used, sourceRange = [-Infinity, Infinity]) => range => {
+const split = (used, sourceRange = [-Infinity, Infinity]) => range => {
   if (empty(range) || !range.every(isNumber)) {
     return [];
   }
@@ -19,20 +19,22 @@ export default (used, sourceRange = [-Infinity, Infinity]) => range => {
   }
 
   const [sourceMin, sourceMax] = sourceRange;
-  const clampToSourceRange = clamp(sourceRange);
+  const clampToSourceRange = clamp(...sourceRange);
 
   const freeLeft = [sourceMin, usedMin].map(clampToSourceRange);
   const freeRight = [usedMax, sourceMax].map(clampToSourceRange);
 
-  const clampLeft = clamp(freeLeft);
+  const clampLeft = clamp(...freeLeft);
   const clampedLeft = range.map(clampLeft);
 
   const lefts = split(xs, sourceRange)(clampedLeft);
 
-  const clampRight = clamp(freeRight);
+  const clampRight = clamp(...freeRight);
   const clampedRight = range.map(clampRight);
 
   const rights = split(xs, sourceRange)(clampedRight);
 
   return [...lefts, ...rights].filter(range => !empty(range));
 };
+
+export default split;
