@@ -18,6 +18,7 @@ import map from "./map.js";
 import midpoint from "./midpoint.js";
 import minMax from "./minMax.js";
 import multiple from "./multiple.js";
+import none from "./none.js";
 import partition from "./partition.js";
 import range from "./range.js";
 import repeat from "./repeat.js";
@@ -57,6 +58,7 @@ export {
   midpoint,
   minMax,
   multiple,
+  none,
   partition,
   range,
   repeat,
@@ -97,6 +99,7 @@ export default {
   midpoint,
   minMax,
   multiple,
+  none,
   partition,
   range,
   repeat,
