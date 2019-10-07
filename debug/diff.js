@@ -1,6 +1,7 @@
 import filter from "../object/filter.js";
 import none from "../object/none.js";
 
+import isDefined from "../is/defined.js";
 import isArray from "../is/array.js";
 import isDate from "../is/date.js";
 import isFunction from "../is/function.js";
@@ -26,11 +27,11 @@ const compareValues = (value1, value2) => {
     return VALUE_UNCHANGED;
   }
 
-  if ("undefined" == typeof value1) {
+  if (!isDefined(value1)) {
     return VALUE_CREATED;
   }
 
-  if ("undefined" == typeof value2) {
+  if (!isDefined(value2)) {
     return VALUE_DELETED;
   }
 
@@ -53,20 +54,23 @@ const diff = (obj1, obj2) => {
   }
 
   const result = {};
+
   for (const key in obj1) {
     if (isFunction(obj1[key])) {
       continue;
     }
 
     let value2 = undefined;
-    if ("undefined" != typeof obj2[key]) {
+
+    if (isDefined(obj2[key])) {
       value2 = obj2[key];
     }
 
     result[key] = diff(obj1[key], value2);
   }
+
   for (const key in obj2) {
-    if (isFunction(obj2[key]) || "undefined" != typeof result[key]) {
+    if (isFunction(obj2[key]) || isDefined(result[key])) {
       continue;
     }
 
@@ -74,8 +78,7 @@ const diff = (obj1, obj2) => {
   }
 
   return filter(
-    value =>
-      value !== null && !(value && "object" === typeof value && none(value))
+    value => value !== null && !(value && isObject(value) && none(value))
   )(result);
 };
 
