@@ -10,6 +10,7 @@ const mapping = {
 };
 
 const ignoredFiles = [
+  ".all-contributorsrc",
   ".gitignore",
   ".npmignore",
   "index.cjs.js",
