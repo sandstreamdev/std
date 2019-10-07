@@ -1,3 +1,1 @@
-import range from "./range.js";
-
-export default n => value => range(n).map(() => value);
+export default n => value => Array(n).fill(value);
