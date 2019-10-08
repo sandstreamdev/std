@@ -35,6 +35,7 @@ import single from "./single.js";
 import sort from "./sort.js";
 import sum from "./sum.js";
 import transpose from "./transpose.js";
+import unique from "./unique.js";
 import zip from "./zip.js";
 import zipWith from "./zipWith.js";
 
@@ -76,6 +77,7 @@ export {
   sort,
   sum,
   transpose,
+  unique,
   zip,
   zipWith
 };
@@ -118,6 +120,7 @@ export default {
   sort,
   sum,
   transpose,
+  unique,
   zip,
   zipWith
 };
