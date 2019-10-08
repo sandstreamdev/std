@@ -5,6 +5,7 @@ import memoize from "./memoize.js";
 import memoizeShallow from "./memoizeShallow.js";
 import memoizeWith from "./memoizeWith.js";
 import noOp from "./noOp.js";
+import not from "./not.js";
 import pipe from "./pipe.js";
 import when from "./when.js";
 import whenTrue from "./whenTrue.js";
@@ -17,6 +18,7 @@ export {
   memoizeShallow,
   memoizeWith,
   noOp,
+  not,
   pipe,
   when,
   whenTrue
@@ -30,6 +32,7 @@ export default {
   memoizeShallow,
   memoizeWith,
   noOp,
+  not,
   pipe,
   when,
   whenTrue
