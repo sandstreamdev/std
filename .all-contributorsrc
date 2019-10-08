@@ -15,6 +15,16 @@
         "financial",
         "ideas"
       ]
+    },
+    {
+      "login": "przemyslawzalewski",
+      "name": "Przemysław Zalewski",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/30114244?v=4",
+      "profile": "https://github.com/przemyslawzalewski",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
