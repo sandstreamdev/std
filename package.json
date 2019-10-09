@@ -8,8 +8,9 @@
   "browser": "index.umd.js",
   "sideEffects": false,
   "scripts": {
-    "build": "npm run regenerate && npm run compile && rollup -c",
-    "compile": "node --experimental-modules compile.js && npm run lint:fix && npm run prettier:fix",
+    "build": "npm run compile && npm run regenerate && rollup -c && npm run fix",
+    "compile": "node --experimental-modules compile.js",
+    "fix": "npm run lint:fix && npm run prettier:fix",
     "lint": "eslint \"**/*.js\"",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "npm run build",
