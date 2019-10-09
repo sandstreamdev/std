@@ -13,7 +13,8 @@
     "prettier:check": "npm run prettier -- --check",
     "prettier:fix": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.{js,json,md}\"",
-    "regenerate": "node --experimental-modules regenerate.js && npm run prettier:fix"
+    "regenerate": "node --experimental-modules regenerate.js && npm run prettier:fix",
+    "test": "node --experimental-modules index.test.js"
   },
   "repository": {
     "type": "git",

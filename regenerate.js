@@ -15,6 +15,7 @@ const ignoredFiles = [
   ".npmignore",
   "index.cjs.js",
   "index.js",
+  "index.test.js",
   "index.umd.js",
   "LICENSE",
   "package-lock.json",

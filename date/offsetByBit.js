@@ -1,4 +1,4 @@
-import fromSeconds from "./fromSeconds";
+import fromSeconds from "./fromSeconds.js";
 
 const SECOND = fromSeconds(1);
 
