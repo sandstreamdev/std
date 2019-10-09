@@ -9,9 +9,9 @@
   "sideEffects": false,
   "scripts": {
     "build": "npm run regenerate && npm run compile && rollup -c",
-    "compile": "node --experimental-modules compile.js",
+    "compile": "node --experimental-modules compile.js && npm run lint:fix && npm run prettier:fix",
     "lint": "eslint \"**/*.js\"",
-    "lint:fix": "npm run eslint -- --fix",
+    "lint:fix": "npm run lint -- --fix",
     "prepare": "npm run build",
     "prettier": "prettier \"**/*.{js,json,md,ts}\"",
     "prettier:check": "npm run prettier -- --check",

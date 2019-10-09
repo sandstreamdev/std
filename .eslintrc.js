@@ -10,6 +10,7 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "import"],
   rules: {
+    "arrow-parens": ["error", "as-needed"],
     "import/extensions": ["error", "ignorePackages"],
     "no-sparse-arrays": 0
   }
