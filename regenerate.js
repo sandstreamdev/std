@@ -25,7 +25,7 @@ const ignoredFiles = [
   "rollup.config.js"
 ];
 
-const ignoredDirectories = [".git", "node_modules"];
+const ignoredDirectories = [".git", ".github", "node_modules"];
 
 const identifier = name => mapping[name] || name;
 
