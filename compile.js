@@ -1,8 +1,19 @@
 /* eslint-env node */
 // eslint-disable console
 import { promises } from "fs";
+import childProcess from "child_process";
 import path from "path";
-import execa from "execa";
+
+const exec = (command, options) =>
+  new Promise((resolve, reject) =>
+    childProcess.exec(command, options, (error, stdout, stderr) => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve([stdout, stderr]);
+      }
+    })
+  );
 
 import ignored from "./ignore.js";
 
@@ -32,8 +43,6 @@ const main = async cwd => {
     .map(x => x.name)
     .filter(x => !ignoredDirectories.includes(x));
 
-  console.log({ directories, files });
-
   for (const directory of directories) {
     await main(path.join(cwd, directory));
   }
@@ -41,14 +50,30 @@ const main = async cwd => {
   for (const file of files) {
     const filePath = path.join(cwd, file);
 
-    const { stdout } = await execa("node", [
-      "./node_modules/typescript/bin/tsc",
-      "-m ES6",
-      ,
-      "-t ES2020",
-      quotePath(filePath)
-    ]);
-    console.log(stdout);
+    try {
+      console.log(`Compiling ${filePath}...`);
+
+      const [stdout, stderr] = await exec(
+        [
+          "node",
+          "./node_modules/typescript/bin/tsc",
+          "--module ES6",
+          "--target ES2020",
+          quotePath(path.posix.normalize(filePath))
+        ].join(" ")
+      );
+
+      console.log(`Compiled ${filePath}`);
+
+      if (stdout || stderr) {
+        console.log({ stdout, stderr });
+      }
+    } catch (error) {
+      console.error(error);
+
+      process.exit(1);
+      return;
+    }
   }
 };
 
