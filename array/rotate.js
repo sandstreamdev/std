@@ -1,3 +1,5 @@
+import shift from "./shift";
+
 export default array => angle => {
   const margin = Math.PI / 8;
   const angleWithMargin = angle + margin;

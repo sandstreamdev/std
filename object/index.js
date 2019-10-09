@@ -6,6 +6,7 @@ import enumerable from "./enumerable.js";
 import equals from "./equals.js";
 import filter from "./filter.js";
 import find from "./find.js";
+import findEntry from "./findEntry.js";
 import findKey from "./findKey.js";
 import findValue from "./findValue.js";
 import first from "./first.js";
@@ -30,6 +31,7 @@ export {
   equals,
   filter,
   find,
+  findEntry,
   findKey,
   findValue,
   first,
@@ -55,6 +57,7 @@ export default {
   equals,
   filter,
   find,
+  findEntry,
   findKey,
   findValue,
   first,

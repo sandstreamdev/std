@@ -1,3 +1,6 @@
+import add from "./add";
+import safeNormalize from "./safeNormalize";
+
 const filterOutZeros = xs => xs.filter(_ => _ !== 0);
 
 export default xs => {

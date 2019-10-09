@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 export default (f, wait) => {
   let timeout;
 

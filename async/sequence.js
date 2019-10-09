@@ -1,5 +1,5 @@
 export default async tasks => {
-  const results = tasks.map(_ => undefined);
+  const results = tasks.map(() => undefined);
 
   await tasks.reduce((chain, current, i) => {
     return chain.then(() =>
