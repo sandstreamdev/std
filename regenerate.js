@@ -3,7 +3,7 @@
 import { promises } from "fs";
 import path from "path";
 
-import ignored from "./ignored.js";
+import ignored from "./ignore.js";
 
 const [ignoredFiles, ignoredDirectories] = ignored;
 

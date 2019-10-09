@@ -4,6 +4,7 @@ const ignoredFiles = [
   ".gitignore",
   ".npmignore",
   "compile.js",
+  "ignore.js",
   "index.cjs.js",
   "index.js",
   "index.test.js",
