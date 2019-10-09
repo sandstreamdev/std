@@ -1,5 +1,11 @@
+/* eslint-env node */
+// eslint-disable console
 import { promises } from "fs";
 import path from "path";
+
+import ignored from "./ignored.js";
+
+const [ignoredFiles, ignoredDirectories] = ignored;
 
 const { readdir: readDirectoryAsync, writeFile: writeFileAsync } = promises;
 
@@ -9,34 +15,21 @@ const mapping = {
   function: "_function"
 };
 
-const ignoredFiles = [
-  ".all-contributorsrc",
-  ".gitignore",
-  ".npmignore",
-  "index.cjs.js",
-  "index.js",
-  "index.test.js",
-  "index.umd.js",
-  "LICENSE",
-  "package-lock.json",
-  "package.json",
-  "README.md",
-  "regenerate.js",
-  "rollup.config.js"
-];
-
-const ignoredDirectories = [".git", ".github", "node_modules"];
-
 const identifier = name => mapping[name] || name;
+
+const extension = /\.js$/i;
 
 const main = async cwd => {
   console.log(`Indexing files in ${cwd}...`);
 
   const entries = await readDirectoryAsync(cwd, { withFileTypes: true });
+
   const files = entries
     .filter(x => x.isFile())
     .map(x => x.name)
+    .filter(x => extension.test(x))
     .filter(x => !ignoredFiles.includes(x));
+
   const directories = entries
     .filter(x => x.isDirectory())
     .map(x => x.name)
