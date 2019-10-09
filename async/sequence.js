@@ -1,6 +1,5 @@
 export default async tasks => {
   const results = tasks.map(() => undefined);
-
   await tasks.reduce((chain, current, i) => {
     return chain.then(() =>
       current().then(x => {
@@ -9,6 +8,5 @@ export default async tasks => {
       })
     );
   }, Promise.resolve());
-
   return results;
 };

@@ -1,3 +1,2 @@
-import length from "./length.js";
-
+import length from "./length";
 export default xs => xs && length(xs) > 0;

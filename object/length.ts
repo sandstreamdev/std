@@ -1,1 +1,1 @@
-export default (xs: {}): Number => Object.keys(xs).length;
+export default xs => Object.keys(xs).length;

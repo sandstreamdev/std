@@ -1,11 +1,8 @@
 import fromEntries from "../object/fromEntries.js";
 import startsWith from "../string/startsWith.js";
-
 const startsWithQuestionMark = startsWith("?");
-
 const queryFromMaybeSearchString = x =>
   startsWithQuestionMark(x) ? x.substring(1) : x;
-
 export default (xs = "") =>
   fromEntries(
     queryFromMaybeSearchString(xs)
