@@ -4,6 +4,10 @@ import { promises } from "fs";
 import childProcess from "child_process";
 import path from "path";
 
+const FS_DELAY = 500;
+
+const delay = timeout => new Promise(resolve => setTimeout(resolve, timeout));
+
 const exec = (command, options) =>
   new Promise((resolve, reject) =>
     childProcess.exec(command, options, (error, stdout, stderr) => {
@@ -19,9 +23,14 @@ import ignored from "./ignore.js";
 
 const [ignoredFiles, ignoredDirectories] = ignored;
 
-const { readdir: readDirectoryAsync } = promises;
+const {
+  readdir: readDirectoryAsync,
+  readFile: readFileAsync,
+  writeFile: writeFileAsync
+} = promises;
 
 const [, , cwd = process.cwd()] = process.argv;
+const root = cwd;
 
 const extension = /\.ts$/i;
 
@@ -49,9 +58,27 @@ const main = async cwd => {
 
   for (const file of files) {
     const filePath = path.join(cwd, file);
+    const relativeFilePath = path.relative(root, filePath);
 
     try {
-      console.log(`Compiling ${filePath}...`);
+      console.log(`Compiling ${relativeFilePath}...`);
+
+      // const brokenFiles = [
+      //   'array\\are.ts',
+      //   'date\\displayMonth.ts',
+      //   'date\\formatDate.ts',
+      //   'date\\fromMinutes.ts',
+      //   'date\\toLocalDateTime.ts',
+      //   'math\\average.ts',
+      //   'object\\any.ts',
+      //   'object\\findEntry.ts'
+      // ];
+
+      // const broken = brokenFiles.includes(relativeFilePath);
+
+      // if (!broken) {
+      //   continue;
+      // }
 
       const [stdout, stderr] = await exec(
         [
@@ -63,7 +90,37 @@ const main = async cwd => {
         ].join(" ")
       );
 
-      console.log(`Compiled ${filePath}`);
+      console.log(`Compiled ${relativeFilePath}`);
+
+      const outputPath = relativeFilePath.replace(/\.ts$/i, ".js");
+
+      const contents = await readFileAsync(outputPath, "utf-8");
+      const withExtensions = contents.replace(/from "(.*?)"/g, 'from "$1.js"');
+
+      if (/from "(.*?)"/g.test(withExtensions)) {
+        console.error("CONTENTS:")
+        console.error(contents);
+        console.error('')
+        console.error("withExtensions:")
+        console.error(withExtensions);
+
+        throw new Error("Unprocessed import found!");
+      }
+
+      await delay(FS_DELAY);
+
+      // if (contents !== withExtensions) {
+      // console.error("CONTENTS:")
+      // console.error(contents);
+      // console.error('')
+      // console.error("withExtensions:")
+      // console.error(withExtensions);
+      //   throw new Error(withExtensions);
+      // }
+
+      await writeFileAsync(outputPath, withExtensions);
+
+      await writeFileAsync(outputPath.replace(/\.ts$/i, ".js"), withExtensions);
 
       if (stdout || stderr) {
         console.log({ stdout, stderr });
@@ -72,7 +129,6 @@ const main = async cwd => {
       console.error(error);
 
       process.exit(1);
-      return;
     }
   }
 };
