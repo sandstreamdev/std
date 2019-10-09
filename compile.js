@@ -120,7 +120,7 @@ const main = async cwd => {
 
       await writeFileAsync(outputPath, withExtensions);
 
-      await writeFileAsync(outputPath.replace(/\.ts$/i, ".js"), withExtensions);
+      await writeFileAsync(relativeFilePath.replace(/\.ts$/i, ".xy"), withExtensions);
 
       if (stdout || stderr) {
         console.log({ stdout, stderr });
