@@ -8,10 +8,11 @@
   "browser": "index.umd.js",
   "sideEffects": false,
   "scripts": {
-    "build": "npm run compile && npm run regenerate && rollup -c && npm run fix",
+    "build": "npm run compile && npm run addExtensions && npm run regenerate && rollup -c && npm run fix",
     "compile": "node --experimental-modules compile.js",
-    "fix": "npm run lint:fix",
-    "lint": "eslint \"**/*.js\"",
+    "addExtensions": "node --experimental-modules addExtensions.js",
+    "fix": "npm run lint:fix && npm run prettier:fix",
+    "lint": "eslint \"**/*.js\" --debug",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "npm run build",
     "prettier": "prettier \"**/*.{js,json,md,ts}\"",
@@ -39,6 +40,7 @@
     "@typescript-eslint/parser": "^2.3.3",
     "eslint": "^6.5.1",
     "eslint-plugin-import": "^2.18.2",
+    "p-queue": "^6.1.1",
     "prettier": "^1.18.2",
     "rollup": "^1.22.0",
     "typescript": "^3.6.3"

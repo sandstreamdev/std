@@ -1,23 +1,19 @@
 /* eslint-env node */
 // eslint-disable console
-import { promises } from "fs";
-import childProcess from "child_process";
+import fs, { promises } from "fs";
+import { promisify } from 'util';
+import { execFile } from "child_process";
 import path from "path";
+import pQueue from "p-queue";
+
+const { default: PQueue } = pQueue;
 
 const FS_DELAY = 0;
+const TS_TIMEOUT = 0;
 
 const delay = timeout => new Promise(resolve => setTimeout(resolve, timeout));
 
-const exec = (command, options) =>
-  new Promise((resolve, reject) =>
-    childProcess.exec(command, options, (error, stdout, stderr) => {
-      if (error) {
-        reject(error);
-      } else {
-        resolve([stdout, stderr]);
-      }
-    })
-  );
+const execFileAsync = promisify(execFile);
 
 import ignored from "./ignore.js";
 
@@ -56,7 +52,7 @@ const main = async cwd => {
     await main(path.join(cwd, directory));
   }
 
-  for (const file of files) {
+  const processFile = async file => {
     const filePath = path.join(cwd, file);
     const relativeFilePath = path.relative(root, filePath);
 
@@ -80,30 +76,63 @@ const main = async cwd => {
       //   continue;
       // }
 
-      const command = [
-        "node",
+      const executable = "node";
+
+      const args = [
         "./node_modules/typescript/bin/tsc",
-        "--diagnostics",
+        //"--diagnostics",
+        "--skipLibCheck",
         "--module ES6",
         "--target ES2020",
         quotePath(path.posix.normalize(filePath))
+      ];
+
+      const command = [
+        executable,
+        ...args
       ].join(" ");
 
       console.time(command);
-      const [stdout, stderr] = await exec(
-        command
+
+      const task = execFileAsync(
+        executable, args, { windowsVerbatimArguments: true }
       );
+
+      const result = await task;
+      const { stdout, stderr } = result;
       console.timeEnd(command);
+
+      const outputPath = relativeFilePath.replace(/\.ts$/i, ".js");
+
+      fs.watchFile(outputPath, (curr, prev) => {
+        console.log(`the current mtime is: ${curr.mtime}`);
+        console.log(`the previous mtime was: ${prev.mtime}`);
+        console.error(outputPath);
+        process.exit(1);
+      });
+
+      const cp = task.child;
+
+      //console.log({ cp });
+
+      cp.unref();
+      cp.kill();
+
+      await delay(TS_TIMEOUT);
+
+      fs.unwatchFile(outputPath);
 
 
       console.log(command);
 
       console.log(`Compiled ${relativeFilePath}`);
 
-      const outputPath = relativeFilePath.replace(/\.ts$/i, ".js");
-
       const contents = await readFileAsync(outputPath, "utf-8");
-      const withExtensions = contents.replace(/from "(.*?)"/gm, 'from "$1.js"');
+      let withExtensions = contents.replace(/from "(.*?)"/gm, 'from "$1.js"');
+
+      // if (relativeFilePath === 'array\\are.ts') {
+      //   withExtensions = "const blalsdlasl = 1; const dlaslda = 2;";
+      // }
 
       // if (/from "(.*?)"/gm.test(withExtensions)) {
       //   console.error("CONTENTS:")
@@ -128,10 +157,17 @@ const main = async cwd => {
 
       await writeFileAsync(outputPath, withExtensions);
 
-      await writeFileAsync(
-        relativeFilePath.replace(/\.ts$/i, ".xy"),
-        withExtensions
-      );
+      // await writeFileAsync(
+      //   relativeFilePath.replace(/\.ts$/i, ".xy"),
+      //   withExtensions
+      // );
+
+      // fs.watchFile(outputPath, (curr, prev) => {
+      //   console.log(`the current mtime is: ${curr.mtime}`);
+      //   console.log(`the previous mtime was: ${prev.mtime}`);
+      //   console.error(outputPath);
+      //   process.exit(1);
+      // });
 
       if (stdout || stderr) {
         console.log({ stdout, stderr });
@@ -142,6 +178,18 @@ const main = async cwd => {
       process.exit(1);
     }
   }
+
+  //await Promise.all(files.map(processFile));
+
+  const queue = new PQueue({ concurrency: 1 });
+
+  for (const file of files) {
+    // await processFile(file);
+
+    queue.add(() => processFile(file));
+  }
+
+  await queue.onIdle();
 };
 
 main(cwd);
