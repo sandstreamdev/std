@@ -17,7 +17,13 @@ const mapping = {
 
 const identifier = name => mapping[name] || name;
 
-const extension = /\.js$/i;
+// Do not match type definition files *.d.ts but match *.ts:
+// https://stackoverflow.com/a/43493203/1384679
+const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.ts$/i;
+
+const importFormat = ""; // js = ".js";
+const indexName = ""; // js = "/index.js";
+const outputFormat = ".ts"; // js = ".js";
 
 const main = async cwd => {
   console.log(`Indexing files in ${cwd}...`);
@@ -45,12 +51,12 @@ const main = async cwd => {
     const id = identifier(splitted.slice(0, splitted.length - 1).join("_"));
     const extension = `.${splitted[splitted.length - 1]}`;
 
-    return [fileName, id, extension];
+    return [fileName.replace(extension, importFormat), id, extension];
   });
 
   const dependencies = [
     ...submodules,
-    ...directories.map(x => [`${x}/index.js`, identifier(x), ""])
+    ...directories.map(x => [`${x}${indexName}`, identifier(x), ""])
   ];
 
   const importDeclarations = dependencies
@@ -76,7 +82,7 @@ const main = async cwd => {
 
   console.log(moduleContents);
 
-  await writeFileAsync(path.join(cwd, "index.js"), moduleContents);
+  await writeFileAsync(path.join(cwd, `index${outputFormat}`), moduleContents);
 };
 
 main(cwd);

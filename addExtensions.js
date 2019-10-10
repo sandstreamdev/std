@@ -11,7 +11,9 @@ const { default: PQueue } = pQueue;
 
 import ignored from "./ignore.js";
 
-const [ignoredFiles, ignoredDirectories] = ignored;
+const [sourceIgnoredFiles, ignoredDirectories] = ignored;
+
+const ignoredFiles = sourceIgnoredFiles.filter(x => x !== "index.js");
 
 const {
   readdir: readDirectoryAsync,
@@ -52,7 +54,13 @@ const main = async cwd => {
       console.log(`Fixing ${relativeFilePath}...`);
 
       const contents = await readFileAsync(filePath, "utf-8");
-      const withExtensions = contents.replace(/from "(.*?)"/gm, 'from "$1.js"');
+
+      const withExtensions = contents
+        .replace(/from ["'](.*?)\/["']/gm, 'from "$1/index"')
+        .replace(/from ["'](.*?)["']/gm, 'from "$1.js"')
+        .replace(/\.js\.js\.js/g, ".js")
+        .replace(/\.js\.js/g, ".js")
+        .replace(/\.js\.js/g, ".js");
 
       await writeFileAsync(filePath, withExtensions);
 

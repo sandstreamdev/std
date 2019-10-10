@@ -6,9 +6,10 @@
   "module": "index.js",
   "main": "index.cjs.js",
   "browser": "index.umd.js",
+  "types": "index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "npm run compile && npm run addExtensions && npm run regenerate && npm run rollup && npm run fix",
+    "build": "npm run regenerate && npm run compile && npm run addExtensions && npm run rollup && npm run fix",
     "compile": "node --experimental-modules compile.js",
     "addExtensions": "node --experimental-modules addExtensions.js",
     "fix": "npm run lint:fix && npm run prettier:fix && npm run lint:fix",
