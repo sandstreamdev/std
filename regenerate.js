@@ -13,6 +13,7 @@ const ignoredFiles = [
   ".all-contributorsrc",
   ".gitignore",
   ".npmignore",
+  ".prettierignore",
   "index.cjs.js",
   "index.js",
   "index.test.js",
