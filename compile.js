@@ -71,8 +71,10 @@ const main = async cwd => {
 
       console.time(command);
 
+      const windows = process.platform === "win32";
+
       const { stdout, stderr } = await execFileAsync(executable, args, {
-        windowsVerbatimArguments: true
+        windowsVerbatimArguments: windows
       });
 
       console.timeEnd(command);
