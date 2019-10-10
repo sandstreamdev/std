@@ -6,5 +6,6 @@ export default array => angle => {
   const unit = Math.PI / 4;
   const ratio = angleWithMargin / unit;
   const offset = Math.floor(ratio);
+
   return shift(offset)(array);
 };

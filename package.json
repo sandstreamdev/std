@@ -12,7 +12,7 @@
     "compile": "node --experimental-modules compile.js",
     "addExtensions": "node --experimental-modules addExtensions.js",
     "fix": "npm run lint:fix && npm run prettier:fix && npm run lint:fix",
-    "lint": "eslint \"**/*.js\" --debug",
+    "lint": "eslint \"**/*.{js,ts}\" --debug",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "npm run build",
     "prettier": "prettier \"**/*.{js,json,md,ts}\"",

@@ -10,6 +10,7 @@ export const equalsDeep = (a, b) => {
       !lengthDiffers(a, b) && a.every(a, (_, key) => equalsDeep(_, b[key]))
     );
   }
+
   return isObject(a) && isObject(b)
     ? a === b || keySet(a, b).every(key => equalsDeep(a[key], b[key]))
     : a === b;
@@ -21,6 +22,7 @@ export const equalsDeepWith = f => (a, b) => {
       !lengthDiffers(a, b) && a.every((_, key) => equalsDeepWith(f)(_, b[key]))
     );
   }
+
   return isObject(a) && isObject(b)
     ? a === b || keySet(a, b).every(key => equalsDeepWith(f)(a[key], b[key]))
     : f(a, b);

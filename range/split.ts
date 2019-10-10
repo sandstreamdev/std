@@ -24,6 +24,7 @@ const split = (used, sourceRange = [-Infinity, Infinity]) => range => {
   const [freeLeftMin, freeLeftMax] = [sourceMin, usedMin].map(
     clampToSourceRange
   );
+
   const [freeRightMin, freeRightMax] = [usedMax, sourceMax].map(
     clampToSourceRange
   );

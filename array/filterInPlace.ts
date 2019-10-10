@@ -4,12 +4,15 @@ export default f => xs => {
 
   while (i < xs.length) {
     const value = xs[i];
+
     if (f(value, i, xs)) {
       xs[j++] = value;
     }
+
     i++;
   }
 
   xs.length = j;
+
   return xs;
 };

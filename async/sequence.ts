@@ -5,6 +5,7 @@ export default async tasks => {
     return chain.then(() =>
       current().then(x => {
         results[i] = x;
+
         return x;
       })
     );

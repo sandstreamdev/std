@@ -16,6 +16,7 @@ export default ({
   const [start] = splitDateTime(
     convert(startOfDay(date || now, timezoneOffset, local))
   );
+
   const [end] = splitDateTime(
     convert(offsetByBit(endOfDay(date || now, timezoneOffset, local)))
   );

@@ -22,6 +22,7 @@ const assert = (condition, callbackOrMessage) => {
 export const throws = f => {
   try {
     f();
+
     return undefined;
   } catch (error) {
     return error;
