@@ -2,7 +2,7 @@
 // eslint-disable console
 import { promises } from "fs";
 import { promisify } from "util";
-import { execFile } from "child_process";
+import { exec } from "child_process";
 import path from "path";
 import os from "os";
 import pQueue from "p-queue";
@@ -11,7 +11,7 @@ const CONCURRENCY = Math.max(1, os.cpus().length - 1);
 
 const { default: PQueue } = pQueue;
 
-const execFileAsync = promisify(execFile);
+const execAsync = promisify(exec);
 
 import ignored from "./ignore.js";
 
@@ -73,7 +73,7 @@ const main = async cwd => {
 
       const windows = process.platform === "win32";
 
-      const { stdout, stderr } = await execFileAsync(executable, args, {
+      const { stdout, stderr } = await execAsync(command, {
         windowsVerbatimArguments: windows
       });
 
