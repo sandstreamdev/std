@@ -24,7 +24,9 @@ const executable = "node";
 const [, , cwd = process.cwd()] = process.argv;
 const root = cwd;
 
-const extension = /\.ts$/i;
+// Do not match type definition files *.d.ts but match *.ts:
+// https://stackoverflow.com/a/43493203/1384679
+const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.ts$/i;
 
 const quotePath = path => `"${path}"`;
 
@@ -61,6 +63,7 @@ const main = async cwd => {
         "--skipLibCheck",
         "--module ES6",
         "--target ES2020",
+        "-d",
         quotePath(path.posix.normalize(filePath))
       ];
 
