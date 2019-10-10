@@ -58,9 +58,7 @@ const main = async cwd => {
       const withExtensions = contents
         .replace(/from ["'](.*?)\/["']/gm, 'from "$1/index"')
         .replace(/from ["'](.*?)["']/gm, 'from "$1.js"')
-        .replace(/\.js\.js\.js/g, ".js")
-        .replace(/\.js\.js/g, ".js")
-        .replace(/\.js\.js/g, ".js");
+        .replace(/(\.js)+/g, ".js");
 
       await writeFileAsync(filePath, withExtensions);
 
