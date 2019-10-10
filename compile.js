@@ -4,7 +4,7 @@ import { promises } from "fs";
 import childProcess from "child_process";
 import path from "path";
 
-const FS_DELAY = 500;
+const FS_DELAY = 0;
 
 const delay = timeout => new Promise(resolve => setTimeout(resolve, timeout));
 
@@ -80,39 +80,47 @@ const main = async cwd => {
       //   continue;
       // }
 
+      const command = [
+        "node",
+        "./node_modules/typescript/bin/tsc",
+        "--diagnostics",
+        "--module ES6",
+        "--target ES2020",
+        quotePath(path.posix.normalize(filePath))
+      ].join(" ");
+
+      console.time(command);
       const [stdout, stderr] = await exec(
-        [
-          "node",
-          "./node_modules/typescript/bin/tsc",
-          "--module ES6",
-          "--target ES2020",
-          quotePath(path.posix.normalize(filePath))
-        ].join(" ")
+        command
       );
+      console.timeEnd(command);
+
+
+      console.log(command);
 
       console.log(`Compiled ${relativeFilePath}`);
 
       const outputPath = relativeFilePath.replace(/\.ts$/i, ".js");
 
       const contents = await readFileAsync(outputPath, "utf-8");
-      const withExtensions = contents.replace(/from "(.*?)"/g, 'from "$1.js"');
+      const withExtensions = contents.replace(/from "(.*?)"/gm, 'from "$1.js"');
 
-      if (/from "(.*?)"/g.test(withExtensions)) {
-        console.error("CONTENTS:")
-        console.error(contents);
-        console.error('')
-        console.error("withExtensions:")
-        console.error(withExtensions);
+      // if (/from "(.*?)"/gm.test(withExtensions)) {
+      //   console.error("CONTENTS:")
+      //   console.error(contents);
+      //   console.error('')
+      //   console.error("withExtensions:")
+      //   console.error(withExtensions);
 
-        throw new Error("Unprocessed import found!");
-      }
+      //   throw new Error("Unprocessed import found!");
+      // }
 
       await delay(FS_DELAY);
 
       // if (contents !== withExtensions) {
       // console.error("CONTENTS:")
       // console.error(contents);
-      // console.error('')
+      // console.error('')  z
       // console.error("withExtensions:")
       // console.error(withExtensions);
       //   throw new Error(withExtensions);
@@ -120,7 +128,10 @@ const main = async cwd => {
 
       await writeFileAsync(outputPath, withExtensions);
 
-      await writeFileAsync(relativeFilePath.replace(/\.ts$/i, ".xy"), withExtensions);
+      await writeFileAsync(
+        relativeFilePath.replace(/\.ts$/i, ".xy"),
+        withExtensions
+      );
 
       if (stdout || stderr) {
         console.log({ stdout, stderr });

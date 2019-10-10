@@ -10,14 +10,14 @@
   "scripts": {
     "build": "npm run compile && npm run regenerate && rollup -c && npm run fix",
     "compile": "node --experimental-modules compile.js",
-    "fix": "npm run lint:fix && npm run prettier:fix",
+    "fix": "npm run lint:fix",
     "lint": "eslint \"**/*.js\"",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "npm run build",
     "prettier": "prettier \"**/*.{js,json,md,ts}\"",
     "prettier:check": "npm run prettier -- --check",
     "prettier:fix": "npm run prettier -- --write",
-    "regenerate": "node --experimental-modules regenerate.js && npm run prettier:fix",
+    "regenerate": "node --experimental-modules regenerate.js",
     "test": "npm run lint && node --experimental-modules index.test.js"
   },
   "repository": {
