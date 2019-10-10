@@ -59,7 +59,7 @@ const main = async cwd => {
 
       process.exit(1);
     }
-  }
+  };
 
   //await Promise.all(files.map(processFile));
 

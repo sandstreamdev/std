@@ -1,7 +1,7 @@
 /* eslint-env node */
 // eslint-disable console
 import fs, { promises } from "fs";
-import { promisify } from 'util';
+import { promisify } from "util";
 import { execFile } from "child_process";
 import path from "path";
 import pQueue from "p-queue";
@@ -87,16 +87,13 @@ const main = async cwd => {
         quotePath(path.posix.normalize(filePath))
       ];
 
-      const command = [
-        executable,
-        ...args
-      ].join(" ");
+      const command = [executable, ...args].join(" ");
 
       console.time(command);
 
-      const task = execFileAsync(
-        executable, args, { windowsVerbatimArguments: true }
-      );
+      const task = execFileAsync(executable, args, {
+        windowsVerbatimArguments: true
+      });
 
       const result = await task;
       const { stdout, stderr } = result;
@@ -121,7 +118,6 @@ const main = async cwd => {
       await delay(TS_TIMEOUT);
 
       fs.unwatchFile(outputPath);
-
 
       console.log(command);
 
@@ -177,7 +173,7 @@ const main = async cwd => {
 
       process.exit(1);
     }
-  }
+  };
 
   //await Promise.all(files.map(processFile));
 

@@ -8,10 +8,10 @@
   "browser": "index.umd.js",
   "sideEffects": false,
   "scripts": {
-    "build": "npm run compile && npm run addExtensions && npm run regenerate && rollup -c && npm run fix",
+    "build": "npm run compile && npm run addExtensions && npm run regenerate && npm run rollup && npm run fix",
     "compile": "node --experimental-modules compile.js",
     "addExtensions": "node --experimental-modules addExtensions.js",
-    "fix": "npm run lint:fix && npm run prettier:fix",
+    "fix": "npm run lint:fix && npm run prettier:fix && npm run lint:fix",
     "lint": "eslint \"**/*.js\" --debug",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "npm run build",
@@ -19,6 +19,7 @@
     "prettier:check": "npm run prettier -- --check",
     "prettier:fix": "npm run prettier -- --write",
     "regenerate": "node --experimental-modules regenerate.js",
+    "rollup": "rollup -c",
     "test": "npm run lint && node --experimental-modules index.test.js"
   },
   "repository": {
