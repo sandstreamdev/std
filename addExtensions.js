@@ -2,7 +2,10 @@
 // eslint-disable console
 import { promises } from "fs";
 import path from "path";
+import os from "os";
 import pQueue from "p-queue";
+
+const CONCURRENCY = Math.max(1, os.cpus().length - 1);
 
 const { default: PQueue } = pQueue;
 
@@ -61,13 +64,9 @@ const main = async cwd => {
     }
   };
 
-  //await Promise.all(files.map(processFile));
-
-  const queue = new PQueue({ concurrency: 1 });
+  const queue = new PQueue({ concurrency: CONCURRENCY });
 
   for (const file of files) {
-    // await processFile(file);
-
     queue.add(() => processFile(file));
   }
 
