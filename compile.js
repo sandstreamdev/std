@@ -17,9 +17,7 @@ import ignored from "./ignore.js";
 
 const [ignoredFiles, ignoredDirectories] = ignored;
 
-const {
-  readdir: readDirectoryAsync
-} = promises;
+const { readdir: readDirectoryAsync } = promises;
 
 const executable = "node";
 
