@@ -10,6 +10,7 @@ const ignoredFiles = [
   "index.d.ts",
   "index.js",
   "index.test.js",
+  "index.test.ts",
   "index.ts",
   "index.umd.js",
   "LICENSE",
