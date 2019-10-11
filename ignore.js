@@ -3,6 +3,7 @@ const ignoredFiles = [
   ".eslintrc.js",
   ".gitignore",
   ".npmignore",
+  ".prettierignore",
   "addExtensions.js",
   "compile.js",
   "ignore.js",
