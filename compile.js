@@ -15,7 +15,9 @@ const execAsync = promisify(exec);
 
 import ignored from "./ignore.js";
 
-const [ignoredFiles, ignoredDirectories] = ignored;
+const [sourceIgnoredFiles, ignoredDirectories] = ignored;
+
+const ignoredFiles = sourceIgnoredFiles.filter(x => x !== "index.ts");
 
 const { readdir: readDirectoryAsync } = promises;
 

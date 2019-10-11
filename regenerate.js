@@ -22,7 +22,7 @@ const identifier = name => mapping[name] || name;
 const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.ts$/i;
 
 const importFormat = ""; // js = ".js";
-const indexName = ""; // js = "/index.js";
+const indexName = "/index"; // js = "/index.js";
 const outputFormat = ".ts"; // js = ".js";
 
 const main = async cwd => {

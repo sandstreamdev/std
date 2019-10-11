@@ -1,5 +1,5 @@
 import classNames from "./classNames";
-import events from "./events";
+import events from "./events/index";
 
 export { classNames, events };
 

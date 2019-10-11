@@ -1,19 +1,19 @@
-import array from "./array";
-import async from "./async";
-import date from "./date";
-import debug from "./debug";
-import encoding from "./encoding";
-import file from "./file";
-import _function from "./function";
-import is from "./is";
-import math from "./math";
-import object from "./object";
-import query from "./query";
-import range from "./range";
-import regex from "./regex";
-import string from "./string";
-import vector2 from "./vector2";
-import web from "./web";
+import array from "./array/index";
+import async from "./async/index";
+import date from "./date/index";
+import debug from "./debug/index";
+import encoding from "./encoding/index";
+import file from "./file/index";
+import _function from "./function/index";
+import is from "./is/index";
+import math from "./math/index";
+import object from "./object/index";
+import query from "./query/index";
+import range from "./range/index";
+import regex from "./regex/index";
+import string from "./string/index";
+import vector2 from "./vector2/index";
+import web from "./web/index";
 
 export {
   array,
