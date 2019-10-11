@@ -11,7 +11,6 @@ module.exports = {
   plugins: ["@typescript-eslint", "import"],
   rules: {
     "arrow-parens": ["error", "as-needed"],
-    //"import/extensions": ["error", "always", { ignorePackages: true }],
     "no-sparse-arrays": 0,
     "padding-line-between-statements": [
       "error",
