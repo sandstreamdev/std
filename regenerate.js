@@ -1,5 +1,11 @@
+/* eslint-env node */
+// eslint-disable console
 import { promises } from "fs";
 import path from "path";
+
+import ignored from "./ignore.js";
+
+const [ignoredFiles, ignoredDirectories] = ignored;
 
 const { readdir: readDirectoryAsync, writeFile: writeFileAsync } = promises;
 
@@ -9,35 +15,27 @@ const mapping = {
   function: "_function"
 };
 
-const ignoredFiles = [
-  ".all-contributorsrc",
-  ".gitignore",
-  ".npmignore",
-  ".prettierignore",
-  "index.cjs.js",
-  "index.js",
-  "index.test.js",
-  "index.umd.js",
-  "LICENSE",
-  "package-lock.json",
-  "package.json",
-  "README.md",
-  "regenerate.js",
-  "rollup.config.js"
-];
-
-const ignoredDirectories = [".git", ".github", "node_modules"];
-
 const identifier = name => mapping[name] || name;
+
+// Do not match type definition files *.d.ts but match *.ts:
+// https://stackoverflow.com/a/43493203/1384679
+const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.ts$/i;
+
+const importFormat = ""; // js = ".js";
+const indexName = "/index"; // js = "/index.js";
+const outputFormat = ".ts"; // js = ".js";
 
 const main = async cwd => {
   console.log(`Indexing files in ${cwd}...`);
 
   const entries = await readDirectoryAsync(cwd, { withFileTypes: true });
+
   const files = entries
     .filter(x => x.isFile())
     .map(x => x.name)
+    .filter(x => extension.test(x))
     .filter(x => !ignoredFiles.includes(x));
+
   const directories = entries
     .filter(x => x.isDirectory())
     .map(x => x.name)
@@ -53,12 +51,12 @@ const main = async cwd => {
     const id = identifier(splitted.slice(0, splitted.length - 1).join("_"));
     const extension = `.${splitted[splitted.length - 1]}`;
 
-    return [fileName, id, extension];
+    return [fileName.replace(extension, importFormat), id, extension];
   });
 
   const dependencies = [
     ...submodules,
-    ...directories.map(x => [`${x}/index.js`, identifier(x), ""])
+    ...directories.map(x => [`${x}${indexName}`, identifier(x), ""])
   ];
 
   const importDeclarations = dependencies
@@ -84,7 +82,7 @@ const main = async cwd => {
 
   console.log(moduleContents);
 
-  await writeFileAsync(path.join(cwd, "index.js"), moduleContents);
+  await writeFileAsync(path.join(cwd, `index${outputFormat}`), moduleContents);
 };
 
 main(cwd);

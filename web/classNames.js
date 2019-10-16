@@ -11,6 +11,7 @@ export default (...xs) =>
     .filter(Boolean)
     .reduce((acc, curr) => {
       const names = isString(curr) ? [curr] : booleanKeys(curr);
+
       return [...acc, ...names];
     }, [])
     .join(" ");

@@ -62,3 +62,4 @@ typings/
 
 index.cjs.js
 index.umd.js
+**/*.d.ts

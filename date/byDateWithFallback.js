@@ -10,7 +10,6 @@ export default now => (
   const aStartDateValue = aStartDate.valueOf();
   const bEndDateValue = bEndDate.valueOf();
   const bStartDateValue = bStartDate.valueOf();
-
   const startDateDifference = aStartDateValue - bStartDateValue;
   const startDatesEqual = startDateDifference === 0;
 

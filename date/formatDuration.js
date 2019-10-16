@@ -8,6 +8,7 @@ import displayTime from "./displayTime.js";
 export default (duration, showSeconds = false) => {
   const hours = Math.floor(toHours(duration));
   const minutes = Math.floor(toMinutes(duration - fromHours(hours)));
+
   const seconds = Math.floor(
     toSeconds(duration - fromHours(hours) - fromMinutes(minutes))
   );

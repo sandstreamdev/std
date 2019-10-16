@@ -1,6 +1,5 @@
 import filter from "../object/filter.js";
 import none from "../object/none.js";
-
 import isDefined from "../is/defined.js";
 import isArray from "../is/array.js";
 import isDate from "../is/date.js";
@@ -8,8 +7,11 @@ import isFunction from "../is/function.js";
 import isObject from "../is/object.js";
 
 export const VALUE_CREATED = "+";
+
 export const VALUE_DELETED = "-";
+
 export const VALUE_UNCHANGED = "=";
+
 export const VALUE_UPDATED = "~";
 
 const isValue = x => !isObject(x) && !isArray(x);
@@ -45,6 +47,7 @@ const diff = (obj1, obj2) => {
 
   if (isValue(obj1) || isValue(obj2)) {
     const comparisonResult = compareValues(obj1, obj2);
+
     return comparisonResult !== VALUE_UNCHANGED
       ? {
           type: comparisonResult,

@@ -1,3 +1,4 @@
+/* eslint-env browser, node */
 export const encode = _ =>
   btoa(_)
     .replace(/=/g, "")

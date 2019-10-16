@@ -19,19 +19,21 @@ const split = (used, sourceRange = [-Infinity, Infinity]) => range => {
   }
 
   const [sourceMin, sourceMax] = sourceRange;
-  const clampToSourceRange = clamp(...sourceRange);
+  const clampToSourceRange = clamp(sourceMin, sourceMax);
 
-  const freeLeft = [sourceMin, usedMin].map(clampToSourceRange);
-  const freeRight = [usedMax, sourceMax].map(clampToSourceRange);
+  const [freeLeftMin, freeLeftMax] = [sourceMin, usedMin].map(
+    clampToSourceRange
+  );
 
-  const clampLeft = clamp(...freeLeft);
+  const [freeRightMin, freeRightMax] = [usedMax, sourceMax].map(
+    clampToSourceRange
+  );
+
+  const clampLeft = clamp(freeLeftMin, freeLeftMax);
   const clampedLeft = range.map(clampLeft);
-
   const lefts = split(xs, sourceRange)(clampedLeft);
-
-  const clampRight = clamp(...freeRight);
+  const clampRight = clamp(freeRightMin, freeRightMax);
   const clampedRight = range.map(clampRight);
-
   const rights = split(xs, sourceRange)(clampedRight);
 
   return [...lefts, ...rights].filter(range => !empty(range));

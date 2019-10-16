@@ -4,5 +4,6 @@ import stop from "./stop.js";
 export default event => {
   prevent(event);
   stop(event);
+
   return false;
 };

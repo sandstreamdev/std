@@ -1,1 +1,3 @@
-export default predicate => xs => (find(predicate)(xs) || [])[1];
+import findEntry from "./findEntry.js";
+
+export default predicate => xs => (findEntry(predicate)(xs) || [])[1];

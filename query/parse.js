@@ -12,6 +12,7 @@ export default (xs = "") =>
       .split("&")
       .map(xs => {
         const [key, value] = xs.split("=");
+
         return [key, value !== undefined ? decodeURIComponent(value) : true];
       })
   );
