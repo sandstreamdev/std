@@ -2,7 +2,7 @@
 
 module.exports = {
   collectCoverage: true,
-  collectCoverageFrom: ['**/*.ts'],
+  collectCoverageFrom: ["**/*.ts"],
   coveragePathIgnorePatterns: ["\\.d\\.ts$", "index\\.ts"],
-  coverageDirectory: '.coverage'
+  coverageDirectory: ".coverage"
 };
