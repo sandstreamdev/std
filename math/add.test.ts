@@ -1,5 +1,6 @@
 /* eslint-env jest */
-import add from "./add";
+// @ts-ignore ambiguous import between add.ts and add.js :shrug:
+import add from "./add.ts";
 
 describe("add", () => {
   it("adds two numbers together", () => {

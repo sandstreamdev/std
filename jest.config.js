@@ -1,24 +1,9 @@
 /* eslint-env commonjs */
 
-const ignoredFiles = [
-  "addExtensions\\.js$",
-  "compile\\.js$",
-  "ignore\\.js$",
-  "index\\.cjs\\.js$",
-  "index\\.umd\\.js$",
-  "jest\\.config\\.js$",
-  "regenerate\\.js$",
-  "rollup\\.config\\.js$"
-];
-
 module.exports = {
+  testEnvironment: "node",
   collectCoverage: true,
-  collectCoverageFrom: ["**/*.js"],
-  coveragePathIgnorePatterns: [
-    "\\.d\\.ts$",
-    "index\\.ts",
-    "index\\.js",
-    ...ignoredFiles
-  ],
+  collectCoverageFrom: ["**/*.ts"],
+  coveragePathIgnorePatterns: ["\\.d\\.ts$", "index\\.ts"],
   coverageDirectory: ".coverage"
 };
