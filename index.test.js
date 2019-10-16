@@ -1,5 +1,7 @@
+/* eslint-env jest */
 // @ts-check
-import "./index.js";
-import { add } from "./math/index.js";
+import std from "./index";
 
-add(5, 3);
+test("the module be defined", () => {
+  expect(std).toBeDefined();
+});

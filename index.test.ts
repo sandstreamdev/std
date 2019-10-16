@@ -1,4 +1,6 @@
-import "./index";
-import { add } from "./math";
+/* eslint-env jest */
+import std from "./index";
 
-add(5, 3);
+test("the module should be defined", () => {
+  expect(std).toBeDefined();
+});

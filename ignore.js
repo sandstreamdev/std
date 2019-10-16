@@ -1,5 +1,6 @@
 const ignoredFiles = [
   ".all-contributorsrc",
+  ".babelrc.js",
   ".eslintrc.js",
   ".gitignore",
   ".npmignore",
@@ -19,7 +20,8 @@ const ignoredFiles = [
   "package.json",
   "README.md",
   "regenerate.js",
-  "rollup.config.js"
+  "rollup.config.js",
+  "tsconfig.json"
 ];
 
 const ignoredDirectories = [".coverage", ".git", ".github", "node_modules"];
