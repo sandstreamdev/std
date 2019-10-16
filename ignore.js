@@ -15,6 +15,7 @@ const ignoredFiles = [
   "index.test.ts",
   "index.ts",
   "index.umd.js",
+  "jest.config.js",
   "LICENSE",
   "package-lock.json",
   "package.json",
