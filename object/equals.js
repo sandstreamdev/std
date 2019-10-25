@@ -1,14 +1,12 @@
-import isObject from "../is/object.js";
-import areArrays from "../array/are.js";
-import lengthDiffers from "../array/lengthDiffers.js";
+import isObject from '../is/object.js';
+import areArrays from '../array/are.js';
+import lengthDiffers from '../array/lengthDiffers.js';
 
 const keySet = (a, b) => [...new Set([...Object.keys(a), ...Object.keys(b)])];
 
 export const equalsDeep = (a, b) => {
   if (areArrays(a, b)) {
-    return (
-      !lengthDiffers(a, b) && a.every(a, (_, key) => equalsDeep(_, b[key]))
-    );
+    return !lengthDiffers(a, b) && a.every((_, key) => equalsDeep(_, b[key]));
   }
 
   return isObject(a) && isObject(b)
