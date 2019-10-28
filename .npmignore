@@ -1,1 +1,16 @@
+.coverage
+.github
+.git
+.all-contributorsrc
+.eslintrc.js
+.gitignore
+.npmignore
+.prettierignore
+*.test.js
+*.test.ts
+addExtensions.js
+compile.js
+ignore.js
+package-lock.json
 regenerate.js
+rollup.config.js

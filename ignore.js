@@ -22,6 +22,6 @@ const ignoredFiles = [
   "rollup.config.js"
 ];
 
-const ignoredDirectories = [".git", ".github", "node_modules"];
+const ignoredDirectories = [".coverage", ".git", ".github", "node_modules"];
 
 export default [ignoredFiles, ignoredDirectories];
