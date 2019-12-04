@@ -1,1 +1,1 @@
-export default n => xs => xs.slice(0, n);
+export default count => xs => xs.slice(0, count);
