@@ -32,8 +32,10 @@ import shift from "./shift";
 import shuffle from "./shuffle";
 import shuffleInPlace from "./shuffleInPlace";
 import single from "./single";
+import skip from "./skip";
 import sort from "./sort";
 import sum from "./sum";
+import take from "./take";
 import transpose from "./transpose";
 import unique from "./unique";
 import zip from "./zip";
@@ -74,8 +76,10 @@ export {
   shuffle,
   shuffleInPlace,
   single,
+  skip,
   sort,
   sum,
+  take,
   transpose,
   unique,
   zip,
@@ -117,8 +121,10 @@ export default {
   shuffle,
   shuffleInPlace,
   single,
+  skip,
   sort,
   sum,
+  take,
   transpose,
   unique,
   zip,

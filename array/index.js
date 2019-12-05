@@ -32,8 +32,10 @@ import shift from "./shift.js";
 import shuffle from "./shuffle.js";
 import shuffleInPlace from "./shuffleInPlace.js";
 import single from "./single.js";
+import skip from "./skip.js";
 import sort from "./sort.js";
 import sum from "./sum.js";
+import take from "./take.js";
 import transpose from "./transpose.js";
 import unique from "./unique.js";
 import zip from "./zip.js";
@@ -74,8 +76,10 @@ export {
   shuffle,
   shuffleInPlace,
   single,
+  skip,
   sort,
   sum,
+  take,
   transpose,
   unique,
   zip,
@@ -117,8 +121,10 @@ export default {
   shuffle,
   shuffleInPlace,
   single,
+  skip,
   sort,
   sum,
+  take,
   transpose,
   unique,
   zip,
