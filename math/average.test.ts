@@ -10,4 +10,9 @@ describe("average", () => {
   it("returns 0 for an empty list", () => {
     expect(average([])).toBe(0);
   });
+
+  it("returns 0 for falsy values", () => {
+    expect(average(null)).toBe(0);
+    expect(average([])).toBe(0);
+  });
 });
