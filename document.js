@@ -9,7 +9,7 @@ const template = name =>
   `
 # ${name}
 
-TODO: Fill short function description here.
+TODO: Fill short description here.
 
 ## Type signature
 
@@ -82,7 +82,7 @@ const main = async cwd => {
     return [fileName.replace(extension, importFormat), id, extension];
   });
 
-  for (const [fileName, id] in submodules) {
+  for (const [fileName, id] of submodules) {
     const filePath = path.join(cwd, fileName + ".md");
 
     if (!existsSync(filePath)) {
