@@ -1,9 +1,9 @@
 /* eslint-env jest */
 // @ts-ignore ambiguous import
-import add from "./add.ts";
+import sum from "./sum.ts";
 
-describe("add", () => {
+describe("sum", () => {
   it("TODO", () => {
-    expect(add()).toBeDefined();
+    expect(sum()).toBeDefined();
   });
 });

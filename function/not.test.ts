@@ -1,9 +1,9 @@
 /* eslint-env jest */
 // @ts-ignore ambiguous import
-import add from "./add.ts";
+import not from "./not.ts";
 
-describe("add", () => {
+describe("not", () => {
   it("TODO", () => {
-    expect(add()).toBeDefined();
+    expect(not()).toBeDefined();
   });
 });
