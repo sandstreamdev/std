@@ -39,20 +39,20 @@
   },
   "homepage": "https://github.com/sandstreamdev/std#readme",
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-typescript": "^7.6.0",
-    "@types/jest": "^24.0.19",
-    "@typescript-eslint/eslint-plugin": "^2.3.3",
-    "@typescript-eslint/parser": "^2.8.0",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@types/jest": "^24.0.23",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
     "babel-jest": "^24.9.0",
-    "core-js": "^3.3.2",
-    "eslint": "^6.5.1",
+    "core-js": "^3.4.7",
+    "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.18.2",
     "jest": "^24.9.0",
-    "p-queue": "^6.1.1",
-    "prettier": "^1.18.2",
+    "p-queue": "^6.2.1",
+    "prettier": "^1.19.1",
     "rollup": "^1.27.8",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.3"
   }
 }
