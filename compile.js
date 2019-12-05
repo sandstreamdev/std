@@ -30,6 +30,8 @@ const root = cwd;
 // https://stackoverflow.com/a/43493203/1384679
 const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.ts$/i;
 
+const testFilePattern = /\.test\.[tj]s$/i;
+
 const quotePath = path => `"${path}"`;
 
 const main = async cwd => {
@@ -41,6 +43,7 @@ const main = async cwd => {
     .filter(x => x.isFile())
     .map(x => x.name)
     .filter(x => extension.test(x))
+    .filter(x => !testFilePattern.test(x))
     .filter(x => !ignoredFiles.includes(x));
 
   const directories = entries

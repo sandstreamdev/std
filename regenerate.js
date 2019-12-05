@@ -21,6 +21,8 @@ const identifier = name => mapping[name] || name;
 // https://stackoverflow.com/a/43493203/1384679
 const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.ts$/i;
 
+const testFilePattern = /\.test\.[tj]s$/i;
+
 const importFormat = ""; // js = ".js";
 const indexName = "/index"; // js = "/index.js";
 const outputFormat = ".ts"; // js = ".js";
@@ -34,6 +36,7 @@ const main = async cwd => {
     .filter(x => x.isFile())
     .map(x => x.name)
     .filter(x => extension.test(x))
+    .filter(x => !testFilePattern.test(x))
     .filter(x => !ignoredFiles.includes(x));
 
   const directories = entries

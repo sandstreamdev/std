@@ -3,3 +3,4 @@ node_modules/
 index.cjs.js
 index.umd.js
 **/*.d.ts
+.coverage
