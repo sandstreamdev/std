@@ -3,7 +3,7 @@
 import findKey from "./findKey.ts";
 
 describe("findKey", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(findKey()).toBeDefined();
   });
 });

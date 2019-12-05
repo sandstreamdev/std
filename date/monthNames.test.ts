@@ -3,7 +3,7 @@
 import monthNames from "./monthNames.ts";
 
 describe("monthNames", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(monthNames()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import any from "./any.ts";
 
 describe("any", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(any()).toBeDefined();
   });
 });

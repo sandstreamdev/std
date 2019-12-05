@@ -3,7 +3,7 @@
 import translate from "./translate.ts";
 
 describe("translate", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(translate()).toBeDefined();
   });
 });

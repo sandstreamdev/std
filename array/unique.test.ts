@@ -3,7 +3,7 @@
 import unique from "./unique.ts";
 
 describe("unique", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(unique()).toBeDefined();
   });
 });

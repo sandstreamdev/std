@@ -3,7 +3,7 @@
 import not from "./not.ts";
 
 describe("not", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(not()).toBeDefined();
   });
 });

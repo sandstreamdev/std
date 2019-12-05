@@ -3,7 +3,7 @@
 import displayTime from "./displayTime.ts";
 
 describe("displayTime", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(displayTime()).toBeDefined();
   });
 });

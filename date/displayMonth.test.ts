@@ -3,7 +3,7 @@
 import displayMonth from "./displayMonth.ts";
 
 describe("displayMonth", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(displayMonth()).toBeDefined();
   });
 });

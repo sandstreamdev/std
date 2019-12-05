@@ -3,7 +3,7 @@
 import read from "./read.ts";
 
 describe("read", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(read()).toBeDefined();
   });
 });

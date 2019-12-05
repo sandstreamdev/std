@@ -3,7 +3,7 @@
 import nonEmpty from "./nonEmpty.ts";
 
 describe("nonEmpty", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(nonEmpty()).toBeDefined();
   });
 });

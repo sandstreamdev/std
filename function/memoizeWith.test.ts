@@ -3,7 +3,7 @@
 import memoizeWith from "./memoizeWith.ts";
 
 describe("memoizeWith", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(memoizeWith()).toBeDefined();
   });
 });

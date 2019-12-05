@@ -3,7 +3,7 @@
 import transform from "./transform.ts";
 
 describe("transform", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(transform()).toBeDefined();
   });
 });

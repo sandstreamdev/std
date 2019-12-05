@@ -3,7 +3,7 @@
 import reflect from "./reflect.ts";
 
 describe("reflect", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(reflect()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import dateDiff from "./dateDiff.ts";
 
 describe("dateDiff", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(dateDiff()).toBeDefined();
   });
 });

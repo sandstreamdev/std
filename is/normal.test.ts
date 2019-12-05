@@ -3,7 +3,7 @@
 import normal from "./normal.ts";
 
 describe("normal", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(normal()).toBeDefined();
   });
 });

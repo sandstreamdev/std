@@ -3,7 +3,7 @@
 import object from "./object.ts";
 
 describe("object", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(object()).toBeDefined();
   });
 });

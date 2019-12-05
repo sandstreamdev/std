@@ -3,7 +3,7 @@
 import toLocalDateTime from "./toLocalDateTime.ts";
 
 describe("toLocalDateTime", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(toLocalDateTime()).toBeDefined();
   });
 });

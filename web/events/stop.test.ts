@@ -3,7 +3,7 @@
 import stop from "./stop.ts";
 
 describe("stop", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(stop()).toBeDefined();
   });
 });

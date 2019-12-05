@@ -3,7 +3,7 @@
 import skip from "./skip.ts";
 
 describe("skip", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(skip()).toBeDefined();
   });
 });

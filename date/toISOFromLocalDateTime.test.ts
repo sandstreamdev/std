@@ -3,7 +3,7 @@
 import toISOFromLocalDateTime from "./toISOFromLocalDateTime.ts";
 
 describe("toISOFromLocalDateTime", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(toISOFromLocalDateTime()).toBeDefined();
   });
 });

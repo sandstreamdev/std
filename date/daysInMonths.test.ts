@@ -3,7 +3,7 @@
 import daysInMonths from "./daysInMonths.ts";
 
 describe("daysInMonths", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(daysInMonths()).toBeDefined();
   });
 });

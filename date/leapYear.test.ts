@@ -3,7 +3,7 @@
 import leapYear from "./leapYear.ts";
 
 describe("leapYear", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(leapYear()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import split from "./split.ts";
 
 describe("split", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(split()).toBeDefined();
   });
 });

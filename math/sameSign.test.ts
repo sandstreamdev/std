@@ -3,7 +3,7 @@
 import sameSign from "./sameSign.ts";
 
 describe("sameSign", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(sameSign()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import length from "./length.ts";
 
 describe("length", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(length()).toBeDefined();
   });
 });

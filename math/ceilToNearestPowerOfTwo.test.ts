@@ -3,7 +3,7 @@
 import ceilToNearestPowerOfTwo from "./ceilToNearestPowerOfTwo.ts";
 
 describe("ceilToNearestPowerOfTwo", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(ceilToNearestPowerOfTwo()).toBeDefined();
   });
 });

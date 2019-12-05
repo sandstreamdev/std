@@ -3,7 +3,7 @@
 import find from "./find.ts";
 
 describe("find", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(find()).toBeDefined();
   });
 });

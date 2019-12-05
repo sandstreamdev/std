@@ -3,7 +3,7 @@
 import dot from "./dot.ts";
 
 describe("dot", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(dot()).toBeDefined();
   });
 });

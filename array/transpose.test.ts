@@ -3,7 +3,7 @@
 import transpose from "./transpose.ts";
 
 describe("transpose", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(transpose()).toBeDefined();
   });
 });

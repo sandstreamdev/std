@@ -3,7 +3,7 @@
 import toMinutes from "./toMinutes.ts";
 
 describe("toMinutes", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(toMinutes()).toBeDefined();
   });
 });

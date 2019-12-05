@@ -3,7 +3,7 @@
 import median from "./median.ts";
 
 describe("median", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(median()).toBeDefined();
   });
 });

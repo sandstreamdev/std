@@ -3,7 +3,7 @@
 import diff from "./diff.ts";
 
 describe("diff", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(diff()).toBeDefined();
   });
 });

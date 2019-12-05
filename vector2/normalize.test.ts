@@ -3,7 +3,7 @@
 import normalize from "./normalize.ts";
 
 describe("normalize", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(normalize()).toBeDefined();
   });
 });

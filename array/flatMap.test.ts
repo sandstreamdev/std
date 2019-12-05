@@ -3,7 +3,7 @@
 import flatMap from "./flatMap.ts";
 
 describe("flatMap", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(flatMap()).toBeDefined();
   });
 });

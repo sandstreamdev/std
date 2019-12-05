@@ -3,7 +3,7 @@
 import containsWhitespace from "./containsWhitespace.ts";
 
 describe("containsWhitespace", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(containsWhitespace()).toBeDefined();
   });
 });

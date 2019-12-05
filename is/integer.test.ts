@@ -3,7 +3,7 @@
 import integer from "./integer.ts";
 
 describe("integer", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(integer()).toBeDefined();
   });
 });

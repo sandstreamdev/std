@@ -3,7 +3,7 @@
 import hasKey from "./hasKey.ts";
 
 describe("hasKey", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(hasKey()).toBeDefined();
   });
 });

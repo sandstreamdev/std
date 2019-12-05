@@ -3,7 +3,7 @@
 import endOfDay from "./endOfDay.ts";
 
 describe("endOfDay", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(endOfDay()).toBeDefined();
   });
 });

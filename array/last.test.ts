@@ -3,7 +3,7 @@
 import last from "./last.ts";
 
 describe("last", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(last()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import cross from "./cross.ts";
 
 describe("cross", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(cross()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import validName from "./validName.ts";
 
 describe("validName", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(validName()).toBeDefined();
   });
 });

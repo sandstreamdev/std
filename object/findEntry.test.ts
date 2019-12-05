@@ -3,7 +3,7 @@
 import findEntry from "./findEntry.ts";
 
 describe("findEntry", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(findEntry()).toBeDefined();
   });
 });

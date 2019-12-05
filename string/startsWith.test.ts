@@ -3,7 +3,7 @@
 import startsWith from "./startsWith.ts";
 
 describe("startsWith", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(startsWith()).toBeDefined();
   });
 });

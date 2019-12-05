@@ -3,7 +3,7 @@
 import toSeconds from "./toSeconds.ts";
 
 describe("toSeconds", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(toSeconds()).toBeDefined();
   });
 });

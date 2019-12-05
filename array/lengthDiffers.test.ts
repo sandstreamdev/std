@@ -3,7 +3,7 @@
 import lengthDiffers from "./lengthDiffers.ts";
 
 describe("lengthDiffers", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(lengthDiffers()).toBeDefined();
   });
 });

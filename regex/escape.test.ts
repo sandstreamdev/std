@@ -3,7 +3,7 @@
 import escape from "./escape.ts";
 
 describe("escape", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(escape()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import offsetByBit from "./offsetByBit.ts";
 
 describe("offsetByBit", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(offsetByBit()).toBeDefined();
   });
 });

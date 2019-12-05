@@ -3,7 +3,7 @@
 import differs from "./differs.ts";
 
 describe("differs", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(differs()).toBeDefined();
   });
 });

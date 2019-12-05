@@ -3,7 +3,7 @@
 import toHours from "./toHours.ts";
 
 describe("toHours", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(toHours()).toBeDefined();
   });
 });

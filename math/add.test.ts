@@ -3,7 +3,7 @@
 import add from "./add.ts";
 
 describe("add", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(add()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import intersection from "./intersection.ts";
 
 describe("intersection", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(intersection()).toBeDefined();
   });
 });

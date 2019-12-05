@@ -3,7 +3,7 @@
 import whenTrue from "./whenTrue.ts";
 
 describe("whenTrue", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(whenTrue()).toBeDefined();
   });
 });

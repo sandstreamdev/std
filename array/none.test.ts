@@ -3,7 +3,7 @@
 import none from "./none.ts";
 
 describe("none", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(none()).toBeDefined();
   });
 });

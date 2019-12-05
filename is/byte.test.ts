@@ -3,7 +3,7 @@
 import byte from "./byte.ts";
 
 describe("byte", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(byte()).toBeDefined();
   });
 });

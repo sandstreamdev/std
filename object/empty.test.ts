@@ -3,7 +3,7 @@
 import empty from "./empty.ts";
 
 describe("empty", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(empty()).toBeDefined();
   });
 });

@@ -3,7 +3,7 @@
 import constant from "./constant.ts";
 
 describe("constant", () => {
-  it("TODO", () => {
+  it.skip("TODO", () => {
     expect(constant()).toBeDefined();
   });
 });
