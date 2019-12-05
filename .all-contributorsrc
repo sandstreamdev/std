@@ -44,11 +44,21 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "kendyl93",
+      "name": "Paweł",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/34007033?v=4",
+      "profile": "http://www.pawelstanecki.pl",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "std",
   "projectOwner": "sandstreamdev",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
