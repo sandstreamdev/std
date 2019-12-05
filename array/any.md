@@ -10,12 +10,12 @@ any[] ⇒ boolean
 
 ## Examples
 
-```
-any([]) // ⇒ false
+```javascript
+any([]); // ⇒ false
 ```
 
-```
-any([1, 2, 3]) // ⇒ true
+```javascript
+any([1, 2, 3]); // ⇒ true
 ```
 
 ## Questions
