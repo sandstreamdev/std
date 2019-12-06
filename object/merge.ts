@@ -1,21 +1,26 @@
-import isObject from "../is/object.js";
+const merge = (...args): any => {
+  const result: any = {};
 
-const merge = (a: any, b: any): any => {
-  if (isObject(a) && isObject(b)) {
-    Object.keys(b).forEach((key: string) => {
-      if (isObject(b[key])) {
-        if (!a[key]) {
-          Object.assign(a, { [key]: {} });
+  const merger = (object: any): any => {
+    for (const key in object) {
+      if (object.hasOwnProperty(key)) {
+        const isObject: boolean =
+          Object.prototype.toString.call(object[key]) === "[object Object]";
+
+        if (isObject) {
+          result[key] = merge(result[key], object[key]);
+        } else {
+          result[key] = object[key];
         }
-
-        merge(a[key], b[key]);
-      } else {
-        Object.assign(a, { [key]: b[key] });
       }
-    });
+    }
+  };
+
+  for (let i: number = 0; i < args.length; i++) {
+    merger(args[i]);
   }
 
-  return a;
+  return result;
 };
 
 export default merge;
