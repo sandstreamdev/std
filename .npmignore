@@ -1,11 +1,14 @@
 .all-contributorsrc
+.babelrc.js
 .coverage
+.eslintignore
 .eslintrc.js
 .git
 .github
 .gitignore
 .npmignore
 .prettierignore
+.prettierrc
 *.test.js
 *.test.ts
 addExtensions.js
@@ -16,3 +19,4 @@ package-lock.json
 readme.js
 regenerate.js
 rollup.config.js
+*.md
