@@ -1,6 +1,6 @@
 import isObject from "../is/object.js";
 
-export const merge = (a, b) => {
+const merge = (a, b) => {
   if (isObject(a) && isObject(b)) {
     Object.keys(b).forEach(key => {
       if (isObject(b[key])) {
@@ -17,3 +17,5 @@ export const merge = (a, b) => {
 
   return a;
 };
+
+export default merge;
