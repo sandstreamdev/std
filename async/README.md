@@ -24,7 +24,6 @@ debounce(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # delay
 
 <!-- TODO-START
@@ -50,7 +49,6 @@ delay(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # sequence
 

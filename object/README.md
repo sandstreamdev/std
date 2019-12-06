@@ -24,7 +24,6 @@ any(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # apply
 
 <!-- TODO-START
@@ -50,7 +49,6 @@ apply(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # empty
 
@@ -78,7 +76,6 @@ empty(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # entries
 
 <!-- TODO-START
@@ -104,7 +101,6 @@ entries(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # enumerable
 
@@ -132,7 +128,6 @@ enumerable(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # equals
 
 <!-- TODO-START
@@ -158,7 +153,6 @@ equals(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # filter
 
@@ -186,7 +180,6 @@ filter(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # find
 
 <!-- TODO-START
@@ -212,7 +205,6 @@ find(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # findEntry
 
@@ -240,7 +232,6 @@ findEntry(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # findKey
 
 <!-- TODO-START
@@ -266,7 +257,6 @@ findKey(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # findValue
 
@@ -294,7 +284,6 @@ findValue(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # first
 
 <!-- TODO-START
@@ -320,7 +309,6 @@ first(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # flatMapValues
 
@@ -348,7 +336,6 @@ flatMapValues(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # fromEntries
 
 <!-- TODO-START
@@ -374,7 +361,6 @@ fromEntries(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # groupBy
 
@@ -402,7 +388,6 @@ groupBy(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # hasKey
 
 <!-- TODO-START
@@ -428,7 +413,6 @@ hasKey(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # length
 
@@ -456,7 +440,6 @@ length(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # map
 
 <!-- TODO-START
@@ -482,7 +465,6 @@ map(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # mapEntries
 
@@ -510,7 +492,6 @@ mapEntries(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # mapKeys
 
 <!-- TODO-START
@@ -536,7 +517,6 @@ mapKeys(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # mapValues
 
@@ -564,7 +544,6 @@ mapValues(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # none
 
 <!-- TODO-START
@@ -590,7 +569,6 @@ none(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # sort
 

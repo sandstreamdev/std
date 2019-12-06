@@ -24,7 +24,6 @@ assert(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # diff
 
 <!-- TODO-START

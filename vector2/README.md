@@ -24,7 +24,6 @@ add(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # convertSpace
 
 <!-- TODO-START
@@ -50,7 +49,6 @@ convertSpace(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # cross
 
@@ -78,7 +76,6 @@ cross(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # dot
 
 <!-- TODO-START
@@ -104,7 +101,6 @@ dot(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # length
 
@@ -132,7 +128,6 @@ length(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # mul
 
 <!-- TODO-START
@@ -158,7 +153,6 @@ mul(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # multiply
 
@@ -186,7 +180,6 @@ multiply(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # normalize
 
 <!-- TODO-START
@@ -212,7 +205,6 @@ normalize(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # reflect
 
@@ -240,7 +232,6 @@ reflect(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # rotate
 
 <!-- TODO-START
@@ -266,7 +257,6 @@ rotate(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # scale
 
@@ -294,7 +284,6 @@ scale(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # sub
 
 <!-- TODO-START
@@ -321,7 +310,6 @@ sub(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # transform
 
 <!-- TODO-START
@@ -347,7 +335,6 @@ transform(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # translate
 

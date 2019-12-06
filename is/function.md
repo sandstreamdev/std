@@ -1,4 +1,4 @@
-# _function
+# \_function
 
 <!-- TODO-START
 TODO: Fill short description here.

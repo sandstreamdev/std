@@ -6,6 +6,7 @@
 ## Docs
 
 <!-- DOCS:START - Do not remove or modify this section -->
+
 ### array
 
 #### any
@@ -35,7 +36,6 @@ any([1, 2, 3]); // ⇒ true
 - Check if an array is empty or not (in JavaScript).
 - Check if an array is empty or exists (in JavaScript).
 
-
 #### are
 
 Checks if given arguments are all `Arrays`.
@@ -59,7 +59,6 @@ are(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### difference
 
@@ -87,7 +86,6 @@ difference(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### differs
 
 <!-- TODO-START
@@ -113,7 +111,6 @@ differs(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### duplicates
 
@@ -141,7 +138,6 @@ duplicates(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### empty
 
 <!-- TODO-START
@@ -167,7 +163,6 @@ empty(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### exact
 
@@ -195,7 +190,6 @@ exact(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### except
 
 <!-- TODO-START
@@ -221,7 +215,6 @@ except(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### filterInPlace
 
@@ -249,7 +242,6 @@ filterInPlace(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### find
 
 <!-- TODO-START
@@ -275,7 +267,6 @@ find(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### first
 
@@ -303,7 +294,6 @@ first(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### flatMap
 
 <!-- TODO-START
@@ -329,7 +319,6 @@ flatMap(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### flatten
 
@@ -357,7 +346,6 @@ flatten(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### intersection
 
 <!-- TODO-START
@@ -383,7 +371,6 @@ intersection(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### is
 
@@ -411,7 +398,6 @@ is(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### last
 
 <!-- TODO-START
@@ -437,7 +423,6 @@ last(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### lengthDiffers
 
@@ -465,7 +450,6 @@ lengthDiffers(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### map
 
 <!-- TODO-START
@@ -491,7 +475,6 @@ map(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### midpoint
 
@@ -519,7 +502,6 @@ midpoint(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### minMax
 
 <!-- TODO-START
@@ -545,7 +527,6 @@ minMax(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### multiple
 
@@ -573,7 +554,6 @@ multiple(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### none
 
 <!-- TODO-START
@@ -599,7 +579,6 @@ none(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### partition
 
@@ -627,7 +606,6 @@ partition(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### range
 
 <!-- TODO-START
@@ -653,7 +631,6 @@ range(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### repeat
 
@@ -681,7 +658,6 @@ repeat(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### reverse
 
 <!-- TODO-START
@@ -707,7 +683,6 @@ reverse(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### reverseIf
 
@@ -735,7 +710,6 @@ reverseIf(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### rotate
 
 <!-- TODO-START
@@ -761,7 +735,6 @@ rotate(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### second
 
@@ -789,7 +762,6 @@ second(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### secondToLast
 
 <!-- TODO-START
@@ -815,7 +787,6 @@ secondToLast(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### shift
 
@@ -843,7 +814,6 @@ shift(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### shuffle
 
 <!-- TODO-START
@@ -869,7 +839,6 @@ shuffle(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### shuffleInPlace
 
@@ -897,7 +866,6 @@ shuffleInPlace(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### single
 
 <!-- TODO-START
@@ -923,7 +891,6 @@ single(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### skip
 
@@ -951,7 +918,6 @@ skip(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### sort
 
 <!-- TODO-START
@@ -977,7 +943,6 @@ sort(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### sum
 
@@ -1005,7 +970,6 @@ sum(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### take
 
 <!-- TODO-START
@@ -1031,7 +995,6 @@ take(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### transpose
 
@@ -1059,7 +1022,6 @@ transpose(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### unique
 
 <!-- TODO-START
@@ -1085,7 +1047,6 @@ unique(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### zip
 
@@ -1113,7 +1074,6 @@ zip(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### zipWith
 
 <!-- TODO-START
@@ -1139,7 +1099,6 @@ zipWith(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### async
 
@@ -1169,7 +1128,6 @@ debounce(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### delay
 
 <!-- TODO-START
@@ -1196,7 +1154,6 @@ delay(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### sequence
 
 <!-- TODO-START
@@ -1222,7 +1179,6 @@ sequence(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### date
 
@@ -1252,7 +1208,6 @@ byDateWithFallback(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### clamp
 
 <!-- TODO-START
@@ -1278,7 +1233,6 @@ clamp(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### dateDiff
 
@@ -1306,7 +1260,6 @@ dateDiff(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### dateInRange
 
 <!-- TODO-START
@@ -1332,7 +1285,6 @@ dateInRange(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### dayRange
 
@@ -1360,7 +1312,6 @@ dayRange(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### daysInMonths
 
 <!-- TODO-START
@@ -1386,7 +1337,6 @@ daysInMonths(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### daysInYear
 
@@ -1414,7 +1364,6 @@ daysInYear(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### displayMonth
 
 <!-- TODO-START
@@ -1440,7 +1389,6 @@ displayMonth(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### displayTime
 
@@ -1468,7 +1416,6 @@ displayTime(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### endOfDay
 
 <!-- TODO-START
@@ -1494,7 +1441,6 @@ endOfDay(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### formatDate
 
@@ -1522,7 +1468,6 @@ formatDate(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### formatDateTime
 
 <!-- TODO-START
@@ -1548,7 +1493,6 @@ formatDateTime(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### formatDisplayDate
 
@@ -1576,7 +1520,6 @@ formatDisplayDate(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### formatDuration
 
 <!-- TODO-START
@@ -1602,7 +1545,6 @@ formatDuration(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### formatTime
 
@@ -1630,7 +1572,6 @@ formatTime(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### fromDays
 
 <!-- TODO-START
@@ -1656,7 +1597,6 @@ fromDays(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### fromHours
 
@@ -1684,7 +1624,6 @@ fromHours(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### fromMinutes
 
 <!-- TODO-START
@@ -1710,7 +1649,6 @@ fromMinutes(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### fromSeconds
 
@@ -1738,7 +1676,6 @@ fromSeconds(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### joinDateTime
 
 <!-- TODO-START
@@ -1764,7 +1701,6 @@ joinDateTime(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### leapYear
 
@@ -1792,7 +1728,6 @@ leapYear(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### monthNames
 
 <!-- TODO-START
@@ -1818,7 +1753,6 @@ monthNames(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### offsetByBit
 
@@ -1846,7 +1780,6 @@ offsetByBit(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### parseHourMinutePair
 
 <!-- TODO-START
@@ -1872,7 +1805,6 @@ parseHourMinutePair(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### splitDateTime
 
@@ -1900,7 +1832,6 @@ splitDateTime(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### startOfDay
 
 <!-- TODO-START
@@ -1926,7 +1857,6 @@ startOfDay(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### subtractDays
 
@@ -1954,7 +1884,6 @@ subtractDays(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### toDate
 
 <!-- TODO-START
@@ -1980,7 +1909,6 @@ toDate(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### toDates
 
@@ -2008,7 +1936,6 @@ toDates(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### toDays
 
 <!-- TODO-START
@@ -2034,7 +1961,6 @@ toDays(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### toHours
 
@@ -2062,7 +1988,6 @@ toHours(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### toISO
 
 <!-- TODO-START
@@ -2088,7 +2013,6 @@ toISO(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### toISOFromLocalDateTime
 
@@ -2116,7 +2040,6 @@ toISOFromLocalDateTime(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### toLocalDateTime
 
 <!-- TODO-START
@@ -2142,7 +2065,6 @@ toLocalDateTime(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### toMinutes
 
@@ -2170,7 +2092,6 @@ toMinutes(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### toSeconds
 
 <!-- TODO-START
@@ -2197,7 +2118,6 @@ toSeconds(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### valid
 
 <!-- TODO-START
@@ -2223,7 +2143,6 @@ valid(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### debug
 
@@ -2253,7 +2172,6 @@ assert(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### diff
 
 <!-- TODO-START
@@ -2279,7 +2197,6 @@ diff(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### encoding
 
@@ -2309,7 +2226,6 @@ base64url(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 ### file
 
 #### validName
@@ -2337,7 +2253,6 @@ validName(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### function
 
@@ -2367,7 +2282,6 @@ compose(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### constant
 
 <!-- TODO-START
@@ -2393,7 +2307,6 @@ constant(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### identity
 
@@ -2421,7 +2334,6 @@ identity(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### memoize
 
 <!-- TODO-START
@@ -2447,7 +2359,6 @@ memoize(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### memoizeShallow
 
@@ -2475,7 +2386,6 @@ memoizeShallow(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### memoizeWith
 
 <!-- TODO-START
@@ -2501,7 +2411,6 @@ memoizeWith(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### noOp
 
@@ -2529,7 +2438,6 @@ noOp(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### not
 
 <!-- TODO-START
@@ -2555,7 +2463,6 @@ not(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### pipe
 
@@ -2583,7 +2490,6 @@ pipe(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### when
 
 <!-- TODO-START
@@ -2610,7 +2516,6 @@ when(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### whenTrue
 
 <!-- TODO-START
@@ -2636,7 +2541,6 @@ whenTrue(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### is
 
@@ -2666,7 +2570,6 @@ array(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### byte
 
 <!-- TODO-START
@@ -2692,7 +2595,6 @@ byte(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### date
 
@@ -2720,7 +2622,6 @@ date(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### defined
 
 <!-- TODO-START
@@ -2747,8 +2648,7 @@ defined(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
-#### _function
+#### \_function
 
 <!-- TODO-START
 TODO: Fill short description here.
@@ -2773,7 +2673,6 @@ _function(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### integer
 
@@ -2801,7 +2700,6 @@ integer(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### normal
 
 <!-- TODO-START
@@ -2827,7 +2725,6 @@ normal(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### number
 
@@ -2855,7 +2752,6 @@ number(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### object
 
 <!-- TODO-START
@@ -2882,7 +2778,6 @@ object(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### string
 
 <!-- TODO-START
@@ -2908,7 +2803,6 @@ string(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### math
 
@@ -2938,7 +2832,6 @@ add(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### average
 
 <!-- TODO-START
@@ -2964,7 +2857,6 @@ average(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### ceilToNearestPowerOfTwo
 
@@ -2992,7 +2884,6 @@ ceilToNearestPowerOfTwo(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### clamp
 
 <!-- TODO-START
@@ -3018,7 +2909,6 @@ clamp(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### clampNormal
 
@@ -3046,7 +2936,6 @@ clampNormal(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### clampPercentage
 
 <!-- TODO-START
@@ -3072,7 +2961,6 @@ clampPercentage(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### delta
 
@@ -3100,7 +2988,6 @@ delta(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### inRectangleRange
 
 <!-- TODO-START
@@ -3126,7 +3013,6 @@ inRectangleRange(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### lerp
 
@@ -3154,7 +3040,6 @@ lerp(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### maximumBy
 
 <!-- TODO-START
@@ -3180,7 +3065,6 @@ maximumBy(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### median
 
@@ -3208,7 +3092,6 @@ median(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### minMax
 
 <!-- TODO-START
@@ -3234,7 +3117,6 @@ minMax(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### safeNormalize
 
@@ -3262,7 +3144,6 @@ safeNormalize(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### sameSign
 
 <!-- TODO-START
@@ -3288,7 +3169,6 @@ sameSign(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### standardDeviation
 
@@ -3316,7 +3196,6 @@ standardDeviation(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### subtract
 
 <!-- TODO-START
@@ -3342,7 +3221,6 @@ subtract(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### object
 
@@ -3372,7 +3250,6 @@ any(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### apply
 
 <!-- TODO-START
@@ -3398,7 +3275,6 @@ apply(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### empty
 
@@ -3426,7 +3302,6 @@ empty(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### entries
 
 <!-- TODO-START
@@ -3452,7 +3327,6 @@ entries(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### enumerable
 
@@ -3480,7 +3354,6 @@ enumerable(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### equals
 
 <!-- TODO-START
@@ -3506,7 +3379,6 @@ equals(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### filter
 
@@ -3534,7 +3406,6 @@ filter(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### find
 
 <!-- TODO-START
@@ -3560,7 +3431,6 @@ find(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### findEntry
 
@@ -3588,7 +3458,6 @@ findEntry(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### findKey
 
 <!-- TODO-START
@@ -3614,7 +3483,6 @@ findKey(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### findValue
 
@@ -3642,7 +3510,6 @@ findValue(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### first
 
 <!-- TODO-START
@@ -3668,7 +3535,6 @@ first(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### flatMapValues
 
@@ -3696,7 +3562,6 @@ flatMapValues(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### fromEntries
 
 <!-- TODO-START
@@ -3722,7 +3587,6 @@ fromEntries(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### groupBy
 
@@ -3750,7 +3614,6 @@ groupBy(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### hasKey
 
 <!-- TODO-START
@@ -3776,7 +3639,6 @@ hasKey(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### length
 
@@ -3804,7 +3666,6 @@ length(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### map
 
 <!-- TODO-START
@@ -3830,7 +3691,6 @@ map(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### mapEntries
 
@@ -3858,7 +3718,6 @@ mapEntries(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### mapKeys
 
 <!-- TODO-START
@@ -3884,7 +3743,6 @@ mapKeys(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### mapValues
 
@@ -3912,7 +3770,6 @@ mapValues(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### none
 
 <!-- TODO-START
@@ -3939,7 +3796,6 @@ none(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### sort
 
 <!-- TODO-START
@@ -3965,7 +3821,6 @@ sort(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### query
 
@@ -3995,7 +3850,6 @@ parse(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### parsePathname
 
 <!-- TODO-START
@@ -4021,7 +3875,6 @@ parsePathname(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### read
 
@@ -4049,7 +3902,6 @@ read(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### serialize
 
 <!-- TODO-START
@@ -4075,7 +3927,6 @@ serialize(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### range
 
@@ -4105,7 +3956,6 @@ empty(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### equals
 
 <!-- TODO-START
@@ -4131,7 +3981,6 @@ equals(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### length
 
@@ -4159,7 +4008,6 @@ length(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### split
 
 <!-- TODO-START
@@ -4185,7 +4033,6 @@ split(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### regex
 
@@ -4215,7 +4062,6 @@ escape(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 ### string
 
 #### containsWhitespace
@@ -4244,7 +4090,6 @@ containsWhitespace(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### empty
 
 <!-- TODO-START
@@ -4270,7 +4115,6 @@ empty(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### firstToLower
 
@@ -4298,7 +4142,6 @@ firstToLower(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### firstToUpper
 
 <!-- TODO-START
@@ -4324,7 +4167,6 @@ firstToUpper(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### includes
 
@@ -4352,7 +4194,6 @@ includes(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### nbsp
 
 <!-- TODO-START
@@ -4378,7 +4219,6 @@ nbsp(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### nonEmpty
 
@@ -4406,7 +4246,6 @@ nonEmpty(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### startsWith
 
 <!-- TODO-START
@@ -4432,7 +4271,6 @@ startsWith(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### vector2
 
@@ -4462,7 +4300,6 @@ add(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### convertSpace
 
 <!-- TODO-START
@@ -4488,7 +4325,6 @@ convertSpace(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### cross
 
@@ -4516,7 +4352,6 @@ cross(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### dot
 
 <!-- TODO-START
@@ -4542,7 +4377,6 @@ dot(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### length
 
@@ -4570,7 +4404,6 @@ length(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### mul
 
 <!-- TODO-START
@@ -4596,7 +4429,6 @@ mul(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### multiply
 
@@ -4624,7 +4456,6 @@ multiply(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### normalize
 
 <!-- TODO-START
@@ -4650,7 +4481,6 @@ normalize(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### reflect
 
@@ -4678,7 +4508,6 @@ reflect(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### rotate
 
 <!-- TODO-START
@@ -4704,7 +4533,6 @@ rotate(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### scale
 
@@ -4732,7 +4560,6 @@ scale(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### sub
 
 <!-- TODO-START
@@ -4758,7 +4585,6 @@ sub(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 #### transform
 
@@ -4786,7 +4612,6 @@ transform(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### translate
 
 <!-- TODO-START
@@ -4812,7 +4637,6 @@ translate(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ### web
 
@@ -4842,7 +4666,6 @@ classNames(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 #### events
 
 ##### cancel
@@ -4871,7 +4694,6 @@ cancel(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 ##### openInNewTabIntent
 
 <!-- TODO-START
@@ -4898,7 +4720,6 @@ openInNewTabIntent(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 ##### prevent
 
 <!-- TODO-START
@@ -4924,7 +4745,6 @@ prevent(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 ##### stop
 

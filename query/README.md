@@ -24,7 +24,6 @@ parse(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # parsePathname
 
 <!-- TODO-START
@@ -51,7 +50,6 @@ parsePathname(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # read
 
 <!-- TODO-START
@@ -77,7 +75,6 @@ read(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # serialize
 

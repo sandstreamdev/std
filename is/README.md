@@ -24,7 +24,6 @@ array(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # byte
 
 <!-- TODO-START
@@ -50,7 +49,6 @@ byte(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # date
 
@@ -78,7 +76,6 @@ date(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # defined
 
 <!-- TODO-START
@@ -105,8 +102,7 @@ defined(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
-# _function
+# \_function
 
 <!-- TODO-START
 TODO: Fill short description here.
@@ -131,7 +127,6 @@ _function(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # integer
 
@@ -159,7 +154,6 @@ integer(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # normal
 
 <!-- TODO-START
@@ -185,7 +179,6 @@ normal(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # number
 
@@ -213,7 +206,6 @@ number(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # object
 
 <!-- TODO-START
@@ -239,7 +231,6 @@ object(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # string
 

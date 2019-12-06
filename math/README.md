@@ -24,7 +24,6 @@ add(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # average
 
 <!-- TODO-START
@@ -50,7 +49,6 @@ average(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # ceilToNearestPowerOfTwo
 
@@ -78,7 +76,6 @@ ceilToNearestPowerOfTwo(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # clamp
 
 <!-- TODO-START
@@ -104,7 +101,6 @@ clamp(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # clampNormal
 
@@ -132,7 +128,6 @@ clampNormal(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # clampPercentage
 
 <!-- TODO-START
@@ -158,7 +153,6 @@ clampPercentage(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # delta
 
@@ -186,7 +180,6 @@ delta(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # inRectangleRange
 
 <!-- TODO-START
@@ -212,7 +205,6 @@ inRectangleRange(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # lerp
 
@@ -240,7 +232,6 @@ lerp(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # maximumBy
 
 <!-- TODO-START
@@ -266,7 +257,6 @@ maximumBy(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # median
 
@@ -294,7 +284,6 @@ median(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # minMax
 
 <!-- TODO-START
@@ -320,7 +309,6 @@ minMax(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # safeNormalize
 
@@ -348,7 +336,6 @@ safeNormalize(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # sameSign
 
 <!-- TODO-START
@@ -375,7 +362,6 @@ sameSign(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # standardDeviation
 
 <!-- TODO-START
@@ -401,7 +387,6 @@ standardDeviation(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # subtract
 

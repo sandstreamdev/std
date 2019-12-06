@@ -24,7 +24,6 @@ compose(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # constant
 
 <!-- TODO-START
@@ -50,7 +49,6 @@ constant(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # identity
 
@@ -78,7 +76,6 @@ identity(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # memoize
 
 <!-- TODO-START
@@ -104,7 +101,6 @@ memoize(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # memoizeShallow
 
@@ -132,7 +128,6 @@ memoizeShallow(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # memoizeWith
 
 <!-- TODO-START
@@ -158,7 +153,6 @@ memoizeWith(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # noOp
 
@@ -186,7 +180,6 @@ noOp(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # not
 
 <!-- TODO-START
@@ -212,7 +205,6 @@ not(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # pipe
 
@@ -240,7 +232,6 @@ pipe(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # when
 
 <!-- TODO-START
@@ -266,7 +257,6 @@ when(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # whenTrue
 

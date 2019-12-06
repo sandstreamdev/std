@@ -24,7 +24,6 @@ byDateWithFallback(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # clamp
 
 <!-- TODO-START
@@ -50,7 +49,6 @@ clamp(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # dateDiff
 
@@ -78,7 +76,6 @@ dateDiff(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # dateInRange
 
 <!-- TODO-START
@@ -104,7 +101,6 @@ dateInRange(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # dayRange
 
@@ -132,7 +128,6 @@ dayRange(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # daysInMonths
 
 <!-- TODO-START
@@ -158,7 +153,6 @@ daysInMonths(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # daysInYear
 
@@ -186,7 +180,6 @@ daysInYear(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # displayMonth
 
 <!-- TODO-START
@@ -212,7 +205,6 @@ displayMonth(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # displayTime
 
@@ -240,7 +232,6 @@ displayTime(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # endOfDay
 
 <!-- TODO-START
@@ -266,7 +257,6 @@ endOfDay(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # formatDate
 
@@ -294,7 +284,6 @@ formatDate(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # formatDateTime
 
 <!-- TODO-START
@@ -320,7 +309,6 @@ formatDateTime(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # formatDisplayDate
 
@@ -348,7 +336,6 @@ formatDisplayDate(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # formatDuration
 
 <!-- TODO-START
@@ -374,7 +361,6 @@ formatDuration(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # formatTime
 
@@ -402,7 +388,6 @@ formatTime(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # fromDays
 
 <!-- TODO-START
@@ -428,7 +413,6 @@ fromDays(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # fromHours
 
@@ -456,7 +440,6 @@ fromHours(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # fromMinutes
 
 <!-- TODO-START
@@ -482,7 +465,6 @@ fromMinutes(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # fromSeconds
 
@@ -510,7 +492,6 @@ fromSeconds(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # joinDateTime
 
 <!-- TODO-START
@@ -536,7 +517,6 @@ joinDateTime(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # leapYear
 
@@ -564,7 +544,6 @@ leapYear(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # monthNames
 
 <!-- TODO-START
@@ -590,7 +569,6 @@ monthNames(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # offsetByBit
 
@@ -618,7 +596,6 @@ offsetByBit(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # parseHourMinutePair
 
 <!-- TODO-START
@@ -644,7 +621,6 @@ parseHourMinutePair(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # splitDateTime
 
@@ -672,7 +648,6 @@ splitDateTime(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # startOfDay
 
 <!-- TODO-START
@@ -698,7 +673,6 @@ startOfDay(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # subtractDays
 
@@ -726,7 +700,6 @@ subtractDays(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # toDate
 
 <!-- TODO-START
@@ -752,7 +725,6 @@ toDate(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # toDates
 
@@ -780,7 +752,6 @@ toDates(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # toDays
 
 <!-- TODO-START
@@ -806,7 +777,6 @@ toDays(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # toHours
 
@@ -834,7 +804,6 @@ toHours(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # toISO
 
 <!-- TODO-START
@@ -860,7 +829,6 @@ toISO(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # toISOFromLocalDateTime
 
@@ -888,7 +856,6 @@ toISOFromLocalDateTime(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # toLocalDateTime
 
 <!-- TODO-START
@@ -914,7 +881,6 @@ toLocalDateTime(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # toMinutes
 
@@ -942,7 +908,6 @@ toMinutes(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # toSeconds
 
 <!-- TODO-START
@@ -968,7 +933,6 @@ toSeconds(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # valid
 

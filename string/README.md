@@ -24,7 +24,6 @@ containsWhitespace(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # empty
 
 <!-- TODO-START
@@ -50,7 +49,6 @@ empty(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # firstToLower
 
@@ -78,7 +76,6 @@ firstToLower(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # firstToUpper
 
 <!-- TODO-START
@@ -104,7 +101,6 @@ firstToUpper(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # includes
 
@@ -132,7 +128,6 @@ includes(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # nbsp
 
 <!-- TODO-START
@@ -159,7 +154,6 @@ nbsp(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # nonEmpty
 
 <!-- TODO-START
@@ -185,7 +179,6 @@ nonEmpty(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # startsWith
 

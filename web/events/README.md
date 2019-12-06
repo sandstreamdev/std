@@ -24,7 +24,6 @@ cancel(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # openInNewTabIntent
 
 <!-- TODO-START
@@ -51,7 +50,6 @@ openInNewTabIntent(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # prevent
 
 <!-- TODO-START
@@ -77,7 +75,6 @@ prevent(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # stop
 

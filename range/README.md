@@ -24,7 +24,6 @@ empty(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # equals
 
 <!-- TODO-START
@@ -51,7 +50,6 @@ equals(); // ⇒ TODO
 TODO: List questions that may this function answers.
 TODO-END -->
 
-
 # length
 
 <!-- TODO-START
@@ -77,7 +75,6 @@ length(); // ⇒ TODO
 
 TODO: List questions that may this function answers.
 TODO-END -->
-
 
 # split
 
