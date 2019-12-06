@@ -1,5 +1,6 @@
 # object
 
+<!-- TODO-START
 TODO: Fill short description here.
 
 ## Type signature
@@ -21,3 +22,4 @@ object(); // ⇒ TODO
 ## Questions
 
 TODO: List questions that may this function answers.
+TODO-END -->

@@ -1,15 +1,14 @@
 # are
 
-TODO: Fill short description here.
+Checks if given arguments are all `Arrays`.
 
 ## Type signature
 
-TODO: Fill type signature down below.
-
 ```
-any ⇒ any
+(...xs: any[]) => boolean
 ```
 
+<!-- TODO-START
 ## Examples
 
 TODO: List at least one example down below.
@@ -21,3 +20,4 @@ are(); // ⇒ TODO
 ## Questions
 
 TODO: List questions that may this function answers.
+TODO-END -->

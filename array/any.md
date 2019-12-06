@@ -5,7 +5,7 @@ Checks if the given array is not empty (contains at least one element).
 ## Type signature
 
 ```
-any[] ⇒ boolean
+(xs: any[]) => boolean
 ```
 
 ## Examples
