@@ -10,7 +10,7 @@
   "sideEffects": false,
   "scripts": {
     "addExtensions": "node --experimental-modules addExtensions.js",
-    "build": "npm run regenerate && npm run compile && npm run addExtensions && npm run rollup && npm run fix",
+    "build": "npm run regenerate && npm run compile && npm run addExtensions && npm run rollup && npm run document && npm run readme && npm run fix",
     "compile": "node --experimental-modules compile.js",
     "document": "node --experimental-modules document.js",
     "fix": "npm run lint:fix && npm run prettier:fix && npm run lint:fix",
