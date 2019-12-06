@@ -9,6 +9,7 @@ const template = name =>
   `
 # ${name}
 
+<!-- TODO-START
 TODO: Fill short description here.
 
 ## Type signature
@@ -30,6 +31,7 @@ ${name}(); // ⇒ TODO
 ## Questions
 
 TODO: List questions that may this function answers.
+TODO-END -->
 `.trimLeft();
 
 const [ignoredFiles, ignoredDirectories] = ignored;
