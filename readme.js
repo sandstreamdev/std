@@ -1,6 +1,6 @@
 /* eslint-env node */
 // eslint-disable console
-import { promises } from "fs";
+import { promises, existsSync } from "fs";
 import path from "path";
 
 import ignored from "./ignore.js";
@@ -87,6 +87,34 @@ const main = async (cwd, level = 0) => {
   const composedReadme = readmes.join("\n\n");
 
   const readmePath = path.join(cwd, "README.md");
+
+  if (existsSync(readmePath)) {
+    const contents = await readFileAsync(readmePath, "utf-8");
+
+    const prefix = "<!-- DOCS:START - Do not remove or modify this section -->";
+    const postfix = "<!-- DOCS:END -->";
+
+    const prefixIndex = contents.indexOf(prefix);
+    const postfixIndex = contents.indexOf(postfix);
+
+    if (prefixIndex !== -1 && postfixIndex !== -1) {
+      const before = contents.substr(0, prefixIndex);
+      const after = contents.substr(postfixIndex + postfix.length);
+
+      const padding = "".padEnd(2, "#");
+
+      const withAdjustedLevels = composedReadme.replace(
+        /(#+)/gi,
+        `${padding}$1`
+      );
+
+      const replaced = `${before}${prefix}\n${withAdjustedLevels.trim()}\n${postfix}${after}`;
+
+      await writeFileAsync(readmePath, replaced, "utf-8");
+
+      return;
+    }
+  }
 
   await writeFileAsync(readmePath, composedReadme, "utf-8");
 };
