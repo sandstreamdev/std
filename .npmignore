@@ -1,8 +1,8 @@
-.coverage
-.github
-.git
 .all-contributorsrc
+.coverage
 .eslintrc.js
+.git
+.github
 .gitignore
 .npmignore
 .prettierignore
@@ -10,7 +10,9 @@
 *.test.ts
 addExtensions.js
 compile.js
+document.js
 ignore.js
 package-lock.json
+readme.js
 regenerate.js
 rollup.config.js
