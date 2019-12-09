@@ -19,6 +19,7 @@ import map from "./map";
 import mapEntries from "./mapEntries";
 import mapKeys from "./mapKeys";
 import mapValues from "./mapValues";
+import merge from "./merge";
 import none from "./none";
 import sort from "./sort";
 
@@ -44,6 +45,7 @@ export {
   mapEntries,
   mapKeys,
   mapValues,
+  merge,
   none,
   sort
 };
@@ -70,6 +72,7 @@ export default {
   mapEntries,
   mapKeys,
   mapValues,
+  merge,
   none,
   sort
 };
