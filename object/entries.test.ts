@@ -3,7 +3,7 @@
 import entries from "./entries.ts";
 
 describe("entries", () => {
-it.skip("TODO", () => {
-expect(entries()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(entries()).toBeDefined();
+  });
 });

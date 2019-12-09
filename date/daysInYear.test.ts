@@ -3,7 +3,7 @@
 import daysInYear from "./daysInYear.ts";
 
 describe("daysInYear", () => {
-it.skip("TODO", () => {
-expect(daysInYear()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(daysInYear()).toBeDefined();
+  });
 });

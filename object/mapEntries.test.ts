@@ -3,7 +3,7 @@
 import mapEntries from "./mapEntries.ts";
 
 describe("mapEntries", () => {
-it.skip("TODO", () => {
-expect(mapEntries()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(mapEntries()).toBeDefined();
+  });
 });

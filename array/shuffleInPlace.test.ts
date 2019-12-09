@@ -3,7 +3,7 @@
 import shuffleInPlace from "./shuffleInPlace.ts";
 
 describe("shuffleInPlace", () => {
-it.skip("TODO", () => {
-expect(shuffleInPlace()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(shuffleInPlace()).toBeDefined();
+  });
 });

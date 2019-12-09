@@ -3,7 +3,7 @@
 import duplicates from "./duplicates.ts";
 
 describe("duplicates", () => {
-it.skip("TODO", () => {
-expect(duplicates()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(duplicates()).toBeDefined();
+  });
 });

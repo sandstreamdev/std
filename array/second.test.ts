@@ -3,7 +3,7 @@
 import second from "./second.ts";
 
 describe("second", () => {
-it.skip("TODO", () => {
-expect(second()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(second()).toBeDefined();
+  });
 });

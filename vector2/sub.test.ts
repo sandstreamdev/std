@@ -3,7 +3,7 @@
 import sub from "./sub.ts";
 
 describe("sub", () => {
-it.skip("TODO", () => {
-expect(sub()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(sub()).toBeDefined();
+  });
 });

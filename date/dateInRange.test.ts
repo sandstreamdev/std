@@ -3,7 +3,7 @@
 import dateInRange from "./dateInRange.ts";
 
 describe("dateInRange", () => {
-it.skip("TODO", () => {
-expect(dateInRange()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(dateInRange()).toBeDefined();
+  });
 });

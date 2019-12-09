@@ -10,27 +10,27 @@ import object from "./object";
 import string from "./string";
 
 export {
-array,
-byte,
-date,
-defined,
-_function,
-integer,
-normal,
-number,
-object,
-string
+  array,
+  byte,
+  date,
+  defined,
+  _function,
+  integer,
+  normal,
+  number,
+  object,
+  string
 };
 
 export default {
-array,
-byte,
-date,
-defined,
-_function,
-integer,
-normal,
-number,
-object,
-string
+  array,
+  byte,
+  date,
+  defined,
+  _function,
+  integer,
+  normal,
+  number,
+  object,
+  string
 };

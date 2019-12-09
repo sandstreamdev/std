@@ -3,7 +3,7 @@
 import memoize from "./memoize.ts";
 
 describe("memoize", () => {
-it.skip("TODO", () => {
-expect(memoize()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(memoize()).toBeDefined();
+  });
 });

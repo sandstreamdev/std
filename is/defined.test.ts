@@ -3,7 +3,7 @@
 import defined from "./defined.ts";
 
 describe("defined", () => {
-it.skip("TODO", () => {
-expect(defined()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(defined()).toBeDefined();
+  });
 });

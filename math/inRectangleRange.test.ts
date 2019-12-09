@@ -3,7 +3,7 @@
 import inRectangleRange from "./inRectangleRange.ts";
 
 describe("inRectangleRange", () => {
-it.skip("TODO", () => {
-expect(inRectangleRange()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(inRectangleRange()).toBeDefined();
+  });
 });

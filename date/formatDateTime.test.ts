@@ -3,7 +3,7 @@
 import formatDateTime from "./formatDateTime.ts";
 
 describe("formatDateTime", () => {
-it.skip("TODO", () => {
-expect(formatDateTime()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(formatDateTime()).toBeDefined();
+  });
 });

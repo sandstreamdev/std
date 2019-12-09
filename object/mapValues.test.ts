@@ -3,7 +3,7 @@
 import mapValues from "./mapValues.ts";
 
 describe("mapValues", () => {
-it.skip("TODO", () => {
-expect(mapValues()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(mapValues()).toBeDefined();
+  });
 });

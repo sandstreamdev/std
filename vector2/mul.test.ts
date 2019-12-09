@@ -3,7 +3,7 @@
 import mul from "./mul.ts";
 
 describe("mul", () => {
-it.skip("TODO", () => {
-expect(mul()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(mul()).toBeDefined();
+  });
 });

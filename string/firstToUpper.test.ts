@@ -3,7 +3,7 @@
 import firstToUpper from "./firstToUpper.ts";
 
 describe("firstToUpper", () => {
-it.skip("TODO", () => {
-expect(firstToUpper()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(firstToUpper()).toBeDefined();
+  });
 });

@@ -3,7 +3,7 @@
 import repeat from "./repeat.ts";
 
 describe("repeat", () => {
-it.skip("TODO", () => {
-expect(repeat()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(repeat()).toBeDefined();
+  });
 });

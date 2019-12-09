@@ -1,14 +1,14 @@
 /* eslint-env browser */
 export default (f, wait) => {
-let timeout;
+  let timeout;
 
-return (...args) => {
-const resolve = () => {
-timeout = null;
-f(...args);
-};
+  return (...args) => {
+    const resolve = () => {
+      timeout = null;
+      f(...args);
+    };
 
-clearTimeout(timeout);
-timeout = setTimeout(resolve, wait);
-};
+    clearTimeout(timeout);
+    timeout = setTimeout(resolve, wait);
+  };
 };

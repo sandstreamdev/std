@@ -3,7 +3,7 @@
 import parse from "./parse.ts";
 
 describe("parse", () => {
-it.skip("TODO", () => {
-expect(parse()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(parse()).toBeDefined();
+  });
 });

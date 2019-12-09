@@ -3,7 +3,7 @@
 import pipe from "./pipe.ts";
 
 describe("pipe", () => {
-it.skip("TODO", () => {
-expect(pipe()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(pipe()).toBeDefined();
+  });
 });

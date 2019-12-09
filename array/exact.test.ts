@@ -3,7 +3,7 @@
 import exact from "./exact.ts";
 
 describe("exact", () => {
-it.skip("TODO", () => {
-expect(exact()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(exact()).toBeDefined();
+  });
 });

@@ -3,7 +3,7 @@
 import secondToLast from "./secondToLast.ts";
 
 describe("secondToLast", () => {
-it.skip("TODO", () => {
-expect(secondToLast()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(secondToLast()).toBeDefined();
+  });
 });

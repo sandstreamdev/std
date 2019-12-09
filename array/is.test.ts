@@ -3,7 +3,7 @@
 import is from "./is.ts";
 
 describe("is", () => {
-it.skip("TODO", () => {
-expect(is()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(is()).toBeDefined();
+  });
 });

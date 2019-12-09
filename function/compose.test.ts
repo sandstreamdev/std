@@ -3,7 +3,7 @@
 import compose from "./compose.ts";
 
 describe("compose", () => {
-it.skip("TODO", () => {
-expect(compose()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(compose()).toBeDefined();
+  });
 });

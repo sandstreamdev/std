@@ -11,29 +11,29 @@ import when from "./when";
 import whenTrue from "./whenTrue";
 
 export {
-compose,
-constant,
-identity,
-memoize,
-memoizeShallow,
-memoizeWith,
-noOp,
-not,
-pipe,
-when,
-whenTrue
+  compose,
+  constant,
+  identity,
+  memoize,
+  memoizeShallow,
+  memoizeWith,
+  noOp,
+  not,
+  pipe,
+  when,
+  whenTrue
 };
 
 export default {
-compose,
-constant,
-identity,
-memoize,
-memoizeShallow,
-memoizeWith,
-noOp,
-not,
-pipe,
-when,
-whenTrue
+  compose,
+  constant,
+  identity,
+  memoize,
+  memoizeShallow,
+  memoizeWith,
+  noOp,
+  not,
+  pipe,
+  when,
+  whenTrue
 };

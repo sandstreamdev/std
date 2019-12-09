@@ -1,5 +1,5 @@
 export default event => {
-event.preventDefault();
+  event.preventDefault();
 
-return false;
+  return false;
 };

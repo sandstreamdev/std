@@ -3,7 +3,7 @@
 import parseHourMinutePair from "./parseHourMinutePair.ts";
 
 describe("parseHourMinutePair", () => {
-it.skip("TODO", () => {
-expect(parseHourMinutePair()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(parseHourMinutePair()).toBeDefined();
+  });
 });

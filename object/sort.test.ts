@@ -3,7 +3,7 @@
 import sort from "./sort.ts";
 
 describe("sort", () => {
-it.skip("TODO", () => {
-expect(sort()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(sort()).toBeDefined();
+  });
 });

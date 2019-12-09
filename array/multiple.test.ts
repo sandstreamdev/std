@@ -3,7 +3,7 @@
 import multiple from "./multiple.ts";
 
 describe("multiple", () => {
-it.skip("TODO", () => {
-expect(multiple()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(multiple()).toBeDefined();
+  });
 });

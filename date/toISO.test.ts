@@ -3,7 +3,7 @@
 import toISO from "./toISO.ts";
 
 describe("toISO", () => {
-it.skip("TODO", () => {
-expect(toISO()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(toISO()).toBeDefined();
+  });
 });

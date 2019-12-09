@@ -3,7 +3,7 @@
 import findValue from "./findValue.ts";
 
 describe("findValue", () => {
-it.skip("TODO", () => {
-expect(findValue()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(findValue()).toBeDefined();
+  });
 });

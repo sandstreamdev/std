@@ -1,6 +1,6 @@
 export default selector => xs =>
-xs.reduce((acc, x) => {
-const key = selector(x);
+  xs.reduce((acc, x) => {
+    const key = selector(x);
 
-return { ...acc, [key]: [...(acc[key] || []), x] };
-}, {});
+    return { ...acc, [key]: [...(acc[key] || []), x] };
+  }, {});

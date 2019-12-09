@@ -3,5 +3,5 @@
 import std from "./index.js";
 
 test("the module be defined", () => {
-expect(std).toBeDefined();
+  expect(std).toBeDefined();
 });

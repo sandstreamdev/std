@@ -1,5 +1,5 @@
 export default (predicate, fallback) => xs => {
-const target = xs.find(predicate);
+  const target = xs.find(predicate);
 
-return target !== undefined ? target : fallback;
+  return target !== undefined ? target : fallback;
 };

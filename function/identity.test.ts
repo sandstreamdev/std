@@ -3,7 +3,7 @@
 import identity from "./identity.ts";
 
 describe("identity", () => {
-it.skip("TODO", () => {
-expect(identity()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(identity()).toBeDefined();
+  });
 });

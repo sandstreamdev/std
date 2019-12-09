@@ -3,7 +3,7 @@
 import openInNewTabIntent from "./openInNewTabIntent.ts";
 
 describe("openInNewTabIntent", () => {
-it.skip("TODO", () => {
-expect(openInNewTabIntent()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(openInNewTabIntent()).toBeDefined();
+  });
 });

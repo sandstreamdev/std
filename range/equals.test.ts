@@ -3,7 +3,7 @@
 import equals from "./equals.ts";
 
 describe("equals", () => {
-it.skip("TODO", () => {
-expect(equals()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(equals()).toBeDefined();
+  });
 });

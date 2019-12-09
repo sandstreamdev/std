@@ -3,7 +3,7 @@
 import apply from "./apply.ts";
 
 describe("apply", () => {
-it.skip("TODO", () => {
-expect(apply()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(apply()).toBeDefined();
+  });
 });

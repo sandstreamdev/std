@@ -1,15 +1,15 @@
 export default equals => f => {
-let memoized = undefined;
-let memoizedArgs = undefined;
+  let memoized = undefined;
+  let memoizedArgs = undefined;
 
-return (...args) => {
-if (memoized && equals(args, memoizedArgs)) {
-return memoized;
-}
+  return (...args) => {
+    if (memoized && equals(args, memoizedArgs)) {
+      return memoized;
+    }
 
-memoized = f(...args);
-memoizedArgs = args;
+    memoized = f(...args);
+    memoizedArgs = args;
 
-return memoized;
-};
+    return memoized;
+  };
 };

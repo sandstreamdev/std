@@ -3,7 +3,7 @@
 import debounce from "./debounce.ts";
 
 describe("debounce", () => {
-it.skip("TODO", () => {
-expect(debounce()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(debounce()).toBeDefined();
+  });
 });

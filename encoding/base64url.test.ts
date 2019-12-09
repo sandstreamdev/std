@@ -3,7 +3,7 @@
 import base64url from "./base64url.ts";
 
 describe("base64url", () => {
-it.skip("TODO", () => {
-expect(base64url()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(base64url()).toBeDefined();
+  });
 });

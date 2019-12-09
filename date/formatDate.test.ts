@@ -3,7 +3,7 @@
 import formatDate from "./formatDate.ts";
 
 describe("formatDate", () => {
-it.skip("TODO", () => {
-expect(formatDate()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(formatDate()).toBeDefined();
+  });
 });

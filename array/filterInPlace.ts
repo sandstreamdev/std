@@ -1,18 +1,18 @@
 export default f => xs => {
-let i = 0;
-let j = 0;
+  let i = 0;
+  let j = 0;
 
-while (i < xs.length) {
-const value = xs[i];
+  while (i < xs.length) {
+    const value = xs[i];
 
-if (f(value, i, xs)) {
-xs[j++] = value;
-}
+    if (f(value, i, xs)) {
+      xs[j++] = value;
+    }
 
-i++;
-}
+    i++;
+  }
 
-xs.length = j;
+  xs.length = j;
 
-return xs;
+  return xs;
 };

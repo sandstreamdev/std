@@ -3,7 +3,7 @@
 import filterInPlace from "./filterInPlace.ts";
 
 describe("filterInPlace", () => {
-it.skip("TODO", () => {
-expect(filterInPlace()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(filterInPlace()).toBeDefined();
+  });
 });

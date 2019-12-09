@@ -1,5 +1,5 @@
 export default (xs, ys) => {
-const zs = new Set(ys);
+  const zs = new Set(ys);
 
-return xs.filter(x => !zs.has(x));
+  return xs.filter(x => !zs.has(x));
 };

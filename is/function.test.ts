@@ -3,7 +3,7 @@
 import _function from "./function.ts";
 
 describe("function", () => {
-it.skip("TODO", () => {
-expect(_function()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(_function()).toBeDefined();
+  });
 });

@@ -3,7 +3,7 @@
 import string from "./string.ts";
 
 describe("string", () => {
-it.skip("TODO", () => {
-expect(string()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(string()).toBeDefined();
+  });
 });

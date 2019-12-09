@@ -3,7 +3,7 @@
 import startOfDay from "./startOfDay.ts";
 
 describe("startOfDay", () => {
-it.skip("TODO", () => {
-expect(startOfDay()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(startOfDay()).toBeDefined();
+  });
 });

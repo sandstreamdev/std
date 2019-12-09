@@ -3,7 +3,7 @@
 import byDateWithFallback from "./byDateWithFallback.ts";
 
 describe("byDateWithFallback", () => {
-it.skip("TODO", () => {
-expect(byDateWithFallback()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(byDateWithFallback()).toBeDefined();
+  });
 });

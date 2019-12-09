@@ -3,7 +3,7 @@
 import safeNormalize from "./safeNormalize.ts";
 
 describe("safeNormalize", () => {
-it.skip("TODO", () => {
-expect(safeNormalize()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(safeNormalize()).toBeDefined();
+  });
 });

@@ -3,7 +3,7 @@
 import range from "./range.ts";
 
 describe("range", () => {
-it.skip("TODO", () => {
-expect(range()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(range()).toBeDefined();
+  });
 });

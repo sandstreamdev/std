@@ -3,7 +3,7 @@
 import reverseIf from "./reverseIf.ts";
 
 describe("reverseIf", () => {
-it.skip("TODO", () => {
-expect(reverseIf()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(reverseIf()).toBeDefined();
+  });
 });

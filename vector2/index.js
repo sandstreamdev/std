@@ -14,35 +14,35 @@ import transform from "./transform.js";
 import translate from "./translate.js";
 
 export {
-add,
-convertSpace,
-cross,
-dot,
-length,
-mul,
-multiply,
-normalize,
-reflect,
-rotate,
-scale,
-sub,
-transform,
-translate
+  add,
+  convertSpace,
+  cross,
+  dot,
+  length,
+  mul,
+  multiply,
+  normalize,
+  reflect,
+  rotate,
+  scale,
+  sub,
+  transform,
+  translate
 };
 
 export default {
-add,
-convertSpace,
-cross,
-dot,
-length,
-mul,
-multiply,
-normalize,
-reflect,
-rotate,
-scale,
-sub,
-transform,
-translate
+  add,
+  convertSpace,
+  cross,
+  dot,
+  length,
+  mul,
+  multiply,
+  normalize,
+  reflect,
+  rotate,
+  scale,
+  sub,
+  transform,
+  translate
 };

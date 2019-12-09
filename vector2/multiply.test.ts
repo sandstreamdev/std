@@ -3,7 +3,7 @@
 import multiply from "./multiply.ts";
 
 describe("multiply", () => {
-it.skip("TODO", () => {
-expect(multiply()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(multiply()).toBeDefined();
+  });
 });

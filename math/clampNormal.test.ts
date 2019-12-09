@@ -3,7 +3,7 @@
 import clampNormal from "./clampNormal.ts";
 
 describe("clampNormal", () => {
-it.skip("TODO", () => {
-expect(clampNormal()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(clampNormal()).toBeDefined();
+  });
 });

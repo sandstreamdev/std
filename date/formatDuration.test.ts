@@ -3,7 +3,7 @@
 import formatDuration from "./formatDuration.ts";
 
 describe("formatDuration", () => {
-it.skip("TODO", () => {
-expect(formatDuration()).toBeDefined();
-});
+  it.skip("TODO", () => {
+    expect(formatDuration()).toBeDefined();
+  });
 });
