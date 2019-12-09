@@ -1,12 +1,14 @@
+/* eslint-env jest */
+// @ts-ignore ambiguous import
 import merge from "./merge.js";
 
 describe("merge", () => {
   it("should merge two objects", () => {
-    const a: any = {};
-    const b: any = {};
+    const a: object = {};
+    const b: any = { a: 1 };
 
     const received: any = merge(a, b);
-    const expected: any = {};
+    const expected: any = { a: 1 };
 
     expect(received).toEqual(expected);
   });

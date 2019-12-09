@@ -1,15 +1,14 @@
+import isObject from "../is/object.js";
+
 const merge = (...args) => {
   const target = {};
 
   const merger = object => {
     for (const key in object) {
-      // eslint-disable-next-line no-prototype-builtins
-      if (object.hasOwnProperty(key)) {
-        if (Object.prototype.toString.call(object[key]) === "[object Object]") {
-          target[key] = merge(target[key], object[key]);
-        } else {
-          target[key] = object[key];
-        }
+      if (isObject(object[key])) {
+        target[key] = merge(target[key], object[key]);
+      } else {
+        target[key] = object[key];
       }
     }
   };

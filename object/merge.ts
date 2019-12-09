@@ -1,17 +1,14 @@
-const merge = (...args): any => {
-  const result: any = {};
+import isObject from "../is/object.js";
+
+const merge = (...args) => {
+  const target: any = {};
 
   const merger = (object: any): any => {
     for (const key in object) {
-      if (object.hasOwnProperty(key)) {
-        const isObject: boolean =
-          Object.prototype.toString.call(object[key]) === "[object Object]";
-
-        if (isObject) {
-          result[key] = merge(result[key], object[key]);
-        } else {
-          result[key] = object[key];
-        }
+      if (isObject(object[key])) {
+        target[key] = merge(target[key], object[key]);
+      } else {
+        target[key] = object[key];
       }
     }
   };
@@ -20,7 +17,7 @@ const merge = (...args): any => {
     merger(args[i]);
   }
 
-  return result;
+  return target;
 };
 
 export default merge;
