@@ -14,58 +14,61 @@ import ignored from "./ignore.js";
 const [, ignoredDirectories] = ignored;
 
 const {
-  readFile: readFileAsync,
-  writeFile: writeFileAsync,
-  readdir: readDirectoryAsync
+readFile: readFileAsync,
+writeFile: writeFileAsync,
+readdir: readDirectoryAsync
 } = promises;
 
 const [, , cwd = process.cwd()] = process.argv;
 const root = cwd;
 
 const main = async cwd => {
-  console.log(`Normalizing files in ${cwd}...`);
+console.log(`Normalizing files in ${cwd}...`);
 
-  const entries = await readDirectoryAsync(cwd, { withFileTypes: true });
+const entries = await readDirectoryAsync(cwd, { withFileTypes: true });
 
-  const files = entries.filter(x => x.isFile()).map(x => x.name);
+const files = entries.filter(x => x.isFile()).map(x => x.name);
 
-  const directories = entries
-    .filter(x => x.isDirectory())
-    .map(x => x.name)
-    .filter(x => !ignoredDirectories.includes(x));
+const directories = entries
+.filter(x => x.isDirectory())
+.map(x => x.name)
+.filter(x => !ignoredDirectories.includes(x));
 
-  console.log({ directories });
+console.log({ directories });
 
-  for (const directory of directories) {
-    await main(path.join(cwd, directory));
-  }
+for (const directory of directories) {
+await main(path.join(cwd, directory));
+}
 
-  const processFile = async file => {
-    const filePath = path.join(cwd, file);
-    const relativeFilePath = path.relative(root, filePath);
+const processFile = async file => {
+const filePath = path.join(cwd, file);
+const relativeFilePath = path.relative(root, filePath);
 
-    try {
-      console.log(`Normalizing ${relativeFilePath}...`);
+try {
+console.log(`Normalizing ${relativeFilePath}...`);
 
-      const contents = await readFileAsync(filePath, "utf-8");
+const contents = await readFileAsync(filePath, "utf-8");
 
-      const normalized = contents.replace(/\n/, "\r\n");
+const normalized = contents
+.split("\n")
+.map(x => x.trim())
+.join("\r\n");
 
-      await writeFileAsync(filePath, normalized);
-    } catch (error) {
-      console.error(error);
+await writeFileAsync(filePath, normalized, "utf-8");
+} catch (error) {
+console.error(error);
 
-      process.exit(1);
-    }
-  };
+process.exit(1);
+}
+};
 
-  const queue = new PQueue({ concurrency: CONCURRENCY });
+const queue = new PQueue({ concurrency: CONCURRENCY });
 
-  for (const file of files) {
-    queue.add(() => processFile(file));
-  }
+for (const file of files) {
+queue.add(() => processFile(file));
+}
 
-  await queue.onIdle();
+await queue.onIdle();
 };
 
 main(cwd);
