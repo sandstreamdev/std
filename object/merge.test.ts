@@ -4,42 +4,39 @@ import merge from "./merge.ts";
 
 describe("merge", () => {
   it("should merge with empty object", () => {
-    const a: object = {};
-    const b: object = { a: 1 };
+    const a = { a: 1 };
+
+    expect(merge(a, {})).toEqual(a);
+    expect(merge({}, a)).toEqual(a);
+  });
+
+  it("should override non-object properties", () => {
+    const a = { a: 1, b: 3 };
+    const b = { b: 7 };
 
     const received = merge(a, b);
-    const expected: object = { a: 1 };
+    const expected = { a: 1, b: 7 };
 
     expect(received).toEqual(expected);
   });
 
-  it("should merge and override the same property", () => {
-    const a: object = { a: 1, b: 3 };
-    const b: object = { b: 7 };
+  it("should merge deeply nested objects", () => {
+    const a = { a: 1, b: { c: 3 } };
+    const b = { b: { d: 8 } };
 
     const received = merge(a, b);
-    const expected: object = { a: 1, b: 7 };
+    const expected = { a: 1, b: { c: 3, d: 8 } };
 
     expect(received).toEqual(expected);
   });
 
-  it("should merge properties which are objects", () => {
-    const a: object = { a: 1, b: { c: 3 } };
-    const b: object = { b: { d: 8 } };
-
-    const received = merge(a, b);
-    const expected: object = { a: 1, b: { c: 3, d: 8 } };
-
-    expect(received).toEqual(expected);
-  });
-
-  it("should merge two objects with different types of properties", () => {
-    const a: object = { a: "a", b: 2, c: true };
-    const b: object = { d: { f: [1] }, e: { g: { h: {} } } };
+  it("should handles only object-merges but keeps non-conflicting values intact", () => {
+    const a = { a: "a", b: 2, c: true };
+    const b = { d: { f: [1] }, e: { g: { h: {} } } };
 
     const received = merge(a, b);
 
-    const expected: object = {
+    const expected = {
       a: "a",
       b: 2,
       c: true,
@@ -50,8 +47,8 @@ describe("merge", () => {
     expect(received).toEqual(expected);
   });
 
-  it("should merge two objects with different types of properties", () => {
-    const a: object = {
+  it("should keeps null/undefined values", () => {
+    const a = {
       a: {
         a: {
           a: true
@@ -68,7 +65,7 @@ describe("merge", () => {
       }
     };
 
-    const b: object = {
+    const b = {
       a: {
         a: {
           b: [1]
@@ -91,7 +88,7 @@ describe("merge", () => {
 
     const received = merge(a, b);
 
-    const expected: object = {
+    const expected = {
       a: {
         a: {
           a: true,
