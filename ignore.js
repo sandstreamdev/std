@@ -20,7 +20,7 @@ const ignoredFiles = [
   "index.umd.js",
   "jest.config.js",
   "LICENSE",
-  "normalize-line-endings.js",
+  "normalizeLineEndings.js",
   "package-lock.json",
   "package.json",
   "readme.js",

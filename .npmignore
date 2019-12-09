@@ -16,7 +16,7 @@ addExtensions.js
 compile.js
 document.js
 ignore.js
-normalize-line-endings.js
+normalizeLineEndings.js
 package-lock.json
 readme.js
 regenerate.js
