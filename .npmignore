@@ -11,7 +11,7 @@
 addExtensions.js
 compile.js
 ignore.js
-normalize.js
+normalize-line-endings.js
 package-lock.json
 regenerate.js
 rollup.config.js

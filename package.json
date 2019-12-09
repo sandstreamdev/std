@@ -16,7 +16,7 @@
     "jest": "jest --coverage --watchAll=false",
     "lint": "eslint \"**/*.{js,ts}\" --debug",
     "lint:fix": "npm run lint -- --fix",
-    "normalize": "node --experimental-modules normalize.js",
+    "normalize": "node --experimental-modules normalize-line-endings.js",
     "prepare": "npm run build",
     "prettier": "prettier \"**/*.{js,json,md,ts}\"",
     "prettier:check": "npm run prettier -- --check",

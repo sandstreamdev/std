@@ -1,4 +1,4 @@
-import length from "./length";
+import length from "./length.js";
 
 export default vector => {
   const magnitude = length(vector);

@@ -1,6 +1,6 @@
 # merge
 
-Merges two or more objects
+Merges two objects deeply.
 
 ## Type signature
 
