@@ -1,4 +1,4 @@
-# any
+# merge
 
 Merges two or more objects
 
