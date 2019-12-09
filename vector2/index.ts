@@ -1,4 +1,4 @@
-import add from "./add";
+import add from "./add";
 import convertSpace from "./convertSpace";
 import cross from "./cross";
 import dot from "./dot";

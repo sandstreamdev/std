@@ -1,4 +1,4 @@
-import array from "./array";
+import array from "./array";
 import byte from "./byte";
 import date from "./date";
 import defined from "./defined";

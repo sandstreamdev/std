@@ -1,4 +1,4 @@
-import compose from "./compose";
+import compose from "./compose";
 import constant from "./constant";
 import identity from "./identity";
 import memoize from "./memoize";

@@ -1,4 +1,4 @@
-import array from "./array/index";
+import array from "./array/index";
 import async from "./async/index";
 import date from "./date/index";
 import debug from "./debug/index";

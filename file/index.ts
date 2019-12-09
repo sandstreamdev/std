@@ -1,4 +1,4 @@
-import validName from "./validName";
+import validName from "./validName";
 
 export { validName };
 

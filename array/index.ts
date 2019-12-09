@@ -1,4 +1,4 @@
-import any from "./any";
+import any from "./any";
 import are from "./are";
 import difference from "./difference";
 import differs from "./differs";

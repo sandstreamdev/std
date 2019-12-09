@@ -1,4 +1,4 @@
-import add from "./add";
+import add from "./add";
 import average from "./average";
 import ceilToNearestPowerOfTwo from "./ceilToNearestPowerOfTwo";
 import clamp from "./clamp";

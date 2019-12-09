@@ -1,4 +1,4 @@
-import any from "./any";
+import any from "./any";
 import apply from "./apply";
 import empty from "./empty";
 import entries from "./entries";

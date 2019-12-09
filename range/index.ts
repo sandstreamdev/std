@@ -1,4 +1,4 @@
-import empty from "./empty";
+import empty from "./empty";
 import equals from "./equals";
 import length from "./length";
 import split from "./split";

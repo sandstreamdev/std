@@ -1,4 +1,4 @@
-import containsWhitespace from "./containsWhitespace";
+import containsWhitespace from "./containsWhitespace";
 import empty from "./empty";
 import firstToLower from "./firstToLower";
 import firstToUpper from "./firstToUpper";

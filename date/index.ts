@@ -1,4 +1,4 @@
-import byDateWithFallback from "./byDateWithFallback";
+import byDateWithFallback from "./byDateWithFallback";
 import clamp from "./clamp";
 import dateDiff from "./dateDiff";
 import dateInRange from "./dateInRange";

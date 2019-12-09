@@ -1,4 +1,4 @@
-import classNames from "./classNames";
+import classNames from "./classNames";
 import events from "./events/index";
 
 export { classNames, events };
