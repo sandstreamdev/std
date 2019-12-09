@@ -19,6 +19,7 @@ import map from "./map.js";
 import mapEntries from "./mapEntries.js";
 import mapKeys from "./mapKeys.js";
 import mapValues from "./mapValues.js";
+import merge from "./merge.js";
 import none from "./none.js";
 import sort from "./sort.js";
 
@@ -44,6 +45,7 @@ export {
   mapEntries,
   mapKeys,
   mapValues,
+  merge,
   none,
   sort
 };
@@ -70,6 +72,7 @@ export default {
   mapEntries,
   mapKeys,
   mapValues,
+  merge,
   none,
   sort
 };

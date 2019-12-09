@@ -1,24 +1,65 @@
 /* eslint-env jest */
 // @ts-ignore ambiguous import
-import merge from "./merge.js";
+import merge from "./merge.ts";
 
 describe("merge", () => {
   it("should merge two objects", () => {
     const a: object = {};
-    const b: any = { a: 1 };
+    const b: object = { a: 1 };
 
-    const received: any = merge(a, b);
-    const expected: any = { a: 1 };
+    const received: object = merge(a, b);
+    const expected: object = { a: 1 };
 
     expect(received).toEqual(expected);
   });
 
   it("should merge two objects", () => {
-    const a: any = { a: "a", b: 2, c: true };
-    const b: any = { d: { f: [1] }, e: { g: { h: {} } } };
+    const a: object = { a: 1, b: 3 };
+    const b: object = {};
 
-    const received: any = merge(a, b);
-    const expected: any = {
+    const received: object = merge(a, b);
+    const expected: object = { a: 1, b: 3 };
+
+    expect(received).toEqual(expected);
+  });
+
+  it("should merge two objects", () => {
+    const a: object = { a: 1, b: 3 };
+    const b: object = { b: 7 };
+
+    const received: object = merge(a, b);
+    const expected: object = { a: 1, b: 7 };
+
+    expect(received).toEqual(expected);
+  });
+
+  it("should merge two objects", () => {
+    const a: object = { a: 1, b: 3 };
+    const b: object = { b: { d: 8 } };
+
+    const received: object = merge(a, b);
+    const expected: object = { a: 1, b: { d: 8 } };
+
+    expect(received).toEqual(expected);
+  });
+
+  it("should merge two objects", () => {
+    const a: object = { a: 1, b: { c: 3 } };
+    const b: object = { b: { d: 8 } };
+
+    const received: object = merge(a, b);
+    const expected: object = { a: 1, b: { c: 3, d: 8 } };
+
+    expect(received).toEqual(expected);
+  });
+
+  it("should merge two objects", () => {
+    const a: object = { a: "a", b: 2, c: true };
+    const b: object = { d: { f: [1] }, e: { g: { h: {} } } };
+
+    const received: object = merge(a, b);
+
+    const expected: object = {
       a: "a",
       b: 2,
       c: true,
@@ -29,8 +70,8 @@ describe("merge", () => {
     expect(received).toEqual(expected);
   });
 
-  it("should merge three objects", () => {
-    const a: any = {
+  it("should merge two objects", () => {
+    const a: object = {
       a: {
         a: {
           a: true
@@ -47,7 +88,7 @@ describe("merge", () => {
       }
     };
 
-    const b: any = {
+    const b: object = {
       a: {
         a: {
           b: [1]
@@ -68,10 +109,9 @@ describe("merge", () => {
       }
     };
 
-    const c: any = { a: { c: { b: false } }, d: "d" };
+    const received: object = merge(a, b);
 
-    const received: any = merge(a, b, c);
-    const expected: any = {
+    const expected: object = {
       a: {
         a: {
           a: true,
@@ -81,8 +121,7 @@ describe("merge", () => {
         c: {
           a: {
             a: "a"
-          },
-          b: false
+          }
         }
       },
       b: null,
@@ -94,8 +133,7 @@ describe("merge", () => {
             b: 1
           }
         }
-      },
-      d: "d"
+      }
     };
 
     expect(received).toEqual(expected);

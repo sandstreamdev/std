@@ -1,23 +1,15 @@
 import isObject from "../is/object.js";
+import map from "./map.js";
 
-const merge = (...args) => {
-  const target = {};
+const isNonNullishObject = x => x !== undefined && x !== null && isObject(x);
 
-  const merger = object => {
-    for (const key in object) {
-      if (isObject(object[key])) {
-        target[key] = merge(target[key], object[key]);
-      } else {
-        target[key] = object[key];
-      }
-    }
-  };
-
-  for (let i = 0; i < args.length; i++) {
-    merger(args[i]);
-  }
-
-  return target;
-};
+const merge = (a, b) => ({
+  ...a,
+  ...map((value, key) =>
+    isNonNullishObject(value) && isNonNullishObject(a[key])
+      ? merge(a[key], value)
+      : value
+  )(b)
+});
 
 export default merge;
