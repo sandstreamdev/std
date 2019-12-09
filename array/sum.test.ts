@@ -3,7 +3,7 @@
 import sum from "./sum.ts";
 
 describe("sum", () => {
-  it.skip("TODO", () => {
-    expect(sum()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(sum()).toBeDefined();
+});
 });

@@ -3,7 +3,7 @@
 import clampPercentage from "./clampPercentage.ts";
 
 describe("clampPercentage", () => {
-  it.skip("TODO", () => {
-    expect(clampPercentage()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(clampPercentage()).toBeDefined();
+});
 });

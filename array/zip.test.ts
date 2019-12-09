@@ -3,7 +3,7 @@
 import zip from "./zip.ts";
 
 describe("zip", () => {
-  it.skip("TODO", () => {
-    expect(zip()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(zip()).toBeDefined();
+});
 });

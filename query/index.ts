@@ -1,4 +1,4 @@
-import parse from "./parse";
+import parse from "./parse";
 import parsePathname from "./parsePathname";
 import read from "./read";
 import serialize from "./serialize";

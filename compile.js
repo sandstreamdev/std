@@ -35,74 +35,74 @@ const testFilePattern = /\.test\.[tj]s$/i;
 const quotePath = path => `"${path}"`;
 
 const main = async cwd => {
-  console.log(`Compiling files in ${cwd}...`);
+console.log(`Compiling files in ${cwd}...`);
 
-  const entries = await readDirectoryAsync(cwd, { withFileTypes: true });
+const entries = await readDirectoryAsync(cwd, { withFileTypes: true });
 
-  const files = entries
-    .filter(x => x.isFile())
-    .map(x => x.name)
-    .filter(x => extension.test(x))
-    .filter(x => !testFilePattern.test(x))
-    .filter(x => !ignoredFiles.includes(x));
+const files = entries
+.filter(x => x.isFile())
+.map(x => x.name)
+.filter(x => extension.test(x))
+.filter(x => !testFilePattern.test(x))
+.filter(x => !ignoredFiles.includes(x));
 
-  const directories = entries
-    .filter(x => x.isDirectory())
-    .map(x => x.name)
-    .filter(x => !ignoredDirectories.includes(x));
+const directories = entries
+.filter(x => x.isDirectory())
+.map(x => x.name)
+.filter(x => !ignoredDirectories.includes(x));
 
-  for (const directory of directories) {
-    await main(path.join(cwd, directory));
-  }
+for (const directory of directories) {
+await main(path.join(cwd, directory));
+}
 
-  const processFile = async file => {
-    const filePath = path.join(cwd, file);
-    const relativeFilePath = path.relative(root, filePath);
+const processFile = async file => {
+const filePath = path.join(cwd, file);
+const relativeFilePath = path.relative(root, filePath);
 
-    try {
-      console.log(`Compiling ${relativeFilePath}...`);
+try {
+console.log(`Compiling ${relativeFilePath}...`);
 
-      const args = [
-        "./node_modules/typescript/bin/tsc",
-        //"--diagnostics",
-        "--skipLibCheck",
-        "--module ES6",
-        "--target ES2020",
-        "-d",
-        quotePath(path.posix.normalize(filePath))
-      ];
+const args = [
+"./node_modules/typescript/bin/tsc",
+//"--diagnostics",
+"--skipLibCheck",
+"--module ES6",
+"--target ES2020",
+"-d",
+quotePath(path.posix.normalize(filePath))
+];
 
-      const command = [executable, ...args].join(" ");
+const command = [executable, ...args].join(" ");
 
-      console.time(command);
+console.time(command);
 
-      const windows = process.platform === "win32";
+const windows = process.platform === "win32";
 
-      const { stdout, stderr } = await execAsync(command, {
-        windowsVerbatimArguments: windows
-      });
+const { stdout, stderr } = await execAsync(command, {
+windowsVerbatimArguments: windows
+});
 
-      console.timeEnd(command);
+console.timeEnd(command);
 
-      console.log(`Compiled ${relativeFilePath}`);
+console.log(`Compiled ${relativeFilePath}`);
 
-      if (stdout || stderr) {
-        console.log({ stdout, stderr });
-      }
-    } catch (error) {
-      console.error(error);
+if (stdout || stderr) {
+console.log({ stdout, stderr });
+}
+} catch (error) {
+console.error(error);
 
-      process.exit(1);
-    }
-  };
+process.exit(1);
+}
+};
 
-  const queue = new PQueue({ concurrency: CONCURRENCY });
+const queue = new PQueue({ concurrency: CONCURRENCY });
 
-  for (const file of files) {
-    queue.add(() => processFile(file));
-  }
+for (const file of files) {
+queue.add(() => processFile(file));
+}
 
-  await queue.onIdle();
+await queue.onIdle();
 };
 
 main(cwd);

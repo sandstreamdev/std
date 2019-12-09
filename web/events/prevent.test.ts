@@ -3,7 +3,7 @@
 import prevent from "./prevent.ts";
 
 describe("prevent", () => {
-  it.skip("TODO", () => {
-    expect(prevent()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(prevent()).toBeDefined();
+});
 });

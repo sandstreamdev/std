@@ -8,23 +8,23 @@ import nonEmpty from "./nonEmpty.js";
 import startsWith from "./startsWith.js";
 
 export {
-  containsWhitespace,
-  empty,
-  firstToLower,
-  firstToUpper,
-  includes,
-  nbsp,
-  nonEmpty,
-  startsWith
+containsWhitespace,
+empty,
+firstToLower,
+firstToUpper,
+includes,
+nbsp,
+nonEmpty,
+startsWith
 };
 
 export default {
-  containsWhitespace,
-  empty,
-  firstToLower,
-  firstToUpper,
-  includes,
-  nbsp,
-  nonEmpty,
-  startsWith
+containsWhitespace,
+empty,
+firstToLower,
+firstToUpper,
+includes,
+nbsp,
+nonEmpty,
+startsWith
 };

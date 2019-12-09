@@ -52,7 +52,7 @@ const contents = await readFileAsync(filePath, "utf-8");
 const normalized = contents
 .split("\n")
 .map(x => x.trim())
-.join("\r\n");
+.join("\n");
 
 await writeFileAsync(filePath, normalized, "utf-8");
 } catch (error) {

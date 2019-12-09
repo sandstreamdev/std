@@ -3,7 +3,7 @@
 import except from "./except.ts";
 
 describe("except", () => {
-  it.skip("TODO", () => {
-    expect(except()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(except()).toBeDefined();
+});
 });

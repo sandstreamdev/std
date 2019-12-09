@@ -3,7 +3,7 @@
 import valid from "./valid.ts";
 
 describe("valid", () => {
-  it.skip("TODO", () => {
-    expect(valid()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(valid()).toBeDefined();
+});
 });

@@ -3,7 +3,7 @@
 import array from "./array.ts";
 
 describe("array", () => {
-  it.skip("TODO", () => {
-    expect(array()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(array()).toBeDefined();
+});
 });

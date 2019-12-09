@@ -3,7 +3,7 @@
 import cancel from "./cancel.ts";
 
 describe("cancel", () => {
-  it.skip("TODO", () => {
-    expect(cancel()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(cancel()).toBeDefined();
+});
 });

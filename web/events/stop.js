@@ -1,5 +1,5 @@
 export default event => {
-  event.stopPropagation();
+event.stopPropagation();
 
-  return false;
+return false;
 };

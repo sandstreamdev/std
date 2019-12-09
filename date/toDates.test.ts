@@ -3,7 +3,7 @@
 import toDates from "./toDates.ts";
 
 describe("toDates", () => {
-  it.skip("TODO", () => {
-    expect(toDates()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(toDates()).toBeDefined();
+});
 });

@@ -3,7 +3,7 @@
 import take from "./take.ts";
 
 describe("take", () => {
-  it.skip("TODO", () => {
-    expect(take()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(take()).toBeDefined();
+});
 });

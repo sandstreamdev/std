@@ -3,7 +3,7 @@
 import memoizeShallow from "./memoizeShallow.ts";
 
 describe("memoizeShallow", () => {
-  it.skip("TODO", () => {
-    expect(memoizeShallow()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(memoizeShallow()).toBeDefined();
+});
 });

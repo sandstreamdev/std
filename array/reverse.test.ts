@@ -3,7 +3,7 @@
 import reverse from "./reverse.ts";
 
 describe("reverse", () => {
-  it.skip("TODO", () => {
-    expect(reverse()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(reverse()).toBeDefined();
+});
 });

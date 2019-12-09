@@ -1,73 +1,73 @@
 {
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 100,
-  "commit": false,
-  "contributors": [
-    {
-      "login": "sandstreamdevelopment",
-      "name": "sandstreamdevelopment",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/44231396?v=4",
-      "profile": "https://github.com/sandstreamdevelopment",
-      "contributions": [
-        "business",
-        "financial",
-        "ideas"
-      ]
-    },
-    {
-      "login": "przemyslawzalewski",
-      "name": "Przemysław Zalewski",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/30114244?v=4",
-      "profile": "https://github.com/przemyslawzalewski",
-      "contributions": [
-        "code",
-        "ideas"
-      ]
-    },
-    {
-      "login": "jakubbogacz",
-      "name": "jakubbogacz",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/26272028?v=4",
-      "profile": "https://github.com/jakubbogacz",
-      "contributions": [
-        "ideas",
-        "review"
-      ]
-    },
-    {
-      "login": "marekrozmus",
-      "name": "Marek Rozmus",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/26272040?v=4",
-      "profile": "https://github.com/marekrozmus",
-      "contributions": [
-        "review"
-      ]
-    },
-    {
-      "login": "kendyl93",
-      "name": "Paweł",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/34007033?v=4",
-      "profile": "http://www.pawelstanecki.pl",
-      "contributions": [
-        "code"
-      ]
-    },
-    {
-      "login": "kborucinski",
-      "name": "Krystian Boruciński",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/3129656?v=4",
-      "profile": "https://github.com/kborucinski",
-      "contributions": [
-        "code"
-      ]
-    }
-  ],
-  "contributorsPerLine": 7,
-  "projectName": "std",
-  "projectOwner": "sandstreamdev",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "skipCi": true
+"files": [
+"README.md"
+],
+"imageSize": 100,
+"commit": false,
+"contributors": [
+{
+"login": "sandstreamdevelopment",
+"name": "sandstreamdevelopment",
+"avatar_url": "https://avatars2.githubusercontent.com/u/44231396?v=4",
+"profile": "https://github.com/sandstreamdevelopment",
+"contributions": [
+"business",
+"financial",
+"ideas"
+]
+},
+{
+"login": "przemyslawzalewski",
+"name": "Przemysław Zalewski",
+"avatar_url": "https://avatars0.githubusercontent.com/u/30114244?v=4",
+"profile": "https://github.com/przemyslawzalewski",
+"contributions": [
+"code",
+"ideas"
+]
+},
+{
+"login": "jakubbogacz",
+"name": "jakubbogacz",
+"avatar_url": "https://avatars3.githubusercontent.com/u/26272028?v=4",
+"profile": "https://github.com/jakubbogacz",
+"contributions": [
+"ideas",
+"review"
+]
+},
+{
+"login": "marekrozmus",
+"name": "Marek Rozmus",
+"avatar_url": "https://avatars3.githubusercontent.com/u/26272040?v=4",
+"profile": "https://github.com/marekrozmus",
+"contributions": [
+"review"
+]
+},
+{
+"login": "kendyl93",
+"name": "Paweł",
+"avatar_url": "https://avatars1.githubusercontent.com/u/34007033?v=4",
+"profile": "http://www.pawelstanecki.pl",
+"contributions": [
+"code"
+]
+},
+{
+"login": "kborucinski",
+"name": "Krystian Boruciński",
+"avatar_url": "https://avatars0.githubusercontent.com/u/3129656?v=4",
+"profile": "https://github.com/kborucinski",
+"contributions": [
+"code"
+]
+}
+],
+"contributorsPerLine": 7,
+"projectName": "std",
+"projectOwner": "sandstreamdev",
+"repoType": "github",
+"repoHost": "https://github.com",
+"skipCi": true
 }

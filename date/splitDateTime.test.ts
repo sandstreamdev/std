@@ -3,7 +3,7 @@
 import splitDateTime from "./splitDateTime.ts";
 
 describe("splitDateTime", () => {
-  it.skip("TODO", () => {
-    expect(splitDateTime()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(splitDateTime()).toBeDefined();
+});
 });

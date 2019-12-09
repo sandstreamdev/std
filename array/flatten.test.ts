@@ -3,7 +3,7 @@
 import flatten from "./flatten.ts";
 
 describe("flatten", () => {
-  it.skip("TODO", () => {
-    expect(flatten()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(flatten()).toBeDefined();
+});
 });

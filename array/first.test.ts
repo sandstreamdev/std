@@ -3,7 +3,7 @@
 import first from "./first.ts";
 
 describe("first", () => {
-  it.skip("TODO", () => {
-    expect(first()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(first()).toBeDefined();
+});
 });

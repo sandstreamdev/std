@@ -3,7 +3,7 @@
 import mapKeys from "./mapKeys.ts";
 
 describe("mapKeys", () => {
-  it.skip("TODO", () => {
-    expect(mapKeys()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(mapKeys()).toBeDefined();
+});
 });

@@ -1,4 +1,4 @@
-import add from "./add";
+import add from "./add";
 import average from "./average";
 import ceilToNearestPowerOfTwo from "./ceilToNearestPowerOfTwo";
 import clamp from "./clamp";
@@ -16,39 +16,39 @@ import standardDeviation from "./standardDeviation";
 import subtract from "./subtract";
 
 export {
-  add,
-  average,
-  ceilToNearestPowerOfTwo,
-  clamp,
-  clampNormal,
-  clampPercentage,
-  delta,
-  inRectangleRange,
-  lerp,
-  maximumBy,
-  median,
-  minMax,
-  safeNormalize,
-  sameSign,
-  standardDeviation,
-  subtract
+add,
+average,
+ceilToNearestPowerOfTwo,
+clamp,
+clampNormal,
+clampPercentage,
+delta,
+inRectangleRange,
+lerp,
+maximumBy,
+median,
+minMax,
+safeNormalize,
+sameSign,
+standardDeviation,
+subtract
 };
 
 export default {
-  add,
-  average,
-  ceilToNearestPowerOfTwo,
-  clamp,
-  clampNormal,
-  clampPercentage,
-  delta,
-  inRectangleRange,
-  lerp,
-  maximumBy,
-  median,
-  minMax,
-  safeNormalize,
-  sameSign,
-  standardDeviation,
-  subtract
+add,
+average,
+ceilToNearestPowerOfTwo,
+clamp,
+clampNormal,
+clampPercentage,
+delta,
+inRectangleRange,
+lerp,
+maximumBy,
+median,
+minMax,
+safeNormalize,
+sameSign,
+standardDeviation,
+subtract
 };

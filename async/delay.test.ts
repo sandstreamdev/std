@@ -3,7 +3,7 @@
 import delay from "./delay.ts";
 
 describe("delay", () => {
-  it.skip("TODO", () => {
-    expect(delay()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(delay()).toBeDefined();
+});
 });

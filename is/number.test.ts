@@ -3,7 +3,7 @@
 import number from "./number.ts";
 
 describe("number", () => {
-  it.skip("TODO", () => {
-    expect(number()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(number()).toBeDefined();
+});
 });

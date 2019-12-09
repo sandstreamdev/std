@@ -3,7 +3,7 @@
 import single from "./single.ts";
 
 describe("single", () => {
-  it.skip("TODO", () => {
-    expect(single()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(single()).toBeDefined();
+});
 });

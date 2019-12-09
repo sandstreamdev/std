@@ -1,60 +1,60 @@
 {
-  "name": "@sandstreamdev/std",
-  "version": "0.3.0",
-  "description": "",
-  "type": "module",
-  "module": "index.js",
-  "main": "index.cjs.js",
-  "browser": "index.umd.js",
-  "types": "index.d.ts",
-  "sideEffects": false,
-  "scripts": {
-    "build": "npm run regenerate && npm run compile && npm run addExtensions && npm run rollup && npm run fix && npm run normalize",
-    "compile": "node --experimental-modules compile.js",
-    "addExtensions": "node --experimental-modules addExtensions.js",
-    "fix": "npm run lint:fix && npm run prettier:fix && npm run lint:fix",
-    "jest": "jest --coverage --watchAll=false",
-    "lint": "eslint \"**/*.{js,ts}\" --debug",
-    "lint:fix": "npm run lint -- --fix",
-    "normalize": "node --experimental-modules normalize.js",
-    "prepare": "npm run build",
-    "prettier": "prettier \"**/*.{js,json,md,ts}\"",
-    "prettier:check": "npm run prettier -- --check",
-    "prettier:fix": "npm run prettier -- --write",
-    "regenerate": "node --experimental-modules regenerate.js",
-    "rollup": "rollup -c",
-    "test": "npm run jest && npm run prettier:check && npm run lint",
-    "test:watch": "jest --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sandstreamdev/std.git"
-  },
-  "keywords": [],
-  "author": {
-    "name": "Sandstream Development",
-    "url": "https://www.sandstream.pl/"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sandstreamdev/std/issues"
-  },
-  "homepage": "https://github.com/sandstreamdev/std#readme",
-  "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "@babel/preset-typescript": "^7.7.4",
-    "@types/jest": "^24.0.23",
-    "@typescript-eslint/eslint-plugin": "^2.10.0",
-    "@typescript-eslint/parser": "^2.10.0",
-    "babel-jest": "^24.9.0",
-    "core-js": "^3.4.7",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.18.2",
-    "jest": "^24.9.0",
-    "p-queue": "^6.2.1",
-    "prettier": "^1.19.1",
-    "rollup": "^1.27.8",
-    "typescript": "^3.7.3"
-  }
+"name": "@sandstreamdev/std",
+"version": "0.3.0",
+"description": "",
+"type": "module",
+"module": "index.js",
+"main": "index.cjs.js",
+"browser": "index.umd.js",
+"types": "index.d.ts",
+"sideEffects": false,
+"scripts": {
+"build": "npm run regenerate && npm run compile && npm run addExtensions && npm run rollup && npm run fix && npm run normalize",
+"compile": "node --experimental-modules compile.js",
+"addExtensions": "node --experimental-modules addExtensions.js",
+"fix": "npm run lint:fix && npm run prettier:fix && npm run lint:fix",
+"jest": "jest --coverage --watchAll=false",
+"lint": "eslint \"**/*.{js,ts}\" --debug",
+"lint:fix": "npm run lint -- --fix",
+"normalize": "node --experimental-modules normalize.js",
+"prepare": "npm run build",
+"prettier": "prettier \"**/*.{js,json,md,ts}\"",
+"prettier:check": "npm run prettier -- --check",
+"prettier:fix": "npm run prettier -- --write",
+"regenerate": "node --experimental-modules regenerate.js",
+"rollup": "rollup -c",
+"test": "npm run jest && npm run prettier:check && npm run lint",
+"test:watch": "jest --watch"
+},
+"repository": {
+"type": "git",
+"url": "git+https://github.com/sandstreamdev/std.git"
+},
+"keywords": [],
+"author": {
+"name": "Sandstream Development",
+"url": "https://www.sandstream.pl/"
+},
+"license": "MIT",
+"bugs": {
+"url": "https://github.com/sandstreamdev/std/issues"
+},
+"homepage": "https://github.com/sandstreamdev/std#readme",
+"devDependencies": {
+"@babel/core": "^7.7.4",
+"@babel/preset-env": "^7.7.4",
+"@babel/preset-typescript": "^7.7.4",
+"@types/jest": "^24.0.23",
+"@typescript-eslint/eslint-plugin": "^2.10.0",
+"@typescript-eslint/parser": "^2.10.0",
+"babel-jest": "^24.9.0",
+"core-js": "^3.4.7",
+"eslint": "^6.7.2",
+"eslint-plugin-import": "^2.18.2",
+"jest": "^24.9.0",
+"p-queue": "^6.2.1",
+"prettier": "^1.19.1",
+"rollup": "^1.27.8",
+"typescript": "^3.7.3"
+}
 }

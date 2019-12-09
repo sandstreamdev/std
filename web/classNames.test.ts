@@ -3,7 +3,7 @@
 import classNames from "./classNames.ts";
 
 describe("classNames", () => {
-  it.skip("TODO", () => {
-    expect(classNames()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(classNames()).toBeDefined();
+});
 });

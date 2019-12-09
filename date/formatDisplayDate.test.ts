@@ -3,7 +3,7 @@
 import formatDisplayDate from "./formatDisplayDate.ts";
 
 describe("formatDisplayDate", () => {
-  it.skip("TODO", () => {
-    expect(formatDisplayDate()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(formatDisplayDate()).toBeDefined();
+});
 });

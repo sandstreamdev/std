@@ -3,7 +3,7 @@
 import shift from "./shift.ts";
 
 describe("shift", () => {
-  it.skip("TODO", () => {
-    expect(shift()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(shift()).toBeDefined();
+});
 });

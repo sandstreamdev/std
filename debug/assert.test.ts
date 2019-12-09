@@ -3,7 +3,7 @@
 import assert from "./assert.ts";
 
 describe("assert", () => {
-  it.skip("TODO", () => {
-    expect(assert()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(assert()).toBeDefined();
+});
 });

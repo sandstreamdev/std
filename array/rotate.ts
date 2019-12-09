@@ -1,11 +1,11 @@
 import shift from "./shift";
 
 export default array => angle => {
-  const margin = Math.PI / 8;
-  const angleWithMargin = angle + margin;
-  const unit = Math.PI / 4;
-  const ratio = angleWithMargin / unit;
-  const offset = Math.floor(ratio);
+const margin = Math.PI / 8;
+const angleWithMargin = angle + margin;
+const unit = Math.PI / 4;
+const ratio = angleWithMargin / unit;
+const offset = Math.floor(ratio);
 
-  return shift(offset)(array);
+return shift(offset)(array);
 };

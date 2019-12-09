@@ -3,7 +3,7 @@
 import nbsp from "./nbsp.ts";
 
 describe("nbsp", () => {
-  it.skip("TODO", () => {
-    expect(nbsp()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(nbsp()).toBeDefined();
+});
 });

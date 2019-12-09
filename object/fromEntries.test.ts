@@ -3,7 +3,7 @@
 import fromEntries from "./fromEntries.ts";
 
 describe("fromEntries", () => {
-  it.skip("TODO", () => {
-    expect(fromEntries()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(fromEntries()).toBeDefined();
+});
 });

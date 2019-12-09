@@ -3,7 +3,7 @@
 import groupBy from "./groupBy.ts";
 
 describe("groupBy", () => {
-  it.skip("TODO", () => {
-    expect(groupBy()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(groupBy()).toBeDefined();
+});
 });

@@ -3,7 +3,7 @@
 import clamp from "./clamp.ts";
 
 describe("clamp", () => {
-  it.skip("TODO", () => {
-    expect(clamp()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(clamp()).toBeDefined();
+});
 });

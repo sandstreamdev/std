@@ -3,7 +3,7 @@
 import minMax from "./minMax.ts";
 
 describe("minMax", () => {
-  it.skip("TODO", () => {
-    expect(minMax()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(minMax()).toBeDefined();
+});
 });

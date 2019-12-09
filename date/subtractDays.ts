@@ -1,7 +1,7 @@
 export default (sourceDate, numberOfDays) => {
-  const date = new Date(sourceDate);
+const date = new Date(sourceDate);
 
-  date.setDate(date.getDate() - numberOfDays);
+date.setDate(date.getDate() - numberOfDays);
 
-  return date;
+return date;
 };

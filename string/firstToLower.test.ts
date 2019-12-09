@@ -3,7 +3,7 @@
 import firstToLower from "./firstToLower.ts";
 
 describe("firstToLower", () => {
-  it.skip("TODO", () => {
-    expect(firstToLower()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(firstToLower()).toBeDefined();
+});
 });

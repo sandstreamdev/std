@@ -1,4 +1,4 @@
-import escape from "./escape";
+import escape from "./escape";
 
 export { escape };
 

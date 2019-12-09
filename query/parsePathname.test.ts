@@ -3,7 +3,7 @@
 import parsePathname from "./parsePathname.ts";
 
 describe("parsePathname", () => {
-  it.skip("TODO", () => {
-    expect(parsePathname()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(parsePathname()).toBeDefined();
+});
 });

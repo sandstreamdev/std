@@ -3,7 +3,7 @@
 import subtractDays from "./subtractDays.ts";
 
 describe("subtractDays", () => {
-  it.skip("TODO", () => {
-    expect(subtractDays()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(subtractDays()).toBeDefined();
+});
 });

@@ -1,4 +1,4 @@
-import cancel from "./cancel";
+import cancel from "./cancel";
 import openInNewTabIntent from "./openInNewTabIntent";
 import prevent from "./prevent";
 import stop from "./stop";

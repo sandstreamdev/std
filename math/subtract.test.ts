@@ -3,7 +3,7 @@
 import subtract from "./subtract.ts";
 
 describe("subtract", () => {
-  it.skip("TODO", () => {
-    expect(subtract()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(subtract()).toBeDefined();
+});
 });

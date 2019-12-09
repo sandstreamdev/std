@@ -1,4 +1,4 @@
-import array from "./array/index";
+import array from "./array/index";
 import async from "./async/index";
 import date from "./date/index";
 import debug from "./debug/index";
@@ -16,39 +16,39 @@ import vector2 from "./vector2/index";
 import web from "./web/index";
 
 export {
-  array,
-  async,
-  date,
-  debug,
-  encoding,
-  file,
-  _function,
-  is,
-  math,
-  object,
-  query,
-  range,
-  regex,
-  string,
-  vector2,
-  web
+array,
+async,
+date,
+debug,
+encoding,
+file,
+_function,
+is,
+math,
+object,
+query,
+range,
+regex,
+string,
+vector2,
+web
 };
 
 export default {
-  array,
-  async,
-  date,
-  debug,
-  encoding,
-  file,
-  _function,
-  is,
-  math,
-  object,
-  query,
-  range,
-  regex,
-  string,
-  vector2,
-  web
+array,
+async,
+date,
+debug,
+encoding,
+file,
+_function,
+is,
+math,
+object,
+query,
+range,
+regex,
+string,
+vector2,
+web
 };

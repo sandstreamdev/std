@@ -3,7 +3,7 @@
 import fromSeconds from "./fromSeconds.ts";
 
 describe("fromSeconds", () => {
-  it.skip("TODO", () => {
-    expect(fromSeconds()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(fromSeconds()).toBeDefined();
+});
 });

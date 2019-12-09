@@ -3,7 +3,7 @@
 import maximumBy from "./maximumBy.ts";
 
 describe("maximumBy", () => {
-  it.skip("TODO", () => {
-    expect(maximumBy()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(maximumBy()).toBeDefined();
+});
 });

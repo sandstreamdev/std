@@ -3,7 +3,7 @@
 import when from "./when.ts";
 
 describe("when", () => {
-  it.skip("TODO", () => {
-    expect(when()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(when()).toBeDefined();
+});
 });

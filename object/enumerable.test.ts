@@ -3,7 +3,7 @@
 import enumerable from "./enumerable.ts";
 
 describe("enumerable", () => {
-  it.skip("TODO", () => {
-    expect(enumerable()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(enumerable()).toBeDefined();
+});
 });

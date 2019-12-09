@@ -3,7 +3,7 @@
 import partition from "./partition.ts";
 
 describe("partition", () => {
-  it.skip("TODO", () => {
-    expect(partition()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(partition()).toBeDefined();
+});
 });

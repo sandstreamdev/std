@@ -3,7 +3,7 @@
 import sequence from "./sequence.ts";
 
 describe("sequence", () => {
-  it.skip("TODO", () => {
-    expect(sequence()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(sequence()).toBeDefined();
+});
 });

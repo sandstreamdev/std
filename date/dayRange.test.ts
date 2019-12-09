@@ -3,7 +3,7 @@
 import dayRange from "./dayRange.ts";
 
 describe("dayRange", () => {
-  it.skip("TODO", () => {
-    expect(dayRange()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(dayRange()).toBeDefined();
+});
 });

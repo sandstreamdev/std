@@ -3,7 +3,7 @@
 import delta from "./delta.ts";
 
 describe("delta", () => {
-  it.skip("TODO", () => {
-    expect(delta()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(delta()).toBeDefined();
+});
 });

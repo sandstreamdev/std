@@ -3,7 +3,7 @@
 import convertSpace from "./convertSpace.ts";
 
 describe("convertSpace", () => {
-  it.skip("TODO", () => {
-    expect(convertSpace()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(convertSpace()).toBeDefined();
+});
 });

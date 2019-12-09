@@ -3,7 +3,7 @@
 import standardDeviation from "./standardDeviation.ts";
 
 describe("standardDeviation", () => {
-  it.skip("TODO", () => {
-    expect(standardDeviation()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(standardDeviation()).toBeDefined();
+});
 });

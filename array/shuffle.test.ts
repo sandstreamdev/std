@@ -3,7 +3,7 @@
 import shuffle from "./shuffle.ts";
 
 describe("shuffle", () => {
-  it.skip("TODO", () => {
-    expect(shuffle()).toBeDefined();
-  });
+it.skip("TODO", () => {
+expect(shuffle()).toBeDefined();
+});
 });
