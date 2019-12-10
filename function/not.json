@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "not([]); // ⇒ TODO"
+      "content": "not(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

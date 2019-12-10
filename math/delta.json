@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "delta([]); // ⇒ TODO"
+      "content": "delta(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

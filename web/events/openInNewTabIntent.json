@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "openInNewTabIntent([]); // ⇒ TODO"
+      "content": "openInNewTabIntent(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "subtractDays([]); // ⇒ TODO"
+      "content": "subtractDays(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

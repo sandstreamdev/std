@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "shuffleInPlace([]); // ⇒ TODO"
+      "content": "shuffleInPlace(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

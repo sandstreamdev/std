@@ -1,28 +1,19 @@
 # array
 
-
 # byte
-
 
 # date
 
-
 # defined
 
-
-# _function
-
+# \_function
 
 # integer
 
-
 # normal
-
 
 # number
 
-
 # object
-
 
 # string

@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "offsetByBit([]); // ⇒ TODO"
+      "content": "offsetByBit(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

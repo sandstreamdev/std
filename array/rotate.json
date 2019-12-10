@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "rotate([]); // ⇒ TODO"
+      "content": "rotate(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

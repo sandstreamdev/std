@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "memoizeWith([]); // ⇒ TODO"
+      "content": "memoizeWith(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "reflect([]); // ⇒ TODO"
+      "content": "reflect(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

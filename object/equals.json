@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "equals([]); // ⇒ TODO"
+      "content": "equals(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

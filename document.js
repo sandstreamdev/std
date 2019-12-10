@@ -5,46 +5,17 @@ import path from "path";
 
 import ignored from "./ignore.js";
 
-// const template = name =>
-//   `
-// # ${name}
-
-// <!-- TODO-START
-// TODO: Fill short description here.
-
-// ## Type signature
-
-// TODO: Fill type signature down below.
-
-// \`\`\`
-// any ⇒ any
-// \`\`\`
-
-// ## Examples
-
-// TODO: List at least one example down below.
-
-// \`\`\`javascript
-// ${name}(); // ⇒ TODO
-// \`\`\`
-
-// ## Questions
-
-// TODO: List questions that may this function answers.
-// TODO-END -->
-// `.trimLeft();
-
 const template = ({ name, description, signature, examples, questions }) => {
   let content = `# ${name}
 `;
 
-  if (!description.startsWith("TODO")) {
+  if (description && !description.startsWith("TODO")) {
     content += `
 ${description}
 `;
   }
 
-  if (!signature.startsWith("TODO")) {
+  if (signature && !signature.startsWith("TODO")) {
     content += `
 ## Type signature
 
@@ -54,32 +25,33 @@ ${signature}
 `;
   }
 
-  if (!examples[0].content.includes("TODO")) {
+  if (
+    examples &&
+    examples.length > 0 &&
+    !examples[0].content.includes("TODO")
+  ) {
     content += `
 ## Examples
 `;
-    content += examples.reduce((memo, item) => {
-      memo += `
+    content += examples
+      .map(
+        item => `
 \`\`\`${item.language}
 ${item.content}
-\`\`\`
-`;
-
-      return memo;
-    }, "");
+\`\`\``
+      )
+      .join("\n");
+    content += "\n";
   }
 
-  if (!questions[0].startsWith("TODO")) {
+  if (questions && questions.length > 0 && !questions[0].startsWith("TODO")) {
     content += `
 ## Questions
 
 `;
-    content += questions.reduce((memo, item) => {
-      memo += `- ${item}
-`;
 
-      return memo;
-    }, "");
+    content += questions.map(item => `- ${item}`).join("\n");
+    content += "\n";
   }
 
   return content;
@@ -92,7 +64,7 @@ const jsonTemplate = name => ({
   examples: [
     {
       language: "javascript",
-      content: `${name}([]); // ⇒ TODO`
+      content: `${name}(); // ⇒ TODO`
     }
   ],
   questions: ["TODO: List questions that may this function answers."]

@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "constant([]); // ⇒ TODO"
+      "content": "constant(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

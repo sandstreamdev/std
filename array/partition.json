@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "partition([]); // ⇒ TODO"
+      "content": "partition(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "diff([]); // ⇒ TODO"
+      "content": "diff(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

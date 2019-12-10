@@ -6,6 +6,7 @@
 ## Docs
 
 <!-- DOCS:START - Do not remove or modify this section -->
+
 ### array
 
 #### any
@@ -35,7 +36,6 @@ any([1, 2, 3]); // ⇒ true
 - Check if an array is empty or not (in JavaScript).
 - Check if an array is empty or exists (in JavaScript).
 
-
 #### are
 
 Checks if given arguments are all `Arrays`.
@@ -46,580 +46,400 @@ Checks if given arguments are all `Arrays`.
 (...xs: any[]) => boolean
 ```
 
-
 #### difference
-
 
 #### differs
 
-
 #### duplicates
-
 
 #### empty
 
-
 #### exact
-
 
 #### except
 
-
 #### filterInPlace
-
 
 #### find
 
-
 #### first
-
 
 #### flatMap
 
-
 #### flatten
-
 
 #### intersection
 
-
 #### is
-
 
 #### last
 
-
 #### lengthDiffers
-
 
 #### map
 
-
 #### midpoint
-
 
 #### minMax
 
-
 #### multiple
-
 
 #### none
 
-
 #### partition
-
 
 #### range
 
-
 #### repeat
-
 
 #### reverse
 
-
 #### reverseIf
-
 
 #### rotate
 
-
 #### second
-
 
 #### secondToLast
 
-
 #### shift
-
 
 #### shuffle
 
-
 #### shuffleInPlace
-
 
 #### single
 
-
 #### skip
-
 
 #### sort
 
-
 #### sum
-
 
 #### take
 
-
 #### transpose
-
 
 #### unique
 
-
 #### zip
 
-
 #### zipWith
-
 
 ### async
 
 #### debounce
 
-
 #### delay
 
-
 #### sequence
-
 
 ### date
 
 #### byDateWithFallback
 
-
 #### clamp
-
 
 #### dateDiff
 
-
 #### dateInRange
-
 
 #### dayRange
 
-
 #### daysInMonths
-
 
 #### daysInYear
 
-
 #### displayMonth
-
 
 #### displayTime
 
-
 #### endOfDay
-
 
 #### formatDate
 
-
 #### formatDateTime
-
 
 #### formatDisplayDate
 
-
 #### formatDuration
-
 
 #### formatTime
 
-
 #### fromDays
-
 
 #### fromHours
 
-
 #### fromMinutes
-
 
 #### fromSeconds
 
-
 #### joinDateTime
-
 
 #### leapYear
 
-
 #### monthNames
-
 
 #### offsetByBit
 
-
 #### parseHourMinutePair
-
 
 #### splitDateTime
 
-
 #### startOfDay
-
 
 #### subtractDays
 
-
 #### toDate
-
 
 #### toDates
 
-
 #### toDays
-
 
 #### toHours
 
-
 #### toISO
-
 
 #### toISOFromLocalDateTime
 
-
 #### toLocalDateTime
-
 
 #### toMinutes
 
-
 #### toSeconds
 
-
 #### valid
-
 
 ### debug
 
 #### assert
 
-
 #### diff
-
 
 ### encoding
 
 #### base64url
 
-
 ### file
 
 #### validName
-
 
 ### function
 
 #### compose
 
-
 #### constant
-
 
 #### identity
 
-
 #### memoize
-
 
 #### memoizeShallow
 
-
 #### memoizeWith
-
 
 #### noOp
 
-
 #### not
-
 
 #### pipe
 
-
 #### when
 
-
 #### whenTrue
-
 
 ### is
 
 #### array
 
-
 #### byte
-
 
 #### date
 
-
 #### defined
 
-
-#### _function
-
+#### \_function
 
 #### integer
 
-
 #### normal
-
 
 #### number
 
-
 #### object
 
-
 #### string
-
 
 ### math
 
 #### add
 
-
 #### average
-
 
 #### ceilToNearestPowerOfTwo
 
-
 #### clamp
-
 
 #### clampNormal
 
-
 #### clampPercentage
-
 
 #### delta
 
-
 #### inRectangleRange
-
 
 #### lerp
 
-
 #### maximumBy
-
 
 #### median
 
-
 #### minMax
-
 
 #### safeNormalize
 
-
 #### sameSign
-
 
 #### standardDeviation
 
-
 #### subtract
-
 
 ### object
 
 #### any
 
-
 #### apply
-
 
 #### empty
 
-
 #### entries
-
 
 #### enumerable
 
-
 #### equals
-
 
 #### filter
 
-
 #### find
-
 
 #### findEntry
 
-
 #### findKey
-
 
 #### findValue
 
-
 #### first
-
 
 #### flatMapValues
 
-
 #### fromEntries
-
 
 #### groupBy
 
-
 #### hasKey
-
 
 #### length
 
-
 #### map
-
 
 #### mapEntries
 
-
 #### mapKeys
-
 
 #### mapValues
 
-
 #### merge
-
 
 #### none
 
-
 #### sort
-
 
 ### query
 
 #### parse
 
-
 #### parsePathname
-
 
 #### read
 
-
 #### serialize
-
 
 ### range
 
 #### empty
 
-
 #### equals
-
 
 #### length
 
-
 #### split
-
 
 ### regex
 
 #### escape
 
-
 ### string
 
 #### containsWhitespace
 
-
 #### empty
-
 
 #### firstToLower
 
-
 #### firstToUpper
-
 
 #### includes
 
-
 #### nbsp
-
 
 #### nonEmpty
 
-
 #### startsWith
-
 
 ### vector2
 
 #### add
 
-
 #### convertSpace
-
 
 #### cross
 
-
 #### dot
-
 
 #### length
 
-
 #### mul
-
 
 #### multiply
 
-
 #### normalize
-
 
 #### reflect
 
-
 #### rotate
-
 
 #### scale
 
-
 #### sub
-
 
 #### transform
 
-
 #### translate
-
 
 ### web
 
 #### classNames
 
-
 #### events
 
 ##### cancel
 
-
 ##### openInNewTabIntent
-
 
 ##### prevent
 
-
 ##### stop
+
 <!-- DOCS:END -->
 
 ## Contributors ✨

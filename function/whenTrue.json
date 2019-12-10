@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "whenTrue([]); // ⇒ TODO"
+      "content": "whenTrue(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

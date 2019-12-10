@@ -1,10 +1,7 @@
 # cancel
 
-
 # openInNewTabIntent
 
-
 # prevent
-
 
 # stop

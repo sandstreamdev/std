@@ -25,7 +25,6 @@ any([1, 2, 3]); // ⇒ true
 - Check if an array is empty or not (in JavaScript).
 - Check if an array is empty or exists (in JavaScript).
 
-
 # are
 
 Checks if given arguments are all `Arrays`.
@@ -36,122 +35,82 @@ Checks if given arguments are all `Arrays`.
 (...xs: any[]) => boolean
 ```
 
-
 # difference
-
 
 # differs
 
-
 # duplicates
-
 
 # empty
 
-
 # exact
-
 
 # except
 
-
 # filterInPlace
-
 
 # find
 
-
 # first
-
 
 # flatMap
 
-
 # flatten
-
 
 # intersection
 
-
 # is
-
 
 # last
 
-
 # lengthDiffers
-
 
 # map
 
-
 # midpoint
-
 
 # minMax
 
-
 # multiple
-
 
 # none
 
-
 # partition
-
 
 # range
 
-
 # repeat
-
 
 # reverse
 
-
 # reverseIf
-
 
 # rotate
 
-
 # second
-
 
 # secondToLast
 
-
 # shift
-
 
 # shuffle
 
-
 # shuffleInPlace
-
 
 # single
 
-
 # skip
-
 
 # sort
 
-
 # sum
-
 
 # take
 
-
 # transpose
-
 
 # unique
 
-
 # zip
-
 
 # zipWith

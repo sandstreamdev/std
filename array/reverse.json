@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "reverse([]); // ⇒ TODO"
+      "content": "reverse(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

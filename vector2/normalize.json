@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "normalize([]); // ⇒ TODO"
+      "content": "normalize(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

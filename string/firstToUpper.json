@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "firstToUpper([]); // ⇒ TODO"
+      "content": "firstToUpper(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

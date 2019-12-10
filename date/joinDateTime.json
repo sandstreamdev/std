@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "joinDateTime([]); // ⇒ TODO"
+      "content": "joinDateTime(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

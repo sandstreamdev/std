@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "ceilToNearestPowerOfTwo([]); // ⇒ TODO"
+      "content": "ceilToNearestPowerOfTwo(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

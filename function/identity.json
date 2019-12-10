@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "identity([]); // ⇒ TODO"
+      "content": "identity(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

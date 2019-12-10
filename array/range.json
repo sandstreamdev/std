@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "range([]); // ⇒ TODO"
+      "content": "range(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]
