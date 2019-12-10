@@ -1,0 +1,21 @@
+{
+  "name": "any",
+  "description": "Checks if the given array is not empty (contains at least one element).",
+  "signature": "(xs: any[]) => boolean",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "any([]); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "any([1, 2, 3]); // ⇒ true"
+    }
+  ],
+  "questions": [
+    "How to check if an array is empty (in JavaScript)?",
+    "How to check if array is empty or null or undefined (in JavaScript)?",
+    "Check if an array is empty or not (in JavaScript).",
+    "Check if an array is empty or exists (in JavaScript)."
+  ]
+}

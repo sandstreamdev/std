@@ -1,0 +1,12 @@
+{
+  "name": "compose",
+  "description": "TODO: Fill short description here.",
+  "signature": "TODO: Fill type signature here.",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "compose(); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

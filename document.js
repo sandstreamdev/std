@@ -5,38 +5,78 @@ import path from "path";
 
 import ignored from "./ignore.js";
 
-const template = name =>
-  `
-# ${name}
+const template = ({ name, description, signature, examples, questions }) => {
+  let content = `# ${name}
+`;
 
-<!-- TODO-START
-TODO: Fill short description here.
+  if (description && !description.startsWith("TODO")) {
+    content += `
+${description}
+`;
+  }
 
+  if (signature && !signature.startsWith("TODO")) {
+    content += `
 ## Type signature
 
-TODO: Fill type signature down below.
-
 \`\`\`
-any ⇒ any
+${signature}
 \`\`\`
+`;
+  }
 
+  if (
+    examples &&
+    examples.length > 0 &&
+    !examples[0].content.includes("TODO")
+  ) {
+    content += `
 ## Examples
+`;
+    content += examples
+      .map(
+        item => `
+\`\`\`${item.language}
+${item.content}
+\`\`\``
+      )
+      .join("\n");
+    content += "\n";
+  }
 
-TODO: List at least one example down below.
-
-\`\`\`javascript
-${name}(); // ⇒ TODO
-\`\`\`
-
+  if (questions && questions.length > 0 && !questions[0].startsWith("TODO")) {
+    content += `
 ## Questions
 
-TODO: List questions that may this function answers.
-TODO-END -->
-`.trimLeft();
+`;
+
+    content += questions.map(item => `- ${item}`).join("\n");
+    content += "\n";
+  }
+
+  return content;
+};
+
+const jsonTemplate = name => ({
+  name,
+  description: "TODO: Fill short description here.",
+  signature: "TODO: Fill type signature here.",
+  examples: [
+    {
+      language: "javascript",
+      content: `${name}(); // ⇒ TODO`
+    }
+  ],
+  questions: ["TODO: List questions that may this function answers."]
+});
 
 const [ignoredFiles, ignoredDirectories] = ignored;
 
-const { readdir: readDirectoryAsync, writeFile: writeFileAsync } = promises;
+const {
+  readdir: readDirectoryAsync,
+  writeFile: writeFileAsync,
+  readFile: readFileAsync
+} = promises;
 
 const [, , cwd = process.cwd()] = process.argv;
 
@@ -86,9 +126,18 @@ const main = async cwd => {
 
   for (const [fileName, id] of submodules) {
     const filePath = path.join(cwd, fileName + ".md");
+    const jsonPath = path.join(cwd, fileName + ".json");
+
+    if (!existsSync(jsonPath)) {
+      const content = jsonTemplate(id);
+
+      await writeFileAsync(jsonPath, JSON.stringify(content, null, 2), "utf8");
+    }
 
     if (!existsSync(filePath)) {
-      const content = template(id);
+      const fileContent = await readFileAsync(jsonPath, "utf8");
+      const data = JSON.parse(fileContent);
+      const content = template(data);
 
       await writeFileAsync(filePath, content);
     }

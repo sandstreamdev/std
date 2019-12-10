@@ -1,0 +1,12 @@
+{
+  "name": "findKey",
+  "description": "TODO: Fill short description here.",
+  "signature": "TODO: Fill type signature here.",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "findKey(); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}
