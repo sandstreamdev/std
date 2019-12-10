@@ -1,0 +1,12 @@
+{
+  "name": "dot",
+  "description": "TODO: Fill short description here.",
+  "signature": "TODO: Fill type signature here.",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "dot([]); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

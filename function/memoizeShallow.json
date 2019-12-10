@@ -1,0 +1,12 @@
+{
+  "name": "memoizeShallow",
+  "description": "TODO: Fill short description here.",
+  "signature": "TODO: Fill type signature here.",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "memoizeShallow([]); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "are",
+  "description": "Checks if given arguments are all `Arrays`.",
+  "signature": "(...xs: any[]) => boolean",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "are([]); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}
