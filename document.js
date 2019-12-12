@@ -134,13 +134,11 @@ const main = async cwd => {
       await writeFileAsync(jsonPath, JSON.stringify(content, null, 2), "utf8");
     }
 
-    if (!existsSync(filePath)) {
-      const fileContent = await readFileAsync(jsonPath, "utf8");
-      const data = JSON.parse(fileContent);
-      const content = template(data);
+    const fileContent = await readFileAsync(jsonPath, "utf8");
+    const data = JSON.parse(fileContent);
+    const content = template(data);
 
-      await writeFileAsync(filePath, content);
-    }
+    await writeFileAsync(filePath, content);
   }
 };
 
