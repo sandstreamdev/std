@@ -8,7 +8,7 @@ import ignored from "./ignore.js";
 
 const pageTemplate = content =>
   `<!DOCTYPE html>
-<html lang="pl">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -22,7 +22,7 @@ const pageTemplate = content =>
   </body>
 </html>`;
 
-const nameFragment = name => (name ? `<h2>${name}</h2>` : "");
+const nameFragment = name => (name ? `<h3 class="name">${name}</h3>` : "");
 
 const descriptionFragment = description => {
   if (description && !description.startsWith("TODO")) {
@@ -64,7 +64,7 @@ const examplesFragment = (examples, scope) => {
     const content = `<div class="examples">
       <h3>Examples</h3>
       <div class="content">
-        <a class="btn-repl" onclick="tryInREPL(event, ${scope})">Try in REPL</a>
+        <a class="btn-repl" onclick="tryInREPL(event, '${scope}')">Try in REPL</a>
         <pre><code class="hljs">${examplesFormatted}</code></pre>
       </div>
       <div class="repl"></div>
@@ -111,11 +111,7 @@ const template = (
 
 const [ignoredFiles, ignoredDirectories] = ignored;
 
-const {
-  readdir: readDirectoryAsync,
-  writeFile: writeFileAsync,
-  readFile: readFileAsync
-} = promises;
+const { writeFile: writeFileAsync, readFile: readFileAsync } = promises;
 
 const [, , cwd = process.cwd()] = process.argv;
 
@@ -125,9 +121,7 @@ const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.json$/i;
 
 const testFilePattern = /\.test\.[tj]s$/i;
 
-function* files(directoryIn) {
-  console.log("*** for folder ", directoryIn, " ***");
-
+function* filesPaths(directoryIn) {
   const entries = readdirSync(directoryIn, {
     withFileTypes: true
   });
@@ -145,82 +139,52 @@ function* files(directoryIn) {
     .filter(x => !ignoredFiles.includes(x));
 
   for (const file of filesList) {
-    yield file;
+    yield path.join(directoryIn, file);
   }
 
   for (const directory of directories) {
-    for (const file of files(path.join(directoryIn, directory))) {
-      yield file;
+    for (const filePath of filesPaths(path.join(directoryIn, directory))) {
+      yield filePath;
     }
   }
 }
 
 const main = async cwd => {
-  console.log(`Generating html documentation file in ${cwd}...`);
+  console.log(`Generating html documentation file...`);
 
-  // let file = undefined;
-  // let filesIter = files(cwd);
+  let content = "";
+  let moduleName = "";
 
-  for (const file of files(cwd)) {
-    console.log("OUT", file);
+  for (const filePath of filesPaths(cwd)) {
+    const fileContent = await readFileAsync(filePath, "utf8");
+    const data = JSON.parse(fileContent);
+
+    const pathParts = path
+      .dirname(filePath)
+      .slice(cwd.length)
+      .split(path.sep)
+      .filter(x => x != "");
+
+    const scope = pathParts
+      .reverse()
+      .reduce((memo, part) => `{ ${part}: ${memo} }`, `{ ${data.name} }`);
+
+    const currentModule = path
+      .dirname(filePath)
+      .slice(cwd.length)
+      .split(path.sep)
+      .filter(x => x != "")
+      .pop();
+
+    if (currentModule !== moduleName) {
+      moduleName = currentModule;
+      content += `<h1 class="module-name">"${moduleName}" Methods</h1>`;
+    }
+
+    content += template(data, scope);
   }
 
-  // do {
-  //   file = filesIter.next().value;
-  //   console.log(file);
-  // } while (file !== undefined);
-
-  // let content = "";
-
-  // const entries = await readDirectoryAsync(cwd, {
-  //   withFileTypes: true
-  // });
-
-  // const directories = entries
-  //   .filter(x => x.isDirectory())
-  //   .map(x => x.name)
-  //   .filter(x => !ignoredDirectories.includes(x));
-
-  // console.info(entries);
-
-  // for (let i = 0; i < directories.length; i++) {
-  //   const entries = await readDirectoryAsync(directories[i], {
-  //     withFileTypes: true
-  //   });
-
-  //   const files = entries
-  //     .filter(x => x.isFile())
-  //     .map(x => x.name)
-  //     .filter(x => extension.test(x))
-  //     .filter(x => !testFilePattern.test(x))
-  //     .filter(x => !ignoredFiles.includes(x));
-
-  //   for (let filePath of files) {
-  //     const jsonPath = directories[i] + "/" + filePath;
-  //     const fileContent = await readFileAsync(jsonPath, "utf8");
-  //     const data = JSON.parse(fileContent);
-
-  //     const scope = `${directories[i]}.test.${data.name}`;
-  //     // console.log(scope);
-
-  //     const parts = scope.split(".");
-  //     const funcName = parts.pop();
-
-  //     // console.log("???????", funcName);
-
-  //     const test = parts
-  //       .reverse()
-  //       .reduce((memo, part) => `{ ${part}: ${memo} }`, `{ ${funcName} }`);
-
-  //     // console.log(test);
-
-  //     // { array: { any } }
-
-  //     content += template(data, scope);
-  //   }
-  // }
-
-  // await writeFileAsync("./docs/index.html", pageTemplate(content));
+  await writeFileAsync("./docs/index.html", pageTemplate(content));
 };
 
 main(cwd);
