@@ -4,7 +4,7 @@ Checks if the given array is not empty (contains at least one element).
 
 ## Type signature
 
-```
+```typescript
 (xs: any[]) => boolean
 ```
 

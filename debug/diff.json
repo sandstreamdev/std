@@ -8,7 +8,5 @@
       "content": "diff(); // ⇒ TODO"
     }
   ],
-  "questions": [
-    "TODO: List questions that may this function answers."
-  ]
+  "questions": ["TODO: List questions that may this function answers."]
 }

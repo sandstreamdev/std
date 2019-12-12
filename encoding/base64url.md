@@ -2,7 +2,7 @@
 
 ## Type signature
 
-```
+```typescript
 {
   encode: (_: any) => string;
 }

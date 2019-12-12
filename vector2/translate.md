@@ -2,7 +2,7 @@
 
 ## Type signature
 
-```
+```typescript
 (
   tx?: number,
   ty?: number

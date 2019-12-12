@@ -2,6 +2,6 @@
 
 ## Type signature
 
-```
+```typescript
 string[]
 ```

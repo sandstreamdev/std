@@ -19,7 +19,7 @@ ${description}
     content += `
 ## Type signature
 
-\`\`\`
+\`\`\`typescript
 ${signature}
 \`\`\`
 `;
@@ -109,10 +109,6 @@ const getSignature = async signaturePath => {
 
   const endTag = "\n\n";
   const endIndex = fileContent.indexOf(endTag, startIndex);
-
-  if (signaturePath.includes("diff")) {
-    console.log(startIndex, endIndex, fileContent.slice(startIndex, endIndex));
-  }
 
   return fileContent
     .slice(startIndex, endIndex)

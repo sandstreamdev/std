@@ -2,7 +2,7 @@
 
 ## Type signature
 
-```
+```typescript
 (
   m1: any,
   m2: any

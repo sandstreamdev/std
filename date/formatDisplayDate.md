@@ -2,7 +2,7 @@
 
 ## Type signature
 
-```
+```typescript
 (
   sourceDate: any,
   showDay?: boolean,
