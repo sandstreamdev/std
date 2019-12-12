@@ -35,3 +35,8 @@ ul {
 code {
   border-radius: 5px;
 }
+
+.module-name,
+.name {
+  font-family: "Courier New", Courier, monospace;
+}
