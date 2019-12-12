@@ -50,7 +50,7 @@ function tryInREPL(event, scope) {
 
   RunKit.createNotebook({
     element: container,
-    nodeVersion: "*",
+    nodeVersion: "11",
     preamble: `const std = require ("@sandstreamdev/std/index.cjs.js");\nconst ${scope} = std;`,
     source: codeElement.textContent
   });
