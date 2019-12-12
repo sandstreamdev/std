@@ -1,1 +1,1 @@
-export default (a, b) => a.length !== b.length;
+export default (a: any[], b: any[]) => a.length !== b.length;

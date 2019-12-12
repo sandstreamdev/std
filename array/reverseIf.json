@@ -1,6 +1,6 @@
 {
   "name": "reverseIf",
-  "description": "TODO: Fill short description here.",
+  "description": "Reverses the given array when enabled.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

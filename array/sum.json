@@ -1,6 +1,6 @@
 {
   "name": "sum",
-  "description": "TODO: Fill short description here.",
+  "description": "Sums the given array of numbers.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

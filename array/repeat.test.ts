@@ -3,7 +3,15 @@
 import repeat from "./repeat.ts";
 
 describe("repeat", () => {
-  it.skip("TODO", () => {
-    expect(repeat()).toBeDefined();
+  it("repeats the given element by given count of times", () => {
+    expect(repeat(3)("test")).toEqual(["test", "test", "test"]);
+  });
+
+  it("returns an empty array for 0 repeat count", () => {
+    expect(repeat(0)("anything")).toEqual([]);
+  });
+
+  it("throws RangeError exception for negative counts", () => {
+    expect(() => repeat(-3)("test")).toThrow(RangeError);
   });
 });

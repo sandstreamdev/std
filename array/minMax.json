@@ -1,6 +1,6 @@
 {
   "name": "minMax",
-  "description": "TODO: Fill short description here.",
+  "description": "Computes minimum and maximum of the given array in a single run.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

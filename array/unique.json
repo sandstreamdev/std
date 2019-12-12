@@ -1,6 +1,6 @@
 {
   "name": "unique",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns only unique elements of the given array.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

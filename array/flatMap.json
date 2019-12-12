@@ -1,6 +1,6 @@
 {
   "name": "flatMap",
-  "description": "TODO: Fill short description here.",
+  "description": "Maps and flattens the result.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

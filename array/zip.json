@@ -1,6 +1,6 @@
 {
   "name": "zip",
-  "description": "TODO: Fill short description here.",
+  "description": "Zips given arrays together into pairs.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

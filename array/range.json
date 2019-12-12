@@ -1,6 +1,6 @@
 {
   "name": "range",
-  "description": "TODO: Fill short description here.",
+  "description": "Generates an array of numbers from 0 to n - 1.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

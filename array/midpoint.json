@@ -1,6 +1,6 @@
 {
   "name": "midpoint",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns the middle element or the right one when the number of elements is even.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

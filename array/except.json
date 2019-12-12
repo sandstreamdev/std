@@ -1,6 +1,6 @@
 {
   "name": "except",
-  "description": "TODO: Fill short description here.",
+  "description": "Filters out the given value.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

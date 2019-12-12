@@ -25,7 +25,6 @@ import range from "./range.js";
 import repeat from "./repeat.js";
 import reverse from "./reverse.js";
 import reverseIf from "./reverseIf.js";
-import rotate from "./rotate.js";
 import second from "./second.js";
 import secondToLast from "./secondToLast.js";
 import shift from "./shift.js";
@@ -36,7 +35,6 @@ import skip from "./skip.js";
 import sort from "./sort.js";
 import sum from "./sum.js";
 import take from "./take.js";
-import transpose from "./transpose.js";
 import unique from "./unique.js";
 import zip from "./zip.js";
 import zipWith from "./zipWith.js";
@@ -69,7 +67,6 @@ export {
   repeat,
   reverse,
   reverseIf,
-  rotate,
   second,
   secondToLast,
   shift,
@@ -80,7 +77,6 @@ export {
   sort,
   sum,
   take,
-  transpose,
   unique,
   zip,
   zipWith
@@ -114,7 +110,6 @@ export default {
   repeat,
   reverse,
   reverseIf,
-  rotate,
   second,
   secondToLast,
   shift,
@@ -125,7 +120,6 @@ export default {
   sort,
   sum,
   take,
-  transpose,
   unique,
   zip,
   zipWith

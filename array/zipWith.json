@@ -1,6 +1,6 @@
 {
   "name": "zipWith",
-  "description": "TODO: Fill short description here.",
+  "description": "Zips given arrays together with the given function.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

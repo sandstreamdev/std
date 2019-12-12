@@ -1,1 +1,1 @@
-export default xs => xs.length > 1;
+export default (xs: any): boolean => xs.length > 1;

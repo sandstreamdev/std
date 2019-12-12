@@ -1,1 +1,1 @@
-export default xs => [...new Set(xs)];
+export default (xs: any[]) => [...new Set(xs)];

@@ -1,6 +1,6 @@
 {
   "name": "intersection",
-  "description": "TODO: Fill short description here.",
+  "description": "Finds common items between both arrays.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

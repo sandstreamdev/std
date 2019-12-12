@@ -1,6 +1,6 @@
 {
   "name": "flatten",
-  "description": "TODO: Fill short description here.",
+  "description": "Flattens the nested arrays by a single level.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

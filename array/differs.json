@@ -1,6 +1,6 @@
 {
   "name": "differs",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if two arrays are not equal.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

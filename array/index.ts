@@ -25,7 +25,6 @@ import range from "./range";
 import repeat from "./repeat";
 import reverse from "./reverse";
 import reverseIf from "./reverseIf";
-import rotate from "./rotate";
 import second from "./second";
 import secondToLast from "./secondToLast";
 import shift from "./shift";
@@ -36,7 +35,6 @@ import skip from "./skip";
 import sort from "./sort";
 import sum from "./sum";
 import take from "./take";
-import transpose from "./transpose";
 import unique from "./unique";
 import zip from "./zip";
 import zipWith from "./zipWith";
@@ -69,7 +67,6 @@ export {
   repeat,
   reverse,
   reverseIf,
-  rotate,
   second,
   secondToLast,
   shift,
@@ -80,7 +77,6 @@ export {
   sort,
   sum,
   take,
-  transpose,
   unique,
   zip,
   zipWith
@@ -114,7 +110,6 @@ export default {
   repeat,
   reverse,
   reverseIf,
-  rotate,
   second,
   secondToLast,
   shift,
@@ -125,7 +120,6 @@ export default {
   sort,
   sum,
   take,
-  transpose,
   unique,
   zip,
   zipWith

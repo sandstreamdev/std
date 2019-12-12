@@ -1,6 +1,6 @@
 {
   "name": "duplicates",
-  "description": "TODO: Fill short description here.",
+  "description": "Lists all the duplicated values in the given array.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

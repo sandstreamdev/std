@@ -1,6 +1,6 @@
 {
   "name": "sort",
-  "description": "TODO: Fill short description here.",
+  "description": "Sorts the given array without mutating it.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

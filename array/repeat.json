@@ -1,6 +1,6 @@
 {
   "name": "repeat",
-  "description": "TODO: Fill short description here.",
+  "description": "Repeats the given element by given count of times.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

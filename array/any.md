@@ -1,11 +1,11 @@
 # any
 
-Checks if the given array is not empty (contains at least one element).
+Checks if the given array present and is not empty (contains at least one element).
 
 ## Type signature
 
 ```
-(xs: any[]) => boolean
+(xs?: any[]) => boolean
 ```
 
 ## Examples

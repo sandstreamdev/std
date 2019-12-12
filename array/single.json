@@ -1,6 +1,6 @@
 {
   "name": "single",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given array contains exactly one element.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

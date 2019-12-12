@@ -1,3 +1,3 @@
-const add = (a, b) => a + b;
+const add = (a: number, b: number) => a + b;
 
-export default xs => xs.reduce(add, 0);
+export default (xs: number[]): number => xs.reduce(add, 0);

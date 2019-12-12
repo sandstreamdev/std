@@ -1,6 +1,6 @@
 {
   "name": "exact",
-  "description": "TODO: Fill short description here.",
+  "description": "Takes exactly the given count of elements.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

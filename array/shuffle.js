@@ -1,3 +1,3 @@
 import shuffleInPlace from "./shuffleInPlace.js";
 
-export default xs => shuffleInPlace([...xs]);
+export default (xs, random) => shuffleInPlace([...xs], random);

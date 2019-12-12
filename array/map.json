@@ -1,6 +1,6 @@
 {
   "name": "map",
-  "description": "TODO: Fill short description here.",
+  "description": "Maps the given array with the given functions.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

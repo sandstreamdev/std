@@ -1,6 +1,6 @@
 {
   "name": "shuffle",
-  "description": "TODO: Fill short description here.",
+  "description": "Shuffles the given array in random order with Math.random as the default.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

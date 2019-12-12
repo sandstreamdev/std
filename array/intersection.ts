@@ -1,1 +1,1 @@
-export default (xs, ys) => xs.filter(value => ys.includes(value));
+export default (xs: any[], ys: any[]) => xs.filter(value => ys.includes(value));

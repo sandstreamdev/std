@@ -1,6 +1,7 @@
-export default xs => {
+export default (xs: any[], random = Math.random) => {
   for (let i = 0; i < xs.length; i++) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(random() * (i + 1));
+
     [xs[i], xs[j]] = [xs[j], xs[i]];
   }
 
