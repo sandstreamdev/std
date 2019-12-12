@@ -10,6 +10,26 @@ describe("merge", () => {
     expect(merge({}, a)).toEqual(a);
   });
 
+  it("should merge with undefined", () => {
+    const a = { a: 1 };
+
+    expect(merge(undefined, a)).toEqual(a);
+    expect(merge(a, undefined)).toEqual(a);
+    expect(merge(undefined, {})).toEqual({});
+    expect(merge({}, undefined)).toEqual({});
+    expect(merge(undefined, undefined)).toEqual({});
+  });
+
+  it("should merge with null", () => {
+    const a = { a: 1 };
+
+    expect(merge(null, a)).toEqual(a);
+    expect(merge(a, null)).toEqual(a);
+    expect(merge(null, {})).toEqual({});
+    expect(merge({}, null)).toEqual({});
+    expect(merge(null, null)).toEqual({});
+  });
+
   it("should override non-object properties", () => {
     const a = { a: 1, b: 3 };
     const b = { b: 7 };
