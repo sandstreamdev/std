@@ -1,6 +1,6 @@
 # any
 
-Checks if the given array present and is not empty (contains at least one element).
+Checks if the given array is present and it is not empty (contains at least one element).
 
 ## Type signature
 

@@ -1,7 +1,7 @@
 {
   "name": "any",
-  "description": "Checks if the given array is not empty (contains at least one element).",
-  "signature": "(xs: any[]) => boolean",
+  "description": "Checks if the given array is present and it is not empty (contains at least one element).",
+  "signature": "(xs?: any[]) => boolean",
   "examples": [
     {
       "language": "javascript",
