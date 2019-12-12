@@ -1,6 +1,6 @@
 {
   "name": "base64url",
-  "description": "TODO: Fill short description here.",
+  "description": "Provides a way to encode strings and bytes from and into Base64URL.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
