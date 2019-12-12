@@ -2,33 +2,32 @@
 
 ## Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 # apply
 
 ## Type signature
 
-```
-(
-  fs: ((...xs: any[]) => any)[]
-) => (...xs: any[]) => object
+```typescript
+(fs: ((...xs: any[]) => any)[]) => (...xs: any[]) => object;
 ```
 
 # empty
 
 ## Type signature
 
-```
-{}
+```typescript
+{
+}
 ```
 
 # entries
 
 ## Type signature
 
-```
+```typescript
 {
   <T>(
     o:
@@ -45,121 +44,120 @@
 
 ## Type signature
 
-```
-(...xs: any[]) => any
+```typescript
+(...xs: any[]) => any;
 ```
 
 # equals
 
 ## Type signature
 
-```
-(a: any, b: any) => any
+```typescript
+(a: any, b: any) => any;
 ```
 
 # filter
 
 ## Type signature
 
-```
-(f: any) => (xs: any) => object
+```typescript
+(f: any) => (xs: any) => object;
 ```
 
 # find
 
 ## Type signature
 
-```
-(predicate: any) => (xs: any) => unknown
+```typescript
+(predicate: any) => (xs: any) => unknown;
 ```
 
 # findEntry
 
 ## Type signature
 
-```
-(predicate: any) => (xs: any) => [string, unknown]
+```typescript
+(predicate: any) => (xs: any) => [string, unknown];
 ```
 
 # findKey
 
 ## Type signature
 
-```
-(predicate: any) => (xs: any) => string
+```typescript
+(predicate: any) => (xs: any) => string;
 ```
 
 # findValue
 
 ## Type signature
 
-```
-(predicate: any) => (xs: any) => unknown
+```typescript
+(predicate: any) => (xs: any) => unknown;
 ```
 
 # first
 
 ## Type signature
 
-```
-(xs: any) => unknown
+```typescript
+(xs: any) => unknown;
 ```
 
 # flatMapValues
 
 ## Type signature
 
-```
-(f: any) => (xs: any) => any
+```typescript
+(f: any) => (xs: any) => any;
 ```
 
 # fromEntries
 
 ## Type signature
 
-```
-(keyValuePairs: [string, any][]) => object
+```typescript
+(keyValuePairs: [string, any][]) => object;
 ```
 
 # groupBy
 
 ## Type signature
 
-```
-(selector: any) => (xs: any) => any
+```typescript
+(selector: any) => (xs: any) => any;
 ```
 
 # hasKey
 
 ## Type signature
 
-```
-(key: any) => (xs: any) => any
+```typescript
+(key: any) => (xs: any) => any;
 ```
 
 # length
 
 ## Type signature
 
-```
-(xs: any) => number
+```typescript
+(xs: any) => number;
 ```
 
 # map
 
 ## Type signature
 
-```
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => object
+```typescript
+(f: (value: any, key: string, context: object) => any) => (xs: object) =>
+  object;
 ```
 
 # mapEntries
 
 ## Type signature
 
-```
+```typescript
 (
   f: (value: any, key: string, context: object) => any
 ) => (xs: object) => [string, any][]
@@ -169,15 +167,15 @@
 
 ## Type signature
 
-```
-(f: any) => (xs: any) => object
+```typescript
+(f: any) => (xs: any) => object;
 ```
 
 # mapValues
 
 ## Type signature
 
-```
+```typescript
 (f: any) => (xs: any) => any[]
 ```
 
@@ -185,22 +183,22 @@
 
 ## Type signature
 
-```
-(a: object, b: object) => object
+```typescript
+(a: object, b: object) => object;
 ```
 
 # none
 
 ## Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 # sort
 
 ## Type signature
 
-```
-(f: any) => (xs: any) => object
+```typescript
+(f: any) => (xs: any) => object;
 ```

@@ -2,6 +2,6 @@
 
 ## Type signature
 
-```
-(name: any) => boolean
+```typescript
+(name: any) => boolean;
 ```

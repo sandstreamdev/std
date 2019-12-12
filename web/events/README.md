@@ -2,15 +2,15 @@
 
 ## Type signature
 
-```
-(event: any) => boolean
+```typescript
+(event: any) => boolean;
 ```
 
 # openInNewTabIntent
 
 ## Type signature
 
-```
+```typescript
 ({
   button,
   ctrlKey,
@@ -21,21 +21,21 @@
   ctrlKey: any;
   metaKey: any;
   shiftKey: any;
-}) => any
+}) => any;
 ```
 
 # prevent
 
 ## Type signature
 
-```
-(event: any) => boolean
+```typescript
+(event: any) => boolean;
 ```
 
 # stop
 
 ## Type signature
 
-```
-(event: any) => boolean
+```typescript
+(event: any) => boolean;
 ```

@@ -2,10 +2,8 @@
 
 ## Type signature
 
-```
-(
-  now: any
-) => (
+```typescript
+(now: any) => (
   {
     endedAt: aEnd,
     startedAt: aStart
@@ -20,38 +18,38 @@
     endedAt: any;
     startedAt: any;
   }
-) => number
+) => number;
 ```
 
 # clamp
 
 ## Type signature
 
-```
-(min: any, max: any) => (dateStringOrDate: any) => Date
+```typescript
+(min: any, max: any) => (dateStringOrDate: any) => Date;
 ```
 
 # dateDiff
 
 ## Type signature
 
-```
-(a: any, b: any) => number
+```typescript
+(a: any, b: any) => number;
 ```
 
 # dateInRange
 
 ## Type signature
 
-```
-(from: any, to: any) => (date?: Date) => boolean
+```typescript
+(from: any, to: any) => (date?: Date) => boolean;
 ```
 
 # dayRange
 
 ## Type signature
 
-```
+```typescript
 ({
   iso,
   local,
@@ -69,7 +67,7 @@
 
 ## Type signature
 
-```
+```typescript
 (leapYear: any) => number[]
 ```
 
@@ -77,143 +75,127 @@
 
 ## Type signature
 
-```
-(year: any) => any
+```typescript
+(year: any) => any;
 ```
 
 # displayMonth
 
 ## Type signature
 
-```
-(monthIndex: any) => string
+```typescript
+(monthIndex: any) => string;
 ```
 
 # displayTime
 
 ## Type signature
 
-```
-(source: any, showSeconds: any) => string
+```typescript
+(source: any, showSeconds: any) => string;
 ```
 
 # endOfDay
 
 ## Type signature
 
-```
-(
-  date: any,
-  timezoneOffset?: number,
-  local?: boolean
-) => Date
+```typescript
+(date: any, timezoneOffset?: number, local?: boolean) => Date;
 ```
 
 # formatDate
 
 ## Type signature
 
-```
-(sourceDate: any, timezoneOffset?: number) => string
+```typescript
+(sourceDate: any, timezoneOffset?: number) => string;
 ```
 
 # formatDateTime
 
 ## Type signature
 
-```
-(
-  sourceDate: any,
-  showSeconds?: boolean,
-  timezoneOffset?: number
-) => string
+```typescript
+(sourceDate: any, showSeconds?: boolean, timezoneOffset?: number) => string;
 ```
 
 # formatDisplayDate
 
 ## Type signature
 
-```
-(
-  sourceDate: any,
-  showDay?: boolean,
-  timezoneOffset?: number
-) => string
+```typescript
+(sourceDate: any, showDay?: boolean, timezoneOffset?: number) => string;
 ```
 
 # formatDuration
 
 ## Type signature
 
-```
-(duration: any, showSeconds?: boolean) => string
+```typescript
+(duration: any, showSeconds?: boolean) => string;
 ```
 
 # formatTime
 
 ## Type signature
 
-```
-(
-  sourceDate: any,
-  showSeconds?: boolean,
-  timezoneOffset?: number
-) => string
+```typescript
+(sourceDate: any, showSeconds?: boolean, timezoneOffset?: number) => string;
 ```
 
 # fromDays
 
 ## Type signature
 
-```
-(days: any) => number
+```typescript
+(days: any) => number;
 ```
 
 # fromHours
 
 ## Type signature
 
-```
-(hours: any) => number
+```typescript
+(hours: any) => number;
 ```
 
 # fromMinutes
 
 ## Type signature
 
-```
-(minutes: any) => number
+```typescript
+(minutes: any) => number;
 ```
 
 # fromSeconds
 
 ## Type signature
 
-```
-(seconds: any) => number
+```typescript
+(seconds: any) => number;
 ```
 
 # joinDateTime
 
 ## Type signature
 
-```
-(...xs: any[]) => string
+```typescript
+(...xs: any[]) => string;
 ```
 
 # leapYear
 
 ## Type signature
 
-```
-(year: any) => boolean
+```typescript
+(year: any) => boolean;
 ```
 
 # monthNames
 
 ## Type signature
 
-```
+```typescript
 string[]
 ```
 
@@ -221,15 +203,15 @@ string[]
 
 ## Type signature
 
-```
-(date: any) => Date
+```typescript
+(date: any) => Date;
 ```
 
 # parseHourMinutePair
 
 ## Type signature
 
-```
+```typescript
 (text?: string) => number[]
 ```
 
@@ -237,106 +219,102 @@ string[]
 
 ## Type signature
 
-```
-(dateTimeString: any) => any
+```typescript
+(dateTimeString: any) => any;
 ```
 
 # startOfDay
 
 ## Type signature
 
-```
-(
-  date: any,
-  timezoneOffset?: number,
-  local?: boolean
-) => Date
+```typescript
+(date: any, timezoneOffset?: number, local?: boolean) => Date;
 ```
 
 # subtractDays
 
 ## Type signature
 
-```
-(sourceDate: any, numberOfDays: any) => Date
+```typescript
+(sourceDate: any, numberOfDays: any) => Date;
 ```
 
 # toDate
 
 ## Type signature
 
-```
-(date: any) => string
+```typescript
+(date: any) => string;
 ```
 
 # toDates
 
 ## Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 # toDays
 
 ## Type signature
 
-```
-(milliseconds: any) => number
+```typescript
+(milliseconds: any) => number;
 ```
 
 # toHours
 
 ## Type signature
 
-```
-(milliseconds: any) => number
+```typescript
+(milliseconds: any) => number;
 ```
 
 # toISO
 
 ## Type signature
 
-```
-(x: any) => any
+```typescript
+(x: any) => any;
 ```
 
 # toISOFromLocalDateTime
 
 ## Type signature
 
-```
-(date: any) => string
+```typescript
+(date: any) => string;
 ```
 
 # toLocalDateTime
 
 ## Type signature
 
-```
-(date: any, timezoneOffset?: number) => Date
+```typescript
+(date: any, timezoneOffset?: number) => Date;
 ```
 
 # toMinutes
 
 ## Type signature
 
-```
-(milliseconds: any) => number
+```typescript
+(milliseconds: any) => number;
 ```
 
 # toSeconds
 
 ## Type signature
 
-```
-(milliseconds: any) => number
+```typescript
+(milliseconds: any) => number;
 ```
 
 # valid
 
 ## Type signature
 
-```
-(date: any) => boolean
+```typescript
+(date: any) => boolean;
 ```

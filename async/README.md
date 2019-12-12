@@ -2,7 +2,7 @@
 
 ## Type signature
 
-```
+```typescript
 (f: any, wait: any) => (...args: any[]) => void
 ```
 
@@ -10,7 +10,7 @@
 
 ## Type signature
 
-```
+```typescript
 (duration: any) => Promise<unknown>
 ```
 
@@ -18,6 +18,6 @@
 
 ## Type signature
 
-```
+```typescript
 (tasks: any) => Promise<any>
 ```

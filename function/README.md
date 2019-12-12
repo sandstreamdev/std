@@ -2,55 +2,55 @@
 
 ## Type signature
 
-```
-(...fs: any[]) => (x: any) => any
+```typescript
+(...fs: any[]) => (x: any) => any;
 ```
 
 # constant
 
 ## Type signature
 
-```
-(x: any) => () => any
+```typescript
+(x: any) => () => any;
 ```
 
 # identity
 
 ## Type signature
 
-```
-(x: any) => any
+```typescript
+(x: any) => any;
 ```
 
 # memoize
 
 ## Type signature
 
-```
-(f: any) => (...args: any[]) => any
+```typescript
+(f: any) => (...args: any[]) => any;
 ```
 
 # memoizeShallow
 
 ## Type signature
 
-```
-(f: any) => (...args: any[]) => any
+```typescript
+(f: any) => (...args: any[]) => any;
 ```
 
 # memoizeWith
 
 ## Type signature
 
-```
-(equals: any) => (f: any) => (...args: any[]) => any
+```typescript
+(equals: any) => (f: any) => (...args: any[]) => any;
 ```
 
 # noOp
 
 ## Type signature
 
-```
+```typescript
 () => void
 ```
 
@@ -58,32 +58,30 @@
 
 ## Type signature
 
-```
-(f: any) => (...args: any[]) => boolean
+```typescript
+(f: any) => (...args: any[]) => boolean;
 ```
 
 # pipe
 
 ## Type signature
 
-```
-(...fs: any[]) => (x: any) => any
+```typescript
+(...fs: any[]) => (x: any) => any;
 ```
 
 # when
 
 ## Type signature
 
-```
-(
-  predicate: any
-) => (action: any) => (...args: any[]) => any
+```typescript
+(predicate: any) => (action: any) => (...args: any[]) => any;
 ```
 
 # whenTrue
 
 ## Type signature
 
-```
-(action: any) => (...args: any[]) => any
+```typescript
+(action: any) => (...args: any[]) => any;
 ```

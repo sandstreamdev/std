@@ -15,8 +15,8 @@ Checks if the given array is not empty (contains at least one element).
 
 ##### Type signature
 
-```
-(xs: any[]) => boolean
+```typescript
+(xs: any[]) => boolean;
 ```
 
 ##### Examples
@@ -42,39 +42,39 @@ Checks if given arguments are all `Arrays`.
 
 ##### Type signature
 
-```
-(...xs: any[]) => boolean
+```typescript
+(...xs: any[]) => boolean;
 ```
 
 #### difference
 
 ##### Type signature
 
-```
-(xs: any, ys: any) => any
+```typescript
+(xs: any, ys: any) => any;
 ```
 
 #### differs
 
 ##### Type signature
 
-```
-(xs: any, ys: any) => any
+```typescript
+(xs: any, ys: any) => any;
 ```
 
 #### duplicates
 
 ##### Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 #### empty
 
 ##### Type signature
 
-```
+```typescript
 any[]
 ```
 
@@ -82,7 +82,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (n: any) => (xs: any) => any[]
 ```
 
@@ -90,47 +90,47 @@ any[]
 
 ##### Type signature
 
-```
-(y: any) => (xs: any) => any
+```typescript
+(y: any) => (xs: any) => any;
 ```
 
 #### filterInPlace
 
 ##### Type signature
 
-```
-(f: any) => (xs: any) => any
+```typescript
+(f: any) => (xs: any) => any;
 ```
 
 #### find
 
 ##### Type signature
 
-```
-(predicate: any, fallback: any) => (xs: any) => any
+```typescript
+(predicate: any, fallback: any) => (xs: any) => any;
 ```
 
 #### first
 
 ##### Type signature
 
-```
-([x]: [any]) => any
+```typescript
+([x]: [any]) => any;
 ```
 
 #### flatMap
 
 ##### Type signature
 
-```
-(f: any) => (xs: any) => any
+```typescript
+(f: any) => (xs: any) => any;
 ```
 
 #### flatten
 
 ##### Type signature
 
-```
+```typescript
 (xs: any) => any[]
 ```
 
@@ -138,87 +138,87 @@ any[]
 
 ##### Type signature
 
-```
-(xs: any, ys: any) => any
+```typescript
+(xs: any, ys: any) => any;
 ```
 
 #### is
 
 ##### Type signature
 
-```
-(value: any) => boolean
+```typescript
+(value: any) => boolean;
 ```
 
 #### last
 
 ##### Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 #### lengthDiffers
 
 ##### Type signature
 
-```
-(a: any, b: any) => boolean
+```typescript
+(a: any, b: any) => boolean;
 ```
 
 #### map
 
 ##### Type signature
 
-```
-(...fs: any[]) => (x: any) => any
+```typescript
+(...fs: any[]) => (x: any) => any;
 ```
 
 #### midpoint
 
 ##### Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 #### minMax
 
 ##### Type signature
 
-```
-([head, ...tail]: [any, ...any[]]) => any
+```typescript
+([head, ...tail]: [any, ...any[]]) => any;
 ```
 
 #### multiple
 
 ##### Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 #### none
 
 ##### Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 #### partition
 
 ##### Type signature
 
-```
-(predicate: any) => (xs: any) => any
+```typescript
+(predicate: any) => (xs: any) => any;
 ```
 
 #### range
 
 ##### Type signature
 
-```
+```typescript
 (n: any) => number[]
 ```
 
@@ -226,7 +226,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (n: any) => (value: any) => any[]
 ```
 
@@ -234,7 +234,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (xs: any) => any[]
 ```
 
@@ -242,71 +242,71 @@ any[]
 
 ##### Type signature
 
-```
-(predicate: any) => (xs: any) => any
+```typescript
+(predicate: any) => (xs: any) => any;
 ```
 
 #### rotate
 
 ##### Type signature
 
-```
-(array: any) => (angle: any) => any
+```typescript
+(array: any) => (angle: any) => any;
 ```
 
 #### second
 
 ##### Type signature
 
-```
-([, x]: [any, any]) => any
+```typescript
+([, x]: [any, any]) => any;
 ```
 
 #### secondToLast
 
 ##### Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 #### shift
 
 ##### Type signature
 
-```
-(n: any) => (xs: any) => any
+```typescript
+(n: any) => (xs: any) => any;
 ```
 
 #### shuffle
 
 ##### Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 #### shuffleInPlace
 
 ##### Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 #### single
 
 ##### Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 #### skip
 
 ##### Type signature
 
-```
+```typescript
 (count: number) => (xs: any[]) => any[]
 ```
 
@@ -314,7 +314,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (f: any) => (xs: any) => any[]
 ```
 
@@ -322,15 +322,15 @@ any[]
 
 ##### Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 #### take
 
 ##### Type signature
 
-```
+```typescript
 (count: number) => (xs: any[]) => any[]
 ```
 
@@ -338,7 +338,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (xs: any) => any[][]
 ```
 
@@ -346,7 +346,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (xs: any) => unknown[]
 ```
 
@@ -354,16 +354,16 @@ any[]
 
 ##### Type signature
 
-```
-(xs: any, ys: any) => any
+```typescript
+(xs: any, ys: any) => any;
 ```
 
 #### zipWith
 
 ##### Type signature
 
-```
-(f: any) => (xs: any, ys: any) => any
+```typescript
+(f: any) => (xs: any, ys: any) => any;
 ```
 
 ### async
@@ -372,7 +372,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (f: any, wait: any) => (...args: any[]) => void
 ```
 
@@ -380,7 +380,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (duration: any) => Promise<unknown>
 ```
 
@@ -388,7 +388,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (tasks: any) => Promise<any>
 ```
 
@@ -398,10 +398,8 @@ any[]
 
 ##### Type signature
 
-```
-(
-  now: any
-) => (
+```typescript
+(now: any) => (
   {
     endedAt: aEnd,
     startedAt: aStart
@@ -416,38 +414,38 @@ any[]
     endedAt: any;
     startedAt: any;
   }
-) => number
+) => number;
 ```
 
 #### clamp
 
 ##### Type signature
 
-```
-(min: any, max: any) => (dateStringOrDate: any) => Date
+```typescript
+(min: any, max: any) => (dateStringOrDate: any) => Date;
 ```
 
 #### dateDiff
 
 ##### Type signature
 
-```
-(a: any, b: any) => number
+```typescript
+(a: any, b: any) => number;
 ```
 
 #### dateInRange
 
 ##### Type signature
 
-```
-(from: any, to: any) => (date?: Date) => boolean
+```typescript
+(from: any, to: any) => (date?: Date) => boolean;
 ```
 
 #### dayRange
 
 ##### Type signature
 
-```
+```typescript
 ({
   iso,
   local,
@@ -465,7 +463,7 @@ any[]
 
 ##### Type signature
 
-```
+```typescript
 (leapYear: any) => number[]
 ```
 
@@ -473,143 +471,127 @@ any[]
 
 ##### Type signature
 
-```
-(year: any) => any
+```typescript
+(year: any) => any;
 ```
 
 #### displayMonth
 
 ##### Type signature
 
-```
-(monthIndex: any) => string
+```typescript
+(monthIndex: any) => string;
 ```
 
 #### displayTime
 
 ##### Type signature
 
-```
-(source: any, showSeconds: any) => string
+```typescript
+(source: any, showSeconds: any) => string;
 ```
 
 #### endOfDay
 
 ##### Type signature
 
-```
-(
-  date: any,
-  timezoneOffset?: number,
-  local?: boolean
-) => Date
+```typescript
+(date: any, timezoneOffset?: number, local?: boolean) => Date;
 ```
 
 #### formatDate
 
 ##### Type signature
 
-```
-(sourceDate: any, timezoneOffset?: number) => string
+```typescript
+(sourceDate: any, timezoneOffset?: number) => string;
 ```
 
 #### formatDateTime
 
 ##### Type signature
 
-```
-(
-  sourceDate: any,
-  showSeconds?: boolean,
-  timezoneOffset?: number
-) => string
+```typescript
+(sourceDate: any, showSeconds?: boolean, timezoneOffset?: number) => string;
 ```
 
 #### formatDisplayDate
 
 ##### Type signature
 
-```
-(
-  sourceDate: any,
-  showDay?: boolean,
-  timezoneOffset?: number
-) => string
+```typescript
+(sourceDate: any, showDay?: boolean, timezoneOffset?: number) => string;
 ```
 
 #### formatDuration
 
 ##### Type signature
 
-```
-(duration: any, showSeconds?: boolean) => string
+```typescript
+(duration: any, showSeconds?: boolean) => string;
 ```
 
 #### formatTime
 
 ##### Type signature
 
-```
-(
-  sourceDate: any,
-  showSeconds?: boolean,
-  timezoneOffset?: number
-) => string
+```typescript
+(sourceDate: any, showSeconds?: boolean, timezoneOffset?: number) => string;
 ```
 
 #### fromDays
 
 ##### Type signature
 
-```
-(days: any) => number
+```typescript
+(days: any) => number;
 ```
 
 #### fromHours
 
 ##### Type signature
 
-```
-(hours: any) => number
+```typescript
+(hours: any) => number;
 ```
 
 #### fromMinutes
 
 ##### Type signature
 
-```
-(minutes: any) => number
+```typescript
+(minutes: any) => number;
 ```
 
 #### fromSeconds
 
 ##### Type signature
 
-```
-(seconds: any) => number
+```typescript
+(seconds: any) => number;
 ```
 
 #### joinDateTime
 
 ##### Type signature
 
-```
-(...xs: any[]) => string
+```typescript
+(...xs: any[]) => string;
 ```
 
 #### leapYear
 
 ##### Type signature
 
-```
-(year: any) => boolean
+```typescript
+(year: any) => boolean;
 ```
 
 #### monthNames
 
 ##### Type signature
 
-```
+```typescript
 string[]
 ```
 
@@ -617,15 +599,15 @@ string[]
 
 ##### Type signature
 
-```
-(date: any) => Date
+```typescript
+(date: any) => Date;
 ```
 
 #### parseHourMinutePair
 
 ##### Type signature
 
-```
+```typescript
 (text?: string) => number[]
 ```
 
@@ -633,108 +615,104 @@ string[]
 
 ##### Type signature
 
-```
-(dateTimeString: any) => any
+```typescript
+(dateTimeString: any) => any;
 ```
 
 #### startOfDay
 
 ##### Type signature
 
-```
-(
-  date: any,
-  timezoneOffset?: number,
-  local?: boolean
-) => Date
+```typescript
+(date: any, timezoneOffset?: number, local?: boolean) => Date;
 ```
 
 #### subtractDays
 
 ##### Type signature
 
-```
-(sourceDate: any, numberOfDays: any) => Date
+```typescript
+(sourceDate: any, numberOfDays: any) => Date;
 ```
 
 #### toDate
 
 ##### Type signature
 
-```
-(date: any) => string
+```typescript
+(date: any) => string;
 ```
 
 #### toDates
 
 ##### Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 #### toDays
 
 ##### Type signature
 
-```
-(milliseconds: any) => number
+```typescript
+(milliseconds: any) => number;
 ```
 
 #### toHours
 
 ##### Type signature
 
-```
-(milliseconds: any) => number
+```typescript
+(milliseconds: any) => number;
 ```
 
 #### toISO
 
 ##### Type signature
 
-```
-(x: any) => any
+```typescript
+(x: any) => any;
 ```
 
 #### toISOFromLocalDateTime
 
 ##### Type signature
 
-```
-(date: any) => string
+```typescript
+(date: any) => string;
 ```
 
 #### toLocalDateTime
 
 ##### Type signature
 
-```
-(date: any, timezoneOffset?: number) => Date
+```typescript
+(date: any, timezoneOffset?: number) => Date;
 ```
 
 #### toMinutes
 
 ##### Type signature
 
-```
-(milliseconds: any) => number
+```typescript
+(milliseconds: any) => number;
 ```
 
 #### toSeconds
 
 ##### Type signature
 
-```
-(milliseconds: any) => number
+```typescript
+(milliseconds: any) => number;
 ```
 
 #### valid
 
 ##### Type signature
 
-```
-(date: any) => boolean
+```typescript
+(date: any) => boolean;
 ```
 
 ### debug
@@ -743,15 +721,29 @@ string[]
 
 ##### Type signature
 
-```
+```typescript
 (condition: any, callbackOrMessage: any) => void
 ```
 
 #### diff
 
+##### Type signature
+
+```typescript
+(obj1: any, obj2: any) => object;
+```
+
 ### encoding
 
 #### base64url
+
+##### Type signature
+
+```typescript
+{
+  encode: (_: any) => string;
+}
+```
 
 ### file
 
@@ -759,8 +751,8 @@ string[]
 
 ##### Type signature
 
-```
-(name: any) => boolean
+```typescript
+(name: any) => boolean;
 ```
 
 ### function
@@ -769,55 +761,55 @@ string[]
 
 ##### Type signature
 
-```
-(...fs: any[]) => (x: any) => any
+```typescript
+(...fs: any[]) => (x: any) => any;
 ```
 
 #### constant
 
 ##### Type signature
 
-```
-(x: any) => () => any
+```typescript
+(x: any) => () => any;
 ```
 
 #### identity
 
 ##### Type signature
 
-```
-(x: any) => any
+```typescript
+(x: any) => any;
 ```
 
 #### memoize
 
 ##### Type signature
 
-```
-(f: any) => (...args: any[]) => any
+```typescript
+(f: any) => (...args: any[]) => any;
 ```
 
 #### memoizeShallow
 
 ##### Type signature
 
-```
-(f: any) => (...args: any[]) => any
+```typescript
+(f: any) => (...args: any[]) => any;
 ```
 
 #### memoizeWith
 
 ##### Type signature
 
-```
-(equals: any) => (f: any) => (...args: any[]) => any
+```typescript
+(equals: any) => (f: any) => (...args: any[]) => any;
 ```
 
 #### noOp
 
 ##### Type signature
 
-```
+```typescript
 () => void
 ```
 
@@ -825,34 +817,32 @@ string[]
 
 ##### Type signature
 
-```
-(f: any) => (...args: any[]) => boolean
+```typescript
+(f: any) => (...args: any[]) => boolean;
 ```
 
 #### pipe
 
 ##### Type signature
 
-```
-(...fs: any[]) => (x: any) => any
+```typescript
+(...fs: any[]) => (x: any) => any;
 ```
 
 #### when
 
 ##### Type signature
 
-```
-(
-  predicate: any
-) => (action: any) => (...args: any[]) => any
+```typescript
+(predicate: any) => (action: any) => (...args: any[]) => any;
 ```
 
 #### whenTrue
 
 ##### Type signature
 
-```
-(action: any) => (...args: any[]) => any
+```typescript
+(action: any) => (...args: any[]) => any;
 ```
 
 ### is
@@ -861,80 +851,80 @@ string[]
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### byte
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### date
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### defined
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### \_function
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### integer
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### normal
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### number
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### object
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### string
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 ### math
@@ -943,131 +933,128 @@ string[]
 
 ##### Type signature
 
-```
-(a: number, b: number) => number
+```typescript
+(a: number, b: number) => number;
 ```
 
 #### average
 
 ##### Type signature
 
-```
-(xs: number[]) => number
+```typescript
+(xs: number[]) => number;
 ```
 
 #### ceilToNearestPowerOfTwo
 
 ##### Type signature
 
-```
-(x: number) => number
+```typescript
+(x: number) => number;
 ```
 
 #### clamp
 
 ##### Type signature
 
-```
-(min: number, max: number) => (x: number) => number
+```typescript
+(min: number, max: number) => (x: number) => number;
 ```
 
 #### clampNormal
 
 ##### Type signature
 
-```
-(x: number) => number
+```typescript
+(x: number) => number;
 ```
 
 #### clampPercentage
 
 ##### Type signature
 
-```
-(x: number) => number
+```typescript
+(x: number) => number;
 ```
 
 #### delta
 
 ##### Type signature
 
-```
-(a: number, b: number) => number
+```typescript
+(a: number, b: number) => number;
 ```
 
 #### inRectangleRange
 
 ##### Type signature
 
-```
-(
-  width: number,
-  height: number
-) => (x: number, y: number) => boolean
+```typescript
+(width: number, height: number) => (x: number, y: number) => boolean;
 ```
 
 #### lerp
 
 ##### Type signature
 
-```
-(t: number) => (a: number, b: number) => number
+```typescript
+(t: number) => (a: number, b: number) => number;
 ```
 
 #### maximumBy
 
 ##### Type signature
 
-```
-(f: (x: number) => number) => (xs: number[]) => number
+```typescript
+(f: (x: number) => number) => (xs: number[]) => number;
 ```
 
 #### median
 
 ##### Type signature
 
-```
-(xs: number[]) => number
+```typescript
+(xs: number[]) => number;
 ```
 
 #### minMax
 
 ##### Type signature
 
-```
-([a, b]: [number, number]) => [number, number]
+```typescript
+([a, b]: [number, number]) => [number, number];
 ```
 
 #### safeNormalize
 
 ##### Type signature
 
-```
-(x: number) => number
+```typescript
+(x: number) => number;
 ```
 
 #### sameSign
 
 ##### Type signature
 
-```
-(xs: number[]) => boolean
+```typescript
+(xs: number[]) => boolean;
 ```
 
 #### standardDeviation
 
 ##### Type signature
 
-```
-(xs: number[], origin?: number) => number
+```typescript
+(xs: number[], origin?: number) => number;
 ```
 
 #### subtract
 
 ##### Type signature
 
-```
-(a: number, b: number) => number
+```typescript
+(a: number, b: number) => number;
 ```
 
 ### object
@@ -1076,33 +1063,32 @@ string[]
 
 ##### Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 #### apply
 
 ##### Type signature
 
-```
-(
-  fs: ((...xs: any[]) => any)[]
-) => (...xs: any[]) => object
+```typescript
+(fs: ((...xs: any[]) => any)[]) => (...xs: any[]) => object;
 ```
 
 #### empty
 
 ##### Type signature
 
-```
-{}
+```typescript
+{
+}
 ```
 
 #### entries
 
 ##### Type signature
 
-```
+```typescript
 {
   <T>(
     o:
@@ -1119,121 +1105,120 @@ string[]
 
 ##### Type signature
 
-```
-(...xs: any[]) => any
+```typescript
+(...xs: any[]) => any;
 ```
 
 #### equals
 
 ##### Type signature
 
-```
-(a: any, b: any) => any
+```typescript
+(a: any, b: any) => any;
 ```
 
 #### filter
 
 ##### Type signature
 
-```
-(f: any) => (xs: any) => object
+```typescript
+(f: any) => (xs: any) => object;
 ```
 
 #### find
 
 ##### Type signature
 
-```
-(predicate: any) => (xs: any) => unknown
+```typescript
+(predicate: any) => (xs: any) => unknown;
 ```
 
 #### findEntry
 
 ##### Type signature
 
-```
-(predicate: any) => (xs: any) => [string, unknown]
+```typescript
+(predicate: any) => (xs: any) => [string, unknown];
 ```
 
 #### findKey
 
 ##### Type signature
 
-```
-(predicate: any) => (xs: any) => string
+```typescript
+(predicate: any) => (xs: any) => string;
 ```
 
 #### findValue
 
 ##### Type signature
 
-```
-(predicate: any) => (xs: any) => unknown
+```typescript
+(predicate: any) => (xs: any) => unknown;
 ```
 
 #### first
 
 ##### Type signature
 
-```
-(xs: any) => unknown
+```typescript
+(xs: any) => unknown;
 ```
 
 #### flatMapValues
 
 ##### Type signature
 
-```
-(f: any) => (xs: any) => any
+```typescript
+(f: any) => (xs: any) => any;
 ```
 
 #### fromEntries
 
 ##### Type signature
 
-```
-(keyValuePairs: [string, any][]) => object
+```typescript
+(keyValuePairs: [string, any][]) => object;
 ```
 
 #### groupBy
 
 ##### Type signature
 
-```
-(selector: any) => (xs: any) => any
+```typescript
+(selector: any) => (xs: any) => any;
 ```
 
 #### hasKey
 
 ##### Type signature
 
-```
-(key: any) => (xs: any) => any
+```typescript
+(key: any) => (xs: any) => any;
 ```
 
 #### length
 
 ##### Type signature
 
-```
-(xs: any) => number
+```typescript
+(xs: any) => number;
 ```
 
 #### map
 
 ##### Type signature
 
-```
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => object
+```typescript
+(f: (value: any, key: string, context: object) => any) => (xs: object) =>
+  object;
 ```
 
 #### mapEntries
 
 ##### Type signature
 
-```
+```typescript
 (
   f: (value: any, key: string, context: object) => any
 ) => (xs: object) => [string, any][]
@@ -1243,15 +1228,15 @@ string[]
 
 ##### Type signature
 
-```
-(f: any) => (xs: any) => object
+```typescript
+(f: any) => (xs: any) => object;
 ```
 
 #### mapValues
 
 ##### Type signature
 
-```
+```typescript
 (f: any) => (xs: any) => any[]
 ```
 
@@ -1259,24 +1244,24 @@ string[]
 
 ##### Type signature
 
-```
-(a: object, b: object) => object
+```typescript
+(a: object, b: object) => object;
 ```
 
 #### none
 
 ##### Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 #### sort
 
 ##### Type signature
 
-```
-(f: any) => (xs: any) => object
+```typescript
+(f: any) => (xs: any) => object;
 ```
 
 ### query
@@ -1285,38 +1270,36 @@ string[]
 
 ##### Type signature
 
-```
-(xs?: string) => object
+```typescript
+(xs?: string) => object;
 ```
 
 #### parsePathname
 
 ##### Type signature
 
-```
-(
-  url: any
-) => {
+```typescript
+(url: any) => {
   pathname: any;
   search: string;
   hash: string;
-}
+};
 ```
 
 #### read
 
 ##### Type signature
 
-```
-(source: any) => {}
+```typescript
+(source: any) => {};
 ```
 
 #### serialize
 
 ##### Type signature
 
-```
-(xs?: {}) => string
+```typescript
+(xs?: {}) => string;
 ```
 
 ### range
@@ -1325,32 +1308,32 @@ string[]
 
 ##### Type signature
 
-```
-([min, max]: [any, any]) => boolean
+```typescript
+([min, max]: [any, any]) => boolean;
 ```
 
 #### equals
 
 ##### Type signature
 
-```
-([a, b]: [any, any], [c, d]: [any, any]) => boolean
+```typescript
+([a, b]: [any, any], [c, d]: [any, any]) => boolean;
 ```
 
 #### length
 
 ##### Type signature
 
-```
-([min, max]: [any, any]) => number
+```typescript
+([min, max]: [any, any]) => number;
 ```
 
 #### split
 
 ##### Type signature
 
-```
-(used: any, sourceRange?: number[]) => (range: any) => any
+```typescript
+(used: any, sourceRange?: number[]) => (range: any) => any;
 ```
 
 ### regex
@@ -1359,8 +1342,8 @@ string[]
 
 ##### Type signature
 
-```
-(string: any) => any
+```typescript
+(string: any) => any;
 ```
 
 ### string
@@ -1369,64 +1352,64 @@ string[]
 
 ##### Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 #### empty
 
 ##### Type signature
 
-```
-""
+```typescript
+"";
 ```
 
 #### firstToLower
 
 ##### Type signature
 
-```
-([first, ...rest]: [any, ...any[]]) => string
+```typescript
+([first, ...rest]: [any, ...any[]]) => string;
 ```
 
 #### firstToUpper
 
 ##### Type signature
 
-```
-([first, ...rest]: [any, ...any[]]) => string
+```typescript
+([first, ...rest]: [any, ...any[]]) => string;
 ```
 
 #### includes
 
 ##### Type signature
 
-```
-(search: any) => (xs: any) => boolean
+```typescript
+(search: any) => (xs: any) => boolean;
 ```
 
 #### nbsp
 
 ##### Type signature
 
-```
-" "
+```typescript
+" ";
 ```
 
 #### nonEmpty
 
 ##### Type signature
 
-```
-(x: any) => any
+```typescript
+(x: any) => any;
 ```
 
 #### startsWith
 
 ##### Type signature
 
-```
-(prefix: any) => (xs: any) => boolean
+```typescript
+(prefix: any) => (xs: any) => boolean;
 ```
 
 ### vector2
@@ -1435,7 +1418,7 @@ string[]
 
 ##### Type signature
 
-```
+```typescript
 ([x1, y1]: [any, any], [x2, y2]: [any, any]) => any[]
 ```
 
@@ -1443,7 +1426,7 @@ string[]
 
 ##### Type signature
 
-```
+```typescript
 (space: any) => ([x, y]: [any, any]) => any[]
 ```
 
@@ -1451,31 +1434,31 @@ string[]
 
 ##### Type signature
 
-```
-([a, b]: [any, any], [c, d]: [any, any]) => number
+```typescript
+([a, b]: [any, any], [c, d]: [any, any]) => number;
 ```
 
 #### dot
 
 ##### Type signature
 
-```
-([a, b]: [any, any], [c, d]: [any, any]) => number
+```typescript
+([a, b]: [any, any], [c, d]: [any, any]) => number;
 ```
 
 #### length
 
 ##### Type signature
 
-```
-([x, y]: [any, any]) => number
+```typescript
+([x, y]: [any, any]) => number;
 ```
 
 #### mul
 
 ##### Type signature
 
-```
+```typescript
 (matrix: any, point: any) => any[]
 ```
 
@@ -1483,33 +1466,30 @@ string[]
 
 ##### Type signature
 
-```
-(
-  m1: any,
-  m2: any
-) => {
+```typescript
+(m1: any, m2: any) => {
   a: number;
   c: number;
   e: any;
   b: number;
   d: number;
   f: any;
-}
+};
 ```
 
 #### normalize
 
 ##### Type signature
 
-```
-(vector: any) => any
+```typescript
+(vector: any) => any;
 ```
 
 #### reflect
 
 ##### Type signature
 
-```
+```typescript
 (a: any, v: any) => number[]
 ```
 
@@ -1517,33 +1497,30 @@ string[]
 
 ##### Type signature
 
-```
-(angle?: number, cx?: number, cy?: number) => any
+```typescript
+(angle?: number, cx?: number, cy?: number) => any;
 ```
 
 #### scale
 
 ##### Type signature
 
-```
-(
-  sx?: number,
-  sy?: number
-) => {
+```typescript
+(sx?: number, sy?: number) => {
   a: number;
   c: number;
   e: number;
   b: number;
   d: number;
   f: number;
-}
+};
 ```
 
 #### sub
 
 ##### Type signature
 
-```
+```typescript
 (
   [x1, y1]: [any, any],
   [x2, y2]: [any, any]
@@ -1554,26 +1531,23 @@ string[]
 
 ##### Type signature
 
-```
-(...matrices: any[]) => any
+```typescript
+(...matrices: any[]) => any;
 ```
 
 #### translate
 
 ##### Type signature
 
-```
-(
-  tx?: number,
-  ty?: number
-) => {
+```typescript
+(tx?: number, ty?: number) => {
   a: number;
   c: number;
   e: number;
   b: number;
   d: number;
   f: number;
-}
+};
 ```
 
 ### web
@@ -1582,8 +1556,8 @@ string[]
 
 ##### Type signature
 
-```
-(...xs: any[]) => any
+```typescript
+(...xs: any[]) => any;
 ```
 
 #### events
@@ -1592,15 +1566,15 @@ string[]
 
 ###### Type signature
 
-```
-(event: any) => boolean
+```typescript
+(event: any) => boolean;
 ```
 
 ##### openInNewTabIntent
 
 ###### Type signature
 
-```
+```typescript
 ({
   button,
   ctrlKey,
@@ -1611,23 +1585,23 @@ string[]
   ctrlKey: any;
   metaKey: any;
   shiftKey: any;
-}) => any
+}) => any;
 ```
 
 ##### prevent
 
 ###### Type signature
 
-```
-(event: any) => boolean
+```typescript
+(event: any) => boolean;
 ```
 
 ##### stop
 
 ###### Type signature
 
-```
-(event: any) => boolean
+```typescript
+(event: any) => boolean;
 ```
 
 <!-- DOCS:END -->

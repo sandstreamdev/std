@@ -2,129 +2,126 @@
 
 ## Type signature
 
-```
-(a: number, b: number) => number
+```typescript
+(a: number, b: number) => number;
 ```
 
 # average
 
 ## Type signature
 
-```
-(xs: number[]) => number
+```typescript
+(xs: number[]) => number;
 ```
 
 # ceilToNearestPowerOfTwo
 
 ## Type signature
 
-```
-(x: number) => number
+```typescript
+(x: number) => number;
 ```
 
 # clamp
 
 ## Type signature
 
-```
-(min: number, max: number) => (x: number) => number
+```typescript
+(min: number, max: number) => (x: number) => number;
 ```
 
 # clampNormal
 
 ## Type signature
 
-```
-(x: number) => number
+```typescript
+(x: number) => number;
 ```
 
 # clampPercentage
 
 ## Type signature
 
-```
-(x: number) => number
+```typescript
+(x: number) => number;
 ```
 
 # delta
 
 ## Type signature
 
-```
-(a: number, b: number) => number
+```typescript
+(a: number, b: number) => number;
 ```
 
 # inRectangleRange
 
 ## Type signature
 
-```
-(
-  width: number,
-  height: number
-) => (x: number, y: number) => boolean
+```typescript
+(width: number, height: number) => (x: number, y: number) => boolean;
 ```
 
 # lerp
 
 ## Type signature
 
-```
-(t: number) => (a: number, b: number) => number
+```typescript
+(t: number) => (a: number, b: number) => number;
 ```
 
 # maximumBy
 
 ## Type signature
 
-```
-(f: (x: number) => number) => (xs: number[]) => number
+```typescript
+(f: (x: number) => number) => (xs: number[]) => number;
 ```
 
 # median
 
 ## Type signature
 
-```
-(xs: number[]) => number
+```typescript
+(xs: number[]) => number;
 ```
 
 # minMax
 
 ## Type signature
 
-```
-([a, b]: [number, number]) => [number, number]
+```typescript
+([a, b]: [number, number]) => [number, number];
 ```
 
 # safeNormalize
 
 ## Type signature
 
-```
-(x: number) => number
+```typescript
+(x: number) => number;
 ```
 
 # sameSign
 
 ## Type signature
 
-```
-(xs: number[]) => boolean
+```typescript
+(xs: number[]) => boolean;
 ```
 
 # standardDeviation
 
 ## Type signature
 
-```
-(xs: number[], origin?: number) => number
+```typescript
+(xs: number[], origin?: number) => number;
 ```
 
 # subtract
 
 ## Type signature
 
-```
-(a: number, b: number) => number
+```typescript
+(a: number, b: number) => number;
 ```

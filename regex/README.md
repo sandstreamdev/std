@@ -2,6 +2,6 @@
 
 ## Type signature
 
-```
-(string: any) => any
+```typescript
+(string: any) => any;
 ```

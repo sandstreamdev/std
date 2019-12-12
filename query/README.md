@@ -2,36 +2,34 @@
 
 ## Type signature
 
-```
-(xs?: string) => object
+```typescript
+(xs?: string) => object;
 ```
 
 # parsePathname
 
 ## Type signature
 
-```
-(
-  url: any
-) => {
+```typescript
+(url: any) => {
   pathname: any;
   search: string;
   hash: string;
-}
+};
 ```
 
 # read
 
 ## Type signature
 
-```
-(source: any) => {}
+```typescript
+(source: any) => {};
 ```
 
 # serialize
 
 ## Type signature
 
-```
-(xs?: {}) => string
+```typescript
+(xs?: {}) => string;
 ```

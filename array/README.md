@@ -4,8 +4,8 @@ Checks if the given array is not empty (contains at least one element).
 
 ## Type signature
 
-```
-(xs: any[]) => boolean
+```typescript
+(xs: any[]) => boolean;
 ```
 
 ## Examples
@@ -31,39 +31,39 @@ Checks if given arguments are all `Arrays`.
 
 ## Type signature
 
-```
-(...xs: any[]) => boolean
+```typescript
+(...xs: any[]) => boolean;
 ```
 
 # difference
 
 ## Type signature
 
-```
-(xs: any, ys: any) => any
+```typescript
+(xs: any, ys: any) => any;
 ```
 
 # differs
 
 ## Type signature
 
-```
-(xs: any, ys: any) => any
+```typescript
+(xs: any, ys: any) => any;
 ```
 
 # duplicates
 
 ## Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 # empty
 
 ## Type signature
 
-```
+```typescript
 any[]
 ```
 
@@ -71,7 +71,7 @@ any[]
 
 ## Type signature
 
-```
+```typescript
 (n: any) => (xs: any) => any[]
 ```
 
@@ -79,47 +79,47 @@ any[]
 
 ## Type signature
 
-```
-(y: any) => (xs: any) => any
+```typescript
+(y: any) => (xs: any) => any;
 ```
 
 # filterInPlace
 
 ## Type signature
 
-```
-(f: any) => (xs: any) => any
+```typescript
+(f: any) => (xs: any) => any;
 ```
 
 # find
 
 ## Type signature
 
-```
-(predicate: any, fallback: any) => (xs: any) => any
+```typescript
+(predicate: any, fallback: any) => (xs: any) => any;
 ```
 
 # first
 
 ## Type signature
 
-```
-([x]: [any]) => any
+```typescript
+([x]: [any]) => any;
 ```
 
 # flatMap
 
 ## Type signature
 
-```
-(f: any) => (xs: any) => any
+```typescript
+(f: any) => (xs: any) => any;
 ```
 
 # flatten
 
 ## Type signature
 
-```
+```typescript
 (xs: any) => any[]
 ```
 
@@ -127,87 +127,87 @@ any[]
 
 ## Type signature
 
-```
-(xs: any, ys: any) => any
+```typescript
+(xs: any, ys: any) => any;
 ```
 
 # is
 
 ## Type signature
 
-```
-(value: any) => boolean
+```typescript
+(value: any) => boolean;
 ```
 
 # last
 
 ## Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 # lengthDiffers
 
 ## Type signature
 
-```
-(a: any, b: any) => boolean
+```typescript
+(a: any, b: any) => boolean;
 ```
 
 # map
 
 ## Type signature
 
-```
-(...fs: any[]) => (x: any) => any
+```typescript
+(...fs: any[]) => (x: any) => any;
 ```
 
 # midpoint
 
 ## Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 # minMax
 
 ## Type signature
 
-```
-([head, ...tail]: [any, ...any[]]) => any
+```typescript
+([head, ...tail]: [any, ...any[]]) => any;
 ```
 
 # multiple
 
 ## Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 # none
 
 ## Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 # partition
 
 ## Type signature
 
-```
-(predicate: any) => (xs: any) => any
+```typescript
+(predicate: any) => (xs: any) => any;
 ```
 
 # range
 
 ## Type signature
 
-```
+```typescript
 (n: any) => number[]
 ```
 
@@ -215,7 +215,7 @@ any[]
 
 ## Type signature
 
-```
+```typescript
 (n: any) => (value: any) => any[]
 ```
 
@@ -223,7 +223,7 @@ any[]
 
 ## Type signature
 
-```
+```typescript
 (xs: any) => any[]
 ```
 
@@ -231,71 +231,71 @@ any[]
 
 ## Type signature
 
-```
-(predicate: any) => (xs: any) => any
+```typescript
+(predicate: any) => (xs: any) => any;
 ```
 
 # rotate
 
 ## Type signature
 
-```
-(array: any) => (angle: any) => any
+```typescript
+(array: any) => (angle: any) => any;
 ```
 
 # second
 
 ## Type signature
 
-```
-([, x]: [any, any]) => any
+```typescript
+([, x]: [any, any]) => any;
 ```
 
 # secondToLast
 
 ## Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 # shift
 
 ## Type signature
 
-```
-(n: any) => (xs: any) => any
+```typescript
+(n: any) => (xs: any) => any;
 ```
 
 # shuffle
 
 ## Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 # shuffleInPlace
 
 ## Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 # single
 
 ## Type signature
 
-```
-(xs: any) => boolean
+```typescript
+(xs: any) => boolean;
 ```
 
 # skip
 
 ## Type signature
 
-```
+```typescript
 (count: number) => (xs: any[]) => any[]
 ```
 
@@ -303,7 +303,7 @@ any[]
 
 ## Type signature
 
-```
+```typescript
 (f: any) => (xs: any) => any[]
 ```
 
@@ -311,15 +311,15 @@ any[]
 
 ## Type signature
 
-```
-(xs: any) => any
+```typescript
+(xs: any) => any;
 ```
 
 # take
 
 ## Type signature
 
-```
+```typescript
 (count: number) => (xs: any[]) => any[]
 ```
 
@@ -327,7 +327,7 @@ any[]
 
 ## Type signature
 
-```
+```typescript
 (xs: any) => any[][]
 ```
 
@@ -335,7 +335,7 @@ any[]
 
 ## Type signature
 
-```
+```typescript
 (xs: any) => unknown[]
 ```
 
@@ -343,14 +343,14 @@ any[]
 
 ## Type signature
 
-```
-(xs: any, ys: any) => any
+```typescript
+(xs: any, ys: any) => any;
 ```
 
 # zipWith
 
 ## Type signature
 
-```
-(f: any) => (xs: any, ys: any) => any
+```typescript
+(f: any) => (xs: any, ys: any) => any;
 ```

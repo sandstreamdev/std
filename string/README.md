@@ -2,62 +2,62 @@
 
 ## Type signature
 
-```
-(x: any) => boolean
+```typescript
+(x: any) => boolean;
 ```
 
 # empty
 
 ## Type signature
 
-```
-""
+```typescript
+"";
 ```
 
 # firstToLower
 
 ## Type signature
 
-```
-([first, ...rest]: [any, ...any[]]) => string
+```typescript
+([first, ...rest]: [any, ...any[]]) => string;
 ```
 
 # firstToUpper
 
 ## Type signature
 
-```
-([first, ...rest]: [any, ...any[]]) => string
+```typescript
+([first, ...rest]: [any, ...any[]]) => string;
 ```
 
 # includes
 
 ## Type signature
 
-```
-(search: any) => (xs: any) => boolean
+```typescript
+(search: any) => (xs: any) => boolean;
 ```
 
 # nbsp
 
 ## Type signature
 
-```
-" "
+```typescript
+" ";
 ```
 
 # nonEmpty
 
 ## Type signature
 
-```
-(x: any) => any
+```typescript
+(x: any) => any;
 ```
 
 # startsWith
 
 ## Type signature
 
-```
-(prefix: any) => (xs: any) => boolean
+```typescript
+(prefix: any) => (xs: any) => boolean;
 ```
