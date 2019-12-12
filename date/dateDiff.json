@@ -1,6 +1,6 @@
 {
   "name": "dateDiff",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates the difference in milliseconds between two dates.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
