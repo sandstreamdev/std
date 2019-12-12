@@ -1,6 +1,6 @@
 {
   "name": "delay",
-  "description": "TODO: Fill short description here.",
+  "description": "When awaited, delays the execution by the given number of milliseconds.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

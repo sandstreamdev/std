@@ -1,9 +1,9 @@
 /* eslint-env browser */
 
-export default (f, wait) => {
+export default (f: { (...args: any[]): any }, wait: number) => {
   let timeout;
 
-  return (...args) => {
+  return (...args: any[]) => {
     const resolve = () => {
       timeout = null;
 

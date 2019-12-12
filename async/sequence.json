@@ -1,6 +1,6 @@
 {
   "name": "sequence",
-  "description": "TODO: Fill short description here.",
+  "description": "Runs the given tasks in a sequence.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

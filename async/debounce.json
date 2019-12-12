@@ -1,6 +1,6 @@
 {
   "name": "debounce",
-  "description": "TODO: Fill short description here.",
+  "description": "Makes the function run after the given period of not being called. Useful to delay input submission for autocomplete etc.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
