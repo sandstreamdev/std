@@ -1,7 +1,7 @@
 {
   "name": "fromDays",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(days: any) => number",
   "examples": [
     {
       "language": "javascript",

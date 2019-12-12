@@ -1,7 +1,7 @@
 {
   "name": "escape",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(string: any) => any",
   "examples": [
     {
       "language": "javascript",

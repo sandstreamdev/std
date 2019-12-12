@@ -1,1 +1,7 @@
 # noOp
+
+## Type signature
+
+```
+() => void
+```

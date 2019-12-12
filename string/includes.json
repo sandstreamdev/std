@@ -1,7 +1,7 @@
 {
   "name": "includes",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(search: any) => (xs: any) => boolean",
   "examples": [
     {
       "language": "javascript",

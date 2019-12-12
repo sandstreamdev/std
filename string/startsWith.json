@@ -1,7 +1,7 @@
 {
   "name": "startsWith",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(prefix: any) => (xs: any) => boolean",
   "examples": [
     {
       "language": "javascript",

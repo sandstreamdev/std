@@ -1,1 +1,7 @@
 # empty
+
+## Type signature
+
+```
+""
+```

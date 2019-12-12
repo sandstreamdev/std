@@ -1,7 +1,7 @@
 {
   "name": "delay",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(duration: any) => Promise<unknown>",
   "examples": [
     {
       "language": "javascript",

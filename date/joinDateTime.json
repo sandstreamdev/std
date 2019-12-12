@@ -1,7 +1,7 @@
 {
   "name": "joinDateTime",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(...xs: any[]) => string",
   "examples": [
     {
       "language": "javascript",

@@ -1,1 +1,7 @@
 # monthNames
+
+## Type signature
+
+```
+string[]
+```

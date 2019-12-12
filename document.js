@@ -94,6 +94,32 @@ const testFilePattern = /\.test\.[tj]s$/i;
 
 const importFormat = ""; // js = ".js";
 
+const getSignature = async signaturePath => {
+  const fileContent = await readFileAsync(signaturePath, "utf8");
+
+  const exportDefaultTag = "export default ";
+
+  const exportedModuleName = fileContent
+    .slice(fileContent.indexOf(exportDefaultTag) + exportDefaultTag.length)
+    .trim()
+    .slice(0, -1);
+
+  const startTag = `${exportedModuleName}:`;
+  const startIndex = fileContent.indexOf(startTag) + startTag.length;
+
+  const endTag = "\n\n";
+  const endIndex = fileContent.indexOf(endTag, startIndex);
+
+  if (signaturePath.includes("diff")) {
+    console.log(startIndex, endIndex, fileContent.slice(startIndex, endIndex));
+  }
+
+  return fileContent
+    .slice(startIndex, endIndex)
+    .trim()
+    .slice(0, -1);
+};
+
 const main = async cwd => {
   console.log(`Generating documentation files in ${cwd}...`);
 
@@ -134,13 +160,20 @@ const main = async cwd => {
       await writeFileAsync(jsonPath, JSON.stringify(content, null, 2), "utf8");
     }
 
-    if (!existsSync(filePath)) {
-      const fileContent = await readFileAsync(jsonPath, "utf8");
-      const data = JSON.parse(fileContent);
-      const content = template(data);
+    const fileContent = await readFileAsync(jsonPath, "utf8");
+    const data = JSON.parse(fileContent);
 
-      await writeFileAsync(filePath, content);
+    const signaturePath = path.join(cwd, fileName + ".d.ts");
+    const signature = await getSignature(signaturePath);
+
+    if (signature !== data.signature) {
+      data.signature = signature;
+      await writeFileAsync(jsonPath, JSON.stringify(data, null, 2), "utf8");
     }
+
+    const content = template(data);
+
+    await writeFileAsync(filePath, content);
   }
 };
 

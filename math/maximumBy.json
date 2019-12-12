@@ -1,7 +1,7 @@
 {
   "name": "maximumBy",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(f: (x: number) => number) => (xs: number[]) => number",
   "examples": [
     {
       "language": "javascript",

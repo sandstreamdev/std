@@ -1,7 +1,7 @@
 {
   "name": "first",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(xs: any) => unknown",
   "examples": [
     {
       "language": "javascript",

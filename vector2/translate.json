@@ -1,7 +1,7 @@
 {
   "name": "translate",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(\n  tx?: number,\n  ty?: number\n) => {\n  a: number;\n  c: number;\n  e: number;\n  b: number;\n  d: number;\n  f: number;\n}",
   "examples": [
     {
       "language": "javascript",

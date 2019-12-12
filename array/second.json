@@ -1,7 +1,7 @@
 {
   "name": "second",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "([, x]: [any, any]) => any",
   "examples": [
     {
       "language": "javascript",

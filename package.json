@@ -12,7 +12,7 @@
     "addExtensions": "node --experimental-modules addExtensions.js",
     "build": "npm run regenerate && npm run compile && npm run addExtensions && npm run rollup && npm run document && npm run readme && npm run fix && npm run normalize",
     "compile": "node --experimental-modules compile.js",
-    "document": "node --experimental-modules document.js",
+    "document": "npm run fix && npm run normalize && node --experimental-modules document.js",
     "fix": "npm run lint:fix && npm run prettier:fix && npm run lint:fix",
     "jest": "jest --coverage --watchAll=false",
     "lint": "eslint \"**/*.{js,ts}\" --debug",

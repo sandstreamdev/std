@@ -1,7 +1,7 @@
 {
   "name": "dateDiff",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(a: any, b: any) => number",
   "examples": [
     {
       "language": "javascript",

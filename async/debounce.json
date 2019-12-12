@@ -1,7 +1,7 @@
 {
   "name": "debounce",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(f: any, wait: any) => (...args: any[]) => void",
   "examples": [
     {
       "language": "javascript",

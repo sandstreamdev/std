@@ -1,7 +1,7 @@
 {
   "name": "byDateWithFallback",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(\n  now: any\n) => (\n  {\n    endedAt: aEnd,\n    startedAt: aStart\n  }: {\n    endedAt: any;\n    startedAt: any;\n  },\n  {\n    endedAt: bEnd,\n    startedAt: bStart\n  }: {\n    endedAt: any;\n    startedAt: any;\n  }\n) => number",
   "examples": [
     {
       "language": "javascript",

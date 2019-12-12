@@ -1,7 +1,7 @@
 {
   "name": "openInNewTabIntent",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "({\n  button,\n  ctrlKey,\n  metaKey,\n  shiftKey\n}: {\n  button: any;\n  ctrlKey: any;\n  metaKey: any;\n  shiftKey: any;\n}) => any",
   "examples": [
     {
       "language": "javascript",

@@ -1,1 +1,7 @@
-# \_function
+# _function
+
+## Type signature
+
+```
+(x: any) => boolean
+```

@@ -1,12 +1,14 @@
 {
   "name": "base64url",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "{\n  encode: (_: any) => string;\n}",
   "examples": [
     {
       "language": "javascript",
       "content": "base64url(); // ⇒ TODO"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "TODO: List questions that may this function answers."
+  ]
 }
