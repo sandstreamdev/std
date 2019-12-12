@@ -40,3 +40,7 @@ code {
 .name {
   font-family: "Courier New", Courier, monospace;
 }
+
+.repl {
+  margin-left: 16px;
+}
