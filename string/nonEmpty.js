@@ -1,1 +1,1 @@
-export default x => x && x.trim();
+export default x => Boolean(x && x.trim());
