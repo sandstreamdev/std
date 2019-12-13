@@ -2,10 +2,10 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 {
   encode: (_: any) => string;
 }
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

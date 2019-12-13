@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (source: any, showSeconds: any) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([x, y]: [any, any]) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

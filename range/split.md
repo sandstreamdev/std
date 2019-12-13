@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (used: any, sourceRange?: number[]) => (range: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

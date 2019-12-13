@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (sourceDate: any, timezoneOffset?: number) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

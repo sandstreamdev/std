@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   now: any
 ) => (
@@ -22,5 +22,5 @@
     startedAt: any;
   }
 ) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (obj1: any, obj2: any) => object
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

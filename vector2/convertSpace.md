@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (space: any) => ([x, y]: [any, any]) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

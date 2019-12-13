@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ({
   iso,
   local,
@@ -15,5 +15,5 @@
   now?: Date;
   timezoneOffset?: number;
 }) => (date: any) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

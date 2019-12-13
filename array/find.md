@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (predicate: any, fallback: any) => (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

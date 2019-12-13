@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (tasks: any) => Promise<any>
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

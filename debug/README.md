@@ -2,18 +2,18 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (condition: any, callbackOrMessage: any) => void
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # diff
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (obj1: any, obj2: any) => object
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

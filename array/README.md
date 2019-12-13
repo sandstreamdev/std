@@ -4,11 +4,11 @@ Checks if the given array is not empty (contains at least one element).
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any[]) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 ## Examples
 
@@ -35,408 +35,408 @@ Checks if given arguments are all `Arrays`.
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (...xs: any[]) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # difference
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any, ys: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # differs
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any, ys: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # duplicates
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # empty
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # exact
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (n: any) => (xs: any) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # except
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (y: any) => (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # filterInPlace
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (f: any) => (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # find
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (predicate: any, fallback: any) => (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # first
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([x]: [any]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # flatMap
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (f: any) => (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # flatten
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # intersection
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any, ys: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # is
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (value: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # last
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # lengthDiffers
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (a: any, b: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # map
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (...fs: any[]) => (x: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # midpoint
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # minMax
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([head, ...tail]: [any, ...any[]]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # multiple
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # none
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # partition
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (predicate: any) => (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # range
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (n: any) => number[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # repeat
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (n: any) => (value: any) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # reverse
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # reverseIf
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (predicate: any) => (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # rotate
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (array: any) => (angle: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # second
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([, x]: [any, any]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # secondToLast
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # shift
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (n: any) => (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # shuffle
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # shuffleInPlace
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # single
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # skip
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (count: number) => (xs: any[]) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # sort
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (f: any) => (xs: any) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # sum
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # take
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (count: number) => (xs: any[]) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # transpose
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any[][]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # unique
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => unknown[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # zip
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any, ys: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # zipWith
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (f: any) => (xs: any, ys: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

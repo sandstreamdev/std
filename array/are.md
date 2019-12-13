@@ -4,8 +4,8 @@ Checks if given arguments are all `Arrays`.
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (...xs: any[]) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

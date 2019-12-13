@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (min: any, max: any) => (dateStringOrDate: any) => Date
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
