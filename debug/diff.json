@@ -1,6 +1,6 @@
 {
   "name": "diff",
-  "description": "TODO: Fill short description here.",
+  "description": "Computes a difference between two objects.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

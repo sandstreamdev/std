@@ -14,9 +14,9 @@ export const VALUE_UNCHANGED = "=";
 
 export const VALUE_UPDATED = "~";
 
-const isValue = x => !isObject(x) && !isArray(x);
+const isValue = (x: any) => !isObject(x) && !isArray(x);
 
-const compareValues = (value1, value2) => {
+const compareValues = (value1: any, value2: any) => {
   if (value1 === value2) {
     return VALUE_UNCHANGED;
   }
@@ -40,7 +40,7 @@ const compareValues = (value1, value2) => {
   return VALUE_UPDATED;
 };
 
-const diff = (obj1, obj2) => {
+const diff = (obj1: object, obj2: object) => {
   if (isFunction(obj1) || isFunction(obj2)) {
     throw "Invalid argument. Function given, object expected.";
   }
@@ -81,7 +81,7 @@ const diff = (obj1, obj2) => {
   }
 
   return filter(
-    value => value !== null && !(value && isObject(value) && none(value))
+    (value: any) => value !== null && !(value && isObject(value) && none(value))
   )(result);
 };
 
