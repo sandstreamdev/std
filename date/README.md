@@ -8,6 +8,12 @@ Calculates the difference in milliseconds between two dates.
 
 # dateInRange
 
+## Type signature
+
+```
+Checks if provided date is within the range.
+```
+
 # dayRange
 
 # daysInMonths
