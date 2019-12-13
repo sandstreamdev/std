@@ -1,7 +1,7 @@
 {
   "name": "defined",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(x: any) => boolean",
   "examples": [
     {
       "language": "javascript",

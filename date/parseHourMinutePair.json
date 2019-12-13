@@ -1,7 +1,7 @@
 {
   "name": "parseHourMinutePair",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(text?: string) => number[]",
   "examples": [
     {
       "language": "javascript",

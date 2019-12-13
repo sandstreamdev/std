@@ -1,7 +1,7 @@
 {
   "name": "clampNormal",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(x: number) => number",
   "examples": [
     {
       "language": "javascript",

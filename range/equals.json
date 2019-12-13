@@ -1,7 +1,7 @@
 {
   "name": "equals",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "([a, b]: [any, any], [c, d]: [any, any]) => boolean",
   "examples": [
     {
       "language": "javascript",

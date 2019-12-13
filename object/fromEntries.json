@@ -1,7 +1,7 @@
 {
   "name": "fromEntries",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(keyValuePairs: [string, any][]) => object",
   "examples": [
     {
       "language": "javascript",

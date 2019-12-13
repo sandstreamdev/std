@@ -1,7 +1,7 @@
 {
   "name": "subtract",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(a: number, b: number) => number",
   "examples": [
     {
       "language": "javascript",

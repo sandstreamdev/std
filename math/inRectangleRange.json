@@ -1,7 +1,7 @@
 {
   "name": "inRectangleRange",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(\n  width: number,\n  height: number\n) => (x: number, y: number) => boolean",
   "examples": [
     {
       "language": "javascript",

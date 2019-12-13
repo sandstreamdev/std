@@ -1,4 +1,5 @@
 *.md
+*.json
 *.test.js
 *.test.ts
 .all-contributorsrc

@@ -1,7 +1,7 @@
 {
   "name": "endOfDay",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(\n  date: any,\n  timezoneOffset?: number,\n  local?: boolean\n) => Date",
   "examples": [
     {
       "language": "javascript",

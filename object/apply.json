@@ -1,7 +1,7 @@
 {
   "name": "apply",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(\n  fs: ((...xs: any[]) => any)[]\n) => (...xs: any[]) => object",
   "examples": [
     {
       "language": "javascript",

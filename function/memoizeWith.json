@@ -1,7 +1,7 @@
 {
   "name": "memoizeWith",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(equals: any) => (f: any) => (...args: any[]) => any",
   "examples": [
     {
       "language": "javascript",
