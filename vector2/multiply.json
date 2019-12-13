@@ -1,7 +1,7 @@
 {
   "name": "multiply",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(\n  m1: any,\n  m2: any\n) => {\n  a: number;\n  c: number;\n  e: any;\n  b: number;\n  d: number;\n  f: any;\n}",
   "examples": [
     {
       "language": "javascript",

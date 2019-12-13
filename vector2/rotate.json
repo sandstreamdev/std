@@ -1,7 +1,7 @@
 {
   "name": "rotate",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(angle?: number, cx?: number, cy?: number) => any",
   "examples": [
     {
       "language": "javascript",

@@ -1,7 +1,7 @@
 {
   "name": "length",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "([min, max]: [any, any]) => number",
   "examples": [
     {
       "language": "javascript",

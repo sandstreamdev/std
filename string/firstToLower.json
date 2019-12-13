@@ -1,7 +1,7 @@
 {
   "name": "firstToLower",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "([first, ...rest]: [any, ...any[]]) => string",
   "examples": [
     {
       "language": "javascript",

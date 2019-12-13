@@ -1,7 +1,7 @@
 {
   "name": "formatTime",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(\n  sourceDate: any,\n  showSeconds?: boolean,\n  timezoneOffset?: number\n) => string",
   "examples": [
     {
       "language": "javascript",

@@ -1,7 +1,7 @@
 {
   "name": "mul",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(matrix: any, point: any) => any[]",
   "examples": [
     {
       "language": "javascript",

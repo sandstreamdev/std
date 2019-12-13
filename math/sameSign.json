@@ -1,7 +1,7 @@
 {
   "name": "sameSign",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(xs: number[]) => boolean",
   "examples": [
     {
       "language": "javascript",

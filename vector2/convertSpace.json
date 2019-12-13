@@ -1,7 +1,7 @@
 {
   "name": "convertSpace",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(space: any) => ([x, y]: [any, any]) => any[]",
   "examples": [
     {
       "language": "javascript",

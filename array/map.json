@@ -1,7 +1,7 @@
 {
   "name": "map",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(...fs: any[]) => (x: any) => any",
   "examples": [
     {
       "language": "javascript",

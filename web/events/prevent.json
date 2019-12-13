@@ -1,7 +1,7 @@
 {
   "name": "prevent",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(event: any) => boolean",
   "examples": [
     {
       "language": "javascript",

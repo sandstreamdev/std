@@ -1,7 +1,7 @@
 {
   "name": "flatMap",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(f: any) => (xs: any) => any",
   "examples": [
     {
       "language": "javascript",

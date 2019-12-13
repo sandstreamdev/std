@@ -1,7 +1,7 @@
 {
   "name": "dateInRange",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(from: any, to: any) => (date?: Date) => boolean",
   "examples": [
     {
       "language": "javascript",

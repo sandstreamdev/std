@@ -1,47 +1,254 @@
 # any
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(xs: any) => boolean
+```
+<!-- prettier-ignore-end -->
+
 # apply
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  fs: ((...xs: any[]) => any)[]
+) => (...xs: any[]) => object
+```
+<!-- prettier-ignore-end -->
 
 # empty
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+{}
+```
+<!-- prettier-ignore-end -->
+
 # entries
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+{
+  <T>(
+    o:
+      | {
+          [s: string]: T;
+        }
+      | ArrayLike<T>
+  ): [string, T][];
+  (o: {}): [string, any][];
+}
+```
+<!-- prettier-ignore-end -->
 
 # enumerable
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(...xs: any[]) => any
+```
+<!-- prettier-ignore-end -->
+
 # equals
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(a: any, b: any) => any
+```
+<!-- prettier-ignore-end -->
 
 # filter
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(f: any) => (xs: any) => object
+```
+<!-- prettier-ignore-end -->
+
 # find
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(predicate: any) => (xs: any) => unknown
+```
+<!-- prettier-ignore-end -->
 
 # findEntry
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(predicate: any) => (xs: any) => [string, unknown]
+```
+<!-- prettier-ignore-end -->
+
 # findKey
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(predicate: any) => (xs: any) => string
+```
+<!-- prettier-ignore-end -->
 
 # findValue
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(predicate: any) => (xs: any) => unknown
+```
+<!-- prettier-ignore-end -->
+
 # first
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(xs: any) => unknown
+```
+<!-- prettier-ignore-end -->
 
 # flatMapValues
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(f: any) => (xs: any) => any
+```
+<!-- prettier-ignore-end -->
+
 # fromEntries
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(keyValuePairs: [string, any][]) => object
+```
+<!-- prettier-ignore-end -->
 
 # groupBy
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(selector: any) => (xs: any) => any
+```
+<!-- prettier-ignore-end -->
+
 # hasKey
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(key: any) => (xs: any) => any
+```
+<!-- prettier-ignore-end -->
 
 # length
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(xs: any) => number
+```
+<!-- prettier-ignore-end -->
+
 # map
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  f: (value: any, key: string, context: object) => any
+) => (xs: object) => object
+```
+<!-- prettier-ignore-end -->
 
 # mapEntries
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  f: (value: any, key: string, context: object) => any
+) => (xs: object) => [string, any][]
+```
+<!-- prettier-ignore-end -->
+
 # mapKeys
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(f: any) => (xs: any) => object
+```
+<!-- prettier-ignore-end -->
 
 # mapValues
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(f: any) => (xs: any) => any[]
+```
+<!-- prettier-ignore-end -->
+
 # merge
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(a: object, b: object) => object
+```
+<!-- prettier-ignore-end -->
 
 # none
 
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(xs: any) => boolean
+```
+<!-- prettier-ignore-end -->
+
 # sort
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(f: any) => (xs: any) => object
+```
+<!-- prettier-ignore-end -->

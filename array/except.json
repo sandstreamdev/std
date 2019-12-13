@@ -1,7 +1,7 @@
 {
   "name": "except",
   "description": "TODO: Fill short description here.",
-  "signature": "TODO: Fill type signature here.",
+  "signature": "(y: any) => (xs: any) => any",
   "examples": [
     {
       "language": "javascript",
