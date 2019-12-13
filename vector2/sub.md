@@ -1,1 +1,3 @@
 # sub
+
+Subtracts two vectors.
