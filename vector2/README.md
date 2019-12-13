@@ -20,6 +20,8 @@ Calculates length/magnitude of the given vector.
 
 # mul
 
+Applies matrix transformation to the given vector.
+
 # multiply
 
 Multiples two matrices together.
