@@ -1,1 +1,2 @@
-export default prefix => xs => xs.indexOf(prefix) === 0;
+export default (prefix: string) => (xs: string): boolean =>
+  xs.indexOf(prefix) === 0;

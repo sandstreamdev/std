@@ -1,6 +1,6 @@
 {
   "name": "firstToUpper",
-  "description": "TODO: Fill short description here.",
+  "description": "Transforms the first character to uppercase.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

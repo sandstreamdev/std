@@ -1,6 +1,6 @@
 {
   "name": "firstToLower",
-  "description": "TODO: Fill short description here.",
+  "description": "Transforms the first character to lowercase.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

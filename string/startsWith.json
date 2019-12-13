@@ -1,6 +1,6 @@
 {
   "name": "startsWith",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given string starts with the given substring.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

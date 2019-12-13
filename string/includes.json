@@ -1,6 +1,6 @@
 {
   "name": "includes",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given substring is present in the source string.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
