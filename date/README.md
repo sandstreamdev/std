@@ -8,15 +8,13 @@ Calculates the difference in milliseconds between two dates.
 
 # dateInRange
 
-## Type signature
-
-```
 Checks if provided date is within the range.
-```
 
 # dayRange
 
 # daysInMonths
+
+Returns numbers of days in all months of the year having regard to leap year.
 
 # daysInYear
 

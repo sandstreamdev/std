@@ -5,6 +5,7 @@ import daysInMonths from "./daysInMonths.ts";
 describe("daysInMonths", () => {
   it("returns number of days in a months in a leap year", () => {
     const leapYear = true;
+
     const numberOfDaysInMonthsInLeapYear = [
       31,
       29,
@@ -19,11 +20,13 @@ describe("daysInMonths", () => {
       30,
       31
     ];
+
     expect(daysInMonths(leapYear)).toEqual(numberOfDaysInMonthsInLeapYear);
   });
 
   it("returns number of days in a months in a year", () => {
     const leapYear = false;
+
     const numberOfDaysInMonths = [
       31,
       28,
@@ -38,6 +41,7 @@ describe("daysInMonths", () => {
       30,
       31
     ];
+
     expect(daysInMonths(leapYear)).toEqual(numberOfDaysInMonths);
   });
 });
