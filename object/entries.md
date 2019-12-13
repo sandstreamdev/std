@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 {
   <T>(
     o:
@@ -14,5 +14,5 @@
   ): [string, T][];
   (o: {}): [string, any][];
 }
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

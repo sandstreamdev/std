@@ -2,68 +2,68 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([x1, y1]: [any, any], [x2, y2]: [any, any]) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # convertSpace
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (space: any) => ([x, y]: [any, any]) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # cross
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([a, b]: [any, any], [c, d]: [any, any]) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # dot
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([a, b]: [any, any], [c, d]: [any, any]) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # length
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([x, y]: [any, any]) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # mul
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (matrix: any, point: any) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # multiply
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   m1: any,
   m2: any
@@ -75,45 +75,45 @@
   d: number;
   f: any;
 }
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # normalize
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (vector: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # reflect
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (a: any, v: any) => number[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # rotate
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (angle?: number, cx?: number, cy?: number) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # scale
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   sx?: number,
   sy?: number
@@ -125,38 +125,38 @@
   d: number;
   f: number;
 }
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # sub
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   [x1, y1]: [any, any],
   [x2, y2]: [any, any]
 ) => number[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # transform
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (...matrices: any[]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # translate
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   tx?: number,
   ty?: number
@@ -168,5 +168,5 @@
   d: number;
   f: number;
 }
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

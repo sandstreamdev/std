@@ -2,38 +2,38 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([min, max]: [any, any]) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # equals
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([a, b]: [any, any], [c, d]: [any, any]) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # length
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([min, max]: [any, any]) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # split
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (used: any, sourceRange?: number[]) => (range: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

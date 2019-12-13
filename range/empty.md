@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ([min, max]: [any, any]) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

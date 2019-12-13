@@ -4,11 +4,11 @@ Checks if the given array is not empty (contains at least one element).
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any[]) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 ## Examples
 

@@ -2,11 +2,11 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (...xs: any[]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # events
 
@@ -14,18 +14,18 @@
 
 ### Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (event: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 ## openInNewTabIntent
 
 ### Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ({
   button,
   ctrlKey,
@@ -37,25 +37,25 @@
   metaKey: any;
   shiftKey: any;
 }) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 ## prevent
 
 ### Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (event: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 ## stop
 
 ### Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (event: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

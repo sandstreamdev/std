@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (from: any, to: any) => (date?: Date) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

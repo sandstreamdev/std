@@ -2,110 +2,110 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (...fs: any[]) => (x: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # constant
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (x: any) => () => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # identity
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (x: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # memoize
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (f: any) => (...args: any[]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # memoizeShallow
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (f: any) => (...args: any[]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # memoizeWith
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (equals: any) => (f: any) => (...args: any[]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # noOp
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 () => void
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # not
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (f: any) => (...args: any[]) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # pipe
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (...fs: any[]) => (x: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # when
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   predicate: any
 ) => (action: any) => (...args: any[]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # whenTrue
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (action: any) => (...args: any[]) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

@@ -2,8 +2,8 @@
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   now: any
 ) => (
@@ -22,45 +22,45 @@
     startedAt: any;
   }
 ) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # clamp
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (min: any, max: any) => (dateStringOrDate: any) => Date
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # dateDiff
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (a: any, b: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # dateInRange
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (from: any, to: any) => (date?: Date) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # dayRange
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 ({
   iso,
   local,
@@ -72,345 +72,345 @@
   now?: Date;
   timezoneOffset?: number;
 }) => (date: any) => any[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # daysInMonths
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (leapYear: any) => number[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # daysInYear
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (year: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # displayMonth
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (monthIndex: any) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # displayTime
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (source: any, showSeconds: any) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # endOfDay
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   date: any,
   timezoneOffset?: number,
   local?: boolean
 ) => Date
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # formatDate
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (sourceDate: any, timezoneOffset?: number) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # formatDateTime
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   sourceDate: any,
   showSeconds?: boolean,
   timezoneOffset?: number
 ) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # formatDisplayDate
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   sourceDate: any,
   showDay?: boolean,
   timezoneOffset?: number
 ) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # formatDuration
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (duration: any, showSeconds?: boolean) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # formatTime
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   sourceDate: any,
   showSeconds?: boolean,
   timezoneOffset?: number
 ) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # fromDays
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (days: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # fromHours
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (hours: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # fromMinutes
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (minutes: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # fromSeconds
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (seconds: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # joinDateTime
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (...xs: any[]) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # leapYear
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (year: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # monthNames
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 string[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # offsetByBit
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (date: any) => Date
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # parseHourMinutePair
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (text?: string) => number[]
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # splitDateTime
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (dateTimeString: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # startOfDay
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (
   date: any,
   timezoneOffset?: number,
   local?: boolean
 ) => Date
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # subtractDays
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (sourceDate: any, numberOfDays: any) => Date
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toDate
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (date: any) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toDates
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (xs: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toDays
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (milliseconds: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toHours
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (milliseconds: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toISO
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (x: any) => any
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toISOFromLocalDateTime
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (date: any) => string
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toLocalDateTime
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (date: any, timezoneOffset?: number) => Date
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toMinutes
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (milliseconds: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # toSeconds
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (milliseconds: any) => number
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->
 
 # valid
 
 ## Type signature
 
-```typescript
 <!-- prettier-ignore-start -->
+```typescript
 (date: any) => boolean
-<!-- prettier-ignore-end -->
 ```
+<!-- prettier-ignore-end -->

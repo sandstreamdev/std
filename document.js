@@ -19,11 +19,11 @@ ${description}
     content += `
 ## Type signature
 
-\`\`\`typescript
 <!-- prettier-ignore-start -->
+\`\`\`typescript
 ${signature}
-<!-- prettier-ignore-end -->
 \`\`\`
+<!-- prettier-ignore-end -->
 `;
   }
 
