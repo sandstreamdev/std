@@ -32,4 +32,17 @@ describe("rotate", () => {
       f: 6
     });
   });
+
+  it("does not perform any rotation by default", () => {
+    const identityMatrix = {
+      a: 1,
+      b: 0,
+      c: 0,
+      d: 1,
+      e: 0,
+      f: 0
+    };
+
+    expect(rotate()).toEqual(identityMatrix);
+  });
 });
