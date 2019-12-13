@@ -136,7 +136,7 @@ Repeats the given element by given count of times.
 
 #### reverse
 
-Reverses the given array without mutating it (in contrast to Array.sort).
+Reverses the given array without mutating it (in contrast to Array.reverse).
 
 #### reverseIf
 
@@ -564,7 +564,7 @@ Checks if the given string starts with the given substring.
 
 #### add
 
-Adds two vectors together.
+Adds two vectors.
 
 #### convertSpace
 
@@ -588,7 +588,7 @@ Applies matrix transformation to the given vector.
 
 #### multiply
 
-Multiples two matrices together.
+Multiples two matrices.
 
 #### normalize
 

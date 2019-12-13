@@ -1,3 +1,3 @@
 # add
 
-Adds two vectors together.
+Adds two vectors.

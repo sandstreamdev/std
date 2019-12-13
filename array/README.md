@@ -125,7 +125,7 @@ Repeats the given element by given count of times.
 
 # reverse
 
-Reverses the given array without mutating it (in contrast to Array.sort).
+Reverses the given array without mutating it (in contrast to Array.reverse).
 
 # reverseIf
 

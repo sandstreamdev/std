@@ -1,3 +1,3 @@
 # multiply
 
-Multiples two matrices together.
+Multiples two matrices.

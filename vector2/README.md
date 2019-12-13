@@ -1,6 +1,6 @@
 # add
 
-Adds two vectors together.
+Adds two vectors.
 
 # convertSpace
 
@@ -24,7 +24,7 @@ Applies matrix transformation to the given vector.
 
 # multiply
 
-Multiples two matrices together.
+Multiples two matrices.
 
 # normalize
 
