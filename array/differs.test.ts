@@ -17,4 +17,8 @@ describe("differs", () => {
     expect(differs([1, 2, 3], [1, 2, 3])).toBe(false);
     expect(differs([1, 2, 3], [1, 67, 3])).toBe(true);
   });
+
+  it("assumes empty arrays equal", () => {
+    expect(differs([], [])).toBe(false);
+  });
 });
