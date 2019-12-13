@@ -1,6 +1,6 @@
 {
   "name": "identity",
-  "description": "TODO: Fill short description here.",
+  "description": "Always return the given value.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

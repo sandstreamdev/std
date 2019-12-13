@@ -1,6 +1,6 @@
 {
   "name": "constant",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns the given constant no matter of the input.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

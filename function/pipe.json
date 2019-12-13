@@ -1,6 +1,6 @@
 {
   "name": "pipe",
-  "description": "TODO: Fill short description here.",
+  "description": "Pipes an input through given functions.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

@@ -1,6 +1,6 @@
 {
   "name": "compose",
-  "description": "TODO: Fill short description here.",
+  "description": "Composes multiple functions into a higher order one. Goes right to left.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

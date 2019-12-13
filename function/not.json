@@ -1,6 +1,6 @@
 {
   "name": "not",
-  "description": "TODO: Fill short description here.",
+  "description": "Inverts the given function result.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

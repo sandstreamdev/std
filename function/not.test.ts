@@ -3,7 +3,9 @@
 import not from "./not.ts";
 
 describe("not", () => {
-  it.skip("TODO", () => {
-    expect(not()).toBeDefined();
+  it("inverts the result", () => {
+    const greaterThan10 = (x: number) => x > 10;
+
+    expect(not(greaterThan10)(5)).toBe(true);
   });
 });

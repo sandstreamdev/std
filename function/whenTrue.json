@@ -1,6 +1,6 @@
 {
   "name": "whenTrue",
-  "description": "TODO: Fill short description here.",
+  "description": "Runs the given function only when the condition is exactly true.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

@@ -1,1 +1,2 @@
-export default (...fs) => x => fs.reduce((x, f) => f(x), x);
+export default (...fs: { (x: any): any }[]) => (x: any) =>
+  fs.reduce((x, f) => f(x), x);
