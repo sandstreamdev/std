@@ -50,7 +50,8 @@ export const assertNormal = x => {
   );
 };
 
-export const assertString = x => assert(isString(x), "Value must be a string.");
+export const assertString = (x, message = "Value must be a string.") =>
+  assert(isString(x), message);
 
 export const assertIsDefined = (x, message = "Value must be defined.") =>
   assert(isDefined(x), message);

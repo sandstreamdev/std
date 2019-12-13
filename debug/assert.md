@@ -1,1 +1,3 @@
 # assert
+
+Asserts given conditions.
