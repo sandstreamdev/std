@@ -4,5 +4,11 @@ export default (xs = {}) =>
   entries(xs)
     .filter(([, value]) => Boolean(value) || value === 0)
     .map(pair => pair.map(encodeURIComponent))
-    .reduce((acc, [key, value]) => [...acc, `${key}=${value}`], [])
+    .reduce(
+      (acc, [key, value]) => [
+        ...acc,
+        xs[key] === true ? key : `${key}=${value}`
+      ],
+      []
+    )
     .join("&");

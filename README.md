@@ -300,6 +300,8 @@ Provides a way to encode strings and bytes from and into Base64URL.
 
 #### validName
 
+Checks if the given string is a valid Windows file name.
+
 ### function
 
 #### compose
