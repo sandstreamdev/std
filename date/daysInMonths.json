@@ -1,6 +1,6 @@
 {
   "name": "daysInMonths",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns numbers of days in all months of the year having regard to leap year.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

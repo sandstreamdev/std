@@ -1,7 +1,7 @@
 {
   "name": "dateInRange",
-  "description": "TODO: Fill short description here.",
-  "signature": "Checks if provided date is within the range.",
+  "description": "Checks if provided date is within the range.",
+  "signature": "TODO: Fill type signature here.",
   "examples": [
     {
       "language": "javascript",
