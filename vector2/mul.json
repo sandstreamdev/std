@@ -1,6 +1,6 @@
 {
   "name": "mul",
-  "description": "TODO: Fill short description here.",
+  "description": "Applies matrix transformation to the given vector.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
