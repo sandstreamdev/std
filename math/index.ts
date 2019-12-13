@@ -10,8 +10,8 @@ import lerp from "./lerp";
 import maximumBy from "./maximumBy";
 import median from "./median";
 import minMax from "./minMax";
-import safeNormalize from "./safeNormalize";
 import sameSign from "./sameSign";
+import sign from "./sign";
 import standardDeviation from "./standardDeviation";
 import subtract from "./subtract";
 
@@ -28,8 +28,8 @@ export {
   maximumBy,
   median,
   minMax,
-  safeNormalize,
   sameSign,
+  sign,
   standardDeviation,
   subtract
 };
@@ -47,8 +47,8 @@ export default {
   maximumBy,
   median,
   minMax,
-  safeNormalize,
   sameSign,
+  sign,
   standardDeviation,
   subtract
 };
