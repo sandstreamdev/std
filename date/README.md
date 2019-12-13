@@ -24,6 +24,8 @@ Returns numbers of days in all months of the year having regard to leap year.
 
 # endOfDay
 
+Calculates end of a day in provided date.
+
 # formatDate
 
 # formatDateTime
@@ -48,6 +50,8 @@ Returns numbers of days in all months of the year having regard to leap year.
 
 # monthNames
 
+Returns all months names.
+
 # offsetByBit
 
 # parseHourMinutePair
@@ -55,6 +59,8 @@ Returns numbers of days in all months of the year having regard to leap year.
 # splitDateTime
 
 # startOfDay
+
+Calculates start of a day in provided date.
 
 # subtractDays
 

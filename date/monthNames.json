@@ -1,6 +1,6 @@
 {
   "name": "monthNames",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns all months names.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

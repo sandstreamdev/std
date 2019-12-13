@@ -1,4 +1,4 @@
-export default [
+export default (): string[] => [
   "January",
   "February",
   "March",

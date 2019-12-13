@@ -1,6 +1,6 @@
 {
   "name": "startOfDay",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates start of a day in provided date.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

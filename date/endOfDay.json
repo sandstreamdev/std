@@ -1,6 +1,6 @@
 {
   "name": "endOfDay",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates end of a day in provided date.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
