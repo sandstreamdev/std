@@ -97,10 +97,6 @@ describe("base64url", () => {
   });
 
   it("converts base64 to base64URL", () => {
-    expect(fromByteString(toByteString(range(256)))).toEqual(range(256));
-  });
-
-  it("converts base64 to base64URL", () => {
     const text = toByteString(range(256));
 
     expect(toBase64Url(Buffer.from(text, "utf-8").toString("base64"))).toEqual(
