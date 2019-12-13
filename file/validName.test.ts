@@ -51,5 +51,6 @@ describe("validName", () => {
     expect(validName("file with spaces")).toBe(true);
     expect(validName("dashes-allowed")).toBe(true);
     expect(validName("Mixed case")).toBe(true);
+    expect(validName("Zombies 🧟 and gęsi")).toBe(true);
   });
 });
