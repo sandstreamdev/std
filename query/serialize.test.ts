@@ -12,7 +12,7 @@ describe("serialize", () => {
     ).toBe("test&value=a%20string%20with%20spaces");
   });
 
-  it("reversible", () => {
+  it("is reversible", () => {
     expect(
       parse(
         serialize({ test: true, value: "a string with spaces", missing: false })
