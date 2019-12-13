@@ -1,6 +1,6 @@
 {
   "name": "stop",
-  "description": "TODO: Fill short description here.",
+  "description": "Stops propagation of the given event.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

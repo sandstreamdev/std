@@ -1,6 +1,6 @@
 {
   "name": "cancel",
-  "description": "TODO: Fill short description here.",
+  "description": "Stops propagation and prevents the default handler of the given event.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

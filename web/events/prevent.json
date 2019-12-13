@@ -1,6 +1,6 @@
 {
   "name": "prevent",
-  "description": "TODO: Fill short description here.",
+  "description": "Prevents the default handler of the given event.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
