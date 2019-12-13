@@ -1,6 +1,6 @@
 {
   "name": "escape",
-  "description": "TODO: Fill short description here.",
+  "description": "Escapes regex string into proper regex.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
