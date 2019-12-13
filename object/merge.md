@@ -11,7 +11,6 @@ Merges two objects deeply.
 <!-- prettier-ignore-end -->
 
 ## Examples
-
 <!-- prettier-ignore-start -->
 ```javascript
 merge({ a: 1, b: 3 }, {}); // ⇒ { a: 1, b: 3 }

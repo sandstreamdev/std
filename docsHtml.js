@@ -6,23 +6,29 @@ import hljs from "highlight.js";
 
 import ignored from "./ignore.js";
 
-const pageTemplate = content =>
+const pageTemplate = ({ content, toc = "", pathFix = "" }) =>
   `<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="css/docs.css" />
-    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="${pathFix}css/docs.css" />
+    <link rel="stylesheet" href="${pathFix}css/default.css" />
   </head>
   <body>
-    ${content}
-    <script src="scripts/docs.js"></script>
+    <div class="row">
+      <div class="toc">
+        <div class="list">${toc}</div>
+      </div>
+      <div class="content">${content}</div>
+    </div>
+    <script src="${pathFix}scripts/docs.js"></script>
     <script src="https://embed.runkit.com"></script>
   </body>
 </html>`;
 
-const nameFragment = name => (name ? `<h3 class="name">${name}</h3>` : "");
+const nameFragment = (name, link) =>
+  name ? `<h3 class="name"><a href="${link}">${name}</a></h3>` : "";
 
 const descriptionFragment = description => {
   if (description && !description.startsWith("TODO")) {
@@ -84,8 +90,7 @@ const questionsFragment = questions => {
 
     return `<div class="questions">
         <h3>Questions</h3>
-          <ul>${questionsFormatted}</ul>
-        </div>
+        <ul>${questionsFormatted}</ul>
       </div>`;
   }
 
@@ -94,11 +99,12 @@ const questionsFragment = questions => {
 
 const template = (
   { name, description, signature, examples, questions },
-  scope
+  scope,
+  link
 ) => {
   const content = `<div class="std-item">
     <div>
-      ${nameFragment(name)}
+      ${nameFragment(name, link)}
       ${descriptionFragment(description)}
     </div>
     ${signatureFragment(signature)}
@@ -111,7 +117,11 @@ const template = (
 
 const [ignoredFiles, ignoredDirectories] = ignored;
 
-const { writeFile: writeFileAsync, readFile: readFileAsync } = promises;
+const {
+  writeFile: writeFileAsync,
+  readFile: readFileAsync,
+  mkdir: mkdirAsync
+} = promises;
 
 const [, , cwd = process.cwd()] = process.argv;
 
@@ -153,6 +163,7 @@ const main = async cwd => {
   console.log(`Generating html documentation file...`);
 
   let content = "";
+  let toc = "";
   let moduleName = "";
 
   for (const filePath of filesPaths(cwd)) {
@@ -179,12 +190,29 @@ const main = async cwd => {
     if (currentModule !== moduleName) {
       moduleName = currentModule;
       content += `<h1 class="module-name">"${moduleName}" Methods</h1>`;
+      toc += `<h3 class="module-name">"${moduleName}" Methods</h3>`;
     }
 
-    content += template(data, scope);
+    const link = [...pathParts, data.name].join("/");
+
+    const htmlPart = template(data, scope, link);
+    content += htmlPart;
+
+    const targetPath = path.join(".", "docs", ...pathParts, data.name);
+    await mkdirAsync(targetPath, { recursive: true });
+
+    await writeFileAsync(
+      `${targetPath}/index.html`,
+      pageTemplate({
+        content: htmlPart,
+        pathFix: pathParts.map(() => "..").join("/") + "/../"
+      })
+    );
+
+    toc += `<div class="toc-item"><a href="${link}/index.html">${data.name}</a></div>`;
   }
 
-  await writeFileAsync("./docs/index.html", pageTemplate(content));
+  await writeFileAsync("./docs/index.html", pageTemplate({ content, toc }));
 };
 
 main(cwd);
