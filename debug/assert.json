@@ -1,6 +1,6 @@
 {
   "name": "assert",
-  "description": "TODO: Fill short description here.",
+  "description": "Asserts given conditions.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
