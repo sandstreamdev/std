@@ -1,6 +1,6 @@
 {
   "name": "sub",
-  "description": "TODO: Fill short description here.",
+  "description": "Subtracts two vectors.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

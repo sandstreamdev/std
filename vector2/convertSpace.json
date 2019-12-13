@@ -1,6 +1,6 @@
 {
   "name": "convertSpace",
-  "description": "TODO: Fill short description here.",
+  "description": "Applies transformations to the given vector.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

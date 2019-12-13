@@ -1,6 +1,6 @@
 {
   "name": "translate",
-  "description": "TODO: Fill short description here.",
+  "description": "Creates a translation matrix.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

@@ -1,6 +1,6 @@
 {
   "name": "length",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates length/magnitude of the given vector.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

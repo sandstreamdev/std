@@ -1,6 +1,6 @@
 {
   "name": "rotate",
-  "description": "TODO: Fill short description here.",
+  "description": "Creates a rotation matrix around given origin [0, 0] by default.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

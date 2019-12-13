@@ -1,6 +1,6 @@
 {
   "name": "transform",
-  "description": "TODO: Fill short description here.",
+  "description": "Composes a single transformation by matrix multiplication.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

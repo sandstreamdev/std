@@ -3,7 +3,33 @@
 import rotate from "./rotate.ts";
 
 describe("rotate", () => {
-  it.skip("TODO", () => {
-    expect(rotate()).toBeDefined();
+  it("creates a rotation matrix", () => {
+    const angle = Math.PI;
+    const sine = Math.sin(angle);
+    const cosine = Math.cos(angle);
+
+    expect(rotate(angle)).toEqual({
+      a: cosine,
+      b: sine,
+      c: -sine,
+      d: cosine,
+      e: 0,
+      f: 0
+    });
+  });
+
+  it("supports rotation around an origin", () => {
+    const angle = Math.PI;
+    const sine = Math.sin(angle);
+    const cosine = Math.cos(angle);
+
+    expect(rotate(Math.PI, 5, 3)).toEqual({
+      a: cosine,
+      b: sine,
+      c: -sine,
+      d: cosine,
+      e: 10,
+      f: 6
+    });
   });
 });

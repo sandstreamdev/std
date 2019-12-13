@@ -3,7 +3,7 @@
 import add from "./add.ts";
 
 describe("add", () => {
-  it.skip("TODO", () => {
-    expect(add()).toBeDefined();
+  it("adds two vectors together", () => {
+    expect(add([3, 5], [-1, 8])).toEqual([2, 13]);
   });
 });

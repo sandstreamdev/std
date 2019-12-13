@@ -1,6 +1,6 @@
 {
   "name": "reflect",
-  "description": "TODO: Fill short description here.",
+  "description": "Reflects the given vector on the given surface.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

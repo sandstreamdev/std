@@ -1,6 +1,6 @@
 {
   "name": "normalize",
-  "description": "TODO: Fill short description here.",
+  "description": "Normalizes the given vector. Returns [0, 0] vector for points.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
