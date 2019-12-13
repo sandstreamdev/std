@@ -3,7 +3,10 @@
 ## Type signature
 
 ```typescript
-(now: any) => (
+<!-- prettier-ignore-start -->
+(
+  now: any
+) => (
   {
     endedAt: aEnd,
     startedAt: aStart
@@ -18,7 +21,8 @@
     endedAt: any;
     startedAt: any;
   }
-) => number;
+) => number
+<!-- prettier-ignore-end -->
 ```
 
 # clamp
@@ -26,7 +30,9 @@
 ## Type signature
 
 ```typescript
-(min: any, max: any) => (dateStringOrDate: any) => Date;
+<!-- prettier-ignore-start -->
+(min: any, max: any) => (dateStringOrDate: any) => Date
+<!-- prettier-ignore-end -->
 ```
 
 # dateDiff
@@ -34,7 +40,9 @@
 ## Type signature
 
 ```typescript
-(a: any, b: any) => number;
+<!-- prettier-ignore-start -->
+(a: any, b: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # dateInRange
@@ -42,7 +50,9 @@
 ## Type signature
 
 ```typescript
-(from: any, to: any) => (date?: Date) => boolean;
+<!-- prettier-ignore-start -->
+(from: any, to: any) => (date?: Date) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 # dayRange
@@ -50,6 +60,7 @@
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 ({
   iso,
   local,
@@ -61,6 +72,7 @@
   now?: Date;
   timezoneOffset?: number;
 }) => (date: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 # daysInMonths
@@ -68,7 +80,9 @@
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (leapYear: any) => number[]
+<!-- prettier-ignore-end -->
 ```
 
 # daysInYear
@@ -76,7 +90,9 @@
 ## Type signature
 
 ```typescript
-(year: any) => any;
+<!-- prettier-ignore-start -->
+(year: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 # displayMonth
@@ -84,7 +100,9 @@
 ## Type signature
 
 ```typescript
-(monthIndex: any) => string;
+<!-- prettier-ignore-start -->
+(monthIndex: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 # displayTime
@@ -92,7 +110,9 @@
 ## Type signature
 
 ```typescript
-(source: any, showSeconds: any) => string;
+<!-- prettier-ignore-start -->
+(source: any, showSeconds: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 # endOfDay
@@ -100,7 +120,13 @@
 ## Type signature
 
 ```typescript
-(date: any, timezoneOffset?: number, local?: boolean) => Date;
+<!-- prettier-ignore-start -->
+(
+  date: any,
+  timezoneOffset?: number,
+  local?: boolean
+) => Date
+<!-- prettier-ignore-end -->
 ```
 
 # formatDate
@@ -108,7 +134,9 @@
 ## Type signature
 
 ```typescript
-(sourceDate: any, timezoneOffset?: number) => string;
+<!-- prettier-ignore-start -->
+(sourceDate: any, timezoneOffset?: number) => string
+<!-- prettier-ignore-end -->
 ```
 
 # formatDateTime
@@ -116,7 +144,13 @@
 ## Type signature
 
 ```typescript
-(sourceDate: any, showSeconds?: boolean, timezoneOffset?: number) => string;
+<!-- prettier-ignore-start -->
+(
+  sourceDate: any,
+  showSeconds?: boolean,
+  timezoneOffset?: number
+) => string
+<!-- prettier-ignore-end -->
 ```
 
 # formatDisplayDate
@@ -124,7 +158,13 @@
 ## Type signature
 
 ```typescript
-(sourceDate: any, showDay?: boolean, timezoneOffset?: number) => string;
+<!-- prettier-ignore-start -->
+(
+  sourceDate: any,
+  showDay?: boolean,
+  timezoneOffset?: number
+) => string
+<!-- prettier-ignore-end -->
 ```
 
 # formatDuration
@@ -132,7 +172,9 @@
 ## Type signature
 
 ```typescript
-(duration: any, showSeconds?: boolean) => string;
+<!-- prettier-ignore-start -->
+(duration: any, showSeconds?: boolean) => string
+<!-- prettier-ignore-end -->
 ```
 
 # formatTime
@@ -140,7 +182,13 @@
 ## Type signature
 
 ```typescript
-(sourceDate: any, showSeconds?: boolean, timezoneOffset?: number) => string;
+<!-- prettier-ignore-start -->
+(
+  sourceDate: any,
+  showSeconds?: boolean,
+  timezoneOffset?: number
+) => string
+<!-- prettier-ignore-end -->
 ```
 
 # fromDays
@@ -148,7 +196,9 @@
 ## Type signature
 
 ```typescript
-(days: any) => number;
+<!-- prettier-ignore-start -->
+(days: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # fromHours
@@ -156,7 +206,9 @@
 ## Type signature
 
 ```typescript
-(hours: any) => number;
+<!-- prettier-ignore-start -->
+(hours: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # fromMinutes
@@ -164,7 +216,9 @@
 ## Type signature
 
 ```typescript
-(minutes: any) => number;
+<!-- prettier-ignore-start -->
+(minutes: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # fromSeconds
@@ -172,7 +226,9 @@
 ## Type signature
 
 ```typescript
-(seconds: any) => number;
+<!-- prettier-ignore-start -->
+(seconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # joinDateTime
@@ -180,7 +236,9 @@
 ## Type signature
 
 ```typescript
-(...xs: any[]) => string;
+<!-- prettier-ignore-start -->
+(...xs: any[]) => string
+<!-- prettier-ignore-end -->
 ```
 
 # leapYear
@@ -188,7 +246,9 @@
 ## Type signature
 
 ```typescript
-(year: any) => boolean;
+<!-- prettier-ignore-start -->
+(year: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 # monthNames
@@ -196,7 +256,9 @@
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 string[]
+<!-- prettier-ignore-end -->
 ```
 
 # offsetByBit
@@ -204,7 +266,9 @@ string[]
 ## Type signature
 
 ```typescript
-(date: any) => Date;
+<!-- prettier-ignore-start -->
+(date: any) => Date
+<!-- prettier-ignore-end -->
 ```
 
 # parseHourMinutePair
@@ -212,7 +276,9 @@ string[]
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (text?: string) => number[]
+<!-- prettier-ignore-end -->
 ```
 
 # splitDateTime
@@ -220,7 +286,9 @@ string[]
 ## Type signature
 
 ```typescript
-(dateTimeString: any) => any;
+<!-- prettier-ignore-start -->
+(dateTimeString: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 # startOfDay
@@ -228,7 +296,13 @@ string[]
 ## Type signature
 
 ```typescript
-(date: any, timezoneOffset?: number, local?: boolean) => Date;
+<!-- prettier-ignore-start -->
+(
+  date: any,
+  timezoneOffset?: number,
+  local?: boolean
+) => Date
+<!-- prettier-ignore-end -->
 ```
 
 # subtractDays
@@ -236,7 +310,9 @@ string[]
 ## Type signature
 
 ```typescript
-(sourceDate: any, numberOfDays: any) => Date;
+<!-- prettier-ignore-start -->
+(sourceDate: any, numberOfDays: any) => Date
+<!-- prettier-ignore-end -->
 ```
 
 # toDate
@@ -244,7 +320,9 @@ string[]
 ## Type signature
 
 ```typescript
-(date: any) => string;
+<!-- prettier-ignore-start -->
+(date: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 # toDates
@@ -252,7 +330,9 @@ string[]
 ## Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 # toDays
@@ -260,7 +340,9 @@ string[]
 ## Type signature
 
 ```typescript
-(milliseconds: any) => number;
+<!-- prettier-ignore-start -->
+(milliseconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # toHours
@@ -268,7 +350,9 @@ string[]
 ## Type signature
 
 ```typescript
-(milliseconds: any) => number;
+<!-- prettier-ignore-start -->
+(milliseconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # toISO
@@ -276,7 +360,9 @@ string[]
 ## Type signature
 
 ```typescript
-(x: any) => any;
+<!-- prettier-ignore-start -->
+(x: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 # toISOFromLocalDateTime
@@ -284,7 +370,9 @@ string[]
 ## Type signature
 
 ```typescript
-(date: any) => string;
+<!-- prettier-ignore-start -->
+(date: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 # toLocalDateTime
@@ -292,7 +380,9 @@ string[]
 ## Type signature
 
 ```typescript
-(date: any, timezoneOffset?: number) => Date;
+<!-- prettier-ignore-start -->
+(date: any, timezoneOffset?: number) => Date
+<!-- prettier-ignore-end -->
 ```
 
 # toMinutes
@@ -300,7 +390,9 @@ string[]
 ## Type signature
 
 ```typescript
-(milliseconds: any) => number;
+<!-- prettier-ignore-start -->
+(milliseconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # toSeconds
@@ -308,7 +400,9 @@ string[]
 ## Type signature
 
 ```typescript
-(milliseconds: any) => number;
+<!-- prettier-ignore-start -->
+(milliseconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 # valid
@@ -316,5 +410,7 @@ string[]
 ## Type signature
 
 ```typescript
-(date: any) => boolean;
+<!-- prettier-ignore-start -->
+(date: any) => boolean
+<!-- prettier-ignore-end -->
 ```

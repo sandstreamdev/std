@@ -3,6 +3,7 @@
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (
   url: any
 ) => {
@@ -10,4 +11,5 @@
   search: string;
   hash: string;
 }
+<!-- prettier-ignore-end -->
 ```

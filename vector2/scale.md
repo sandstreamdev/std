@@ -3,6 +3,7 @@
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (
   sx?: number,
   sy?: number
@@ -14,4 +15,5 @@
   d: number;
   f: number;
 }
+<!-- prettier-ignore-end -->
 ```

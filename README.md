@@ -16,11 +16,14 @@ Checks if the given array is not empty (contains at least one element).
 ##### Type signature
 
 ```typescript
-(xs: any[]) => boolean;
+<!-- prettier-ignore-start -->
+(xs: any[]) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 ##### Examples
 
+<!-- prettier-ignore-start -->
 ```javascript
 any([]); // ⇒ false
 ```
@@ -28,6 +31,7 @@ any([]); // ⇒ false
 ```javascript
 any([1, 2, 3]); // ⇒ true
 ```
+<!-- prettier-ignore-end -->
 
 ##### Questions
 
@@ -43,7 +47,9 @@ Checks if given arguments are all `Arrays`.
 ##### Type signature
 
 ```typescript
-(...xs: any[]) => boolean;
+<!-- prettier-ignore-start -->
+(...xs: any[]) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### difference
@@ -51,7 +57,9 @@ Checks if given arguments are all `Arrays`.
 ##### Type signature
 
 ```typescript
-(xs: any, ys: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any, ys: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### differs
@@ -59,7 +67,9 @@ Checks if given arguments are all `Arrays`.
 ##### Type signature
 
 ```typescript
-(xs: any, ys: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any, ys: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### duplicates
@@ -67,7 +77,9 @@ Checks if given arguments are all `Arrays`.
 ##### Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### empty
@@ -75,7 +87,9 @@ Checks if given arguments are all `Arrays`.
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### exact
@@ -83,7 +97,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (n: any) => (xs: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### except
@@ -91,7 +107,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(y: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(y: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### filterInPlace
@@ -99,7 +117,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(f: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(f: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### find
@@ -107,7 +127,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(predicate: any, fallback: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(predicate: any, fallback: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### first
@@ -115,7 +137,9 @@ any[]
 ##### Type signature
 
 ```typescript
-([x]: [any]) => any;
+<!-- prettier-ignore-start -->
+([x]: [any]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### flatMap
@@ -123,7 +147,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(f: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(f: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### flatten
@@ -131,7 +157,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (xs: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### intersection
@@ -139,7 +167,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any, ys: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any, ys: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### is
@@ -147,7 +177,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(value: any) => boolean;
+<!-- prettier-ignore-start -->
+(value: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### last
@@ -155,7 +187,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### lengthDiffers
@@ -163,7 +197,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(a: any, b: any) => boolean;
+<!-- prettier-ignore-start -->
+(a: any, b: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### map
@@ -171,7 +207,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(...fs: any[]) => (x: any) => any;
+<!-- prettier-ignore-start -->
+(...fs: any[]) => (x: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### midpoint
@@ -179,7 +217,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### minMax
@@ -187,7 +227,9 @@ any[]
 ##### Type signature
 
 ```typescript
-([head, ...tail]: [any, ...any[]]) => any;
+<!-- prettier-ignore-start -->
+([head, ...tail]: [any, ...any[]]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### multiple
@@ -195,7 +237,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => boolean;
+<!-- prettier-ignore-start -->
+(xs: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### none
@@ -203,7 +247,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => boolean;
+<!-- prettier-ignore-start -->
+(xs: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### partition
@@ -211,7 +257,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(predicate: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(predicate: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### range
@@ -219,7 +267,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (n: any) => number[]
+<!-- prettier-ignore-end -->
 ```
 
 #### repeat
@@ -227,7 +277,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (n: any) => (value: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### reverse
@@ -235,7 +287,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (xs: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### reverseIf
@@ -243,7 +297,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(predicate: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(predicate: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### rotate
@@ -251,7 +307,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(array: any) => (angle: any) => any;
+<!-- prettier-ignore-start -->
+(array: any) => (angle: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### second
@@ -259,7 +317,9 @@ any[]
 ##### Type signature
 
 ```typescript
-([, x]: [any, any]) => any;
+<!-- prettier-ignore-start -->
+([, x]: [any, any]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### secondToLast
@@ -267,7 +327,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### shift
@@ -275,7 +337,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(n: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(n: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### shuffle
@@ -283,7 +347,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### shuffleInPlace
@@ -291,7 +357,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### single
@@ -299,7 +367,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => boolean;
+<!-- prettier-ignore-start -->
+(xs: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### skip
@@ -307,7 +377,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (count: number) => (xs: any[]) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### sort
@@ -315,7 +387,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (f: any) => (xs: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### sum
@@ -323,7 +397,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### take
@@ -331,7 +407,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (count: number) => (xs: any[]) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### transpose
@@ -339,7 +417,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (xs: any) => any[][]
+<!-- prettier-ignore-end -->
 ```
 
 #### unique
@@ -347,7 +427,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (xs: any) => unknown[]
+<!-- prettier-ignore-end -->
 ```
 
 #### zip
@@ -355,7 +437,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(xs: any, ys: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any, ys: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### zipWith
@@ -363,7 +447,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(f: any) => (xs: any, ys: any) => any;
+<!-- prettier-ignore-start -->
+(f: any) => (xs: any, ys: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 ### async
@@ -373,7 +459,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (f: any, wait: any) => (...args: any[]) => void
+<!-- prettier-ignore-end -->
 ```
 
 #### delay
@@ -381,7 +469,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (duration: any) => Promise<unknown>
+<!-- prettier-ignore-end -->
 ```
 
 #### sequence
@@ -389,7 +479,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (tasks: any) => Promise<any>
+<!-- prettier-ignore-end -->
 ```
 
 ### date
@@ -399,7 +491,10 @@ any[]
 ##### Type signature
 
 ```typescript
-(now: any) => (
+<!-- prettier-ignore-start -->
+(
+  now: any
+) => (
   {
     endedAt: aEnd,
     startedAt: aStart
@@ -414,7 +509,8 @@ any[]
     endedAt: any;
     startedAt: any;
   }
-) => number;
+) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### clamp
@@ -422,7 +518,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(min: any, max: any) => (dateStringOrDate: any) => Date;
+<!-- prettier-ignore-start -->
+(min: any, max: any) => (dateStringOrDate: any) => Date
+<!-- prettier-ignore-end -->
 ```
 
 #### dateDiff
@@ -430,7 +528,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(a: any, b: any) => number;
+<!-- prettier-ignore-start -->
+(a: any, b: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### dateInRange
@@ -438,7 +538,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(from: any, to: any) => (date?: Date) => boolean;
+<!-- prettier-ignore-start -->
+(from: any, to: any) => (date?: Date) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### dayRange
@@ -446,6 +548,7 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 ({
   iso,
   local,
@@ -457,6 +560,7 @@ any[]
   now?: Date;
   timezoneOffset?: number;
 }) => (date: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### daysInMonths
@@ -464,7 +568,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (leapYear: any) => number[]
+<!-- prettier-ignore-end -->
 ```
 
 #### daysInYear
@@ -472,7 +578,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(year: any) => any;
+<!-- prettier-ignore-start -->
+(year: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### displayMonth
@@ -480,7 +588,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(monthIndex: any) => string;
+<!-- prettier-ignore-start -->
+(monthIndex: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### displayTime
@@ -488,7 +598,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(source: any, showSeconds: any) => string;
+<!-- prettier-ignore-start -->
+(source: any, showSeconds: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### endOfDay
@@ -496,7 +608,13 @@ any[]
 ##### Type signature
 
 ```typescript
-(date: any, timezoneOffset?: number, local?: boolean) => Date;
+<!-- prettier-ignore-start -->
+(
+  date: any,
+  timezoneOffset?: number,
+  local?: boolean
+) => Date
+<!-- prettier-ignore-end -->
 ```
 
 #### formatDate
@@ -504,7 +622,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(sourceDate: any, timezoneOffset?: number) => string;
+<!-- prettier-ignore-start -->
+(sourceDate: any, timezoneOffset?: number) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### formatDateTime
@@ -512,7 +632,13 @@ any[]
 ##### Type signature
 
 ```typescript
-(sourceDate: any, showSeconds?: boolean, timezoneOffset?: number) => string;
+<!-- prettier-ignore-start -->
+(
+  sourceDate: any,
+  showSeconds?: boolean,
+  timezoneOffset?: number
+) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### formatDisplayDate
@@ -520,7 +646,13 @@ any[]
 ##### Type signature
 
 ```typescript
-(sourceDate: any, showDay?: boolean, timezoneOffset?: number) => string;
+<!-- prettier-ignore-start -->
+(
+  sourceDate: any,
+  showDay?: boolean,
+  timezoneOffset?: number
+) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### formatDuration
@@ -528,7 +660,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(duration: any, showSeconds?: boolean) => string;
+<!-- prettier-ignore-start -->
+(duration: any, showSeconds?: boolean) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### formatTime
@@ -536,7 +670,13 @@ any[]
 ##### Type signature
 
 ```typescript
-(sourceDate: any, showSeconds?: boolean, timezoneOffset?: number) => string;
+<!-- prettier-ignore-start -->
+(
+  sourceDate: any,
+  showSeconds?: boolean,
+  timezoneOffset?: number
+) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### fromDays
@@ -544,7 +684,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(days: any) => number;
+<!-- prettier-ignore-start -->
+(days: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### fromHours
@@ -552,7 +694,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(hours: any) => number;
+<!-- prettier-ignore-start -->
+(hours: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### fromMinutes
@@ -560,7 +704,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(minutes: any) => number;
+<!-- prettier-ignore-start -->
+(minutes: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### fromSeconds
@@ -568,7 +714,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(seconds: any) => number;
+<!-- prettier-ignore-start -->
+(seconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### joinDateTime
@@ -576,7 +724,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(...xs: any[]) => string;
+<!-- prettier-ignore-start -->
+(...xs: any[]) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### leapYear
@@ -584,7 +734,9 @@ any[]
 ##### Type signature
 
 ```typescript
-(year: any) => boolean;
+<!-- prettier-ignore-start -->
+(year: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### monthNames
@@ -592,7 +744,9 @@ any[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 string[]
+<!-- prettier-ignore-end -->
 ```
 
 #### offsetByBit
@@ -600,7 +754,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(date: any) => Date;
+<!-- prettier-ignore-start -->
+(date: any) => Date
+<!-- prettier-ignore-end -->
 ```
 
 #### parseHourMinutePair
@@ -608,7 +764,9 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (text?: string) => number[]
+<!-- prettier-ignore-end -->
 ```
 
 #### splitDateTime
@@ -616,7 +774,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(dateTimeString: any) => any;
+<!-- prettier-ignore-start -->
+(dateTimeString: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### startOfDay
@@ -624,7 +784,13 @@ string[]
 ##### Type signature
 
 ```typescript
-(date: any, timezoneOffset?: number, local?: boolean) => Date;
+<!-- prettier-ignore-start -->
+(
+  date: any,
+  timezoneOffset?: number,
+  local?: boolean
+) => Date
+<!-- prettier-ignore-end -->
 ```
 
 #### subtractDays
@@ -632,7 +798,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(sourceDate: any, numberOfDays: any) => Date;
+<!-- prettier-ignore-start -->
+(sourceDate: any, numberOfDays: any) => Date
+<!-- prettier-ignore-end -->
 ```
 
 #### toDate
@@ -640,7 +808,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(date: any) => string;
+<!-- prettier-ignore-start -->
+(date: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### toDates
@@ -648,7 +818,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: any) => any;
+<!-- prettier-ignore-start -->
+(xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### toDays
@@ -656,7 +828,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(milliseconds: any) => number;
+<!-- prettier-ignore-start -->
+(milliseconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### toHours
@@ -664,7 +838,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(milliseconds: any) => number;
+<!-- prettier-ignore-start -->
+(milliseconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### toISO
@@ -672,7 +848,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => any;
+<!-- prettier-ignore-start -->
+(x: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### toISOFromLocalDateTime
@@ -680,7 +858,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(date: any) => string;
+<!-- prettier-ignore-start -->
+(date: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### toLocalDateTime
@@ -688,7 +868,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(date: any, timezoneOffset?: number) => Date;
+<!-- prettier-ignore-start -->
+(date: any, timezoneOffset?: number) => Date
+<!-- prettier-ignore-end -->
 ```
 
 #### toMinutes
@@ -696,7 +878,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(milliseconds: any) => number;
+<!-- prettier-ignore-start -->
+(milliseconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### toSeconds
@@ -704,7 +888,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(milliseconds: any) => number;
+<!-- prettier-ignore-start -->
+(milliseconds: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### valid
@@ -712,7 +898,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(date: any) => boolean;
+<!-- prettier-ignore-start -->
+(date: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 ### debug
@@ -722,7 +910,9 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (condition: any, callbackOrMessage: any) => void
+<!-- prettier-ignore-end -->
 ```
 
 #### diff
@@ -730,7 +920,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(obj1: any, obj2: any) => object;
+<!-- prettier-ignore-start -->
+(obj1: any, obj2: any) => object
+<!-- prettier-ignore-end -->
 ```
 
 ### encoding
@@ -740,9 +932,11 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 {
   encode: (_: any) => string;
 }
+<!-- prettier-ignore-end -->
 ```
 
 ### file
@@ -752,7 +946,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(name: any) => boolean;
+<!-- prettier-ignore-start -->
+(name: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 ### function
@@ -762,7 +958,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(...fs: any[]) => (x: any) => any;
+<!-- prettier-ignore-start -->
+(...fs: any[]) => (x: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### constant
@@ -770,7 +968,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => () => any;
+<!-- prettier-ignore-start -->
+(x: any) => () => any
+<!-- prettier-ignore-end -->
 ```
 
 #### identity
@@ -778,7 +978,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => any;
+<!-- prettier-ignore-start -->
+(x: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### memoize
@@ -786,7 +988,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: any) => (...args: any[]) => any;
+<!-- prettier-ignore-start -->
+(f: any) => (...args: any[]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### memoizeShallow
@@ -794,7 +998,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: any) => (...args: any[]) => any;
+<!-- prettier-ignore-start -->
+(f: any) => (...args: any[]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### memoizeWith
@@ -802,7 +1008,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(equals: any) => (f: any) => (...args: any[]) => any;
+<!-- prettier-ignore-start -->
+(equals: any) => (f: any) => (...args: any[]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### noOp
@@ -810,7 +1018,9 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 () => void
+<!-- prettier-ignore-end -->
 ```
 
 #### not
@@ -818,7 +1028,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: any) => (...args: any[]) => boolean;
+<!-- prettier-ignore-start -->
+(f: any) => (...args: any[]) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### pipe
@@ -826,7 +1038,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(...fs: any[]) => (x: any) => any;
+<!-- prettier-ignore-start -->
+(...fs: any[]) => (x: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### when
@@ -834,7 +1048,11 @@ string[]
 ##### Type signature
 
 ```typescript
-(predicate: any) => (action: any) => (...args: any[]) => any;
+<!-- prettier-ignore-start -->
+(
+  predicate: any
+) => (action: any) => (...args: any[]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### whenTrue
@@ -842,7 +1060,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(action: any) => (...args: any[]) => any;
+<!-- prettier-ignore-start -->
+(action: any) => (...args: any[]) => any
+<!-- prettier-ignore-end -->
 ```
 
 ### is
@@ -852,7 +1072,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### byte
@@ -860,7 +1082,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### date
@@ -868,7 +1092,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### defined
@@ -876,7 +1102,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### \_function
@@ -884,7 +1112,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### integer
@@ -892,7 +1122,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### normal
@@ -900,7 +1132,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### number
@@ -908,7 +1142,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### object
@@ -916,7 +1152,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### string
@@ -924,7 +1162,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 ### math
@@ -934,7 +1174,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(a: number, b: number) => number;
+<!-- prettier-ignore-start -->
+(a: number, b: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### average
@@ -942,7 +1184,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: number[]) => number;
+<!-- prettier-ignore-start -->
+(xs: number[]) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### ceilToNearestPowerOfTwo
@@ -950,7 +1194,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: number) => number;
+<!-- prettier-ignore-start -->
+(x: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### clamp
@@ -958,7 +1204,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(min: number, max: number) => (x: number) => number;
+<!-- prettier-ignore-start -->
+(min: number, max: number) => (x: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### clampNormal
@@ -966,7 +1214,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: number) => number;
+<!-- prettier-ignore-start -->
+(x: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### clampPercentage
@@ -974,7 +1224,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: number) => number;
+<!-- prettier-ignore-start -->
+(x: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### delta
@@ -982,7 +1234,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(a: number, b: number) => number;
+<!-- prettier-ignore-start -->
+(a: number, b: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### inRectangleRange
@@ -990,7 +1244,12 @@ string[]
 ##### Type signature
 
 ```typescript
-(width: number, height: number) => (x: number, y: number) => boolean;
+<!-- prettier-ignore-start -->
+(
+  width: number,
+  height: number
+) => (x: number, y: number) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### lerp
@@ -998,7 +1257,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(t: number) => (a: number, b: number) => number;
+<!-- prettier-ignore-start -->
+(t: number) => (a: number, b: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### maximumBy
@@ -1006,7 +1267,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: (x: number) => number) => (xs: number[]) => number;
+<!-- prettier-ignore-start -->
+(f: (x: number) => number) => (xs: number[]) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### median
@@ -1014,7 +1277,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: number[]) => number;
+<!-- prettier-ignore-start -->
+(xs: number[]) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### minMax
@@ -1022,7 +1287,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([a, b]: [number, number]) => [number, number];
+<!-- prettier-ignore-start -->
+([a, b]: [number, number]) => [number, number]
+<!-- prettier-ignore-end -->
 ```
 
 #### safeNormalize
@@ -1030,7 +1297,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: number) => number;
+<!-- prettier-ignore-start -->
+(x: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### sameSign
@@ -1038,7 +1307,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: number[]) => boolean;
+<!-- prettier-ignore-start -->
+(xs: number[]) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### standardDeviation
@@ -1046,7 +1317,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: number[], origin?: number) => number;
+<!-- prettier-ignore-start -->
+(xs: number[], origin?: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### subtract
@@ -1054,7 +1327,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(a: number, b: number) => number;
+<!-- prettier-ignore-start -->
+(a: number, b: number) => number
+<!-- prettier-ignore-end -->
 ```
 
 ### object
@@ -1064,7 +1339,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: any) => boolean;
+<!-- prettier-ignore-start -->
+(xs: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### apply
@@ -1072,7 +1349,11 @@ string[]
 ##### Type signature
 
 ```typescript
-(fs: ((...xs: any[]) => any)[]) => (...xs: any[]) => object;
+<!-- prettier-ignore-start -->
+(
+  fs: ((...xs: any[]) => any)[]
+) => (...xs: any[]) => object
+<!-- prettier-ignore-end -->
 ```
 
 #### empty
@@ -1080,8 +1361,9 @@ string[]
 ##### Type signature
 
 ```typescript
-{
-}
+<!-- prettier-ignore-start -->
+{}
+<!-- prettier-ignore-end -->
 ```
 
 #### entries
@@ -1089,6 +1371,7 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 {
   <T>(
     o:
@@ -1099,6 +1382,7 @@ string[]
   ): [string, T][];
   (o: {}): [string, any][];
 }
+<!-- prettier-ignore-end -->
 ```
 
 #### enumerable
@@ -1106,7 +1390,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(...xs: any[]) => any;
+<!-- prettier-ignore-start -->
+(...xs: any[]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### equals
@@ -1114,7 +1400,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(a: any, b: any) => any;
+<!-- prettier-ignore-start -->
+(a: any, b: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### filter
@@ -1122,7 +1410,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: any) => (xs: any) => object;
+<!-- prettier-ignore-start -->
+(f: any) => (xs: any) => object
+<!-- prettier-ignore-end -->
 ```
 
 #### find
@@ -1130,7 +1420,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(predicate: any) => (xs: any) => unknown;
+<!-- prettier-ignore-start -->
+(predicate: any) => (xs: any) => unknown
+<!-- prettier-ignore-end -->
 ```
 
 #### findEntry
@@ -1138,7 +1430,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(predicate: any) => (xs: any) => [string, unknown];
+<!-- prettier-ignore-start -->
+(predicate: any) => (xs: any) => [string, unknown]
+<!-- prettier-ignore-end -->
 ```
 
 #### findKey
@@ -1146,7 +1440,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(predicate: any) => (xs: any) => string;
+<!-- prettier-ignore-start -->
+(predicate: any) => (xs: any) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### findValue
@@ -1154,7 +1450,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(predicate: any) => (xs: any) => unknown;
+<!-- prettier-ignore-start -->
+(predicate: any) => (xs: any) => unknown
+<!-- prettier-ignore-end -->
 ```
 
 #### first
@@ -1162,7 +1460,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: any) => unknown;
+<!-- prettier-ignore-start -->
+(xs: any) => unknown
+<!-- prettier-ignore-end -->
 ```
 
 #### flatMapValues
@@ -1170,7 +1470,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(f: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### fromEntries
@@ -1178,7 +1480,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(keyValuePairs: [string, any][]) => object;
+<!-- prettier-ignore-start -->
+(keyValuePairs: [string, any][]) => object
+<!-- prettier-ignore-end -->
 ```
 
 #### groupBy
@@ -1186,7 +1490,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(selector: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(selector: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### hasKey
@@ -1194,7 +1500,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(key: any) => (xs: any) => any;
+<!-- prettier-ignore-start -->
+(key: any) => (xs: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### length
@@ -1202,7 +1510,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: any) => number;
+<!-- prettier-ignore-start -->
+(xs: any) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### map
@@ -1210,8 +1520,11 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: (value: any, key: string, context: object) => any) => (xs: object) =>
-  object;
+<!-- prettier-ignore-start -->
+(
+  f: (value: any, key: string, context: object) => any
+) => (xs: object) => object
+<!-- prettier-ignore-end -->
 ```
 
 #### mapEntries
@@ -1219,9 +1532,11 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (
   f: (value: any, key: string, context: object) => any
 ) => (xs: object) => [string, any][]
+<!-- prettier-ignore-end -->
 ```
 
 #### mapKeys
@@ -1229,7 +1544,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: any) => (xs: any) => object;
+<!-- prettier-ignore-start -->
+(f: any) => (xs: any) => object
+<!-- prettier-ignore-end -->
 ```
 
 #### mapValues
@@ -1237,7 +1554,9 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (f: any) => (xs: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### merge
@@ -1245,7 +1564,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(a: object, b: object) => object;
+<!-- prettier-ignore-start -->
+(a: object, b: object) => object
+<!-- prettier-ignore-end -->
 ```
 
 #### none
@@ -1253,7 +1574,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs: any) => boolean;
+<!-- prettier-ignore-start -->
+(xs: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### sort
@@ -1261,7 +1584,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(f: any) => (xs: any) => object;
+<!-- prettier-ignore-start -->
+(f: any) => (xs: any) => object
+<!-- prettier-ignore-end -->
 ```
 
 ### query
@@ -1271,7 +1596,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs?: string) => object;
+<!-- prettier-ignore-start -->
+(xs?: string) => object
+<!-- prettier-ignore-end -->
 ```
 
 #### parsePathname
@@ -1279,11 +1606,15 @@ string[]
 ##### Type signature
 
 ```typescript
-(url: any) => {
+<!-- prettier-ignore-start -->
+(
+  url: any
+) => {
   pathname: any;
   search: string;
   hash: string;
-};
+}
+<!-- prettier-ignore-end -->
 ```
 
 #### read
@@ -1291,7 +1622,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(source: any) => {};
+<!-- prettier-ignore-start -->
+(source: any) => {}
+<!-- prettier-ignore-end -->
 ```
 
 #### serialize
@@ -1299,7 +1632,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(xs?: {}) => string;
+<!-- prettier-ignore-start -->
+(xs?: {}) => string
+<!-- prettier-ignore-end -->
 ```
 
 ### range
@@ -1309,7 +1644,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([min, max]: [any, any]) => boolean;
+<!-- prettier-ignore-start -->
+([min, max]: [any, any]) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### equals
@@ -1317,7 +1654,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => boolean;
+<!-- prettier-ignore-start -->
+([a, b]: [any, any], [c, d]: [any, any]) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### length
@@ -1325,7 +1664,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([min, max]: [any, any]) => number;
+<!-- prettier-ignore-start -->
+([min, max]: [any, any]) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### split
@@ -1333,7 +1674,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(used: any, sourceRange?: number[]) => (range: any) => any;
+<!-- prettier-ignore-start -->
+(used: any, sourceRange?: number[]) => (range: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 ### regex
@@ -1343,7 +1686,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(string: any) => any;
+<!-- prettier-ignore-start -->
+(string: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 ### string
@@ -1353,7 +1698,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => boolean;
+<!-- prettier-ignore-start -->
+(x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### empty
@@ -1361,7 +1708,9 @@ string[]
 ##### Type signature
 
 ```typescript
-"";
+<!-- prettier-ignore-start -->
+""
+<!-- prettier-ignore-end -->
 ```
 
 #### firstToLower
@@ -1369,7 +1718,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([first, ...rest]: [any, ...any[]]) => string;
+<!-- prettier-ignore-start -->
+([first, ...rest]: [any, ...any[]]) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### firstToUpper
@@ -1377,7 +1728,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([first, ...rest]: [any, ...any[]]) => string;
+<!-- prettier-ignore-start -->
+([first, ...rest]: [any, ...any[]]) => string
+<!-- prettier-ignore-end -->
 ```
 
 #### includes
@@ -1385,7 +1738,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(search: any) => (xs: any) => boolean;
+<!-- prettier-ignore-start -->
+(search: any) => (xs: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 #### nbsp
@@ -1393,7 +1748,9 @@ string[]
 ##### Type signature
 
 ```typescript
-" ";
+<!-- prettier-ignore-start -->
+" "
+<!-- prettier-ignore-end -->
 ```
 
 #### nonEmpty
@@ -1401,7 +1758,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(x: any) => any;
+<!-- prettier-ignore-start -->
+(x: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### startsWith
@@ -1409,7 +1768,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(prefix: any) => (xs: any) => boolean;
+<!-- prettier-ignore-start -->
+(prefix: any) => (xs: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 ### vector2
@@ -1419,7 +1780,9 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 ([x1, y1]: [any, any], [x2, y2]: [any, any]) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### convertSpace
@@ -1427,7 +1790,9 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (space: any) => ([x, y]: [any, any]) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### cross
@@ -1435,7 +1800,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => number;
+<!-- prettier-ignore-start -->
+([a, b]: [any, any], [c, d]: [any, any]) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### dot
@@ -1443,7 +1810,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => number;
+<!-- prettier-ignore-start -->
+([a, b]: [any, any], [c, d]: [any, any]) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### length
@@ -1451,7 +1820,9 @@ string[]
 ##### Type signature
 
 ```typescript
-([x, y]: [any, any]) => number;
+<!-- prettier-ignore-start -->
+([x, y]: [any, any]) => number
+<!-- prettier-ignore-end -->
 ```
 
 #### mul
@@ -1459,7 +1830,9 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (matrix: any, point: any) => any[]
+<!-- prettier-ignore-end -->
 ```
 
 #### multiply
@@ -1467,14 +1840,19 @@ string[]
 ##### Type signature
 
 ```typescript
-(m1: any, m2: any) => {
+<!-- prettier-ignore-start -->
+(
+  m1: any,
+  m2: any
+) => {
   a: number;
   c: number;
   e: any;
   b: number;
   d: number;
   f: any;
-};
+}
+<!-- prettier-ignore-end -->
 ```
 
 #### normalize
@@ -1482,7 +1860,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(vector: any) => any;
+<!-- prettier-ignore-start -->
+(vector: any) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### reflect
@@ -1490,7 +1870,9 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (a: any, v: any) => number[]
+<!-- prettier-ignore-end -->
 ```
 
 #### rotate
@@ -1498,7 +1880,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(angle?: number, cx?: number, cy?: number) => any;
+<!-- prettier-ignore-start -->
+(angle?: number, cx?: number, cy?: number) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### scale
@@ -1506,14 +1890,19 @@ string[]
 ##### Type signature
 
 ```typescript
-(sx?: number, sy?: number) => {
+<!-- prettier-ignore-start -->
+(
+  sx?: number,
+  sy?: number
+) => {
   a: number;
   c: number;
   e: number;
   b: number;
   d: number;
   f: number;
-};
+}
+<!-- prettier-ignore-end -->
 ```
 
 #### sub
@@ -1521,10 +1910,12 @@ string[]
 ##### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (
   [x1, y1]: [any, any],
   [x2, y2]: [any, any]
 ) => number[]
+<!-- prettier-ignore-end -->
 ```
 
 #### transform
@@ -1532,7 +1923,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(...matrices: any[]) => any;
+<!-- prettier-ignore-start -->
+(...matrices: any[]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### translate
@@ -1540,14 +1933,19 @@ string[]
 ##### Type signature
 
 ```typescript
-(tx?: number, ty?: number) => {
+<!-- prettier-ignore-start -->
+(
+  tx?: number,
+  ty?: number
+) => {
   a: number;
   c: number;
   e: number;
   b: number;
   d: number;
   f: number;
-};
+}
+<!-- prettier-ignore-end -->
 ```
 
 ### web
@@ -1557,7 +1955,9 @@ string[]
 ##### Type signature
 
 ```typescript
-(...xs: any[]) => any;
+<!-- prettier-ignore-start -->
+(...xs: any[]) => any
+<!-- prettier-ignore-end -->
 ```
 
 #### events
@@ -1567,7 +1967,9 @@ string[]
 ###### Type signature
 
 ```typescript
-(event: any) => boolean;
+<!-- prettier-ignore-start -->
+(event: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 ##### openInNewTabIntent
@@ -1575,6 +1977,7 @@ string[]
 ###### Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 ({
   button,
   ctrlKey,
@@ -1585,7 +1988,8 @@ string[]
   ctrlKey: any;
   metaKey: any;
   shiftKey: any;
-}) => any;
+}) => any
+<!-- prettier-ignore-end -->
 ```
 
 ##### prevent
@@ -1593,7 +1997,9 @@ string[]
 ###### Type signature
 
 ```typescript
-(event: any) => boolean;
+<!-- prettier-ignore-start -->
+(event: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 ##### stop
@@ -1601,7 +2007,9 @@ string[]
 ###### Type signature
 
 ```typescript
-(event: any) => boolean;
+<!-- prettier-ignore-start -->
+(event: any) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 <!-- DOCS:END -->

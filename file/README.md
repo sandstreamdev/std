@@ -3,5 +3,7 @@
 ## Type signature
 
 ```typescript
-(name: any) => boolean;
+<!-- prettier-ignore-start -->
+(name: any) => boolean
+<!-- prettier-ignore-end -->
 ```

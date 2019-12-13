@@ -3,6 +3,7 @@
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 ({
   iso,
   local,
@@ -14,4 +15,5 @@
   now?: Date;
   timezoneOffset?: number;
 }) => (date: any) => any[]
+<!-- prettier-ignore-end -->
 ```

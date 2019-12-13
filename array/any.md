@@ -5,11 +5,14 @@ Checks if the given array is not empty (contains at least one element).
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (xs: any[]) => boolean
+<!-- prettier-ignore-end -->
 ```
 
 ## Examples
 
+<!-- prettier-ignore-start -->
 ```javascript
 any([]); // ⇒ false
 ```
@@ -17,6 +20,7 @@ any([]); // ⇒ false
 ```javascript
 any([1, 2, 3]); // ⇒ true
 ```
+<!-- prettier-ignore-end -->
 
 ## Questions
 

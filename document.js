@@ -20,7 +20,9 @@ ${description}
 ## Type signature
 
 \`\`\`typescript
+<!-- prettier-ignore-start -->
 ${signature}
+<!-- prettier-ignore-end -->
 \`\`\`
 `;
   }
@@ -32,7 +34,7 @@ ${signature}
   ) {
     content += `
 ## Examples
-`;
+<!-- prettier-ignore-start -->`;
     content += examples
       .map(
         item => `
@@ -41,7 +43,7 @@ ${item.content}
 \`\`\``
       )
       .join("\n");
-    content += "\n";
+    content += "\n<!-- prettier-ignore-end -->\n";
   }
 
   if (questions && questions.length > 0 && !questions[0].startsWith("TODO")) {

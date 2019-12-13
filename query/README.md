@@ -3,7 +3,9 @@
 ## Type signature
 
 ```typescript
-(xs?: string) => object;
+<!-- prettier-ignore-start -->
+(xs?: string) => object
+<!-- prettier-ignore-end -->
 ```
 
 # parsePathname
@@ -11,11 +13,15 @@
 ## Type signature
 
 ```typescript
-(url: any) => {
+<!-- prettier-ignore-start -->
+(
+  url: any
+) => {
   pathname: any;
   search: string;
   hash: string;
-};
+}
+<!-- prettier-ignore-end -->
 ```
 
 # read
@@ -23,7 +29,9 @@
 ## Type signature
 
 ```typescript
-(source: any) => {};
+<!-- prettier-ignore-start -->
+(source: any) => {}
+<!-- prettier-ignore-end -->
 ```
 
 # serialize
@@ -31,5 +39,7 @@
 ## Type signature
 
 ```typescript
-(xs?: {}) => string;
+<!-- prettier-ignore-start -->
+(xs?: {}) => string
+<!-- prettier-ignore-end -->
 ```

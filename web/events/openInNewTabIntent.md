@@ -3,6 +3,7 @@
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 ({
   button,
   ctrlKey,
@@ -14,4 +15,5 @@
   metaKey: any;
   shiftKey: any;
 }) => any
+<!-- prettier-ignore-end -->
 ```

@@ -1,7 +1,9 @@
-# _function
+# \_function
 
 ## Type signature
 
 ```typescript
+<!-- prettier-ignore-start -->
 (x: any) => boolean
+<!-- prettier-ignore-end -->
 ```
