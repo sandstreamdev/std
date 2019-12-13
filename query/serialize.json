@@ -1,6 +1,6 @@
 {
   "name": "serialize",
-  "description": "TODO: Fill short description here.",
+  "description": "Serializes the given object into a query string.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

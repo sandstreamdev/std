@@ -1,6 +1,6 @@
 {
   "name": "read",
-  "description": "TODO: Fill short description here.",
+  "description": "Parses the given query string into an object using URLSearchParams.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
