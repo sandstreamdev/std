@@ -20,14 +20,14 @@ const atobImplementation = (text: string) =>
       )
     : Buffer.from(text, "base64").toString(ENCODING);
 
-export const encodeString = (text: string) =>
+export const encode = (text: string) =>
   btoaImplementation(text)
     .replace(/=/g, "")
     .replace(/\+/g, "-")
     .replace(/\//g, "_");
 
-export const decodeString = (text: string) =>
-  atobImplementation(text.replace(/\-/g, "+").replace(/_/g, "/"));
+export const decode = (text: string) =>
+  atobImplementation(text.replace(/-/g, "+").replace(/_/g, "/"));
 
 export const toBase64Url = (base64: string) =>
   base64.replace(/\+/g, "-").replace(/\//g, "_");
@@ -35,14 +35,23 @@ export const toBase64Url = (base64: string) =>
 export const fromBase64Url = (base64: string) =>
   base64.replace(/-/g, "+").replace(/_/g, "/");
 
-export const encode = (bytes: number[]) => {
+export const encodeBytes = (bytes: number[]) => {
   const sourceText = toByteString(bytes);
 
-  return encodeString(sourceText);
+  return encode(sourceText);
 };
 
-export const decode = (text: string) => {
-  const decoded = decodeString(text);
+export const decodeBytes = (text: string) => {
+  const decoded = decode(text);
 
   return fromByteString(decoded);
+};
+
+export default {
+  decode,
+  decodeBytes,
+  encode,
+  encodeBytes,
+  fromByteString,
+  toByteString
 };
