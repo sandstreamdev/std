@@ -1,6 +1,6 @@
 {
   "name": "validName",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given string is a valid Windows file name.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
