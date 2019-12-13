@@ -1,6 +1,6 @@
 {
   "name": "multiply",
-  "description": "Multiples two matrices together.",
+  "description": "Multiples two matrices.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

@@ -3,7 +3,7 @@
 import multiply from "./multiply.ts";
 
 describe("multiply", () => {
-  it("multiples two matrices together", () => {
+  it("multiples two matrices", () => {
     expect(
       multiply(
         { a: 1, c: 2, e: 3, b: 4, d: 5, f: 6 },

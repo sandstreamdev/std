@@ -3,7 +3,7 @@
 import sub from "./sub.ts";
 
 describe("sub", () => {
-  it("subtracts two vectors from each other", () => {
+  it("subtracts two vectors", () => {
     expect(sub([3, 5], [-1, 8])).toEqual([4, -3]);
   });
 });
