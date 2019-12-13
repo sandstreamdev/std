@@ -1,6 +1,6 @@
 {
   "name": "subtract",
-  "description": "TODO: Fill short description here.",
+  "description": "Subtracts two values.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

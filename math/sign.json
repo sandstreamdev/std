@@ -1,11 +1,11 @@
 {
-  "name": "safeNormalize",
-  "description": "TODO: Fill short description here.",
+  "name": "sign",
+  "description": "Calculates the sign of the value and returns -1 for negative values, 1 for positive values and 0 for zeros.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
       "language": "javascript",
-      "content": "safeNormalize(); // ⇒ TODO"
+      "content": "sign(); // ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

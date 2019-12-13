@@ -1,6 +1,6 @@
 {
   "name": "standardDeviation",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates standard deviation of the given array of numbers.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

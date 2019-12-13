@@ -1,6 +1,6 @@
 {
   "name": "lerp",
-  "description": "TODO: Fill short description here.",
+  "description": "Linearly interpolates two given values by normal value of their distance.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

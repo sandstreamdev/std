@@ -1,6 +1,6 @@
 {
   "name": "delta",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates the absolute distance between given values.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

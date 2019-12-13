@@ -1,6 +1,6 @@
 {
   "name": "average",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates the average of given array of numbers.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

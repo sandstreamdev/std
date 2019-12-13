@@ -1,6 +1,6 @@
 {
   "name": "minMax",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates the minimum and maximum value of the two given values.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

@@ -1,6 +1,6 @@
 {
   "name": "maximumBy",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates the maximum by a given selector.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

@@ -1,6 +1,6 @@
 {
   "name": "clamp",
-  "description": "TODO: Fill short description here.",
+  "description": "Clamps the given value to the given range.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {

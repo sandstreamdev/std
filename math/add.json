@@ -1,6 +1,6 @@
 {
   "name": "add",
-  "description": "TODO: Fill short description here.",
+  "description": "Adds two values.",
   "signature": "TODO: Fill type signature here.",
   "examples": [
     {
