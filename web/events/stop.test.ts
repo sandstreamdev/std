@@ -3,7 +3,13 @@
 import stop from "./stop.ts";
 
 describe("stop", () => {
-  it.skip("TODO", () => {
-    expect(stop()).toBeDefined();
+  it("stops propagation and prevents the default handler of the given event", () => {
+    const event = {
+      stopPropagation: jest.fn()
+    };
+
+    stop(event);
+
+    expect(event.stopPropagation).toBeCalled();
   });
 });

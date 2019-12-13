@@ -1,7 +1,7 @@
 {
   "name": "single",
-  "description": "TODO: Fill short description here.",
-  "signature": "(xs: any) => boolean",
+  "description": "Checks if the given array contains exactly one element.",
+  "signature": "(xs: any[]) => boolean",
   "examples": [
     {
       "language": "javascript",

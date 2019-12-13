@@ -1,9 +1,11 @@
 # delay
 
+When awaited, delays the execution by the given number of milliseconds.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(duration: any) => Promise<unknown>
+(duration: number) => Promise<unknown>
 ```
 <!-- prettier-ignore-end -->

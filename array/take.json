@@ -1,6 +1,6 @@
 {
   "name": "take",
-  "description": "TODO: Fill short description here.",
+  "description": "Takes up to given count of elements.",
   "signature": "(count: number) => (xs: any[]) => any[]",
   "examples": [
     {

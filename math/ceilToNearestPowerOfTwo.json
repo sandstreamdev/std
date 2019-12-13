@@ -1,6 +1,6 @@
 {
   "name": "ceilToNearestPowerOfTwo",
-  "description": "TODO: Fill short description here.",
+  "description": "Finds the nearest power of two greater or equal to the given value.",
   "signature": "(x: number) => number",
   "examples": [
     {

@@ -1,7 +1,7 @@
 {
   "name": "not",
-  "description": "TODO: Fill short description here.",
-  "signature": "(f: any) => (...args: any[]) => boolean",
+  "description": "Inverts the given function result.",
+  "signature": "(\n  f: (...xs: any[]) => any\n) => (...args: any[]) => boolean",
   "examples": [
     {
       "language": "javascript",

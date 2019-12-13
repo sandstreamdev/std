@@ -1,9 +1,11 @@
 # firstToLower
 
+Transforms the first character to lowercase.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([first, ...rest]: [any, ...any[]]) => string
+(text: string) => string
 ```
 <!-- prettier-ignore-end -->

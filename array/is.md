@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(value: any) => boolean
+(value?: any) => boolean
 ```
 <!-- prettier-ignore-end -->

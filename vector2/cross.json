@@ -1,6 +1,6 @@
 {
   "name": "cross",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates a cross product of the given vectors. Returns a scalar.",
   "signature": "([a, b]: [any, any], [c, d]: [any, any]) => number",
   "examples": [
     {

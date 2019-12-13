@@ -1,5 +1,7 @@
 # maximumBy
 
+Calculates the maximum by a given selector.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

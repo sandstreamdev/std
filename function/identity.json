@@ -1,6 +1,6 @@
 {
   "name": "identity",
-  "description": "TODO: Fill short description here.",
+  "description": "Always return the given value.",
   "signature": "(x: any) => any",
   "examples": [
     {

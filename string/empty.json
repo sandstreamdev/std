@@ -1,6 +1,6 @@
 {
   "name": "empty",
-  "description": "TODO: Fill short description here.",
+  "description": "Empty string.",
   "signature": "\"\"",
   "examples": [
     {

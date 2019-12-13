@@ -1,9 +1,11 @@
 # reverseIf
 
+Reverses the given array when enabled.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any) => (xs: any) => any
+(enabled: boolean) => (xs: any) => any
 ```
 <!-- prettier-ignore-end -->

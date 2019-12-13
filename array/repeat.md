@@ -1,9 +1,11 @@
 # repeat
 
+Repeats the given element by given count of times.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => (value: any) => any[]
+(count: number) => (value: any) => any[]
 ```
 <!-- prettier-ignore-end -->

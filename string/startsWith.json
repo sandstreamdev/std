@@ -1,7 +1,7 @@
 {
   "name": "startsWith",
-  "description": "TODO: Fill short description here.",
-  "signature": "(prefix: any) => (xs: any) => boolean",
+  "description": "Checks if the given string starts with the given substring.",
+  "signature": "(prefix: string) => (xs: string) => boolean",
   "examples": [
     {
       "language": "javascript",

@@ -1,6 +1,6 @@
 {
   "name": "noOp",
-  "description": "TODO: Fill short description here.",
+  "description": "Does exactly nothing.",
   "signature": "() => void",
   "examples": [
     {

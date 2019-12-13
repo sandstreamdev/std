@@ -1,7 +1,7 @@
 {
   "name": "memoizeWith",
-  "description": "TODO: Fill short description here.",
-  "signature": "(equals: any) => (f: any) => (...args: any[]) => any",
+  "description": "Memoizes the function result so it is not computed for the same parameters. Uses the given equality function.",
+  "signature": "(\n  equals: (x: any[], ay: any) => boolean\n) => (f: (...xs: any[]) => any) => (...args: any[]) => any",
   "examples": [
     {
       "language": "javascript",

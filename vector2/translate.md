@@ -1,5 +1,7 @@
 # translate
 
+Creates a translation matrix.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

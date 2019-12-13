@@ -1,7 +1,7 @@
 {
   "name": "stop",
-  "description": "TODO: Fill short description here.",
-  "signature": "(event: any) => boolean",
+  "description": "Stops propagation of the given event.",
+  "signature": "(event: { stopPropagation: () => void }) => boolean",
   "examples": [
     {
       "language": "javascript",

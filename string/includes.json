@@ -1,7 +1,7 @@
 {
   "name": "includes",
-  "description": "TODO: Fill short description here.",
-  "signature": "(search: any) => (xs: any) => boolean",
+  "description": "Checks if the given substring is present in the source string.",
+  "signature": "(search: string) => (text: string) => boolean",
   "examples": [
     {
       "language": "javascript",

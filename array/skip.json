@@ -1,6 +1,6 @@
 {
   "name": "skip",
-  "description": "TODO: Fill short description here.",
+  "description": "Skips the given count of elements from the given array.",
   "signature": "(count: number) => (xs: any[]) => any[]",
   "examples": [
     {

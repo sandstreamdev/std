@@ -1,5 +1,7 @@
 # empty
 
+Empty string.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

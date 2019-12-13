@@ -1,1 +1,1 @@
-export default x => /\s/.test(x);
+export default (x: string) => /\s/.test(x);

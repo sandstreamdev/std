@@ -1,7 +1,7 @@
 {
   "name": "cancel",
-  "description": "TODO: Fill short description here.",
-  "signature": "(event: any) => boolean",
+  "description": "Stops propagation and prevents the default handler of the given event.",
+  "signature": "(event: {\n  preventDefault: () => void;\n  stopPropagation: () => void;\n}) => boolean",
   "examples": [
     {
       "language": "javascript",

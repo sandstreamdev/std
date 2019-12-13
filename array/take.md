@@ -1,5 +1,7 @@
 # take
 
+Takes up to given count of elements.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

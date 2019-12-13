@@ -3,7 +3,9 @@
 import cross from "./cross.ts";
 
 describe("cross", () => {
-  it.skip("TODO", () => {
-    expect(cross()).toBeDefined();
+  it("calculates a cross product", () => {
+    expect(cross([3, 5], [-1, 8])).toBe(29);
+
+    expect(cross([3, 5], [-1, -8])).toBe(-19);
   });
 });

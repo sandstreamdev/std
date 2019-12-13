@@ -3,7 +3,9 @@
 import dot from "./dot.ts";
 
 describe("dot", () => {
-  it.skip("TODO", () => {
-    expect(dot()).toBeDefined();
+  it("calculates a dot product", () => {
+    expect(dot([3, 5], [-1, 8])).toBe(37);
+
+    expect(dot([3, 5], [-1, -8])).toEqual(-43);
   });
 });

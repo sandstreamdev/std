@@ -1,7 +1,7 @@
 {
   "name": "find",
-  "description": "TODO: Fill short description here.",
-  "signature": "(predicate: any, fallback: any) => (xs: any) => any",
+  "description": "Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.",
+  "signature": "(\n  predicate: (value: any, index: number, context: any[]) => boolean,\n  fallback?: any\n) => (xs: any[]) => any",
   "examples": [
     {
       "language": "javascript",

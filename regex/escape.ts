@@ -1,1 +1,2 @@
-export default string => string.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+export default (string: string) =>
+  string.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");

@@ -1,5 +1,7 @@
 # clamp
 
+Clamps the given value to the given range.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

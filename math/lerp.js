@@ -1,1 +1,1 @@
-export default t => (a, b) => a * t + b * (1 - t);
+export default t => (a, b) => a * (1 - t) + b * t;

@@ -1,6 +1,6 @@
 {
   "name": "standardDeviation",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates standard deviation of the given array of numbers.",
   "signature": "(xs: number[], origin?: number) => number",
   "examples": [
     {

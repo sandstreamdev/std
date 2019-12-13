@@ -1,6 +1,6 @@
 {
   "name": "clamp",
-  "description": "TODO: Fill short description here.",
+  "description": "Clamps the given value to the given range.",
   "signature": "(min: number, max: number) => (x: number) => number",
   "examples": [
     {

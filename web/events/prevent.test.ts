@@ -3,7 +3,13 @@
 import prevent from "./prevent.ts";
 
 describe("prevent", () => {
-  it.skip("TODO", () => {
-    expect(prevent()).toBeDefined();
+  it("prevents the default handler of the given event", () => {
+    const event = {
+      preventDefault: jest.fn()
+    };
+
+    prevent(event);
+
+    expect(event.preventDefault).toBeCalled();
   });
 });

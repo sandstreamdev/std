@@ -1,6 +1,6 @@
 {
   "name": "clampPercentage",
-  "description": "TODO: Fill short description here.",
+  "description": "Clamps the given value to the [0, 100] range.",
   "signature": "(x: number) => number",
   "examples": [
     {

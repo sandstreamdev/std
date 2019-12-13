@@ -3,7 +3,12 @@
 import delta from "./delta.ts";
 
 describe("delta", () => {
-  it.skip("TODO", () => {
-    expect(delta()).toBeDefined();
+  it("is symmetric", () => {
+    expect(delta(5, -3)).toBe(delta(-3, 5));
+  });
+
+  it("is always absolute", () => {
+    expect(delta(5, -3)).toBe(8);
+    expect(delta(-3, 5)).toBe(8);
   });
 });

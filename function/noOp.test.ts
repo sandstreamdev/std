@@ -3,7 +3,7 @@
 import noOp from "./noOp.ts";
 
 describe("noOp", () => {
-  it.skip("TODO", () => {
-    expect(noOp()).toBeDefined();
+  it("does nothing", () => {
+    expect(noOp()).toBe(undefined);
   });
 });

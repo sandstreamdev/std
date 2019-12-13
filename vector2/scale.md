@@ -1,5 +1,7 @@
 # scale
 
+Creates a scale matrix.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

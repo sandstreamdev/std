@@ -1,3 +1,4 @@
 import range from "./range";
 
-export default n => xs => range(n).map(index => xs[index]);
+export default (count: number) => (xs: any[]) =>
+  range(count).map(index => xs[index]);

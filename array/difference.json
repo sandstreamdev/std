@@ -1,7 +1,7 @@
 {
   "name": "difference",
   "description": "TODO: Fill short description here.",
-  "signature": "(xs: any, ys: any) => any",
+  "signature": "(xs: any[], ys: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",

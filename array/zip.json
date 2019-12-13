@@ -1,7 +1,7 @@
 {
   "name": "zip",
-  "description": "TODO: Fill short description here.",
-  "signature": "(xs: any, ys: any) => any",
+  "description": "Zips given arrays together into pairs.",
+  "signature": "(xs: any[], ys: any[]) => any[][]",
   "examples": [
     {
       "language": "javascript",

@@ -1,19 +1,26 @@
 # assert
 
+Asserts given conditions.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(condition: any, callbackOrMessage: any) => void
+(
+  condition: boolean,
+  callbackOrMessage: string | (() => void)
+) => void
 ```
 <!-- prettier-ignore-end -->
 
 # diff
 
+Computes a difference between two objects.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(obj1: any, obj2: any) => object
+(obj1: object, obj2: object) => object
 ```
 <!-- prettier-ignore-end -->

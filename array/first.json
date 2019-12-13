@@ -1,6 +1,6 @@
 {
   "name": "first",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns the first element or undefined when there are no elements in the given array.",
   "signature": "([x]: [any]) => any",
   "examples": [
     {

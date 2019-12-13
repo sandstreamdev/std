@@ -11,7 +11,8 @@ describe("any", () => {
     expect(any([])).toBe(false);
   });
 
-  it("returns false if the given argument is falsy", () => {
+  it("returns false if the given array is missing or the argument is falsy", () => {
+    expect(any()).toBe(false);
     expect(any(null)).toBe(false);
     expect(any(undefined)).toBe(false);
   });

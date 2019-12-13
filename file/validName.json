@@ -1,7 +1,7 @@
 {
   "name": "validName",
-  "description": "TODO: Fill short description here.",
-  "signature": "(name: any) => boolean",
+  "description": "Checks if the given string is a valid Windows file name.",
+  "signature": "(name: string) => boolean",
   "examples": [
     {
       "language": "javascript",

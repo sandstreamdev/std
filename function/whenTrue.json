@@ -1,7 +1,7 @@
 {
   "name": "whenTrue",
-  "description": "TODO: Fill short description here.",
-  "signature": "(action: any) => (...args: any[]) => any",
+  "description": "Runs the given function only when the condition is exactly true.",
+  "signature": "(\n  action: (...xs: any[]) => any\n) => (...args: any[]) => any",
   "examples": [
     {
       "language": "javascript",

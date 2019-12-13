@@ -1,7 +1,7 @@
 {
   "name": "escape",
-  "description": "TODO: Fill short description here.",
-  "signature": "(string: any) => any",
+  "description": "Escapes regex string into proper regex.",
+  "signature": "(string: string) => string",
   "examples": [
     {
       "language": "javascript",

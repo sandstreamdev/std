@@ -1,5 +1,7 @@
 # openInNewTabIntent
 
+Tests if the current event seems like an intent to open a new tab. Useful for client-side navigation handling.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
@@ -14,6 +16,6 @@
   ctrlKey: any;
   metaKey: any;
   shiftKey: any;
-}) => any
+}) => boolean
 ```
 <!-- prettier-ignore-end -->

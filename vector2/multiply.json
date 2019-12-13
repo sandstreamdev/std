@@ -1,7 +1,7 @@
 {
   "name": "multiply",
-  "description": "TODO: Fill short description here.",
-  "signature": "(\n  m1: any,\n  m2: any\n) => {\n  a: number;\n  c: number;\n  e: any;\n  b: number;\n  d: number;\n  f: any;\n}",
+  "description": "Multiples two matrices.",
+  "signature": "(\n  m1: {\n    a: number;\n    c: number;\n    e: number;\n    b: number;\n    d: number;\n    f: number;\n  },\n  m2: {\n    a: number;\n    b: number;\n    c: number;\n    d: number;\n    e: number;\n    f: number;\n  }\n) => {\n  a: number;\n  c: number;\n  e: number;\n  b: number;\n  d: number;\n  f: number;\n}",
   "examples": [
     {
       "language": "javascript",

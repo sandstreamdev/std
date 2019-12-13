@@ -1,7 +1,7 @@
 {
   "name": "containsWhitespace",
-  "description": "TODO: Fill short description here.",
-  "signature": "(x: any) => boolean",
+  "description": "Checks if the given string contains whitespace.",
+  "signature": "(x: string) => boolean",
   "examples": [
     {
       "language": "javascript",

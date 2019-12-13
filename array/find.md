@@ -1,9 +1,14 @@
 # find
 
+Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any, fallback: any) => (xs: any) => any
+(
+  predicate: (value: any, index: number, context: any[]) => boolean,
+  fallback?: any
+) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->

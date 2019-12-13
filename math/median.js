@@ -2,6 +2,10 @@ import sort from "../array/sort.js";
 import subtract from "./subtract.js";
 
 export default xs => {
+  if (!xs || xs.length === 0) {
+    return undefined;
+  }
+
   const sorted = sort(subtract)(xs);
   const middle = Math.floor(sorted.length / 2);
 

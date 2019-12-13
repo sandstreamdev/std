@@ -1,4 +1,6 @@
-export default f => xs => {
+export default (f: (value: any, index: number, context: any[]) => boolean) => (
+  xs: any[]
+) => {
   let i = 0;
   let j = 0;
 

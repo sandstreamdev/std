@@ -1,9 +1,11 @@
 # unique
 
+Returns only unique elements of the given array.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => unknown[]
+(xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->

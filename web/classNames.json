@@ -1,6 +1,6 @@
 {
   "name": "classNames",
-  "description": "TODO: Fill short description here.",
+  "description": "Composes class name from truthy values with support of string and objects.",
   "signature": "(...xs: any[]) => any",
   "examples": [
     {

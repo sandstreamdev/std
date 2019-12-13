@@ -1,7 +1,7 @@
 {
   "name": "diff",
-  "description": "TODO: Fill short description here.",
-  "signature": "(obj1: any, obj2: any) => object",
+  "description": "Computes a difference between two objects.",
+  "signature": "(obj1: object, obj2: object) => object",
   "examples": [
     {
       "language": "javascript",

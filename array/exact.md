@@ -1,9 +1,11 @@
 # exact
 
+Takes exactly the given count of elements.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => (xs: any) => any[]
+(count: number) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->

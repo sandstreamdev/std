@@ -1,1 +1,1 @@
-export default xs => [...xs].reverse();
+export default (xs: any) => [...xs].reverse();

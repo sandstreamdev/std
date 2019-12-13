@@ -1,7 +1,7 @@
 {
   "name": "exact",
-  "description": "TODO: Fill short description here.",
-  "signature": "(n: any) => (xs: any) => any[]",
+  "description": "Takes exactly the given count of elements.",
+  "signature": "(count: number) => (xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",

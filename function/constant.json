@@ -1,7 +1,7 @@
 {
   "name": "constant",
-  "description": "TODO: Fill short description here.",
-  "signature": "(x: any) => () => any",
+  "description": "Returns the given constant no matter of the input.",
+  "signature": "(x: any) => any",
   "examples": [
     {
       "language": "javascript",

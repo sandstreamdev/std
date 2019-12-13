@@ -1,11 +1,11 @@
 {
   "name": "nbsp",
-  "description": "TODO: Fill short description here.",
+  "description": "Non-breaking space.",
   "signature": "\" \"",
   "examples": [
     {
       "language": "javascript",
-      "content": "nbsp(); // ⇒ TODO"
+      "content": "nbsp; // ⇒ \" \""
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

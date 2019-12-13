@@ -1,7 +1,7 @@
 {
   "name": "none",
-  "description": "TODO: Fill short description here.",
-  "signature": "(xs: any) => boolean",
+  "description": "Checks if the given array is empty.",
+  "signature": "(xs?: any) => boolean",
   "examples": [
     {
       "language": "javascript",

@@ -1,7 +1,7 @@
 {
   "name": "unique",
-  "description": "TODO: Fill short description here.",
-  "signature": "(xs: any) => unknown[]",
+  "description": "Returns only unique elements of the given array.",
+  "signature": "(xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",

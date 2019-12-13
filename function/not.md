@@ -1,9 +1,13 @@
 # not
 
+Inverts the given function result.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (...args: any[]) => boolean
+(
+  f: (...xs: any[]) => any
+) => (...args: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->

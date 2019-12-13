@@ -1,7 +1,7 @@
 {
   "name": "compose",
-  "description": "TODO: Fill short description here.",
-  "signature": "(...fs: any[]) => (x: any) => any",
+  "description": "Composes multiple functions into a higher order one. Goes right to left.",
+  "signature": "(...fs: ((x: any) => any)[]) => (x: any) => any",
   "examples": [
     {
       "language": "javascript",

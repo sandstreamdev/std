@@ -1,5 +1,7 @@
 # empty
 
+Empty array.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

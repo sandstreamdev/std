@@ -3,7 +3,11 @@
 import inRectangleRange from "./inRectangleRange.ts";
 
 describe("inRectangleRange", () => {
-  it.skip("TODO", () => {
-    expect(inRectangleRange()).toBeDefined();
+  it("tests if the given coordinates fits the rectangular range", () => {
+    expect(inRectangleRange(50, 100)(25, 50)).toBe(true);
+    expect(inRectangleRange(50, 100)(-25, 50)).toBe(false);
+    expect(inRectangleRange(50, 100)(65, 50)).toBe(false);
+    expect(inRectangleRange(50, 100)(25, -50)).toBe(false);
+    expect(inRectangleRange(50, 100)(25, 150)).toBe(false);
   });
 });

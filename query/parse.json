@@ -1,6 +1,6 @@
 {
   "name": "parse",
-  "description": "TODO: Fill short description here.",
+  "description": "Parses a query string into an object.",
   "signature": "(xs?: string) => object",
   "examples": [
     {

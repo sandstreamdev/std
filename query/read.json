@@ -1,7 +1,7 @@
 {
   "name": "read",
-  "description": "TODO: Fill short description here.",
-  "signature": "(source: any) => {}",
+  "description": "Parses the given query string into an object using URLSearchParams.",
+  "signature": "(source: string) => {}",
   "examples": [
     {
       "language": "javascript",

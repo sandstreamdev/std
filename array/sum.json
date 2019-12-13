@@ -1,7 +1,7 @@
 {
   "name": "sum",
-  "description": "TODO: Fill short description here.",
-  "signature": "(xs: any) => any",
+  "description": "Sums the given array of numbers.",
+  "signature": "(xs: number[]) => number",
   "examples": [
     {
       "language": "javascript",

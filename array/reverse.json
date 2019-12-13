@@ -1,6 +1,6 @@
 {
   "name": "reverse",
-  "description": "TODO: Fill short description here.",
+  "description": "Reverses the given array without mutating it (in contrast to Array.reverse).",
   "signature": "(xs: any) => any[]",
   "examples": [
     {

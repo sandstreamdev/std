@@ -1,1 +1,1 @@
-export default xs => xs[Math.floor(xs.length / 2)];
+export default (xs: any[]) => xs[Math.floor(xs.length / 2)];

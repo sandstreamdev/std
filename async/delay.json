@@ -1,7 +1,7 @@
 {
   "name": "delay",
-  "description": "TODO: Fill short description here.",
-  "signature": "(duration: any) => Promise<unknown>",
+  "description": "When awaited, delays the execution by the given number of milliseconds.",
+  "signature": "(duration: number) => Promise<unknown>",
   "examples": [
     {
       "language": "javascript",

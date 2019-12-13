@@ -1,7 +1,7 @@
 {
   "name": "reflect",
-  "description": "TODO: Fill short description here.",
-  "signature": "(a: any, v: any) => number[]",
+  "description": "Reflects the given vector on the given surface.",
+  "signature": "(\n  a: [number, number],\n  v: [number, number]\n) => [number, number]",
   "examples": [
     {
       "language": "javascript",

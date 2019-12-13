@@ -1,7 +1,7 @@
 {
   "name": "filterInPlace",
-  "description": "TODO: Fill short description here.",
-  "signature": "(f: any) => (xs: any) => any",
+  "description": "Filters the given array with the given predicate just like Array.filter but does it in-place thus mutates the original array.",
+  "signature": "(\n  f: (value: any, index: number, context: any[]) => boolean\n) => (xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",

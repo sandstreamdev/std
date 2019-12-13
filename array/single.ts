@@ -1,1 +1,1 @@
-export default xs => xs.length === 1;
+export default (xs: any[]) => xs.length === 1;

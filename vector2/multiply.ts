@@ -1,4 +1,7 @@
-export default (m1, m2) => ({
+export default (
+  m1: { a: number; c: number; e: number; b: number; d: number; f: number },
+  m2: { a: number; b: number; c: number; d: number; e: number; f: number }
+) => ({
   a: m1.a * m2.a + m1.c * m2.b,
   c: m1.a * m2.c + m1.c * m2.d,
   e: m1.a * m2.e + m1.c * m2.f + m1.e,

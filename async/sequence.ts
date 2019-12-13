@@ -1,14 +1,14 @@
-export default async tasks => {
+export default async (tasks: { (): Promise<any> }[]) => {
   const results = tasks.map(() => undefined);
 
-  await tasks.reduce((chain, current, i) => {
-    return chain.then(() =>
-      current().then(x => {
-        results[i] = x;
+  await tasks.reduce(async (chain, current, i) => {
+    await chain;
 
-        return x;
-      })
-    );
+    const x = await current();
+
+    results[i] = x;
+
+    return x;
   }, Promise.resolve());
 
   return results;

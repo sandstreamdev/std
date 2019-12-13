@@ -3,7 +3,7 @@ import startsWith from "../string/startsWith";
 
 const startsWithQuestionMark = startsWith("?");
 
-const queryFromMaybeSearchString = x =>
+const queryFromMaybeSearchString = (x: string) =>
   startsWithQuestionMark(x) ? x.substring(1) : x;
 
 export default (xs = "") =>

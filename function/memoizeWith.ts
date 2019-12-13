@@ -1,4 +1,6 @@
-export default equals => f => {
+export default (equals: (x: any[], ay: any) => boolean) => (
+  f: (...xs: any[]) => any
+) => {
   let memoized = undefined;
   let memoizedArgs = undefined;
 

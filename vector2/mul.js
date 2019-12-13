@@ -1,4 +1,4 @@
-export default (matrix, point) => [
-  matrix.a * point[0] + matrix.c * point[1] + matrix.e,
-  matrix.b * point[0] + matrix.d * point[1] + matrix.f
+export default ({ a, b, c, d, e, f }, [x, y]) => [
+  a * x + c * y + e,
+  b * x + d * y + f
 ];

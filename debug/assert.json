@@ -1,7 +1,7 @@
 {
   "name": "assert",
-  "description": "TODO: Fill short description here.",
-  "signature": "(condition: any, callbackOrMessage: any) => void",
+  "description": "Asserts given conditions.",
+  "signature": "(\n  condition: boolean,\n  callbackOrMessage: string | (() => void)\n) => void",
   "examples": [
     {
       "language": "javascript",

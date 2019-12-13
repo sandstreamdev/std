@@ -1,9 +1,11 @@
 # containsWhitespace
 
+Checks if the given string contains whitespace.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => boolean
+(x: string) => boolean
 ```
 <!-- prettier-ignore-end -->

@@ -1,7 +1,7 @@
 {
   "name": "except",
-  "description": "TODO: Fill short description here.",
-  "signature": "(y: any) => (xs: any) => any",
+  "description": "Filters out the given value.",
+  "signature": "(y: any) => (xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",

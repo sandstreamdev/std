@@ -1,7 +1,7 @@
 {
   "name": "sort",
-  "description": "TODO: Fill short description here.",
-  "signature": "(f: any) => (xs: any) => any[]",
+  "description": "Sorts the given array without mutating it.",
+  "signature": "(\n  f?: (a: any, b: any) => number\n) => (xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",

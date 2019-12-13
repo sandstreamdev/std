@@ -1,1 +1,1 @@
-export default xs => xs[xs.length - 1];
+export default (xs: any[]) => xs[xs.length - 1];

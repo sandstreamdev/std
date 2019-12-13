@@ -1,7 +1,7 @@
 {
   "name": "sub",
-  "description": "TODO: Fill short description here.",
-  "signature": "(\n  [x1, y1]: [any, any],\n  [x2, y2]: [any, any]\n) => number[]",
+  "description": "Subtracts two vectors.",
+  "signature": "(\n  [x1, y1]: [number, number],\n  [x2, y2]: [number, number]\n) => [number, number]",
   "examples": [
     {
       "language": "javascript",

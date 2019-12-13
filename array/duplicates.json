@@ -1,7 +1,7 @@
 {
   "name": "duplicates",
-  "description": "TODO: Fill short description here.",
-  "signature": "(xs: any) => any",
+  "description": "Lists all the duplicated values in the given array.",
+  "signature": "(xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",

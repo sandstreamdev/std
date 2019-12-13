@@ -74,7 +74,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => boolean
+(x?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 

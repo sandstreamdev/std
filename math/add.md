@@ -1,5 +1,7 @@
 # add
 
+Adds two values.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

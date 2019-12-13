@@ -1,5 +1,7 @@
 # delta
 
+Calculates the absolute distance between given values.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

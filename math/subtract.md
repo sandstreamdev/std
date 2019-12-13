@@ -1,5 +1,7 @@
 # subtract
 
+Subtracts two values.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

@@ -1,9 +1,14 @@
 # assert
 
+Asserts given conditions.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(condition: any, callbackOrMessage: any) => void
+(
+  condition: boolean,
+  callbackOrMessage: string | (() => void)
+) => void
 ```
 <!-- prettier-ignore-end -->

@@ -1,7 +1,7 @@
 {
   "name": "nonEmpty",
-  "description": "TODO: Fill short description here.",
-  "signature": "(x: any) => any",
+  "description": "Checks if the given string is present and is not empty or all whitespace.",
+  "signature": "(x?: string) => boolean",
   "examples": [
     {
       "language": "javascript",

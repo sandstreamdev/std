@@ -1,24 +1,40 @@
 # add
 
+Adds two vectors.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([x1, y1]: [any, any], [x2, y2]: [any, any]) => any[]
+(
+  [x1, y1]: [number, number],
+  [x2, y2]: [number, number]
+) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
 # convertSpace
 
+Applies transformations to the given vector.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(space: any) => ([x, y]: [any, any]) => any[]
+(space: {
+  a: number;
+  c: number;
+  e: number;
+  b: number;
+  d: number;
+  f: number;
+}) => ([x, y]: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
 
 # cross
+
+Calculates a cross product of the given vectors. Returns a scalar.
 
 ## Type signature
 
@@ -30,6 +46,8 @@
 
 # dot
 
+Calculates a dot product of the given vectors. Returns a scalar.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
@@ -40,75 +58,134 @@
 
 # length
 
+Calculates length/magnitude of the given vector.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([x, y]: [any, any]) => number
+([x, y]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
 
 # mul
 
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(matrix: any, point: any) => any[]
-```
-<!-- prettier-ignore-end -->
-
-# multiply
+Applies matrix transformation to the given vector.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  m1: any,
-  m2: any
+  {
+    a,
+    b,
+    c,
+    d,
+    e,
+    f
+  }: {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
+  },
+  [x, y]: [number, number]
+) => number[]
+```
+<!-- prettier-ignore-end -->
+
+# multiply
+
+Multiples two matrices.
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  m1: {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
+  },
+  m2: {
+    a: number;
+    b: number;
+    c: number;
+    d: number;
+    e: number;
+    f: number;
+  }
 ) => {
   a: number;
   c: number;
-  e: any;
+  e: number;
   b: number;
   d: number;
-  f: any;
+  f: number;
 }
 ```
 <!-- prettier-ignore-end -->
 
 # normalize
 
+Normalizes the given vector. Returns [0, 0] vector for points.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(vector: any) => any
+(vector: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
 
 # reflect
 
+Reflects the given vector on the given surface.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, v: any) => number[]
+(
+  a: [number, number],
+  v: [number, number]
+) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
 # rotate
 
+Creates a rotation matrix around given origin [0, 0] by default.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(angle?: number, cx?: number, cy?: number) => any
+(
+  angle?: number,
+  cx?: number,
+  cy?: number
+) => {
+  a: number;
+  c: number;
+  e: number;
+  b: number;
+  d: number;
+  f: number;
+}
 ```
 <!-- prettier-ignore-end -->
 
 # scale
+
+Creates a scale matrix.
 
 ## Type signature
 
@@ -130,28 +207,50 @@
 
 # sub
 
+Subtracts two vectors.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  [x1, y1]: [any, any],
-  [x2, y2]: [any, any]
-) => number[]
+  [x1, y1]: [number, number],
+  [x2, y2]: [number, number]
+) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
 # transform
 
+Composes a single transformation by matrix multiplication.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...matrices: any[]) => any
+(
+  ...matrices: {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
+  }[]
+) => {
+  a: number;
+  c: number;
+  e: number;
+  b: number;
+  d: number;
+  f: number;
+}
 ```
 <!-- prettier-ignore-end -->
 
 # translate
+
+Creates a translation matrix.
 
 ## Type signature
 

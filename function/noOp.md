@@ -1,5 +1,7 @@
 # noOp
 
+Does exactly nothing.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

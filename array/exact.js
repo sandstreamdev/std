@@ -1,3 +1,3 @@
 import range from "./range.js";
 
-export default n => xs => range(n).map(index => xs[index]);
+export default count => xs => range(count).map(index => xs[index]);

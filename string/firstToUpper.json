@@ -1,7 +1,7 @@
 {
   "name": "firstToUpper",
-  "description": "TODO: Fill short description here.",
-  "signature": "([first, ...rest]: [any, ...any[]]) => string",
+  "description": "Transforms the first character to uppercase.",
+  "signature": "(text: string) => string",
   "examples": [
     {
       "language": "javascript",

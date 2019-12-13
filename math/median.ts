@@ -1,7 +1,11 @@
 import sort from "../array/sort";
 import subtract from "./subtract";
 
-export default (xs: number[]): number => {
+export default (xs?: number[]): number => {
+  if (!xs || xs.length === 0) {
+    return undefined;
+  }
+
   const sorted: number[] = sort(subtract)(xs);
   const middle: number = Math.floor(sorted.length / 2);
 

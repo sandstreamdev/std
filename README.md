@@ -11,13 +11,13 @@
 
 #### any
 
-Checks if the given array is not empty (contains at least one element).
+Checks if the given array is present and it is not empty (contains at least one element).
 
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => boolean
+(xs?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -58,31 +58,37 @@ Checks if given arguments are all `Arrays`.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, ys: any) => any
+(xs: any[], ys: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### differs
 
+Checks if two arrays are not equal.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, ys: any) => any
+(xs?: any[], ys?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### duplicates
 
+Lists all the duplicated values in the given array.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### empty
+
+Empty array.
 
 ##### Type signature
 
@@ -94,45 +100,60 @@ any[]
 
 #### exact
 
+Takes exactly the given count of elements.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => (xs: any) => any[]
+(count: number) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### except
 
+Filters out the given value.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(y: any) => (xs: any) => any
+(y: any) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### filterInPlace
 
+Filters the given array with the given predicate just like Array.filter but does it in-place thus mutates the original array.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => any
+(
+  f: (value: any, index: number, context: any[]) => boolean
+) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### find
 
+Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any, fallback: any) => (xs: any) => any
+(
+  predicate: (value: any, index: number, context: any[]) => boolean,
+  fallback?: any
+) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### first
+
+Returns the first element or undefined when there are no elements in the given array.
 
 ##### Type signature
 
@@ -144,15 +165,21 @@ any[]
 
 #### flatMap
 
+Maps and flattens the result.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => any
+(
+  f: (value: any, index: number, context: any[]) => any
+) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### flatten
+
+Flattens the nested arrays by a single level.
 
 ##### Type signature
 
@@ -164,11 +191,13 @@ any[]
 
 #### intersection
 
+Finds common items between both arrays.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, ys: any) => any
+(xs: any[], ys: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -178,61 +207,73 @@ any[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(value: any) => boolean
+(value?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### last
 
+Returns the last element or undefined when there are no elements in the given array.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### lengthDiffers
 
+Checks if lengths of given arrays differ.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, b: any) => boolean
+(a: any[], b: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### map
 
+Maps the given array with the given functions.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: any[]) => (x: any) => any
+(...fs: ((x: any) => any)[]) => (xs: any) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### midpoint
 
+Returns the middle element or the right one when the number of elements is even.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### minMax
 
+Computes minimum and maximum of the given array in a single run.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([head, ...tail]: [any, ...any[]]) => any
+([head, ...tail]: number[]) => number[]
 ```
 <!-- prettier-ignore-end -->
 
 #### multiple
+
+Checks if the given array contains more than one element.
 
 ##### Type signature
 
@@ -244,25 +285,31 @@ any[]
 
 #### none
 
+Checks if the given array is empty.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => boolean
+(xs?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### partition
 
+Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at right.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any) => (xs: any) => any
+(predicate: (x: any) => boolean) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### range
+
+Generates an array of numbers from 0 to n - 1.
 
 ##### Type signature
 
@@ -274,15 +321,19 @@ any[]
 
 #### repeat
 
+Repeats the given element by given count of times.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => (value: any) => any[]
+(count: number) => (value: any) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### reverse
+
+Reverses the given array without mutating it (in contrast to Array.reverse).
 
 ##### Type signature
 
@@ -294,25 +345,19 @@ any[]
 
 #### reverseIf
 
-##### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(predicate: any) => (xs: any) => any
-```
-<!-- prettier-ignore-end -->
-
-#### rotate
+Reverses the given array when enabled.
 
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(array: any) => (angle: any) => any
+(enabled: boolean) => (xs: any) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### second
+
+Returns the second element or undefined when there are less than two elements in the given array.
 
 ##### Type signature
 
@@ -324,55 +369,67 @@ any[]
 
 #### secondToLast
 
+Returns the second to last element or undefined when there are less than two elements in the given array.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### shift
 
+Shifts the given array to the left and circulates the elements back by modulo of the array's length.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => (xs: any) => any
+(count: number) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### shuffle
 
+Shuffles the given array in random order with Math.random as the default.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any, random?: () => number) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### shuffleInPlace
 
+Shuffles the given array in-place in random order with Math.random as the default.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[], random?: () => number) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### single
 
+Checks if the given array contains exactly one element.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => boolean
+(xs: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### skip
+
+Skips the given count of elements from the given array.
 
 ##### Type signature
 
@@ -384,25 +441,33 @@ any[]
 
 #### sort
 
+Sorts the given array without mutating it.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => any[]
+(
+  f?: (a: any, b: any) => number
+) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### sum
 
+Sums the given array of numbers.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: number[]) => number
 ```
 <!-- prettier-ignore-end -->
 
 #### take
+
+Takes up to given count of elements.
 
 ##### Type signature
 
@@ -412,43 +477,41 @@ any[]
 ```
 <!-- prettier-ignore-end -->
 
-#### transpose
-
-##### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(xs: any) => any[][]
-```
-<!-- prettier-ignore-end -->
-
 #### unique
 
+Returns only unique elements of the given array.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => unknown[]
+(xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### zip
 
+Zips given arrays together into pairs.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, ys: any) => any
+(xs: any[], ys: any[]) => any[][]
 ```
 <!-- prettier-ignore-end -->
 
 #### zipWith
 
+Zips given arrays together with the given function.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any, ys: any) => any
+(
+  f?: (x: any, y: any) => any[]
+) => (xs: any[], ys: any[]) => any[][]
 ```
 <!-- prettier-ignore-end -->
 
@@ -456,31 +519,40 @@ any[]
 
 #### debounce
 
+Makes the function run after the given period of not being called. Useful to delay input submission for autocomplete etc.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any, wait: any) => (...args: any[]) => void
+(
+  f: (...args: any[]) => any,
+  wait: number
+) => (...args: any[]) => void
 ```
 <!-- prettier-ignore-end -->
 
 #### delay
 
+When awaited, delays the execution by the given number of milliseconds.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(duration: any) => Promise<unknown>
+(duration: number) => Promise<unknown>
 ```
 <!-- prettier-ignore-end -->
 
 #### sequence
 
+Runs the given tasks in a sequence.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(tasks: any) => Promise<any>
+(tasks: (() => Promise<any>)[]) => Promise<any[]>
 ```
 <!-- prettier-ignore-end -->
 
@@ -579,7 +651,7 @@ any[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(year: any) => any
+(year: any) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -907,21 +979,28 @@ string[]
 
 #### assert
 
+Asserts given conditions.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(condition: any, callbackOrMessage: any) => void
+(
+  condition: boolean,
+  callbackOrMessage: string | (() => void)
+) => void
 ```
 <!-- prettier-ignore-end -->
 
 #### diff
 
+Computes a difference between two objects.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(obj1: any, obj2: any) => object
+(obj1: object, obj2: object) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -929,12 +1008,19 @@ string[]
 
 #### base64url
 
+Provides a way to encode strings and bytes from and into Base64URL.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 {
-  encode: (_: any) => string;
+  decode: (text: string) => string;
+  decodeBytes: (text: string) => number[];
+  encode: (text: string) => string;
+  encodeBytes: (bytes: number[]) => string;
+  fromByteString: (byteString: string) => number[];
+  toByteString: (bytes: any) => any;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -943,11 +1029,13 @@ string[]
 
 #### validName
 
+Checks if the given string is a valid Windows file name.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(name: any) => boolean
+(name: string) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -955,25 +1043,31 @@ string[]
 
 #### compose
 
+Composes multiple functions into a higher order one. Goes right to left.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: any[]) => (x: any) => any
+(...fs: ((x: any) => any)[]) => (x: any) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### constant
 
+Returns the given constant no matter of the input.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => () => any
+(x: any) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### identity
+
+Always return the given value.
 
 ##### Type signature
 
@@ -985,35 +1079,45 @@ string[]
 
 #### memoize
 
+Memoizes the function result so it is not computed for the same parameters. Uses deep equality.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (...args: any[]) => any
+(f: (...xs: any[]) => any) => (...args: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### memoizeShallow
 
+Memoizes the function result so it is not computed for the same parameters. Uses shallow equality.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (...args: any[]) => any
+(f: (...xs: any[]) => any) => (...args: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### memoizeWith
 
+Memoizes the function result so it is not computed for the same parameters. Uses the given equality function.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(equals: any) => (f: any) => (...args: any[]) => any
+(
+  equals: (x: any[], ay: any) => boolean
+) => (f: (...xs: any[]) => any) => (...args: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### noOp
+
+Does exactly nothing.
 
 ##### Type signature
 
@@ -1025,43 +1129,55 @@ string[]
 
 #### not
 
-##### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(f: any) => (...args: any[]) => boolean
-```
-<!-- prettier-ignore-end -->
-
-#### pipe
-
-##### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(...fs: any[]) => (x: any) => any
-```
-<!-- prettier-ignore-end -->
-
-#### when
+Inverts the given function result.
 
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  predicate: any
-) => (action: any) => (...args: any[]) => any
+  f: (...xs: any[]) => any
+) => (...args: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
-#### whenTrue
+#### pipe
+
+Pipes an input through given functions.
 
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(action: any) => (...args: any[]) => any
+(...fs: ((x: any) => any)[]) => (x: any) => any
+```
+<!-- prettier-ignore-end -->
+
+#### when
+
+Runs the given function only when the condition is met.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  predicate: (...xs: any[]) => boolean
+) => (action: (...xs: any[]) => any) => (...args: any[]) => any
+```
+<!-- prettier-ignore-end -->
+
+#### whenTrue
+
+Runs the given function only when the condition is exactly true.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  action: (...xs: any[]) => any
+) => (...args: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
@@ -1143,7 +1259,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => boolean
+(x?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1171,6 +1287,8 @@ string[]
 
 #### add
 
+Adds two values.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -1181,15 +1299,19 @@ string[]
 
 #### average
 
+Calculates the average of given array of numbers.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: number[]) => number
+(xs?: number[]) => number
 ```
 <!-- prettier-ignore-end -->
 
 #### ceilToNearestPowerOfTwo
+
+Finds the nearest power of two greater or equal to the given value.
 
 ##### Type signature
 
@@ -1201,6 +1323,8 @@ string[]
 
 #### clamp
 
+Clamps the given value to the given range.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -1210,6 +1334,8 @@ string[]
 <!-- prettier-ignore-end -->
 
 #### clampNormal
+
+Clamps the given value to the [0, 1] range.
 
 ##### Type signature
 
@@ -1221,6 +1347,8 @@ string[]
 
 #### clampPercentage
 
+Clamps the given value to the [0, 100] range.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -1231,6 +1359,8 @@ string[]
 
 #### delta
 
+Calculates the absolute distance between given values.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -1240,6 +1370,8 @@ string[]
 <!-- prettier-ignore-end -->
 
 #### inRectangleRange
+
+Checks if the given value is in the rectangular range of [0, width] and [0, height]
 
 ##### Type signature
 
@@ -1254,6 +1386,8 @@ string[]
 
 #### lerp
 
+Linearly interpolates two given values by normal value of their distance.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -1263,6 +1397,8 @@ string[]
 <!-- prettier-ignore-end -->
 
 #### maximumBy
+
+Calculates the maximum by a given selector.
 
 ##### Type signature
 
@@ -1274,15 +1410,19 @@ string[]
 
 #### median
 
+Calculates the median of the values. If there is an even number of items, the average of the middle ones is returned.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: number[]) => number
+(xs?: number[]) => number
 ```
 <!-- prettier-ignore-end -->
 
 #### minMax
+
+Calculates the minimum and maximum value of the two given values.
 
 ##### Type signature
 
@@ -1292,17 +1432,9 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
-#### safeNormalize
-
-##### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(x: number) => number
-```
-<!-- prettier-ignore-end -->
-
 #### sameSign
+
+Checks if all the given values have the same sign.
 
 ##### Type signature
 
@@ -1312,7 +1444,21 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
+#### sign
+
+Calculates the sign of the value and returns -1 for negative values, 1 for positive values and 0 for zeros.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(x: number) => number
+```
+<!-- prettier-ignore-end -->
+
 #### standardDeviation
+
+Calculates standard deviation of the given array of numbers.
 
 ##### Type signature
 
@@ -1323,6 +1469,8 @@ string[]
 <!-- prettier-ignore-end -->
 
 #### subtract
+
+Subtracts two values.
 
 ##### Type signature
 
@@ -1593,6 +1741,8 @@ string[]
 
 #### parse
 
+Parses a query string into an object.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -1601,33 +1751,21 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
-#### parsePathname
-
-##### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(
-  url: any
-) => {
-  pathname: any;
-  search: string;
-  hash: string;
-}
-```
-<!-- prettier-ignore-end -->
-
 #### read
 
+Parses the given query string into an object using URLSearchParams.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(source: any) => {}
+(source: string) => {}
 ```
 <!-- prettier-ignore-end -->
 
 #### serialize
+
+Serializes the given object into a query string.
 
 ##### Type signature
 
@@ -1683,11 +1821,13 @@ string[]
 
 #### escape
 
+Escapes regex string into proper regex.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(string: any) => any
+(string: string) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -1695,15 +1835,19 @@ string[]
 
 #### containsWhitespace
 
+Checks if the given string contains whitespace.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => boolean
+(x: string) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### empty
+
+Empty string.
 
 ##### Type signature
 
@@ -1715,35 +1859,43 @@ string[]
 
 #### firstToLower
 
+Transforms the first character to lowercase.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([first, ...rest]: [any, ...any[]]) => string
+(text: string) => string
 ```
 <!-- prettier-ignore-end -->
 
 #### firstToUpper
 
+Transforms the first character to uppercase.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([first, ...rest]: [any, ...any[]]) => string
+(text: string) => string
 ```
 <!-- prettier-ignore-end -->
 
 #### includes
 
+Checks if the given substring is present in the source string.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(search: any) => (xs: any) => boolean
+(search: string) => (text: string) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### nbsp
+
+Non-breaking space.
 
 ##### Type signature
 
@@ -1753,23 +1905,35 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+nbsp; // ⇒ " "
+```
+<!-- prettier-ignore-end -->
+
 #### nonEmpty
+
+Checks if the given string is present and is not empty or all whitespace.
 
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+(x?: string) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### startsWith
 
+Checks if the given string starts with the given substring.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(prefix: any) => (xs: any) => boolean
+(prefix: string) => (xs: string) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1777,25 +1941,41 @@ string[]
 
 #### add
 
+Adds two vectors.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([x1, y1]: [any, any], [x2, y2]: [any, any]) => any[]
+(
+  [x1, y1]: [number, number],
+  [x2, y2]: [number, number]
+) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
 #### convertSpace
 
+Applies transformations to the given vector.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(space: any) => ([x, y]: [any, any]) => any[]
+(space: {
+  a: number;
+  c: number;
+  e: number;
+  b: number;
+  d: number;
+  f: number;
+}) => ([x, y]: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
 
 #### cross
+
+Calculates a cross product of the given vectors. Returns a scalar.
 
 ##### Type signature
 
@@ -1807,6 +1987,8 @@ string[]
 
 #### dot
 
+Calculates a dot product of the given vectors. Returns a scalar.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -1817,75 +1999,134 @@ string[]
 
 #### length
 
+Calculates length/magnitude of the given vector.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([x, y]: [any, any]) => number
+([x, y]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
 
 #### mul
 
-##### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(matrix: any, point: any) => any[]
-```
-<!-- prettier-ignore-end -->
-
-#### multiply
+Applies matrix transformation to the given vector.
 
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  m1: any,
-  m2: any
+  {
+    a,
+    b,
+    c,
+    d,
+    e,
+    f
+  }: {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
+  },
+  [x, y]: [number, number]
+) => number[]
+```
+<!-- prettier-ignore-end -->
+
+#### multiply
+
+Multiples two matrices.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  m1: {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
+  },
+  m2: {
+    a: number;
+    b: number;
+    c: number;
+    d: number;
+    e: number;
+    f: number;
+  }
 ) => {
   a: number;
   c: number;
-  e: any;
+  e: number;
   b: number;
   d: number;
-  f: any;
+  f: number;
 }
 ```
 <!-- prettier-ignore-end -->
 
 #### normalize
 
+Normalizes the given vector. Returns [0, 0] vector for points.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(vector: any) => any
+(vector: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
 
 #### reflect
 
+Reflects the given vector on the given surface.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, v: any) => number[]
+(
+  a: [number, number],
+  v: [number, number]
+) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
 #### rotate
 
+Creates a rotation matrix around given origin [0, 0] by default.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(angle?: number, cx?: number, cy?: number) => any
+(
+  angle?: number,
+  cx?: number,
+  cy?: number
+) => {
+  a: number;
+  c: number;
+  e: number;
+  b: number;
+  d: number;
+  f: number;
+}
 ```
 <!-- prettier-ignore-end -->
 
 #### scale
+
+Creates a scale matrix.
 
 ##### Type signature
 
@@ -1907,28 +2148,50 @@ string[]
 
 #### sub
 
+Subtracts two vectors.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  [x1, y1]: [any, any],
-  [x2, y2]: [any, any]
-) => number[]
+  [x1, y1]: [number, number],
+  [x2, y2]: [number, number]
+) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
 #### transform
 
+Composes a single transformation by matrix multiplication.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...matrices: any[]) => any
+(
+  ...matrices: {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
+  }[]
+) => {
+  a: number;
+  c: number;
+  e: number;
+  b: number;
+  d: number;
+  f: number;
+}
 ```
 <!-- prettier-ignore-end -->
 
 #### translate
+
+Creates a translation matrix.
 
 ##### Type signature
 
@@ -1952,6 +2215,8 @@ string[]
 
 #### classNames
 
+Composes class name from truthy values with support of string and objects.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -1964,15 +2229,22 @@ string[]
 
 ##### cancel
 
+Stops propagation and prevents the default handler of the given event.
+
 ###### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: any) => boolean
+(event: {
+  preventDefault: () => void;
+  stopPropagation: () => void;
+}) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 ##### openInNewTabIntent
+
+Tests if the current event seems like an intent to open a new tab. Useful for client-side navigation handling.
 
 ###### Type signature
 
@@ -1988,27 +2260,31 @@ string[]
   ctrlKey: any;
   metaKey: any;
   shiftKey: any;
-}) => any
+}) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 ##### prevent
 
+Prevents the default handler of the given event.
+
 ###### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: any) => boolean
+(event: { preventDefault: () => void }) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 ##### stop
 
+Stops propagation of the given event.
+
 ###### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: any) => boolean
+(event: { stopPropagation: () => void }) => boolean
 ```
 <!-- prettier-ignore-end -->
 

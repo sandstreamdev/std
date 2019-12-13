@@ -1,9 +1,11 @@
 # compose
 
+Composes multiple functions into a higher order one. Goes right to left.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: any[]) => (x: any) => any
+(...fs: ((x: any) => any)[]) => (x: any) => any
 ```
 <!-- prettier-ignore-end -->

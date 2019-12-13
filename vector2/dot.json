@@ -1,6 +1,6 @@
 {
   "name": "dot",
-  "description": "TODO: Fill short description here.",
+  "description": "Calculates a dot product of the given vectors. Returns a scalar.",
   "signature": "([a, b]: [any, any], [c, d]: [any, any]) => number",
   "examples": [
     {

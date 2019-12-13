@@ -1,7 +1,7 @@
 {
   "name": "reverseIf",
-  "description": "TODO: Fill short description here.",
-  "signature": "(predicate: any) => (xs: any) => any",
+  "description": "Reverses the given array when enabled.",
+  "signature": "(enabled: boolean) => (xs: any) => any",
   "examples": [
     {
       "language": "javascript",

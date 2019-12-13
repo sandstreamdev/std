@@ -3,7 +3,20 @@
 import flatten from "./flatten.ts";
 
 describe("flatten", () => {
-  it.skip("TODO", () => {
-    expect(flatten()).toBeDefined();
+  it("flattens one level of nested arrays", () => {
+    expect(flatten([1, [2, 3], 4, [5, 6]])).toEqual([1, 2, 3, 4, 5, 6]);
+
+    expect(flatten([1, [2, [6, 7, [8, 9]]], 4, [5, 6]])).toEqual([
+      1,
+      2,
+      [6, 7, [8, 9]],
+      4,
+      5,
+      6
+    ]);
+  });
+
+  it("does nothing for already flat arrays", () => {
+    expect(flatten([1, 2, 3, 4, 5, 6])).toEqual([1, 2, 3, 4, 5, 6]);
   });
 });

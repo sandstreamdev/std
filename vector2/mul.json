@@ -1,7 +1,7 @@
 {
   "name": "mul",
-  "description": "TODO: Fill short description here.",
-  "signature": "(matrix: any, point: any) => any[]",
+  "description": "Applies matrix transformation to the given vector.",
+  "signature": "(\n  {\n    a,\n    b,\n    c,\n    d,\n    e,\n    f\n  }: {\n    a: number;\n    c: number;\n    e: number;\n    b: number;\n    d: number;\n    f: number;\n  },\n  [x, y]: [number, number]\n) => number[]",
   "examples": [
     {
       "language": "javascript",

@@ -1,12 +1,14 @@
 # sub
 
+Subtracts two vectors.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  [x1, y1]: [any, any],
-  [x2, y2]: [any, any]
-) => number[]
+  [x1, y1]: [number, number],
+  [x2, y2]: [number, number]
+) => [number, number]
 ```
 <!-- prettier-ignore-end -->

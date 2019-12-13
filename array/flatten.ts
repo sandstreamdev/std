@@ -1,1 +1,1 @@
-export default xs => [].concat(...xs);
+export default (xs: any) => [].concat(...xs);

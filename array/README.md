@@ -1,12 +1,12 @@
 # any
 
-Checks if the given array is not empty (contains at least one element).
+Checks if the given array is present and it is not empty (contains at least one element).
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => boolean
+(xs?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -47,31 +47,37 @@ Checks if given arguments are all `Arrays`.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, ys: any) => any
+(xs: any[], ys: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # differs
 
+Checks if two arrays are not equal.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, ys: any) => any
+(xs?: any[], ys?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 # duplicates
 
+Lists all the duplicated values in the given array.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # empty
+
+Empty array.
 
 ## Type signature
 
@@ -83,45 +89,60 @@ any[]
 
 # exact
 
+Takes exactly the given count of elements.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => (xs: any) => any[]
+(count: number) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # except
 
+Filters out the given value.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(y: any) => (xs: any) => any
+(y: any) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # filterInPlace
 
+Filters the given array with the given predicate just like Array.filter but does it in-place thus mutates the original array.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => any
+(
+  f: (value: any, index: number, context: any[]) => boolean
+) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # find
 
+Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any, fallback: any) => (xs: any) => any
+(
+  predicate: (value: any, index: number, context: any[]) => boolean,
+  fallback?: any
+) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 # first
+
+Returns the first element or undefined when there are no elements in the given array.
 
 ## Type signature
 
@@ -133,15 +154,21 @@ any[]
 
 # flatMap
 
+Maps and flattens the result.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => any
+(
+  f: (value: any, index: number, context: any[]) => any
+) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 # flatten
+
+Flattens the nested arrays by a single level.
 
 ## Type signature
 
@@ -153,11 +180,13 @@ any[]
 
 # intersection
 
+Finds common items between both arrays.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, ys: any) => any
+(xs: any[], ys: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -167,61 +196,73 @@ any[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(value: any) => boolean
+(value?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 # last
 
+Returns the last element or undefined when there are no elements in the given array.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 # lengthDiffers
 
+Checks if lengths of given arrays differ.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, b: any) => boolean
+(a: any[], b: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 # map
 
+Maps the given array with the given functions.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: any[]) => (x: any) => any
+(...fs: ((x: any) => any)[]) => (xs: any) => any
 ```
 <!-- prettier-ignore-end -->
 
 # midpoint
 
+Returns the middle element or the right one when the number of elements is even.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 # minMax
 
+Computes minimum and maximum of the given array in a single run.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([head, ...tail]: [any, ...any[]]) => any
+([head, ...tail]: number[]) => number[]
 ```
 <!-- prettier-ignore-end -->
 
 # multiple
+
+Checks if the given array contains more than one element.
 
 ## Type signature
 
@@ -233,25 +274,31 @@ any[]
 
 # none
 
+Checks if the given array is empty.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => boolean
+(xs?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 # partition
 
+Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at right.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any) => (xs: any) => any
+(predicate: (x: any) => boolean) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 # range
+
+Generates an array of numbers from 0 to n - 1.
 
 ## Type signature
 
@@ -263,15 +310,19 @@ any[]
 
 # repeat
 
+Repeats the given element by given count of times.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => (value: any) => any[]
+(count: number) => (value: any) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # reverse
+
+Reverses the given array without mutating it (in contrast to Array.reverse).
 
 ## Type signature
 
@@ -283,25 +334,19 @@ any[]
 
 # reverseIf
 
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(predicate: any) => (xs: any) => any
-```
-<!-- prettier-ignore-end -->
-
-# rotate
+Reverses the given array when enabled.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(array: any) => (angle: any) => any
+(enabled: boolean) => (xs: any) => any
 ```
 <!-- prettier-ignore-end -->
 
 # second
+
+Returns the second element or undefined when there are less than two elements in the given array.
 
 ## Type signature
 
@@ -313,55 +358,67 @@ any[]
 
 # secondToLast
 
+Returns the second to last element or undefined when there are less than two elements in the given array.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
 # shift
 
+Shifts the given array to the left and circulates the elements back by modulo of the array's length.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => (xs: any) => any
+(count: number) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # shuffle
 
+Shuffles the given array in random order with Math.random as the default.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any, random?: () => number) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # shuffleInPlace
 
+Shuffles the given array in-place in random order with Math.random as the default.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: any[], random?: () => number) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # single
 
+Checks if the given array contains exactly one element.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => boolean
+(xs: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 # skip
+
+Skips the given count of elements from the given array.
 
 ## Type signature
 
@@ -373,25 +430,33 @@ any[]
 
 # sort
 
+Sorts the given array without mutating it.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => any[]
+(
+  f?: (a: any, b: any) => number
+) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # sum
 
+Sums the given array of numbers.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: number[]) => number
 ```
 <!-- prettier-ignore-end -->
 
 # take
+
+Takes up to given count of elements.
 
 ## Type signature
 
@@ -401,42 +466,40 @@ any[]
 ```
 <!-- prettier-ignore-end -->
 
-# transpose
-
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(xs: any) => any[][]
-```
-<!-- prettier-ignore-end -->
-
 # unique
 
+Returns only unique elements of the given array.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => unknown[]
+(xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 # zip
 
+Zips given arrays together into pairs.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, ys: any) => any
+(xs: any[], ys: any[]) => any[][]
 ```
 <!-- prettier-ignore-end -->
 
 # zipWith
 
+Zips given arrays together with the given function.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any, ys: any) => any
+(
+  f?: (x: any, y: any) => any[]
+) => (xs: any[], ys: any[]) => any[][]
 ```
 <!-- prettier-ignore-end -->

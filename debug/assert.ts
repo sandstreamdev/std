@@ -5,7 +5,10 @@ import isNormal from "../is/normal";
 import isString from "../is/string";
 import isDefined from "../is/defined";
 
-const assert = (condition, callbackOrMessage) => {
+const assert = (
+  condition: boolean,
+  callbackOrMessage: { (): void } | string
+) => {
   if (!condition) {
     if (typeof callbackOrMessage === "function") {
       callbackOrMessage();
@@ -19,7 +22,7 @@ const assert = (condition, callbackOrMessage) => {
   }
 };
 
-export const throws = f => {
+export const throws = (f: () => void): Error => {
   try {
     f();
 
@@ -29,20 +32,20 @@ export const throws = f => {
   }
 };
 
-export const assertNumber = x =>
+export const assertNumber = (x?: any) =>
   assert(isNumber(x), `Value must be a valid number but it is ${typeof x}.`);
 
-export const assertInteger = x => {
+export const assertInteger = (x?: any) => {
   assertNumber(x);
   assert(isInteger(x), "Value must be an integer.");
 };
 
-export const assertByte = x => {
+export const assertByte = (x?: any) => {
   assertInteger(x);
   assert(isByte(x), "Value must be a byte.");
 };
 
-export const assertNormal = x => {
+export const assertNormal = (x?: any) => {
   assertNumber(x);
   assert(
     isNormal(x),
@@ -50,9 +53,10 @@ export const assertNormal = x => {
   );
 };
 
-export const assertString = x => assert(isString(x), "Value must be a string.");
+export const assertString = (x?: any, message = "Value must be a string.") =>
+  assert(isString(x), message);
 
-export const assertIsDefined = (x, message = "Value must be defined.") =>
+export const assertIsDefined = (x?: any, message = "Value must be defined.") =>
   assert(isDefined(x), message);
 
 export default assert;

@@ -1,9 +1,11 @@
 # firstToUpper
 
+Transforms the first character to uppercase.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-([first, ...rest]: [any, ...any[]]) => string
+(text: string) => string
 ```
 <!-- prettier-ignore-end -->

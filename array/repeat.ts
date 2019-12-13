@@ -1,1 +1,1 @@
-export default n => value => Array(n).fill(value);
+export default (count: number) => (value: any) => Array(count).fill(value);

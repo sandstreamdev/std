@@ -10,8 +10,8 @@ import lerp from "./lerp.js";
 import maximumBy from "./maximumBy.js";
 import median from "./median.js";
 import minMax from "./minMax.js";
-import safeNormalize from "./safeNormalize.js";
 import sameSign from "./sameSign.js";
+import sign from "./sign.js";
 import standardDeviation from "./standardDeviation.js";
 import subtract from "./subtract.js";
 
@@ -28,8 +28,8 @@ export {
   maximumBy,
   median,
   minMax,
-  safeNormalize,
   sameSign,
+  sign,
   standardDeviation,
   subtract
 };
@@ -47,8 +47,8 @@ export default {
   maximumBy,
   median,
   minMax,
-  safeNormalize,
   sameSign,
+  sign,
   standardDeviation,
   subtract
 };

@@ -1,7 +1,7 @@
 {
   "name": "base64url",
-  "description": "TODO: Fill short description here.",
-  "signature": "{\n  encode: (_: any) => string;\n}",
+  "description": "Provides a way to encode strings and bytes from and into Base64URL.",
+  "signature": "{\n  decode: (text: string) => string;\n  decodeBytes: (text: string) => number[];\n  encode: (text: string) => string;\n  encodeBytes: (bytes: number[]) => string;\n  fromByteString: (byteString: string) => number[];\n  toByteString: (bytes: any) => any;\n}",
   "examples": [
     {
       "language": "javascript",

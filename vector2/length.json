@@ -1,7 +1,7 @@
 {
   "name": "length",
-  "description": "TODO: Fill short description here.",
-  "signature": "([x, y]: [any, any]) => number",
+  "description": "Calculates length/magnitude of the given vector.",
+  "signature": "([x, y]: [number, number]) => number",
   "examples": [
     {
       "language": "javascript",

@@ -1,7 +1,7 @@
 {
   "name": "number",
   "description": "TODO: Fill short description here.",
-  "signature": "(x: any) => boolean",
+  "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",

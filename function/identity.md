@@ -1,5 +1,7 @@
 # identity
 
+Always return the given value.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
