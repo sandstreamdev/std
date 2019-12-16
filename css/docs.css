@@ -1,5 +1,9 @@
 body {
   font-family: "Times New Roman", Times, serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .examples .content {
@@ -48,4 +52,40 @@ code {
 a {
   text-decoration: none;
   color: black;
+}
+
+.toc {
+  background: #fafafa;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+  padding: 8px 16px;
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  margin: 16px;
+  width: 208px;
+  overflow: auto;
+}
+
+.row > .content {
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 256px;
+  right: 0;
+  margin: 16px;
+  overflow: auto;
+}
+
+.list {
+  overflow: hidden;
+}
+
+.toc-item {
+  font-family: "Courier New", Courier, monospace;
 }
