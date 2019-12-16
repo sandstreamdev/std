@@ -10,7 +10,6 @@ const ignoredFiles = [
   "addExtensions.js",
   "compile.js",
   "document.js",
-  "docsHtml.js",
   "ignore.js",
   "index.cjs.js",
   "index.d.ts",

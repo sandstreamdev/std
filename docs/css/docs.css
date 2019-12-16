@@ -59,6 +59,7 @@ a {
   border: 0.5px solid lightgray;
   border-radius: 5px;
   padding: 8px 16px;
+  padding-bottom: 16px;
   display: block;
   position: absolute;
   height: auto;

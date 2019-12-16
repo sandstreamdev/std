@@ -1,33 +1,10 @@
 /* eslint-env node */
 // eslint-disable console
-import { promises, readdirSync, write } from "fs";
+import { promises } from "fs";
 import path from "path";
 import hljs from "highlight.js";
 
-import ignored from "./ignore.js";
 import packageConfig from "./package.json";
-
-const pageTemplate = ({ content, toc = "", base = "/std/" }) =>
-  `<!DOCTYPE html>
-<html>
-  <head>
-    <base href="${base}">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="css/docs.css" />
-    <link rel="stylesheet" href="css/default.css" />
-  </head>
-  <body>
-    <div class="row">
-      <div class="toc">
-        <div class="list">${toc}</div>
-      </div>
-      <div class="content">${content}</div>
-    </div>
-    <script src="scripts/docs.js"></script>
-    <script src="https://embed.runkit.com"></script>
-  </body>
-</html>`;
 
 const nameFragment = (name, link, namepsace) =>
   name
@@ -120,8 +97,6 @@ const template = (
   return content;
 };
 
-const [ignoredFiles, ignoredDirectories] = ignored;
-
 const {
   writeFile: writeFileAsync,
   readFile: readFileAsync,
@@ -129,42 +104,6 @@ const {
 } = promises;
 
 const [, , local = false] = process.argv;
-
-console.log(process.argv);
-
-// Do not match type definition files *.d.ts but match *.ts:
-// https://stackoverflow.com/a/43493203/1384679
-const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.json$/i;
-
-const testFilePattern = /\.test\.[tj]s$/i;
-
-function* filesPaths(directoryIn) {
-  const entries = readdirSync(directoryIn, {
-    withFileTypes: true
-  });
-
-  const directories = entries
-    .filter(x => x.isDirectory())
-    .map(x => x.name)
-    .filter(x => !ignoredDirectories.includes(x));
-
-  const filesList = entries
-    .filter(x => x.isFile())
-    .map(x => x.name)
-    .filter(x => extension.test(x))
-    .filter(x => !testFilePattern.test(x))
-    .filter(x => !ignoredFiles.includes(x));
-
-  for (const file of filesList) {
-    yield path.join(directoryIn, file);
-  }
-
-  for (const directory of directories) {
-    for (const filePath of filesPaths(path.join(directoryIn, directory))) {
-      yield filePath;
-    }
-  }
-}
 
 let tocContent = "";
 let processedModule = "";
