@@ -5,15 +5,17 @@ import path from "path";
 import hljs from "highlight.js";
 
 import ignored from "./ignore.js";
+import packageConfig from "./package.json";
 
-const pageTemplate = ({ content, toc = "", pathFix = "" }) =>
+const pageTemplate = ({ content, toc = "", base = "/std/" }) =>
   `<!DOCTYPE html>
 <html>
   <head>
+    <base href="${base}">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="${pathFix}css/docs.css" />
-    <link rel="stylesheet" href="${pathFix}css/default.css" />
+    <link rel="stylesheet" href="css/docs.css" />
+    <link rel="stylesheet" href="css/default.css" />
   </head>
   <body>
     <div class="row">
@@ -22,13 +24,15 @@ const pageTemplate = ({ content, toc = "", pathFix = "" }) =>
       </div>
       <div class="content">${content}</div>
     </div>
-    <script src="${pathFix}scripts/docs.js"></script>
+    <script src="scripts/docs.js"></script>
     <script src="https://embed.runkit.com"></script>
   </body>
 </html>`;
 
-const nameFragment = (name, link) =>
-  name ? `<h3 class="name"><a href="${link}">${name}</a></h3>` : "";
+const nameFragment = (name, link, namepsace) =>
+  name
+    ? `<h3 class="name"><a href="${link}">${name} (from "${namepsace}")</a></h3>`
+    : "";
 
 const descriptionFragment = description => {
   if (description && !description.startsWith("TODO")) {
@@ -100,11 +104,12 @@ const questionsFragment = questions => {
 const template = (
   { name, description, signature, examples, questions },
   scope,
-  link
+  link,
+  namepsace
 ) => {
   const content = `<div class="std-item">
     <div>
-      ${nameFragment(name, link)}
+      ${nameFragment(name, link, namepsace)}
       ${descriptionFragment(description)}
     </div>
     ${signatureFragment(signature)}
@@ -123,7 +128,9 @@ const {
   mkdir: mkdirAsync
 } = promises;
 
-const [, , cwd = process.cwd()] = process.argv;
+const [, , local = false] = process.argv;
+
+console.log(process.argv);
 
 // Do not match type definition files *.d.ts but match *.ts:
 // https://stackoverflow.com/a/43493203/1384679
@@ -162,9 +169,15 @@ function* filesPaths(directoryIn) {
 const main = async cwd => {
   console.log(`Generating html documentation file...`);
 
+  let base = local ? cwd + "/docs/" : "/std/";
   let content = "";
-  let toc = "";
+
+  let toc = `<h3><a href="${local ? "index.html" : ""}">${
+    packageConfig.name
+  } (${packageConfig.version})</a></h3>`;
+
   let moduleName = "";
+  let items = [];
 
   for (const filePath of filesPaths(cwd)) {
     const fileContent = await readFileAsync(filePath, "utf8");
@@ -189,30 +202,67 @@ const main = async cwd => {
 
     if (currentModule !== moduleName) {
       moduleName = currentModule;
-      content += `<h1 class="module-name">"${moduleName}" Methods</h1>`;
-      toc += `<h3 class="module-name">"${moduleName}" Methods</h3>`;
+
+      const modulePath = [...pathParts, local ? "index.html" : undefined].join(
+        "/"
+      );
+
+      toc += `<h3 class="module-name"><a href="${modulePath}">"${moduleName}" Methods</a></h3>`;
     }
 
     const link = [...pathParts, data.name].join("/");
 
-    const htmlPart = template(data, scope, link);
-    content += htmlPart;
+    items.push({
+      content: template(data, scope, link, currentModule),
+      targetPath: path.join(".", "docs", ...pathParts, data.name),
+      moduleName: currentModule,
+      pathParts
+    });
 
-    const targetPath = path.join(".", "docs", ...pathParts, data.name);
+    toc += `<div class="toc-item"><a href="${link}/${
+      local ? "index.html" : ""
+    }">${data.name}</a></div>`;
+  }
+
+  let currentModule = "";
+  let moduleContent = "";
+
+  for (const item of items) {
+    const { targetPath, moduleName, pathParts } = item;
     await mkdirAsync(targetPath, { recursive: true });
+
+    if (currentModule !== moduleName) {
+      if (moduleContent !== "") {
+        await writeFileAsync(
+          `${path.join(".", "docs", ...pathParts)}/index.html`,
+          pageTemplate({ content: moduleContent, toc, base })
+        );
+      }
+
+      currentModule = moduleName;
+
+      const modulePath = [...pathParts, local ? "index.html" : undefined].join(
+        "/"
+      );
+
+      const moduleHeader = `<h1 class="module-name"><a href="${modulePath}">"${moduleName}" Methods</a></h1>`;
+      content += moduleHeader;
+      moduleContent = moduleHeader;
+    }
 
     await writeFileAsync(
       `${targetPath}/index.html`,
-      pageTemplate({
-        content: htmlPart,
-        pathFix: pathParts.map(() => "..").join("/") + "/../"
-      })
+      pageTemplate({ ...item, toc, base })
     );
 
-    toc += `<div class="toc-item"><a href="${link}/index.html">${data.name}</a></div>`;
+    content += item.content;
+    moduleContent += item.content;
   }
 
-  await writeFileAsync("./docs/index.html", pageTemplate({ content, toc }));
+  await writeFileAsync(
+    "./docs/index.html",
+    pageTemplate({ content, toc, base })
+  );
 };
 
-main(cwd);
+main(process.cwd());
