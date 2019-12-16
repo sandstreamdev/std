@@ -1,6 +1,6 @@
 /* eslint-env node */
 // eslint-disable console
-import { promises, readdirSync } from "fs";
+import { promises, readdirSync, write } from "fs";
 import path from "path";
 import hljs from "highlight.js";
 
@@ -166,102 +166,144 @@ function* filesPaths(directoryIn) {
   }
 }
 
+let tocContent = "";
+let processedModule = "";
+
+const getModulePath = pathParts =>
+  [...pathParts, local ? "index.html" : undefined].join("/");
+
+const updateToc = (filePath, fileData) => {
+  const { name, version } = packageConfig;
+
+  if (tocContent == "") {
+    tocContent = `<h3><a href="${
+      local ? "index.html" : ""
+    }">${name} (${version})</a></h3>`;
+  }
+
+  const pathParts = path
+    .dirname(filePath)
+    .slice(process.cwd().length)
+    .split(path.sep)
+    .filter(x => x != "");
+
+  const moduleName = [...pathParts].pop();
+
+  if (moduleName !== processedModule) {
+    processedModule = moduleName;
+
+    const modulePath = [...pathParts, local ? "index.html" : undefined].join(
+      "/"
+    );
+
+    tocContent += `<h3 class="module-name"><a href="${modulePath}">"${moduleName}" Methods</a></h3>`;
+  }
+
+  const link = [...pathParts, fileData.name].join("/");
+
+  tocContent += `<div class="toc-item"><a href="${link}/${
+    local ? "index.html" : ""
+  }">${fileData.name}</a></div>`;
+};
+
+let functionsData = [];
+
+const addFunctionData = (filePath, fileData) => {
+  const pathParts = path
+    .dirname(filePath)
+    .slice(process.cwd().length)
+    .split(path.sep)
+    .filter(x => x != "");
+
+  const moduleName = [...pathParts].pop();
+
+  const scope = [...pathParts]
+    .reverse()
+    .reduce((memo, part) => `{ ${part}: ${memo} }`, `{ ${fileData.name} }`);
+
+  const link = [...pathParts, fileData.name].join("/");
+
+  const content = template(
+    fileData,
+    scope,
+    local ? `${link}/index.html` : link,
+    moduleName
+  );
+
+  const targetPath = path.join(".", "docs", ...pathParts, fileData.name);
+
+  functionsData.push({
+    content,
+    targetPath,
+    moduleName,
+    pathParts
+  });
+};
+
 const main = async cwd => {
   console.log(`Generating html documentation file...`);
 
   let base = local ? cwd + "/docs/" : "/std/";
   let content = "";
 
-  let toc = `<h3><a href="${local ? "index.html" : ""}">${
-    packageConfig.name
-  } (${packageConfig.version})</a></h3>`;
-
-  let moduleName = "";
-  let items = [];
-
   for (const filePath of filesPaths(cwd)) {
     const fileContent = await readFileAsync(filePath, "utf8");
-    const data = JSON.parse(fileContent);
+    const fileData = JSON.parse(fileContent);
 
-    const pathParts = path
-      .dirname(filePath)
-      .slice(cwd.length)
-      .split(path.sep)
-      .filter(x => x != "");
-
-    const scope = pathParts
-      .reverse()
-      .reduce((memo, part) => `{ ${part}: ${memo} }`, `{ ${data.name} }`);
-
-    const currentModule = path
-      .dirname(filePath)
-      .slice(cwd.length)
-      .split(path.sep)
-      .filter(x => x != "")
-      .pop();
-
-    if (currentModule !== moduleName) {
-      moduleName = currentModule;
-
-      const modulePath = [...pathParts, local ? "index.html" : undefined].join(
-        "/"
-      );
-
-      toc += `<h3 class="module-name"><a href="${modulePath}">"${moduleName}" Methods</a></h3>`;
-    }
-
-    const link = [...pathParts, data.name].join("/");
-
-    items.push({
-      content: template(data, scope, link, currentModule),
-      targetPath: path.join(".", "docs", ...pathParts, data.name),
-      moduleName: currentModule,
-      pathParts
-    });
-
-    toc += `<div class="toc-item"><a href="${link}/${
-      local ? "index.html" : ""
-    }">${data.name}</a></div>`;
+    updateToc(filePath, fileData);
+    addFunctionData(filePath, fileData);
   }
 
-  let currentModule = "";
-  let moduleContent = "";
+  let modulesContent = {};
 
-  for (const item of items) {
-    const { targetPath, moduleName, pathParts } = item;
-    await mkdirAsync(targetPath, { recursive: true });
-
-    if (currentModule !== moduleName) {
-      if (moduleContent !== "") {
-        await writeFileAsync(
-          `${path.join(".", "docs", ...pathParts)}/index.html`,
-          pageTemplate({ content: moduleContent, toc, base })
-        );
-      }
-
-      currentModule = moduleName;
-
-      const modulePath = [...pathParts, local ? "index.html" : undefined].join(
-        "/"
-      );
-
-      const moduleHeader = `<h1 class="module-name"><a href="${modulePath}">"${moduleName}" Methods</a></h1>`;
-      content += moduleHeader;
-      moduleContent = moduleHeader;
-    }
+  for (const functionItem of functionsData) {
+    const { targetPath, moduleName, pathParts } = functionItem;
+    await mkdirAsync(targetPath, {
+      recursive: true
+    });
 
     await writeFileAsync(
       `${targetPath}/index.html`,
-      pageTemplate({ ...item, toc, base })
+      pageTemplate({
+        ...functionItem,
+        toc: tocContent,
+        base
+      })
     );
 
-    content += item.content;
-    moduleContent += item.content;
+    // save modules content to generate in next look modules pages
+    if (modulesContent[moduleName]) {
+      modulesContent[moduleName].content += functionItem.content;
+    } else {
+      const moduleHeader = `<h1 class="module-name"><a href="${getModulePath(
+        pathParts
+      )}">"${moduleName}" Methods</a></h1>`;
+
+      modulesContent[moduleName] = {
+        content: moduleHeader + functionItem.content,
+        pathParts
+      };
+
+      content += moduleHeader;
+    }
+
+    // main page with all methods
+    content += functionItem.content;
+  }
+
+  for (let i = 0; i < Object.keys(modulesContent).length; i++) {
+    const moduleName = Object.keys(modulesContent)[i];
+    const { content, pathParts } = modulesContent[moduleName];
+
+    await writeFileAsync(
+      `${path.join(".", "docs", ...pathParts)}/index.html`,
+      pageTemplate({ content, toc: tocContent, base })
+    );
   }
 
   await writeFileAsync(
     "./docs/index.html",
-    pageTemplate({ content, toc, base })
+    pageTemplate({ content, toc: tocContent, base })
   );
 };
 
