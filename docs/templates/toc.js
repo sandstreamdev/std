@@ -12,10 +12,10 @@ const generateToc = data => {
     result += `<h3 class="module-name"><a href="${modulePath}">"${moduleName}" functions</a></h3>`;
 
     for (const func of functions) {
-      result += `<div class="toc-item"><a href="${getPath([
-        ...pathParts,
+      result += `<div class="toc-item"><a href="${getPath(
+        pathParts,
         func.name
-      ])}">${func.name}</a></div>`;
+      )}">${func.name}</a></div>`;
     }
   }
 

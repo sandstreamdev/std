@@ -6,7 +6,7 @@ import path from "path";
 import filesPaths, { docsPath, outPath, copyDir } from "./utils/io.js";
 import pageTemplate from "./templates/page.js";
 import tocContent from "./templates/toc.js";
-import generateModulesDocs from "./templates/module.js";
+import generateModuleDocs from "./templates/module.js";
 
 const {
   writeFile: writeFileAsync,
@@ -42,7 +42,7 @@ const main = async cwd => {
   await mkdirAsync(outPath(), { recursive: true });
   await copyDir(docsPath("css"), outPath("css"));
   await copyDir(docsPath("scripts"), outPath("scripts"));
-  console.log("Generating html documentation file...");
+  console.log("Generating html documentation files...");
 
   for (const filePath of filesPaths(cwd)) {
     const fileContent = await readFileAsync(filePath, "utf8");
@@ -53,9 +53,21 @@ const main = async cwd => {
 
   const toc = tocContent(data);
 
-  const content = generateModulesDocs(data, toc);
+  let mainPageContent = "";
 
-  await writeFileAsync(outPath("index.html"), pageTemplate({ content, toc }));
+  for (const moduleName of Object.keys(data)) {
+    const moduleData = data[moduleName];
+    mainPageContent += await generateModuleDocs({
+      data: moduleData,
+      toc,
+      name: moduleName
+    });
+  }
+
+  await writeFileAsync(
+    outPath("index.html"),
+    pageTemplate({ content: mainPageContent, toc })
+  );
 };
 
 main(process.cwd());

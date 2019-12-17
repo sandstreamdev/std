@@ -3,7 +3,8 @@ const [, , local = false] = process.argv;
 
 export const getBase = () => (local ? process.cwd() + "/docs/dist" : "/std/");
 
-export const getPath = path =>
+export const getPath = (...paths) =>
   local
-    ? process.cwd() + `/docs/dist/${path ? path.join("/") + "/" : ""}index.html`
-    : path;
+    ? process.cwd() +
+      `/docs/dist/${paths ? [...paths].join("/") + "/" : ""}index.html`
+    : paths.join("/");

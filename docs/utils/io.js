@@ -38,9 +38,9 @@ function* filesPaths(directoryIn) {
   }
 }
 
-export const docsPath = (data = "") => path.join("docs", data);
+export const docsPath = (...paths) => path.join("docs", ...paths);
 
-export const outPath = (data = "") => path.join("docs/dist", data);
+export const outPath = (...paths) => path.join("docs/dist", ...paths);
 
 export const copyDir = async (src, dest) => {
   const files = await readdirAsync(src);

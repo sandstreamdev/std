@@ -2,100 +2,8 @@
 // eslint-disable console
 import { promises } from "fs";
 import path from "path";
-import hljs from "highlight.js";
 
 import packageConfig from "./package.json";
-
-const nameFragment = (name, link, namepsace) =>
-  name
-    ? `<h3 class="name"><a href="${link}">${name} (from "${namepsace}")</a></h3>`
-    : "";
-
-const descriptionFragment = description => {
-  if (description && !description.startsWith("TODO")) {
-    return `<div class="description">
-        <span>${description}</span>
-      </div>`;
-  }
-
-  return "";
-};
-
-const signatureFragment = signature => {
-  if (signature && !signature.startsWith("TODO")) {
-    const singatureFormatted = hljs.highlight("typescript", signature).value;
-
-    return `<div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>${singatureFormatted}</span></code></pre>
-      </div>
-    </div>`;
-  }
-
-  return "";
-};
-
-const examplesFragment = (examples, scope) => {
-  if (
-    examples &&
-    examples.length > 0 &&
-    !examples[0].content.includes("TODO")
-  ) {
-    const examplesFormatted = examples
-      .map(
-        ex => `<span>${hljs.highlight(ex.language, ex.content).value}</span>`
-      )
-      .join("\n");
-
-    const content = `<div class="examples">
-      <h3>Examples</h3>
-      <div class="content">
-        <a class="btn-repl" onclick="tryInREPL(event, '${scope}')">Try in REPL</a>
-        <pre><code class="hljs">${examplesFormatted}</code></pre>
-      </div>
-      <div class="repl"></div>
-    </div>`;
-
-    return content;
-  }
-
-  return "";
-};
-
-const questionsFragment = questions => {
-  if (questions && questions.length > 0 && !questions[0].startsWith("TODO")) {
-    const questionsFormatted = questions
-      .map(question => `<li>${question}</li>`)
-      .join("");
-
-    return `<div class="questions">
-        <h3>Questions</h3>
-        <ul>${questionsFormatted}</ul>
-      </div>`;
-  }
-
-  return "";
-};
-
-const template = (
-  { name, description, signature, examples, questions },
-  scope,
-  link,
-  namepsace
-) => {
-  const content = `<div class="std-item">
-    <div>
-      ${nameFragment(name, link, namepsace)}
-      ${descriptionFragment(description)}
-    </div>
-    ${signatureFragment(signature)}
-    ${examplesFragment(examples, scope)}
-    ${questionsFragment(questions)}
-  </div>`.trimLeft();
-
-  return content;
-};
 
 const {
   writeFile: writeFileAsync,
@@ -110,40 +18,6 @@ let processedModule = "";
 
 const getModulePath = pathParts =>
   [...pathParts, local ? "index.html" : undefined].join("/");
-
-const updateToc = (filePath, fileData) => {
-  const { name, version } = packageConfig;
-
-  if (tocContent == "") {
-    tocContent = `<h3><a href="${
-      local ? "index.html" : ""
-    }">${name} (${version})</a></h3>`;
-  }
-
-  const pathParts = path
-    .dirname(filePath)
-    .slice(process.cwd().length)
-    .split(path.sep)
-    .filter(x => x != "");
-
-  const moduleName = [...pathParts].pop();
-
-  if (moduleName !== processedModule) {
-    processedModule = moduleName;
-
-    const modulePath = [...pathParts, local ? "index.html" : undefined].join(
-      "/"
-    );
-
-    tocContent += `<h3 class="module-name"><a href="${modulePath}">"${moduleName}" Methods</a></h3>`;
-  }
-
-  const link = [...pathParts, fileData.name].join("/");
-
-  tocContent += `<div class="toc-item"><a href="${link}/${
-    local ? "index.html" : ""
-  }">${fileData.name}</a></div>`;
-};
 
 let functionsData = [];
 
