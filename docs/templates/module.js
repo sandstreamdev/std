@@ -24,6 +24,11 @@ const generateModuleDocs = async ({ data, toc, name }) => {
     modulePageContent += content;
   }
 
+  await writeFileAsync(
+    outPath(...pathParts, "index.html"),
+    pageTemplate({ content: modulePageContent, toc })
+  );
+
   return modulePageContent;
 };
 

@@ -1,10 +1,15 @@
 /* eslint-env node */
+import flatten from "../../array/flatten.js";
+
 const [, , local = false] = process.argv;
 
 export const getBase = () => (local ? process.cwd() + "/docs/dist" : "/std/");
 
-export const getPath = (...paths) =>
-  local
+export const getPath = (...paths) => {
+  const parts = flatten(paths).filter(x => x !== "");
+
+  return local
     ? process.cwd() +
-      `/docs/dist/${paths ? [...paths].join("/") + "/" : ""}index.html`
-    : paths.join("/");
+        `/docs/dist/${parts.length ? parts.join("/") + "/" : ""}index.html`
+    : parts.join("/");
+};

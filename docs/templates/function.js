@@ -4,13 +4,23 @@ import { promises } from "fs";
 import { outPath } from "../utils/io.js";
 import { getPath } from "../utils/url.js";
 import pageTemplate from "./page.js";
+import last from "../../array/last.js";
 
 const { writeFile: writeFileAsync, mkdir: mkdirAsync } = promises;
 
 const breadcrumb = (name, pathParts) => {
-  return [...pathParts, name]
-    .map(part => `<a href="${getPath(part)}">${part}</a>`)
-    .join(" > ");
+  const parts = ["", ...pathParts, name];
+
+  let resultParts = [];
+
+  for (let i = 1; i < parts.length; i++) {
+    const part = parts.slice(0, i);
+    resultParts.push(
+      `<a href="${getPath(part)}">${last(part) === "" ? "std" : last(part)}</a>`
+    );
+  }
+
+  return `<div class="breadcrumbs">${resultParts.join(" ⇒ ")}</div>`;
 };
 
 const nameFragment = (name, pathParts) => {

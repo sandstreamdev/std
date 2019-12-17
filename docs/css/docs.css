@@ -90,3 +90,16 @@ a {
 .toc-item {
   font-family: "Courier New", Courier, monospace;
 }
+
+.breadcrumbs {
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+.breadcrumbs > a {
+  color: #0275d8;
+}
+
+.breadcrumbs > a:hover {
+  color: black;
+}
