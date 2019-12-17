@@ -59,6 +59,7 @@ a {
   border: 0.5px solid lightgray;
   border-radius: 5px;
   padding: 8px 16px;
+  padding-bottom: 16px;
   display: block;
   position: absolute;
   height: auto;
@@ -88,4 +89,17 @@ a {
 
 .toc-item {
   font-family: "Courier New", Courier, monospace;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+.breadcrumbs > a {
+  color: #0275d8;
+}
+
+.breadcrumbs > a:hover {
+  color: black;
 }
