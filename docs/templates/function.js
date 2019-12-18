@@ -3,6 +3,7 @@ import { promises } from "fs";
 
 import { outPath } from "../utils/io.js";
 import { getPath } from "../utils/url.js";
+import { scrollTo } from "../utils/scripts.js";
 import pageTemplate from "./page.js";
 import last from "../../array/last.js";
 
@@ -20,7 +21,7 @@ const breadcrumb = (name, pathParts) => {
     );
   }
 
-  return `<div class="breadcrumbs">${resultParts.join(" / ")}</div>`;
+  return `<div class="breadcrumbs">${resultParts.join("<span>/</span>")}</div>`;
 };
 
 const nameFragment = (name, pathParts) => {
@@ -129,7 +130,11 @@ const generateFuncDocs = async ({ func, toc, pathParts }) => {
 
   await writeFileAsync(
     outPath(...pathParts, func.name, "index.html"),
-    pageTemplate({ content: functionPageContent, toc })
+    pageTemplate({
+      content: functionPageContent,
+      toc,
+      onContentLoaded: scrollTo([...pathParts, func.name].join("/"))
+    })
   );
 
   return functionPageContent;

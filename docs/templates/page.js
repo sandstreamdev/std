@@ -1,6 +1,6 @@
 import { getBase } from "../utils/url.js";
 
-const pageTemplate = ({ content, toc = "" }) =>
+const pageTemplate = ({ content, toc, onContentLoaded = "" }) =>
   `<!DOCTYPE html>
 <html>
   <head>
@@ -9,6 +9,11 @@ const pageTemplate = ({ content, toc = "" }) =>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/docs.css" />
     <link rel="stylesheet" href="css/default.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        ${onContentLoaded}
+      });
+    </script>
   </head>
   <body>
     <div class="row">

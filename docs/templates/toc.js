@@ -9,13 +9,14 @@ const generateToc = data => {
   for (const moduleName of Object.keys(data)) {
     const { functions, pathParts } = data[moduleName];
     const modulePath = getPath(pathParts);
-    result += `<h3 class="module-name"><a href="${modulePath}">"${moduleName}" functions</a></h3>`;
+    result += `<h3 class="module-name" id="${pathParts.join(
+      "/"
+    )}"><a href="${modulePath}">"${moduleName}" functions</a></h3>`;
 
     for (const func of functions) {
-      result += `<div class="toc-item"><a href="${getPath(
-        pathParts,
-        func.name
-      )}">${func.name}</a></div>`;
+      result += `<div class="toc-item" id="${[...pathParts, func.name].join(
+        "/"
+      )}"><a href="${getPath(pathParts, func.name)}">${func.name}</a></div>`;
     }
   }
 
