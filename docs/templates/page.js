@@ -13,6 +13,37 @@ const pageTemplate = ({ content, toc, onContentLoaded = "" }) =>
       document.addEventListener('DOMContentLoaded', (event) => {
         ${onContentLoaded}
       });
+
+      function tocFilter() {
+        var input = document.getElementById('searchInput');
+        var filter = input.value.toUpperCase();
+        var tocItems = document.getElementsByClassName('toc-item');
+        var modules = document.getElementsByClassName('module');
+
+        for (let i = 0; i < tocItems.length; i++) {
+          var a = tocItems[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tocItems[i].style.display = "";
+          } else {
+            tocItems[i].style.display = "none";
+          }
+        }
+
+        for (let i = 0; i < modules.length; i++) {
+          let visibleChildren = 0;
+          const testedModule = modules[i];
+
+          for (let j = 0; j < testedModule.childNodes.length; j++) {
+            const child = testedModule.childNodes[j];
+            if (child.style.display !== "none") {
+              visibleChildren++;
+            }
+          }
+
+          testedModule.style.display = visibleChildren === 1 ? "none" : "";
+        }
+      }
     </script>
   </head>
   <body>
