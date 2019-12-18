@@ -123,7 +123,7 @@ a {
   padding: 0 4px;
 }
 
-#myInput {
+#searchInput {
   font-size: 16px;
   padding: 4px;
   box-sizing: border-box;
@@ -133,7 +133,7 @@ a {
   /* border: 1px solid #ddd; Add a grey border */
 }
 
-#myInput:focus {
+#searchInput:focus {
   outline: none;
   border-bottom: solid 2px #0275d8;
 }
