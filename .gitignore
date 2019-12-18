@@ -4,5 +4,4 @@ index.cjs.js
 index.umd.js
 **/*.d.ts
 .coverage
-docs/**/*.html
 docs/dist
