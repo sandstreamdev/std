@@ -40,6 +40,10 @@ code {
   border-radius: 5px;
 }
 
+.module-name {
+  margin-bottom: 4px;
+}
+
 .module-name,
 .name {
   font-family: "Courier New", Courier, monospace;
@@ -117,4 +121,19 @@ a {
 
 .breadcrumbs > span {
   padding: 0 4px;
+}
+
+#myInput {
+  font-size: 16px;
+  padding: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px gray;
+  /* border: 1px solid #ddd; Add a grey border */
+}
+
+#myInput:focus {
+  outline: none;
+  border-bottom: solid 2px #0275d8;
 }
