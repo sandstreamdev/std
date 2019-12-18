@@ -19,9 +19,10 @@
         var tocItems = document.getElementsByClassName('toc-item');
         var modules = document.getElementsByClassName('module');
 
-        for (let i = 0; i < tocItems.length; i++) {
+        for (var i = 0; i < tocItems.length; i++) {
           var a = tocItems[i].getElementsByTagName("a")[0];
-          txtValue = a.textContent || a.innerText;
+          var txtValue = a.textContent || a.innerText;
+
           if (txtValue.toUpperCase().indexOf(filter) > -1) {
             tocItems[i].style.display = "";
           } else {
@@ -29,12 +30,12 @@
           }
         }
 
-        for (let i = 0; i < modules.length; i++) {
+        for (var i = 0; i < modules.length; i++) {
           let visibleChildren = 0;
           const testedModule = modules[i];
 
-          for (let j = 0; j < testedModule.childNodes.length; j++) {
-            const child = testedModule.childNodes[j];
+          for (var j = 0; j < testedModule.childNodes.length; j++) {
+            var child = testedModule.childNodes[j];
             if (child.style.display !== "none") {
               visibleChildren++;
             }
@@ -59,11 +60,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -75,11 +76,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -91,11 +92,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -107,11 +108,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(min: <span class="hljs-built_in">number</span>, max: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(min: <span class="hljs-built_in">number</span>, max: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -123,11 +124,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -139,11 +140,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -155,11 +156,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -171,14 +172,14 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(
   width: <span class="hljs-built_in">number</span>,
   height: <span class="hljs-built_in">number</span>
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">boolean</span></span></code></pre>
-      </div>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -190,11 +191,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(t: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(t: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -206,11 +207,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(f: <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">number</span>[]</span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(f: <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">number</span>[]</span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -222,11 +223,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -238,11 +239,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>([a, b]: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]) =&gt; [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>([a, b]: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]) =&gt; [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -254,11 +255,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -270,11 +271,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -286,11 +287,11 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[], origin?: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[], origin?: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div><div class="std-item">
@@ -302,16 +303,16 @@
       
     </div>
     <div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
-      </div>
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
+  </div>
     
     
   </div></div>
     </div>
-    <script src="scripts/docs.js"></script>
-    <script src="https://embed.runkit.com"></script>
+    <script async src="scripts/docs.js"></script>
+    <script async src="https://embed.runkit.com"></script>
   </body>
 </html>
