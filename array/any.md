@@ -11,7 +11,6 @@ Checks if the given array is present and it is not empty (contains at least one 
 <!-- prettier-ignore-end -->
 
 ## Examples
-
 <!-- prettier-ignore-start -->
 ```javascript
 any([]); // ⇒ false

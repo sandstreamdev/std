@@ -1,0 +1,138 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.examples .content {
+  position: relative;
+}
+
+.btn-repl {
+  color: #0275d8;
+  font-size: 16px;
+  position: absolute;
+  right: 4px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 4px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.std-item {
+  background: #fafafa;
+  border: 0.5px solid lightgray;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.std-item h2 {
+  margin-top: 4px;
+}
+
+code {
+  border-radius: 5px;
+}
+
+.module-name {
+  margin-bottom: 4px;
+}
+
+.module-name,
+.name {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.module-name.selected > a,
+.name > a {
+  color: #0275d8;
+}
+
+.repl {
+  margin-left: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.toc {
+  background: #fafafa;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+  padding: 8px 16px;
+  padding-bottom: 16px;
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  margin: 16px;
+  width: 208px;
+  overflow: auto;
+}
+
+.row > .content {
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 256px;
+  right: 0;
+  margin: 16px;
+  overflow: auto;
+}
+
+.list {
+  overflow: hidden;
+}
+
+.toc-item {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.toc-item.selected > a {
+  font-weight: bold;
+  color: #0275d8;
+  font-size: 18px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+.breadcrumbs > a {
+  color: #0275d8;
+}
+
+.breadcrumbs > a:hover {
+  color: black;
+}
+
+.breadcrumbs > span {
+  padding: 0 4px;
+}
+
+#searchInput {
+  font-size: 16px;
+  padding: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px gray;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-bottom-color: #0275d8;
+}

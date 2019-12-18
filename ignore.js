@@ -30,6 +30,12 @@ const ignoredFiles = [
   "tsconfig.json"
 ];
 
-const ignoredDirectories = [".coverage", ".git", ".github", "node_modules"];
+const ignoredDirectories = [
+  ".coverage",
+  ".git",
+  ".github",
+  "node_modules",
+  "docs"
+];
 
 export default [ignoredFiles, ignoredDirectories];

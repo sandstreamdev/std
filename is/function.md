@@ -1,4 +1,4 @@
-# \_function
+# _function
 
 ## Type signature
 
