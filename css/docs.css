@@ -45,6 +45,10 @@ code {
   font-family: "Courier New", Courier, monospace;
 }
 
+.name > a {
+  color: #0275d8;
+}
+
 .repl {
   margin-left: 16px;
 }
