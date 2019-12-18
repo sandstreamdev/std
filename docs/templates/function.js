@@ -6,8 +6,11 @@ import { getPath } from "../utils/url.js";
 import { scrollTo } from "../utils/scripts.js";
 import pageTemplate from "./page.js";
 import last from "../../array/last.js";
+import reverse from "../../array/reverse.js";
 
 const { writeFile: writeFileAsync, mkdir: mkdirAsync } = promises;
+
+const breadcrumbPart = (anchor, text) => `<a href="${anchor}">${text}</a>`;
 
 const breadcrumb = (name, pathParts) => {
   const parts = ["", ...pathParts, name];
@@ -16,89 +19,86 @@ const breadcrumb = (name, pathParts) => {
 
   for (let i = 1; i < parts.length; i++) {
     const part = parts.slice(0, i);
+
     resultParts.push(
-      `<a href="${getPath(part)}">${last(part) === "" ? "std" : last(part)}</a>`
+      breadcrumbPart(getPath(part), last(part) === "" ? "std" : last(part))
     );
   }
 
   return `<div class="breadcrumbs">${resultParts.join("<span>/</span>")}</div>`;
 };
 
-const nameFragment = (name, pathParts) => {
-  return name
+const nameFragment = (name, pathParts) =>
+  name
     ? `<h3 class="name"><a href="${getPath(pathParts, name)}">${name}</a></h3>`
     : "";
-};
 
 const descriptionFragment = description => {
-  if (description && !description.startsWith("TODO")) {
-    return `<div class="description">
-        <span>${description}</span>
-      </div>`;
+  if (!description || description.startsWith("TODO")) {
+    return "";
   }
 
-  return "";
+  return `<div class="description"><span>${description}</span></div>`;
 };
 
 const signatureFragment = signature => {
-  if (signature && !signature.startsWith("TODO")) {
-    const singatureFormatted = hljs.highlight("typescript", signature).value;
-
-    return `<div class="type-signature">
-      <h3>Type signature</h3>
-      <div class="content">
-        <pre><code class="hljs"><span>${singatureFormatted}</span></code></pre>
-      </div>
-    </div>`;
+  if (!signature || signature.startsWith("TODO")) {
+    return "";
   }
 
-  return "";
+  const singatureFormatted = hljs.highlight("typescript", signature).value;
+
+  return `<div class="type-signature">
+    <h3>Type signature</h3>
+    <div class="content">
+      <pre><code class="hljs"><span>${singatureFormatted}</span></code></pre>
+    </div>
+  </div>`;
 };
 
 const examplesFragment = (examples, pathParts, funcName) => {
   if (
-    examples &&
-    examples.length > 0 &&
-    !examples[0].content.includes("TODO")
+    !examples ||
+    examples.length === 0 ||
+    examples[0].content.includes("TODO")
   ) {
-    const scope = [...pathParts]
-      .reverse()
-      .reduce((memo, part) => `{ ${part}: ${memo} }`, `{ ${funcName} }`);
-
-    const examplesFormatted = examples
-      .map(
-        ex => `<span>${hljs.highlight(ex.language, ex.content).value}</span>`
-      )
-      .join("\n");
-
-    const content = `<div class="examples">
-      <h3>Examples</h3>
-      <div class="content">
-        <a class="btn-repl" onclick="tryInREPL(event, '${scope}')">Try in REPL</a>
-        <pre><code class="hljs">${examplesFormatted}</code></pre>
-      </div>
-      <div class="repl"></div>
-    </div>`;
-
-    return content;
+    return "";
   }
 
-  return "";
+  const scope = reverse(pathParts).reduce(
+    (memo, part) => `{ ${part}: ${memo} }`,
+    `{ ${funcName} }`
+  );
+
+  const examplesFormatted = examples
+    .map(ex => `<span>${hljs.highlight(ex.language, ex.content).value}</span>`)
+    .join("\n");
+
+  const content = `<div class="examples">
+    <h3>Examples</h3>
+    <div class="content">
+      <a class="btn-repl" onclick="tryInREPL(event, '${scope}')">Try in REPL</a>
+      <pre><code class="hljs">${examplesFormatted}</code></pre>
+    </div>
+    <div class="repl"></div>
+  </div>`;
+
+  return content;
 };
 
 const questionsFragment = questions => {
-  if (questions && questions.length > 0 && !questions[0].startsWith("TODO")) {
-    const questionsFormatted = questions
-      .map(question => `<li>${question}</li>`)
-      .join("");
-
-    return `<div class="questions">
-        <h3>Questions</h3>
-        <ul>${questionsFormatted}</ul>
-      </div>`;
+  if (!questions || questions.length === 0 || questions[0].startsWith("TODO")) {
+    return "";
   }
 
-  return "";
+  const questionsFormatted = questions
+    .map(question => `<li>${question}</li>`)
+    .join("");
+
+  return `<div class="questions">
+      <h3>Questions</h3>
+      <ul>${questionsFormatted}</ul>
+    </div>`;
 };
 
 const funcTemplate = (
@@ -121,7 +121,7 @@ const funcTemplate = (
   return content;
 };
 
-const generateFuncDocs = async ({ func, toc, pathParts }) => {
+export default async ({ func, toc, pathParts }) => {
   await mkdirAsync(outPath(...pathParts, func.name), {
     recursive: true
   });
@@ -139,5 +139,3 @@ const generateFuncDocs = async ({ func, toc, pathParts }) => {
 
   return functionPageContent;
 };
-
-export default generateFuncDocs;

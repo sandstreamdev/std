@@ -38,17 +38,20 @@ const addData = (filePath, fileData) => {
 
 const main = async cwd => {
   console.log("Clearing dist...");
-  await rmdirAsync(outPath(), { recursive: true });
-  await mkdirAsync(outPath(), { recursive: true });
+  const outputPath = outPath();
+
+  await rmdirAsync(outputPath, { recursive: true });
+  await mkdirAsync(outputPath, { recursive: true });
   await copyDir(docsPath("css"), outPath("css"));
   await copyDir(docsPath("scripts"), outPath("scripts"));
+
   console.log("Generating html documentation files...");
 
-  for (const filePath of filesPaths(cwd)) {
-    const fileContent = await readFileAsync(filePath, "utf8");
-    const fileData = JSON.parse(fileContent);
+  for (const path of filesPaths(cwd)) {
+    const content = await readFileAsync(path, "utf8");
+    const data = JSON.parse(content);
 
-    addData(filePath, fileData);
+    addData(path, data);
   }
 
   const toc = tocContent(data);
@@ -57,6 +60,7 @@ const main = async cwd => {
 
   for (const moduleName of Object.keys(data)) {
     const moduleData = data[moduleName];
+
     mainPageContent += await generateModuleDocs({
       data: moduleData,
       toc,

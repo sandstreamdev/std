@@ -10,7 +10,7 @@ import generateFuncsDocs from "./function.js";
 
 const { writeFile: writeFileAsync, mkdir: mkdirAsync } = promises;
 
-const generateModuleDocs = async ({ data, toc, name }) => {
+export default async ({ data, toc, name }) => {
   const { functions, pathParts } = data;
 
   console.log(` - module: ${name} \n  - ${functions.length} functions\n`);
@@ -25,6 +25,7 @@ const generateModuleDocs = async ({ data, toc, name }) => {
 
   for (const func of functions) {
     const content = await generateFuncsDocs({ func, toc, pathParts });
+
     modulePageContent += content;
   }
 
@@ -39,5 +40,3 @@ const generateModuleDocs = async ({ data, toc, name }) => {
 
   return modulePageContent;
 };
-
-export default generateModuleDocs;

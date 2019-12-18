@@ -130,10 +130,9 @@ a {
   width: 100%;
   border: none;
   border-bottom: solid 1px gray;
-  /* border: 1px solid #ddd; Add a grey border */
 }
 
 #searchInput:focus {
   outline: none;
-  border-bottom: solid 2px #0275d8;
+  border-bottom-color: #0275d8;
 }

@@ -1,7 +1,7 @@
 import packageConfig from "../../package.json";
 import { getPath } from "../utils/url.js";
 
-const generateToc = data => {
+export default data => {
   const { name, version } = packageConfig;
 
   let result = `<h3><a href="${getPath()}">${name} (${version})</a></h3>`;
@@ -10,14 +10,16 @@ const generateToc = data => {
   for (const moduleName of Object.keys(data)) {
     const { functions, pathParts } = data[moduleName];
     const modulePath = getPath(pathParts);
-    result += `<div class="module"><h3 class="module-name" id="${pathParts.join(
+
+    result += `<div class="module">`;
+    result += `<h3 class="module-name" id="${pathParts.join(
       "/"
     )}"><a href="${modulePath}">"${moduleName}" functions</a></h3>`;
 
-    for (const func of functions) {
-      result += `<div class="toc-item" id="${[...pathParts, func.name].join(
+    for (const { name } of functions) {
+      result += `<div class="toc-item" id="${[...pathParts, name].join(
         "/"
-      )}"><a href="${getPath(pathParts, func.name)}">${func.name}</a></div>`;
+      )}"><a href="${getPath(pathParts, name)}">${name}</a></div>`;
     }
 
     result += "</div>";
@@ -25,5 +27,3 @@ const generateToc = data => {
 
   return result;
 };
-
-export default generateToc;
