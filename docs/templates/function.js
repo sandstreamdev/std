@@ -20,7 +20,7 @@ const breadcrumb = (name, pathParts) => {
     );
   }
 
-  return `<div class="breadcrumbs">${resultParts.join(" ⇒ ")}</div>`;
+  return `<div class="breadcrumbs">${resultParts.join(" / ")}</div>`;
 };
 
 const nameFragment = (name, pathParts) => {
