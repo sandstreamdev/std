@@ -35,7 +35,17 @@
     "type": "git",
     "url": "git+https://github.com/sandstreamdev/std.git"
   },
-  "keywords": [],
+  "keywords": [
+    "utilities",
+    "JavaScript",
+    "helpers",
+    "TypeScript",
+    "modules",
+    "fp",
+    "ES6",
+    "functional programing",
+    "ESM"
+  ],
   "author": {
     "name": "Sandstream Development",
     "url": "https://sandstream.pl"
