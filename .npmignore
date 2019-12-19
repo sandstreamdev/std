@@ -1,7 +1,3 @@
-*.md
-*.json
-*.test.js
-*.test.ts
 .all-contributorsrc
 .babelrc.js
 .coverage
@@ -13,8 +9,14 @@
 .npmignore
 .prettierignore
 .prettierrc
+*.html
+*.json
+*.md
+*.test.js
+*.test.ts
 addExtensions.js
 compile.js
+docs
 document.js
 ignore.js
 normalizeLineEndings.js
