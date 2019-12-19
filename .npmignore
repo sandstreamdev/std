@@ -19,9 +19,9 @@ compile.js
 docs
 document.js
 ignore.js
+indexReadme.js
 jest.config.js
 normalizeLineEndings.js
 package-lock.json
-readme.js
 regenerate.js
 rollup.config.js
