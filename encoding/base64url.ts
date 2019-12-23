@@ -8,26 +8,32 @@ export const fromByteString = (byteString: string) =>
 
 const ENCODING = "utf-8";
 
-const btoaImplementation = (text: string) =>
-  typeof window !== "undefined"
-    ? btoa(toByteString([...new window.TextEncoder().encode(text)]))
+const btoaImplementation = (
+  text: string,
+  context = typeof window !== "undefined" ? window : undefined
+) =>
+  context
+    ? context.btoa(toByteString([...new context.TextEncoder().encode(text)]))
     : Buffer.from(text, ENCODING).toString("base64");
 
-const atobImplementation = (text: string) =>
-  typeof window !== "undefined"
-    ? new window.TextDecoder(ENCODING).decode(
-        new Uint8Array(fromByteString(atob(text)))
+const atobImplementation = (
+  text: string,
+  context = typeof window !== "undefined" ? window : undefined
+) =>
+  context
+    ? new context.TextDecoder(ENCODING).decode(
+        new Uint8Array(fromByteString(context.atob(text)))
       )
     : Buffer.from(text, "base64").toString(ENCODING);
 
-export const encode = (text: string) =>
-  btoaImplementation(text)
+export const encode = (text: string, context) =>
+  btoaImplementation(text, context)
     .replace(/=/g, "")
     .replace(/\+/g, "-")
     .replace(/\//g, "_");
 
-export const decode = (text: string) =>
-  atobImplementation(text.replace(/-/g, "+").replace(/_/g, "/"));
+export const decode = (text: string, context) =>
+  atobImplementation(text.replace(/-/g, "+").replace(/_/g, "/"), context);
 
 export const toBase64Url = (base64: string) =>
   base64.replace(/\+/g, "-").replace(/\//g, "_");
