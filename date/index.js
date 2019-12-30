@@ -1,5 +1,6 @@
 import byDateWithFallback from "./byDateWithFallback.js";
 import clamp from "./clamp.js";
+import clone from "./clone.js";
 import dateDiff from "./dateDiff.js";
 import dateInRange from "./dateInRange.js";
 import dayRange from "./dayRange.js";
@@ -39,6 +40,7 @@ import valid from "./valid.js";
 export {
   byDateWithFallback,
   clamp,
+  clone,
   dateDiff,
   dateInRange,
   dayRange,
@@ -79,6 +81,7 @@ export {
 export default {
   byDateWithFallback,
   clamp,
+  clone,
   dateDiff,
   dateInRange,
   dayRange,
