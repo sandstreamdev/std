@@ -32,6 +32,7 @@ import shuffle from "./shuffle.js";
 import shuffleInPlace from "./shuffleInPlace.js";
 import single from "./single.js";
 import skip from "./skip.js";
+import slidingWindow from "./slidingWindow.js";
 import sort from "./sort.js";
 import sum from "./sum.js";
 import take from "./take.js";
@@ -74,6 +75,7 @@ export {
   shuffleInPlace,
   single,
   skip,
+  slidingWindow,
   sort,
   sum,
   take,
@@ -117,6 +119,7 @@ export default {
   shuffleInPlace,
   single,
   skip,
+  slidingWindow,
   sort,
   sum,
   take,

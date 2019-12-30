@@ -32,6 +32,7 @@ import shuffle from "./shuffle";
 import shuffleInPlace from "./shuffleInPlace";
 import single from "./single";
 import skip from "./skip";
+import slidingWindow from "./slidingWindow";
 import sort from "./sort";
 import sum from "./sum";
 import take from "./take";
@@ -74,6 +75,7 @@ export {
   shuffleInPlace,
   single,
   skip,
+  slidingWindow,
   sort,
   sum,
   take,
@@ -117,6 +119,7 @@ export default {
   shuffleInPlace,
   single,
   skip,
+  slidingWindow,
   sort,
   sum,
   take,
