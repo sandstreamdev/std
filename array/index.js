@@ -11,6 +11,7 @@ import find from "./find.js";
 import first from "./first.js";
 import flatMap from "./flatMap.js";
 import flatten from "./flatten.js";
+import insert from "./insert.js";
 import intersection from "./intersection.js";
 import is from "./is.js";
 import last from "./last.js";
@@ -53,6 +54,7 @@ export {
   first,
   flatMap,
   flatten,
+  insert,
   intersection,
   is,
   last,
@@ -96,6 +98,7 @@ export default {
   first,
   flatMap,
   flatten,
+  insert,
   intersection,
   is,
   last,

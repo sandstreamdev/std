@@ -11,6 +11,7 @@ import find from "./find";
 import first from "./first";
 import flatMap from "./flatMap";
 import flatten from "./flatten";
+import insert from "./insert";
 import intersection from "./intersection";
 import is from "./is";
 import last from "./last";
@@ -53,6 +54,7 @@ export {
   first,
   flatMap,
   flatten,
+  insert,
   intersection,
   is,
   last,
@@ -96,6 +98,7 @@ export default {
   first,
   flatMap,
   flatten,
+  insert,
   intersection,
   is,
   last,
