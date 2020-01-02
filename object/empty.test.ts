@@ -3,7 +3,11 @@
 import empty from "./empty.ts";
 
 describe("empty", () => {
-  it.skip("TODO", () => {
-    expect(empty()).toBeDefined();
+  it("equals to the empty object", () => {
+    expect(empty).toEqual({});
+  });
+
+  it("keeps the same reference", () => {
+    expect(empty).not.toBe({});
   });
 });

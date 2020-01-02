@@ -1,11 +1,11 @@
 {
   "name": "empty",
-  "description": "TODO: Fill short description here.",
+  "description": "Empty object.",
   "signature": "{}",
   "examples": [
     {
       "language": "javascript",
-      "content": "empty(); // ⇒ TODO"
+      "content": "empty; // ⇒ {}"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]
