@@ -8,7 +8,6 @@ import filter from "./filter.js";
 import find from "./find.js";
 import findEntry from "./findEntry.js";
 import findKey from "./findKey.js";
-import findValue from "./findValue.js";
 import first from "./first.js";
 import flatMapValues from "./flatMapValues.js";
 import fromEntries from "./fromEntries.js";
@@ -34,7 +33,6 @@ export {
   find,
   findEntry,
   findKey,
-  findValue,
   first,
   flatMapValues,
   fromEntries,
@@ -61,7 +59,6 @@ export default {
   find,
   findEntry,
   findKey,
-  findValue,
   first,
   flatMapValues,
   fromEntries,

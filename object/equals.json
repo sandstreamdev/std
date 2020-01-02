@@ -1,7 +1,7 @@
 {
   "name": "equals",
   "description": "Checks if two objects are deeply equal.",
-  "signature": "(a: any, b: any) => any",
+  "signature": "(a: any, b: any) => boolean",
   "examples": [
     {
       "language": "javascript",

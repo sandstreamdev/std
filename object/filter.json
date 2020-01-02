@@ -1,7 +1,7 @@
 {
   "name": "filter",
   "description": "Filters the given object with the given predicate.",
-  "signature": "(f: any) => (xs: any) => object",
+  "signature": "(\n  f: (value: any, key: string, context: object) => boolean\n) => (xs: object) => object",
   "examples": [
     {
       "language": "javascript",

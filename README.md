@@ -1150,7 +1150,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  equals: (x: any[], ay: any) => boolean
+  equals: (x: any, y: any) => boolean
 ) => (f: (...xs: any[]) => any) => (...args: any[]) => any
 ```
 <!-- prettier-ignore-end -->
@@ -1591,81 +1591,109 @@ Lists key value pairs (entries) present in the given object.
 
 #### enumerable
 
+Creates a 1 to 1 mapping of given values as an object.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => any
+(...xs: string[]) => object
+```
+<!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+enumerable('TEST', 'X', 'Y'); // ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }
 ```
 <!-- prettier-ignore-end -->
 
 #### equals
 
+Checks if two objects are deeply equal.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, b: any) => any
+(a: any, b: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### filter
 
+Filters the given object with the given predicate.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => object
+(
+  f: (value: any, key: string, context: object) => boolean
+) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->
 
 #### find
 
+Searches the given object by the given predicate and returns the found value or undefined.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any) => (xs: any) => unknown
+(
+  predicate: (value: any, key: string, context: object) => boolean
+) => (xs: object) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### findEntry
 
+Searches the given object by the given predicate and returns the found entry or undefined.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any) => (xs: any) => [string, unknown]
+(
+  predicate: (value: any, key: string, context: object) => boolean
+) => (xs: object) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### findKey
 
-##### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(predicate: any) => (xs: any) => string
-```
-<!-- prettier-ignore-end -->
-
-#### findValue
+Searches the given object by the given predicate and returns the found key or undefined.
 
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: any) => (xs: any) => unknown
+(
+  predicate: (value: any, key: string, context: object) => boolean
+) => (xs: object) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### first
 
+Return the first value in the given object. Follows default object iteration order.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => unknown
+(xs: object) => any
+```
+<!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+first({ a: 1, b: 2, c: 3 }); // ⇒ 1
 ```
 <!-- prettier-ignore-end -->
 
