@@ -1,6 +1,6 @@
 {
   "name": "fromEntries",
-  "description": "TODO: Fill short description here.",
+  "description": "Creates an object from array of key value pairs (entries).",
   "signature": "(keyValuePairs: [string, any][]) => object",
   "examples": [
     {
