@@ -1,3 +1,3 @@
 import number from "./number";
 
-export default x => number(x) && Math.floor(x) === x;
+export default (x?: number) => number(x) && Math.floor(x) === x;

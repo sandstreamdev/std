@@ -1,6 +1,6 @@
 {
   "name": "object",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if given value is an object.",
   "signature": "(x: any) => boolean",
   "examples": [
     {

@@ -1,6 +1,6 @@
 {
-  "name": "_function",
-  "description": "TODO: Fill short description here.",
+  "name": "function",
+  "description": "Checks if given value is a function.",
   "signature": "(x: any) => boolean",
   "examples": [
     {
