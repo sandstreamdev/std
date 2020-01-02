@@ -10,6 +10,7 @@ export default (xs = "") =>
   fromEntries(
     queryFromMaybeSearchString(xs)
       .split("&")
+      .filter(Boolean)
       .map(xs => {
         const [key, value] = xs.split("=");
 
