@@ -7,12 +7,44 @@ Provides a way to encode strings and bytes from and into Base64URL.
 <!-- prettier-ignore-start -->
 ```typescript
 {
-  decode: (text: string) => string;
-  decodeBytes: (text: string) => number[];
-  encode: (text: string) => string;
-  encodeBytes: (bytes: number[]) => string;
+  decode: (
+    text: string,
+    context?: {
+      atob: (byteString: string) => string;
+      TextDecoder: new (encoding: string) => {
+        decode: (input?: Uint8Array) => string;
+      };
+    }
+  ) => string;
+  decodeBytes: (
+    text: string,
+    context?: {
+      atob: (byteString: string) => string;
+      TextDecoder: new (encoding: string) => {
+        decode: (input?: Uint8Array) => string;
+      };
+    }
+  ) => number[];
+  encode: (
+    text: string,
+    context?: {
+      btoa: (byteString: string) => string;
+      TextEncoder: new () => {
+        encode: (input?: string) => Uint8Array;
+      };
+    }
+  ) => string;
+  encodeBytes: (
+    bytes: number[],
+    context?: {
+      btoa: (byteString: string) => string;
+      TextEncoder: new () => {
+        encode: (input?: string) => Uint8Array;
+      };
+    }
+  ) => string;
   fromByteString: (byteString: string) => number[];
-  toByteString: (bytes: any) => any;
+  toByteString: (bytes: number[]) => string;
 }
 ```
 <!-- prettier-ignore-end -->
