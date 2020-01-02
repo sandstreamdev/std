@@ -1,7 +1,7 @@
 {
   "name": "length",
   "description": "TODO: Fill short description here.",
-  "signature": "(xs: any) => number",
+  "signature": "(xs: object) => number",
   "examples": [
     {
       "language": "javascript",
