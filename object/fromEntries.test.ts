@@ -1,6 +1,6 @@
 /* eslint-env jest */
 // @ts-ignore ambiguous import
-import fromEntries from "./fromEntries.ts";
+import fromEntries, { implementation } from "./fromEntries.ts";
 
 describe("fromEntries", () => {
   it("creates an object from an array of entries", () => {
@@ -35,5 +35,27 @@ describe("fromEntries", () => {
     } else {
       expect(fromEntries).not.toBe(Object.fromEntries);
     }
+  });
+
+  it("fallback implementation works as Object.fromEntries", () => {
+    expect(
+      implementation([
+        ["a", 1],
+        ["b", 2],
+        ["c", 3]
+      ])
+    ).toEqual({ a: 1, b: 2, c: 3 });
+
+    expect(
+      implementation([
+        ["a", 1],
+        ["b", 2],
+        ["c", 3],
+        ["c", 6],
+        ["a", 8]
+      ])
+    ).toEqual({ a: 8, b: 2, c: 6 });
+
+    expect(implementation([])).toEqual({});
   });
 });
