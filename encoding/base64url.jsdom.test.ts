@@ -120,38 +120,19 @@ describe("base64url", () => {
       throw new RangeError("Index out of range.");
     };
 
-    global["window"] = {
-      atob,
-      btoa
-      // TextDecoder,
-      // TextEncoder,
-      // textEncoder
-    };
-
     const context = {
       atob,
       btoa,
-      TextEncoder: global.TextEncoder,
-      TextDecoder: global.TextDecoder
+      TextEncoder: global["TextEncoder"],
+      TextDecoder: global["TextDecoder"]
     };
 
-    // delete global.window;
-    // global.window = {};
-
-    // expect(global.window).toBeDefined();
-    // expect(window).toBeDefined();
-    // expect(global.TextEncoder).toBeDefined();
-    // expect(global.window.TextEncoder).toBeDefined();
-    // expect(window.TextEncoder).toBeDefined();
-    // console.log(window.TextEncoder);
-    // console.log(global.window.TextEncoder);
-    // console.log(TextEncoder);
-    // console.log(typeof global.window);
-    // console.log(global.window.TextEncoder);
-    // console.log(global.TextDecoder);
-    // console.log(global.TextEncoder);
-    // console.log(global.window.TextDecoder);
-
     expect(decode(encode(unicodeText, context), context)).toEqual(unicodeText);
+
+    global["window"] = context;
+
+    expect(decode(encode(unicodeText))).toEqual(unicodeText);
+
+    delete global["window"];
   });
 });
