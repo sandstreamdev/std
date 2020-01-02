@@ -1,6 +1,6 @@
 {
   "name": "none",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given object is empty.",
   "signature": "(xs: any) => boolean",
   "examples": [
     {

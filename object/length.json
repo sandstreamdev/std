@@ -1,6 +1,6 @@
 {
   "name": "length",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns the number of entries within the given object.",
   "signature": "(xs: object) => number",
   "examples": [
     {
