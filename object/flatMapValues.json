@@ -1,6 +1,6 @@
 {
   "name": "flatMapValues",
-  "description": "TODO: Fill short description here.",
+  "description": "Flat maps the values of the given object.",
   "signature": "(f: any) => (xs: any) => any",
   "examples": [
     {

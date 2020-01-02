@@ -1,6 +1,6 @@
 import fromEntries from "./fromEntries";
 import mapEntries from "./mapEntries";
 
-export default (f: (value: any, key: string, context: object) => any) => (
+export default (f: (value: any, key: string, context: object) => boolean) => (
   xs: object
-) => fromEntries(mapEntries(f)(xs));
+): object => fromEntries(mapEntries(f)(xs));

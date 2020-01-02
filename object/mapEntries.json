@@ -1,6 +1,6 @@
 {
   "name": "mapEntries",
-  "description": "TODO: Fill short description here.",
+  "description": "Maps entries of the given object.",
   "signature": "(\n  f: (value: any, key: string, context: object) => any\n) => (xs: object) => [string, any][]",
   "examples": [
     {

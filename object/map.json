@@ -1,6 +1,6 @@
 {
   "name": "map",
-  "description": "TODO: Fill short description here.",
+  "description": "Maps the given object with the given function.",
   "signature": "(\n  f: (value: any, key: string, context: object) => any\n) => (xs: object) => object",
   "examples": [
     {
