@@ -1699,15 +1699,21 @@ first({ a: 1, b: 2, c: 3 }); // ⇒ 1
 
 #### flatMapValues
 
+Flat maps the values of the given object.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => any
+(
+  f: (value: any, key: string, context: object) => boolean
+) => (xs: object) => any[]
 ```
 <!-- prettier-ignore-end -->
 
 #### fromEntries
+
+Creates an object from array of key value pairs (entries).
 
 ##### Type signature
 
@@ -1719,25 +1725,31 @@ first({ a: 1, b: 2, c: 3 }); // ⇒ 1
 
 #### groupBy
 
+Groups given array of values by the given key selector.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(selector: any) => (xs: any) => any
+(selector: (x: any) => string) => (xs: any[]) => object
 ```
 <!-- prettier-ignore-end -->
 
 #### hasKey
 
+Checks if given key is present in the object.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(key: any) => (xs: any) => any
+(key: string) => (xs?: any) => any
 ```
 <!-- prettier-ignore-end -->
 
 #### length
+
+Returns the number of entries within the given object.
 
 ##### Type signature
 
@@ -1749,17 +1761,21 @@ first({ a: 1, b: 2, c: 3 }); // ⇒ 1
 
 #### map
 
+Maps the given object with the given function.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  f: (value: any, key: string, context: object) => any
+  f: (value: any, key: string, context: object) => boolean
 ) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->
 
 #### mapEntries
+
+Maps entries of the given object.
 
 ##### Type signature
 
@@ -1777,17 +1793,23 @@ first({ a: 1, b: 2, c: 3 }); // ⇒ 1
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => object
+(
+  f: (value: any, key: string, context: object) => any
+) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->
 
 #### mapValues
 
+Maps and returns an array of transformed object values.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => any[]
+(
+  f: (value: any, key: string, context: object) => any
+) => (xs: object) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1825,15 +1847,19 @@ merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } }); // ⇒ { a: 1, b: { c: 3, d: 8 } 
 
 #### none
 
+Checks if the given object is empty.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => boolean
+(xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 #### sort
+
+Sorts the given object by a comparator.
 
 ##### Type signature
 

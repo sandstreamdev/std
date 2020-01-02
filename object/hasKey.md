@@ -1,9 +1,11 @@
 # hasKey
 
+Checks if given key is present in the object.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(key: any) => (xs: any) => any
+(key: string) => (xs?: any) => any
 ```
 <!-- prettier-ignore-end -->

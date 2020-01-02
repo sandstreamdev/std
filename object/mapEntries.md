@@ -1,5 +1,7 @@
 # mapEntries
 
+Maps entries of the given object.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

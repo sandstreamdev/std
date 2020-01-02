@@ -1,9 +1,11 @@
 # groupBy
 
+Groups given array of values by the given key selector.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(selector: any) => (xs: any) => any
+(selector: (x: any) => string) => (xs: any[]) => object
 ```
 <!-- prettier-ignore-end -->
