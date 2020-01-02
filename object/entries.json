@@ -1,6 +1,6 @@
 {
   "name": "entries",
-  "description": "TODO: Fill short description here.",
+  "description": "Lists key value pairs (entries) present in the given object.",
   "signature": "{\n  <T>(\n    o:\n      | {\n          [s: string]: T;\n        }\n      | ArrayLike<T>\n  ): [string, T][];\n  (o: {}): [string, any][];\n}",
   "examples": [
     {
