@@ -1,7 +1,7 @@
 {
   "name": "date",
   "description": "Checks if given value is a Date object.",
-  "signature": "(x: any) => boolean",
+  "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",

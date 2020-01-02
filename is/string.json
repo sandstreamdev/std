@@ -1,7 +1,7 @@
 {
   "name": "string",
   "description": "Checks if given value is a string.",
-  "signature": "(x: any) => boolean",
+  "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",

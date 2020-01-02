@@ -1,7 +1,7 @@
 {
   "name": "defined",
   "description": "Checks if given value is defined.",
-  "signature": "(x: any) => boolean",
+  "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",

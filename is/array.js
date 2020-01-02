@@ -1,1 +1,1 @@
-export default x => Array.isArray(x);
+export default x => (x ? Array.isArray(x) : false);

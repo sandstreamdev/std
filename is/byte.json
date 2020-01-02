@@ -1,7 +1,7 @@
 {
   "name": "byte",
   "description": "Checks if the given value is a byte.",
-  "signature": "(x: any) => boolean",
+  "signature": "(x?: number) => boolean",
   "examples": [
     {
       "language": "javascript",

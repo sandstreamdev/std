@@ -1,9 +1,11 @@
 # integer
 
+Checks if given value is an integer.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => boolean
+(x?: number) => boolean
 ```
 <!-- prettier-ignore-end -->

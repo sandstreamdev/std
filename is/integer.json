@@ -1,7 +1,7 @@
 {
   "name": "integer",
   "description": "Checks if given value is an integer.",
-  "signature": "(x: any) => boolean",
+  "signature": "(x?: number) => boolean",
   "examples": [
     {
       "language": "javascript",
