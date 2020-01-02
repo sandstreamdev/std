@@ -1,11 +1,11 @@
 {
   "name": "enumerable",
-  "description": "TODO: Fill short description here.",
+  "description": "Creates a 1 to 1 mapping of given values as an object.",
   "signature": "(...xs: any[]) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "enumerable(); // ⇒ TODO"
+      "content": "enumerable('TEST', 'X', 'Y'); // ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]
