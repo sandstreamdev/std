@@ -1,6 +1,6 @@
 {
   "name": "equals",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if two objects are deeply equal.",
   "signature": "(a: any, b: any) => any",
   "examples": [
     {
