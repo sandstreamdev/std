@@ -1,6 +1,6 @@
 {
   "name": "filter",
-  "description": "TODO: Fill short description here.",
+  "description": "Filters the given object with the given predicate.",
   "signature": "(f: any) => (xs: any) => object",
   "examples": [
     {
