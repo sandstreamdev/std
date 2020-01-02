@@ -9,3 +9,11 @@ Empty array.
 any[]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+empty; // ⇒ []
+```
+<!-- prettier-ignore-end -->

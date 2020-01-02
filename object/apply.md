@@ -1,5 +1,7 @@
 # apply
 
+Applies the given parameters to the given dictionary of functions.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

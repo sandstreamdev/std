@@ -1,14 +1,18 @@
 # any
 
+Checks if the given array is present and it is not empty (contains at least one element).
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => boolean
+(xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->
 
 # apply
+
+Applies the given parameters to the given dictionary of functions.
 
 ## Type signature
 
@@ -22,6 +26,8 @@
 
 # empty
 
+Empty object.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
@@ -30,7 +36,17 @@
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+empty; // ⇒ {}
+```
+<!-- prettier-ignore-end -->
+
 # entries
+
+Lists key value pairs (entries) present in the given object.
 
 ## Type signature
 
@@ -175,7 +191,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => number
+(xs: object) => number
 ```
 <!-- prettier-ignore-end -->
 

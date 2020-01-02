@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => number
+(xs: object) => number
 ```
 <!-- prettier-ignore-end -->

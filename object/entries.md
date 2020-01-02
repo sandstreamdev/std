@@ -1,5 +1,7 @@
 # entries
 
+Lists key value pairs (entries) present in the given object.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

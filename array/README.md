@@ -87,6 +87,14 @@ any[]
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+empty; // ⇒ []
+```
+<!-- prettier-ignore-end -->
+
 # exact
 
 Takes exactly the given count of elements.
