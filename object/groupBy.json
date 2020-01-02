@@ -1,6 +1,6 @@
 {
   "name": "groupBy",
-  "description": "TODO: Fill short description here.",
+  "description": "Groups given array of values by the given key selector.",
   "signature": "(selector: any) => (xs: any) => any",
   "examples": [
     {
