@@ -11,6 +11,8 @@ describe("differs", () => {
   it("short-circuits over parameter presence", () => {
     expect(differs(null, [1, 2])).toBe(true);
     expect(differs([2, 3], undefined)).toBe(true);
+    expect(differs(null, null)).toBe(true);
+    expect(differs(undefined, undefined)).toBe(true);
   });
 
   it("compares elements index-wise", () => {

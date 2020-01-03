@@ -44,7 +44,7 @@ const diff = (
   obj1?: { [index: string]: any },
   obj2?: { [index: string]: any }
 ): object => {
-  if (isValue(obj1) || isValue(obj2)) {
+  if (!obj1 || !obj2 || isValue(obj1) || isValue(obj2)) {
     const comparisonResult = compareValues(obj1, obj2);
 
     return comparisonResult !== VALUE_UNCHANGED
@@ -64,7 +64,7 @@ const diff = (
       continue;
     }
 
-    const value2 = obj2 ? obj2[key] : undefined;
+    const value2 = obj2[key];
 
     result[key] = diff(value1, value2);
   }

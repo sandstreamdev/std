@@ -77,4 +77,11 @@ describe("diff", () => {
       a: { data: [1, 5], type: VALUE_UPDATED }
     });
   });
+
+  it("detects object deletions", () => {
+    expect(diff({ a: 1 }, undefined)).toEqual({
+      data: [{ a: 1 }, undefined],
+      type: VALUE_DELETED
+    });
+  });
 });
