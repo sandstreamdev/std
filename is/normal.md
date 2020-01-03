@@ -6,6 +6,6 @@ Checks if the given value is a number in a normal range [0, 1].
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: number | undefined) => boolean
 ```
 <!-- prettier-ignore-end -->

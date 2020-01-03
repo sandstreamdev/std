@@ -1,7 +1,7 @@
 {
   "name": "subtractDays",
   "description": "TODO: Fill short description here.",
-  "signature": "(sourceDate: any, numberOfDays: any) => Date",
+  "signature": "(\n  sourceDate: string | number | Date,\n  numberOfDays: number\n) => Date",
   "examples": [
     {
       "language": "javascript",

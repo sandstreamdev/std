@@ -1,7 +1,7 @@
 {
   "name": "serialize",
   "description": "Serializes the given object into a query string.",
-  "signature": "(xs?: {}) => string",
+  "signature": "(xs?: { [index: string]: any }) => string",
   "examples": [
     {
       "language": "javascript",

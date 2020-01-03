@@ -4,6 +4,9 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(min: any, max: any) => (dateStringOrDate: any) => Date
+(
+  min: number | Date,
+  max: number | Date
+) => (dateStringOrDate: string | number | Date) => Date
 ```
 <!-- prettier-ignore-end -->

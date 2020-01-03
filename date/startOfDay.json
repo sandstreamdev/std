@@ -1,7 +1,7 @@
 {
   "name": "startOfDay",
   "description": "TODO: Fill short description here.",
-  "signature": "(\n  date: any,\n  timezoneOffset?: number,\n  local?: boolean\n) => Date",
+  "signature": "(\n  date: string | number | Date,\n  timezoneOffset?: number,\n  local?: boolean\n) => Date",
   "examples": [
     {
       "language": "javascript",

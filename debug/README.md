@@ -21,6 +21,17 @@ Computes a difference between two objects.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(obj1: object, obj2: object) => object
+(
+  obj1?:
+    | {
+        [index: string]: any;
+      }
+    | undefined,
+  obj2?:
+    | {
+        [index: string]: any;
+      }
+    | undefined
+) => object
 ```
 <!-- prettier-ignore-end -->

@@ -6,7 +6,7 @@ Checks if the given range is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([min, max]: [any, any]) => boolean
+([min, max]: [number, number]) => boolean
 ```
 <!-- prettier-ignore-end -->
 

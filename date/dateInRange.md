@@ -4,6 +4,9 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(from: any, to: any) => (date?: Date) => boolean
+(
+  from: string | number | Date,
+  to: string | number | Date
+) => (date?: Date) => boolean
 ```
 <!-- prettier-ignore-end -->

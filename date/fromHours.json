@@ -1,7 +1,7 @@
 {
   "name": "fromHours",
   "description": "TODO: Fill short description here.",
-  "signature": "(hours: any) => number",
+  "signature": "(hours: number) => number",
   "examples": [
     {
       "language": "javascript",

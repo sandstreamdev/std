@@ -6,6 +6,6 @@ Returns the second element or undefined when there are less than two elements in
 
 <!-- prettier-ignore-start -->
 ```typescript
-([, x]: [any, any]) => any
+([, x]: any[]) => any
 ```
 <!-- prettier-ignore-end -->

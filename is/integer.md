@@ -6,6 +6,6 @@ Checks if given value is an integer.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: number | undefined) => boolean
 ```
 <!-- prettier-ignore-end -->

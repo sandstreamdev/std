@@ -6,7 +6,12 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: object, b: object) => object
+(
+  a: {
+    [index: string]: any;
+  },
+  b: object
+) => object
 ```
 <!-- prettier-ignore-end -->
 

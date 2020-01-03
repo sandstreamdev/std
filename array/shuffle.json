@@ -1,7 +1,7 @@
 {
   "name": "shuffle",
   "description": "Shuffles the given array in random order with Math.random as the default.",
-  "signature": "(xs: any, random?: () => number) => any[]",
+  "signature": "(xs: any, random?: (() => number) | undefined) => any[]",
   "examples": [
     {
       "language": "javascript",

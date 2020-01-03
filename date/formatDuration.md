@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(duration: any, showSeconds?: boolean) => string
+(duration: number, showSeconds?: boolean) => string
 ```
 <!-- prettier-ignore-end -->

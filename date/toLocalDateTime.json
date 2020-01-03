@@ -1,7 +1,7 @@
 {
   "name": "toLocalDateTime",
   "description": "TODO: Fill short description here.",
-  "signature": "(date: any, timezoneOffset?: number) => Date",
+  "signature": "(date: Date, timezoneOffset?: number) => Date",
   "examples": [
     {
       "language": "javascript",

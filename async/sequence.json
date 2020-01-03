@@ -1,7 +1,7 @@
 {
   "name": "sequence",
   "description": "Runs the given tasks in a sequence.",
-  "signature": "(tasks: (() => Promise<any>)[]) => Promise<any[]>",
+  "signature": "(tasks: (() => Promise<any>)[]) => Promise<undefined[]>",
   "examples": [
     {
       "language": "javascript",

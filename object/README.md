@@ -6,7 +6,7 @@ Checks if the given array is present and it is not empty (contains at least one 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object) => boolean
+(xs?: object | undefined) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -20,7 +20,12 @@ Applies the given parameters to the given dictionary of functions.
 ```typescript
 (
   fs: ((...xs: any[]) => any)[]
-) => (...xs: any[]) => object
+) => (
+  ...xs: any[]
+) => {
+  [x: string]: any;
+  [x: number]: any;
+}
 ```
 <!-- prettier-ignore-end -->
 
@@ -195,7 +200,13 @@ Creates an object from array of key value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-(keyValuePairs: [string, any][]) => object
+{
+  <T = any>(entries: Iterable<readonly [string | number | symbol, T]>): {
+    [x: string]: T;
+    [x: number]: T;
+  };
+  (entries: Iterable<readonly any[]>): any;
+}
 ```
 <!-- prettier-ignore-end -->
 
@@ -219,7 +230,7 @@ Checks if given key is present in the object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(key: string) => (xs?: any) => any
+(key: string) => (xs?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -297,7 +308,12 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: object, b: object) => object
+(
+  a: {
+    [index: string]: any;
+  },
+  b: object
+) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -329,7 +345,7 @@ Checks if the given object is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object) => boolean
+(xs?: object | undefined) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -341,6 +357,8 @@ Sorts the given object by a comparator.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => object
+(
+  f: (a: any, b: any) => number
+) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->

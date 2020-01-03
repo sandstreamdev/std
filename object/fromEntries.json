@@ -1,7 +1,7 @@
 {
   "name": "fromEntries",
   "description": "Creates an object from array of key value pairs (entries).",
-  "signature": "(keyValuePairs: [string, any][]) => object",
+  "signature": "{\n  <T = any>(entries: Iterable<readonly [string | number | symbol, T]>): {\n    [x: string]: T;\n    [x: number]: T;\n  };\n  (entries: Iterable<readonly any[]>): any;\n}",
   "examples": [
     {
       "language": "javascript",

@@ -6,6 +6,6 @@ Checks if given key is present in the object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(key: string) => (xs?: any) => any
+(key: string) => (xs?: any) => boolean
 ```
 <!-- prettier-ignore-end -->

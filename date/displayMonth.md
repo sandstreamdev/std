@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(monthIndex: any) => string
+(monthIndex: number) => string
 ```
 <!-- prettier-ignore-end -->

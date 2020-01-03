@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: (string | number | Date)[]) => Date[]
 ```
 <!-- prettier-ignore-end -->

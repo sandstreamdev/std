@@ -10,10 +10,10 @@
   now,
   timezoneOffset
 }: {
-  iso?: boolean;
-  local?: boolean;
-  now?: Date;
-  timezoneOffset?: number;
-}) => (date: any) => any[]
+  iso?: boolean | undefined;
+  local?: boolean | undefined;
+  now?: Date | undefined;
+  timezoneOffset?: number | undefined;
+}) => (date?: string | number | Date | undefined) => string[]
 ```
 <!-- prettier-ignore-end -->

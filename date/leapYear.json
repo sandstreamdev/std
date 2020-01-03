@@ -1,7 +1,7 @@
 {
   "name": "leapYear",
   "description": "TODO: Fill short description here.",
-  "signature": "(year: any) => boolean",
+  "signature": "(year: number) => boolean",
   "examples": [
     {
       "language": "javascript",

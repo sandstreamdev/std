@@ -6,7 +6,7 @@ Checks if the given value is a byte.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: number | undefined) => boolean
 ```
 <!-- prettier-ignore-end -->
 

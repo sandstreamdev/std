@@ -6,6 +6,9 @@ Calculates a dot product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => number
+(
+  [a, b]: [number, number],
+  [c, d]: [number, number]
+) => number
 ```
 <!-- prettier-ignore-end -->

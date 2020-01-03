@@ -5,21 +5,21 @@
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  now: any
+  now: string | number | Date
 ) => (
   {
     endedAt: aEnd,
     startedAt: aStart
   }: {
-    endedAt: any;
-    startedAt: any;
+    endedAt: string | number | Date;
+    startedAt: string | number | Date;
   },
   {
     endedAt: bEnd,
     startedAt: bStart
   }: {
-    endedAt: any;
-    startedAt: any;
+    endedAt: string | number | Date;
+    startedAt: string | number | Date;
   }
 ) => number
 ```

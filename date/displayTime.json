@@ -1,7 +1,7 @@
 {
   "name": "displayTime",
   "description": "TODO: Fill short description here.",
-  "signature": "(source: any, showSeconds: any) => string",
+  "signature": "(\n  source: [number, number, number],\n  showSeconds: boolean\n) => string",
   "examples": [
     {
       "language": "javascript",

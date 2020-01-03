@@ -6,6 +6,6 @@ Computes the signed length of the given range.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([min, max]: [any, any]) => number
+([min, max]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->

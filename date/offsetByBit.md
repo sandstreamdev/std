@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => Date
+(date: number | Date) => Date
 ```
 <!-- prettier-ignore-end -->

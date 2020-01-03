@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(dateTimeString: any) => any
+(dateTimeString: string) => string[]
 ```
 <!-- prettier-ignore-end -->

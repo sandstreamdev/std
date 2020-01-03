@@ -1,7 +1,7 @@
 {
   "name": "toISO",
   "description": "TODO: Fill short description here.",
-  "signature": "(x: any) => any",
+  "signature": "(x: Date) => string",
   "examples": [
     {
       "language": "javascript",

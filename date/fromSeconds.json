@@ -1,7 +1,7 @@
 {
   "name": "fromSeconds",
   "description": "TODO: Fill short description here.",
-  "signature": "(seconds: any) => number",
+  "signature": "(seconds: number) => number",
   "examples": [
     {
       "language": "javascript",

@@ -1,7 +1,7 @@
 {
   "name": "clamp",
   "description": "TODO: Fill short description here.",
-  "signature": "(min: any, max: any) => (dateStringOrDate: any) => Date",
+  "signature": "(\n  min: number | Date,\n  max: number | Date\n) => (dateStringOrDate: string | number | Date) => Date",
   "examples": [
     {
       "language": "javascript",

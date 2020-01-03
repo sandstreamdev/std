@@ -1,7 +1,7 @@
 {
   "name": "offsetByBit",
   "description": "TODO: Fill short description here.",
-  "signature": "(date: any) => Date",
+  "signature": "(date: number | Date) => Date",
   "examples": [
     {
       "language": "javascript",

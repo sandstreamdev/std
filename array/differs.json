@@ -1,7 +1,7 @@
 {
   "name": "differs",
   "description": "Checks if two arrays are not equal.",
-  "signature": "(xs?: any[], ys?: any[]) => boolean",
+  "signature": "(\n  xs?: any[] | undefined,\n  ys?: any[] | undefined\n) => boolean",
   "examples": [
     {
       "language": "javascript",

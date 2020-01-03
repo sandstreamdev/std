@@ -8,6 +8,11 @@ Applies the given parameters to the given dictionary of functions.
 ```typescript
 (
   fs: ((...xs: any[]) => any)[]
-) => (...xs: any[]) => object
+) => (
+  ...xs: any[]
+) => {
+  [x: string]: any;
+  [x: number]: any;
+}
 ```
 <!-- prettier-ignore-end -->

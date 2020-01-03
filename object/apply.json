@@ -1,7 +1,7 @@
 {
   "name": "apply",
   "description": "Applies the given parameters to the given dictionary of functions.",
-  "signature": "(\n  fs: ((...xs: any[]) => any)[]\n) => (...xs: any[]) => object",
+  "signature": "(\n  fs: ((...xs: any[]) => any)[]\n) => (\n  ...xs: any[]\n) => {\n  [x: string]: any;\n  [x: number]: any;\n}",
   "examples": [
     {
       "language": "javascript",

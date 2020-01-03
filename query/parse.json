@@ -1,7 +1,7 @@
 {
   "name": "parse",
   "description": "Parses a query string into an object.",
-  "signature": "(xs?: string) => object",
+  "signature": "(\n  xs?: string\n) => {\n  [x: string]: string | boolean;\n  [x: number]: string | boolean;\n}",
   "examples": [
     {
       "language": "javascript",

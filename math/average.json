@@ -1,7 +1,7 @@
 {
   "name": "average",
   "description": "Calculates the average of given array of numbers.",
-  "signature": "(xs?: number[]) => number",
+  "signature": "(xs?: number[] | undefined) => number",
   "examples": [
     {
       "language": "javascript",

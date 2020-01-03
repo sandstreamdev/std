@@ -6,6 +6,6 @@ Calculates the average of given array of numbers.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: number[]) => number
+(xs?: number[] | undefined) => number
 ```
 <!-- prettier-ignore-end -->

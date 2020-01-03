@@ -1,7 +1,7 @@
 {
   "name": "formatDisplayDate",
   "description": "TODO: Fill short description here.",
-  "signature": "(\n  sourceDate: any,\n  showDay?: boolean,\n  timezoneOffset?: number\n) => string",
+  "signature": "(\n  sourceDate: Date,\n  showDay?: boolean,\n  timezoneOffset?: number\n) => string",
   "examples": [
     {
       "language": "javascript",
