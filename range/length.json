@@ -1,6 +1,6 @@
 {
   "name": "length",
-  "description": "TODO: Fill short description here.",
+  "description": "Computes the signed length of the given range.",
   "signature": "([min, max]: [any, any]) => number",
   "examples": [
     {

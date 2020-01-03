@@ -3,7 +3,9 @@
 import empty from "./empty.ts";
 
 describe("empty", () => {
-  it.skip("TODO", () => {
-    expect(empty()).toBeDefined();
+  it("checks if the given range is empty", () => {
+    expect(empty([2, 2])).toBe(true);
+    expect(empty([1, 5])).toBe(false);
+    expect(empty([0, 0])).toBe(true);
   });
 });
