@@ -76,20 +76,42 @@ const main = async cwd => {
 
       const command = [executable, ...args].join(" ");
 
-      console.time(command);
-
       const windows = process.platform === "win32";
 
-      const { stdout, stderr } = await execAsync(command, {
+      const execOptions = {
         windowsVerbatimArguments: windows
-      });
+      };
+
+      console.time(command);
+
+      const { stdout, stderr } = await execAsync(command, execOptions);
 
       console.timeEnd(command);
 
-      console.log(`Compiled ${relativeFilePath}`);
+      console.log(`Compiled with strict mode ${relativeFilePath}`);
 
       if (stdout || stderr) {
         console.log({ stdout, stderr });
+      }
+
+      const nonStrictCommand = [
+        executable,
+        ...args.filter(x => x !== "--strict")
+      ].join(" ");
+
+      console.time(nonStrictCommand);
+
+      const { stdout: secondStdout, stderr: secondStderr } = await execAsync(
+        nonStrictCommand,
+        execOptions
+      );
+
+      console.timeEnd(nonStrictCommand);
+
+      console.log(`Compiled without strict mode ${relativeFilePath}`);
+
+      if (secondStdout || secondStderr) {
+        console.log({ secondStdout, secondStderr });
       }
     } catch (error) {
       console.error(error);
