@@ -2,9 +2,10 @@
   "compilerOptions": {
     "module": "ES6",
     "noImplicitAny": true,
-    "removeComments": true,
     "preserveConstEnums": true,
+    "removeComments": true,
     "sourceMap": true,
+    "strict": true,
     "target": "ES2020"
   }
 }

@@ -68,6 +68,8 @@ const main = async cwd => {
         "--skipLibCheck",
         "--module ES6",
         "--target ES2020",
+        "--noImplicitAny",
+        "--strict",
         "-d",
         quotePath(path.posix.normalize(filePath))
       ];
