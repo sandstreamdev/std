@@ -1568,7 +1568,7 @@ Subtracts two values.
 
 #### any
 
-Checks if the given array is present and it is not empty (contains at least one element).
+Checks if the given object is present and it is not empty (contains at least one entry).
 
 ##### Type signature
 
@@ -1723,7 +1723,7 @@ Searches the given object by the given predicate and returns the found key or un
 
 #### first
 
-Return the first value in the given object. Follows default object iteration order.
+Returns the first value in the given object. Follows default object iteration order.
 
 ##### Type signature
 

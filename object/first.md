@@ -1,6 +1,6 @@
 # first
 
-Return the first value in the given object. Follows default object iteration order.
+Returns the first value in the given object. Follows default object iteration order.
 
 ## Type signature
 
