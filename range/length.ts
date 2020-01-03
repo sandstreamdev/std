@@ -1,1 +1,1 @@
-export default ([min, max]) => max - min;
+export default ([min, max]: [number, number]): number => max - min;

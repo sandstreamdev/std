@@ -1,7 +1,7 @@
 /* eslint-env browser */
 
 export default (f: { (...args: any[]): any }, wait: number) => {
-  let timeout;
+  let timeout: any;
 
   return (...args: any[]) => {
     const resolve = () => {

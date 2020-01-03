@@ -1,1 +1,1 @@
-export default date => date && date instanceof Date;
+export default (date?: any): boolean => (date ? date instanceof Date : false);

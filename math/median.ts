@@ -1,7 +1,7 @@
 import sort from "../array/sort";
 import subtract from "./subtract";
 
-export default (xs?: number[]): number => {
+export default (xs?: number[]): number | undefined => {
   if (!xs || xs.length === 0) {
     return undefined;
   }

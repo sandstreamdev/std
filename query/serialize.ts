@@ -1,9 +1,9 @@
 import entries from "../object/entries";
 
-export default (xs = {}) =>
+export default (xs: { [index: string]: any } = {}): string =>
   entries(xs)
     .filter(([, value]) => Boolean(value) || value === 0)
-    .map(pair => pair.map(encodeURIComponent))
+    .map(pair => pair.map(value => encodeURIComponent(value)))
     .reduce(
       (acc, [key, value]) => [
         ...acc,

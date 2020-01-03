@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(hours: any) => number
+(hours: number) => number
 ```
 <!-- prettier-ignore-end -->

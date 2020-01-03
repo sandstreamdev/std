@@ -1,1 +1,2 @@
-export default ([a, b], [c, d]) => a === c && b === d;
+export default ([a, b]: [number, number], [c, d]: [number, number]): boolean =>
+  a === c && b === d;

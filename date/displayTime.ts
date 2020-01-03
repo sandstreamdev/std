@@ -1,4 +1,4 @@
-export default (source, showSeconds) => {
+export default (source: [number, number, number], showSeconds: boolean) => {
   const [hours, minutes, seconds] = source.map(_ => _ + "");
 
   const padded = [

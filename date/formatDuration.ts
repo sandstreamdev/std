@@ -5,7 +5,7 @@ import toMinutes from "./toMinutes";
 import toSeconds from "./toSeconds";
 import displayTime from "./displayTime";
 
-export default (duration, showSeconds = false) => {
+export default (duration: number, showSeconds = false) => {
   const hours = Math.floor(toHours(duration));
   const minutes = Math.floor(toMinutes(duration - fromHours(hours)));
 

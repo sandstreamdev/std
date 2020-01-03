@@ -1,10 +1,10 @@
 export default (equals: (x: any, y: any) => boolean) => (
   f: (...xs: any[]) => any
 ) => {
-  let memoized = undefined;
-  let memoizedArgs = undefined;
+  let memoized: any = undefined;
+  let memoizedArgs: any[] | undefined = undefined;
 
-  return (...args) => {
+  return (...args: any[]) => {
     if (memoized && equals(args, memoizedArgs)) {
       return memoized;
     }

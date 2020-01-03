@@ -1,4 +1,6 @@
-export default (from, to) => (date = new Date()) => {
+export default (from: string | number | Date, to: string | number | Date) => (
+  date = new Date()
+) => {
   const dateTime = new Date(date).getTime();
   const fromTime = new Date(from).getTime();
   const toTime = new Date(to).getTime();

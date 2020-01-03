@@ -22,7 +22,7 @@ const assert = (
   }
 };
 
-export const throws = (f: () => void): Error => {
+export const throws = (f: () => void): Error | undefined => {
   try {
     f();
 
