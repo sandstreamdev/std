@@ -6,6 +6,6 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(tasks: (() => Promise<any>)[]) => Promise<undefined[]>
+(tasks: (() => Promise<any>)[]) => Promise<any[]>
 ```
 <!-- prettier-ignore-end -->

@@ -6,9 +6,6 @@ Checks if two arrays are not equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  xs?: any[] | undefined,
-  ys?: any[] | undefined
-) => boolean
+(xs?: any[], ys?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->

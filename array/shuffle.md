@@ -6,6 +6,6 @@ Shuffles the given array in random order with Math.random as the default.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, random?: (() => number) | undefined) => any[]
+(xs: any, random?: () => number) => any[]
 ```
 <!-- prettier-ignore-end -->

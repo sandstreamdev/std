@@ -6,7 +6,7 @@ Checks if the given array is present and it is not empty (contains at least one 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: any[] | undefined) => boolean
+(xs?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -59,10 +59,7 @@ Checks if two arrays are not equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  xs?: any[] | undefined,
-  ys?: any[] | undefined
-) => boolean
+(xs?: any[], ys?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -86,7 +83,7 @@ Empty array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-never[]
+any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -185,7 +182,7 @@ Flattens the nested arrays by a single level.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => never[]
+(xs: any) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -399,7 +396,7 @@ Shuffles the given array in random order with Math.random as the default.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, random?: (() => number) | undefined) => any[]
+(xs: any, random?: () => number) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -448,7 +445,7 @@ Sorts the given array without mutating it.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  f?: ((a: any, b: any) => number) | undefined
+  f?: (a: any, b: any) => number
 ) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->

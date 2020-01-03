@@ -17,7 +17,7 @@ Checks if the given array is present and it is not empty (contains at least one 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: any[] | undefined) => boolean
+(xs?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -70,10 +70,7 @@ Checks if two arrays are not equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  xs?: any[] | undefined,
-  ys?: any[] | undefined
-) => boolean
+(xs?: any[], ys?: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -97,7 +94,7 @@ Empty array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-never[]
+any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -196,7 +193,7 @@ Flattens the nested arrays by a single level.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => never[]
+(xs: any) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -410,7 +407,7 @@ Shuffles the given array in random order with Math.random as the default.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, random?: (() => number) | undefined) => any[]
+(xs: any, random?: () => number) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -459,7 +456,7 @@ Sorts the given array without mutating it.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  f?: ((a: any, b: any) => number) | undefined
+  f?: (a: any, b: any) => number
 ) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
@@ -563,7 +560,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(tasks: (() => Promise<any>)[]) => Promise<undefined[]>
+(tasks: (() => Promise<any>)[]) => Promise<any[]>
 ```
 <!-- prettier-ignore-end -->
 
@@ -647,11 +644,11 @@ Runs the given tasks in a sequence.
   now,
   timezoneOffset
 }: {
-  iso?: boolean | undefined;
-  local?: boolean | undefined;
-  now?: Date | undefined;
-  timezoneOffset?: number | undefined;
-}) => (date?: string | number | Date | undefined) => string[]
+  iso?: boolean;
+  local?: boolean;
+  now?: Date;
+  timezoneOffset?: number;
+}) => (date?: string | number | Date) => string[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1042,16 +1039,12 @@ Computes a difference between two objects.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  obj1?:
-    | {
-        [index: string]: any;
-      }
-    | undefined,
-  obj2?:
-    | {
-        [index: string]: any;
-      }
-    | undefined
+  obj1?: {
+    [index: string]: any;
+  },
+  obj2?: {
+    [index: string]: any;
+  }
 ) => object
 ```
 <!-- prettier-ignore-end -->
@@ -1067,30 +1060,26 @@ Provides a way to encode strings and bytes from and into Base64URL.
 <!-- prettier-ignore-start -->
 ```typescript
 {
-  decode: (text: string, context?: DecodeContext | undefined) => string;
+  decode: (text: string, context?: DecodeContext) => string;
   decodeBytes: (
     text: string,
-    context?:
-      | {
-          atob: (byteString: string) => string;
-          TextDecoder: new (encoding: string) => {
-            decode: (input?: Uint8Array | undefined) => string;
-          };
-        }
-      | undefined
+    context?: {
+      atob: (byteString: string) => string;
+      TextDecoder: new (encoding: string) => {
+        decode: (input?: Uint8Array) => string;
+      };
+    }
   ) => number[];
   encode: (
     text: string,
-    context?:
-      | {
-          btoa: (byteString: string) => string;
-          TextEncoder: new () => {
-            encode: (input?: string | undefined) => Uint8Array;
-          };
-        }
-      | undefined
+    context?: {
+      btoa: (byteString: string) => string;
+      TextEncoder: new () => {
+        encode: (input?: string) => Uint8Array;
+      };
+    }
   ) => string;
-  encodeBytes: (bytes: number[], context?: EncodeContext | undefined) => string;
+  encodeBytes: (bytes: number[], context?: EncodeContext) => string;
   fromByteString: (byteString: string) => number[];
   toByteString: (bytes: number[]) => string;
 }
@@ -1283,7 +1272,7 @@ Checks if the given value is a byte.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number | undefined) => boolean
+(x?: number) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1347,7 +1336,7 @@ Checks if given value is an integer.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number | undefined) => boolean
+(x?: number) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1371,7 +1360,7 @@ Checks if the given value is a number in a normal range [0, 1].
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number | undefined) => boolean
+(x?: number) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1433,7 +1422,7 @@ Calculates the average of given array of numbers.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: number[] | undefined) => number
+(xs?: number[]) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -1544,7 +1533,7 @@ Calculates the median of the values. If there is an even number of items, the av
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: number[] | undefined) => number | undefined
+(xs?: number[]) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -1618,7 +1607,7 @@ Checks if the given array is present and it is not empty (contains at least one 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object | undefined) => boolean
+(xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1632,12 +1621,7 @@ Applies the given parameters to the given dictionary of functions.
 ```typescript
 (
   fs: ((...xs: any[]) => any)[]
-) => (
-  ...xs: any[]
-) => {
-  [x: string]: any;
-  [x: number]: any;
-}
+) => (...xs: any[]) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -1812,13 +1796,7 @@ Creates an object from array of key value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-{
-  <T = any>(entries: Iterable<readonly [string | number | symbol, T]>): {
-    [x: string]: T;
-    [x: number]: T;
-  };
-  (entries: Iterable<readonly any[]>): any;
-}
+(keyValuePairs: [string, any][]) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -1842,7 +1820,7 @@ Checks if given key is present in the object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(key: string) => (xs?: any) => boolean
+(key: string) => (xs?: any) => any
 ```
 <!-- prettier-ignore-end -->
 
@@ -1957,7 +1935,7 @@ Checks if the given object is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object | undefined) => boolean
+(xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1985,12 +1963,7 @@ Parses a query string into an object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  xs?: string
-) => {
-  [x: string]: string | boolean;
-  [x: number]: string | boolean;
-}
+(xs?: string) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -2187,7 +2160,7 @@ Checks if the given string is present and is not empty or all whitespace.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: string | undefined) => boolean
+(x?: string) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -2528,10 +2501,10 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
   metaKey,
   shiftKey
 }: {
-  button?: number | undefined;
-  ctrlKey?: boolean | undefined;
-  metaKey?: boolean | undefined;
-  shiftKey?: boolean | undefined;
+  button?: number;
+  ctrlKey?: boolean;
+  metaKey?: boolean;
+  shiftKey?: boolean;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->

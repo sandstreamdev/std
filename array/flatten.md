@@ -6,6 +6,6 @@ Flattens the nested arrays by a single level.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => never[]
+(xs: any) => any[]
 ```
 <!-- prettier-ignore-end -->

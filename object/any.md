@@ -6,6 +6,6 @@ Checks if the given array is present and it is not empty (contains at least one 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object | undefined) => boolean
+(xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->

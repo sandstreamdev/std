@@ -6,12 +6,6 @@ Creates an object from array of key value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-{
-  <T = any>(entries: Iterable<readonly [string | number | symbol, T]>): {
-    [x: string]: T;
-    [x: number]: T;
-  };
-  (entries: Iterable<readonly any[]>): any;
-}
+(keyValuePairs: [string, any][]) => object
 ```
 <!-- prettier-ignore-end -->

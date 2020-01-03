@@ -1,7 +1,7 @@
 {
   "name": "hasKey",
   "description": "Checks if given key is present in the object.",
-  "signature": "(key: string) => (xs?: any) => boolean",
+  "signature": "(key: string) => (xs?: any) => any",
   "examples": [
     {
       "language": "javascript",

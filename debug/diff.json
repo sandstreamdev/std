@@ -1,7 +1,7 @@
 {
   "name": "diff",
   "description": "Computes a difference between two objects.",
-  "signature": "(\n  obj1?:\n    | {\n        [index: string]: any;\n      }\n    | undefined,\n  obj2?:\n    | {\n        [index: string]: any;\n      }\n    | undefined\n) => object",
+  "signature": "(\n  obj1?: {\n    [index: string]: any;\n  },\n  obj2?: {\n    [index: string]: any;\n  }\n) => object",
   "examples": [
     {
       "language": "javascript",

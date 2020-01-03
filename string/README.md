@@ -86,7 +86,7 @@ Checks if the given string is present and is not empty or all whitespace.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: string | undefined) => boolean
+(x?: string) => boolean
 ```
 <!-- prettier-ignore-end -->
 

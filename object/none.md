@@ -6,6 +6,6 @@ Checks if the given object is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object | undefined) => boolean
+(xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->

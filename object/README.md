@@ -6,7 +6,7 @@ Checks if the given array is present and it is not empty (contains at least one 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object | undefined) => boolean
+(xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -20,12 +20,7 @@ Applies the given parameters to the given dictionary of functions.
 ```typescript
 (
   fs: ((...xs: any[]) => any)[]
-) => (
-  ...xs: any[]
-) => {
-  [x: string]: any;
-  [x: number]: any;
-}
+) => (...xs: any[]) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -200,13 +195,7 @@ Creates an object from array of key value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-{
-  <T = any>(entries: Iterable<readonly [string | number | symbol, T]>): {
-    [x: string]: T;
-    [x: number]: T;
-  };
-  (entries: Iterable<readonly any[]>): any;
-}
+(keyValuePairs: [string, any][]) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -230,7 +219,7 @@ Checks if given key is present in the object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(key: string) => (xs?: any) => boolean
+(key: string) => (xs?: any) => any
 ```
 <!-- prettier-ignore-end -->
 
@@ -345,7 +334,7 @@ Checks if the given object is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object | undefined) => boolean
+(xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->
 

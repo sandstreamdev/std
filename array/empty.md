@@ -6,7 +6,7 @@ Empty array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-never[]
+any[]
 ```
 <!-- prettier-ignore-end -->
 

@@ -1,7 +1,7 @@
 {
   "name": "dayRange",
   "description": "TODO: Fill short description here.",
-  "signature": "({\n  iso,\n  local,\n  now,\n  timezoneOffset\n}: {\n  iso?: boolean | undefined;\n  local?: boolean | undefined;\n  now?: Date | undefined;\n  timezoneOffset?: number | undefined;\n}) => (date?: string | number | Date | undefined) => string[]",
+  "signature": "({\n  iso,\n  local,\n  now,\n  timezoneOffset\n}: {\n  iso?: boolean;\n  local?: boolean;\n  now?: Date;\n  timezoneOffset?: number;\n}) => (date?: string | number | Date) => string[]",
   "examples": [
     {
       "language": "javascript",

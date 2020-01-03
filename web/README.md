@@ -41,10 +41,10 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
   metaKey,
   shiftKey
 }: {
-  button?: number | undefined;
-  ctrlKey?: boolean | undefined;
-  metaKey?: boolean | undefined;
-  shiftKey?: boolean | undefined;
+  button?: number;
+  ctrlKey?: boolean;
+  metaKey?: boolean;
+  shiftKey?: boolean;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->

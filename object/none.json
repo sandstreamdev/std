@@ -1,7 +1,7 @@
 {
   "name": "none",
   "description": "Checks if the given object is empty.",
-  "signature": "(xs?: object | undefined) => boolean",
+  "signature": "(xs?: object) => boolean",
   "examples": [
     {
       "language": "javascript",

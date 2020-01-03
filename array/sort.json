@@ -1,7 +1,7 @@
 {
   "name": "sort",
   "description": "Sorts the given array without mutating it.",
-  "signature": "(\n  f?: ((a: any, b: any) => number) | undefined\n) => (xs: any[]) => any[]",
+  "signature": "(\n  f?: (a: any, b: any) => number\n) => (xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",
