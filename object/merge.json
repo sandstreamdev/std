@@ -1,7 +1,7 @@
 {
   "name": "merge",
   "description": "Merges two objects deeply.",
-  "signature": "(a: object, b: object) => object",
+  "signature": "(\n  a: {\n    [index: string]: any;\n  },\n  b: object\n) => object",
   "examples": [
     {
       "language": "javascript",

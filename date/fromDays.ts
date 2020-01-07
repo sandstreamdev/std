@@ -1,3 +1,3 @@
 import fromHours from "./fromHours";
 
-export default days => fromHours(days * 24);
+export default (days: number) => fromHours(days * 24);

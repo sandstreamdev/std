@@ -1,7 +1,7 @@
 {
   "name": "toMinutes",
   "description": "TODO: Fill short description here.",
-  "signature": "(milliseconds: any) => number",
+  "signature": "(milliseconds: number) => number",
   "examples": [
     {
       "language": "javascript",

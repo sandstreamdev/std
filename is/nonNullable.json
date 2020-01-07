@@ -1,0 +1,12 @@
+{
+  "name": "nonNullable",
+  "description": "Checks and asserts the given value is not a null or undefined.",
+  "signature": "<T>(val: T) => val is NonNullable<T>",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "nonNullable(); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

@@ -14,6 +14,6 @@
   local?: boolean;
   now?: Date;
   timezoneOffset?: number;
-}) => (date: any) => any[]
+}) => (date?: string | number | Date) => string[]
 ```
 <!-- prettier-ignore-end -->

@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(year: any) => boolean
+(year: number) => boolean
 ```
 <!-- prettier-ignore-end -->

@@ -1,3 +1,3 @@
 import fromMinutes from "./fromMinutes";
 
-export default hours => fromMinutes(hours * 60);
+export default (hours: number) => fromMinutes(hours * 60);

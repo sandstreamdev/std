@@ -1,7 +1,7 @@
 import toLocalDateTime from "./toLocalDateTime";
 import displayMonth from "./displayMonth";
 
-export default (sourceDate, showDay = false, timezoneOffset = 0) => {
+export default (sourceDate: Date, showDay = false, timezoneOffset = 0) => {
   const localDate = toLocalDateTime(sourceDate, timezoneOffset);
   const day = localDate.getDate();
   const monthIndex = localDate.getMonth();

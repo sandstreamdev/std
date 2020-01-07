@@ -30,6 +30,6 @@ Serializes the given object into a query string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: {}) => string
+(xs?: { [index: string]: any }) => string
 ```
 <!-- prettier-ignore-end -->

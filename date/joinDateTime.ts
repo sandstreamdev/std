@@ -1,1 +1,1 @@
-export default (...xs) => xs.join("T");
+export default (...xs: string[]) => xs.join("T");

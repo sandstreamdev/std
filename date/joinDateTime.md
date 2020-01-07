@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => string
+(...xs: string[]) => string
 ```
 <!-- prettier-ignore-end -->

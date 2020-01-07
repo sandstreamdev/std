@@ -1,7 +1,7 @@
 {
   "name": "toDate",
   "description": "TODO: Fill short description here.",
-  "signature": "(date: any) => string",
+  "signature": "(date: Date) => string",
   "examples": [
     {
       "language": "javascript",

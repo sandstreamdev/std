@@ -1,6 +1,6 @@
 import toLocalDateTime from "./toLocalDateTime";
 
-export default (sourceDate, timezoneOffset = 0) => {
+export default (sourceDate: Date, timezoneOffset: number = 0) => {
   const localDate = toLocalDateTime(sourceDate, timezoneOffset);
 
   const [m, a, y] = [

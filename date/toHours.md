@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->

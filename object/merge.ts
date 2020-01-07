@@ -1,13 +1,13 @@
+import isNonNullable from "../is/nonNullable";
 import isObject from "../is/object";
 import map from "./map";
 
-const isNonNullishObject = (x?: object) =>
-  x !== undefined && x !== null && isObject(x);
+const isNonNullableObject = (x?: object) => isNonNullable(x) && isObject(x);
 
-const merge = (a: object, b: object): object => ({
+const merge = (a: { [index: string]: any }, b: object): object => ({
   ...a,
   ...map((value, key) =>
-    isNonNullishObject(value) && isNonNullishObject(a[key])
+    isNonNullableObject(value) && isNonNullableObject(a[key])
       ? merge(a[key], value)
       : value
   )(b)

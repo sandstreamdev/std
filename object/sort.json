@@ -1,7 +1,7 @@
 {
   "name": "sort",
   "description": "Sorts the given object by a comparator.",
-  "signature": "(f: any) => (xs: any) => object",
+  "signature": "(\n  f: (a: any, b: any) => number\n) => (xs: object) => object",
   "examples": [
     {
       "language": "javascript",

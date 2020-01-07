@@ -1,7 +1,7 @@
 {
   "name": "length",
   "description": "Computes the signed length of the given range.",
-  "signature": "([min, max]: [any, any]) => number",
+  "signature": "([min, max]: [number, number]) => number",
   "examples": [
     {
       "language": "javascript",

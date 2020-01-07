@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => boolean
+(date?: any) => boolean
 ```
 <!-- prettier-ignore-end -->

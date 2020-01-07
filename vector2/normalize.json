@@ -1,7 +1,7 @@
 {
   "name": "normalize",
   "description": "Normalizes the given vector. Returns [0, 0] vector for points.",
-  "signature": "(vector: [number, number]) => number[]",
+  "signature": "(vector: [number, number]) => [number, number]",
   "examples": [
     {
       "language": "javascript",

@@ -1,7 +1,7 @@
 {
   "name": "daysInMonths",
   "description": "TODO: Fill short description here.",
-  "signature": "(leapYear: any) => number[]",
+  "signature": "(\n  leapYear: boolean\n) => [\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number\n]",
   "examples": [
     {
       "language": "javascript",

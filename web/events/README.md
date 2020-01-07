@@ -27,10 +27,10 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
   metaKey,
   shiftKey
 }: {
-  button: any;
-  ctrlKey: any;
-  metaKey: any;
-  shiftKey: any;
+  button?: number;
+  ctrlKey?: boolean;
+  metaKey?: boolean;
+  shiftKey?: boolean;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->

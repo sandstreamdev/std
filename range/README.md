@@ -6,7 +6,7 @@ Checks if the given range is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([min, max]: [any, any]) => boolean
+([min, max]: [number, number]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -27,7 +27,10 @@ Checks if the given ranges are equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => boolean
+(
+  [a, b]: [number, number],
+  [c, d]: [number, number]
+) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -39,7 +42,7 @@ Computes the signed length of the given range.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([min, max]: [any, any]) => number
+([min, max]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
 

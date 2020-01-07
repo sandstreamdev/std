@@ -1,6 +1,12 @@
-export default now => (
-  { endedAt: aEnd, startedAt: aStart },
-  { endedAt: bEnd, startedAt: bStart }
+export default (now: Date | string | number) => (
+  {
+    endedAt: aEnd,
+    startedAt: aStart
+  }: { endedAt: Date | string | number; startedAt: Date | string | number },
+  {
+    endedAt: bEnd,
+    startedAt: bStart
+  }: { endedAt: Date | string | number; startedAt: Date | string | number }
 ) => {
   const aEndDate = new Date(aEnd || now);
   const aStartDate = new Date(aStart || now);

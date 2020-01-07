@@ -1,1 +1,1 @@
-export default seconds => seconds * 1000;
+export default (seconds: number) => seconds * 1000;

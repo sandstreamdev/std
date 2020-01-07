@@ -5,7 +5,7 @@ export const toByteString = bytes =>
   bytes.map(_ => String.fromCharCode(_)).join("");
 
 export const fromByteString = byteString =>
-  [...byteString].map(_ => _.codePointAt(0));
+  [...byteString].map(_ => _.codePointAt(0) || 0);
 
 const ENCODING = "utf-8";
 

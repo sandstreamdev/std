@@ -40,7 +40,10 @@ Calculates a cross product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => number
+(
+  [a, b]: [number, number],
+  [c, d]: [number, number]
+) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -52,7 +55,10 @@ Calculates a dot product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => number
+(
+  [a, b]: [number, number],
+  [c, d]: [number, number]
+) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -141,7 +147,7 @@ Normalizes the given vector. Returns [0, 0] vector for points.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(vector: [number, number]) => number[]
+(vector: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 

@@ -297,7 +297,12 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: object, b: object) => object
+(
+  a: {
+    [index: string]: any;
+  },
+  b: object
+) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -341,6 +346,8 @@ Sorts the given object by a comparator.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => object
+(
+  f: (a: any, b: any) => number
+) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->

@@ -371,7 +371,7 @@ Returns the second element or undefined when there are less than two elements in
 
 <!-- prettier-ignore-start -->
 ```typescript
-([, x]: [any, any]) => any
+([, x]: any[]) => any
 ```
 <!-- prettier-ignore-end -->
 
@@ -573,21 +573,21 @@ Runs the given tasks in a sequence.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  now: any
+  now: string | number | Date
 ) => (
   {
     endedAt: aEnd,
     startedAt: aStart
   }: {
-    endedAt: any;
-    startedAt: any;
+    endedAt: string | number | Date;
+    startedAt: string | number | Date;
   },
   {
     endedAt: bEnd,
     startedAt: bStart
   }: {
-    endedAt: any;
-    startedAt: any;
+    endedAt: string | number | Date;
+    startedAt: string | number | Date;
   }
 ) => number
 ```
@@ -599,7 +599,10 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(min: any, max: any) => (dateStringOrDate: any) => Date
+(
+  min: number | Date,
+  max: number | Date
+) => (dateStringOrDate: string | number | Date) => Date
 ```
 <!-- prettier-ignore-end -->
 
@@ -609,7 +612,10 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, b: any) => number
+(
+  a: string | number | Date,
+  b: string | number | Date
+) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -619,7 +625,10 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(from: any, to: any) => (date?: Date) => boolean
+(
+  from: string | number | Date,
+  to: string | number | Date
+) => (date?: Date) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -639,7 +648,7 @@ Runs the given tasks in a sequence.
   local?: boolean;
   now?: Date;
   timezoneOffset?: number;
-}) => (date: any) => any[]
+}) => (date?: string | number | Date) => string[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -649,7 +658,22 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(leapYear: any) => number[]
+(
+  leapYear: boolean
+) => [
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number
+]
 ```
 <!-- prettier-ignore-end -->
 
@@ -659,7 +683,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(year: any) => number
+(year: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -669,7 +693,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(monthIndex: any) => string
+(monthIndex: number) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -679,7 +703,10 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(source: any, showSeconds: any) => string
+(
+  source: [number, number, number],
+  showSeconds: boolean
+) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -690,7 +717,7 @@ Runs the given tasks in a sequence.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  date: any,
+  date: string | number | Date,
   timezoneOffset?: number,
   local?: boolean
 ) => Date
@@ -703,7 +730,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(sourceDate: any, timezoneOffset?: number) => string
+(sourceDate: Date, timezoneOffset?: number) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -714,7 +741,7 @@ Runs the given tasks in a sequence.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  sourceDate: any,
+  sourceDate: Date,
   showSeconds?: boolean,
   timezoneOffset?: number
 ) => string
@@ -728,7 +755,7 @@ Runs the given tasks in a sequence.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  sourceDate: any,
+  sourceDate: Date,
   showDay?: boolean,
   timezoneOffset?: number
 ) => string
@@ -741,7 +768,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(duration: any, showSeconds?: boolean) => string
+(duration: number, showSeconds?: boolean) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -752,7 +779,7 @@ Runs the given tasks in a sequence.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  sourceDate: any,
+  sourceDate: Date,
   showSeconds?: boolean,
   timezoneOffset?: number
 ) => string
@@ -765,7 +792,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(days: any) => number
+(days: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -775,7 +802,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(hours: any) => number
+(hours: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -785,7 +812,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(minutes: any) => number
+(minutes: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -795,7 +822,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(seconds: any) => number
+(seconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -805,7 +832,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => string
+(...xs: string[]) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -815,7 +842,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(year: any) => boolean
+(year: number) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -835,7 +862,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => Date
+(date: number | Date) => Date
 ```
 <!-- prettier-ignore-end -->
 
@@ -855,7 +882,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(dateTimeString: any) => any
+(dateTimeString: string) => string[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -866,7 +893,7 @@ string[]
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  date: any,
+  date: string | number | Date,
   timezoneOffset?: number,
   local?: boolean
 ) => Date
@@ -879,7 +906,10 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(sourceDate: any, numberOfDays: any) => Date
+(
+  sourceDate: string | number | Date,
+  numberOfDays: number
+) => Date
 ```
 <!-- prettier-ignore-end -->
 
@@ -889,7 +919,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => string
+(date: Date) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -899,7 +929,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: (string | number | Date)[]) => Date[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -909,7 +939,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -919,7 +949,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -929,7 +959,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+(x: Date) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -939,7 +969,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => string
+(date: Date) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -949,7 +979,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any, timezoneOffset?: number) => Date
+(date: Date, timezoneOffset?: number) => Date
 ```
 <!-- prettier-ignore-end -->
 
@@ -959,7 +989,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -969,7 +999,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -979,7 +1009,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => boolean
+(date?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1008,7 +1038,14 @@ Computes a difference between two objects.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(obj1: object, obj2: object) => object
+(
+  obj1?: {
+    [index: string]: any;
+  },
+  obj2?: {
+    [index: string]: any;
+  }
+) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -1023,15 +1060,7 @@ Provides a way to encode strings and bytes from and into Base64URL.
 <!-- prettier-ignore-start -->
 ```typescript
 {
-  decode: (
-    text: string,
-    context?: {
-      atob: (byteString: string) => string;
-      TextDecoder: new (encoding: string) => {
-        decode: (input?: Uint8Array) => string;
-      };
-    }
-  ) => string;
+  decode: (text: string, context?: DecodeContext) => string;
   decodeBytes: (
     text: string,
     context?: {
@@ -1050,15 +1079,7 @@ Provides a way to encode strings and bytes from and into Base64URL.
       };
     }
   ) => string;
-  encodeBytes: (
-    bytes: number[],
-    context?: {
-      btoa: (byteString: string) => string;
-      TextEncoder: new () => {
-        encode: (input?: string) => Uint8Array;
-      };
-    }
-  ) => string;
+  encodeBytes: (bytes: number[], context?: EncodeContext) => string;
   fromByteString: (byteString: string) => number[];
   toByteString: (bytes: number[]) => string;
 }
@@ -1316,6 +1337,18 @@ Checks if given value is an integer.
 <!-- prettier-ignore-start -->
 ```typescript
 (x?: number) => boolean
+```
+<!-- prettier-ignore-end -->
+
+#### nonNullable
+
+Checks and asserts the given value is not a null or undefined.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+<T>(val: T) => val is NonNullable<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -1865,7 +1898,12 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: object, b: object) => object
+(
+  a: {
+    [index: string]: any;
+  },
+  b: object
+) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -1909,7 +1947,9 @@ Sorts the given object by a comparator.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => object
+(
+  f: (a: any, b: any) => number
+) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -1947,7 +1987,7 @@ Serializes the given object into a query string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: {}) => string
+(xs?: { [index: string]: any }) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -1961,7 +2001,7 @@ Checks if the given range is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([min, max]: [any, any]) => boolean
+([min, max]: [number, number]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1982,7 +2022,10 @@ Checks if the given ranges are equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => boolean
+(
+  [a, b]: [number, number],
+  [c, d]: [number, number]
+) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1994,7 +2037,7 @@ Computes the signed length of the given range.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([min, max]: [any, any]) => number
+([min, max]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -2177,7 +2220,10 @@ Calculates a cross product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => number
+(
+  [a, b]: [number, number],
+  [c, d]: [number, number]
+) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -2189,7 +2235,10 @@ Calculates a dot product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([a, b]: [any, any], [c, d]: [any, any]) => number
+(
+  [a, b]: [number, number],
+  [c, d]: [number, number]
+) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -2278,7 +2327,7 @@ Normalizes the given vector. Returns [0, 0] vector for points.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(vector: [number, number]) => number[]
+(vector: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
@@ -2452,10 +2501,10 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
   metaKey,
   shiftKey
 }: {
-  button: any;
-  ctrlKey: any;
-  metaKey: any;
-  shiftKey: any;
+  button?: number;
+  ctrlKey?: boolean;
+  metaKey?: boolean;
+  shiftKey?: boolean;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->

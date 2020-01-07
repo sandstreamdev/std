@@ -6,6 +6,8 @@ Sorts the given object by a comparator.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: any) => (xs: any) => object
+(
+  f: (a: any, b: any) => number
+) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->

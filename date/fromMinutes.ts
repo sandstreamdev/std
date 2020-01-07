@@ -1,3 +1,3 @@
 import fromSeconds from "./fromSeconds";
 
-export default minutes => fromSeconds(minutes * 60);
+export default (minutes: number) => fromSeconds(minutes * 60);

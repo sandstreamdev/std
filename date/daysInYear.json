@@ -1,7 +1,7 @@
 {
   "name": "daysInYear",
   "description": "TODO: Fill short description here.",
-  "signature": "(year: any) => number",
+  "signature": "(year: number) => number",
   "examples": [
     {
       "language": "javascript",

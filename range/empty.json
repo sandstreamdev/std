@@ -1,7 +1,7 @@
 {
   "name": "empty",
   "description": "Checks if the given range is empty.",
-  "signature": "([min, max]: [any, any]) => boolean",
+  "signature": "([min, max]: [number, number]) => boolean",
   "examples": [
     {
       "language": "javascript",

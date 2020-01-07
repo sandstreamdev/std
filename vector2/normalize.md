@@ -6,6 +6,6 @@ Normalizes the given vector. Returns [0, 0] vector for points.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(vector: [number, number]) => number[]
+(vector: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->

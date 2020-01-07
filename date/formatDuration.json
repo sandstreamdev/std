@@ -1,7 +1,7 @@
 {
   "name": "formatDuration",
   "description": "TODO: Fill short description here.",
-  "signature": "(duration: any, showSeconds?: boolean) => string",
+  "signature": "(duration: number, showSeconds?: boolean) => string",
   "examples": [
     {
       "language": "javascript",

@@ -1,7 +1,7 @@
 {
   "name": "second",
   "description": "Returns the second element or undefined when there are less than two elements in the given array.",
-  "signature": "([, x]: [any, any]) => any",
+  "signature": "([, x]: any[]) => any",
   "examples": [
     {
       "language": "javascript",

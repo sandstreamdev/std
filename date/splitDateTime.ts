@@ -1,1 +1,1 @@
-export default dateTimeString => dateTimeString.split("T");
+export default (dateTimeString: string) => dateTimeString.split("T");

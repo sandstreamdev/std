@@ -5,7 +5,7 @@
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  sourceDate: any,
+  sourceDate: Date,
   showSeconds?: boolean,
   timezoneOffset?: number
 ) => string

@@ -4,6 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(sourceDate: any, timezoneOffset?: number) => string
+(sourceDate: Date, timezoneOffset?: number) => string
 ```
 <!-- prettier-ignore-end -->

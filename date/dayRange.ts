@@ -10,7 +10,7 @@ export default ({
   local = true,
   now = new Date(),
   timezoneOffset = 0
-}) => date => {
+}) => (date?: string | number | Date) => {
   const convert = iso ? toISO : toISOFromLocalDateTime;
 
   const [start] = splitDateTime(

@@ -1,7 +1,7 @@
 {
   "name": "displayMonth",
   "description": "TODO: Fill short description here.",
-  "signature": "(monthIndex: any) => string",
+  "signature": "(monthIndex: number) => string",
   "examples": [
     {
       "language": "javascript",

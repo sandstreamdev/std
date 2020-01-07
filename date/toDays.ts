@@ -1,3 +1,3 @@
 import toHours from "./toHours";
 
-export default milliseconds => toHours(milliseconds) / 24;
+export default (milliseconds: number) => toHours(milliseconds) / 24;

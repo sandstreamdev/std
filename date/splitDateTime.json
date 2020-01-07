@@ -1,7 +1,7 @@
 {
   "name": "splitDateTime",
   "description": "TODO: Fill short description here.",
-  "signature": "(dateTimeString: any) => any",
+  "signature": "(dateTimeString: string) => string[]",
   "examples": [
     {
       "language": "javascript",

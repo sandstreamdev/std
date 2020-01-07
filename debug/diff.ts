@@ -40,8 +40,11 @@ const compareValues = (value1: any, value2: any) => {
   return VALUE_UPDATED;
 };
 
-const diff = (obj1: object, obj2: object) => {
-  if (isValue(obj1) || isValue(obj2)) {
+const diff = (
+  obj1?: { [index: string]: any },
+  obj2?: { [index: string]: any }
+): object => {
+  if (!obj1 || !obj2 || isValue(obj1) || isValue(obj2)) {
     const comparisonResult = compareValues(obj1, obj2);
 
     return comparisonResult !== VALUE_UNCHANGED
@@ -49,31 +52,33 @@ const diff = (obj1: object, obj2: object) => {
           type: comparisonResult,
           data: [obj1, obj2]
         }
-      : null;
+      : {};
   }
 
-  const result = {};
+  const result: { [index: string]: any } = {};
 
   for (const key in obj1) {
-    if (isFunction(obj1[key])) {
+    const value1 = obj1[key];
+
+    if (isFunction(value1)) {
       continue;
     }
 
-    let value2 = undefined;
+    const value2 = obj2[key];
 
-    if (isDefined(obj2[key])) {
-      value2 = obj2[key];
-    }
-
-    result[key] = diff(obj1[key], value2);
+    result[key] = diff(value1, value2);
   }
 
   for (const key in obj2) {
-    if (isFunction(obj2[key]) || isDefined(result[key])) {
+    const value2 = obj2[key];
+
+    const existingValue = result[key];
+
+    if (isFunction(value2) || isDefined(existingValue)) {
       continue;
     }
 
-    result[key] = diff(undefined, obj2[key]);
+    result[key] = diff(undefined, value2);
   }
 
   return filter(

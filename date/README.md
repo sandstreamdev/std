@@ -5,21 +5,21 @@
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  now: any
+  now: string | number | Date
 ) => (
   {
     endedAt: aEnd,
     startedAt: aStart
   }: {
-    endedAt: any;
-    startedAt: any;
+    endedAt: string | number | Date;
+    startedAt: string | number | Date;
   },
   {
     endedAt: bEnd,
     startedAt: bStart
   }: {
-    endedAt: any;
-    startedAt: any;
+    endedAt: string | number | Date;
+    startedAt: string | number | Date;
   }
 ) => number
 ```
@@ -31,7 +31,10 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(min: any, max: any) => (dateStringOrDate: any) => Date
+(
+  min: number | Date,
+  max: number | Date
+) => (dateStringOrDate: string | number | Date) => Date
 ```
 <!-- prettier-ignore-end -->
 
@@ -41,7 +44,10 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, b: any) => number
+(
+  a: string | number | Date,
+  b: string | number | Date
+) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -51,7 +57,10 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(from: any, to: any) => (date?: Date) => boolean
+(
+  from: string | number | Date,
+  to: string | number | Date
+) => (date?: Date) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -71,7 +80,7 @@
   local?: boolean;
   now?: Date;
   timezoneOffset?: number;
-}) => (date: any) => any[]
+}) => (date?: string | number | Date) => string[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -81,7 +90,22 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(leapYear: any) => number[]
+(
+  leapYear: boolean
+) => [
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number
+]
 ```
 <!-- prettier-ignore-end -->
 
@@ -91,7 +115,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(year: any) => number
+(year: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -101,7 +125,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(monthIndex: any) => string
+(monthIndex: number) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -111,7 +135,10 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(source: any, showSeconds: any) => string
+(
+  source: [number, number, number],
+  showSeconds: boolean
+) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -122,7 +149,7 @@
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  date: any,
+  date: string | number | Date,
   timezoneOffset?: number,
   local?: boolean
 ) => Date
@@ -135,7 +162,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(sourceDate: any, timezoneOffset?: number) => string
+(sourceDate: Date, timezoneOffset?: number) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -146,7 +173,7 @@
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  sourceDate: any,
+  sourceDate: Date,
   showSeconds?: boolean,
   timezoneOffset?: number
 ) => string
@@ -160,7 +187,7 @@
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  sourceDate: any,
+  sourceDate: Date,
   showDay?: boolean,
   timezoneOffset?: number
 ) => string
@@ -173,7 +200,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(duration: any, showSeconds?: boolean) => string
+(duration: number, showSeconds?: boolean) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -184,7 +211,7 @@
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  sourceDate: any,
+  sourceDate: Date,
   showSeconds?: boolean,
   timezoneOffset?: number
 ) => string
@@ -197,7 +224,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(days: any) => number
+(days: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -207,7 +234,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(hours: any) => number
+(hours: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -217,7 +244,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(minutes: any) => number
+(minutes: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -227,7 +254,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(seconds: any) => number
+(seconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -237,7 +264,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => string
+(...xs: string[]) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -247,7 +274,7 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(year: any) => boolean
+(year: number) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -267,7 +294,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => Date
+(date: number | Date) => Date
 ```
 <!-- prettier-ignore-end -->
 
@@ -287,7 +314,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(dateTimeString: any) => any
+(dateTimeString: string) => string[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -298,7 +325,7 @@ string[]
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  date: any,
+  date: string | number | Date,
   timezoneOffset?: number,
   local?: boolean
 ) => Date
@@ -311,7 +338,10 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(sourceDate: any, numberOfDays: any) => Date
+(
+  sourceDate: string | number | Date,
+  numberOfDays: number
+) => Date
 ```
 <!-- prettier-ignore-end -->
 
@@ -321,7 +351,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => string
+(date: Date) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -331,7 +361,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any
+(xs: (string | number | Date)[]) => Date[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -341,7 +371,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -351,7 +381,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -361,7 +391,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+(x: Date) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -371,7 +401,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => string
+(date: Date) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -381,7 +411,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any, timezoneOffset?: number) => Date
+(date: Date, timezoneOffset?: number) => Date
 ```
 <!-- prettier-ignore-end -->
 
@@ -391,7 +421,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -401,7 +431,7 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(milliseconds: any) => number
+(milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -411,6 +441,6 @@ string[]
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date: any) => boolean
+(date?: any) => boolean
 ```
 <!-- prettier-ignore-end -->

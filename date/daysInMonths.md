@@ -4,6 +4,21 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(leapYear: any) => number[]
+(
+  leapYear: boolean
+) => [
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number
+]
 ```
 <!-- prettier-ignore-end -->

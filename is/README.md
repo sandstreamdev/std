@@ -94,6 +94,18 @@ Checks if given value is an integer.
 ```
 <!-- prettier-ignore-end -->
 
+# nonNullable
+
+Checks and asserts the given value is not a null or undefined.
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+<T>(val: T) => val is NonNullable<T>
+```
+<!-- prettier-ignore-end -->
+
 # normal
 
 Checks if the given value is a number in a normal range [0, 1].

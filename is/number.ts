@@ -1,2 +1,7 @@
+import nonNullable from "./nonNullable";
+
 export default (x?: any) =>
-  typeof x === "number" && !Number.isNaN(x) && Number.isFinite(x);
+  nonNullable(x) &&
+  typeof x === "number" &&
+  !Number.isNaN(x) &&
+  Number.isFinite(x);
