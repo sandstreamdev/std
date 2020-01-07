@@ -1,5 +1,6 @@
 import any from "./any";
 import are from "./are";
+import chunk from "./chunk";
 import difference from "./difference";
 import differs from "./differs";
 import duplicates from "./duplicates";
@@ -42,6 +43,7 @@ import zipWith from "./zipWith";
 export {
   any,
   are,
+  chunk,
   difference,
   differs,
   duplicates,
@@ -85,6 +87,7 @@ export {
 export default {
   any,
   are,
+  chunk,
   difference,
   differs,
   duplicates,

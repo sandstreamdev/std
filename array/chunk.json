@@ -1,0 +1,16 @@
+{
+  "name": "chunk",
+  "description": "TODO: Fill short description here.",
+  "signature": "(size: number) => (xs: any[]) => any",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "chunk(2)(['a', 'b', 'c', 'd']); // ⇒ [['a', 'b'], ['c', 'd']]"
+    },
+    {
+      "language": "javascript",
+      "content": "chunk(3)(['a', 'b', 'c', 'd']); // ⇒ [['a', 'b', 'c'], ['d']]"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}
