@@ -1,5 +1,7 @@
 # chunk
 
+Returns the new array of chunks.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

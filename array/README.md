@@ -43,6 +43,8 @@ Checks if given arguments are all `Arrays`.
 
 # chunk
 
+Returns the new array of chunks.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

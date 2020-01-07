@@ -1,6 +1,6 @@
 {
   "name": "chunk",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns the new array of chunks.",
   "signature": "(size: number) => (xs: any[]) => any",
   "examples": [
     {
