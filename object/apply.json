@@ -1,6 +1,6 @@
 {
   "name": "apply",
-  "description": "TODO: Fill short description here.",
+  "description": "Applies the given parameters to the given dictionary of functions.",
   "signature": "(\n  fs: ((...xs: any[]) => any)[]\n) => (...xs: any[]) => object",
   "examples": [
     {

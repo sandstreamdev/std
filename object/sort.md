@@ -1,5 +1,7 @@
 # sort
 
+Sorts the given object by a comparator.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

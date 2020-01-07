@@ -1,1 +1,1 @@
-export default xs => Object.values(xs)[0];
+export default (xs: object): any => Object.values(xs)[0];

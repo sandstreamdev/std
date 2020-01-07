@@ -1,11 +1,11 @@
 {
   "name": "defined",
-  "description": "TODO: Fill short description here.",
-  "signature": "(x: any) => boolean",
+  "description": "Checks if given value is defined.",
+  "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "defined(); // ⇒ TODO"
+      "content": "defined(undefined); // ⇒ false"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

@@ -19,4 +19,8 @@ describe("serialize", () => {
       )
     ).toEqual({ test: true, value: "a string with spaces" });
   });
+
+  it("handles default value", () => {
+    expect(serialize()).toEqual("");
+  });
 });

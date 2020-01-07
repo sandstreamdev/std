@@ -1,11 +1,11 @@
 {
   "name": "first",
-  "description": "TODO: Fill short description here.",
-  "signature": "(xs: any) => unknown",
+  "description": "Returns the first value in the given object. Follows default object iteration order.",
+  "signature": "(xs: object) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "first(); // ⇒ TODO"
+      "content": "first({ a: 1, b: 2, c: 3 }); // ⇒ 1"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

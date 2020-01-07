@@ -1,3 +1,3 @@
 import number from "./number";
 
-export default x => number(x) && x >= 0 && x <= 1;
+export default (x?: number) => number(x) && x >= 0 && x <= 1;

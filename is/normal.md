@@ -1,9 +1,11 @@
 # normal
 
+Checks if the given value is a number in a normal range [0, 1].
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => boolean
+(x?: number) => boolean
 ```
 <!-- prettier-ignore-end -->

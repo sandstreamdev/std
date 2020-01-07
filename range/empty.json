@@ -1,11 +1,11 @@
 {
   "name": "empty",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given range is empty.",
   "signature": "([min, max]: [any, any]) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "empty(); // ⇒ TODO"
+      "content": "empty([2, 2]); // ⇒ true\nempty([1, 5]); // ⇒ false"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

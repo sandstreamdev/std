@@ -36,20 +36,18 @@ describe("diff", () => {
   });
 
   it("supports dates", () => {
-    expect(
-      diff(
-        { a: new Date("2019-12-13T12:15:00.000Z") },
-        { a: new Date("2019-12-23T12:30:00.000Z") }
-      )
-    ).toEqual({
+    const a = new Date("2019-12-13T12:15:00.000Z");
+    const aClone = new Date("2019-12-13T12:15:00.000Z");
+    const b = new Date("2019-12-23T12:30:00.000Z");
+
+    expect(diff({ a }, { a: b })).toEqual({
       a: {
-        data: [
-          new Date("2019-12-13T12:15:00.000Z"),
-          new Date("2019-12-23T12:30:00.000Z")
-        ],
+        data: [a, b],
         type: VALUE_UPDATED
       }
     });
+
+    expect(diff({ a }, { a: aClone })).toEqual({});
   });
 
   it("supports arrays", () => {
@@ -72,7 +70,10 @@ describe("diff", () => {
   });
 
   it("ignores functions", () => {
-    expect(diff({ a: 1, f: x => x }, { a: 5, f: y => y + 3 })).toEqual({
+    const f = (x: number) => x;
+    const g = (y: number) => y + 3;
+
+    expect(diff({ a: 1, f }, { a: 5, f: g })).toEqual({
       a: { data: [1, 5], type: VALUE_UPDATED }
     });
   });

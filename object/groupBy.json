@@ -1,7 +1,7 @@
 {
   "name": "groupBy",
-  "description": "TODO: Fill short description here.",
-  "signature": "(selector: any) => (xs: any) => any",
+  "description": "Groups given array of values by the given key selector.",
+  "signature": "(selector: (x: any) => string) => (xs: any[]) => object",
   "examples": [
     {
       "language": "javascript",

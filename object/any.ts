@@ -1,3 +1,3 @@
 import length from "./length";
 
-export default xs => xs && length(xs) > 0;
+export default (xs?: object): boolean => (xs ? length(xs) > 0 : false);

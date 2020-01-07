@@ -32,4 +32,10 @@ describe("parse", () => {
       test: "string with spaces"
     });
   });
+
+  it("handles default values", () => {
+    expect(parse()).toEqual({});
+
+    expect(parse("")).toEqual({});
+  });
 });

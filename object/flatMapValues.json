@@ -1,7 +1,7 @@
 {
   "name": "flatMapValues",
-  "description": "TODO: Fill short description here.",
-  "signature": "(f: any) => (xs: any) => any",
+  "description": "Flat maps the values of the given object.",
+  "signature": "(\n  f: (value: any, key: string, context: object) => boolean\n) => (xs: object) => any[]",
   "examples": [
     {
       "language": "javascript",

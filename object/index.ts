@@ -8,7 +8,6 @@ import filter from "./filter";
 import find from "./find";
 import findEntry from "./findEntry";
 import findKey from "./findKey";
-import findValue from "./findValue";
 import first from "./first";
 import flatMapValues from "./flatMapValues";
 import fromEntries from "./fromEntries";
@@ -34,7 +33,6 @@ export {
   find,
   findEntry,
   findKey,
-  findValue,
   first,
   flatMapValues,
   fromEntries,
@@ -61,7 +59,6 @@ export default {
   find,
   findEntry,
   findKey,
-  findValue,
   first,
   flatMapValues,
   fromEntries,

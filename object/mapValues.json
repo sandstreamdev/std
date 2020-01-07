@@ -1,7 +1,7 @@
 {
   "name": "mapValues",
-  "description": "TODO: Fill short description here.",
-  "signature": "(f: any) => (xs: any) => any[]",
+  "description": "Maps and returns an array of transformed object values.",
+  "signature": "(\n  f: (value: any, key: string, context: object) => any\n) => (xs: object) => any[]",
   "examples": [
     {
       "language": "javascript",

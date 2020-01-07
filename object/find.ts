@@ -1,8 +1,9 @@
-import entries from "./entries";
+import findEntry from "./findEntry";
 
-export default predicate => xs => {
-  const [, value] =
-    entries(xs).find(([key, value]) => predicate(value, key, xs)) || [];
+export default (
+  predicate: (value: any, key: string, context: object) => boolean
+) => (xs: object): any => {
+  const [, value] = findEntry(predicate)(xs) || [];
 
   return value;
 };

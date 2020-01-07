@@ -1,6 +1,6 @@
 {
   "name": "sort",
-  "description": "TODO: Fill short description here.",
+  "description": "Sorts the given object by a comparator.",
   "signature": "(f: any) => (xs: any) => object",
   "examples": [
     {

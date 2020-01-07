@@ -41,10 +41,6 @@ const compareValues = (value1, value2) => {
 };
 
 const diff = (obj1, obj2) => {
-  if (isFunction(obj1) || isFunction(obj2)) {
-    throw "Invalid argument. Function given, object expected.";
-  }
-
   if (isValue(obj1) || isValue(obj2)) {
     const comparisonResult = compareValues(obj1, obj2);
 

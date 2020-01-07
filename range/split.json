@@ -1,7 +1,7 @@
 {
   "name": "split",
-  "description": "TODO: Fill short description here.",
-  "signature": "(used: any, sourceRange?: number[]) => (range: any) => any",
+  "description": "Splits the given range in subranges by excluding the given used ranged.",
+  "signature": "(\n  used: [number, number][],\n  sourceRange?: number[]\n) => (range: [number, number]) => [number, number][]",
   "examples": [
     {
       "language": "javascript",

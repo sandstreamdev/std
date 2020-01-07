@@ -2,7 +2,10 @@ import isNumber from "../is/number";
 import clamp from "../math/clamp";
 import empty from "./empty";
 
-const split = (used, sourceRange = [-Infinity, Infinity]) => range => {
+const split = (
+  used: [number, number][],
+  sourceRange = [-Infinity, Infinity]
+) => (range: [number, number]): [number, number][] => {
   if (empty(range) || !range.every(isNumber)) {
     return [];
   }
@@ -30,14 +33,14 @@ const split = (used, sourceRange = [-Infinity, Infinity]) => range => {
   );
 
   const clampLeft = clamp(freeLeftMin, freeLeftMax);
-  const clampedLeft = range.map(clampLeft);
+  const [clampedLeftMin, clampedLeftMax] = range.map(clampLeft);
 
-  const lefts = split(xs, sourceRange)(clampedLeft);
+  const lefts = split(xs, sourceRange)([clampedLeftMin, clampedLeftMax]);
 
   const clampRight = clamp(freeRightMin, freeRightMax);
-  const clampedRight = range.map(clampRight);
+  const [clampedRightMin, clampedRightMax] = range.map(clampRight);
 
-  const rights = split(xs, sourceRange)(clampedRight);
+  const rights = split(xs, sourceRange)([clampedRightMin, clampedRightMax]);
 
   return [...lefts, ...rights].filter(range => !empty(range));
 };

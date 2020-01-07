@@ -1,9 +1,11 @@
 # length
 
+Returns the number of entries within the given object.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => number
+(xs: object) => number
 ```
 <!-- prettier-ignore-end -->

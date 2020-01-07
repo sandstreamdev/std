@@ -1,11 +1,11 @@
 {
   "name": "byte",
-  "description": "TODO: Fill short description here.",
-  "signature": "(x: any) => boolean",
+  "description": "Checks if the given value is a byte.",
+  "signature": "(x?: number) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "byte(); // ⇒ TODO"
+      "content": "byte(128); // ⇒ true"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

@@ -1,9 +1,19 @@
 # enumerable
 
+Creates a 1 to 1 mapping of given values as an object.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => any
+(...xs: string[]) => object
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+enumerable('TEST', 'X', 'Y'); // ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }
 ```
 <!-- prettier-ignore-end -->

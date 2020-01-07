@@ -1,6 +1,6 @@
 {
   "name": "equals",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given ranges are equal.",
   "signature": "([a, b]: [any, any], [c, d]: [any, any]) => boolean",
   "examples": [
     {

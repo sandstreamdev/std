@@ -1,4 +1,4 @@
-export default (equals: (x: any[], ay: any) => boolean) => (
+export default (equals: (x: any, y: any) => boolean) => (
   f: (...xs: any[]) => any
 ) => {
   let memoized = undefined;
