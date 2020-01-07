@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/default.css" />
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
-        var element = document.getElementById('date/subtractDays');
+        var element = document.getElementById('is/nonNullable');
   element.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
   element.classList.add('selected');
       });
@@ -53,19 +53,16 @@
       </div>
       <div class="content"><div class="std-item">
     <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
+      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
     </div>
     <div>
-      <h3 class="name"><a href="date/subtractDays">subtractDays</a></h3>
-      
+      <h3 class="name"><a href="is/nonNullable">nonNullable</a></h3>
+      <div class="description"><span>Checks and asserts the given value is not a null or undefined.</span></div>
     </div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
-      <pre><code class="hljs"><span>(
-  sourceDate: <span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span> | <span class="hljs-built_in">Date</span>,
-  numberOfDays: <span class="hljs-built_in">number</span>
-) =&gt; <span class="hljs-built_in">Date</span></span></code></pre>
+      <pre><code class="hljs"><span>&lt;T&gt;<span class="hljs-function">(<span class="hljs-params">val: T</span>) =&gt;</span> val is NonNullable&lt;T&gt;</span></code></pre>
     </div>
   </div>
     
