@@ -1,6 +1,6 @@
 {
   "name": "@sandstreamdev/std",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Modern library of statically-typed modular functions for daily use in JavaScript and TypeScript projects.",
   "type": "module",
   "module": "index.js",
