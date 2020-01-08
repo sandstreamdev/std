@@ -3,6 +3,12 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/sandstreamdev/std.svg)](https://greenkeeper.io/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
+## Installation
+
+```sh
+npm install @sandstreamdev/std
+```
+
 ## Documentation
 
 <!-- DOCS:START - Do not remove or modify this section -->
