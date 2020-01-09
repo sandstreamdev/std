@@ -209,7 +209,7 @@ body.toc-active aside {
   padding: 0 !important;
   margin-right: 8px;
   user-select: none;
-  margin-left: -11px;
+  margin-left: -10px;
   flex-shrink: 0;
   cursor: pointer;
 }
