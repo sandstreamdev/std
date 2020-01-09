@@ -191,13 +191,15 @@ Flattens the nested arrays by a single level.
 
 #### insert
 
-Inserts item to the array by specific index.
+Inserts the given item to the array at a specific index.
 
 ##### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(index: number, item: any) => ([...xs]: any[]) => any[]
+(
+  index: number
+) => (item: any) => ([...xs]: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -205,19 +207,11 @@ Inserts item to the array by specific index.
 
 <!-- prettier-ignore-start -->
 ```javascript
-insert(0, 4)([1, 2, 3]); // ⇒ [4, 1, 2, 3]
+insert(0)('d')(['a', 'b', 'c']); // ⇒ ['d', 'a', 'b', 'c']
 ```
 
 ```javascript
-insert(-1, 0)([1, 2, 3]); // ⇒ [0, 1, 2, 3]
-```
-
-```javascript
-insert(3, 4)([1, 2, 3]); // ⇒ [1, 2, 3, 4]
-```
-
-```javascript
-insert(4, 5)([]); // ⇒ [5]
+insert(1)('d')(['a', 'b', 'c']); // ⇒ ['a', 'd', 'b', 'c']
 ```
 <!-- prettier-ignore-end -->
 

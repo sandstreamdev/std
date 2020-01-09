@@ -1,24 +1,16 @@
 {
   "name": "insert",
-  "description": "Inserts item to the array by specific index.",
-  "signature": "(index: number, item: any) => ([...xs]: any[]) => any[]",
+  "description": "Inserts the given item to the array at a specific index.",
+  "signature": "(\n  index: number\n) => (item: any) => ([...xs]: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",
-      "content": "insert(0, 4)([1, 2, 3]); // ⇒ [4, 1, 2, 3]"
+      "content": "insert(0)('d')(['a', 'b', 'c']); // ⇒ ['d', 'a', 'b', 'c']"
     },
     {
       "language": "javascript",
-      "content": "insert(-1, 0)([1, 2, 3]); // ⇒ [0, 1, 2, 3]"
-    },
-    {
-      "language": "javascript",
-      "content": "insert(3, 4)([1, 2, 3]); // ⇒ [1, 2, 3, 4]"
-    },
-    {
-      "language": "javascript",
-      "content": "insert(4, 5)([]); // ⇒ [5]"
+      "content": "insert(1)('d')(['a', 'b', 'c']); // ⇒ ['a', 'd', 'b', 'c']"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["TODO: List questions that may this function answer."]
 }
