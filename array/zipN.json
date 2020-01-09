@@ -1,7 +1,7 @@
 {
   "name": "zipN",
   "description": "Zips given arrays",
-  "signature": "(xs: any[], ...ys: any[]) => any[]",
+  "signature": "(...xs: any[]) => any",
   "examples": [
     {
       "language": "javascript",
