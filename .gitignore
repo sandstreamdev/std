@@ -5,3 +5,4 @@ index.umd.js
 **/*.d.ts
 .coverage
 docs/dist
+!*.interface.d.ts
