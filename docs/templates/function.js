@@ -37,6 +37,26 @@ const nameFragment = (name, pathParts) =>
       )}<span>/</span><a href="${getPath(pathParts, name)}">${name}</a></h3>`
     : "";
 
+const blobUrl = "https://github.com/sandstreamdev/std/blob/master";
+
+const sourcePath = (name, partPaths, extension) =>
+  `${[blobUrl, partPaths, name].join("/")}${extension}`;
+
+const metaFragment = (name, pathParts) =>
+  name
+    ? `<p class="meta">
+      <a href="${sourcePath(
+        name,
+        pathParts,
+        ".ts"
+      )}">TypeScript source</a> • <a href="${sourcePath(
+        name,
+        pathParts,
+        ".js"
+      )}">JavaScript source</a>
+    </p>`
+    : "";
+
 const descriptionFragment = description => {
   if (!description || description.startsWith("TODO")) {
     return "";
@@ -115,6 +135,7 @@ const funcTemplate = (
     ${signatureFragment(signature)}
     ${examplesFragment(examples, pathParts, name)}
     ${questionsFragment(questions)}
+    ${metaFragment(name, pathParts)}
   </article>`.trimLeft();
 
   return content;

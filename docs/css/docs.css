@@ -190,7 +190,8 @@ aside .module-name:hover,
 }
 
 .breadcrumbs > a:hover {
-  color: black;
+  color: #0275d8;
+  text-decoration: underline;
 }
 
 .breadcrumbs > span {
@@ -255,9 +256,20 @@ footer {
 
 footer a,
 footer a:visited {
-  color: #3377c0;
+  color: #0275d8;
 }
 
 footer a:hover {
-  color: #2f6cb6;
+  color: #0275d8;
+  text-decoration: underline;
+}
+
+.meta a,
+.meta a:visited {
+  color: #0275d8;
+}
+
+.meta a:hover {
+  color: #0275d8;
+  text-decoration: underline;
 }
