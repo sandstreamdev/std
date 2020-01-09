@@ -7,6 +7,7 @@ import { scrollTo } from "../utils/scripts.js";
 import pageTemplate from "./page.js";
 import last from "../../array/last.js";
 import reverse from "../../array/reverse.js";
+import tocButton from "./tocButton.js";
 
 const { writeFile: writeFileAsync, mkdir: mkdirAsync } = promises;
 
@@ -30,7 +31,7 @@ const breadcrumb = (name, pathParts) => {
 
 const nameFragment = (name, pathParts) =>
   name
-    ? `<h3 class="name breadcrumbs">${breadcrumb(
+    ? `<h3 class="name breadcrumbs">${tocButton}${breadcrumb(
         name,
         pathParts
       )}<span>/</span><a href="${getPath(pathParts, name)}">${name}</a></h3>`
@@ -109,10 +110,8 @@ const funcTemplate = (
   pathParts
 ) => {
   const content = `<article>
-    <div>
-      ${nameFragment(name, pathParts)}
-      ${descriptionFragment(description)}
-    </div>
+    ${nameFragment(name, pathParts)}
+    ${descriptionFragment(description)}
     ${signatureFragment(signature)}
     ${examplesFragment(examples, pathParts, name)}
     ${questionsFragment(questions)}

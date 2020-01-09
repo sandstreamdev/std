@@ -1,10 +1,11 @@
 import packageConfig from "../../package.json";
 import { getPath } from "../utils/url.js";
+import tocButton from "./tocButton.js";
 
 export default data => {
   const { name, version } = packageConfig;
 
-  let result = `<h1><a href="${getPath()}">${name} (${version})</a></h1>`;
+  let result = `<h1>${tocButton}<a href="${getPath()}">${name} (${version})</a></h1>`;
   result += `<div><input type="text" id="searchInput" onkeyup="tocFilter()" placeholder="Search..."></div>`;
 
   for (const moduleName of Object.keys(data)) {

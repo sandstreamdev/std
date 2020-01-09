@@ -22,3 +22,13 @@ function tryInREPL(event, scope) {
     source: codeElement.textContent
   });
 }
+
+function toggleTableOfContents() {
+  var className = "toc-active";
+
+  if (!document.body.classList.contains(className)) {
+    document.body.classList.add(className);
+  } else {
+    document.body.classList.remove(className);
+  }
+}

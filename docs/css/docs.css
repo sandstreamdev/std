@@ -56,7 +56,6 @@ a {
 }
 
 aside {
-  background: #fafafa;
   padding-bottom: 16px;
   display: block;
   height: auto;
@@ -64,17 +63,23 @@ aside {
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 320px;
+  max-width: 288px;
   overflow: auto;
   position: sticky;
   flex-shrink: 0;
-  max-height: 100vh;
+  max-height: calc(100vh - 32px);
   padding: 16px;
   box-sizing: border-box;
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.9);
+  box-sizing: content-box;
+  border-right: 1px solid lightgray;
 }
 
 aside h1 {
   font-size: 1.25em;
+  display: flex;
+  align-items: center;
 }
 
 aside h3 {
@@ -99,6 +104,8 @@ main {
   width: 100%;
   margin: 0 auto;
   max-width: 640px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .list {
@@ -125,7 +132,17 @@ main {
 }
 
 .breadcrumbs {
-  padding-top: 8px;
+  background: white;
+  position: sticky;
+  top: 0;
+  background: white;
+  min-height: 56px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0 -16px;
+  padding: 8px 16px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs > a {
@@ -155,4 +172,39 @@ main {
 #searchInput:focus {
   outline: none;
   border-bottom-color: #0275d8;
+}
+
+aside {
+  position: fixed;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+body.toc-active aside {
+  transform: translateX(0);
+}
+
+.toc-button {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  margin-right: 8px;
+  user-select: none;
+  margin-left: -11px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .toc-button {
+    display: none;
+  }
+
+  aside {
+    position: sticky;
+    transform: translateX(0);
+  }
 }
