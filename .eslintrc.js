@@ -12,6 +12,7 @@ module.exports = {
   rules: {
     "arrow-parens": ["error", "as-needed"],
     "no-sparse-arrays": 0,
+    "no-unused-vars": 0,
     "padding-line-between-statements": [
       "error",
       { blankLine: "always", prev: "*", next: "export" },
