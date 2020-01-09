@@ -1,6 +1,6 @@
 /* eslint-env browser, node */
 import fromByteString from "../byteString/from";
-import { DecodeContext } from "./DecodeContext";
+import { DecodeContext } from "./DecodeContext.interface";
 
 const ENCODING = "utf-8";
 

@@ -1,6 +1,5 @@
 /* eslint-env browser */
 
-// eslint-disable-next-line no-unused-vars
 function tryInREPL(event, scope) {
   var target = event.target;
   var isReplRun = target.matches(".btn-repl");
@@ -25,7 +24,6 @@ function tryInREPL(event, scope) {
   });
 }
 
-// eslint-disable-next-line no-unused-vars
 function toggleTableOfContents() {
   var className = "toc-active";
 

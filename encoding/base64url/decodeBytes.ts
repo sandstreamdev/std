@@ -1,9 +1,9 @@
 /* eslint-env browser, node */
 import decode from "./decode";
 import fromByteString from "../byteString/from";
-import { DecodeContext } from "./DecodeContext";
+import { DecodeContext } from "./DecodeContext.interface";
 
-export const decodeBytes = (text: string, context?: DecodeContext) => {
+export default (text: string, context?: DecodeContext) => {
   const decoded = decode(text, context);
 
   return fromByteString(decoded);

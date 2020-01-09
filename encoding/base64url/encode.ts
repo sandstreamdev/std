@@ -1,6 +1,6 @@
 /* eslint-env browser, node */
 import toByteString from "../byteString/to";
-import { EncodeContext } from "./EncodeContext";
+import { EncodeContext } from "./EncodeContext.interface";
 
 const toArray = (typedArray: Uint8Array): number[] => [...typedArray];
 
