@@ -509,7 +509,7 @@ Zips given arrays
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => any
+(...xs: any[][]) => any[][]
 ```
 <!-- prettier-ignore-end -->
 
