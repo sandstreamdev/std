@@ -23,6 +23,9 @@ body {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
   list-style-type: circle;
 }
 
@@ -32,6 +35,10 @@ article {
 
 article h2 {
   margin-top: 4px;
+}
+
+article h3 {
+  margin-bottom: 0;
 }
 
 code {
