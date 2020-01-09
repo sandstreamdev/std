@@ -118,7 +118,6 @@ main {
 .toc-item.selected {
   font-weight: bold;
   color: #0275d8;
-  font-size: 18px;
 }
 
 .toc-item:hover {
@@ -126,7 +125,6 @@ main {
 }
 
 .breadcrumbs {
-  font-size: 16px;
   padding-top: 8px;
 }
 

@@ -25,12 +25,15 @@ const breadcrumb = (name, pathParts) => {
     );
   }
 
-  return `<div class="breadcrumbs">${resultParts.join("<span>/</span>")}</div>`;
+  return `${resultParts.join("<span>/</span>")}`;
 };
 
 const nameFragment = (name, pathParts) =>
   name
-    ? `<h3 class="name"><a href="${getPath(pathParts, name)}">${name}</a></h3>`
+    ? `<h3 class="name breadcrumbs">${breadcrumb(
+        name,
+        pathParts
+      )}<span>/</span><a href="${getPath(pathParts, name)}">${name}</a></h3>`
     : "";
 
 const descriptionFragment = description => {
@@ -106,9 +109,6 @@ const funcTemplate = (
   pathParts
 ) => {
   const content = `<article>
-    <div>
-      ${breadcrumb(name, pathParts)}
-    </div>
     <div>
       ${nameFragment(name, pathParts)}
       ${descriptionFragment(description)}
