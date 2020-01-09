@@ -612,7 +612,9 @@ Clones the given Date object.
 <!-- prettier-ignore-start -->
 ```javascript
 const date = new new Date('2019-04-24T13:54:33.232Z');
-clone(date) !== date; // ⇒ true
+const cloned = clone(date);
+
+cloned !== date && cloned.valueOf() === date.valueOf(); // ⇒ true
 ```
 <!-- prettier-ignore-end -->
 
