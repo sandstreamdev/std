@@ -21,7 +21,7 @@ const pageTemplate = ({ content, toc, onContentLoaded = "" }) =>
         var modules = document.getElementsByClassName('module');
 
         for (var i = 0; i < tocItems.length; i++) {
-          var a = tocItems[i].getElementsByTagName("a")[0];
+          var a = tocItems[i];
           var txtValue = a.textContent || a.innerText;
 
           if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -48,9 +48,7 @@ const pageTemplate = ({ content, toc, onContentLoaded = "" }) =>
     </script>
   </head>
   <body>
-    <aside>
-      <div class="list">${toc}</div>
-    </aside>
+    <aside>${toc}</aside>
     <main>${content}</main>
     <script async src="scripts/docs.js"></script>
     <script async src="https://embed.runkit.com"></script>

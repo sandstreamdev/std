@@ -21,7 +21,7 @@ export default async ({ data, toc, name }) => {
 
   let modulePageContent = `<h2 class="module-name"><a href="${getPath(
     pathParts
-  )}">"${name}" functions</a></h2>`;
+  )}">${name}</a></h2>`;
 
   for (const func of functions) {
     const content = await generateFuncsDocs({ func, toc, pathParts });

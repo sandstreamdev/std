@@ -105,7 +105,7 @@ const funcTemplate = (
   { name, description, signature, examples, questions },
   pathParts
 ) => {
-  const content = `<div class="std-item">
+  const content = `<article>
     <div>
       ${breadcrumb(name, pathParts)}
     </div>
@@ -116,7 +116,7 @@ const funcTemplate = (
     ${signatureFragment(signature)}
     ${examplesFragment(examples, pathParts, name)}
     ${questionsFragment(questions)}
-  </div>`.trimLeft();
+  </article>`.trimLeft();
 
   return content;
 };
