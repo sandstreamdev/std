@@ -6,7 +6,7 @@ export default data => {
   const { name, version } = packageConfig;
 
   let result = `<h1>${tocButton}<a href="${getPath()}">${name} (${version})</a></h1>`;
-  result += `<div><input type="text" id="searchInput" onkeyup="tocFilter()" placeholder="Search..."></div>`;
+  result += `<input type="text" id="searchInput" onkeyup="tocFilter()" placeholder="Search...">`;
 
   for (const moduleName of Object.keys(data)) {
     const { functions, pathParts } = data[moduleName];

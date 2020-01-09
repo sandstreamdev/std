@@ -1,12 +1,12 @@
 import { getBase } from "../utils/url.js";
 
 const footer = `<footer>
-<span>Made with ❤️ by <a href="https://sandstream.pl/">Sandstream Development</a></span>
-<div>
-<span><a href="https://github.com/sandstreamdev/std">GitHub</a></span> •
-<span>License: <a href="https://github.com/sandstreamdev/std/blob/master/LICENSE">MIT</a></span>
-<span>
-<footer>`;
+  <span>Made with ❤️ by <a href="https://sandstream.pl/">Sandstream Development</a></span>
+  <div>
+    <span><a href="https://github.com/sandstreamdev/std">GitHub</a></span> •
+    <span>License: <a href="https://github.com/sandstreamdev/std/blob/master/LICENSE">MIT</a></span>
+  </div>
+</footer>`;
 
 const pageTemplate = ({ content, toc, onContentLoaded = "" }) =>
   `<!DOCTYPE html>

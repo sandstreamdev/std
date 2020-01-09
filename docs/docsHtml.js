@@ -37,13 +37,13 @@ const addData = (filePath, fileData) => {
 };
 
 const main = async cwd => {
-  console.log("Clearing dist...");
-  const outputPath = outPath();
+  // console.log("Clearing dist...");
+  // const outputPath = outPath();
 
-  await rmdirAsync(outputPath, { recursive: true });
-  await mkdirAsync(outputPath, { recursive: true });
-  await copyDir(docsPath("css"), outPath("css"));
-  await copyDir(docsPath("scripts"), outPath("scripts"));
+  // await rmdirAsync(outputPath, { recursive: true });
+  // await mkdirAsync(outputPath, { recursive: true });
+  // await copyDir(docsPath("css"), outPath("css"));
+  // await copyDir(docsPath("scripts"), outPath("scripts"));
 
   console.log("Generating html documentation files...");
 
