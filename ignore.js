@@ -21,6 +21,7 @@ const ignoredFiles = [
   "indexReadme.js",
   "jest.config.js",
   "LICENSE",
+  "mappings.js",
   "normalizeLineEndings.js",
   "package-lock.json",
   "package.json",
