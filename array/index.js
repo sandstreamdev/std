@@ -1,5 +1,6 @@
 import any from "./any.js";
 import are from "./are.js";
+import chunk from "./chunk.js";
 import difference from "./difference.js";
 import differs from "./differs.js";
 import duplicates from "./duplicates.js";
@@ -45,6 +46,7 @@ import zipWith from "./zipWith.js";
 export {
   any,
   are,
+  chunk,
   difference,
   differs,
   duplicates,
@@ -91,6 +93,7 @@ export {
 export default {
   any,
   are,
+  chunk,
   difference,
   differs,
   duplicates,
