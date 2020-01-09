@@ -1,5 +1,13 @@
 import { getBase } from "../utils/url.js";
 
+const footer = `<footer>
+<span>Made with ❤️ by <a href="https://sandstream.pl/">Sandstream Development</a></span>
+<div>
+<span><a href="https://github.com/sandstreamdev/std">GitHub</a></span> •
+<span>License: <a href="https://github.com/sandstreamdev/std/blob/master/LICENSE">MIT</a></span>
+<span>
+<footer>`;
+
 const pageTemplate = ({ content, toc, onContentLoaded = "" }) =>
   `<!DOCTYPE html>
 <html>
@@ -49,7 +57,7 @@ const pageTemplate = ({ content, toc, onContentLoaded = "" }) =>
   </head>
   <body>
     <aside>${toc}</aside>
-    <main>${content}</main>
+    <main>${content}${footer}</main>
     <script async src="scripts/docs.js"></script>
     <script async src="https://embed.runkit.com"></script>
   </body>

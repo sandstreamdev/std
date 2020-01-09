@@ -115,6 +115,9 @@ main {
   max-width: 640px;
   box-sizing: border-box;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .list {
@@ -220,4 +223,19 @@ body.toc-active aside {
     position: sticky;
     transform: translateX(0);
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a,
+footer a:visited {
+  color: #3377c0;
+}
+
+footer a:hover {
+  color: #2f6cb6;
 }
