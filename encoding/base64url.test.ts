@@ -8,9 +8,9 @@ import encodeBytes from "./base64url/encodeBytes.ts";
 // @ts-ignore ambiguous import
 import decodeBytes from "./base64url/decodeBytes.ts";
 // @ts-ignore ambiguous import
-import toBase64 from "./base64url/fromBase64.ts";
+import toBase64 from "./base64url/toBase64.ts";
 // @ts-ignore ambiguous import
-import fromBase64 from "./base64url/toBase64.ts";
+import fromBase64 from "./base64url/fromBase64.ts";
 // @ts-ignore ambiguous import
 import fromByteString from "./byteString/from.ts";
 // @ts-ignore ambiguous import
