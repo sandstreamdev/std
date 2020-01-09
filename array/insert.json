@@ -1,0 +1,16 @@
+{
+  "name": "insert",
+  "description": "Inserts the given item to the array at a specific index.",
+  "signature": "(\n  index: number\n) => (item: any) => ([...xs]: any[]) => any[]",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "insert(0)('d')(['a', 'b', 'c']); // ⇒ ['d', 'a', 'b', 'c']"
+    },
+    {
+      "language": "javascript",
+      "content": "insert(1)('d')(['a', 'b', 'c']); // ⇒ ['a', 'd', 'b', 'c']"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answer."]
+}
