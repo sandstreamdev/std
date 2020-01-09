@@ -1,7 +1,7 @@
 {
   "name": "chunk",
-  "description": "Returns the new array of chunks.",
-  "signature": "(size: number) => (xs: any[]) => any",
+  "description": "Creates an array of elements split into groups the length of size.",
+  "signature": "(count: number) => (xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",
@@ -12,5 +12,5 @@
       "content": "chunk(3)(['a', 'b', 'c', 'd']); // ⇒ [['a', 'b', 'c'], ['d']]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["TODO: List questions that may this function answer."]
 }

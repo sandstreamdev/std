@@ -1,12 +1,12 @@
 # chunk
 
-Returns the new array of chunks.
+Creates an array of elements split into groups the length of size.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(size: number) => (xs: any[]) => any
+(count: number) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
