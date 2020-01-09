@@ -48,12 +48,10 @@ const pageTemplate = ({ content, toc, onContentLoaded = "" }) =>
     </script>
   </head>
   <body>
-    <div class="row">
-      <div class="toc">
-        <div class="list">${toc}</div>
-      </div>
-      <div class="content">${content}</div>
-    </div>
+    <aside>
+      <div class="list">${toc}</div>
+    </aside>
+    <main>${content}</main>
     <script async src="scripts/docs.js"></script>
     <script async src="https://embed.runkit.com"></script>
   </body>

@@ -1,9 +1,9 @@
 body {
   font-family: "Times New Roman", Times, serif;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .examples .content {
@@ -63,33 +63,29 @@ a {
   color: black;
 }
 
-.toc {
+aside {
   background: #fafafa;
-  border: 0.5px solid lightgray;
-  border-radius: 5px;
-  padding: 8px 16px;
   padding-bottom: 16px;
   display: block;
-  position: absolute;
   height: auto;
   bottom: 0;
   top: 0;
   left: 0;
-  margin: 16px;
-  width: 208px;
+  width: 100%;
+  max-width: 320px;
   overflow: auto;
+  position: sticky;
+  flex-shrink: 0;
+  max-height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-.row > .content {
-  display: block;
-  position: absolute;
-  height: auto;
-  bottom: 0;
-  top: 0;
-  left: 256px;
-  right: 0;
-  margin: 16px;
-  overflow: auto;
+main {
+  padding: 16px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 640px;
 }
 
 .list {
