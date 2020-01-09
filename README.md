@@ -54,7 +54,7 @@ Checks if given arguments are all `Arrays`.
 
 #### chunk
 
-Creates an array of elements split into groups the length of size.
+Splits the given array into array of chunks of up to the given length.
 
 ##### Type signature
 

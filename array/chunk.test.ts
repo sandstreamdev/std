@@ -3,7 +3,7 @@
 import chunk from "./chunk.ts";
 
 describe("chunk", () => {
-  it("should return an array of elements split into groups the length of size", () => {
+  it("should return an array of elements split into groups of the given length", () => {
     expect(chunk(1)(["a", "b", "c", "d"])).toEqual([
       ["a"],
       ["b"],
@@ -17,7 +17,7 @@ describe("chunk", () => {
     expect(chunk(4)(["a", "b", "c", "d"])).toEqual([["a", "b", "c", "d"]]);
   });
 
-  it("should return an array of triples when array can't be split evenly, the final chunk will be the remaining elements", () => {
+  it("fills the final chunk with the remaining elements when the given array can't be split evenly", () => {
     expect(chunk(3)(["a", "b", "c", "d"])).toEqual([["a", "b", "c"], ["d"]]);
   });
 
