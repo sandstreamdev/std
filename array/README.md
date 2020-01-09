@@ -430,7 +430,7 @@ Skips the given count of elements from the given array.
 
 # slidingWindow
 
-Returns a new list, composed of n-tuples of consecutive elements.
+Returns a new list composed of tuples of the given sliding window length of consecutive elements.
 
 ## Type signature
 

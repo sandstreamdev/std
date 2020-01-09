@@ -1,6 +1,6 @@
 {
   "name": "slidingWindow",
-  "description": "Returns a new list, composed of n-tuples of consecutive elements.",
+  "description": "Returns a new list composed of tuples of the given sliding window length of consecutive elements.",
   "signature": "(count: number) => (xs: any[]) => any[][]",
   "examples": [
     {
@@ -16,5 +16,5 @@
       "content": "slidingWindow(1)([1, 2, 3, 4, 5, 6]); // ⇒ [[1], [2], [3], [4], [5], [6]]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["TODO: List questions that may this function answer."]
 }
