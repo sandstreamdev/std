@@ -7,6 +7,7 @@ import { scrollTo } from "../utils/scripts.js";
 import pageTemplate from "./page.js";
 import last from "../../array/last.js";
 import reverse from "../../array/reverse.js";
+import tocButton from "./tocButton.js";
 
 const { writeFile: writeFileAsync, mkdir: mkdirAsync } = promises;
 
@@ -25,12 +26,35 @@ const breadcrumb = (name, pathParts) => {
     );
   }
 
-  return `<div class="breadcrumbs">${resultParts.join("<span>/</span>")}</div>`;
+  return `${resultParts.join("<span>/</span>")}`;
 };
 
 const nameFragment = (name, pathParts) =>
   name
-    ? `<h3 class="name"><a href="${getPath(pathParts, name)}">${name}</a></h3>`
+    ? `<h3 class="name breadcrumbs">${tocButton}${breadcrumb(
+        name,
+        pathParts
+      )}<span>/</span><a href="${getPath(pathParts, name)}">${name}</a></h3>`
+    : "";
+
+const blobUrl = "https://github.com/sandstreamdev/std/blob/master";
+
+const sourcePath = (name, partPaths, extension) =>
+  `${[blobUrl, partPaths, name].join("/")}${extension}`;
+
+const metaFragment = (name, pathParts) =>
+  name
+    ? `<p class="meta">
+      <a href="${sourcePath(
+        name,
+        pathParts,
+        ".ts"
+      )}">TypeScript source</a> • <a href="${sourcePath(
+        name,
+        pathParts,
+        ".js"
+      )}">JavaScript source</a>
+    </p>`
     : "";
 
 const descriptionFragment = description => {
@@ -105,18 +129,14 @@ const funcTemplate = (
   { name, description, signature, examples, questions },
   pathParts
 ) => {
-  const content = `<div class="std-item">
-    <div>
-      ${breadcrumb(name, pathParts)}
-    </div>
-    <div>
-      ${nameFragment(name, pathParts)}
-      ${descriptionFragment(description)}
-    </div>
+  const content = `<article>
+    ${nameFragment(name, pathParts)}
+    ${descriptionFragment(description)}
     ${signatureFragment(signature)}
     ${examplesFragment(examples, pathParts, name)}
     ${questionsFragment(questions)}
-  </div>`.trimLeft();
+    ${metaFragment(name, pathParts)}
+  </article>`.trimLeft();
 
   return content;
 };
