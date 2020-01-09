@@ -70,8 +70,8 @@ aside {
   max-height: calc(100vh - 32px);
   padding: 16px;
   box-sizing: border-box;
-  backdrop-filter: blur(2px);
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
+  -webkit-overflow-scrolling: touch;
   box-sizing: content-box;
   border-right: 1px solid lightgray;
 }
