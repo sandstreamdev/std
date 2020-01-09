@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 // eslint-disable-next-line no-unused-vars
 function tryInREPL(event, scope) {
   var target = event.target;
@@ -21,4 +23,15 @@ function tryInREPL(event, scope) {
     preamble: `const std = require ("@sandstreamdev/std/index.cjs.js");\nconst ${scope} = std;`,
     source: codeElement.textContent
   });
+}
+
+// eslint-disable-next-line no-unused-vars
+function toggleTableOfContents() {
+  var className = "toc-active";
+
+  if (!document.body.classList.contains(className)) {
+    document.body.classList.add(className);
+  } else {
+    document.body.classList.remove(className);
+  }
 }

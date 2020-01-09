@@ -1,9 +1,9 @@
 body {
   font-family: "Times New Roman", Times, serif;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .examples .content {
@@ -24,24 +24,16 @@ ul {
   list-style-type: circle;
 }
 
-.std-item {
-  background: #fafafa;
-  border: 0.5px solid lightgray;
-  padding: 8px 16px;
-  border-radius: 5px;
-  margin-bottom: 16px;
+article {
+  margin-bottom: 56px;
 }
 
-.std-item h2 {
+article h2 {
   margin-top: 4px;
 }
 
 code {
   border-radius: 5px;
-}
-
-.module-name {
-  margin-bottom: 4px;
 }
 
 .module-name,
@@ -63,33 +55,57 @@ a {
   color: black;
 }
 
-.toc {
-  background: #fafafa;
-  border: 0.5px solid lightgray;
-  border-radius: 5px;
-  padding: 8px 16px;
+aside {
   padding-bottom: 16px;
   display: block;
-  position: absolute;
   height: auto;
   bottom: 0;
   top: 0;
   left: 0;
-  margin: 16px;
-  width: 208px;
+  width: 100%;
+  max-width: 288px;
   overflow: auto;
+  position: sticky;
+  flex-shrink: 0;
+  max-height: calc(100vh - 32px);
+  padding: 16px;
+  box-sizing: border-box;
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.9);
+  box-sizing: content-box;
+  border-right: 1px solid lightgray;
 }
 
-.row > .content {
-  display: block;
-  position: absolute;
-  height: auto;
-  bottom: 0;
-  top: 0;
-  left: 256px;
-  right: 0;
-  margin: 16px;
-  overflow: auto;
+aside h1 {
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+}
+
+aside h3 {
+  min-height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  border: 1px solid lightgray;
+  border-left-width: 0;
+  border-right-width: 0;
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+
+.module {
+  margin-bottom: 32px;
+}
+
+main {
+  padding: 16px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 640px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .list {
@@ -98,17 +114,35 @@ a {
 
 .toc-item {
   font-family: "Courier New", Courier, monospace;
+  min-height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+  margin: 0 -16px;
 }
 
-.toc-item.selected > a {
+.toc-item.selected {
   font-weight: bold;
   color: #0275d8;
-  font-size: 18px;
+}
+
+.toc-item:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .breadcrumbs {
-  font-size: 16px;
-  padding-top: 8px;
+  background: white;
+  position: sticky;
+  top: 0;
+  background: white;
+  min-height: 56px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0 -16px;
+  padding: 8px 16px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs > a {
@@ -125,14 +159,52 @@ a {
 
 #searchInput {
   font-size: 16px;
-  padding: 4px;
+  padding: 8px 16px;
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100% + 32px);
   border: none;
-  border-bottom: solid 1px gray;
+  box-sizing: border-box;
+  margin: 0 -16px;
+  padding: 0 16px;
+  min-height: 36px;
 }
 
 #searchInput:focus {
   outline: none;
   border-bottom-color: #0275d8;
+}
+
+aside {
+  position: fixed;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+body.toc-active aside {
+  transform: translateX(0);
+}
+
+.toc-button {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  margin-right: 8px;
+  user-select: none;
+  margin-left: -11px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .toc-button {
+    display: none;
+  }
+
+  aside {
+    position: sticky;
+    transform: translateX(0);
+  }
 }

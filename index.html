@@ -18,7 +18,7 @@
         var modules = document.getElementsByClassName('module');
 
         for (var i = 0; i < tocItems.length; i++) {
-          var a = tocItems[i].getElementsByTagName("a")[0];
+          var a = tocItems[i];
           var txtValue = a.textContent || a.innerText;
 
           if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -45,18 +45,10 @@
     </script>
   </head>
   <body>
-    <div class="row">
-      <div class="toc">
-        <div class="list"><h3><a href="">@sandstreamdev/std (0.6.0)</a></h3><div><input type="text" id="searchInput" onkeyup="tocFilter()" placeholder="Search..."></div><div class="module"><h3 class="module-name" id="array"><a href="array">"array" functions</a></h3><div class="toc-item" id="array/any"><a href="array/any">any</a></div><div class="toc-item" id="array/are"><a href="array/are">are</a></div><div class="toc-item" id="array/difference"><a href="array/difference">difference</a></div><div class="toc-item" id="array/differs"><a href="array/differs">differs</a></div><div class="toc-item" id="array/duplicates"><a href="array/duplicates">duplicates</a></div><div class="toc-item" id="array/empty"><a href="array/empty">empty</a></div><div class="toc-item" id="array/exact"><a href="array/exact">exact</a></div><div class="toc-item" id="array/except"><a href="array/except">except</a></div><div class="toc-item" id="array/filterInPlace"><a href="array/filterInPlace">filterInPlace</a></div><div class="toc-item" id="array/find"><a href="array/find">find</a></div><div class="toc-item" id="array/first"><a href="array/first">first</a></div><div class="toc-item" id="array/flatMap"><a href="array/flatMap">flatMap</a></div><div class="toc-item" id="array/flatten"><a href="array/flatten">flatten</a></div><div class="toc-item" id="array/intersection"><a href="array/intersection">intersection</a></div><div class="toc-item" id="array/is"><a href="array/is">is</a></div><div class="toc-item" id="array/last"><a href="array/last">last</a></div><div class="toc-item" id="array/lengthDiffers"><a href="array/lengthDiffers">lengthDiffers</a></div><div class="toc-item" id="array/map"><a href="array/map">map</a></div><div class="toc-item" id="array/midpoint"><a href="array/midpoint">midpoint</a></div><div class="toc-item" id="array/minMax"><a href="array/minMax">minMax</a></div><div class="toc-item" id="array/multiple"><a href="array/multiple">multiple</a></div><div class="toc-item" id="array/none"><a href="array/none">none</a></div><div class="toc-item" id="array/partition"><a href="array/partition">partition</a></div><div class="toc-item" id="array/range"><a href="array/range">range</a></div><div class="toc-item" id="array/repeat"><a href="array/repeat">repeat</a></div><div class="toc-item" id="array/reverse"><a href="array/reverse">reverse</a></div><div class="toc-item" id="array/reverseIf"><a href="array/reverseIf">reverseIf</a></div><div class="toc-item" id="array/second"><a href="array/second">second</a></div><div class="toc-item" id="array/secondToLast"><a href="array/secondToLast">secondToLast</a></div><div class="toc-item" id="array/shift"><a href="array/shift">shift</a></div><div class="toc-item" id="array/shuffle"><a href="array/shuffle">shuffle</a></div><div class="toc-item" id="array/shuffleInPlace"><a href="array/shuffleInPlace">shuffleInPlace</a></div><div class="toc-item" id="array/single"><a href="array/single">single</a></div><div class="toc-item" id="array/skip"><a href="array/skip">skip</a></div><div class="toc-item" id="array/sort"><a href="array/sort">sort</a></div><div class="toc-item" id="array/sum"><a href="array/sum">sum</a></div><div class="toc-item" id="array/take"><a href="array/take">take</a></div><div class="toc-item" id="array/unique"><a href="array/unique">unique</a></div><div class="toc-item" id="array/zip"><a href="array/zip">zip</a></div><div class="toc-item" id="array/zipWith"><a href="array/zipWith">zipWith</a></div></div><div class="module"><h3 class="module-name" id="async"><a href="async">"async" functions</a></h3><div class="toc-item" id="async/debounce"><a href="async/debounce">debounce</a></div><div class="toc-item" id="async/delay"><a href="async/delay">delay</a></div><div class="toc-item" id="async/sequence"><a href="async/sequence">sequence</a></div></div><div class="module"><h3 class="module-name" id="date"><a href="date">"date" functions</a></h3><div class="toc-item" id="date/byDateWithFallback"><a href="date/byDateWithFallback">byDateWithFallback</a></div><div class="toc-item" id="date/clamp"><a href="date/clamp">clamp</a></div><div class="toc-item" id="date/dateDiff"><a href="date/dateDiff">dateDiff</a></div><div class="toc-item" id="date/dateInRange"><a href="date/dateInRange">dateInRange</a></div><div class="toc-item" id="date/dayRange"><a href="date/dayRange">dayRange</a></div><div class="toc-item" id="date/daysInMonths"><a href="date/daysInMonths">daysInMonths</a></div><div class="toc-item" id="date/daysInYear"><a href="date/daysInYear">daysInYear</a></div><div class="toc-item" id="date/displayMonth"><a href="date/displayMonth">displayMonth</a></div><div class="toc-item" id="date/displayTime"><a href="date/displayTime">displayTime</a></div><div class="toc-item" id="date/endOfDay"><a href="date/endOfDay">endOfDay</a></div><div class="toc-item" id="date/formatDate"><a href="date/formatDate">formatDate</a></div><div class="toc-item" id="date/formatDateTime"><a href="date/formatDateTime">formatDateTime</a></div><div class="toc-item" id="date/formatDisplayDate"><a href="date/formatDisplayDate">formatDisplayDate</a></div><div class="toc-item" id="date/formatDuration"><a href="date/formatDuration">formatDuration</a></div><div class="toc-item" id="date/formatTime"><a href="date/formatTime">formatTime</a></div><div class="toc-item" id="date/fromDays"><a href="date/fromDays">fromDays</a></div><div class="toc-item" id="date/fromHours"><a href="date/fromHours">fromHours</a></div><div class="toc-item" id="date/fromMinutes"><a href="date/fromMinutes">fromMinutes</a></div><div class="toc-item" id="date/fromSeconds"><a href="date/fromSeconds">fromSeconds</a></div><div class="toc-item" id="date/joinDateTime"><a href="date/joinDateTime">joinDateTime</a></div><div class="toc-item" id="date/leapYear"><a href="date/leapYear">leapYear</a></div><div class="toc-item" id="date/monthNames"><a href="date/monthNames">monthNames</a></div><div class="toc-item" id="date/offsetByBit"><a href="date/offsetByBit">offsetByBit</a></div><div class="toc-item" id="date/parseHourMinutePair"><a href="date/parseHourMinutePair">parseHourMinutePair</a></div><div class="toc-item" id="date/splitDateTime"><a href="date/splitDateTime">splitDateTime</a></div><div class="toc-item" id="date/startOfDay"><a href="date/startOfDay">startOfDay</a></div><div class="toc-item" id="date/subtractDays"><a href="date/subtractDays">subtractDays</a></div><div class="toc-item" id="date/toDate"><a href="date/toDate">toDate</a></div><div class="toc-item" id="date/toDates"><a href="date/toDates">toDates</a></div><div class="toc-item" id="date/toDays"><a href="date/toDays">toDays</a></div><div class="toc-item" id="date/toHours"><a href="date/toHours">toHours</a></div><div class="toc-item" id="date/toISO"><a href="date/toISO">toISO</a></div><div class="toc-item" id="date/toISOFromLocalDateTime"><a href="date/toISOFromLocalDateTime">toISOFromLocalDateTime</a></div><div class="toc-item" id="date/toLocalDateTime"><a href="date/toLocalDateTime">toLocalDateTime</a></div><div class="toc-item" id="date/toMinutes"><a href="date/toMinutes">toMinutes</a></div><div class="toc-item" id="date/toSeconds"><a href="date/toSeconds">toSeconds</a></div><div class="toc-item" id="date/valid"><a href="date/valid">valid</a></div></div><div class="module"><h3 class="module-name" id="debug"><a href="debug">"debug" functions</a></h3><div class="toc-item" id="debug/assert"><a href="debug/assert">assert</a></div><div class="toc-item" id="debug/diff"><a href="debug/diff">diff</a></div></div><div class="module"><h3 class="module-name" id="encoding"><a href="encoding">"encoding" functions</a></h3><div class="toc-item" id="encoding/base64url"><a href="encoding/base64url">base64url</a></div></div><div class="module"><h3 class="module-name" id="file"><a href="file">"file" functions</a></h3><div class="toc-item" id="file/validName"><a href="file/validName">validName</a></div></div><div class="module"><h3 class="module-name" id="function"><a href="function">"function" functions</a></h3><div class="toc-item" id="function/compose"><a href="function/compose">compose</a></div><div class="toc-item" id="function/constant"><a href="function/constant">constant</a></div><div class="toc-item" id="function/identity"><a href="function/identity">identity</a></div><div class="toc-item" id="function/memoize"><a href="function/memoize">memoize</a></div><div class="toc-item" id="function/memoizeShallow"><a href="function/memoizeShallow">memoizeShallow</a></div><div class="toc-item" id="function/memoizeWith"><a href="function/memoizeWith">memoizeWith</a></div><div class="toc-item" id="function/noOp"><a href="function/noOp">noOp</a></div><div class="toc-item" id="function/not"><a href="function/not">not</a></div><div class="toc-item" id="function/pipe"><a href="function/pipe">pipe</a></div><div class="toc-item" id="function/when"><a href="function/when">when</a></div><div class="toc-item" id="function/whenTrue"><a href="function/whenTrue">whenTrue</a></div></div><div class="module"><h3 class="module-name" id="is"><a href="is">"is" functions</a></h3><div class="toc-item" id="is/array"><a href="is/array">array</a></div><div class="toc-item" id="is/byte"><a href="is/byte">byte</a></div><div class="toc-item" id="is/date"><a href="is/date">date</a></div><div class="toc-item" id="is/defined"><a href="is/defined">defined</a></div><div class="toc-item" id="is/function"><a href="is/function">function</a></div><div class="toc-item" id="is/integer"><a href="is/integer">integer</a></div><div class="toc-item" id="is/nonNullable"><a href="is/nonNullable">nonNullable</a></div><div class="toc-item" id="is/normal"><a href="is/normal">normal</a></div><div class="toc-item" id="is/number"><a href="is/number">number</a></div><div class="toc-item" id="is/object"><a href="is/object">object</a></div><div class="toc-item" id="is/string"><a href="is/string">string</a></div></div><div class="module"><h3 class="module-name" id="math"><a href="math">"math" functions</a></h3><div class="toc-item" id="math/add"><a href="math/add">add</a></div><div class="toc-item" id="math/average"><a href="math/average">average</a></div><div class="toc-item" id="math/ceilToNearestPowerOfTwo"><a href="math/ceilToNearestPowerOfTwo">ceilToNearestPowerOfTwo</a></div><div class="toc-item" id="math/clamp"><a href="math/clamp">clamp</a></div><div class="toc-item" id="math/clampNormal"><a href="math/clampNormal">clampNormal</a></div><div class="toc-item" id="math/clampPercentage"><a href="math/clampPercentage">clampPercentage</a></div><div class="toc-item" id="math/delta"><a href="math/delta">delta</a></div><div class="toc-item" id="math/inRectangleRange"><a href="math/inRectangleRange">inRectangleRange</a></div><div class="toc-item" id="math/lerp"><a href="math/lerp">lerp</a></div><div class="toc-item" id="math/maximumBy"><a href="math/maximumBy">maximumBy</a></div><div class="toc-item" id="math/median"><a href="math/median">median</a></div><div class="toc-item" id="math/minMax"><a href="math/minMax">minMax</a></div><div class="toc-item" id="math/sameSign"><a href="math/sameSign">sameSign</a></div><div class="toc-item" id="math/sign"><a href="math/sign">sign</a></div><div class="toc-item" id="math/standardDeviation"><a href="math/standardDeviation">standardDeviation</a></div><div class="toc-item" id="math/subtract"><a href="math/subtract">subtract</a></div></div><div class="module"><h3 class="module-name" id="object"><a href="object">"object" functions</a></h3><div class="toc-item" id="object/any"><a href="object/any">any</a></div><div class="toc-item" id="object/apply"><a href="object/apply">apply</a></div><div class="toc-item" id="object/empty"><a href="object/empty">empty</a></div><div class="toc-item" id="object/entries"><a href="object/entries">entries</a></div><div class="toc-item" id="object/enumerable"><a href="object/enumerable">enumerable</a></div><div class="toc-item" id="object/equals"><a href="object/equals">equals</a></div><div class="toc-item" id="object/filter"><a href="object/filter">filter</a></div><div class="toc-item" id="object/find"><a href="object/find">find</a></div><div class="toc-item" id="object/findEntry"><a href="object/findEntry">findEntry</a></div><div class="toc-item" id="object/findKey"><a href="object/findKey">findKey</a></div><div class="toc-item" id="object/first"><a href="object/first">first</a></div><div class="toc-item" id="object/flatMapValues"><a href="object/flatMapValues">flatMapValues</a></div><div class="toc-item" id="object/fromEntries"><a href="object/fromEntries">fromEntries</a></div><div class="toc-item" id="object/groupBy"><a href="object/groupBy">groupBy</a></div><div class="toc-item" id="object/hasKey"><a href="object/hasKey">hasKey</a></div><div class="toc-item" id="object/length"><a href="object/length">length</a></div><div class="toc-item" id="object/map"><a href="object/map">map</a></div><div class="toc-item" id="object/mapEntries"><a href="object/mapEntries">mapEntries</a></div><div class="toc-item" id="object/mapKeys"><a href="object/mapKeys">mapKeys</a></div><div class="toc-item" id="object/mapValues"><a href="object/mapValues">mapValues</a></div><div class="toc-item" id="object/merge"><a href="object/merge">merge</a></div><div class="toc-item" id="object/none"><a href="object/none">none</a></div><div class="toc-item" id="object/sort"><a href="object/sort">sort</a></div></div><div class="module"><h3 class="module-name" id="query"><a href="query">"query" functions</a></h3><div class="toc-item" id="query/parse"><a href="query/parse">parse</a></div><div class="toc-item" id="query/read"><a href="query/read">read</a></div><div class="toc-item" id="query/serialize"><a href="query/serialize">serialize</a></div></div><div class="module"><h3 class="module-name" id="range"><a href="range">"range" functions</a></h3><div class="toc-item" id="range/empty"><a href="range/empty">empty</a></div><div class="toc-item" id="range/equals"><a href="range/equals">equals</a></div><div class="toc-item" id="range/length"><a href="range/length">length</a></div><div class="toc-item" id="range/split"><a href="range/split">split</a></div></div><div class="module"><h3 class="module-name" id="regex"><a href="regex">"regex" functions</a></h3><div class="toc-item" id="regex/escape"><a href="regex/escape">escape</a></div></div><div class="module"><h3 class="module-name" id="string"><a href="string">"string" functions</a></h3><div class="toc-item" id="string/containsWhitespace"><a href="string/containsWhitespace">containsWhitespace</a></div><div class="toc-item" id="string/empty"><a href="string/empty">empty</a></div><div class="toc-item" id="string/firstToLower"><a href="string/firstToLower">firstToLower</a></div><div class="toc-item" id="string/firstToUpper"><a href="string/firstToUpper">firstToUpper</a></div><div class="toc-item" id="string/includes"><a href="string/includes">includes</a></div><div class="toc-item" id="string/nbsp"><a href="string/nbsp">nbsp</a></div><div class="toc-item" id="string/nonEmpty"><a href="string/nonEmpty">nonEmpty</a></div><div class="toc-item" id="string/startsWith"><a href="string/startsWith">startsWith</a></div></div><div class="module"><h3 class="module-name" id="vector2"><a href="vector2">"vector2" functions</a></h3><div class="toc-item" id="vector2/add"><a href="vector2/add">add</a></div><div class="toc-item" id="vector2/convertSpace"><a href="vector2/convertSpace">convertSpace</a></div><div class="toc-item" id="vector2/cross"><a href="vector2/cross">cross</a></div><div class="toc-item" id="vector2/dot"><a href="vector2/dot">dot</a></div><div class="toc-item" id="vector2/length"><a href="vector2/length">length</a></div><div class="toc-item" id="vector2/mul"><a href="vector2/mul">mul</a></div><div class="toc-item" id="vector2/multiply"><a href="vector2/multiply">multiply</a></div><div class="toc-item" id="vector2/normalize"><a href="vector2/normalize">normalize</a></div><div class="toc-item" id="vector2/reflect"><a href="vector2/reflect">reflect</a></div><div class="toc-item" id="vector2/rotate"><a href="vector2/rotate">rotate</a></div><div class="toc-item" id="vector2/scale"><a href="vector2/scale">scale</a></div><div class="toc-item" id="vector2/sub"><a href="vector2/sub">sub</a></div><div class="toc-item" id="vector2/transform"><a href="vector2/transform">transform</a></div><div class="toc-item" id="vector2/translate"><a href="vector2/translate">translate</a></div></div><div class="module"><h3 class="module-name" id="web"><a href="web">"web" functions</a></h3><div class="toc-item" id="web/classNames"><a href="web/classNames">classNames</a></div></div><div class="module"><h3 class="module-name" id="web/events"><a href="web/events">"events" functions</a></h3><div class="toc-item" id="web/events/cancel"><a href="web/events/cancel">cancel</a></div><div class="toc-item" id="web/events/openInNewTabIntent"><a href="web/events/openInNewTabIntent">openInNewTabIntent</a></div><div class="toc-item" id="web/events/prevent"><a href="web/events/prevent">prevent</a></div><div class="toc-item" id="web/events/stop"><a href="web/events/stop">stop</a></div></div></div>
-      </div>
-      <div class="content"><h2 class="module-name"><a href="array">"array" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/any">any</a></h3>
-      <div class="description"><span>Checks if the given array is present and it is not empty (contains at least one element).</span></div>
-    </div>
+    <aside><h1><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">@sandstreamdev/std (0.6.0)</a></h1><div><input type="text" id="searchInput" onkeyup="tocFilter()" placeholder="Search..."></div><div class="module"><h3 class="module-name" id="array"><a href="array">array</a></h3><a class="toc-item" id="array/any" href="array/any">any</a><a class="toc-item" id="array/are" href="array/are">are</a><a class="toc-item" id="array/difference" href="array/difference">difference</a><a class="toc-item" id="array/differs" href="array/differs">differs</a><a class="toc-item" id="array/duplicates" href="array/duplicates">duplicates</a><a class="toc-item" id="array/empty" href="array/empty">empty</a><a class="toc-item" id="array/exact" href="array/exact">exact</a><a class="toc-item" id="array/except" href="array/except">except</a><a class="toc-item" id="array/filterInPlace" href="array/filterInPlace">filterInPlace</a><a class="toc-item" id="array/find" href="array/find">find</a><a class="toc-item" id="array/first" href="array/first">first</a><a class="toc-item" id="array/flatMap" href="array/flatMap">flatMap</a><a class="toc-item" id="array/flatten" href="array/flatten">flatten</a><a class="toc-item" id="array/intersection" href="array/intersection">intersection</a><a class="toc-item" id="array/is" href="array/is">is</a><a class="toc-item" id="array/last" href="array/last">last</a><a class="toc-item" id="array/lengthDiffers" href="array/lengthDiffers">lengthDiffers</a><a class="toc-item" id="array/map" href="array/map">map</a><a class="toc-item" id="array/midpoint" href="array/midpoint">midpoint</a><a class="toc-item" id="array/minMax" href="array/minMax">minMax</a><a class="toc-item" id="array/multiple" href="array/multiple">multiple</a><a class="toc-item" id="array/none" href="array/none">none</a><a class="toc-item" id="array/partition" href="array/partition">partition</a><a class="toc-item" id="array/range" href="array/range">range</a><a class="toc-item" id="array/repeat" href="array/repeat">repeat</a><a class="toc-item" id="array/reverse" href="array/reverse">reverse</a><a class="toc-item" id="array/reverseIf" href="array/reverseIf">reverseIf</a><a class="toc-item" id="array/second" href="array/second">second</a><a class="toc-item" id="array/secondToLast" href="array/secondToLast">secondToLast</a><a class="toc-item" id="array/shift" href="array/shift">shift</a><a class="toc-item" id="array/shuffle" href="array/shuffle">shuffle</a><a class="toc-item" id="array/shuffleInPlace" href="array/shuffleInPlace">shuffleInPlace</a><a class="toc-item" id="array/single" href="array/single">single</a><a class="toc-item" id="array/skip" href="array/skip">skip</a><a class="toc-item" id="array/sort" href="array/sort">sort</a><a class="toc-item" id="array/sum" href="array/sum">sum</a><a class="toc-item" id="array/take" href="array/take">take</a><a class="toc-item" id="array/unique" href="array/unique">unique</a><a class="toc-item" id="array/zip" href="array/zip">zip</a><a class="toc-item" id="array/zipWith" href="array/zipWith">zipWith</a></div><div class="module"><h3 class="module-name" id="async"><a href="async">async</a></h3><a class="toc-item" id="async/debounce" href="async/debounce">debounce</a><a class="toc-item" id="async/delay" href="async/delay">delay</a><a class="toc-item" id="async/sequence" href="async/sequence">sequence</a></div><div class="module"><h3 class="module-name" id="date"><a href="date">date</a></h3><a class="toc-item" id="date/byDateWithFallback" href="date/byDateWithFallback">byDateWithFallback</a><a class="toc-item" id="date/clamp" href="date/clamp">clamp</a><a class="toc-item" id="date/dateDiff" href="date/dateDiff">dateDiff</a><a class="toc-item" id="date/dateInRange" href="date/dateInRange">dateInRange</a><a class="toc-item" id="date/dayRange" href="date/dayRange">dayRange</a><a class="toc-item" id="date/daysInMonths" href="date/daysInMonths">daysInMonths</a><a class="toc-item" id="date/daysInYear" href="date/daysInYear">daysInYear</a><a class="toc-item" id="date/displayMonth" href="date/displayMonth">displayMonth</a><a class="toc-item" id="date/displayTime" href="date/displayTime">displayTime</a><a class="toc-item" id="date/endOfDay" href="date/endOfDay">endOfDay</a><a class="toc-item" id="date/formatDate" href="date/formatDate">formatDate</a><a class="toc-item" id="date/formatDateTime" href="date/formatDateTime">formatDateTime</a><a class="toc-item" id="date/formatDisplayDate" href="date/formatDisplayDate">formatDisplayDate</a><a class="toc-item" id="date/formatDuration" href="date/formatDuration">formatDuration</a><a class="toc-item" id="date/formatTime" href="date/formatTime">formatTime</a><a class="toc-item" id="date/fromDays" href="date/fromDays">fromDays</a><a class="toc-item" id="date/fromHours" href="date/fromHours">fromHours</a><a class="toc-item" id="date/fromMinutes" href="date/fromMinutes">fromMinutes</a><a class="toc-item" id="date/fromSeconds" href="date/fromSeconds">fromSeconds</a><a class="toc-item" id="date/joinDateTime" href="date/joinDateTime">joinDateTime</a><a class="toc-item" id="date/leapYear" href="date/leapYear">leapYear</a><a class="toc-item" id="date/monthNames" href="date/monthNames">monthNames</a><a class="toc-item" id="date/offsetByBit" href="date/offsetByBit">offsetByBit</a><a class="toc-item" id="date/parseHourMinutePair" href="date/parseHourMinutePair">parseHourMinutePair</a><a class="toc-item" id="date/splitDateTime" href="date/splitDateTime">splitDateTime</a><a class="toc-item" id="date/startOfDay" href="date/startOfDay">startOfDay</a><a class="toc-item" id="date/subtractDays" href="date/subtractDays">subtractDays</a><a class="toc-item" id="date/toDate" href="date/toDate">toDate</a><a class="toc-item" id="date/toDates" href="date/toDates">toDates</a><a class="toc-item" id="date/toDays" href="date/toDays">toDays</a><a class="toc-item" id="date/toHours" href="date/toHours">toHours</a><a class="toc-item" id="date/toISO" href="date/toISO">toISO</a><a class="toc-item" id="date/toISOFromLocalDateTime" href="date/toISOFromLocalDateTime">toISOFromLocalDateTime</a><a class="toc-item" id="date/toLocalDateTime" href="date/toLocalDateTime">toLocalDateTime</a><a class="toc-item" id="date/toMinutes" href="date/toMinutes">toMinutes</a><a class="toc-item" id="date/toSeconds" href="date/toSeconds">toSeconds</a><a class="toc-item" id="date/valid" href="date/valid">valid</a></div><div class="module"><h3 class="module-name" id="debug"><a href="debug">debug</a></h3><a class="toc-item" id="debug/assert" href="debug/assert">assert</a><a class="toc-item" id="debug/diff" href="debug/diff">diff</a></div><div class="module"><h3 class="module-name" id="encoding"><a href="encoding">encoding</a></h3><a class="toc-item" id="encoding/base64url" href="encoding/base64url">base64url</a></div><div class="module"><h3 class="module-name" id="file"><a href="file">file</a></h3><a class="toc-item" id="file/validName" href="file/validName">validName</a></div><div class="module"><h3 class="module-name" id="function"><a href="function">function</a></h3><a class="toc-item" id="function/compose" href="function/compose">compose</a><a class="toc-item" id="function/constant" href="function/constant">constant</a><a class="toc-item" id="function/identity" href="function/identity">identity</a><a class="toc-item" id="function/memoize" href="function/memoize">memoize</a><a class="toc-item" id="function/memoizeShallow" href="function/memoizeShallow">memoizeShallow</a><a class="toc-item" id="function/memoizeWith" href="function/memoizeWith">memoizeWith</a><a class="toc-item" id="function/noOp" href="function/noOp">noOp</a><a class="toc-item" id="function/not" href="function/not">not</a><a class="toc-item" id="function/pipe" href="function/pipe">pipe</a><a class="toc-item" id="function/when" href="function/when">when</a><a class="toc-item" id="function/whenTrue" href="function/whenTrue">whenTrue</a></div><div class="module"><h3 class="module-name" id="is"><a href="is">is</a></h3><a class="toc-item" id="is/array" href="is/array">array</a><a class="toc-item" id="is/byte" href="is/byte">byte</a><a class="toc-item" id="is/date" href="is/date">date</a><a class="toc-item" id="is/defined" href="is/defined">defined</a><a class="toc-item" id="is/function" href="is/function">function</a><a class="toc-item" id="is/integer" href="is/integer">integer</a><a class="toc-item" id="is/nonNullable" href="is/nonNullable">nonNullable</a><a class="toc-item" id="is/normal" href="is/normal">normal</a><a class="toc-item" id="is/number" href="is/number">number</a><a class="toc-item" id="is/object" href="is/object">object</a><a class="toc-item" id="is/string" href="is/string">string</a></div><div class="module"><h3 class="module-name" id="math"><a href="math">math</a></h3><a class="toc-item" id="math/add" href="math/add">add</a><a class="toc-item" id="math/average" href="math/average">average</a><a class="toc-item" id="math/ceilToNearestPowerOfTwo" href="math/ceilToNearestPowerOfTwo">ceilToNearestPowerOfTwo</a><a class="toc-item" id="math/clamp" href="math/clamp">clamp</a><a class="toc-item" id="math/clampNormal" href="math/clampNormal">clampNormal</a><a class="toc-item" id="math/clampPercentage" href="math/clampPercentage">clampPercentage</a><a class="toc-item" id="math/delta" href="math/delta">delta</a><a class="toc-item" id="math/inRectangleRange" href="math/inRectangleRange">inRectangleRange</a><a class="toc-item" id="math/lerp" href="math/lerp">lerp</a><a class="toc-item" id="math/maximumBy" href="math/maximumBy">maximumBy</a><a class="toc-item" id="math/median" href="math/median">median</a><a class="toc-item" id="math/minMax" href="math/minMax">minMax</a><a class="toc-item" id="math/sameSign" href="math/sameSign">sameSign</a><a class="toc-item" id="math/sign" href="math/sign">sign</a><a class="toc-item" id="math/standardDeviation" href="math/standardDeviation">standardDeviation</a><a class="toc-item" id="math/subtract" href="math/subtract">subtract</a></div><div class="module"><h3 class="module-name" id="object"><a href="object">object</a></h3><a class="toc-item" id="object/any" href="object/any">any</a><a class="toc-item" id="object/apply" href="object/apply">apply</a><a class="toc-item" id="object/empty" href="object/empty">empty</a><a class="toc-item" id="object/entries" href="object/entries">entries</a><a class="toc-item" id="object/enumerable" href="object/enumerable">enumerable</a><a class="toc-item" id="object/equals" href="object/equals">equals</a><a class="toc-item" id="object/filter" href="object/filter">filter</a><a class="toc-item" id="object/find" href="object/find">find</a><a class="toc-item" id="object/findEntry" href="object/findEntry">findEntry</a><a class="toc-item" id="object/findKey" href="object/findKey">findKey</a><a class="toc-item" id="object/first" href="object/first">first</a><a class="toc-item" id="object/flatMapValues" href="object/flatMapValues">flatMapValues</a><a class="toc-item" id="object/fromEntries" href="object/fromEntries">fromEntries</a><a class="toc-item" id="object/groupBy" href="object/groupBy">groupBy</a><a class="toc-item" id="object/hasKey" href="object/hasKey">hasKey</a><a class="toc-item" id="object/length" href="object/length">length</a><a class="toc-item" id="object/map" href="object/map">map</a><a class="toc-item" id="object/mapEntries" href="object/mapEntries">mapEntries</a><a class="toc-item" id="object/mapKeys" href="object/mapKeys">mapKeys</a><a class="toc-item" id="object/mapValues" href="object/mapValues">mapValues</a><a class="toc-item" id="object/merge" href="object/merge">merge</a><a class="toc-item" id="object/none" href="object/none">none</a><a class="toc-item" id="object/sort" href="object/sort">sort</a></div><div class="module"><h3 class="module-name" id="query"><a href="query">query</a></h3><a class="toc-item" id="query/parse" href="query/parse">parse</a><a class="toc-item" id="query/read" href="query/read">read</a><a class="toc-item" id="query/serialize" href="query/serialize">serialize</a></div><div class="module"><h3 class="module-name" id="range"><a href="range">range</a></h3><a class="toc-item" id="range/empty" href="range/empty">empty</a><a class="toc-item" id="range/equals" href="range/equals">equals</a><a class="toc-item" id="range/length" href="range/length">length</a><a class="toc-item" id="range/split" href="range/split">split</a></div><div class="module"><h3 class="module-name" id="regex"><a href="regex">regex</a></h3><a class="toc-item" id="regex/escape" href="regex/escape">escape</a></div><div class="module"><h3 class="module-name" id="string"><a href="string">string</a></h3><a class="toc-item" id="string/containsWhitespace" href="string/containsWhitespace">containsWhitespace</a><a class="toc-item" id="string/empty" href="string/empty">empty</a><a class="toc-item" id="string/firstToLower" href="string/firstToLower">firstToLower</a><a class="toc-item" id="string/firstToUpper" href="string/firstToUpper">firstToUpper</a><a class="toc-item" id="string/includes" href="string/includes">includes</a><a class="toc-item" id="string/nbsp" href="string/nbsp">nbsp</a><a class="toc-item" id="string/nonEmpty" href="string/nonEmpty">nonEmpty</a><a class="toc-item" id="string/startsWith" href="string/startsWith">startsWith</a></div><div class="module"><h3 class="module-name" id="vector2"><a href="vector2">vector2</a></h3><a class="toc-item" id="vector2/add" href="vector2/add">add</a><a class="toc-item" id="vector2/convertSpace" href="vector2/convertSpace">convertSpace</a><a class="toc-item" id="vector2/cross" href="vector2/cross">cross</a><a class="toc-item" id="vector2/dot" href="vector2/dot">dot</a><a class="toc-item" id="vector2/length" href="vector2/length">length</a><a class="toc-item" id="vector2/mul" href="vector2/mul">mul</a><a class="toc-item" id="vector2/multiply" href="vector2/multiply">multiply</a><a class="toc-item" id="vector2/normalize" href="vector2/normalize">normalize</a><a class="toc-item" id="vector2/reflect" href="vector2/reflect">reflect</a><a class="toc-item" id="vector2/rotate" href="vector2/rotate">rotate</a><a class="toc-item" id="vector2/scale" href="vector2/scale">scale</a><a class="toc-item" id="vector2/sub" href="vector2/sub">sub</a><a class="toc-item" id="vector2/transform" href="vector2/transform">transform</a><a class="toc-item" id="vector2/translate" href="vector2/translate">translate</a></div><div class="module"><h3 class="module-name" id="web"><a href="web">web</a></h3><a class="toc-item" id="web/classNames" href="web/classNames">classNames</a></div><div class="module"><h3 class="module-name" id="web/events"><a href="web/events">events</a></h3><a class="toc-item" id="web/events/cancel" href="web/events/cancel">cancel</a><a class="toc-item" id="web/events/openInNewTabIntent" href="web/events/openInNewTabIntent">openInNewTabIntent</a><a class="toc-item" id="web/events/prevent" href="web/events/prevent">prevent</a><a class="toc-item" id="web/events/stop" href="web/events/stop">stop</a></div></aside>
+    <main><h2 class="module-name"><a href="array">array</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/any">any</a></h3>
+    <div class="description"><span>Checks if the given array is present and it is not empty (contains at least one element).</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -76,14 +68,9 @@
       <h3>Questions</h3>
       <ul><li>How to check if an array is empty (in JavaScript)?</li><li>How to check if array is empty or null or undefined (in JavaScript)?</li><li>Check if an array is empty or not (in JavaScript).</li><li>Check if an array is empty or exists (in JavaScript).</li></ul>
     </div>
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/are">are</a></h3>
-      <div class="description"><span>Checks if given arguments are all `Arrays`.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/are">are</a></h3>
+    <div class="description"><span>Checks if given arguments are all `Arrays`.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -92,14 +79,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/difference">difference</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/difference">difference</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -108,14 +90,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/differs">differs</a></h3>
-      <div class="description"><span>Checks if two arrays are not equal.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/differs">differs</a></h3>
+    <div class="description"><span>Checks if two arrays are not equal.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -124,14 +101,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/duplicates">duplicates</a></h3>
-      <div class="description"><span>Lists all the duplicated values in the given array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/duplicates">duplicates</a></h3>
+    <div class="description"><span>Lists all the duplicated values in the given array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -140,14 +112,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/empty">empty</a></h3>
-      <div class="description"><span>Empty array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/empty">empty</a></h3>
+    <div class="description"><span>Empty array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -163,14 +130,9 @@
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/exact">exact</a></h3>
-      <div class="description"><span>Takes exactly the given count of elements.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/exact">exact</a></h3>
+    <div class="description"><span>Takes exactly the given count of elements.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -179,14 +141,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/except">except</a></h3>
-      <div class="description"><span>Filters out the given value.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/except">except</a></h3>
+    <div class="description"><span>Filters out the given value.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -195,14 +152,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/filterInPlace">filterInPlace</a></h3>
-      <div class="description"><span>Filters the given array with the given predicate just like Array.filter but does it in-place thus mutates the original array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/filterInPlace">filterInPlace</a></h3>
+    <div class="description"><span>Filters the given array with the given predicate just like Array.filter but does it in-place thus mutates the original array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -213,14 +165,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/find">find</a></h3>
-      <div class="description"><span>Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/find">find</a></h3>
+    <div class="description"><span>Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -232,14 +179,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/first">first</a></h3>
-      <div class="description"><span>Returns the first element or undefined when there are no elements in the given array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/first">first</a></h3>
+    <div class="description"><span>Returns the first element or undefined when there are no elements in the given array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -248,14 +190,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/flatMap">flatMap</a></h3>
-      <div class="description"><span>Maps and flattens the result.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/flatMap">flatMap</a></h3>
+    <div class="description"><span>Maps and flattens the result.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -266,14 +203,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/flatten">flatten</a></h3>
-      <div class="description"><span>Flattens the nested arrays by a single level.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/flatten">flatten</a></h3>
+    <div class="description"><span>Flattens the nested arrays by a single level.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -282,14 +214,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/intersection">intersection</a></h3>
-      <div class="description"><span>Finds common items between both arrays.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/intersection">intersection</a></h3>
+    <div class="description"><span>Finds common items between both arrays.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -298,14 +225,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/is">is</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/is">is</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -314,14 +236,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/last">last</a></h3>
-      <div class="description"><span>Returns the last element or undefined when there are no elements in the given array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/last">last</a></h3>
+    <div class="description"><span>Returns the last element or undefined when there are no elements in the given array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -330,14 +247,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/lengthDiffers">lengthDiffers</a></h3>
-      <div class="description"><span>Checks if lengths of given arrays differ.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/lengthDiffers">lengthDiffers</a></h3>
+    <div class="description"><span>Checks if lengths of given arrays differ.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -346,14 +258,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/map">map</a></h3>
-      <div class="description"><span>Maps the given array with the given functions.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/map">map</a></h3>
+    <div class="description"><span>Maps the given array with the given functions.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -362,14 +269,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/midpoint">midpoint</a></h3>
-      <div class="description"><span>Returns the middle element or the right one when the number of elements is even.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/midpoint">midpoint</a></h3>
+    <div class="description"><span>Returns the middle element or the right one when the number of elements is even.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -378,14 +280,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/minMax">minMax</a></h3>
-      <div class="description"><span>Computes minimum and maximum of the given array in a single run.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/minMax">minMax</a></h3>
+    <div class="description"><span>Computes minimum and maximum of the given array in a single run.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -394,14 +291,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/multiple">multiple</a></h3>
-      <div class="description"><span>Checks if the given array contains more than one element.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/multiple">multiple</a></h3>
+    <div class="description"><span>Checks if the given array contains more than one element.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -410,14 +302,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/none">none</a></h3>
-      <div class="description"><span>Checks if the given array is empty.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/none">none</a></h3>
+    <div class="description"><span>Checks if the given array is empty.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -426,14 +313,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/partition">partition</a></h3>
-      <div class="description"><span>Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at right.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/partition">partition</a></h3>
+    <div class="description"><span>Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at right.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -442,14 +324,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/range">range</a></h3>
-      <div class="description"><span>Generates an array of numbers from 0 to n - 1.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/range">range</a></h3>
+    <div class="description"><span>Generates an array of numbers from 0 to n - 1.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -458,14 +335,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/repeat">repeat</a></h3>
-      <div class="description"><span>Repeats the given element by given count of times.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/repeat">repeat</a></h3>
+    <div class="description"><span>Repeats the given element by given count of times.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -474,14 +346,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/reverse">reverse</a></h3>
-      <div class="description"><span>Reverses the given array without mutating it (in contrast to Array.reverse).</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/reverse">reverse</a></h3>
+    <div class="description"><span>Reverses the given array without mutating it (in contrast to Array.reverse).</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -490,14 +357,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/reverseIf">reverseIf</a></h3>
-      <div class="description"><span>Reverses the given array when enabled.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/reverseIf">reverseIf</a></h3>
+    <div class="description"><span>Reverses the given array when enabled.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -506,14 +368,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/second">second</a></h3>
-      <div class="description"><span>Returns the second element or undefined when there are less than two elements in the given array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/second">second</a></h3>
+    <div class="description"><span>Returns the second element or undefined when there are less than two elements in the given array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -522,14 +379,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/secondToLast">secondToLast</a></h3>
-      <div class="description"><span>Returns the second to last element or undefined when there are less than two elements in the given array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/secondToLast">secondToLast</a></h3>
+    <div class="description"><span>Returns the second to last element or undefined when there are less than two elements in the given array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -538,14 +390,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/shift">shift</a></h3>
-      <div class="description"><span>Shifts the given array to the left and circulates the elements back by modulo of the array's length.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/shift">shift</a></h3>
+    <div class="description"><span>Shifts the given array to the left and circulates the elements back by modulo of the array's length.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -554,14 +401,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/shuffle">shuffle</a></h3>
-      <div class="description"><span>Shuffles the given array in random order with Math.random as the default.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/shuffle">shuffle</a></h3>
+    <div class="description"><span>Shuffles the given array in random order with Math.random as the default.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -570,14 +412,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/shuffleInPlace">shuffleInPlace</a></h3>
-      <div class="description"><span>Shuffles the given array in-place in random order with Math.random as the default.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/shuffleInPlace">shuffleInPlace</a></h3>
+    <div class="description"><span>Shuffles the given array in-place in random order with Math.random as the default.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -586,14 +423,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/single">single</a></h3>
-      <div class="description"><span>Checks if the given array contains exactly one element.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/single">single</a></h3>
+    <div class="description"><span>Checks if the given array contains exactly one element.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -602,14 +434,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/skip">skip</a></h3>
-      <div class="description"><span>Skips the given count of elements from the given array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/skip">skip</a></h3>
+    <div class="description"><span>Skips the given count of elements from the given array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -618,14 +445,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/sort">sort</a></h3>
-      <div class="description"><span>Sorts the given array without mutating it.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/sort">sort</a></h3>
+    <div class="description"><span>Sorts the given array without mutating it.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -636,14 +458,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/sum">sum</a></h3>
-      <div class="description"><span>Sums the given array of numbers.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/sum">sum</a></h3>
+    <div class="description"><span>Sums the given array of numbers.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -652,14 +469,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/take">take</a></h3>
-      <div class="description"><span>Takes up to given count of elements.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/take">take</a></h3>
+    <div class="description"><span>Takes up to given count of elements.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -668,14 +480,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/unique">unique</a></h3>
-      <div class="description"><span>Returns only unique elements of the given array.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/unique">unique</a></h3>
+    <div class="description"><span>Returns only unique elements of the given array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -684,14 +491,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/zip">zip</a></h3>
-      <div class="description"><span>Zips given arrays together into pairs.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/zip">zip</a></h3>
+    <div class="description"><span>Zips given arrays together into pairs.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -700,14 +502,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="array">array</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="array/zipWith">zipWith</a></h3>
-      <div class="description"><span>Zips given arrays together with the given function.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/zipWith">zipWith</a></h3>
+    <div class="description"><span>Zips given arrays together with the given function.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -718,14 +515,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="async">"async" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="async">async</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="async/debounce">debounce</a></h3>
-      <div class="description"><span>Makes the function run after the given period of not being called. Useful to delay input submission for autocomplete etc.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="async">async</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="async">async</a><span>/</span><a href="async/debounce">debounce</a></h3>
+    <div class="description"><span>Makes the function run after the given period of not being called. Useful to delay input submission for autocomplete etc.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -737,14 +529,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="async">async</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="async/delay">delay</a></h3>
-      <div class="description"><span>When awaited, delays the execution by the given number of milliseconds.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="async">async</a><span>/</span><a href="async/delay">delay</a></h3>
+    <div class="description"><span>When awaited, delays the execution by the given number of milliseconds.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -753,14 +540,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="async">async</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="async/sequence">sequence</a></h3>
-      <div class="description"><span>Runs the given tasks in a sequence.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="async">async</a><span>/</span><a href="async/sequence">sequence</a></h3>
+    <div class="description"><span>Runs the given tasks in a sequence.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -769,14 +551,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="date">"date" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/byDateWithFallback">byDateWithFallback</a></h3>
-      
-    </div>
+  </article><h2 class="module-name"><a href="date">date</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/byDateWithFallback">byDateWithFallback</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -802,14 +579,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/clamp">clamp</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/clamp">clamp</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -821,14 +593,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/dateDiff">dateDiff</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/dateDiff">dateDiff</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -840,14 +607,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/dateInRange">dateInRange</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/dateInRange">dateInRange</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -859,14 +621,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/dayRange">dayRange</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/dayRange">dayRange</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -885,14 +642,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/daysInMonths">daysInMonths</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/daysInMonths">daysInMonths</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -916,14 +668,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/daysInYear">daysInYear</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/daysInYear">daysInYear</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -932,14 +679,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/displayMonth">displayMonth</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/displayMonth">displayMonth</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -948,14 +690,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/displayTime">displayTime</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/displayTime">displayTime</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -967,14 +704,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/endOfDay">endOfDay</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/endOfDay">endOfDay</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -987,14 +719,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/formatDate">formatDate</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/formatDate">formatDate</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1003,14 +730,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/formatDateTime">formatDateTime</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/formatDateTime">formatDateTime</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1023,14 +745,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/formatDisplayDate">formatDisplayDate</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/formatDisplayDate">formatDisplayDate</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1043,14 +760,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/formatDuration">formatDuration</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/formatDuration">formatDuration</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1059,14 +771,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/formatTime">formatTime</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/formatTime">formatTime</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1079,14 +786,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/fromDays">fromDays</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/fromDays">fromDays</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1095,14 +797,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/fromHours">fromHours</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/fromHours">fromHours</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1111,14 +808,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/fromMinutes">fromMinutes</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/fromMinutes">fromMinutes</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1127,14 +819,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/fromSeconds">fromSeconds</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/fromSeconds">fromSeconds</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1143,14 +830,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/joinDateTime">joinDateTime</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/joinDateTime">joinDateTime</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1159,14 +841,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/leapYear">leapYear</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/leapYear">leapYear</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1175,14 +852,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/monthNames">monthNames</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/monthNames">monthNames</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1191,14 +863,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/offsetByBit">offsetByBit</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/offsetByBit">offsetByBit</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1207,14 +874,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/parseHourMinutePair">parseHourMinutePair</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/parseHourMinutePair">parseHourMinutePair</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1223,14 +885,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/splitDateTime">splitDateTime</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/splitDateTime">splitDateTime</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1239,14 +896,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/startOfDay">startOfDay</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/startOfDay">startOfDay</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1259,14 +911,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/subtractDays">subtractDays</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/subtractDays">subtractDays</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1278,14 +925,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toDate">toDate</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toDate">toDate</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1294,14 +936,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toDates">toDates</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toDates">toDates</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1310,14 +947,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toDays">toDays</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toDays">toDays</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1326,14 +958,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toHours">toHours</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toHours">toHours</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1342,14 +969,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toISO">toISO</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toISO">toISO</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1358,14 +980,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toISOFromLocalDateTime">toISOFromLocalDateTime</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toISOFromLocalDateTime">toISOFromLocalDateTime</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1374,14 +991,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toLocalDateTime">toLocalDateTime</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toLocalDateTime">toLocalDateTime</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1390,14 +1002,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toMinutes">toMinutes</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toMinutes">toMinutes</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1406,14 +1013,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/toSeconds">toSeconds</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/toSeconds">toSeconds</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1422,14 +1024,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="date">date</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="date/valid">valid</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="date">date</a><span>/</span><a href="date/valid">valid</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1438,14 +1035,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="debug">"debug" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="debug">debug</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="debug/assert">assert</a></h3>
-      <div class="description"><span>Asserts given conditions.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="debug">debug</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="debug">debug</a><span>/</span><a href="debug/assert">assert</a></h3>
+    <div class="description"><span>Asserts given conditions.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1457,14 +1049,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="debug">debug</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="debug/diff">diff</a></h3>
-      <div class="description"><span>Computes a difference between two objects.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="debug">debug</a><span>/</span><a href="debug/diff">diff</a></h3>
+    <div class="description"><span>Computes a difference between two objects.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1480,14 +1067,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="encoding">"encoding" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="encoding">encoding</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="encoding/base64url">base64url</a></h3>
-      <div class="description"><span>Provides a way to encode strings and bytes from and into Base64URL.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="encoding">encoding</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="encoding">encoding</a><span>/</span><a href="encoding/base64url">base64url</a></h3>
+    <div class="description"><span>Provides a way to encode strings and bytes from and into Base64URL.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1519,14 +1101,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="file">"file" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="file">file</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="file/validName">validName</a></h3>
-      <div class="description"><span>Checks if the given string is a valid Windows file name.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="file">file</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="file">file</a><span>/</span><a href="file/validName">validName</a></h3>
+    <div class="description"><span>Checks if the given string is a valid Windows file name.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1535,14 +1112,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="function">"function" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/compose">compose</a></h3>
-      <div class="description"><span>Composes multiple functions into a higher order one. Goes right to left.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="function">function</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/compose">compose</a></h3>
+    <div class="description"><span>Composes multiple functions into a higher order one. Goes right to left.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1551,14 +1123,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/constant">constant</a></h3>
-      <div class="description"><span>Returns the given constant no matter of the input.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/constant">constant</a></h3>
+    <div class="description"><span>Returns the given constant no matter of the input.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1567,14 +1134,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/identity">identity</a></h3>
-      <div class="description"><span>Always return the given value.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/identity">identity</a></h3>
+    <div class="description"><span>Always return the given value.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1583,14 +1145,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/memoize">memoize</a></h3>
-      <div class="description"><span>Memoizes the function result so it is not computed for the same parameters. Uses deep equality.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/memoize">memoize</a></h3>
+    <div class="description"><span>Memoizes the function result so it is not computed for the same parameters. Uses deep equality.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1599,14 +1156,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/memoizeShallow">memoizeShallow</a></h3>
-      <div class="description"><span>Memoizes the function result so it is not computed for the same parameters. Uses shallow equality.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/memoizeShallow">memoizeShallow</a></h3>
+    <div class="description"><span>Memoizes the function result so it is not computed for the same parameters. Uses shallow equality.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1615,14 +1167,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/memoizeWith">memoizeWith</a></h3>
-      <div class="description"><span>Memoizes the function result so it is not computed for the same parameters. Uses the given equality function.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/memoizeWith">memoizeWith</a></h3>
+    <div class="description"><span>Memoizes the function result so it is not computed for the same parameters. Uses the given equality function.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1633,14 +1180,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/noOp">noOp</a></h3>
-      <div class="description"><span>Does exactly nothing.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/noOp">noOp</a></h3>
+    <div class="description"><span>Does exactly nothing.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1649,14 +1191,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/not">not</a></h3>
-      <div class="description"><span>Inverts the given function result.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/not">not</a></h3>
+    <div class="description"><span>Inverts the given function result.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1667,14 +1204,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/pipe">pipe</a></h3>
-      <div class="description"><span>Pipes an input through given functions.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/pipe">pipe</a></h3>
+    <div class="description"><span>Pipes an input through given functions.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1683,14 +1215,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/when">when</a></h3>
-      <div class="description"><span>Runs the given function only when the condition is met.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/when">when</a></h3>
+    <div class="description"><span>Runs the given function only when the condition is met.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1701,14 +1228,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="function">function</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="function/whenTrue">whenTrue</a></h3>
-      <div class="description"><span>Runs the given function only when the condition is exactly true.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="function">function</a><span>/</span><a href="function/whenTrue">whenTrue</a></h3>
+    <div class="description"><span>Runs the given function only when the condition is exactly true.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1719,14 +1241,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="is">"is" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/array">array</a></h3>
-      <div class="description"><span>Checks if the given argument is array.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="is">is</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/array">array</a></h3>
+    <div class="description"><span>Checks if the given argument is array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1742,14 +1259,9 @@
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/byte">byte</a></h3>
-      <div class="description"><span>Checks if the given value is a byte.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/byte">byte</a></h3>
+    <div class="description"><span>Checks if the given value is a byte.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1765,14 +1277,9 @@
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/date">date</a></h3>
-      <div class="description"><span>Checks if given value is a Date object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/date">date</a></h3>
+    <div class="description"><span>Checks if given value is a Date object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1781,14 +1288,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/defined">defined</a></h3>
-      <div class="description"><span>Checks if given value is defined.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/defined">defined</a></h3>
+    <div class="description"><span>Checks if given value is defined.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1804,14 +1306,9 @@
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/function">function</a></h3>
-      <div class="description"><span>Checks if given value is a function.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/function">function</a></h3>
+    <div class="description"><span>Checks if given value is a function.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1820,14 +1317,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/integer">integer</a></h3>
-      <div class="description"><span>Checks if given value is an integer.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/integer">integer</a></h3>
+    <div class="description"><span>Checks if given value is an integer.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1836,14 +1328,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/nonNullable">nonNullable</a></h3>
-      <div class="description"><span>Checks and asserts the given value is not a null or undefined.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/nonNullable">nonNullable</a></h3>
+    <div class="description"><span>Checks and asserts the given value is not a null or undefined.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1852,14 +1339,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/normal">normal</a></h3>
-      <div class="description"><span>Checks if the given value is a number in a normal range [0, 1].</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/normal">normal</a></h3>
+    <div class="description"><span>Checks if the given value is a number in a normal range [0, 1].</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1868,14 +1350,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/number">number</a></h3>
-      <div class="description"><span>Checks if given value is a number.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/number">number</a></h3>
+    <div class="description"><span>Checks if given value is a number.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1884,14 +1361,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/object">object</a></h3>
-      <div class="description"><span>Checks if given value is an object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/object">object</a></h3>
+    <div class="description"><span>Checks if given value is an object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1900,14 +1372,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="is">is</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="is/string">string</a></h3>
-      <div class="description"><span>Checks if given value is a string.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="is">is</a><span>/</span><a href="is/string">string</a></h3>
+    <div class="description"><span>Checks if given value is a string.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1916,14 +1383,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="math">"math" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/add">add</a></h3>
-      <div class="description"><span>Adds two values.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="math">math</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/add">add</a></h3>
+    <div class="description"><span>Adds two values.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1932,14 +1394,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/average">average</a></h3>
-      <div class="description"><span>Calculates the average of given array of numbers.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/average">average</a></h3>
+    <div class="description"><span>Calculates the average of given array of numbers.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1948,14 +1405,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/ceilToNearestPowerOfTwo">ceilToNearestPowerOfTwo</a></h3>
-      <div class="description"><span>Finds the nearest power of two greater or equal to the given value.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/ceilToNearestPowerOfTwo">ceilToNearestPowerOfTwo</a></h3>
+    <div class="description"><span>Finds the nearest power of two greater or equal to the given value.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1964,14 +1416,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/clamp">clamp</a></h3>
-      <div class="description"><span>Clamps the given value to the given range.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/clamp">clamp</a></h3>
+    <div class="description"><span>Clamps the given value to the given range.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1980,14 +1427,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/clampNormal">clampNormal</a></h3>
-      <div class="description"><span>Clamps the given value to the [0, 1] range.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/clampNormal">clampNormal</a></h3>
+    <div class="description"><span>Clamps the given value to the [0, 1] range.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -1996,14 +1438,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/clampPercentage">clampPercentage</a></h3>
-      <div class="description"><span>Clamps the given value to the [0, 100] range.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/clampPercentage">clampPercentage</a></h3>
+    <div class="description"><span>Clamps the given value to the [0, 100] range.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2012,14 +1449,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/delta">delta</a></h3>
-      <div class="description"><span>Calculates the absolute distance between given values.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/delta">delta</a></h3>
+    <div class="description"><span>Calculates the absolute distance between given values.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2028,14 +1460,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/inRectangleRange">inRectangleRange</a></h3>
-      <div class="description"><span>Checks if the given value is in the rectangular range of [0, width] and [0, height]</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/inRectangleRange">inRectangleRange</a></h3>
+    <div class="description"><span>Checks if the given value is in the rectangular range of [0, width] and [0, height]</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2047,14 +1474,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/lerp">lerp</a></h3>
-      <div class="description"><span>Linearly interpolates two given values by normal value of their distance.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/lerp">lerp</a></h3>
+    <div class="description"><span>Linearly interpolates two given values by normal value of their distance.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2063,14 +1485,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/maximumBy">maximumBy</a></h3>
-      <div class="description"><span>Calculates the maximum by a given selector.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/maximumBy">maximumBy</a></h3>
+    <div class="description"><span>Calculates the maximum by a given selector.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2079,14 +1496,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/median">median</a></h3>
-      <div class="description"><span>Calculates the median of the values. If there is an even number of items, the average of the middle ones is returned.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/median">median</a></h3>
+    <div class="description"><span>Calculates the median of the values. If there is an even number of items, the average of the middle ones is returned.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2095,14 +1507,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/minMax">minMax</a></h3>
-      <div class="description"><span>Calculates the minimum and maximum value of the two given values.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/minMax">minMax</a></h3>
+    <div class="description"><span>Calculates the minimum and maximum value of the two given values.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2111,14 +1518,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/sameSign">sameSign</a></h3>
-      <div class="description"><span>Checks if all the given values have the same sign.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/sameSign">sameSign</a></h3>
+    <div class="description"><span>Checks if all the given values have the same sign.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2127,14 +1529,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/sign">sign</a></h3>
-      <div class="description"><span>Calculates the sign of the value and returns -1 for negative values, 1 for positive values and 0 for zeros.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/sign">sign</a></h3>
+    <div class="description"><span>Calculates the sign of the value and returns -1 for negative values, 1 for positive values and 0 for zeros.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2143,14 +1540,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/standardDeviation">standardDeviation</a></h3>
-      <div class="description"><span>Calculates standard deviation of the given array of numbers.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/standardDeviation">standardDeviation</a></h3>
+    <div class="description"><span>Calculates standard deviation of the given array of numbers.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2159,14 +1551,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="math">math</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="math/subtract">subtract</a></h3>
-      <div class="description"><span>Subtracts two values.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="math">math</a><span>/</span><a href="math/subtract">subtract</a></h3>
+    <div class="description"><span>Subtracts two values.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2175,14 +1562,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="object">"object" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/any">any</a></h3>
-      <div class="description"><span>Checks if the given object is present and it is not empty (contains at least one entry).</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="object">object</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/any">any</a></h3>
+    <div class="description"><span>Checks if the given object is present and it is not empty (contains at least one entry).</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2191,14 +1573,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/apply">apply</a></h3>
-      <div class="description"><span>Applies the given parameters to the given dictionary of functions.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/apply">apply</a></h3>
+    <div class="description"><span>Applies the given parameters to the given dictionary of functions.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2209,14 +1586,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/empty">empty</a></h3>
-      <div class="description"><span>Empty object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/empty">empty</a></h3>
+    <div class="description"><span>Empty object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2232,14 +1604,9 @@
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/entries">entries</a></h3>
-      <div class="description"><span>Lists key value pairs (entries) present in the given object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/entries">entries</a></h3>
+    <div class="description"><span>Lists key value pairs (entries) present in the given object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2257,14 +1624,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/enumerable">enumerable</a></h3>
-      <div class="description"><span>Creates a 1 to 1 mapping of given values as an object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/enumerable">enumerable</a></h3>
+    <div class="description"><span>Creates a 1 to 1 mapping of given values as an object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2280,14 +1642,9 @@
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/equals">equals</a></h3>
-      <div class="description"><span>Checks if two objects are deeply equal.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/equals">equals</a></h3>
+    <div class="description"><span>Checks if two objects are deeply equal.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2296,14 +1653,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/filter">filter</a></h3>
-      <div class="description"><span>Filters the given object with the given predicate.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/filter">filter</a></h3>
+    <div class="description"><span>Filters the given object with the given predicate.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2314,14 +1666,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/find">find</a></h3>
-      <div class="description"><span>Searches the given object by the given predicate and returns the found value or undefined.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/find">find</a></h3>
+    <div class="description"><span>Searches the given object by the given predicate and returns the found value or undefined.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2332,14 +1679,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/findEntry">findEntry</a></h3>
-      <div class="description"><span>Searches the given object by the given predicate and returns the found entry or undefined.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/findEntry">findEntry</a></h3>
+    <div class="description"><span>Searches the given object by the given predicate and returns the found entry or undefined.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2350,14 +1692,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/findKey">findKey</a></h3>
-      <div class="description"><span>Searches the given object by the given predicate and returns the found key or undefined.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/findKey">findKey</a></h3>
+    <div class="description"><span>Searches the given object by the given predicate and returns the found key or undefined.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2368,14 +1705,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/first">first</a></h3>
-      <div class="description"><span>Returns the first value in the given object. Follows default object iteration order.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/first">first</a></h3>
+    <div class="description"><span>Returns the first value in the given object. Follows default object iteration order.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2391,14 +1723,9 @@
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/flatMapValues">flatMapValues</a></h3>
-      <div class="description"><span>Flat maps the values of the given object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/flatMapValues">flatMapValues</a></h3>
+    <div class="description"><span>Flat maps the values of the given object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2409,14 +1736,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/fromEntries">fromEntries</a></h3>
-      <div class="description"><span>Creates an object from array of key value pairs (entries).</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/fromEntries">fromEntries</a></h3>
+    <div class="description"><span>Creates an object from array of key value pairs (entries).</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2425,14 +1747,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/groupBy">groupBy</a></h3>
-      <div class="description"><span>Groups given array of values by the given key selector.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/groupBy">groupBy</a></h3>
+    <div class="description"><span>Groups given array of values by the given key selector.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2441,14 +1758,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/hasKey">hasKey</a></h3>
-      <div class="description"><span>Checks if given key is present in the object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/hasKey">hasKey</a></h3>
+    <div class="description"><span>Checks if given key is present in the object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2457,14 +1769,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/length">length</a></h3>
-      <div class="description"><span>Returns the number of entries within the given object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/length">length</a></h3>
+    <div class="description"><span>Returns the number of entries within the given object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2473,14 +1780,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/map">map</a></h3>
-      <div class="description"><span>Maps the given object with the given function.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/map">map</a></h3>
+    <div class="description"><span>Maps the given object with the given function.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2491,14 +1793,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/mapEntries">mapEntries</a></h3>
-      <div class="description"><span>Maps entries of the given object.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/mapEntries">mapEntries</a></h3>
+    <div class="description"><span>Maps entries of the given object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2509,14 +1806,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/mapKeys">mapKeys</a></h3>
-      
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/mapKeys">mapKeys</a></h3>
+    
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2527,14 +1819,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/mapValues">mapValues</a></h3>
-      <div class="description"><span>Maps and returns an array of transformed object values.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/mapValues">mapValues</a></h3>
+    <div class="description"><span>Maps and returns an array of transformed object values.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2545,14 +1832,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/merge">merge</a></h3>
-      <div class="description"><span>Merges two objects deeply.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/merge">merge</a></h3>
+    <div class="description"><span>Merges two objects deeply.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2576,14 +1858,9 @@
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/none">none</a></h3>
-      <div class="description"><span>Checks if the given object is empty.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/none">none</a></h3>
+    <div class="description"><span>Checks if the given object is empty.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2592,14 +1869,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="object">object</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="object/sort">sort</a></h3>
-      <div class="description"><span>Sorts the given object by a comparator.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="object">object</a><span>/</span><a href="object/sort">sort</a></h3>
+    <div class="description"><span>Sorts the given object by a comparator.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2610,14 +1882,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="query">"query" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="query">query</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="query/parse">parse</a></h3>
-      <div class="description"><span>Parses a query string into an object.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="query">query</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="query">query</a><span>/</span><a href="query/parse">parse</a></h3>
+    <div class="description"><span>Parses a query string into an object.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2626,14 +1893,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="query">query</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="query/read">read</a></h3>
-      <div class="description"><span>Parses the given query string into an object using URLSearchParams.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="query">query</a><span>/</span><a href="query/read">read</a></h3>
+    <div class="description"><span>Parses the given query string into an object using URLSearchParams.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2642,14 +1904,9 @@
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="query">query</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="query/serialize">serialize</a></h3>
-      <div class="description"><span>Serializes the given object into a query string.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="query">query</a><span>/</span><a href="query/serialize">serialize</a></h3>
+    <div class="description"><span>Serializes the given object into a query string.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2658,14 +1915,9 @@
   </div>
     
     
-  </div><h2 class="module-name"><a href="range">"range" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="range">range</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="range/empty">empty</a></h3>
-      <div class="description"><span>Checks if the given range is empty.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="range">range</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="range">range</a><span>/</span><a href="range/empty">empty</a></h3>
+    <div class="description"><span>Checks if the given range is empty.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2682,14 +1934,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="range">range</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="range/equals">equals</a></h3>
-      <div class="description"><span>Checks if the given ranges are equal.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="range">range</a><span>/</span><a href="range/equals">equals</a></h3>
+    <div class="description"><span>Checks if the given ranges are equal.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2701,14 +1948,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="range">range</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="range/length">length</a></h3>
-      <div class="description"><span>Computes the signed length of the given range.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="range">range</a><span>/</span><a href="range/length">length</a></h3>
+    <div class="description"><span>Computes the signed length of the given range.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2717,14 +1959,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="range">range</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="range/split">split</a></h3>
-      <div class="description"><span>Splits the given range in subranges by excluding the given used ranged.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="range">range</a><span>/</span><a href="range/split">split</a></h3>
+    <div class="description"><span>Splits the given range in subranges by excluding the given used ranged.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2736,14 +1973,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><h2 class="module-name"><a href="regex">"regex" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="regex">regex</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="regex/escape">escape</a></h3>
-      <div class="description"><span>Escapes regex string into proper regex.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="regex">regex</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="regex">regex</a><span>/</span><a href="regex/escape">escape</a></h3>
+    <div class="description"><span>Escapes regex string into proper regex.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2752,14 +1984,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><h2 class="module-name"><a href="string">"string" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="string">string</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="string/containsWhitespace">containsWhitespace</a></h3>
-      <div class="description"><span>Checks if the given string contains whitespace.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="string">string</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="string">string</a><span>/</span><a href="string/containsWhitespace">containsWhitespace</a></h3>
+    <div class="description"><span>Checks if the given string contains whitespace.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2768,14 +1995,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="string">string</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="string/empty">empty</a></h3>
-      <div class="description"><span>Empty string.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="string">string</a><span>/</span><a href="string/empty">empty</a></h3>
+    <div class="description"><span>Empty string.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2784,14 +2006,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="string">string</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="string/firstToLower">firstToLower</a></h3>
-      <div class="description"><span>Transforms the first character to lowercase.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="string">string</a><span>/</span><a href="string/firstToLower">firstToLower</a></h3>
+    <div class="description"><span>Transforms the first character to lowercase.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2800,14 +2017,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="string">string</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="string/firstToUpper">firstToUpper</a></h3>
-      <div class="description"><span>Transforms the first character to uppercase.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="string">string</a><span>/</span><a href="string/firstToUpper">firstToUpper</a></h3>
+    <div class="description"><span>Transforms the first character to uppercase.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2816,14 +2028,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="string">string</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="string/includes">includes</a></h3>
-      <div class="description"><span>Checks if the given substring is present in the source string.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="string">string</a><span>/</span><a href="string/includes">includes</a></h3>
+    <div class="description"><span>Checks if the given substring is present in the source string.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2832,14 +2039,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="string">string</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="string/nbsp">nbsp</a></h3>
-      <div class="description"><span>Non-breaking space.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="string">string</a><span>/</span><a href="string/nbsp">nbsp</a></h3>
+    <div class="description"><span>Non-breaking space.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2855,14 +2057,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
     <div class="repl"></div>
   </div>
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="string">string</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="string/nonEmpty">nonEmpty</a></h3>
-      <div class="description"><span>Checks if the given string is present and is not empty or all whitespace.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="string">string</a><span>/</span><a href="string/nonEmpty">nonEmpty</a></h3>
+    <div class="description"><span>Checks if the given string is present and is not empty or all whitespace.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2871,14 +2068,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="string">string</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="string/startsWith">startsWith</a></h3>
-      <div class="description"><span>Checks if the given string starts with the given substring.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="string">string</a><span>/</span><a href="string/startsWith">startsWith</a></h3>
+    <div class="description"><span>Checks if the given string starts with the given substring.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2887,14 +2079,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><h2 class="module-name"><a href="vector2">"vector2" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/add">add</a></h3>
-      <div class="description"><span>Adds two vectors.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="vector2">vector2</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/add">add</a></h3>
+    <div class="description"><span>Adds two vectors.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2906,14 +2093,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/convertSpace">convertSpace</a></h3>
-      <div class="description"><span>Applies transformations to the given vector.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/convertSpace">convertSpace</a></h3>
+    <div class="description"><span>Applies transformations to the given vector.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2929,14 +2111,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/cross">cross</a></h3>
-      <div class="description"><span>Calculates a cross product of the given vectors. Returns a scalar.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/cross">cross</a></h3>
+    <div class="description"><span>Calculates a cross product of the given vectors. Returns a scalar.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2948,14 +2125,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/dot">dot</a></h3>
-      <div class="description"><span>Calculates a dot product of the given vectors. Returns a scalar.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/dot">dot</a></h3>
+    <div class="description"><span>Calculates a dot product of the given vectors. Returns a scalar.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2967,14 +2139,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/length">length</a></h3>
-      <div class="description"><span>Calculates length/magnitude of the given vector.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/length">length</a></h3>
+    <div class="description"><span>Calculates length/magnitude of the given vector.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -2983,14 +2150,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/mul">mul</a></h3>
-      <div class="description"><span>Applies matrix transformation to the given vector.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/mul">mul</a></h3>
+    <div class="description"><span>Applies matrix transformation to the given vector.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3016,14 +2178,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/multiply">multiply</a></h3>
-      <div class="description"><span>Multiples two matrices.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/multiply">multiply</a></h3>
+    <div class="description"><span>Multiples two matrices.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3056,14 +2213,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/normalize">normalize</a></h3>
-      <div class="description"><span>Normalizes the given vector. Returns [0, 0] vector for points.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/normalize">normalize</a></h3>
+    <div class="description"><span>Normalizes the given vector. Returns [0, 0] vector for points.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3072,14 +2224,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/reflect">reflect</a></h3>
-      <div class="description"><span>Reflects the given vector on the given surface.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/reflect">reflect</a></h3>
+    <div class="description"><span>Reflects the given vector on the given surface.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3091,14 +2238,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/rotate">rotate</a></h3>
-      <div class="description"><span>Creates a rotation matrix around given origin [0, 0] by default.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/rotate">rotate</a></h3>
+    <div class="description"><span>Creates a rotation matrix around given origin [0, 0] by default.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3118,14 +2260,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/scale">scale</a></h3>
-      <div class="description"><span>Creates a scale matrix.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/scale">scale</a></h3>
+    <div class="description"><span>Creates a scale matrix.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3144,14 +2281,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/sub">sub</a></h3>
-      <div class="description"><span>Subtracts two vectors.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/sub">sub</a></h3>
+    <div class="description"><span>Subtracts two vectors.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3163,14 +2295,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/transform">transform</a></h3>
-      <div class="description"><span>Composes a single transformation by matrix multiplication.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/transform">transform</a></h3>
+    <div class="description"><span>Composes a single transformation by matrix multiplication.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3195,14 +2322,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="vector2">vector2</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="vector2/translate">translate</a></h3>
-      <div class="description"><span>Creates a translation matrix.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="vector2">vector2</a><span>/</span><a href="vector2/translate">translate</a></h3>
+    <div class="description"><span>Creates a translation matrix.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3221,14 +2343,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><h2 class="module-name"><a href="web">"web" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="web">web</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="web/classNames">classNames</a></h3>
-      <div class="description"><span>Composes class name from truthy values with support of string and objects.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="web">web</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/classNames">classNames</a></h3>
+    <div class="description"><span>Composes class name from truthy values with support of string and objects.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3237,14 +2354,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><h2 class="module-name"><a href="web/events">"events" functions</a></h2><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/events">events</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="web/events/cancel">cancel</a></h3>
-      <div class="description"><span>Stops propagation and prevents the default handler of the given event.</span></div>
-    </div>
+  </article><h2 class="module-name"><a href="web/events">events</a></h2><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/events">events</a><span>/</span><a href="web/events/cancel">cancel</a></h3>
+    <div class="description"><span>Stops propagation and prevents the default handler of the given event.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3256,14 +2368,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/events">events</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="web/events/openInNewTabIntent">openInNewTabIntent</a></h3>
-      <div class="description"><span>Tests if the current event seems like an intent to open a new tab. Useful for client-side navigation handling.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/events">events</a><span>/</span><a href="web/events/openInNewTabIntent">openInNewTabIntent</a></h3>
+    <div class="description"><span>Tests if the current event seems like an intent to open a new tab. Useful for client-side navigation handling.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3282,14 +2389,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/events">events</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="web/events/prevent">prevent</a></h3>
-      <div class="description"><span>Prevents the default handler of the given event.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/events">events</a><span>/</span><a href="web/events/prevent">prevent</a></h3>
+    <div class="description"><span>Prevents the default handler of the given event.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3298,14 +2400,9 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div><div class="std-item">
-    <div>
-      <div class="breadcrumbs"><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/events">events</a></div>
-    </div>
-    <div>
-      <h3 class="name"><a href="web/events/stop">stop</a></h3>
-      <div class="description"><span>Stops propagation of the given event.</span></div>
-    </div>
+  </article><article>
+    <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="web">web</a><span>/</span><a href="web/events">events</a><span>/</span><a href="web/events/stop">stop</a></h3>
+    <div class="description"><span>Stops propagation of the given event.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -3314,8 +2411,7 @@ empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
   </div>
     
     
-  </div></div>
-    </div>
+  </article></main>
     <script async src="scripts/docs.js"></script>
     <script async src="https://embed.runkit.com"></script>
   </body>
