@@ -39,6 +39,7 @@ import sum from "./sum";
 import take from "./take";
 import unique from "./unique";
 import zip from "./zip";
+import zipN from "./zipN";
 import zipWith from "./zipWith";
 
 export {
@@ -83,6 +84,7 @@ export {
   take,
   unique,
   zip,
+  zipN,
   zipWith
 };
 
@@ -128,5 +130,6 @@ export default {
   take,
   unique,
   zip,
+  zipN,
   zipWith
 };
