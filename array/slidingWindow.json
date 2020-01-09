@@ -1,0 +1,20 @@
+{
+  "name": "slidingWindow",
+  "description": "Returns a new array composed of tuples of the given sliding window length of consecutive elements.",
+  "signature": "(count: number) => (xs: any[]) => any[][]",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "slidingWindow(2)([1, 2, 3, 4]); // ⇒ [[1, 2], [2, 3], [3, 4]]"
+    },
+    {
+      "language": "javascript",
+      "content": "slidingWindow(3)([1, 2, 3, 4, 5]); // ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]"
+    },
+    {
+      "language": "javascript",
+      "content": "slidingWindow(1)([1, 2, 3, 4, 5, 6]); // ⇒ [[1], [2], [3], [4], [5], [6]]"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answer."]
+}
