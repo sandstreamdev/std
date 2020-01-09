@@ -37,7 +37,7 @@
 
 # clone
 
-Returns the cloned date
+Clones the given Date object.
 
 ## Type signature
 
@@ -51,7 +51,8 @@ Returns the cloned date
 
 <!-- prettier-ignore-start -->
 ```javascript
-clone(new Date('2019-04-24T13:54:33.232Z')); // ⇒ Wed Apr 24 2019 15:54:33 GMT+0200 (czas środkowoeuropejski letni)
+const date = new new Date('2019-04-24T13:54:33.232Z');
+clone(date) !== date; // ⇒ true
 ```
 <!-- prettier-ignore-end -->
 

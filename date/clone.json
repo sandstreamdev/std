@@ -1,12 +1,12 @@
 {
   "name": "clone",
-  "description": "Returns the cloned date",
+  "description": "Clones the given Date object.",
   "signature": "(date: Date) => Date",
   "examples": [
     {
       "language": "javascript",
-      "content": "clone(new Date('2019-04-24T13:54:33.232Z')); // ⇒ Wed Apr 24 2019 15:54:33 GMT+0200 (czas środkowoeuropejski letni)"
+      "content": "const date = new new Date('2019-04-24T13:54:33.232Z');\nclone(date) !== date; // ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["TODO: List questions that may this function answer."]
 }
