@@ -36,6 +36,10 @@ describe("zip", () => {
     expect(zipN([])).toEqual([]);
   });
 
+  it("should return an empty array when the given nothing", () => {
+    expect(zipN()).toEqual([]);
+  });
+
   it("should zip three arrays with the same lengths", () => {
     expect(zipN([1, 2, 3], [4, 5, 6], [7, 8, 9])).toEqual([
       [1, 4, 7],
