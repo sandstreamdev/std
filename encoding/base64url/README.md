@@ -1,8 +1,6 @@
-# base64url
+# decode
 
-## decode
-
-### Type signature
+## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
@@ -10,9 +8,9 @@
 ```
 <!-- prettier-ignore-end -->
 
-## decodeBytes
+# decodeBytes
 
-### Type signature
+## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
@@ -20,9 +18,9 @@
 ```
 <!-- prettier-ignore-end -->
 
-## encode
+# encode
 
-### Type signature
+## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
@@ -30,9 +28,9 @@
 ```
 <!-- prettier-ignore-end -->
 
-## encodeBytes
+# encodeBytes
 
-### Type signature
+## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
@@ -40,9 +38,9 @@
 ```
 <!-- prettier-ignore-end -->
 
-## fromBase64
+# fromBase64
 
-### Type signature
+## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
@@ -50,34 +48,12 @@
 ```
 <!-- prettier-ignore-end -->
 
-## toBase64
+# toBase64
 
-### Type signature
+## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (base64Url: string) => string
-```
-<!-- prettier-ignore-end -->
-
-# byteString
-
-## from
-
-### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(byteString: string) => number[]
-```
-<!-- prettier-ignore-end -->
-
-## to
-
-### Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(bytes: number[]) => string
 ```
 <!-- prettier-ignore-end -->

@@ -1,0 +1,12 @@
+{
+  "name": "toBase64",
+  "description": "TODO: Fill short description here.",
+  "signature": "(base64Url: string) => string",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "toBase64(); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

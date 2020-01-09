@@ -1,0 +1,12 @@
+{
+  "name": "encodeBytes",
+  "description": "TODO: Fill short description here.",
+  "signature": "(bytes: number[], context?: EncodeContext) => string",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "encodeBytes(); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

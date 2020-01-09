@@ -1,0 +1,12 @@
+{
+  "name": "decodeBytes",
+  "description": "TODO: Fill short description here.",
+  "signature": "(text: string, context?: DecodeContext) => number[]",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "decodeBytes(); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

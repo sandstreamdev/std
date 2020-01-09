@@ -1,0 +1,12 @@
+{
+  "name": "encode",
+  "description": "TODO: Fill short description here.",
+  "signature": "(text: string, context?: EncodeContext) => string",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "encode(); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

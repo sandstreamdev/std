@@ -1,0 +1,12 @@
+{
+  "name": "from",
+  "description": "TODO: Fill short description here.",
+  "signature": "(byteString: string) => number[]",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "from(); // ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

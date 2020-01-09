@@ -1113,36 +1113,85 @@ Computes a difference between two objects.
 
 #### base64url
 
-Provides a way to encode strings and bytes from and into Base64URL.
+##### decode
 
-##### Type signature
+###### Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-{
-  decode: (text: string, context?: DecodeContext) => string;
-  decodeBytes: (
-    text: string,
-    context?: {
-      atob: (byteString: string) => string;
-      TextDecoder: new (encoding: string) => {
-        decode: (input?: Uint8Array) => string;
-      };
-    }
-  ) => number[];
-  encode: (
-    text: string,
-    context?: {
-      btoa: (byteString: string) => string;
-      TextEncoder: new () => {
-        encode: (input?: string) => Uint8Array;
-      };
-    }
-  ) => string;
-  encodeBytes: (bytes: number[], context?: EncodeContext) => string;
-  fromByteString: (byteString: string) => number[];
-  toByteString: (bytes: number[]) => string;
-}
+(text: string, context?: DecodeContext) => string
+```
+<!-- prettier-ignore-end -->
+
+##### decodeBytes
+
+###### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(text: string, context?: DecodeContext) => number[]
+```
+<!-- prettier-ignore-end -->
+
+##### encode
+
+###### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(text: string, context?: EncodeContext) => string
+```
+<!-- prettier-ignore-end -->
+
+##### encodeBytes
+
+###### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(bytes: number[], context?: EncodeContext) => string
+```
+<!-- prettier-ignore-end -->
+
+##### fromBase64
+
+###### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(base64: string) => string
+```
+<!-- prettier-ignore-end -->
+
+##### toBase64
+
+###### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(base64Url: string) => string
+```
+<!-- prettier-ignore-end -->
+
+#### byteString
+
+##### from
+
+###### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(byteString: string) => number[]
+```
+<!-- prettier-ignore-end -->
+
+##### to
+
+###### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(bytes: number[]) => string
 ```
 <!-- prettier-ignore-end -->
 
