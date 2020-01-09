@@ -1,6 +1,6 @@
 # slidingWindow
 
-Returns a new list composed of tuples of the given sliding window length of consecutive elements.
+Returns a new array composed of tuples of the given sliding window length of consecutive elements.
 
 ## Type signature
 
