@@ -1,15 +1,20 @@
 /* eslint-env jest, node */
-import {
-  decode,
-  decodeBytes,
-  encode,
-  encodeBytes,
-  fromBase64Url,
-  fromByteString,
-  toBase64Url,
-  toByteString
-  // @ts-ignore ambiguous import
-} from "./base64url.ts";
+// @ts-ignore ambiguous import
+import encode from "./base64url/encode.ts";
+// @ts-ignore ambiguous import
+import decode from "./base64url/decode.ts";
+// @ts-ignore ambiguous import
+import encodeBytes from "./base64url/encodeBytes.ts";
+// @ts-ignore ambiguous import
+import decodeBytes from "./base64url/decodeBytes.ts";
+// @ts-ignore ambiguous import
+import toBase64 from "./base64url/fromBase64.ts";
+// @ts-ignore ambiguous import
+import fromBase64 from "./base64url/toBase64.ts";
+// @ts-ignore ambiguous import
+import fromByteString from "./byteString/from.ts";
+// @ts-ignore ambiguous import
+import toByteString from "./byteString/to.ts";
 
 // @ts-ignore ambiguous import
 import range from "../array/range.ts";
@@ -99,7 +104,7 @@ describe("base64url", () => {
   it("converts base64 to base64URL", () => {
     const text = toByteString(range(256));
 
-    expect(toBase64Url(Buffer.from(text, "utf-8").toString("base64"))).toEqual(
+    expect(fromBase64(Buffer.from(text, "utf-8").toString("base64"))).toEqual(
       encode(text)
     );
   });
@@ -107,7 +112,7 @@ describe("base64url", () => {
   it("converts base64URL to base64", () => {
     const text = toByteString(range(256));
 
-    expect(fromBase64Url(encode(text))).toEqual(
+    expect(toBase64(encode(text))).toEqual(
       Buffer.from(text, "utf-8").toString("base64")
     );
   });

@@ -1,9 +1,8 @@
 /* eslint-env jest, node */
-import {
-  decode,
-  encode
-  // @ts-ignore ambiguous import
-} from "./base64url.ts";
+// @ts-ignore ambiguous import
+import encode from "./base64url/encode.ts";
+// @ts-ignore ambiguous import
+import decode from "./base64url/decode.ts";
 
 const unicodeText = "Zombies everywhere 🧟";
 
