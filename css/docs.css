@@ -42,6 +42,16 @@ code {
   border-radius: 6px;
 }
 
+.module-name {
+  margin: 0;
+}
+
+aside .module-name {
+  position: sticky;
+  top: 72px;
+  padding: 0 16px;
+}
+
 .module-name,
 .name {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
@@ -65,7 +75,6 @@ a {
 }
 
 aside {
-  padding-bottom: 16px;
   display: block;
   height: auto;
   bottom: 0;
@@ -76,8 +85,8 @@ aside {
   overflow: auto;
   position: sticky;
   flex-shrink: 0;
-  max-height: calc(100vh - 32px);
-  padding: 16px;
+  max-height: 100vh;
+  padding: 0;
   box-sizing: border-box;
   background: white;
   -webkit-overflow-scrolling: touch;
@@ -86,9 +95,16 @@ aside {
 }
 
 aside h1 {
-  font-size: 1.25em;
+  position: sticky;
+  font-size: 1em;
   display: flex;
   align-items: center;
+  padding: 0 16px;
+  margin: 0;
+  min-height: 36px;
+  top: 0;
+  z-index: 2;
+  background: white;
 }
 
 aside h3 {
@@ -100,8 +116,8 @@ aside h3 {
   border: 1px solid lightgray;
   border-left-width: 0;
   border-right-width: 0;
-  margin: 0 -16px;
-  padding: 0 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .module {
@@ -134,8 +150,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
   padding: 0 16px;
-  margin: 0 -16px;
 }
 
 .toc-item.selected {
@@ -143,8 +159,9 @@ main {
   color: #0275d8;
 }
 
+aside .module-name:hover,
 .toc-item:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: #f2f2f2;
 }
 
 .breadcrumbs {
@@ -175,19 +192,16 @@ main {
 
 #searchInput {
   font-size: 16px;
-  padding: 8px 16px;
   box-sizing: border-box;
-  width: calc(100% + 32px);
+  width: 100%;
   border: none;
   box-sizing: border-box;
-  margin: 0 -16px;
-  padding: 0 16px;
+  margin: 0;
   min-height: 36px;
-}
-
-#searchInput:focus {
-  outline: none;
-  border-bottom-color: #0275d8;
+  position: sticky;
+  top: 36px;
+  padding: 0 16px;
+  z-index: 1;
 }
 
 aside {
@@ -229,6 +243,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 footer a,
