@@ -1,0 +1,12 @@
+{
+  "name": "uniqueBy",
+  "description": "This method is like unique except that it accepts selector which is invoked for each element in array to generate the criterion by which uniqueness is computed.",
+  "signature": "(selector: (x: any) => any) => (xs: any[]) => any[]",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "uniqueBy(({ x }) => x)([{ x: 1 }, { x: 2 }, { x: 1 }]) // ⇒ [{ x: 1 }, { x: 2 }])"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answer."]
+}
