@@ -1,3 +1,1 @@
-export default selector => xs => [
-  ...new Map(xs.map(x => [selector(x), x])).values()
-];
+export default f => xs => [...new Map(xs.map(x => [f(x), x])).values()];

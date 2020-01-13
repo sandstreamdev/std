@@ -566,13 +566,13 @@ Returns only unique elements of the given array.
 
 # uniqueBy
 
-This method is like unique except that it accepts selector which is invoked for each element in array to generate the criterion by which uniqueness is computed.
+Filters out duplicated values based on the result of the given key selector.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(selector: (x: any) => any) => (xs: any[]) => any[]
+(f: (x: any) => any) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -580,7 +580,7 @@ This method is like unique except that it accepts selector which is invoked for 
 
 <!-- prettier-ignore-start -->
 ```javascript
-uniqueBy(({ x }) => x)([{ x: 1 }, { x: 2 }, { x: 1 }]) // ⇒ [{ x: 1 }, { x: 2 }]
+uniqueBy(({ id }) => id)([{ id: 1, value: 'a' }, { id: 2, value: 'b' }, { id: 1, value: 'c' }])) // ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]
 ```
 <!-- prettier-ignore-end -->
 

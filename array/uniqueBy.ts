@@ -1,3 +1,3 @@
-export default (selector: (x: any) => any) => (xs: any[]) => [
-  ...new Map(xs.map(x => [selector(x), x])).values()
+export default (f: (x: any) => any) => (xs: any[]) => [
+  ...new Map(xs.map(x => [f(x), x])).values()
 ];

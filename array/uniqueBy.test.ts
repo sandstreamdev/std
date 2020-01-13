@@ -3,32 +3,58 @@
 import uniqueBy from "./uniqueBy.ts";
 
 describe("uniqueBy", () => {
-  const selector: (x: any) => any = ({ x }) => x;
+  const selector: (x: any) => any = ({ id }) => id;
 
   it("removes duplicated values", () => {
-    expect(uniqueBy(selector)([{ x: 1 }, { x: 2 }, { x: 1 }])).toEqual([
-      { x: 1 },
-      { x: 2 }
+    expect(
+      uniqueBy(selector)([
+        { id: 1, value: "a" },
+        { id: 2, value: "b" },
+        { id: 1, value: "c" }
+      ])
+    ).toEqual([
+      { id: 1, value: "c" },
+      { id: 2, value: "b" }
     ]);
   });
 
   it("removes all the duplicated values when there are any", () => {
     expect(
-      uniqueBy(selector)([{ x: 1 }, { x: 2 }, { x: 1 }, { x: 3 }, { x: 2 }])
-    ).toEqual([{ x: 1 }, { x: 2 }, { x: 3 }]);
-
-    expect(uniqueBy(selector)([{}, { x: 2 }, { x: 1 }, {}, { x: 2 }])).toEqual([
-      {},
-      { x: 2 },
-      { x: 1 }
+      uniqueBy(selector)([
+        { id: 1, value: "a" },
+        { id: 2, value: "b" },
+        { id: 1, value: "c" },
+        { id: 3, value: "d" },
+        { id: 2, value: "a" }
+      ])
+    ).toEqual([
+      { id: 1, value: "c" },
+      { id: 2, value: "a" },
+      { id: 3, value: "d" }
     ]);
+
+    expect(
+      uniqueBy(selector)([
+        {},
+        { id: 2, value: "a" },
+        { id: 1, value: "b" },
+        {},
+        { id: 2, value: "c" }
+      ])
+    ).toEqual([{}, { id: 2, value: "c" }, { id: 1, value: "b" }]);
   });
 
   it("returns the equal array when there are no duplicated", () => {
-    expect(uniqueBy(selector)([{ x: 1 }, { x: 2 }, { x: 3 }])).toEqual([
-      { x: 1 },
-      { x: 2 },
-      { x: 3 }
+    expect(
+      uniqueBy(selector)([
+        { id: 1, value: "a" },
+        { id: 2, value: "b" },
+        { id: 3, value: "c" }
+      ])
+    ).toEqual([
+      { id: 1, value: "a" },
+      { id: 2, value: "b" },
+      { id: 3, value: "c" }
     ]);
   });
 
