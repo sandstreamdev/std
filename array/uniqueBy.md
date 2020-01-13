@@ -14,6 +14,6 @@ This method is like unique except that it accepts selector which is invoked for 
 
 <!-- prettier-ignore-start -->
 ```javascript
-uniqueBy(({ x }) => x)([{ x: 1 }, { x: 2 }, { x: 1 }]) // ⇒ [{ x: 1 }, { x: 2 }])
+uniqueBy(({ x }) => x)([{ x: 1 }, { x: 2 }, { x: 1 }]) // ⇒ [{ x: 1 }, { x: 2 }]
 ```
 <!-- prettier-ignore-end -->
