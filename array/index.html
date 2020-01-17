@@ -59,12 +59,20 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
+      <pre><code class="hljs"><span>any([]); <span class="hljs-comment">// ⇒ false</span></span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { any } }')">Try in REPL</a>
-      <pre><code class="hljs"><span>any([]); <span class="hljs-comment">// ⇒ false</span></span>
-<span>any([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// ⇒ true</span></span></code></pre>
     </div>
     <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>any([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// ⇒ true</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { any } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
   </div>
     <div class="questions">
       <h3>Questions</h3>
@@ -98,12 +106,22 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
+      <pre><code class="hljs"><span>chunk(<span class="hljs-number">2</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>]);
+<span class="hljs-comment">// ⇒ [['a', 'b'], ['c', 'd']]</span></span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { chunk } }')">Try in REPL</a>
-      <pre><code class="hljs"><span>chunk(<span class="hljs-number">2</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>]); <span class="hljs-comment">// ⇒ [['a', 'b'], ['c', 'd']]</span></span>
-<span>chunk(<span class="hljs-number">3</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>]); <span class="hljs-comment">// ⇒ [['a', 'b', 'c'], ['d']]</span></span></code></pre>
     </div>
     <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>chunk(<span class="hljs-number">3</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>]);
+<span class="hljs-comment">// ⇒ [['a', 'b', 'c'], ['d']]</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { chunk } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
   </div>
     
     <p class="meta">
@@ -162,11 +180,13 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
-      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { empty } }')">Try in REPL</a>
       <pre><code class="hljs"><span>empty; <span class="hljs-comment">// ⇒ []</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { empty } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
+  
   </div>
     
     <p class="meta">
@@ -290,12 +310,22 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
+      <pre><code class="hljs"><span>insert(<span class="hljs-number">0</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]);
+<span class="hljs-comment">// ⇒ ['d', 'a', 'b', 'c']</span></span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { insert } }')">Try in REPL</a>
-      <pre><code class="hljs"><span>insert(<span class="hljs-number">0</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]); <span class="hljs-comment">// ⇒ ['d', 'a', 'b', 'c']</span></span>
-<span>insert(<span class="hljs-number">1</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]); <span class="hljs-comment">// ⇒ ['a', 'd', 'b', 'c']</span></span></code></pre>
     </div>
     <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>insert(<span class="hljs-number">1</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]);
+<span class="hljs-comment">// ⇒ ['a', 'd', 'b', 'c']</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { insert } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
   </div>
     
     <p class="meta">
@@ -606,13 +636,30 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
+      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]);
+<span class="hljs-comment">// ⇒ [[1, 2], [2, 3], [3, 4]]</span></span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
-      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]); <span class="hljs-comment">// ⇒ [[1, 2], [2, 3], [3, 4]]</span></span>
-<span>slidingWindow(<span class="hljs-number">3</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]</span></span>
-<span>slidingWindow(<span class="hljs-number">1</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]); <span class="hljs-comment">// ⇒ [[1], [2], [3], [4], [5], [6]]</span></span></code></pre>
     </div>
     <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">3</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">1</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]);
+<span class="hljs-comment">// ⇒ [[1], [2], [3], [4], [5], [6]]</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
   </div>
     
     <p class="meta">
@@ -687,11 +734,18 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
+      <pre><code class="hljs"><span>uniqueBy(<span class="hljs-function">(<span class="hljs-params">{ id }</span>) =&gt;</span> id)([
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'a'</span> },
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'b'</span> },
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'c'</span> }
+])
+<span class="hljs-comment">// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]</span></span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { uniqueBy } }')">Try in REPL</a>
-      <pre><code class="hljs"><span>uniqueBy(<span class="hljs-function">(<span class="hljs-params">{ id }</span>) =&gt;</span> id)([{ <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'a'</span> }, { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'b'</span> }, { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'c'</span> }])) <span class="hljs-comment">// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]</span></span></code></pre>
     </div>
     <div class="repl"></div>
+  
   </div>
     
     <p class="meta">
@@ -722,13 +776,30 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
+      <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]);
+<span class="hljs-comment">// ⇒ [[1, 4], [2, 5], [3, 6]]</span></span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
-      <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]); <span class="hljs-comment">// ⇒ [[1, 4], [2, 5], [3, 6]]</span></span>
-<span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]); <span class="hljs-comment">// ⇒ [[1, 4, 7], [2, 5, 8], [3, 6, 9]]</span></span>
-<span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]); <span class="hljs-comment">// ⇒ [[1, 4, 7],[2, 5, 8]]</span></span></code></pre>
     </div>
     <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]);
+<span class="hljs-comment">// ⇒ [[1, 4, 7], [2, 5, 8], [3, 6, 9]]</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]);
+<span class="hljs-comment">// ⇒ [[1, 4, 7],[2, 5, 8]]</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
   </div>
     
     <p class="meta">

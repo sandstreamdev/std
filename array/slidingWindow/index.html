@@ -59,13 +59,30 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
+      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]);
+<span class="hljs-comment">// ⇒ [[1, 2], [2, 3], [3, 4]]</span></span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
-      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]); <span class="hljs-comment">// ⇒ [[1, 2], [2, 3], [3, 4]]</span></span>
-<span>slidingWindow(<span class="hljs-number">3</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]</span></span>
-<span>slidingWindow(<span class="hljs-number">1</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]); <span class="hljs-comment">// ⇒ [[1], [2], [3], [4], [5], [6]]</span></span></code></pre>
     </div>
     <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">3</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">1</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]);
+<span class="hljs-comment">// ⇒ [[1], [2], [3], [4], [5], [6]]</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
   </div>
     
     <p class="meta">

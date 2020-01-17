@@ -61,12 +61,22 @@
   </div>
     <div class="examples">
     <h3>Examples</h3>
+    
     <div class="content">
+      <pre><code class="hljs"><span>insert(<span class="hljs-number">0</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]);
+<span class="hljs-comment">// ⇒ ['d', 'a', 'b', 'c']</span></span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { insert } }')">Try in REPL</a>
-      <pre><code class="hljs"><span>insert(<span class="hljs-number">0</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]); <span class="hljs-comment">// ⇒ ['d', 'a', 'b', 'c']</span></span>
-<span>insert(<span class="hljs-number">1</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]); <span class="hljs-comment">// ⇒ ['a', 'd', 'b', 'c']</span></span></code></pre>
     </div>
     <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>insert(<span class="hljs-number">1</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]);
+<span class="hljs-comment">// ⇒ ['a', 'd', 'b', 'c']</span></span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { insert } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
   </div>
     
     <p class="meta">
