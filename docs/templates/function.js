@@ -94,17 +94,23 @@ const examplesFragment = (examples, pathParts, funcName) => {
     `{ ${funcName} }`
   );
 
-  const examplesFormatted = examples
-    .map(ex => `<span>${hljs.highlight(ex.language, ex.content).value}</span>`)
-    .join("\n");
+  const examplesFormatted = examples.map(
+    ex => `<span>${hljs.highlight(ex.language, ex.content).value}</span>`
+  );
 
-  const content = `<div class="examples">
-    <h3>Examples</h3>
+  const fragment = exampleFormatted => `
     <div class="content">
-      <pre><code class="hljs">${examplesFormatted}</code></pre>
+      <pre><code class="hljs">${exampleFormatted}</code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '${scope}')">Try in REPL</a>
     </div>
     <div class="repl"></div>
+  `;
+
+  const fragments = examplesFormatted.map(fragment).join("\n");
+
+  const content = `<div class="examples">
+    <h3>Examples</h3>
+    ${fragments}
   </div>`;
 
   return content;
