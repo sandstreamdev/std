@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "insert(0)('d')(['a', 'b', 'c']); // ⇒ ['d', 'a', 'b', 'c']"
+      "content": "insert(0)('d')(['a', 'b', 'c']);\n// ⇒ ['d', 'a', 'b', 'c']"
     },
     {
       "language": "javascript",
-      "content": "insert(1)('d')(['a', 'b', 'c']); // ⇒ ['a', 'd', 'b', 'c']"
+      "content": "insert(1)('d')(['a', 'b', 'c']);\n// ⇒ ['a', 'd', 'b', 'c']"
     }
   ],
   "questions": ["TODO: List questions that may this function answer."]

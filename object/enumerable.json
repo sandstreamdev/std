@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "enumerable('TEST', 'X', 'Y'); // ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }"
+      "content": "enumerable('TEST', 'X', 'Y');\n// ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

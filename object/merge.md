@@ -19,18 +19,22 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```javascript
-merge({ a: 1, b: 3 }, {}); // ⇒ { a: 1, b: 3 }
+merge({ a: 1, b: 3 }, {});
+// ⇒ { a: 1, b: 3 }
 ```
 
 ```javascript
-merge({ a: 1, b: 3 }, { b: 7 }); // ⇒ { a: 1, b: 7 }
+merge({ a: 1, b: 3 }, { b: 7 });
+// ⇒ { a: 1, b: 7 }
 ```
 
 ```javascript
-merge({ a: 1, b: 3 }, { b: { d: 8 } }); // ⇒ { a: 1, b: { d: 8 } }
+merge({ a: 1, b: 3 }, { b: { d: 8 } });
+// ⇒ { a: 1, b: { d: 8 } }
 ```
 
 ```javascript
-merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } }); // ⇒ { a: 1, b: { c: 3, d: 8 } }
+merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } });
+// ⇒ { a: 1, b: { c: 3, d: 8 } }
 ```
 <!-- prettier-ignore-end -->

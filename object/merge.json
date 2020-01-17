@@ -5,19 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "merge({ a: 1, b: 3 }, {}); // ⇒ { a: 1, b: 3 }"
+      "content": "merge({ a: 1, b: 3 }, {});\n// ⇒ { a: 1, b: 3 }"
     },
     {
       "language": "javascript",
-      "content": "merge({ a: 1, b: 3 }, { b: 7 }); // ⇒ { a: 1, b: 7 }"
+      "content": "merge({ a: 1, b: 3 }, { b: 7 });\n// ⇒ { a: 1, b: 7 }"
     },
     {
       "language": "javascript",
-      "content": "merge({ a: 1, b: 3 }, { b: { d: 8 } }); // ⇒ { a: 1, b: { d: 8 } }"
+      "content": "merge({ a: 1, b: 3 }, { b: { d: 8 } });\n// ⇒ { a: 1, b: { d: 8 } }"
     },
     {
       "language": "javascript",
-      "content": "merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } }); // ⇒ { a: 1, b: { c: 3, d: 8 } }"
+      "content": "merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } });\n// ⇒ { a: 1, b: { c: 3, d: 8 } }"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

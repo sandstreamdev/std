@@ -5,7 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "empty([2, 2]); // ⇒ true\nempty([1, 5]); // ⇒ false"
+      "content": "empty([2, 2]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "empty([1, 5]); // ⇒ false"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

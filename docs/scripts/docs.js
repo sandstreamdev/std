@@ -9,12 +9,12 @@ function tryInREPL(event, scope) {
     return;
   }
 
-  var codeElement = target.parentNode.children[1];
-
-  var parent = target.parentNode;
+  var parent = target.parentNode.children[0];
+  var codeElement = parent.children[0];
   var container = target.parentNode.nextElementSibling;
 
   parent.parentNode.removeChild(parent);
+  target.parentNode.removeChild(target);
 
   // eslint-disable-next-line no-undef
   RunKit.createNotebook({
