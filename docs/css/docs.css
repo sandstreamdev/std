@@ -1,7 +1,8 @@
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("./JetBrainsMono-Regular.ttf") format("truetype");
-  font-display: fallback;
+  src: url("./JetBrainsMono-Regular.woff") format("woff"),
+    url("./JetBrainsMono-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 body {
@@ -89,7 +90,6 @@ aside .module-name {
 
 .repl {
   margin: 1em 0px;
-  margin-left: 16px;
   display: flex;
   flex-direction: column;
 }

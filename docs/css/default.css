@@ -7,7 +7,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
+  padding: 4px 8px;
   background: white;
   border: 1px solid #e5e9ef;
   font-size: 14px;
