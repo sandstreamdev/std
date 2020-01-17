@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "uniqueBy(({ id }) => id)([{ id: 1, value: 'a' }, { id: 2, value: 'b' }, { id: 1, value: 'c' }])) // ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]"
+      "content": "uniqueBy(({ id }) => id)([\n  { id: 1, value: 'a' },\n  { id: 2, value: 'b' },\n  { id: 1, value: 'c' }\n])\n// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]"
     }
   ],
   "questions": ["TODO: List questions that may this function answer."]
