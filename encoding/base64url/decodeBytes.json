@@ -1,11 +1,11 @@
 {
   "name": "decodeBytes",
-  "description": "TODO: Fill short description here.",
+  "description": "Decodes the given Base64URL back into byte array.",
   "signature": "(text: string, context?: DecodeContext) => number[]",
   "examples": [
     {
       "language": "javascript",
-      "content": "decodeBytes(); // ⇒ TODO"
+      "content": "decodeBytes(\"w4Jnw6vCp20-bBsQfA\");\n// ⇒ [0xc2, 0x67, 0xeb, 0xa7, 0x6d, 0x3e, 0x6c, 0x1b, 0x10, 0x7c]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

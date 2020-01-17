@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "toBase64(); // ⇒ TODO"
+      "content": "toBase64(\"PDw_Pz8-Pg\"); // ⇒ \"PDw/Pz8+Pg==\""
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

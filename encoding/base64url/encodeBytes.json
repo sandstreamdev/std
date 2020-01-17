@@ -1,11 +1,11 @@
 {
   "name": "encodeBytes",
-  "description": "TODO: Fill short description here.",
+  "description": "Encodes the given bytes into Base64URL.",
   "signature": "(bytes: number[], context?: EncodeContext) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "encodeBytes(); // ⇒ TODO"
+      "content": "encodeBytes([0xc2, 0x67, 0xeb, 0xa7, 0x6d, 0x3e, 0x6c, 0x1b, 0x10, 0x7c]);\n// ⇒ \"w4Jnw6vCp20-bBsQfA\""
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

@@ -1,11 +1,11 @@
 {
   "name": "encode",
-  "description": "TODO: Fill short description here.",
+  "description": "Encodes the given string into Base64URL.",
   "signature": "(text: string, context?: EncodeContext) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "encode(); // ⇒ TODO"
+      "content": "encode(\"<<???>>\"); // ⇒ \"PDw_Pz8-Pg\""
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

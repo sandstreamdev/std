@@ -1,11 +1,11 @@
 {
   "name": "to",
-  "description": "TODO: Fill short description here.",
+  "description": "Coverts byte array to string.",
   "signature": "(bytes: number[]) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "to(); // ⇒ TODO"
+      "content": "to([0x50, 0x51, 0x52]); // ⇒ \"PQR\""
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]
