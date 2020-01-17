@@ -101,8 +101,8 @@ const examplesFragment = (examples, pathParts, funcName) => {
   const content = `<div class="examples">
     <h3>Examples</h3>
     <div class="content">
-      <a class="btn-repl" onclick="tryInREPL(event, '${scope}')">Try in REPL</a>
       <pre><code class="hljs">${examplesFormatted}</code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '${scope}')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   </div>`;

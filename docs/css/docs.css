@@ -1,6 +1,7 @@
 @font-face {
   font-family: "JetBrains Mono";
   src: url("./JetBrainsMono-Regular.ttf") format("truetype");
+  font-display: fallback;
 }
 
 body {
@@ -18,13 +19,23 @@ body {
 }
 
 .btn-repl {
-  color: #0275d8;
-  font-size: 16px;
-  position: absolute;
-  right: 4px;
+  background: #33b277;
+  border-radius: 6px;
+  border: 0;
+  color: white;
   cursor: pointer;
-  text-decoration: underline;
-  margin: 4px;
+  display: inline-flex;
+  font-family: "JetBrains Mono", Consolas, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
+    "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+
+.btn-repl:hover {
+  background: #20935e;
 }
 
 ul {
@@ -77,7 +88,10 @@ aside .module-name {
 }
 
 .repl {
+  margin: 1em 0px;
   margin-left: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
