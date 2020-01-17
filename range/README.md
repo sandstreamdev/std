@@ -15,6 +15,9 @@ Checks if the given range is empty.
 <!-- prettier-ignore-start -->
 ```javascript
 empty([2, 2]); // ⇒ true
+```
+
+```javascript
 empty([1, 5]); // ⇒ false
 ```
 <!-- prettier-ignore-end -->

@@ -14,14 +14,17 @@ Returns a new array composed of tuples of the given sliding window length of con
 
 <!-- prettier-ignore-start -->
 ```javascript
-slidingWindow(2)([1, 2, 3, 4]); // ⇒ [[1, 2], [2, 3], [3, 4]]
+slidingWindow(2)([1, 2, 3, 4]);
+// ⇒ [[1, 2], [2, 3], [3, 4]]
 ```
 
 ```javascript
-slidingWindow(3)([1, 2, 3, 4, 5]); // ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
+slidingWindow(3)([1, 2, 3, 4, 5]);
+// ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
 ```
 
 ```javascript
-slidingWindow(1)([1, 2, 3, 4, 5, 6]); // ⇒ [[1], [2], [3], [4], [5], [6]]
+slidingWindow(1)([1, 2, 3, 4, 5, 6]);
+// ⇒ [[1], [2], [3], [4], [5], [6]]
 ```
 <!-- prettier-ignore-end -->

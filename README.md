@@ -74,11 +74,13 @@ Splits the given array into array of chunks of up to the given length.
 
 <!-- prettier-ignore-start -->
 ```javascript
-chunk(2)(['a', 'b', 'c', 'd']); // ⇒ [['a', 'b'], ['c', 'd']]
+chunk(2)(['a', 'b', 'c', 'd']);
+// ⇒ [['a', 'b'], ['c', 'd']]
 ```
 
 ```javascript
-chunk(3)(['a', 'b', 'c', 'd']); // ⇒ [['a', 'b', 'c'], ['d']]
+chunk(3)(['a', 'b', 'c', 'd']);
+// ⇒ [['a', 'b', 'c'], ['d']]
 ```
 <!-- prettier-ignore-end -->
 
@@ -245,11 +247,13 @@ Inserts the given item to the array at a specific index.
 
 <!-- prettier-ignore-start -->
 ```javascript
-insert(0)('d')(['a', 'b', 'c']); // ⇒ ['d', 'a', 'b', 'c']
+insert(0)('d')(['a', 'b', 'c']);
+// ⇒ ['d', 'a', 'b', 'c']
 ```
 
 ```javascript
-insert(1)('d')(['a', 'b', 'c']); // ⇒ ['a', 'd', 'b', 'c']
+insert(1)('d')(['a', 'b', 'c']);
+// ⇒ ['a', 'd', 'b', 'c']
 ```
 <!-- prettier-ignore-end -->
 
@@ -519,15 +523,18 @@ Returns a new array composed of tuples of the given sliding window length of con
 
 <!-- prettier-ignore-start -->
 ```javascript
-slidingWindow(2)([1, 2, 3, 4]); // ⇒ [[1, 2], [2, 3], [3, 4]]
+slidingWindow(2)([1, 2, 3, 4]);
+// ⇒ [[1, 2], [2, 3], [3, 4]]
 ```
 
 ```javascript
-slidingWindow(3)([1, 2, 3, 4, 5]); // ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
+slidingWindow(3)([1, 2, 3, 4, 5]);
+// ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
 ```
 
 ```javascript
-slidingWindow(1)([1, 2, 3, 4, 5, 6]); // ⇒ [[1], [2], [3], [4], [5], [6]]
+slidingWindow(1)([1, 2, 3, 4, 5, 6]);
+// ⇒ [[1], [2], [3], [4], [5], [6]]
 ```
 <!-- prettier-ignore-end -->
 
@@ -597,7 +604,12 @@ Filters out duplicated values based on the result of the given key selector.
 
 <!-- prettier-ignore-start -->
 ```javascript
-uniqueBy(({ id }) => id)([{ id: 1, value: 'a' }, { id: 2, value: 'b' }, { id: 1, value: 'c' }])) // ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]
+uniqueBy(({ id }) => id)([
+  { id: 1, value: 'a' },
+  { id: 2, value: 'b' },
+  { id: 1, value: 'c' }
+])
+// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]
 ```
 <!-- prettier-ignore-end -->
 
@@ -629,15 +641,18 @@ Zips given arrays
 
 <!-- prettier-ignore-start -->
 ```javascript
-zipN([1, 2, 3], [4, 5, 6]); // ⇒ [[1, 4], [2, 5], [3, 6]]
+zipN([1, 2, 3], [4, 5, 6]);
+// ⇒ [[1, 4], [2, 5], [3, 6]]
 ```
 
 ```javascript
-zipN([1, 2, 3], [4, 5, 6], [7, 8, 9]); // ⇒ [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+zipN([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+// ⇒ [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 ```
 
 ```javascript
-zipN([1, 2], [4, 5, 6], [7, 8, 9]); // ⇒ [[1, 4, 7],[2, 5, 8]]
+zipN([1, 2], [4, 5, 6], [7, 8, 9]);
+// ⇒ [[1, 4, 7],[2, 5, 8]]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1837,7 +1852,8 @@ Creates a 1 to 1 mapping of given values as an object.
 
 <!-- prettier-ignore-start -->
 ```javascript
-enumerable('TEST', 'X', 'Y'); // ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }
+enumerable('TEST', 'X', 'Y');
+// ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }
 ```
 <!-- prettier-ignore-end -->
 
@@ -2066,19 +2082,23 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```javascript
-merge({ a: 1, b: 3 }, {}); // ⇒ { a: 1, b: 3 }
+merge({ a: 1, b: 3 }, {});
+// ⇒ { a: 1, b: 3 }
 ```
 
 ```javascript
-merge({ a: 1, b: 3 }, { b: 7 }); // ⇒ { a: 1, b: 7 }
+merge({ a: 1, b: 3 }, { b: 7 });
+// ⇒ { a: 1, b: 7 }
 ```
 
 ```javascript
-merge({ a: 1, b: 3 }, { b: { d: 8 } }); // ⇒ { a: 1, b: { d: 8 } }
+merge({ a: 1, b: 3 }, { b: { d: 8 } });
+// ⇒ { a: 1, b: { d: 8 } }
 ```
 
 ```javascript
-merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } }); // ⇒ { a: 1, b: { c: 3, d: 8 } }
+merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } });
+// ⇒ { a: 1, b: { c: 3, d: 8 } }
 ```
 <!-- prettier-ignore-end -->
 
@@ -2165,6 +2185,9 @@ Checks if the given range is empty.
 <!-- prettier-ignore-start -->
 ```javascript
 empty([2, 2]); // ⇒ true
+```
+
+```javascript
 empty([1, 5]); // ⇒ false
 ```
 <!-- prettier-ignore-end -->

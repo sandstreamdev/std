@@ -16,10 +16,12 @@ Inserts the given item to the array at a specific index.
 
 <!-- prettier-ignore-start -->
 ```javascript
-insert(0)('d')(['a', 'b', 'c']); // ⇒ ['d', 'a', 'b', 'c']
+insert(0)('d')(['a', 'b', 'c']);
+// ⇒ ['d', 'a', 'b', 'c']
 ```
 
 ```javascript
-insert(1)('d')(['a', 'b', 'c']); // ⇒ ['a', 'd', 'b', 'c']
+insert(1)('d')(['a', 'b', 'c']);
+// ⇒ ['a', 'd', 'b', 'c']
 ```
 <!-- prettier-ignore-end -->

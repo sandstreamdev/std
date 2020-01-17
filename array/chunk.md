@@ -14,10 +14,12 @@ Splits the given array into array of chunks of up to the given length.
 
 <!-- prettier-ignore-start -->
 ```javascript
-chunk(2)(['a', 'b', 'c', 'd']); // ⇒ [['a', 'b'], ['c', 'd']]
+chunk(2)(['a', 'b', 'c', 'd']);
+// ⇒ [['a', 'b'], ['c', 'd']]
 ```
 
 ```javascript
-chunk(3)(['a', 'b', 'c', 'd']); // ⇒ [['a', 'b', 'c'], ['d']]
+chunk(3)(['a', 'b', 'c', 'd']);
+// ⇒ [['a', 'b', 'c'], ['d']]
 ```
 <!-- prettier-ignore-end -->

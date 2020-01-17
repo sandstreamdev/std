@@ -14,6 +14,7 @@ Creates a 1 to 1 mapping of given values as an object.
 
 <!-- prettier-ignore-start -->
 ```javascript
-enumerable('TEST', 'X', 'Y'); // ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }
+enumerable('TEST', 'X', 'Y');
+// ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }
 ```
 <!-- prettier-ignore-end -->
