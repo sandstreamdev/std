@@ -1,6 +1,6 @@
 {
   "name": "toBase64",
-  "description": "TODO: Fill short description here.",
+  "description": "Converts Base64URL string into Base64 one.",
   "signature": "(base64Url: string) => string",
   "examples": [
     {
