@@ -1,6 +1,6 @@
-import _from from "./from";
+import from from "./from";
 import to from "./to";
 
-export { _from, to };
+export { from, to };
 
-export default { _from, to };
+export default { from, to };

@@ -102,6 +102,8 @@ fromBase64("PDw/Pz8+Pg=="); // ⇒ "PDw_Pz8-Pg"
 
 # toBase64
 
+Converts Base64URL string into Base64 one.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
