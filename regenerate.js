@@ -4,6 +4,7 @@ import { promises } from "fs";
 import path from "path";
 
 import ignored from "./ignore.js";
+import mappings from "./mappings.js";
 
 const [ignoredFiles, ignoredDirectories] = ignored;
 
@@ -11,11 +12,7 @@ const { readdir: readDirectoryAsync, writeFile: writeFileAsync } = promises;
 
 const [, , cwd = process.cwd()] = process.argv;
 
-const mapping = {
-  function: "_function"
-};
-
-const identifier = name => mapping[name] || name;
+const identifier = name => mappings[name] || name;
 
 // Do not match type definition files *.d.ts but match *.ts:
 // https://stackoverflow.com/a/43493203/1384679

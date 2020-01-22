@@ -1,0 +1,12 @@
+{
+  "name": "fromBase64",
+  "description": "Converts Base64 string into Base64URL one.",
+  "signature": "(base64: string) => string",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "fromBase64(\"PDw/Pz8+Pg==\"); // ⇒ \"PDw_Pz8-Pg\""
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

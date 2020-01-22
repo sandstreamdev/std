@@ -7,13 +7,13 @@ import path from "path";
 import os from "os";
 import pQueue from "p-queue";
 
+import ignored from "./ignore.js";
+
 const CONCURRENCY = Math.max(1, os.cpus().length - 1);
 
 const { default: PQueue } = pQueue;
 
 const execAsync = promisify(exec);
-
-import ignored from "./ignore.js";
 
 const [sourceIgnoredFiles, ignoredDirectories] = ignored;
 

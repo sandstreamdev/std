@@ -1,9 +1,8 @@
 /* eslint-env jest, node */
-import {
-  decode,
-  encode
-  // @ts-ignore ambiguous import
-} from "./base64url.ts";
+// @ts-ignore ambiguous import
+import encode from "./base64url/encode.ts";
+// @ts-ignore ambiguous import
+import decode from "./base64url/decode.ts";
 
 const unicodeText = "Zombies everywhere 🧟";
 
@@ -78,7 +77,13 @@ describe("base64url", () => {
       let out = "";
 
       for (let i = 0; i < s.length; i += 3) {
-        const groupsOfSix = [undefined, undefined, undefined, undefined];
+        const groupsOfSix: [
+          number | undefined,
+          number | undefined,
+          number | undefined,
+          number | undefined
+        ] = [undefined, undefined, undefined, undefined];
+
         groupsOfSix[0] = s.charCodeAt(i) >> 2;
         groupsOfSix[1] = (s.charCodeAt(i) & 0x03) << 4;
 
@@ -88,15 +93,17 @@ describe("base64url", () => {
         }
 
         if (s.length > i + 2) {
-          groupsOfSix[2] |= s.charCodeAt(i + 2) >> 6;
+          groupsOfSix[2] = (groupsOfSix[2] || 0) | (s.charCodeAt(i + 2) >> 6);
           groupsOfSix[3] = s.charCodeAt(i + 2) & 0x3f;
         }
 
         for (let j = 0; j < groupsOfSix.length; j++) {
-          if (typeof groupsOfSix[j] === "undefined") {
+          const x = groupsOfSix[j];
+
+          if (x === undefined) {
             out += "=";
           } else {
-            out += btoaLookup(groupsOfSix[j]);
+            out += btoaLookup(x);
           }
         }
       }
@@ -120,19 +127,21 @@ describe("base64url", () => {
       throw new RangeError("Index out of range.");
     };
 
+    const globalAny: any = global;
+
     const context = {
       atob,
       btoa,
-      TextEncoder: global["TextEncoder"],
-      TextDecoder: global["TextDecoder"]
+      TextEncoder: globalAny["TextEncoder"],
+      TextDecoder: globalAny["TextDecoder"]
     };
 
     expect(decode(encode(unicodeText, context), context)).toEqual(unicodeText);
 
-    global["window"] = context;
+    globalAny["window"] = context;
 
     expect(decode(encode(unicodeText))).toEqual(unicodeText);
 
-    delete global["window"];
+    delete globalAny["window"];
   });
 });

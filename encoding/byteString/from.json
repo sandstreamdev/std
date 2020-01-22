@@ -1,0 +1,12 @@
+{
+  "name": "from",
+  "description": "Converts string to byte array.",
+  "signature": "(byteString: string) => number[]",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "from(\"PQR\"); // ⇒ [80, 81, 82]"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

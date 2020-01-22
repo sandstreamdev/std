@@ -1,15 +1,20 @@
 /* eslint-env jest, node */
-import {
-  decode,
-  decodeBytes,
-  encode,
-  encodeBytes,
-  fromBase64Url,
-  fromByteString,
-  toBase64Url,
-  toByteString
-  // @ts-ignore ambiguous import
-} from "./base64url.ts";
+// @ts-ignore ambiguous import
+import encode from "./base64url/encode.ts";
+// @ts-ignore ambiguous import
+import decode from "./base64url/decode.ts";
+// @ts-ignore ambiguous import
+import encodeBytes from "./base64url/encodeBytes.ts";
+// @ts-ignore ambiguous import
+import decodeBytes from "./base64url/decodeBytes.ts";
+// @ts-ignore ambiguous import
+import toBase64 from "./base64url/toBase64.ts";
+// @ts-ignore ambiguous import
+import fromBase64 from "./base64url/fromBase64.ts";
+// @ts-ignore ambiguous import
+import fromByteString from "./byteString/from.ts";
+// @ts-ignore ambiguous import
+import toByteString from "./byteString/to.ts";
 
 // @ts-ignore ambiguous import
 import range from "../array/range.ts";
@@ -62,6 +67,14 @@ describe("base64url", () => {
     expect(encode(text)).toEqual("QmFzZTY0VVJMIGVuY29kZS9kZWNvZGUgdGVzdA");
   });
 
+  it("properly replaces non-URL-safe characters", () => {
+    expect(encode("<<???>>")).toEqual("PDw_Pz8-Pg");
+    expect(Buffer.from("<<???>>", "utf-8").toString("base64")).toEqual(
+      "PDw/Pz8+Pg=="
+    );
+    expect(decode(encode("<<???>>"))).toEqual("<<???>>");
+  });
+
   it("is does not include padding characters", () => {
     const text = "Zażółć gęślą jaźń";
 
@@ -88,6 +101,15 @@ describe("base64url", () => {
     expect(decode(encode(text))).toEqual(text);
   });
 
+  it("encodes/decodes bytes", () => {
+    const bytes = [0xc2, 0x67, 0xeb, 0xa7, 0x6d, 0x3e, 0x6c, 0x1b, 0x10, 0x7c];
+
+    const encoded = "w4Jnw6vCp20-bBsQfA";
+
+    expect(encodeBytes(bytes)).toEqual(encoded);
+    expect(decodeBytes(encoded)).toEqual(bytes);
+  });
+
   it("handles Unicode", () => {
     expect(decode(encode(unicodeText))).toEqual(unicodeText);
   });
@@ -99,16 +121,42 @@ describe("base64url", () => {
   it("converts base64 to base64URL", () => {
     const text = toByteString(range(256));
 
-    expect(toBase64Url(Buffer.from(text, "utf-8").toString("base64"))).toEqual(
+    expect(fromBase64(Buffer.from(text, "utf-8").toString("base64"))).toEqual(
       encode(text)
     );
   });
 
   it("converts base64URL to base64", () => {
     const text = toByteString(range(256));
+    const base64url = encode(text);
+    const encoded = toBase64(base64url);
+    const expected = Buffer.from(text, "utf-8").toString("base64");
 
-    expect(fromBase64Url(encode(text))).toEqual(
-      Buffer.from(text, "utf-8").toString("base64")
-    );
+    expect(encoded).toEqual(expected);
+  });
+
+  it("fromBase64 strips padding characters", () => {
+    expect(fromBase64("PDw/Pz8+Pg==")).toEqual("PDw_Pz8-Pg");
+  });
+
+  it("toBase64 adds padding characters when needed", () => {
+    expect(toBase64("PDw_Pz8-Pg")).toEqual("PDw/Pz8+Pg==");
+  });
+
+  it("converts base64 to base64URL and vice versa", () => {
+    const base64 = "PDw/Pz8+Pg==";
+    const base64url = "PDw_Pz8-Pg";
+
+    expect(fromBase64(base64)).toEqual(base64url);
+    expect(toBase64(base64url)).toEqual(base64);
+  });
+
+  it("encodes/decodes bytes to and from string", () => {
+    const bytes = [0x50, 0x51, 0x52];
+
+    const encoded = "PQR";
+
+    expect(toByteString(bytes)).toEqual(encoded);
+    expect(fromByteString(encoded)).toEqual(bytes);
   });
 });

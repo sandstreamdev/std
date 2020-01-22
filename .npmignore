@@ -21,6 +21,7 @@ document.js
 ignore.js
 indexReadme.js
 jest.config.js
+mappings.js
 normalizeLineEndings.js
 package-lock.json
 regenerate.js
