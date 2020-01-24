@@ -11,3 +11,12 @@ Maps and flattens the result.
 ) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+flatMap(text => [...text])(["test", "123"]);
+// ⇒ ["t", "e", "s", "t", "1", "2", "3"]
+```
+<!-- prettier-ignore-end -->

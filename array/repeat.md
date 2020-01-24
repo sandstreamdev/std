@@ -9,3 +9,11 @@ Repeats the given element by given count of times.
 (count: number) => (value: any) => any[]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+repeat(3)("test"); // ⇒ ["test", "test", "test"]
+```
+<!-- prettier-ignore-end -->

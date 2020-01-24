@@ -9,3 +9,15 @@ Checks if lengths of given arrays differ.
 (a: any[], b: any[]) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+lengthDiffers([1, 2, 3], [1, 2]); // ⇒ true
+```
+
+```javascript
+lengthDiffers([6, 7], [1, 2]); // ⇒ false
+```
+<!-- prettier-ignore-end -->

@@ -6,6 +6,22 @@ Computes minimum and maximum of the given array in a single run.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([head, ...tail]: number[]) => number[]
+(xs: number[]) => number[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+minMax([10, 5, 3, -5, -4, 23, 32, 8, 1, 0]); // ⇒ [-5, 32]
+```
+
+```javascript
+minMax([1]); // ⇒ [1, 1]
+```
+
+```javascript
+minMax([]); // ⇒ [undefined, undefined]
 ```
 <!-- prettier-ignore-end -->

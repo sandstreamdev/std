@@ -41,6 +41,22 @@ Checks if given arguments are all `Arrays`.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+are([2, 3]); // ⇒ true
+```
+
+```javascript
+are([1, 2, 3], []); // ⇒ true
+```
+
+```javascript
+are([1, 2, 3], 8, [1, 3], "test"); // ⇒ false
+```
+<!-- prettier-ignore-end -->
+
 # chunk
 
 Splits the given array into array of chunks of up to the given length.
@@ -77,6 +93,15 @@ chunk(3)(['a', 'b', 'c', 'd']);
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+difference([1, 2, 3, 4, 5, 6], [2, 4]);
+// ⇒ [1, 3, 5, 6]
+```
+<!-- prettier-ignore-end -->
+
 # differs
 
 Checks if two arrays are not equal.
@@ -89,6 +114,18 @@ Checks if two arrays are not equal.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+differs([1, 2, 3], [1, 2]); // ⇒ true
+```
+
+```javascript
+differs([1, 2, 3], [1, 2, 3]); // ⇒ false
+```
+<!-- prettier-ignore-end -->
+
 # duplicates
 
 Lists all the duplicated values in the given array.
@@ -98,6 +135,14 @@ Lists all the duplicated values in the given array.
 <!-- prettier-ignore-start -->
 ```typescript
 (xs: any[]) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+duplicates([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [3, 4, 3]
 ```
 <!-- prettier-ignore-end -->
 
@@ -133,6 +178,18 @@ Takes exactly the given count of elements.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+exact(5)([1, 2, 3]); // ⇒ [1, 2, 3, undefined, undefined]
+```
+
+```javascript
+exact(2)([1, 2, 3]); // ⇒ [1, 2]
+```
+<!-- prettier-ignore-end -->
+
 # except
 
 Filters out the given value.
@@ -142,6 +199,18 @@ Filters out the given value.
 <!-- prettier-ignore-start -->
 ```typescript
 (y: any) => (xs: any[]) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+except(2)([1, 2, 3, 4, 5]); // ⇒ [1, 3, 4, 5]
+```
+
+```javascript
+except(2)([1, 2, 2, 4, 2]); // ⇒ [1, 4]
 ```
 <!-- prettier-ignore-end -->
 
@@ -156,6 +225,20 @@ Filters the given array with the given predicate just like Array.filter but does
 (
   f: (value: any, index: number, context: any[]) => boolean
 ) => (xs: any[]) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const xs = [1, 2, 3, 4, 5, 6, 7];
+const odd = (x: number) => x % 2 === 1;
+
+const ys = filterInPlace(odd)(xs);
+
+ys === xs; // ⇒ true
+ys; // ⇒ [1, 3, 5, 7]
 ```
 <!-- prettier-ignore-end -->
 
@@ -174,6 +257,18 @@ Finds an element by a predicate function within given array, otherwise returns t
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+find(x => x > 2)([1, 2, 3, 5, 7]); // ⇒ 3
+```
+
+```javascript
+find(x => x > 2)([1, 2, -3, -5, -7]); // ⇒ undefined
+```
+<!-- prettier-ignore-end -->
+
 # first
 
 Returns the first element or undefined when there are no elements in the given array.
@@ -183,6 +278,18 @@ Returns the first element or undefined when there are no elements in the given a
 <!-- prettier-ignore-start -->
 ```typescript
 ([x]: [any]) => any
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+first([1, 2, 3]); // ⇒ 1
+```
+
+```javascript
+first([]); // ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -200,6 +307,15 @@ Maps and flattens the result.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+flatMap(text => [...text])(["test", "123"]);
+// ⇒ ["t", "e", "s", "t", "1", "2", "3"]
+```
+<!-- prettier-ignore-end -->
+
 # flatten
 
 Flattens the nested arrays by a single level.
@@ -209,6 +325,20 @@ Flattens the nested arrays by a single level.
 <!-- prettier-ignore-start -->
 ```typescript
 (xs: any) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+flatten([1, [2, 3], 4, [5, 6]]);
+// ⇒ [1, 2, 3, 4, 5, 6]
+```
+
+```javascript
+flatten([1, [2, [3, 6]], 4, [5, 6]]);
+// ⇒ [1, 2, [3, 6], 4, 5, 6]
 ```
 <!-- prettier-ignore-end -->
 
@@ -252,13 +382,36 @@ Finds common items between both arrays.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+intersection([1, 2, 3, 4, 5], [5, 5, 3, 2]);
+// ⇒ [2, 3, 5]
+```
+<!-- prettier-ignore-end -->
+
 # is
+
+Checks if the given argument is an array.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
 (value?: any) => boolean
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+is([1, 2, 3]); // ⇒ true
+```
+
+```javascript
+is({ a: 5 }); // ⇒ false
 ```
 <!-- prettier-ignore-end -->
 
@@ -274,6 +427,18 @@ Returns the last element or undefined when there are no elements in the given ar
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+last([1, 2, 3]); // ⇒ 3
+```
+
+```javascript
+last([]); // ⇒ undefined
+```
+<!-- prettier-ignore-end -->
+
 # lengthDiffers
 
 Checks if lengths of given arrays differ.
@@ -283,6 +448,18 @@ Checks if lengths of given arrays differ.
 <!-- prettier-ignore-start -->
 ```typescript
 (a: any[], b: any[]) => boolean
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+lengthDiffers([1, 2, 3], [1, 2]); // ⇒ true
+```
+
+```javascript
+lengthDiffers([6, 7], [1, 2]); // ⇒ false
 ```
 <!-- prettier-ignore-end -->
 
@@ -298,6 +475,18 @@ Maps the given array with the given functions.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+map(x => x * x)([1, 2, 3]); // ⇒ [1, 4, 9]
+```
+
+```javascript
+map(x => x * x, x => x + 1)([1, 2, 3]); // ⇒ [2, 5, 10]
+```
+<!-- prettier-ignore-end -->
+
 # midpoint
 
 Returns the middle element or the right one when the number of elements is even.
@@ -310,6 +499,18 @@ Returns the middle element or the right one when the number of elements is even.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+midpoint([1, 2, 3, 4, 5]); // ⇒ 3
+```
+
+```javascript
+midpoint([1, 2, 3, 4]); // ⇒ 3
+```
+<!-- prettier-ignore-end -->
+
 # minMax
 
 Computes minimum and maximum of the given array in a single run.
@@ -318,7 +519,23 @@ Computes minimum and maximum of the given array in a single run.
 
 <!-- prettier-ignore-start -->
 ```typescript
-([head, ...tail]: number[]) => number[]
+(xs: number[]) => number[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+minMax([10, 5, 3, -5, -4, 23, 32, 8, 1, 0]); // ⇒ [-5, 32]
+```
+
+```javascript
+minMax([1]); // ⇒ [1, 1]
+```
+
+```javascript
+minMax([]); // ⇒ [undefined, undefined]
 ```
 <!-- prettier-ignore-end -->
 
@@ -334,6 +551,26 @@ Checks if the given array contains more than one element.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+multiple([1, 2, 3]); // ⇒ true
+```
+
+```javascript
+multiple([1, 2]); // ⇒ true
+```
+
+```javascript
+multiple([1]); // ⇒ false
+```
+
+```javascript
+multiple([]); // ⇒ false
+```
+<!-- prettier-ignore-end -->
+
 # none
 
 Checks if the given array is empty.
@@ -343,6 +580,18 @@ Checks if the given array is empty.
 <!-- prettier-ignore-start -->
 ```typescript
 (xs?: any) => boolean
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+none([]); // ⇒ true
+```
+
+```javascript
+none([1, 2, 3]); // ⇒ false
 ```
 <!-- prettier-ignore-end -->
 
@@ -358,6 +607,15 @@ Partitions the given array to the ones that pass the given predicate function an
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+partition(x => x % 2 === 1)([1, 2, 3, 4, 5]);
+// ⇒ [[2, 4], [1, 3, 5]])
+```
+<!-- prettier-ignore-end -->
+
 # range
 
 Generates an array of numbers from 0 to n - 1.
@@ -367,6 +625,14 @@ Generates an array of numbers from 0 to n - 1.
 <!-- prettier-ignore-start -->
 ```typescript
 (n: any) => number[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+range(3); // ⇒ [0, 1, 2]
 ```
 <!-- prettier-ignore-end -->
 
@@ -382,6 +648,14 @@ Repeats the given element by given count of times.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+repeat(3)("test"); // ⇒ ["test", "test", "test"]
+```
+<!-- prettier-ignore-end -->
+
 # reverse
 
 Reverses the given array without mutating it (in contrast to Array.reverse).
@@ -391,6 +665,14 @@ Reverses the given array without mutating it (in contrast to Array.reverse).
 <!-- prettier-ignore-start -->
 ```typescript
 (xs: any) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+reverse([1, 2, 3, 4, 5]); // ⇒ [5, 4, 3, 2, 1]
 ```
 <!-- prettier-ignore-end -->
 
@@ -406,6 +688,18 @@ Reverses the given array when enabled.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+reverseIf(true)([1, 2, 3, 4, 5]); // ⇒ [5, 4, 3, 2, 1]
+```
+
+```javascript
+reverseIf(false)([1, 2, 3, 4, 5]); // ⇒ [1, 2, 3, 4, 5]
+```
+<!-- prettier-ignore-end -->
+
 # second
 
 Returns the second element or undefined when there are less than two elements in the given array.
@@ -414,7 +708,23 @@ Returns the second element or undefined when there are less than two elements in
 
 <!-- prettier-ignore-start -->
 ```typescript
-([, x]: any[]) => any
+(xs: any[]) => any
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+second([1, 2, 3, 4, 5]); // ⇒ 2
+```
+
+```javascript
+second([1]); // ⇒ undefined
+```
+
+```javascript
+second([]); // ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -430,6 +740,22 @@ Returns the second to last element or undefined when there are less than two ele
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+secondToLast([1, 2, 3, 4, 5]); // ⇒ 4
+```
+
+```javascript
+secondToLast([1]); // ⇒ undefined
+```
+
+```javascript
+secondToLast([]); // ⇒ undefined
+```
+<!-- prettier-ignore-end -->
+
 # shift
 
 Shifts the given array to the left and circulates the elements back by modulo of the array's length.
@@ -439,6 +765,22 @@ Shifts the given array to the left and circulates the elements back by modulo of
 <!-- prettier-ignore-start -->
 ```typescript
 (count: number) => (xs: any[]) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+shift(1)([1, 2, 3, 4, 5]); // ⇒ [2, 3, 4, 5, 1]
+```
+
+```javascript
+shift(2)([1, 2, 3, 4, 5]); // ⇒ [3, 4, 5, 1, 2]
+```
+
+```javascript
+shift(3)([1, 2, 3, 4, 5]); // ⇒ [4, 5, 1, 2, 3]
 ```
 <!-- prettier-ignore-end -->
 
@@ -454,6 +796,25 @@ Shuffles the given array in random order with Math.random as the default.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+let i = 0;
+
+const random = () =>
+  [
+    0.013606630487694282,
+    0.21052486239086554,
+    0.28299838254636556,
+    0.696161009199874,
+    0.32165320593537117
+  ][i++];
+
+shuffle([1, 2, 3, 4, 5], random); // => [3, 5, 4, 2, 1]
+```
+<!-- prettier-ignore-end -->
+
 # shuffleInPlace
 
 Shuffles the given array in-place in random order with Math.random as the default.
@@ -463,6 +824,25 @@ Shuffles the given array in-place in random order with Math.random as the defaul
 <!-- prettier-ignore-start -->
 ```typescript
 (xs: any[], random?: () => number) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+let i = 0;
+
+const random = () =>
+  [
+    0.013606630487694282,
+    0.21052486239086554,
+    0.28299838254636556,
+    0.696161009199874,
+    0.32165320593537117
+  ][i++];
+
+shuffleInPlace([1, 2, 3, 4, 5], random); // => [3, 5, 4, 2, 1]
 ```
 <!-- prettier-ignore-end -->
 
@@ -478,6 +858,22 @@ Checks if the given array contains exactly one element.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+single([1]); // ⇒ true
+```
+
+```javascript
+single([1, 2, 3]); // ⇒ false
+```
+
+```javascript
+single([]); // ⇒ false
+```
+<!-- prettier-ignore-end -->
+
 # skip
 
 Skips the given count of elements from the given array.
@@ -487,6 +883,14 @@ Skips the given count of elements from the given array.
 <!-- prettier-ignore-start -->
 ```typescript
 (count: number) => (xs: any[]) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+skip(2)([1, 2, 3, 4, 5]); // ⇒ [3, 4, 5]
 ```
 <!-- prettier-ignore-end -->
 
@@ -535,6 +939,15 @@ Sorts the given array without mutating it.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+sort((a, b) => a - b)([13, 79, 20, 69, 44, 67, 18, 95, 26, 55]);
+// ⇒ [13, 18, 20, 26, 44, 55, 67, 69, 79, 95]
+```
+<!-- prettier-ignore-end -->
+
 # sum
 
 Sums the given array of numbers.
@@ -544,6 +957,14 @@ Sums the given array of numbers.
 <!-- prettier-ignore-start -->
 ```typescript
 (xs: number[]) => number
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+sum([1, 2, 3, 4, 5]); // ⇒ 15
 ```
 <!-- prettier-ignore-end -->
 
@@ -559,6 +980,18 @@ Takes up to given count of elements.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+take(2)([1, 2, 3, 4, 5]); // ⇒ [1, 2]
+```
+
+```javascript
+take(10)([1, 2, 3, 4, 5]); // ⇒ [1, 2, 3, 4, 5]
+```
+<!-- prettier-ignore-end -->
+
 # unique
 
 Returns only unique elements of the given array.
@@ -568,6 +1001,14 @@ Returns only unique elements of the given array.
 <!-- prettier-ignore-start -->
 ```typescript
 (xs: any[]) => any[]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+unique([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [1, 2, 3, 4, 6]
 ```
 <!-- prettier-ignore-end -->
 
@@ -605,6 +1046,14 @@ Zips given arrays together into pairs.
 <!-- prettier-ignore-start -->
 ```typescript
 (xs: any[], ys: any[]) => any[][]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+zip([1, 2, 3], [4, 5, 6]); // ⇒ [[1, 4],[2, 5],[3, 6]]
 ```
 <!-- prettier-ignore-end -->
 
@@ -650,5 +1099,14 @@ Zips given arrays together with the given function.
 (
   f?: (x: any, y: any) => any[]
 ) => (xs: any[], ys: any[]) => any[][]
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+zipWith((x, y) => x * x + y)([1, 2, 3], [4, 5, 6]);
+// ⇒ [5, 9, 15]
 ```
 <!-- prettier-ignore-end -->

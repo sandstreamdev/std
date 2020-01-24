@@ -9,3 +9,12 @@ Partitions the given array to the ones that pass the given predicate function an
 (predicate: (x: any) => boolean) => (xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+partition(x => x % 2 === 1)([1, 2, 3, 4, 5]);
+// ⇒ [[2, 4], [1, 3, 5]])
+```
+<!-- prettier-ignore-end -->

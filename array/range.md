@@ -9,3 +9,11 @@ Generates an array of numbers from 0 to n - 1.
 (n: any) => number[]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+range(3); // ⇒ [0, 1, 2]
+```
+<!-- prettier-ignore-end -->
