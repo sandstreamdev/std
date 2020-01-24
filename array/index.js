@@ -24,6 +24,7 @@ import multiple from "./multiple.js";
 import none from "./none.js";
 import partition from "./partition.js";
 import range from "./range.js";
+import removeAt from "./removeAt.js";
 import repeat from "./repeat.js";
 import reverse from "./reverse.js";
 import reverseIf from "./reverseIf.js";
@@ -71,6 +72,7 @@ export {
   none,
   partition,
   range,
+  removeAt,
   repeat,
   reverse,
   reverseIf,
@@ -119,6 +121,7 @@ export default {
   none,
   partition,
   range,
+  removeAt,
   repeat,
   reverse,
   reverseIf,
