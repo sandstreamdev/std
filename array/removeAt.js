@@ -1,5 +1,10 @@
-export default index => ([...xs]) => {
-  xs.splice(index, 1);
+export default index => xs => {
+  if (index >= xs.length || index < 0) {
+    return xs;
+  }
 
-  return xs;
+  const ys = [...xs];
+  ys.splice(index, 1);
+
+  return ys;
 };

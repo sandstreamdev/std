@@ -395,7 +395,7 @@ Removes the element specified by index.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(index: number) => ([...xs]: any[]) => any[]
+(index: number) => (xs: any[]) => any[]
 ```
 <!-- prettier-ignore-end -->
 

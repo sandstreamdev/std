@@ -1,7 +1,7 @@
 {
   "name": "removeAt",
   "description": "Removes the element specified by index.",
-  "signature": "(index: number) => ([...xs]: any[]) => any[]",
+  "signature": "(index: number) => (xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",
