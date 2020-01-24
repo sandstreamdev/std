@@ -233,7 +233,7 @@ Filters the given array with the given predicate just like Array.filter but does
 <!-- prettier-ignore-start -->
 ```javascript
 const xs = [1, 2, 3, 4, 5, 6, 7];
-const odd = (x: number) => x % 2 === 1;
+const odd = x => x % 2 === 1;
 
 const ys = filterInPlace(odd)(xs);
 
