@@ -5,7 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "minMax(); // ⇒ TODO"
+      "content": "minMax([10, 5, 3, -5, -4, 23, 32, 8, 1, 0]); // ⇒ [-5, 32]"
+    },
+    {
+      "language": "javascript",
+      "content": "minMax([1]); // ⇒ [1, 1]"
+    },
+    {
+      "language": "javascript",
+      "content": "minMax([]); // ⇒ [undefined, undefined]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

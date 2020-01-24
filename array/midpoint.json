@@ -5,7 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "midpoint(); // ⇒ TODO"
+      "content": "midpoint([1, 2, 3, 4, 5]); // ⇒ 3"
+    },
+    {
+      "language": "javascript",
+      "content": "midpoint([1, 2, 3, 4]); // ⇒ 3"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

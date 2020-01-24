@@ -9,7 +9,18 @@ const descending = (a: number, b: number) => b - a;
 describe("sort", () => {
   it("sorts just like Array.sort but without mutating the original array", () => {
     expect(sort()(data)).toEqual([...data].sort());
-    expect(sort(ascending)(data)).toEqual([...data].sort(ascending));
+    expect(sort(ascending)(data)).toEqual([
+      13,
+      18,
+      20,
+      26,
+      44,
+      55,
+      67,
+      69,
+      79,
+      95
+    ]);
     expect(sort(descending)(data)).toEqual([...data].sort(descending));
   });
 

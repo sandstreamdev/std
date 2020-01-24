@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "zipWith(); // ⇒ TODO"
+      "content": "zipWith((x, y) => x * x + y)([1, 2, 3], [4, 5, 6]);\n// ⇒ [5, 9, 15]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

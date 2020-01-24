@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "shuffle(); // ⇒ TODO"
+      "content": "let i = 0;\n\nconst random = () =>\n  [\n    0.013606630487694282,\n    0.21052486239086554,\n    0.28299838254636556,\n    0.696161009199874,\n    0.32165320593537117\n  ][i++];\n\nshuffle([1, 2, 3, 4, 5], random); // => [3, 5, 4, 2, 1]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

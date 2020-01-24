@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sort(); // ⇒ TODO"
+      "content": "sort((a, b) => a - b)([13, 79, 20, 69, 44, 67, 18, 95, 26, 55]);\n// ⇒ [13, 18, 20, 26, 44, 55, 67, 69, 79, 95]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

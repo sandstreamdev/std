@@ -5,7 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "take(); // ⇒ TODO"
+      "content": "take(2)([1, 2, 3, 4, 5]); // ⇒ [1, 2]"
+    },
+    {
+      "language": "javascript",
+      "content": "take(10)([1, 2, 3, 4, 5]); // ⇒ [1, 2, 3, 4, 5]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

@@ -5,7 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "differs(); // ⇒ TODO"
+      "content": "differs([1, 2, 3], [1, 2]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "differs([1, 2, 3], [1, 2, 3]); // ⇒ false"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

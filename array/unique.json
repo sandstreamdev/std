@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "unique(); // ⇒ TODO"
+      "content": "unique([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [1, 2, 3, 4, 6]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

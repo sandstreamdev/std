@@ -5,7 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "single(); // ⇒ TODO"
+      "content": "single([1]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "single([1, 2, 3]); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "single([]); // ⇒ false"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

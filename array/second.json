@@ -5,7 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "second(); // ⇒ TODO"
+      "content": "second([1, 2, 3, 4, 5]); // ⇒ 2"
+    },
+    {
+      "language": "javascript",
+      "content": "second([1]); // ⇒ undefined"
+    },
+    {
+      "language": "javascript",
+      "content": "second([]); // ⇒ undefined"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

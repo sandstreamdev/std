@@ -5,7 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "find(); // ⇒ TODO"
+      "content": "find(x => x > 2)([1, 2, 3, 5, 7]); // ⇒ 3"
+    },
+    {
+      "language": "javascript",
+      "content": "find(x => x > 2)([1, 2, -3, -5, -7]); // ⇒ undefined"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

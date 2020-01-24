@@ -5,7 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "shift(); // ⇒ TODO"
+      "content": "shift(1)([1, 2, 3, 4, 5]); // ⇒ [2, 3, 4, 5, 1]"
+    },
+    {
+      "language": "javascript",
+      "content": "shift(2)([1, 2, 3, 4, 5]); // ⇒ [3, 4, 5, 1, 2]"
+    },
+    {
+      "language": "javascript",
+      "content": "shift(3)([1, 2, 3, 4, 5]); // ⇒ [4, 5, 1, 2, 3]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

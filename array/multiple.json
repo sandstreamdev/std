@@ -5,7 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "multiple(); // ⇒ TODO"
+      "content": "multiple([1, 2, 3]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "multiple([1, 2]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "multiple([1]); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "multiple([]); // ⇒ false"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

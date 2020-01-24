@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "zip(); // ⇒ TODO"
+      "content": "zip([1, 2, 3], [4, 5, 6]); // ⇒ [[1, 4],[2, 5],[3, 6]]"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

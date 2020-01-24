@@ -1,11 +1,15 @@
 {
   "name": "is",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given argument is an array.",
   "signature": "(value?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "is(); // ⇒ TODO"
+      "content": "is([1, 2, 3]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "is({ a: 5 }); // ⇒ false"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

@@ -5,7 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "none(); // ⇒ TODO"
+      "content": "none([]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "none([1, 2, 3]); // ⇒ false"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

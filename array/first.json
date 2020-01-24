@@ -5,7 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "first(); // ⇒ TODO"
+      "content": "first([1, 2, 3]); // ⇒ 1"
+    },
+    {
+      "language": "javascript",
+      "content": "first([]); // ⇒ undefined"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]
