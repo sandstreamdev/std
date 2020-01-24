@@ -4,6 +4,7 @@ export default index => xs => {
   }
 
   const ys = [...xs];
+
   ys.splice(index, 1);
 
   return ys;
