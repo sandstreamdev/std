@@ -372,7 +372,7 @@ Generates an array of numbers from 0 to n - 1.
 
 # removeAt
 
-Removes the element specified by index.
+Removes an element at the given index from the given array.
 
 ## Type signature
 
@@ -389,6 +389,10 @@ Removes the element specified by index.
 removeAt(3)([1, 2, 3, 4, 5, 6]) // ⇒ [1, 2, 3, 5, 6]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to remove an item at a particular index?
 
 # repeat
 
