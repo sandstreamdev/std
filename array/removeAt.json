@@ -1,0 +1,12 @@
+{
+  "name": "removeAt",
+  "description": "Removes an element at the given index from the given array.",
+  "signature": "(index: number) => (xs: any[]) => any[]",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "removeAt(3)([1, 2, 3, 4, 5, 6]) // ⇒ [1, 2, 3, 5, 6]"
+    }
+  ],
+  "questions": ["How to remove an item at a particular index?"]
+}

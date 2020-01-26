@@ -387,6 +387,30 @@ Generates an array of numbers from 0 to n - 1.
 ```
 <!-- prettier-ignore-end -->
 
+#### removeAt
+
+Removes an element at the given index from the given array.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(index: number) => (xs: any[]) => any[]
+```
+<!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+removeAt(3)([1, 2, 3, 4, 5, 6]) // ⇒ [1, 2, 3, 5, 6]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to remove an item at a particular index?
+
 #### repeat
 
 Repeats the given element by given count of times.

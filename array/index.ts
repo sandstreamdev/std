@@ -24,6 +24,7 @@ import multiple from "./multiple";
 import none from "./none";
 import partition from "./partition";
 import range from "./range";
+import removeAt from "./removeAt";
 import repeat from "./repeat";
 import reverse from "./reverse";
 import reverseIf from "./reverseIf";
@@ -71,6 +72,7 @@ export {
   none,
   partition,
   range,
+  removeAt,
   repeat,
   reverse,
   reverseIf,
@@ -119,6 +121,7 @@ export default {
   none,
   partition,
   range,
+  removeAt,
   repeat,
   reverse,
   reverseIf,
