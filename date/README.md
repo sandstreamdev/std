@@ -460,7 +460,7 @@ string[]
 
 # valid
 
-Checks if the given date is a valid date.
+Checks if the given date is valid.
 
 ## Type signature
 
