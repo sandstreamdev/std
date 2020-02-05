@@ -460,6 +460,8 @@ string[]
 
 # valid
 
+Checks if the given date is a valid date.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
