@@ -1,6 +1,6 @@
 {
   "name": "valid",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given date is a valid date.",
   "signature": "(date?: any) => boolean",
   "examples": [
     {
