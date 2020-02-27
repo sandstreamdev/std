@@ -245,7 +245,7 @@ Maps the given object with the given function.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  f: (value: any, key: string, context: object) => boolean
+  f: (value: any, key: string, context: object) => any
 ) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->
