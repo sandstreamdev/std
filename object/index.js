@@ -4,6 +4,7 @@ import empty from "./empty.js";
 import entries from "./entries.js";
 import enumerable from "./enumerable.js";
 import equals from "./equals.js";
+import every from "./every.js";
 import filter from "./filter.js";
 import find from "./find.js";
 import findEntry from "./findEntry.js";
@@ -20,6 +21,7 @@ import mapKeys from "./mapKeys.js";
 import mapValues from "./mapValues.js";
 import merge from "./merge.js";
 import none from "./none.js";
+import some from "./some.js";
 import sort from "./sort.js";
 
 export {
@@ -29,6 +31,7 @@ export {
   entries,
   enumerable,
   equals,
+  every,
   filter,
   find,
   findEntry,
@@ -45,6 +48,7 @@ export {
   mapValues,
   merge,
   none,
+  some,
   sort
 };
 
@@ -55,6 +59,7 @@ export default {
   entries,
   enumerable,
   equals,
+  every,
   filter,
   find,
   findEntry,
@@ -71,5 +76,6 @@ export default {
   mapValues,
   merge,
   none,
+  some,
   sort
 };

@@ -4,6 +4,7 @@ import empty from "./empty";
 import entries from "./entries";
 import enumerable from "./enumerable";
 import equals from "./equals";
+import every from "./every";
 import filter from "./filter";
 import find from "./find";
 import findEntry from "./findEntry";
@@ -20,6 +21,7 @@ import mapKeys from "./mapKeys";
 import mapValues from "./mapValues";
 import merge from "./merge";
 import none from "./none";
+import some from "./some";
 import sort from "./sort";
 
 export {
@@ -29,6 +31,7 @@ export {
   entries,
   enumerable,
   equals,
+  every,
   filter,
   find,
   findEntry,
@@ -45,6 +48,7 @@ export {
   mapValues,
   merge,
   none,
+  some,
   sort
 };
 
@@ -55,6 +59,7 @@ export default {
   entries,
   enumerable,
   equals,
+  every,
   filter,
   find,
   findEntry,
@@ -71,5 +76,6 @@ export default {
   mapValues,
   merge,
   none,
+  some,
   sort
 };
