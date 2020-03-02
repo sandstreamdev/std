@@ -1,4 +1,4 @@
-# some
+# every
 
 Test if every element passes the given predicate.
 

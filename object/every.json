@@ -1,5 +1,5 @@
 {
-  "name": "some",
+  "name": "every",
   "description": "Test if every element passes the given predicate.",
   "signature": "(\n  f: (value: any, key: string, context: object) => boolean\n) => (xs: object) => boolean",
   "examples": [

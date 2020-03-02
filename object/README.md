@@ -98,7 +98,7 @@ Checks if two objects are deeply equal.
 ```
 <!-- prettier-ignore-end -->
 
-# some
+# every
 
 Test if every element passes the given predicate.
 
