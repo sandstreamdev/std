@@ -1,6 +1,5 @@
 const ignoredFiles = [
   ".all-contributorsrc",
-  ".babelrc.js",
   ".eslintignore",
   ".eslintrc.js",
   ".gitignore",
@@ -8,6 +7,7 @@ const ignoredFiles = [
   ".prettierignore",
   ".prettierrc",
   "addExtensions.js",
+  "babel.config.json",
   "compile.js",
   "document.js",
   "ignore.js",
@@ -19,7 +19,7 @@ const ignoredFiles = [
   "index.ts",
   "index.umd.js",
   "indexReadme.js",
-  "jest.config.js",
+  "jest.config.json",
   "LICENSE",
   "mappings.js",
   "normalizeLineEndings.js",

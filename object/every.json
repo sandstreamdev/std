@@ -1,0 +1,16 @@
+{
+  "name": "every",
+  "description": "Test if every element passes the given predicate.",
+  "signature": "(\n  f: (value: any, key: string, context: object) => boolean\n) => (xs: object) => boolean",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "every(x => x >= 0)({ x: 5, y: 3, z: 0 }); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "every(x => x > 0)({ x: 5, y: 3, z: 0 }); // ⇒ false"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

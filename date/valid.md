@@ -1,5 +1,7 @@
 # valid
 
+Checks if the given date is valid.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

@@ -1,7 +1,7 @@
 {
   "name": "map",
   "description": "Maps the given object with the given function.",
-  "signature": "(\n  f: (value: any, key: string, context: object) => boolean\n) => (xs: object) => object",
+  "signature": "(\n  f: (value: any, key: string, context: object) => any\n) => (xs: object) => object",
   "examples": [
     {
       "language": "javascript",

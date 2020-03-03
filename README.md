@@ -653,6 +653,30 @@ range(3); // ⇒ [0, 1, 2]
 ```
 <!-- prettier-ignore-end -->
 
+#### removeAt
+
+Removes an element at the given index from the given array.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(index: number) => (xs: any[]) => any[]
+```
+<!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+removeAt(3)([1, 2, 3, 4, 5, 6]) // ⇒ [1, 2, 3, 5, 6]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to remove an item at a particular index?
+
 #### repeat
 
 Repeats the given element by given count of times.
@@ -1633,6 +1657,8 @@ string[]
 
 #### valid
 
+Checks if the given date is valid.
+
 ##### Type signature
 
 <!-- prettier-ignore-start -->
@@ -2458,6 +2484,32 @@ Checks if two objects are deeply equal.
 ```
 <!-- prettier-ignore-end -->
 
+#### every
+
+Test if every element passes the given predicate.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  f: (value: any, key: string, context: object) => boolean
+) => (xs: object) => boolean
+```
+<!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+every(x => x >= 0)({ x: 5, y: 3, z: 0 }); // ⇒ true
+```
+
+```javascript
+every(x => x > 0)({ x: 5, y: 3, z: 0 }); // ⇒ false
+```
+<!-- prettier-ignore-end -->
+
 #### filter
 
 Filters the given object with the given predicate.
@@ -2605,7 +2657,7 @@ Maps the given object with the given function.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  f: (value: any, key: string, context: object) => boolean
+  f: (value: any, key: string, context: object) => any
 ) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->
@@ -2700,6 +2752,32 @@ Checks if the given object is empty.
 <!-- prettier-ignore-start -->
 ```typescript
 (xs?: object) => boolean
+```
+<!-- prettier-ignore-end -->
+
+#### some
+
+Test if any element passes the given predicate.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+(
+  f: (value: any, key: string, context: object) => boolean
+) => (xs: object) => boolean
+```
+<!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+some(x => x >= 4)({ x: 5, y: 3, z: 0 }); // ⇒ true
+```
+
+```javascript
+some(x => x < 0)({ x: 5, y: 3, z: 0 }); // ⇒ false
 ```
 <!-- prettier-ignore-end -->
 
