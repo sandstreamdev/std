@@ -8,5 +8,5 @@
       "content": "from(\"PQR\"); // ⇒ [80, 81, 82]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to convert a string into a byte array?"]
 }

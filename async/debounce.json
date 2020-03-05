@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "const f = () => console.log(\"Test\");\nconst debounced = debounce(f, 2000);\ndebounced();\nsetTimeout(debounced, 1000);\nsetTimeout(debounced, 3000);"
+      "content": "const f = () => console.log(\"Test\");\n\nconst debounced = debounce(f, 2000);\n\ndebounced();\nsetTimeout(debounced, 1000);\nsetTimeout(debounced, 3000);"
     }
   ],
   "questions": [

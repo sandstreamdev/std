@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "const event = {\npreventDefault: () => console.log(\"preventDefault\"),\nstopPropagation: () => console.log(\"stopPropagation\")\n};\nprevent(event);"
+      "content": "const event = {\n  preventDefault: () => console.log(\"preventDefault\"),\n  stopPropagation: () => console.log(\"stopPropagation\")\n};\n\nprevent(event);"
     }
   ],
   "questions": ["How to prevent default event handler?"]

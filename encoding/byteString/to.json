@@ -8,5 +8,5 @@
       "content": "to([0x50, 0x51, 0x52]); // ⇒ \"PQR\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to convert a byte array to string?"]
 }

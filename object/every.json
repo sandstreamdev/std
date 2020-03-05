@@ -12,5 +12,7 @@
       "content": "every(x => x > 0)({ x: 5, y: 3, z: 0 }); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if every entry in an object passes a given predicate?"
+  ]
 }

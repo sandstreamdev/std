@@ -8,5 +8,5 @@
       "content": "enumerable('TEST', 'X', 'Y');\n// ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to create object of the same keys and values?"]
 }
