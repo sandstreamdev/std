@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "startsWith(\"The\")(\"The quick brown fox jumps over the lazy dog\"); // ⇒ true"
+      "content": "startsWith(\"The\")(\"The quick brown fox jumps over the lazy dog\");\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "startsWith(\"Quick\")(\"The quick brown fox jumps over the lazy dog\"); // ⇒ false"
+      "content": "startsWith(\"Quick\")(\"The quick brown fox jumps over the lazy dog\");\n// ⇒ false"
     }
   ],
   "questions": ["How to check if a string starts with a given substring?"]

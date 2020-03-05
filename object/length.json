@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "length({ a: 1, b: 2, c: 3 }); // ⇒ 3"
+      "content": "length({ a: 1, b: 2, c: 3 });\n// ⇒ 3"
     }
   ],
   "questions": ["How to check how many entries are in an object?"]

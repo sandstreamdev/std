@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "constant(3)(\"anything\"); // ⇒ 3"
+      "content": "constant(3)(\"anything\");\n// ⇒ 3"
     }
   ],
   "questions": [

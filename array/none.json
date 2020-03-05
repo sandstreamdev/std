@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "none([]); // ⇒ true"
+      "content": "none([]);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "none([1, 2, 3]); // ⇒ false"
+      "content": "none([1, 2, 3]);\n// ⇒ false"
     }
   ],
   "questions": ["How to check if array is empty?"]

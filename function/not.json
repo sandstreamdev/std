@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "not(x > 10)(15); // ⇒ true"
+      "content": "not(x > 10)(15);\n// ⇒ true"
     }
   ],
   "questions": ["How to invert a boolean function?"]

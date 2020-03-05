@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "firstToLower(\"TeSt\"); // ⇒ \"teSt\""
+      "content": "firstToLower(\"TeSt\");\n// ⇒ \"teSt\""
     }
   ],
   "questions": ["How to make the first letter of a string lowercase?"]

@@ -14,6 +14,11 @@ Converts string to byte array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-from("PQR"); // ⇒ [80, 81, 82]
+from("PQR");
+// ⇒ [80, 81, 82]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert a string into a byte array?

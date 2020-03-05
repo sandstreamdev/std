@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "from(\"PQR\"); // ⇒ [80, 81, 82]"
+      "content": "from(\"PQR\");\n// ⇒ [80, 81, 82]"
     }
   ],
   "questions": ["How to convert a string into a byte array?"]

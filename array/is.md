@@ -14,10 +14,16 @@ Checks if the given argument is an array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-is([1, 2, 3]); // ⇒ true
+is([1, 2, 3]);
+// ⇒ true
 ```
 
 ```javascript
-is({ a: 5 }); // ⇒ false
+is({ a: 5 });
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a value is an array?

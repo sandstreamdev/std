@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "number(0 / 0); // ⇒ false"
+      "content": "number(0 / 0);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "number(15.6); // ⇒ true"
+      "content": "number(15.6);\n// ⇒ true"
     }
   ],
   "questions": [

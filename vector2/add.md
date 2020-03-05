@@ -12,3 +12,16 @@ Adds two vectors.
 ) => [number, number]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+add([3, 5], [-1, 8]);
+// ⇒ [2, 13]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to add two vectors?

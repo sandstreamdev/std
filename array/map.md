@@ -14,10 +14,16 @@ Maps the given array with the given functions.
 
 <!-- prettier-ignore-start -->
 ```javascript
-map(x => x * x)([1, 2, 3]); // ⇒ [1, 4, 9]
+map(x => x * x)([1, 2, 3]);
+// ⇒ [1, 4, 9]
 ```
 
 ```javascript
-map(x => x * x, x => x + 1)([1, 2, 3]); // ⇒ [2, 5, 10]
+map(x => x * x, x => x + 1)([1, 2, 3]);
+// ⇒ [2, 5, 10]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to map an array?

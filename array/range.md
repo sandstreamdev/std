@@ -14,6 +14,11 @@ Generates an array of numbers from 0 to n - 1.
 
 <!-- prettier-ignore-start -->
 ```javascript
-range(3); // ⇒ [0, 1, 2]
+range(3);
+// ⇒ [0, 1, 2]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to create array of all integers from 0 to N exclusive?

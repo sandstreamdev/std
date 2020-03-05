@@ -5,19 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "defined(undefined); // ⇒ false"
+      "content": "defined(undefined);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "defined(null); // ⇒ true"
+      "content": "defined(null);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "defined(0); // ⇒ true"
+      "content": "defined(0);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "defined({ a: 1 }); // ⇒ true"
+      "content": "defined({ a: 1 });\n// ⇒ true"
     }
   ],
   "questions": [

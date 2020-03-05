@@ -14,6 +14,11 @@ Lists all the duplicated values in the given array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-duplicates([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [3, 4, 3]
+duplicates([1, 2, 3, 4, 3, 4, 3, 6]);
+// ⇒ [3, 4, 3]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find duplicates in an array?

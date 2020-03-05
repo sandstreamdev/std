@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "mul(scale(4, 5), [2, 3]); // ⇒ [8, 15]"
+      "content": "mul(scale(4, 5), [2, 3]);\n// ⇒ [8, 15]"
     }
   ],
   "questions": ["How to apply a matrix transformation to a vector?"]

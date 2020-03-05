@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "clamp(0, 10)(5); // ⇒ 5"
+      "content": "clamp(0, 10)(5);\n// ⇒ 5"
     },
     {
       "language": "javascript",
-      "content": "clamp(0, 10)(-5); // ⇒ 0"
+      "content": "clamp(0, 10)(-5);\n// ⇒ 0"
     },
     {
       "language": "javascript",
-      "content": "clamp(0, 10)(15); // ⇒ 10"
+      "content": "clamp(0, 10)(15);\n// ⇒ 10"
     }
   ],
   "questions": [

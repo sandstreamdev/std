@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "firstToUpper(\"teSt\"); // ⇒ \"TeSt\""
+      "content": "firstToUpper(\"teSt\");\n// ⇒ \"TeSt\""
     }
   ],
   "questions": ["How to make the first letter of a string uppercase?"]

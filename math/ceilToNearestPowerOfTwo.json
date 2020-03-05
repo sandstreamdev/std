@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "ceilToNearestPowerOfTwo(345); // ⇒ 512"
+      "content": "ceilToNearestPowerOfTwo(345);\n// ⇒ 512"
     }
   ],
   "questions": [

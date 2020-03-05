@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "includes(\"brown fox\")(\"The quick brown fox jumps over the lazy dog\"); // ⇒ true"
+      "content": "includes(\"brown fox\")(\"The quick brown fox jumps over the lazy dog\");\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "includes(\"brown dog\")(\"The quick brown fox jumps over the lazy dog\"); // ⇒ false"
+      "content": "includes(\"brown dog\")(\"The quick brown fox jumps over the lazy dog\");\n// ⇒ false"
     }
   ],
   "questions": ["How to check is a string contains a given substring?"]

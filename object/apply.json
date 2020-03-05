@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "const lower = text => text.toLowerCase();\nconst upper = text => text.toUpperCase();\n\napply({ lower, upper })(\"TeSt\"); // ⇒ { lower: \"test\", upper: \"TEST\" }"
+      "content": "const lower = text => text.toLowerCase();\nconst upper = text => text.toUpperCase();\n\napply({ lower, upper })(\"TeSt\");\n// ⇒ { lower: \"test\", upper: \"TEST\" }"
     }
   ],
   "questions": ["How to apply a value over an object of functions?"]

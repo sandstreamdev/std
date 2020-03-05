@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "every(x => x >= 0)({ x: 5, y: 3, z: 0 }); // ⇒ true"
+      "content": "every(x => x >= 0)({ x: 5, y: 3, z: 0 });\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "every(x => x > 0)({ x: 5, y: 3, z: 0 }); // ⇒ false"
+      "content": "every(x => x > 0)({ x: 5, y: 3, z: 0 });\n// ⇒ false"
     }
   ],
   "questions": [

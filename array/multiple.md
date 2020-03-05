@@ -14,18 +14,27 @@ Checks if the given array contains more than one element.
 
 <!-- prettier-ignore-start -->
 ```javascript
-multiple([1, 2, 3]); // ⇒ true
+multiple([1, 2, 3]);
+// ⇒ true
 ```
 
 ```javascript
-multiple([1, 2]); // ⇒ true
+multiple([1, 2]);
+// ⇒ true
 ```
 
 ```javascript
-multiple([1]); // ⇒ false
+multiple([1]);
+// ⇒ false
 ```
 
 ```javascript
-multiple([]); // ⇒ false
+multiple([]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if an array contains multiple elements?
+- How to check whether multiple values exist within an array?

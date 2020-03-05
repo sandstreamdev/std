@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sameSign([-1, -2, -3]); // ⇒ true"
+      "content": "sameSign([-1, -2, -3]);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "sameSign([1, 2, -3]); // ⇒ false"
+      "content": "sameSign([1, 2, -3]);\n// ⇒ false"
     }
   ],
   "questions": ["How to check if all values has the same sign?"]

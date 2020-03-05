@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sum([1, 2, 3, 4, 5]); // ⇒ 15"
+      "content": "sum([1, 2, 3, 4, 5]);\n// ⇒ 15"
     }
   ],
   "questions": ["How to sum elements of an array?"]

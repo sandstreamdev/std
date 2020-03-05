@@ -14,6 +14,22 @@ Checks if the given value is a byte.
 
 <!-- prettier-ignore-start -->
 ```javascript
-byte(128); // ⇒ true
+byte(128);
+// ⇒ true
+```
+
+```javascript
+byte(325);
+// ⇒ false
+```
+
+```javascript
+byte(65.5);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check is a given value is a byte?
+- How to check is a given number is a byte?

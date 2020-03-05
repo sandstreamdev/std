@@ -21,7 +21,13 @@ const odd = x => x % 2 === 1;
 
 const ys = filterInPlace(odd)(xs);
 
-ys === xs; // ⇒ true
-ys; // ⇒ [1, 3, 5, 7]
+ys === xs;
+// ⇒ true
+ys;
+// ⇒ [1, 3, 5, 7]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to filter an array in place?

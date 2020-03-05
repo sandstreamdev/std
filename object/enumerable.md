@@ -18,3 +18,7 @@ enumerable('TEST', 'X', 'Y');
 // ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to create object of the same keys and values?

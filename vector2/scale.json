@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "scale(2, 3); // ⇒ { a: 2, b: 0, c: 0, d: 3, e: 0, f: 0 }"
+      "content": "scale(2, 3);\n// ⇒ { a: 2, b: 0, c: 0, d: 3, e: 0, f: 0 }"
     }
   ],
   "questions": ["How to create a scale matrix?"]

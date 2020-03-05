@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "nbsp; // ⇒ \" \""
+      "content": "nbsp;\n// ⇒ \" \""
     }
   ],
   "questions": ["How to get a non-breaking space?"]

@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "first({ a: 1, b: 2, c: 3 }); // ⇒ 1"
+      "content": "first({ a: 1, b: 2, c: 3 });\n// ⇒ 1"
     }
   ],
   "questions": ["How to get the first value of an object?"]

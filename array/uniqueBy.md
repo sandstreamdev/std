@@ -22,3 +22,7 @@ uniqueBy(({ id }) => id)([
 // ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get all unique values in an array by some predicate?

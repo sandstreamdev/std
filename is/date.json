@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "date(new Date()); // ⇒ true"
+      "content": "date(new Date());\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "date(123); // ⇒ false"
+      "content": "date(123);\n// ⇒ false"
     }
   ],
   "questions": ["How to check is a given value is Date object?"]

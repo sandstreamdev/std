@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "split([[2, 3], [5, 7]]); // ⇒ [[0, 2], [3, 5], [7, 10]]"
+      "content": "split([[2, 3], [5, 7]]);\n// ⇒ [[0, 2], [3, 5], [7, 10]]"
     }
   ],
   "questions": ["How to split a range into subranges?"]

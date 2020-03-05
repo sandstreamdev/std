@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "clampNormal(0.5); // ⇒ 0.5"
+      "content": "clampNormal(0.5);\n// ⇒ 0.5"
     },
     {
       "language": "javascript",
-      "content": "clampNormal(-0.5); // ⇒ 0"
+      "content": "clampNormal(-0.5);\n// ⇒ 0"
     },
     {
       "language": "javascript",
-      "content": "clampNormal(1.5); // ⇒ 1"
+      "content": "clampNormal(1.5);\n// ⇒ 1"
     }
   ],
   "questions": [

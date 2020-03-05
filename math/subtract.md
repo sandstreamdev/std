@@ -9,3 +9,16 @@ Subtracts two values.
 (a: number, b: number) => number
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+subtract(3, 5);
+// ⇒ -2
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to subtract two numbers?

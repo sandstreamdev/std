@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "unique([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [1, 2, 3, 4, 6]"
+      "content": "unique([1, 2, 3, 4, 3, 4, 3, 6]);\n// ⇒ [1, 2, 3, 4, 6]"
     }
   ],
   "questions": ["How to get all unique values in an array?"]

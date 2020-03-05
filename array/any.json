@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "any([]); // ⇒ false"
+      "content": "any([]);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "any([1, 2, 3]); // ⇒ true"
+      "content": "any([1, 2, 3]);\n// ⇒ true"
     }
   ],
   "questions": [

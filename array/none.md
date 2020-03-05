@@ -14,10 +14,16 @@ Checks if the given array is empty.
 
 <!-- prettier-ignore-start -->
 ```javascript
-none([]); // ⇒ true
+none([]);
+// ⇒ true
 ```
 
 ```javascript
-none([1, 2, 3]); // ⇒ false
+none([1, 2, 3]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if array is empty?

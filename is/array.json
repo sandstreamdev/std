@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "array([1, 2, 3]); // ⇒ true"
+      "content": "array([1, 2, 3]);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "array({ a: 1 }); // ⇒ false"
+      "content": "array({ a: 1 });\n// ⇒ false"
     }
   ],
   "questions": ["How to check is a given value is an array?"]

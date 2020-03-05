@@ -14,10 +14,16 @@ Checks if the given range is empty.
 
 <!-- prettier-ignore-start -->
 ```javascript
-empty([2, 2]); // ⇒ true
+empty([2, 2]);
+// ⇒ true
 ```
 
 ```javascript
-empty([1, 5]); // ⇒ false
+empty([1, 5]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a given range is empty (0-length)?

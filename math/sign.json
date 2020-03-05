@@ -5,19 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sign(3); // ⇒ 1"
+      "content": "sign(3);\n// ⇒ 1"
     },
     {
       "language": "javascript",
-      "content": "sign(-5); // ⇒ 5"
+      "content": "sign(-5);\n// ⇒ 5"
     },
     {
       "language": "javascript",
-      "content": "sign(0); // ⇒ 0"
+      "content": "sign(0);\n// ⇒ 0"
     },
     {
       "language": "javascript",
-      "content": "sign(-0); // ⇒ 0"
+      "content": "sign(-0);\n// ⇒ 0"
     }
   ],
   "questions": ["How to get a sign of a number?"]

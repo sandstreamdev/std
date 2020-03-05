@@ -10,6 +10,24 @@ Checks if the given string contains whitespace.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+containsWhitespace("test string");
+// ⇒ true
+```
+
+```javascript
+containsWhitespace("test");
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a string contains whitespace?
+
 # empty
 
 Empty string.
@@ -21,6 +39,19 @@ Empty string.
 ""
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+empty();
+// ⇒ ""
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get an empty string?
 
 # firstToLower
 
@@ -34,6 +65,19 @@ Transforms the first character to lowercase.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+firstToLower("TeSt");
+// ⇒ "teSt"
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to make the first letter of a string lowercase?
+
 # firstToUpper
 
 Transforms the first character to uppercase.
@@ -46,6 +90,19 @@ Transforms the first character to uppercase.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+firstToUpper("teSt");
+// ⇒ "TeSt"
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to make the first letter of a string uppercase?
+
 # includes
 
 Checks if the given substring is present in the source string.
@@ -57,6 +114,24 @@ Checks if the given substring is present in the source string.
 (search: string) => (text: string) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+includes("brown fox")("The quick brown fox jumps over the lazy dog");
+// ⇒ true
+```
+
+```javascript
+includes("brown dog")("The quick brown fox jumps over the lazy dog");
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check is a string contains a given substring?
 
 # nbsp
 
@@ -74,9 +149,14 @@ Non-breaking space.
 
 <!-- prettier-ignore-start -->
 ```javascript
-nbsp; // ⇒ " "
+nbsp;
+// ⇒ " "
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get a non-breaking space?
 
 # nonEmpty
 
@@ -90,6 +170,31 @@ Checks if the given string is present and is not empty or all whitespace.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+nonEmpty("test with spaces");
+// ⇒ true
+```
+
+```javascript
+nonEmpty("   ");
+// ⇒ false
+```
+
+```javascript
+nonEmpty(null);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a string is non empty?
+- How to check is string is not all whitespace?
+- How to check is string is not null or undefined?
+
 # startsWith
 
 Checks if the given string starts with the given substring.
@@ -101,3 +206,21 @@ Checks if the given string starts with the given substring.
 (prefix: string) => (xs: string) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+startsWith("The")("The quick brown fox jumps over the lazy dog");
+// ⇒ true
+```
+
+```javascript
+startsWith("Quick")("The quick brown fox jumps over the lazy dog");
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a string starts with a given substring?

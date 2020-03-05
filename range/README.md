@@ -14,13 +14,19 @@ Checks if the given range is empty.
 
 <!-- prettier-ignore-start -->
 ```javascript
-empty([2, 2]); // ⇒ true
+empty([2, 2]);
+// ⇒ true
 ```
 
 ```javascript
-empty([1, 5]); // ⇒ false
+empty([1, 5]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a given range is empty (0-length)?
 
 # equals
 
@@ -37,6 +43,24 @@ Checks if the given ranges are equal.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+equals([1, 2], [1, 2]);
+// ⇒ true
+```
+
+```javascript
+equals([4, 3], [1, 2]);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if two ranges are equal?
+
 # length
 
 Computes the signed length of the given range.
@@ -49,9 +73,27 @@ Computes the signed length of the given range.
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+length([3, 15]);
+// ⇒ 12
+```
+
+```javascript
+length([1, 0]);
+// ⇒ -1
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to compute a signed length of a range?
+
 # split
 
-Splits the given range in subranges by excluding the given used ranged.
+Splits the given range into subranges by excluding the given used ranged.
 
 ## Type signature
 
@@ -63,3 +105,16 @@ Splits the given range in subranges by excluding the given used ranged.
 ) => (range: [number, number]) => [number, number][]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+split([[2, 3], [5, 7]]);
+// ⇒ [[0, 2], [3, 5], [7, 10]]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to split a range into subranges?

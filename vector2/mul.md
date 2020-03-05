@@ -26,3 +26,16 @@ Applies matrix transformation to the given vector.
 ) => number[]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+mul(scale(4, 5), [2, 3]);
+// ⇒ [8, 15]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to apply a matrix transformation to a vector?

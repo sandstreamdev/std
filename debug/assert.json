@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "assert(true === false); // ⇒ TypeError(\"Assertion failed!\")"
+      "content": "assert(true === false);\n// ⇒ TypeError(\"Assertion failed!\")"
     }
   ],
   "questions": [

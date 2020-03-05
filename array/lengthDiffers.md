@@ -14,10 +14,16 @@ Checks if lengths of given arrays differ.
 
 <!-- prettier-ignore-start -->
 ```javascript
-lengthDiffers([1, 2, 3], [1, 2]); // ⇒ true
+lengthDiffers([1, 2, 3], [1, 2]);
+// ⇒ true
 ```
 
 ```javascript
-lengthDiffers([6, 7], [1, 2]); // ⇒ false
+lengthDiffers([6, 7], [1, 2]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if array lengths differ?

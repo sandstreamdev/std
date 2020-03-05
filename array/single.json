@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "single([1]); // ⇒ true"
+      "content": "single([1]);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "single([1, 2, 3]); // ⇒ false"
+      "content": "single([1, 2, 3]);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "single([]); // ⇒ false"
+      "content": "single([]);\n// ⇒ false"
     }
   ],
   "questions": ["How to check if an array contains only one element?"]

@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "empty; // ⇒ []"
+      "content": "empty;\n// ⇒ []"
     }
   ],
   "questions": ["How to get an empty array?"]

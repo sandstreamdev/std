@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "reverseIf(true)([1, 2, 3, 4, 5]); // ⇒ [5, 4, 3, 2, 1]"
+      "content": "reverseIf(true)([1, 2, 3, 4, 5]);\n// ⇒ [5, 4, 3, 2, 1]"
     },
     {
       "language": "javascript",
-      "content": "reverseIf(false)([1, 2, 3, 4, 5]); // ⇒ [1, 2, 3, 4, 5]"
+      "content": "reverseIf(false)([1, 2, 3, 4, 5]);\n// ⇒ [1, 2, 3, 4, 5]"
     }
   ],
   "questions": [

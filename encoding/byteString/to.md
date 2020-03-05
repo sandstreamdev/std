@@ -14,6 +14,11 @@ Coverts byte array to string.
 
 <!-- prettier-ignore-start -->
 ```javascript
-to([0x50, 0x51, 0x52]); // ⇒ "PQR"
+to([0x50, 0x51, 0x52]);
+// ⇒ "PQR"
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert a byte array to string?

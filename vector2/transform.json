@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "const originX = 5;\nconst originY = 6;\nconst angle = Math.PI;\n\ntransform(translate(originX, originY), rotate(angle), translate(-originX, -originY)); // ⇒ rotate(Math.PI, originX, originY)"
+      "content": "const originX = 5;\nconst originY = 6;\nconst angle = Math.PI;\n\ntransform(translate(originX, originY), rotate(angle), translate(-originX, -originY));\n// ⇒ rotate(Math.PI, originX, originY)"
     }
   ],
   "questions": [

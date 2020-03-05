@@ -14,10 +14,16 @@ Returns the last element or undefined when there are no elements in the given ar
 
 <!-- prettier-ignore-start -->
 ```javascript
-last([1, 2, 3]); // ⇒ 3
+last([1, 2, 3]);
+// ⇒ 3
 ```
 
 ```javascript
-last([]); // ⇒ undefined
+last([]);
+// ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get the last element of an array?

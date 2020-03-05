@@ -14,10 +14,16 @@ Takes up to given count of elements.
 
 <!-- prettier-ignore-start -->
 ```javascript
-take(2)([1, 2, 3, 4, 5]); // ⇒ [1, 2]
+take(2)([1, 2, 3, 4, 5]);
+// ⇒ [1, 2]
 ```
 
 ```javascript
-take(10)([1, 2, 3, 4, 5]); // ⇒ [1, 2, 3, 4, 5]
+take(10)([1, 2, 3, 4, 5]);
+// ⇒ [1, 2, 3, 4, 5]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get first N number of elements from an array?

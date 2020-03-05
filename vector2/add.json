@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "add([3, 5], [-1, 8]); // ⇒ [2, 13]"
+      "content": "add([3, 5], [-1, 8]);\n// ⇒ [2, 13]"
     }
   ],
   "questions": ["How to add two vectors?"]

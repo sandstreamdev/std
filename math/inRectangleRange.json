@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "inRectangleRange(50, 100)(25, 50); // ⇒ true"
+      "content": "inRectangleRange(50, 100)(25, 50);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "inRectangleRange(50, 100)(-25, 50); // ⇒ false"
+      "content": "inRectangleRange(50, 100)(-25, 50);\n// ⇒ false"
     }
   ],
   "questions": [

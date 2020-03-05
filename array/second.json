@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "second([1, 2, 3, 4, 5]); // ⇒ 2"
+      "content": "second([1, 2, 3, 4, 5]);\n// ⇒ 2"
     },
     {
       "language": "javascript",
-      "content": "second([1]); // ⇒ undefined"
+      "content": "second([1]);\n// ⇒ undefined"
     },
     {
       "language": "javascript",
-      "content": "second([]); // ⇒ undefined"
+      "content": "second([]);\n// ⇒ undefined"
     }
   ],
   "questions": ["How to get the second element of an array?"]

@@ -14,6 +14,11 @@ Returns the first value in the given object. Follows default object iteration or
 
 <!-- prettier-ignore-start -->
 ```javascript
-first({ a: 1, b: 2, c: 3 }); // ⇒ 1
+first({ a: 1, b: 2, c: 3 });
+// ⇒ 1
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get the first value of an object?

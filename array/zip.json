@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "zip([1, 2, 3], [4, 5, 6]); // ⇒ [[1, 4],[2, 5],[3, 6]]"
+      "content": "zip([1, 2, 3], [4, 5, 6]);\n// ⇒ [[1, 4],[2, 5],[3, 6]]"
     }
   ],
   "questions": ["How to zip two arrays?"]

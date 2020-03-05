@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "object({ a: 1, b: 2 }); // ⇒ true"
+      "content": "object({ a: 1, b: 2 });\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "object([1, 2, 3]); // ⇒ false"
+      "content": "object([1, 2, 3]);\n// ⇒ false"
     }
   ],
   "questions": ["How to check is a given value is an object?"]

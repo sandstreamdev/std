@@ -31,20 +31,22 @@ Checks if the given array is present and it is not empty (contains at least one 
 
 <!-- prettier-ignore-start -->
 ```javascript
-any([]); // ⇒ false
+any([]);
+// ⇒ false
 ```
 
 ```javascript
-any([1, 2, 3]); // ⇒ true
+any([1, 2, 3]);
+// ⇒ true
 ```
 <!-- prettier-ignore-end -->
 
 ##### Questions
 
-- How to check if an array is empty (in JavaScript)?
-- How to check if array is empty or null or undefined (in JavaScript)?
-- Check if an array is empty or not (in JavaScript).
-- Check if an array is empty or exists (in JavaScript).
+- How to check if an array is empty?
+- How to check if an array is empty or null or undefined?
+- How to check if an array is empty or not?
+- How to check if an array is empty or doesn't exist?
 
 #### are
 
@@ -62,17 +64,24 @@ Checks if given arguments are all `Arrays`.
 
 <!-- prettier-ignore-start -->
 ```javascript
-are([2, 3]); // ⇒ true
+are([2, 3]);
+// ⇒ true
 ```
 
 ```javascript
-are([1, 2, 3], []); // ⇒ true
+are([1, 2, 3], []);
+// ⇒ true
 ```
 
 ```javascript
-are([1, 2, 3], 8, [1, 3], "test"); // ⇒ false
+are([1, 2, 3], 8, [1, 3], "test");
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if all the given values are arrays?
 
 #### chunk
 
@@ -100,7 +109,14 @@ chunk(3)(['a', 'b', 'c', 'd']);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to split an array into chunks?
+- How to split an array into chunks of the same size?
+
 #### difference
+
+Computes a set difference between the two given arrays.
 
 ##### Type signature
 
@@ -119,6 +135,10 @@ difference([1, 2, 3, 4, 5, 6], [2, 4]);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to find elements which are present in first array and not in the second?
+
 #### differs
 
 Checks if two arrays are not equal.
@@ -135,13 +155,21 @@ Checks if two arrays are not equal.
 
 <!-- prettier-ignore-start -->
 ```javascript
-differs([1, 2, 3], [1, 2]); // ⇒ true
+differs([1, 2, 3], [1, 2]);
+// ⇒ true
 ```
 
 ```javascript
-differs([1, 2, 3], [1, 2, 3]); // ⇒ false
+differs([1, 2, 3], [1, 2, 3]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if two arrays differs?
+- How to check if two arrays are not equal?
+- How to check if two arrays are equal or not?
 
 #### duplicates
 
@@ -159,9 +187,14 @@ Lists all the duplicated values in the given array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-duplicates([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [3, 4, 3]
+duplicates([1, 2, 3, 4, 3, 4, 3, 6]);
+// ⇒ [3, 4, 3]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to find duplicates in an array?
 
 #### empty
 
@@ -179,9 +212,14 @@ any[]
 
 <!-- prettier-ignore-start -->
 ```javascript
-empty; // ⇒ []
+empty;
+// ⇒ []
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get an empty array?
 
 #### exact
 
@@ -199,13 +237,19 @@ Takes exactly the given count of elements.
 
 <!-- prettier-ignore-start -->
 ```javascript
-exact(5)([1, 2, 3]); // ⇒ [1, 2, 3, undefined, undefined]
+exact(5)([1, 2, 3]);
+// ⇒ [1, 2, 3, undefined, undefined]
 ```
 
 ```javascript
-exact(2)([1, 2, 3]); // ⇒ [1, 2]
+exact(2)([1, 2, 3]);
+// ⇒ [1, 2]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get exactly N elements out of an array?
 
 #### except
 
@@ -223,13 +267,19 @@ Filters out the given value.
 
 <!-- prettier-ignore-start -->
 ```javascript
-except(2)([1, 2, 3, 4, 5]); // ⇒ [1, 3, 4, 5]
+except(2)([1, 2, 3, 4, 5]);
+// ⇒ [1, 3, 4, 5]
 ```
 
 ```javascript
-except(2)([1, 2, 2, 4, 2]); // ⇒ [1, 4]
+except(2)([1, 2, 2, 4, 2]);
+// ⇒ [1, 4]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get all the values of an array except the given one?
 
 #### filterInPlace
 
@@ -254,10 +304,16 @@ const odd = x => x % 2 === 1;
 
 const ys = filterInPlace(odd)(xs);
 
-ys === xs; // ⇒ true
-ys; // ⇒ [1, 3, 5, 7]
+ys === xs;
+// ⇒ true
+ys;
+// ⇒ [1, 3, 5, 7]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to filter an array in place?
 
 #### find
 
@@ -278,13 +334,19 @@ Finds an element by a predicate function within given array, otherwise returns t
 
 <!-- prettier-ignore-start -->
 ```javascript
-find(x => x > 2)([1, 2, 3, 5, 7]); // ⇒ 3
+find(x => x > 2)([1, 2, 3, 5, 7]);
+// ⇒ 3
 ```
 
 ```javascript
-find(x => x > 2)([1, 2, -3, -5, -7]); // ⇒ undefined
+find(x => x > 2)([1, 2, -3, -5, -7]);
+// ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to find an element of an array by a given predicate?
 
 #### first
 
@@ -302,13 +364,19 @@ Returns the first element or undefined when there are no elements in the given a
 
 <!-- prettier-ignore-start -->
 ```javascript
-first([1, 2, 3]); // ⇒ 1
+first([1, 2, 3]);
+// ⇒ 1
 ```
 
 ```javascript
-first([]); // ⇒ undefined
+first([]);
+// ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get the first element of an array?
 
 #### flatMap
 
@@ -332,6 +400,11 @@ flatMap(text => [...text])(["test", "123"]);
 // ⇒ ["t", "e", "s", "t", "1", "2", "3"]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to flat map an array?
+- How to map and then flatten an array?
 
 #### flatten
 
@@ -358,6 +431,10 @@ flatten([1, [2, [3, 6]], 4, [5, 6]]);
 // ⇒ [1, 2, [3, 6], 4, 5, 6]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to flatten an array?
 
 #### insert
 
@@ -387,9 +464,13 @@ insert(1)('d')(['a', 'b', 'c']);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to insert an element to an array at a given position?
+
 #### intersection
 
-Finds common items between both arrays.
+Finds common elements between both arrays.
 
 ##### Type signature
 
@@ -408,6 +489,10 @@ intersection([1, 2, 3, 4, 5], [5, 5, 3, 2]);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to find common elements present in both arrays?
+
 #### is
 
 Checks if the given argument is an array.
@@ -424,13 +509,19 @@ Checks if the given argument is an array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-is([1, 2, 3]); // ⇒ true
+is([1, 2, 3]);
+// ⇒ true
 ```
 
 ```javascript
-is({ a: 5 }); // ⇒ false
+is({ a: 5 });
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if a value is an array?
 
 #### last
 
@@ -448,13 +539,19 @@ Returns the last element or undefined when there are no elements in the given ar
 
 <!-- prettier-ignore-start -->
 ```javascript
-last([1, 2, 3]); // ⇒ 3
+last([1, 2, 3]);
+// ⇒ 3
 ```
 
 ```javascript
-last([]); // ⇒ undefined
+last([]);
+// ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get the last element of an array?
 
 #### lengthDiffers
 
@@ -472,13 +569,19 @@ Checks if lengths of given arrays differ.
 
 <!-- prettier-ignore-start -->
 ```javascript
-lengthDiffers([1, 2, 3], [1, 2]); // ⇒ true
+lengthDiffers([1, 2, 3], [1, 2]);
+// ⇒ true
 ```
 
 ```javascript
-lengthDiffers([6, 7], [1, 2]); // ⇒ false
+lengthDiffers([6, 7], [1, 2]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if array lengths differ?
 
 #### map
 
@@ -496,13 +599,19 @@ Maps the given array with the given functions.
 
 <!-- prettier-ignore-start -->
 ```javascript
-map(x => x * x)([1, 2, 3]); // ⇒ [1, 4, 9]
+map(x => x * x)([1, 2, 3]);
+// ⇒ [1, 4, 9]
 ```
 
 ```javascript
-map(x => x * x, x => x + 1)([1, 2, 3]); // ⇒ [2, 5, 10]
+map(x => x * x, x => x + 1)([1, 2, 3]);
+// ⇒ [2, 5, 10]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to map an array?
 
 #### midpoint
 
@@ -520,13 +629,19 @@ Returns the middle element or the right one when the number of elements is even.
 
 <!-- prettier-ignore-start -->
 ```javascript
-midpoint([1, 2, 3, 4, 5]); // ⇒ 3
+midpoint([1, 2, 3, 4, 5]);
+// ⇒ 3
 ```
 
 ```javascript
-midpoint([1, 2, 3, 4]); // ⇒ 3
+midpoint([1, 2, 3, 4]);
+// ⇒ 3
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get the element in the middle of an array?
 
 #### minMax
 
@@ -544,17 +659,25 @@ Computes minimum and maximum of the given array in a single run.
 
 <!-- prettier-ignore-start -->
 ```javascript
-minMax([10, 5, 3, -5, -4, 23, 32, 8, 1, 0]); // ⇒ [-5, 32]
+minMax([10, 5, 3, -5, -4, 23, 32, 8, 1, 0]);
+// ⇒ [-5, 32]
 ```
 
 ```javascript
-minMax([1]); // ⇒ [1, 1]
+minMax([1]);
+// ⇒ [1, 1]
 ```
 
 ```javascript
-minMax([]); // ⇒ [undefined, undefined]
+minMax([]);
+// ⇒ [undefined, undefined]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to find minimum and maximum values of an array?
+- How to get the min/max element of an array?
 
 #### multiple
 
@@ -572,21 +695,30 @@ Checks if the given array contains more than one element.
 
 <!-- prettier-ignore-start -->
 ```javascript
-multiple([1, 2, 3]); // ⇒ true
+multiple([1, 2, 3]);
+// ⇒ true
 ```
 
 ```javascript
-multiple([1, 2]); // ⇒ true
+multiple([1, 2]);
+// ⇒ true
 ```
 
 ```javascript
-multiple([1]); // ⇒ false
+multiple([1]);
+// ⇒ false
 ```
 
 ```javascript
-multiple([]); // ⇒ false
+multiple([]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if an array contains multiple elements?
+- How to check whether multiple values exist within an array?
 
 #### none
 
@@ -604,13 +736,19 @@ Checks if the given array is empty.
 
 <!-- prettier-ignore-start -->
 ```javascript
-none([]); // ⇒ true
+none([]);
+// ⇒ true
 ```
 
 ```javascript
-none([1, 2, 3]); // ⇒ false
+none([1, 2, 3]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if array is empty?
 
 #### partition
 
@@ -633,6 +771,11 @@ partition(x => x % 2 === 1)([1, 2, 3, 4, 5]);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to partition an array based on a condition?
+- How to divide an array by a filter function?
+
 #### range
 
 Generates an array of numbers from 0 to n - 1.
@@ -649,9 +792,14 @@ Generates an array of numbers from 0 to n - 1.
 
 <!-- prettier-ignore-start -->
 ```javascript
-range(3); // ⇒ [0, 1, 2]
+range(3);
+// ⇒ [0, 1, 2]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to create array of all integers from 0 to N exclusive?
 
 #### removeAt
 
@@ -669,13 +817,14 @@ Removes an element at the given index from the given array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-removeAt(3)([1, 2, 3, 4, 5, 6]) // ⇒ [1, 2, 3, 5, 6]
+removeAt(3)([1, 2, 3, 4, 5, 6])
+// ⇒ [1, 2, 3, 5, 6]
 ```
 <!-- prettier-ignore-end -->
 
 ##### Questions
 
-- How to remove an item at a particular index?
+- How to remove an item from an array at a particular index?
 
 #### repeat
 
@@ -693,9 +842,14 @@ Repeats the given element by given count of times.
 
 <!-- prettier-ignore-start -->
 ```javascript
-repeat(3)("test"); // ⇒ ["test", "test", "test"]
+repeat(3)("test");
+// ⇒ ["test", "test", "test"]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to repeat a value N times?
 
 #### reverse
 
@@ -713,9 +867,14 @@ Reverses the given array without mutating it (in contrast to Array.reverse).
 
 <!-- prettier-ignore-start -->
 ```javascript
-reverse([1, 2, 3, 4, 5]); // ⇒ [5, 4, 3, 2, 1]
+reverse([1, 2, 3, 4, 5]);
+// ⇒ [5, 4, 3, 2, 1]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to reverse an array without mutating it?
 
 #### reverseIf
 
@@ -733,13 +892,19 @@ Reverses the given array when enabled.
 
 <!-- prettier-ignore-start -->
 ```javascript
-reverseIf(true)([1, 2, 3, 4, 5]); // ⇒ [5, 4, 3, 2, 1]
+reverseIf(true)([1, 2, 3, 4, 5]);
+// ⇒ [5, 4, 3, 2, 1]
 ```
 
 ```javascript
-reverseIf(false)([1, 2, 3, 4, 5]); // ⇒ [1, 2, 3, 4, 5]
+reverseIf(false)([1, 2, 3, 4, 5]);
+// ⇒ [1, 2, 3, 4, 5]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to reverse an array without mutating it only when a condition is satisfied?
 
 #### second
 
@@ -757,17 +922,24 @@ Returns the second element or undefined when there are less than two elements in
 
 <!-- prettier-ignore-start -->
 ```javascript
-second([1, 2, 3, 4, 5]); // ⇒ 2
+second([1, 2, 3, 4, 5]);
+// ⇒ 2
 ```
 
 ```javascript
-second([1]); // ⇒ undefined
+second([1]);
+// ⇒ undefined
 ```
 
 ```javascript
-second([]); // ⇒ undefined
+second([]);
+// ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get the second element of an array?
 
 #### secondToLast
 
@@ -785,17 +957,24 @@ Returns the second to last element or undefined when there are less than two ele
 
 <!-- prettier-ignore-start -->
 ```javascript
-secondToLast([1, 2, 3, 4, 5]); // ⇒ 4
+secondToLast([1, 2, 3, 4, 5]);
+// ⇒ 4
 ```
 
 ```javascript
-secondToLast([1]); // ⇒ undefined
+secondToLast([1]);
+// ⇒ undefined
 ```
 
 ```javascript
-secondToLast([]); // ⇒ undefined
+secondToLast([]);
+// ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get the second to last element of an array?
 
 #### shift
 
@@ -813,17 +992,24 @@ Shifts the given array to the left and circulates the elements back by modulo of
 
 <!-- prettier-ignore-start -->
 ```javascript
-shift(1)([1, 2, 3, 4, 5]); // ⇒ [2, 3, 4, 5, 1]
+shift(1)([1, 2, 3, 4, 5]);
+// ⇒ [2, 3, 4, 5, 1]
 ```
 
 ```javascript
-shift(2)([1, 2, 3, 4, 5]); // ⇒ [3, 4, 5, 1, 2]
+shift(2)([1, 2, 3, 4, 5]);
+// ⇒ [3, 4, 5, 1, 2]
 ```
 
 ```javascript
-shift(3)([1, 2, 3, 4, 5]); // ⇒ [4, 5, 1, 2, 3]
+shift(3)([1, 2, 3, 4, 5]);
+// ⇒ [4, 5, 1, 2, 3]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to shift an array?
 
 #### shuffle
 
@@ -856,6 +1042,10 @@ shuffle([1, 2, 3, 4, 5], random); // => [3, 5, 4, 2, 1]
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to shuffle an array?
+
 #### shuffleInPlace
 
 Shuffles the given array in-place in random order with Math.random as the default.
@@ -887,6 +1077,10 @@ shuffleInPlace([1, 2, 3, 4, 5], random); // => [3, 5, 4, 2, 1]
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to shuffle an array in place?
+
 #### single
 
 Checks if the given array contains exactly one element.
@@ -903,17 +1097,24 @@ Checks if the given array contains exactly one element.
 
 <!-- prettier-ignore-start -->
 ```javascript
-single([1]); // ⇒ true
+single([1]);
+// ⇒ true
 ```
 
 ```javascript
-single([1, 2, 3]); // ⇒ false
+single([1, 2, 3]);
+// ⇒ false
 ```
 
 ```javascript
-single([]); // ⇒ false
+single([]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if an array contains only one element?
 
 #### skip
 
@@ -931,9 +1132,14 @@ Skips the given count of elements from the given array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-skip(2)([1, 2, 3, 4, 5]); // ⇒ [3, 4, 5]
+skip(2)([1, 2, 3, 4, 5]);
+// ⇒ [3, 4, 5]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to skip first few elements of an array?
 
 #### slidingWindow
 
@@ -966,6 +1172,10 @@ slidingWindow(1)([1, 2, 3, 4, 5, 6]);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to iterate an array pairwise?
+
 #### sort
 
 Sorts the given array without mutating it.
@@ -989,6 +1199,10 @@ sort((a, b) => a - b)([13, 79, 20, 69, 44, 67, 18, 95, 26, 55]);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to sort an array without mutating it?
+
 #### sum
 
 Sums the given array of numbers.
@@ -1005,9 +1219,14 @@ Sums the given array of numbers.
 
 <!-- prettier-ignore-start -->
 ```javascript
-sum([1, 2, 3, 4, 5]); // ⇒ 15
+sum([1, 2, 3, 4, 5]);
+// ⇒ 15
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to sum elements of an array?
 
 #### take
 
@@ -1025,13 +1244,19 @@ Takes up to given count of elements.
 
 <!-- prettier-ignore-start -->
 ```javascript
-take(2)([1, 2, 3, 4, 5]); // ⇒ [1, 2]
+take(2)([1, 2, 3, 4, 5]);
+// ⇒ [1, 2]
 ```
 
 ```javascript
-take(10)([1, 2, 3, 4, 5]); // ⇒ [1, 2, 3, 4, 5]
+take(10)([1, 2, 3, 4, 5]);
+// ⇒ [1, 2, 3, 4, 5]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get first N number of elements from an array?
 
 #### unique
 
@@ -1049,9 +1274,14 @@ Returns only unique elements of the given array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-unique([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [1, 2, 3, 4, 6]
+unique([1, 2, 3, 4, 3, 4, 3, 6]);
+// ⇒ [1, 2, 3, 4, 6]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get all unique values in an array?
 
 #### uniqueBy
 
@@ -1078,6 +1308,10 @@ uniqueBy(({ id }) => id)([
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to get all unique values in an array by some predicate?
+
 #### zip
 
 Zips given arrays together into pairs.
@@ -1094,9 +1328,14 @@ Zips given arrays together into pairs.
 
 <!-- prettier-ignore-start -->
 ```javascript
-zip([1, 2, 3], [4, 5, 6]); // ⇒ [[1, 4],[2, 5],[3, 6]]
+zip([1, 2, 3], [4, 5, 6]);
+// ⇒ [[1, 4],[2, 5],[3, 6]]
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to zip two arrays?
 
 #### zipN
 
@@ -1129,6 +1368,10 @@ zipN([1, 2], [4, 5, 6], [7, 8, 9]);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to zip multiple arrays?
+
 #### zipWith
 
 Zips given arrays together with the given function.
@@ -1152,6 +1395,10 @@ zipWith((x, y) => x * x + y)([1, 2, 3], [4, 5, 6]);
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to zip two arrays with a given function?
+
 ### async
 
 #### debounce
@@ -1169,6 +1416,26 @@ Makes the function run after the given period of not being called. Useful to del
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const f = () => console.log("Test");
+
+const debounced = debounce(f, 2000);
+
+debounced();
+setTimeout(debounced, 1000);
+setTimeout(debounced, 3000);
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to make function fire after some time not being called?
+- How to debounce input events?
+- How to debounce a function?
+
 #### delay
 
 When awaited, delays the execution by the given number of milliseconds.
@@ -1181,6 +1448,19 @@ When awaited, delays the execution by the given number of milliseconds.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+delay(2000)(() => console.log("Test"));
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to delay a function?
+- What is the JavaScript version of sleep()?
+
 #### sequence
 
 Runs the given tasks in a sequence.
@@ -1192,6 +1472,21 @@ Runs the given tasks in a sequence.
 (tasks: (() => Promise<any>)[]) => Promise<any[]>
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const f = () => new Promise(resolve => setTimeout(resolve, 1000));
+const g = () => new Promise(resolve => setTimeout(resolve, 2000));
+
+sequence([f, g]).then(() => console.log("Done"));
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to run async tasks sequentially?
 
 ### date
 
@@ -1254,7 +1549,8 @@ Clones the given Date object.
 const date = new new Date('2019-04-24T13:54:33.232Z');
 const cloned = clone(date);
 
-cloned !== date && cloned.valueOf() === date.valueOf(); // ⇒ true
+cloned !== date && cloned.valueOf() === date.valueOf();
+// ⇒ true
 ```
 <!-- prettier-ignore-end -->
 
@@ -1684,9 +1980,23 @@ Asserts given conditions.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+assert(true === false);
+// ⇒ TypeError("Assertion failed!")
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to assert a condition?
+- How to throw when a condition is not satisfied?
+
 #### diff
 
-Computes a difference between two objects.
+Computes a deep difference between two values (primitives, objects, arrays, etc.).
 
 ##### Type signature
 
@@ -1702,6 +2012,22 @@ Computes a difference between two objects.
 ) => object
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+diff({ a: 1 }, { a: 2 });
+// ⇒ { a: { data: [1, 2], type: '~' }}
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compute a diff?
+- How to compute a deep diff?
+- How to compute a diff between two objects?
+- How to compute a diff between two arrays?
 
 ### encoding
 
@@ -1723,9 +2049,14 @@ Decodes the given Base64URL back into string.
 
 <!-- prettier-ignore-start -->
 ```javascript
-decode("PDw_Pz8-Pg"); // ⇒ "<<???>>"
+decode("PDw_Pz8-Pg");
+// ⇒ "<<???>>"
 ```
 <!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to decode Base64URL?
 
 ##### decodeBytes
 
@@ -1748,6 +2079,10 @@ decodeBytes("w4Jnw6vCp20-bBsQfA");
 ```
 <!-- prettier-ignore-end -->
 
+###### Questions
+
+- How to decode Base64URL into a byte array?
+
 ##### encode
 
 Encodes the given string into Base64URL.
@@ -1764,9 +2099,14 @@ Encodes the given string into Base64URL.
 
 <!-- prettier-ignore-start -->
 ```javascript
-encode("<<???>>"); // ⇒ "PDw_Pz8-Pg"
+encode("<<???>>");
+// ⇒ "PDw_Pz8-Pg"
 ```
 <!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to encode a string as Base64URL?
 
 ##### encodeBytes
 
@@ -1789,6 +2129,10 @@ encodeBytes([0xc2, 0x67, 0xeb, 0xa7, 0x6d, 0x3e, 0x6c, 0x1b, 0x10, 0x7c]);
 ```
 <!-- prettier-ignore-end -->
 
+###### Questions
+
+- How to encode bytes as Base64URL?
+
 ##### fromBase64
 
 Converts Base64 string into Base64URL one.
@@ -1805,9 +2149,14 @@ Converts Base64 string into Base64URL one.
 
 <!-- prettier-ignore-start -->
 ```javascript
-fromBase64("PDw/Pz8+Pg=="); // ⇒ "PDw_Pz8-Pg"
+fromBase64("PDw/Pz8+Pg==");
+// ⇒ "PDw_Pz8-Pg"
 ```
 <!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to convert Base64 to Base64URL?
 
 ##### toBase64
 
@@ -1825,9 +2174,14 @@ Converts Base64URL string into Base64 one.
 
 <!-- prettier-ignore-start -->
 ```javascript
-toBase64("PDw_Pz8-Pg"); // ⇒ "PDw/Pz8+Pg=="
+toBase64("PDw_Pz8-Pg");
+// ⇒ "PDw/Pz8+Pg=="
 ```
 <!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to convert Base64URL to Base64?
 
 #### byteString
 
@@ -1847,9 +2201,14 @@ Converts string to byte array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-from("PQR"); // ⇒ [80, 81, 82]
+from("PQR");
+// ⇒ [80, 81, 82]
 ```
 <!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to convert a string into a byte array?
 
 ##### to
 
@@ -1867,9 +2226,14 @@ Coverts byte array to string.
 
 <!-- prettier-ignore-start -->
 ```javascript
-to([0x50, 0x51, 0x52]); // ⇒ "PQR"
+to([0x50, 0x51, 0x52]);
+// ⇒ "PQR"
 ```
 <!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to convert a byte array to string?
 
 ### file
 
@@ -1885,6 +2249,35 @@ Checks if the given string is a valid Windows file name.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+validName("my:file.png");
+// ⇒ false
+```
+
+```javascript
+validName("file.txt");
+// ⇒ true
+```
+
+```javascript
+validName("../file.txt");
+// ⇒ false
+```
+
+```javascript
+validName("COM1");
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to find valid Windows file name?
+- How to check if a given string is a legal/valid file name under Windows?
+
 ### function
 
 #### compose
@@ -1899,6 +2292,19 @@ Composes multiple functions into a higher order one. Goes right to left.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+compose(x => x * x, x => x + 1)(3);
+// ⇒ 16
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compose functions?
+
 #### constant
 
 Returns the given constant no matter of the input.
@@ -1910,6 +2316,19 @@ Returns the given constant no matter of the input.
 (x: any) => any
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+constant(3)("anything");
+// ⇒ 3
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to create a function that always returns the same value despite given arguments?
 
 #### identity
 
@@ -1923,6 +2342,25 @@ Always return the given value.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+identity(5);
+// ⇒ 5
+```
+
+```javascript
+identity("test");
+// ⇒ "test"
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to use identity function?
+- Where and why is identity function useful?
+
 #### memoize
 
 Memoizes the function result so it is not computed for the same parameters. Uses deep equality.
@@ -1935,6 +2373,25 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const f = x => { console.log(x); return x + 1; };
+
+const memoized = memoize(f);
+
+memoized(5);
+memoized(5);
+memoized(5);
+memoized(3);
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to memoize a function?
+
 #### memoizeShallow
 
 Memoizes the function result so it is not computed for the same parameters. Uses shallow equality.
@@ -1946,6 +2403,25 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 (f: (...xs: any[]) => any) => (...args: any[]) => any
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const f = ({ x }) => { console.log(x); return x + 1; };
+
+const memoized = memoizeShallow(f);
+
+memoized({ x: 5 });
+memoized({ x: 5 });
+memoized({ x: 5 });
+memoized({ x: 3 });
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to memoize a function with shallow equality?
 
 #### memoizeWith
 
@@ -1961,6 +2437,25 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const f = ({ x }) => { console.log(x); return x + 1; };
+
+const memoized = memoizeWith((a, b) => a.x === b.x)(f);
+
+memoized({ x: 5 });
+memoized({ x: 5 });
+memoized({ x: 5 });
+memoized({ x: 3 });
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to memoize a function with custom equality function?
+
 #### noOp
 
 Does exactly nothing.
@@ -1972,6 +2467,19 @@ Does exactly nothing.
 () => void
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+noOp("anything");
+// ⇒ undefined
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to create a function that does nothing?
 
 #### not
 
@@ -1987,6 +2495,19 @@ Inverts the given function result.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+not(x > 10)(15);
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to invert a boolean function?
+
 #### pipe
 
 Pipes an input through given functions.
@@ -1998,6 +2519,19 @@ Pipes an input through given functions.
 (...fs: ((x: any) => any)[]) => (x: any) => any
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+pipe(x => x * x, x => x + 1)(3);
+// ⇒ 10
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to pipe an argument through a function?
 
 #### when
 
@@ -2013,6 +2547,19 @@ Runs the given function only when the condition is met.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+when(x => x > 0)(x => console.log(x))(5);
+when(x => x > 0)(x => console.log(x))(-3);
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to run a function only when a condition is satisfied?
+
 #### whenTrue
 
 Runs the given function only when the condition is exactly true.
@@ -2026,6 +2573,20 @@ Runs the given function only when the condition is exactly true.
 ) => (...args: any[]) => any
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+whenTrue(x => console.log(x))(false);
+when(x => x > 0)(x => console.log(x))(true);
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to run a function only if its argument is true?
+- How to execute function only if a variable is true?
 
 ### is
 
@@ -2045,9 +2606,19 @@ Checks if the given argument is array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-array([]); // ⇒ true
+array([1, 2, 3]);
+// ⇒ true
+```
+
+```javascript
+array({ a: 1 });
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is an array?
 
 #### byte
 
@@ -2065,9 +2636,25 @@ Checks if the given value is a byte.
 
 <!-- prettier-ignore-start -->
 ```javascript
-byte(128); // ⇒ true
+byte(128);
+// ⇒ true
+```
+
+```javascript
+byte(325);
+// ⇒ false
+```
+
+```javascript
+byte(65.5);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is a byte?
+- How to check is a given number is a byte?
 
 #### date
 
@@ -2080,6 +2667,24 @@ Checks if given value is a Date object.
 (x?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+date(new Date());
+// ⇒ true
+```
+
+```javascript
+date(123);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is Date object?
 
 #### defined
 
@@ -2097,9 +2702,30 @@ Checks if given value is defined.
 
 <!-- prettier-ignore-start -->
 ```javascript
-defined(undefined); // ⇒ false
+defined(undefined);
+// ⇒ false
+```
+
+```javascript
+defined(null);
+// ⇒ true
+```
+
+```javascript
+defined(0);
+// ⇒ true
+```
+
+```javascript
+defined({ a: 1 });
+// ⇒ true
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is defined?
+- How to check is a given value is not undefined?
 
 #### function
 
@@ -2113,6 +2739,19 @@ Checks if given value is a function.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+_function(x => x + 5);
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is a function?
+
 #### integer
 
 Checks if given value is an integer.
@@ -2124,6 +2763,25 @@ Checks if given value is an integer.
 (x?: number) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+integer(5);
+// ⇒ true
+```
+
+```javascript
+integer(32.5);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is an integer?
+- How to check is a given number is an integer?
 
 #### nonNullable
 
@@ -2137,6 +2795,36 @@ Checks and asserts the given value is not a null or undefined.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+nonNullable(null);
+// ⇒ false
+```
+
+```javascript
+nonNullable(undefined);
+// ⇒ false
+```
+
+```javascript
+nonNullable(false);
+// ⇒ true
+```
+
+```javascript
+nonNullable({ a: 1 });
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is non nullable?
+- How to check is a given value is not null?
+- How to check is a given value is not undefined?
+
 #### normal
 
 Checks if the given value is a number in a normal range [0, 1].
@@ -2148,6 +2836,29 @@ Checks if the given value is a number in a normal range [0, 1].
 (x?: number) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+normal(0.75);
+// ⇒ true
+```
+
+```javascript
+normal(-1);
+// ⇒ false
+```
+
+```javascript
+normal(2.5);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is in 0 to 1 inclusive range?
 
 #### number
 
@@ -2161,6 +2872,26 @@ Checks if given value is a number.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+number(0 / 0);
+// ⇒ false
+```
+
+```javascript
+number(15.6);
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is a valid number?
+- How to check is a given value is not NaN?
+- How to check is a given value is finite?
+
 #### object
 
 Checks if given value is an object.
@@ -2173,6 +2904,24 @@ Checks if given value is an object.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+object({ a: 1, b: 2 });
+// ⇒ true
+```
+
+```javascript
+object([1, 2, 3]);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is an object?
+
 #### string
 
 Checks if given value is a string.
@@ -2184,6 +2933,24 @@ Checks if given value is a string.
 (x?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+string("Test");
+// ⇒ true
+```
+
+```javascript
+string(['T', 'e', 's', 't']);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a given value is a string?
 
 ### math
 
@@ -2199,6 +2966,19 @@ Adds two values.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+add(3, 5);
+// ⇒ 8
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to add two values?
+
 #### average
 
 Calculates the average of given array of numbers.
@@ -2210,6 +2990,19 @@ Calculates the average of given array of numbers.
 (xs?: number[]) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+average([2, 4, 15]);
+// ⇒ 7
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compute average of an array?
 
 #### ceilToNearestPowerOfTwo
 
@@ -2223,6 +3016,19 @@ Finds the nearest power of two greater or equal to the given value.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+ceilToNearestPowerOfTwo(345);
+// ⇒ 512
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get the nearest power of two greater or equal to the given value/
+
 #### clamp
 
 Clamps the given value to the given range.
@@ -2234,6 +3040,30 @@ Clamps the given value to the given range.
 (min: number, max: number) => (x: number) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+clamp(0, 10)(5);
+// ⇒ 5
+```
+
+```javascript
+clamp(0, 10)(-5);
+// ⇒ 0
+```
+
+```javascript
+clamp(0, 10)(15);
+// ⇒ 10
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to clamp a value to a desired range?
+- How to enforce a value to be in a given range?
 
 #### clampNormal
 
@@ -2247,6 +3077,30 @@ Clamps the given value to the [0, 1] range.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+clampNormal(0.5);
+// ⇒ 0.5
+```
+
+```javascript
+clampNormal(-0.5);
+// ⇒ 0
+```
+
+```javascript
+clampNormal(1.5);
+// ⇒ 1
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to clamp a value to be in 0 to 1 inclusive range?
+- How to clamp a value to be in the normal range?
+
 #### clampPercentage
 
 Clamps the given value to the [0, 100] range.
@@ -2259,6 +3113,29 @@ Clamps the given value to the [0, 100] range.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+clampPercentage(50);
+// ⇒ 50
+```
+
+```javascript
+clampPercentage(-50);
+// ⇒ 0
+```
+
+```javascript
+clampPercentage(150);
+// ⇒ 100
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to enforce percentage be between 0% and 100%?
+
 #### delta
 
 Calculates the absolute distance between given values.
@@ -2270,6 +3147,19 @@ Calculates the absolute distance between given values.
 (a: number, b: number) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+delta(-3, 5);
+// ⇒ 8
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to calculate an absolute distance between two numbers?
 
 #### inRectangleRange
 
@@ -2286,6 +3176,24 @@ Checks if the given value is in the rectangular range of [0, width] and [0, heig
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+inRectangleRange(50, 100)(25, 50);
+// ⇒ true
+```
+
+```javascript
+inRectangleRange(50, 100)(-25, 50);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if a point is inside a rectangle defined by width and height?
+
 #### lerp
 
 Linearly interpolates two given values by normal value of their distance.
@@ -2297,6 +3205,30 @@ Linearly interpolates two given values by normal value of their distance.
 (t: number) => (a: number, b: number) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+lerp(0.5)(0, 10);
+// ⇒ 5
+```
+
+```javascript
+lerp(0)(0, 10);
+// ⇒ 0
+```
+
+```javascript
+lerp(1)(0, 10);
+// ⇒ 10
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to linearly interpolate between two values?
+- How to interpolate two numbers?
 
 #### maximumBy
 
@@ -2310,6 +3242,19 @@ Calculates the maximum by a given selector.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+maximumBy(({ age }) => age)([{ age: 13 }, { age: 20 }, { age: 7 }, { age: 18 }]);
+// ⇒ { age: 20 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to find a maximum element by a given function?
+
 #### median
 
 Calculates the median of the values. If there is an even number of items, the average of the middle ones is returned.
@@ -2321,6 +3266,19 @@ Calculates the median of the values. If there is an even number of items, the av
 (xs?: number[]) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+median([-5, 3, 2, 29, 43]);
+// ⇒ 3
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compute a median of an array?
 
 #### minMax
 
@@ -2334,6 +3292,24 @@ Calculates the minimum and maximum value of the two given values.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+minMax([5, 3]);
+// ⇒ [3, 5]
+```
+
+```javascript
+minMax([3, 5]);
+// ⇒ [3, 5]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get ordered values where the lower is the first and the higher is the second?
+
 #### sameSign
 
 Checks if all the given values have the same sign.
@@ -2345,6 +3321,24 @@ Checks if all the given values have the same sign.
 (xs: number[]) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+sameSign([-1, -2, -3]);
+// ⇒ true
+```
+
+```javascript
+sameSign([1, 2, -3]);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if all values has the same sign?
 
 #### sign
 
@@ -2358,6 +3352,34 @@ Calculates the sign of the value and returns -1 for negative values, 1 for posit
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+sign(3);
+// ⇒ 1
+```
+
+```javascript
+sign(-5);
+// ⇒ 5
+```
+
+```javascript
+sign(0);
+// ⇒ 0
+```
+
+```javascript
+sign(-0);
+// ⇒ 0
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get a sign of a number?
+
 #### standardDeviation
 
 Calculates standard deviation of the given array of numbers.
@@ -2370,6 +3392,19 @@ Calculates standard deviation of the given array of numbers.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+standardDeviation([96, 81, 68, 79, 23, 13, 13, 59, 44, 86]);
+// ⇒ (2 * Math.sqrt(10922 / 5)) / 3
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compute a standard deviation of an array?
+
 #### subtract
 
 Subtracts two values.
@@ -2381,6 +3416,19 @@ Subtracts two values.
 (a: number, b: number) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+subtract(3, 5);
+// ⇒ -2
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to subtract two numbers?
 
 ### object
 
@@ -2396,6 +3444,36 @@ Checks if the given object is present and it is not empty (contains at least one
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+any({ a: 1, b: 2, c: 3 });
+// ⇒ true
+```
+
+```javascript
+any({ });
+// ⇒ false
+```
+
+```javascript
+any(null);
+// ⇒ false
+```
+
+```javascript
+any(undefined);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if an object is not empty?
+- How to check if an object contains some values?
+- How to check if an object is not null or undefined?
+
 #### apply
 
 Applies the given parameters to the given dictionary of functions.
@@ -2409,6 +3487,22 @@ Applies the given parameters to the given dictionary of functions.
 ) => (...xs: any[]) => object
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const lower = text => text.toLowerCase();
+const upper = text => text.toUpperCase();
+
+apply({ lower, upper })("TeSt");
+// ⇒ { lower: "test", upper: "TEST" }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to apply a value over an object of functions?
 
 #### empty
 
@@ -2426,7 +3520,8 @@ Empty object.
 
 <!-- prettier-ignore-start -->
 ```javascript
-empty; // ⇒ {}
+empty;
+// ⇒ {}
 ```
 <!-- prettier-ignore-end -->
 
@@ -2451,6 +3546,20 @@ Lists key value pairs (entries) present in the given object.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+entries({ a: 1, b: 2, c: 3 });
+// ⇒ [["a", 1], ["b", 2], ["c", 3]]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get entries of an object?
+- How to get an array of key value pairs of an object?
+
 #### enumerable
 
 Creates a 1 to 1 mapping of given values as an object.
@@ -2472,6 +3581,10 @@ enumerable('TEST', 'X', 'Y');
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to create object of the same keys and values?
+
 #### equals
 
 Checks if two objects are deeply equal.
@@ -2483,6 +3596,25 @@ Checks if two objects are deeply equal.
 (a: any, b: any) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+equals({ a: 1 }, { a: 1 });
+// ⇒ true
+```
+
+```javascript
+equals({ b: [1, 2] }, { b: [1, 2] });
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if two object are equal?
+- How to check deep object equality?
 
 #### every
 
@@ -2502,13 +3634,19 @@ Test if every element passes the given predicate.
 
 <!-- prettier-ignore-start -->
 ```javascript
-every(x => x >= 0)({ x: 5, y: 3, z: 0 }); // ⇒ true
+every(x => x >= 0)({ x: 5, y: 3, z: 0 });
+// ⇒ true
 ```
 
 ```javascript
-every(x => x > 0)({ x: 5, y: 3, z: 0 }); // ⇒ false
+every(x => x > 0)({ x: 5, y: 3, z: 0 });
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if every entry in an object passes a given predicate?
 
 #### filter
 
@@ -2524,6 +3662,19 @@ Filters the given object with the given predicate.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+filter(x => x % 2 !== 0)({ a: 1, b: 2, c: 3 });
+// ⇒ { a: 1, c: 3 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to filter an object?
+
 #### find
 
 Searches the given object by the given predicate and returns the found value or undefined.
@@ -2537,6 +3688,19 @@ Searches the given object by the given predicate and returns the found value or 
 ) => (xs: object) => any
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+find(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
+// ⇒ { x: 2 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to find a value of an object by a function?
 
 #### findEntry
 
@@ -2552,6 +3716,19 @@ Searches the given object by the given predicate and returns the found entry or 
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+findEntry(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
+// ⇒ ["b", { x: 2 }]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to find an entry of an object by a function?
+
 #### findKey
 
 Searches the given object by the given predicate and returns the found key or undefined.
@@ -2565,6 +3742,19 @@ Searches the given object by the given predicate and returns the found key or un
 ) => (xs: object) => any
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+findKey(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
+// ⇒ "b"
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to find a key of an object by a function?
 
 #### first
 
@@ -2582,9 +3772,14 @@ Returns the first value in the given object. Follows default object iteration or
 
 <!-- prettier-ignore-start -->
 ```javascript
-first({ a: 1, b: 2, c: 3 }); // ⇒ 1
+first({ a: 1, b: 2, c: 3 });
+// ⇒ 1
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get the first value of an object?
 
 #### flatMapValues
 
@@ -2595,10 +3790,23 @@ Flat maps the values of the given object.
 <!-- prettier-ignore-start -->
 ```typescript
 (
-  f: (value: any, key: string, context: object) => boolean
+  f: (value: any, key: string, context: object) => any
 ) => (xs: object) => any[]
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+flatMapValues(x => [x, x * 2])({ a: 1, b: 2, c: 3 });
+// ⇒ [1, 2, 2, 4, 3, 6]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to flat map an object?
 
 #### fromEntries
 
@@ -2612,6 +3820,20 @@ Creates an object from array of key value pairs (entries).
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+fromEntries([["a", 1], ["b", 2], ["c", 3]]);
+// ⇒ { a: 1, b: 2, c: 3 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to create an object from an array of key value pairs?
+- How to create an object from array of entries?
+
 #### groupBy
 
 Groups given array of values by the given key selector.
@@ -2623,6 +3845,19 @@ Groups given array of values by the given key selector.
 (selector: (x: any) => string) => (xs: any[]) => object
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+groupBy(x => x % 2 == 0 ? "even" : "odd")([1, 2, 3, 4, 5, 6, 7]);
+// ⇒ { even: [2, 4, 6], odd: [1, 3, 5, 7] }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to group an array by a function?
 
 #### hasKey
 
@@ -2636,6 +3871,19 @@ Checks if given key is present in the object.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+hasKey("c")({ a: 1, b: 2, c: 3 });
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if an object contains a given key?
+
 #### length
 
 Returns the number of entries within the given object.
@@ -2647,6 +3895,19 @@ Returns the number of entries within the given object.
 (xs: object) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+length({ a: 1, b: 2, c: 3 });
+// ⇒ 3
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check how many entries are in an object?
 
 #### map
 
@@ -2662,6 +3923,20 @@ Maps the given object with the given function.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+map(x => x ** 2)({ a: 1, b: 2, c: 3 });
+// ⇒ { a: 1, b: 4, c: 9 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to map an object?
+- How to transform an object?
+
 #### mapEntries
 
 Maps entries of the given object.
@@ -2676,6 +3951,19 @@ Maps entries of the given object.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+mapEntries(x => x ** 2)({ a: 1, b: 2, c: 3 });
+// ⇒ [["a", 1], ["b", 4], ["c", 9]]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to map object entries?
+
 #### mapKeys
 
 ##### Type signature
@@ -2687,6 +3975,20 @@ Maps entries of the given object.
 ) => (xs: object) => object
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+mapKeys((_, key) => key.toUpperCase())({ a: 1, b: 2, c: 3 });
+// ⇒ { A: 1, B: 2, C: 3 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to map object keys?
+- How to transform object keys?
 
 #### mapValues
 
@@ -2701,6 +4003,19 @@ Maps and returns an array of transformed object values.
 ) => (xs: object) => any[]
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+mapValues(x => x ** 2)({ a: 1, b: 2, c: 3 });
+// ⇒ [1, 4, 9]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to map object values?
 
 #### merge
 
@@ -2743,6 +4058,11 @@ merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } });
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to merge two objects together?
+- How to deeply merge two objects?
+
 #### none
 
 Checks if the given object is empty.
@@ -2754,6 +4074,30 @@ Checks if the given object is empty.
 (xs?: object) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+none({});
+// ⇒ true
+```
+
+```javascript
+none(null);
+// ⇒ true
+```
+
+```javascript
+none({ a: 1 });
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if an object is empty?
+- How to check if an object is null or undefined?
 
 #### some
 
@@ -2773,13 +4117,19 @@ Test if any element passes the given predicate.
 
 <!-- prettier-ignore-start -->
 ```javascript
-some(x => x >= 4)({ x: 5, y: 3, z: 0 }); // ⇒ true
+some(x => x >= 4)({ x: 5, y: 3, z: 0 });
+// ⇒ true
 ```
 
 ```javascript
-some(x => x < 0)({ x: 5, y: 3, z: 0 }); // ⇒ false
+some(x => x < 0)({ x: 5, y: 3, z: 0 });
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if any entry in an object passes a given predicate?
 
 #### sort
 
@@ -2795,6 +4145,19 @@ Sorts the given object by a comparator.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+sort({ a: 3, b: 2, c: 3, d: -7, e: 13, f: 0, g: 8 });
+// ⇒ {"d": -7,"f": 0,"b": 2,"a": 3,"c": 3,"g": 8,"e": 13}
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to sort an object?
+
 ### query
 
 #### parse
@@ -2809,6 +4172,19 @@ Parses a query string into an object.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+parse("test&count=5");
+// ⇒ { test: true, count: "5" }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to parse a query string?
+
 #### read
 
 Parses the given query string into an object using URLSearchParams.
@@ -2821,6 +4197,19 @@ Parses the given query string into an object using URLSearchParams.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+read("test&count=5");
+// ⇒ { test: "", count: "5" }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to parse a query string using URLSearchParams?
+
 #### serialize
 
 Serializes the given object into a query string.
@@ -2832,6 +4221,19 @@ Serializes the given object into a query string.
 (xs?: { [index: string]: any }) => string
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+serialize({ test: true, value: "a string with spaces", missing: false });
+// ⇒ "test&value=a%20string%20with%20spaces"
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to serialize an object to a query string?
 
 ### range
 
@@ -2851,13 +4253,19 @@ Checks if the given range is empty.
 
 <!-- prettier-ignore-start -->
 ```javascript
-empty([2, 2]); // ⇒ true
+empty([2, 2]);
+// ⇒ true
 ```
 
 ```javascript
-empty([1, 5]); // ⇒ false
+empty([1, 5]);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if a given range is empty (0-length)?
 
 #### equals
 
@@ -2874,6 +4282,24 @@ Checks if the given ranges are equal.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+equals([1, 2], [1, 2]);
+// ⇒ true
+```
+
+```javascript
+equals([4, 3], [1, 2]);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if two ranges are equal?
+
 #### length
 
 Computes the signed length of the given range.
@@ -2886,9 +4312,27 @@ Computes the signed length of the given range.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+length([3, 15]);
+// ⇒ 12
+```
+
+```javascript
+length([1, 0]);
+// ⇒ -1
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compute a signed length of a range?
+
 #### split
 
-Splits the given range in subranges by excluding the given used ranged.
+Splits the given range into subranges by excluding the given used ranged.
 
 ##### Type signature
 
@@ -2900,6 +4344,19 @@ Splits the given range in subranges by excluding the given used ranged.
 ) => (range: [number, number]) => [number, number][]
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+split([[2, 3], [5, 7]]);
+// ⇒ [[0, 2], [3, 5], [7, 10]]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to split a range into subranges?
 
 ### regex
 
@@ -2915,6 +4372,19 @@ Escapes regex string into proper regex.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+escape("te.t").test("text");
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to properly escape a regex string?
+
 ### string
 
 #### containsWhitespace
@@ -2929,6 +4399,24 @@ Checks if the given string contains whitespace.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+containsWhitespace("test string");
+// ⇒ true
+```
+
+```javascript
+containsWhitespace("test");
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if a string contains whitespace?
+
 #### empty
 
 Empty string.
@@ -2940,6 +4428,19 @@ Empty string.
 ""
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+empty();
+// ⇒ ""
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get an empty string?
 
 #### firstToLower
 
@@ -2953,6 +4454,19 @@ Transforms the first character to lowercase.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+firstToLower("TeSt");
+// ⇒ "teSt"
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to make the first letter of a string lowercase?
+
 #### firstToUpper
 
 Transforms the first character to uppercase.
@@ -2965,6 +4479,19 @@ Transforms the first character to uppercase.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+firstToUpper("teSt");
+// ⇒ "TeSt"
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to make the first letter of a string uppercase?
+
 #### includes
 
 Checks if the given substring is present in the source string.
@@ -2976,6 +4503,24 @@ Checks if the given substring is present in the source string.
 (search: string) => (text: string) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+includes("brown fox")("The quick brown fox jumps over the lazy dog");
+// ⇒ true
+```
+
+```javascript
+includes("brown dog")("The quick brown fox jumps over the lazy dog");
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check is a string contains a given substring?
 
 #### nbsp
 
@@ -2993,9 +4538,14 @@ Non-breaking space.
 
 <!-- prettier-ignore-start -->
 ```javascript
-nbsp; // ⇒ " "
+nbsp;
+// ⇒ " "
 ```
 <!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get a non-breaking space?
 
 #### nonEmpty
 
@@ -3009,6 +4559,31 @@ Checks if the given string is present and is not empty or all whitespace.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+nonEmpty("test with spaces");
+// ⇒ true
+```
+
+```javascript
+nonEmpty("   ");
+// ⇒ false
+```
+
+```javascript
+nonEmpty(null);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if a string is non empty?
+- How to check is string is not all whitespace?
+- How to check is string is not null or undefined?
+
 #### startsWith
 
 Checks if the given string starts with the given substring.
@@ -3020,6 +4595,24 @@ Checks if the given string starts with the given substring.
 (prefix: string) => (xs: string) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+startsWith("The")("The quick brown fox jumps over the lazy dog");
+// ⇒ true
+```
+
+```javascript
+startsWith("Quick")("The quick brown fox jumps over the lazy dog");
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to check if a string starts with a given substring?
 
 ### vector2
 
@@ -3037,6 +4630,19 @@ Adds two vectors.
 ) => [number, number]
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+add([3, 5], [-1, 8]);
+// ⇒ [2, 13]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to add two vectors?
 
 #### convertSpace
 
@@ -3057,6 +4663,19 @@ Applies transformations to the given vector.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+convertSpace(rotate(Math.PI))([2, 3]);
+// ⇒ [-2, -3]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to transform a vector with a matrix?
+
 #### cross
 
 Calculates a cross product of the given vectors. Returns a scalar.
@@ -3071,6 +4690,25 @@ Calculates a cross product of the given vectors. Returns a scalar.
 ) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+cross([3, 5], [-1, 8]);
+// ⇒ 29
+```
+
+```javascript
+cross([3, 5], [-1, -8]);
+// ⇒ -19
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compute a cross product of two vectors?
+- How to check on which side of a line point is?
 
 #### dot
 
@@ -3087,6 +4725,24 @@ Calculates a dot product of the given vectors. Returns a scalar.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+dot([3, 5], [-1, 8]);
+// ⇒ 37
+```
+
+```javascript
+dot([3, 5], [-1, -8]);
+// ⇒ -43
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compute a dot product of two vectors?
+
 #### length
 
 Calculates length/magnitude of the given vector.
@@ -3098,6 +4754,20 @@ Calculates length/magnitude of the given vector.
 ([x, y]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+length([3, 5]);
+// ⇒ Math.sqrt(3 * 3 + 5 * 5)
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compute length of a vector?
+- How to compute magnitude of a vector?
 
 #### mul
 
@@ -3127,6 +4797,19 @@ Applies matrix transformation to the given vector.
 ) => number[]
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+mul(scale(4, 5), [2, 3]);
+// ⇒ [8, 15]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to apply a matrix transformation to a vector?
 
 #### multiply
 
@@ -3164,6 +4847,19 @@ Multiples two matrices.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+multiply({ a: 1, c: 2, e: 3, b: 4, d: 5, f: 6 }, { a: 7, c: 8, e: 9, b: 10, d: 11, f: 12 });
+// ⇒ { a: 27, b: 78, c: 30, d: 87, e: 36, f: 102 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to multiply two matrices?
+
 #### normalize
 
 Normalizes the given vector. Returns [0, 0] vector for points.
@@ -3175,6 +4871,19 @@ Normalizes the given vector. Returns [0, 0] vector for points.
 (vector: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+normalize([2, 3]);
+// ⇒ [2 / length([2, 3]), 3 / length([2, 3])]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to normalize a vector?
 
 #### reflect
 
@@ -3190,6 +4899,19 @@ Reflects the given vector on the given surface.
 ) => [number, number]
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+reflect([1, -2], [1, 0]);
+// ⇒ [0.6, 0.8]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to reflect a vector on an another vector?
 
 #### rotate
 
@@ -3214,6 +4936,22 @@ Creates a rotation matrix around given origin [0, 0] by default.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const angle = Math.PI;
+const sine = Math.sin(angle);
+const cosine = Math.cos(angle);
+
+rotate(angle); // { a: cosine, b: sine, c: -sine, d: cosine, e: 0, f: 0 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to create a rotation matrix?
+
 #### scale
 
 Creates a scale matrix.
@@ -3236,6 +4974,19 @@ Creates a scale matrix.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+scale(2, 3);
+// ⇒ { a: 2, b: 0, c: 0, d: 3, e: 0, f: 0 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to create a scale matrix?
+
 #### sub
 
 Subtracts two vectors.
@@ -3250,6 +5001,19 @@ Subtracts two vectors.
 ) => [number, number]
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+sub([3, 5], [-1, 8]);
+// ⇒ [4, -3]
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to subtract two vectors?
 
 #### transform
 
@@ -3279,6 +5043,23 @@ Composes a single transformation by matrix multiplication.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const originX = 5;
+const originY = 6;
+const angle = Math.PI;
+
+transform(translate(originX, originY), rotate(angle), translate(-originX, -originY));
+// ⇒ rotate(Math.PI, originX, originY)
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to compose multiple matrix transformations into a single matrix?
+
 #### translate
 
 Creates a translation matrix.
@@ -3301,6 +5082,19 @@ Creates a translation matrix.
 ```
 <!-- prettier-ignore-end -->
 
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+translate(2, 3);
+// ⇒ { a: 1, b: 0, c: 0, d: 1, e: 2, f: 3 }
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to create a translation matrix?
+
 ### web
 
 #### classNames
@@ -3314,6 +5108,19 @@ Composes class name from truthy values with support of string and objects.
 (...xs: any[]) => any
 ```
 <!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+classNames("test", { active: true, disabled: false, on: undefined });
+// ⇒ "test active"
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to create a class name from list of string and/or objects?
 
 #### events
 
@@ -3331,6 +5138,23 @@ Stops propagation and prevents the default handler of the given event.
 }) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+###### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const event = {
+  preventDefault: () => console.log("preventDefault"),
+  stopPropagation: () => console.log("stopPropagation")
+};
+
+cancel(event);
+```
+<!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to stop propagation and prevent default at once?
 
 ##### openInNewTabIntent
 
@@ -3354,6 +5178,19 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
 ```
 <!-- prettier-ignore-end -->
 
+###### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+openInNewTabIntent({ ctrlKey: true });
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to check if user wants to open a new tab using history API?
+
 ##### prevent
 
 Prevents the default handler of the given event.
@@ -3365,6 +5202,23 @@ Prevents the default handler of the given event.
 (event: { preventDefault: () => void }) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+###### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const event = {
+  preventDefault: () => console.log("preventDefault"),
+  stopPropagation: () => console.log("stopPropagation")
+};
+
+prevent(event);
+```
+<!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to prevent default event handler?
 
 ##### stop
 
@@ -3378,7 +5232,23 @@ Stops propagation of the given event.
 ```
 <!-- prettier-ignore-end -->
 
-<!-- DOCS:END -->
+###### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const event = {
+  preventDefault: () => console.log("preventDefault"),
+  stopPropagation: () => console.log("stopPropagation")
+};
+
+stop(event);
+```
+<!-- prettier-ignore-end -->
+
+###### Questions
+
+- How to stop propagation of an event?
+  <!-- DOCS:END -->
 
 ## Contributors ✨
 

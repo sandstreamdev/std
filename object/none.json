@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "none({}); // ⇒ true"
+      "content": "none({});\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "none(null); // ⇒ true"
+      "content": "none(null);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "none({ a: 1 }); // ⇒ false"
+      "content": "none({ a: 1 });\n// ⇒ false"
     }
   ],
   "questions": [

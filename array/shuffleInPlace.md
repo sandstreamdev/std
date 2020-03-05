@@ -28,3 +28,7 @@ const random = () =>
 shuffleInPlace([1, 2, 3, 4, 5], random); // => [3, 5, 4, 2, 1]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to shuffle an array in place?

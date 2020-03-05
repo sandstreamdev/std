@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "decode(\"PDw_Pz8-Pg\"); // ⇒ \"<<???>>\""
+      "content": "decode(\"PDw_Pz8-Pg\");\n// ⇒ \"<<???>>\""
     }
   ],
   "questions": ["How to decode Base64URL?"]

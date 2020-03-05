@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "_function(x => x + 5); // ⇒ true"
+      "content": "_function(x => x + 5);\n// ⇒ true"
     }
   ],
   "questions": ["How to check is a given value is a function?"]

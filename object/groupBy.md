@@ -9,3 +9,16 @@ Groups given array of values by the given key selector.
 (selector: (x: any) => string) => (xs: any[]) => object
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+groupBy(x => x % 2 == 0 ? "even" : "odd")([1, 2, 3, 4, 5, 6, 7]);
+// ⇒ { even: [2, 4, 6], odd: [1, 3, 5, 7] }
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to group an array by a function?

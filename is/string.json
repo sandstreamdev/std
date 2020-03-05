@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "string(\"Test\"); // ⇒ true"
+      "content": "string(\"Test\");\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "string(['T', 'e', 's', 't']); // ⇒ false"
+      "content": "string(['T', 'e', 's', 't']);\n// ⇒ false"
     }
   ],
   "questions": ["How to check is a given value is a string?"]

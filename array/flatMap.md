@@ -20,3 +20,8 @@ flatMap(text => [...text])(["test", "123"]);
 // ⇒ ["t", "e", "s", "t", "1", "2", "3"]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to flat map an array?
+- How to map and then flatten an array?

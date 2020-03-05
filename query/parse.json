@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "parse(\"test&count=5\"); // ⇒ { test: true, count: \"5\" }"
+      "content": "parse(\"test&count=5\");\n// ⇒ { test: true, count: \"5\" }"
     }
   ],
   "questions": ["How to parse a query string?"]

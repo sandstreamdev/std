@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "last([1, 2, 3]); // ⇒ 3"
+      "content": "last([1, 2, 3]);\n// ⇒ 3"
     },
     {
       "language": "javascript",
-      "content": "last([]); // ⇒ undefined"
+      "content": "last([]);\n// ⇒ undefined"
     }
   ],
   "questions": ["How to get the last element of an array?"]

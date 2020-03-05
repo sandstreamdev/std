@@ -19,3 +19,16 @@ Creates a translation matrix.
 }
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+translate(2, 3);
+// ⇒ { a: 1, b: 0, c: 0, d: 1, e: 2, f: 3 }
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to create a translation matrix?

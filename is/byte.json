@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "byte(128); // ⇒ true"
+      "content": "byte(128);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "byte(325); // ⇒ false"
+      "content": "byte(325);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "byte(65.5); // ⇒ false"
+      "content": "byte(65.5);\n// ⇒ false"
     }
   ],
   "questions": [

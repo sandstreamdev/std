@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "duplicates([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [3, 4, 3]"
+      "content": "duplicates([1, 2, 3, 4, 3, 4, 3, 6]);\n// ⇒ [3, 4, 3]"
     }
   ],
   "questions": ["How to find duplicates in an array?"]

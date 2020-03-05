@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "shift(1)([1, 2, 3, 4, 5]); // ⇒ [2, 3, 4, 5, 1]"
+      "content": "shift(1)([1, 2, 3, 4, 5]);\n// ⇒ [2, 3, 4, 5, 1]"
     },
     {
       "language": "javascript",
-      "content": "shift(2)([1, 2, 3, 4, 5]); // ⇒ [3, 4, 5, 1, 2]"
+      "content": "shift(2)([1, 2, 3, 4, 5]);\n// ⇒ [3, 4, 5, 1, 2]"
     },
     {
       "language": "javascript",
-      "content": "shift(3)([1, 2, 3, 4, 5]); // ⇒ [4, 5, 1, 2, 3]"
+      "content": "shift(3)([1, 2, 3, 4, 5]);\n// ⇒ [4, 5, 1, 2, 3]"
     }
   ],
   "questions": ["How to shift an array?"]

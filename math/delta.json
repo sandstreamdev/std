@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "delta(-3, 5); // ⇒ 8"
+      "content": "delta(-3, 5);\n// ⇒ 8"
     }
   ],
   "questions": ["How to calculate an absolute distance between two numbers?"]

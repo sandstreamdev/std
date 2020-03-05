@@ -5,19 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "multiple([1, 2, 3]); // ⇒ true"
+      "content": "multiple([1, 2, 3]);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "multiple([1, 2]); // ⇒ true"
+      "content": "multiple([1, 2]);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "multiple([1]); // ⇒ false"
+      "content": "multiple([1]);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "multiple([]); // ⇒ false"
+      "content": "multiple([]);\n// ⇒ false"
     }
   ],
   "questions": [

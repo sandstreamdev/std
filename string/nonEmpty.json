@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "nonEmpty(\"test with spaces\"); // ⇒ true"
+      "content": "nonEmpty(\"test with spaces\");\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "nonEmpty(\"   \"); // ⇒ false"
+      "content": "nonEmpty(\"   \");\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "nonEmpty(null); // ⇒ false"
+      "content": "nonEmpty(null);\n// ⇒ false"
     }
   ],
   "questions": [

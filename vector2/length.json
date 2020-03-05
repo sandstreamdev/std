@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "length([3, 5]); // ⇒ Math.sqrt(3 * 3 + 5 * 5)"
+      "content": "length([3, 5]);\n// ⇒ Math.sqrt(3 * 3 + 5 * 5)"
     }
   ],
   "questions": [

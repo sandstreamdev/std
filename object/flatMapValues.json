@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "flatMapValues(x => [x, x * 2])({ a: 1, b: 2, c: 3 }); // ⇒ [1, 2, 2, 4, 3, 6]"
+      "content": "flatMapValues(x => [x, x * 2])({ a: 1, b: 2, c: 3 });\n// ⇒ [1, 2, 2, 4, 3, 6]"
     }
   ],
   "questions": ["How to flat map an object?"]

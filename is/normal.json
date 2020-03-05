@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "normal(0.75); // ⇒ true"
+      "content": "normal(0.75);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "normal(-1); // ⇒ false"
+      "content": "normal(-1);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "normal(2.5); // ⇒ false"
+      "content": "normal(2.5);\n// ⇒ false"
     }
   ],
   "questions": ["How to check is a given value is in 0 to 1 inclusive range?"]

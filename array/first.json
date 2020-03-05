@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "first([1, 2, 3]); // ⇒ 1"
+      "content": "first([1, 2, 3]);\n// ⇒ 1"
     },
     {
       "language": "javascript",
-      "content": "first([]); // ⇒ undefined"
+      "content": "first([]);\n// ⇒ undefined"
     }
   ],
   "questions": ["How to get the first element of an array?"]

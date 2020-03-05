@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "removeAt(3)([1, 2, 3, 4, 5, 6]) // ⇒ [1, 2, 3, 5, 6]"
+      "content": "removeAt(3)([1, 2, 3, 4, 5, 6])\n// ⇒ [1, 2, 3, 5, 6]"
     }
   ],
   "questions": ["How to remove an item from an array at a particular index?"]

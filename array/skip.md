@@ -14,6 +14,11 @@ Skips the given count of elements from the given array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-skip(2)([1, 2, 3, 4, 5]); // ⇒ [3, 4, 5]
+skip(2)([1, 2, 3, 4, 5]);
+// ⇒ [3, 4, 5]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to skip first few elements of an array?

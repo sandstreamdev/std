@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "repeat(3)(\"test\"); // ⇒ [\"test\", \"test\", \"test\"]"
+      "content": "repeat(3)(\"test\");\n// ⇒ [\"test\", \"test\", \"test\"]"
     }
   ],
   "questions": ["How to repeat a value N times?"]

@@ -1,6 +1,6 @@
 # intersection
 
-Finds common items between both arrays.
+Finds common elements between both arrays.
 
 ## Type signature
 
@@ -18,3 +18,7 @@ intersection([1, 2, 3, 4, 5], [5, 5, 3, 2]);
 // ⇒ [2, 3, 5]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find common elements present in both arrays?

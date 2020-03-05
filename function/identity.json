@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "identity(5); // ⇒ 5"
+      "content": "identity(5);\n// ⇒ 5"
     },
     {
       "language": "javascript",
-      "content": "identity(\"test\"); // ⇒ \"test\""
+      "content": "identity(\"test\");\n// ⇒ \"test\""
     }
   ],
   "questions": [

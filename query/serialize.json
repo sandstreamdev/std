@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "serialize({ test: true, value: \"a string with spaces\", missing: false }); // ⇒ \"test&value=a%20string%20with%20spaces\""
+      "content": "serialize({ test: true, value: \"a string with spaces\", missing: false });\n// ⇒ \"test&value=a%20string%20with%20spaces\""
     }
   ],
   "questions": ["How to serialize an object to a query string?"]

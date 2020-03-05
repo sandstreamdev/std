@@ -14,6 +14,11 @@ Repeats the given element by given count of times.
 
 <!-- prettier-ignore-start -->
 ```javascript
-repeat(3)("test"); // ⇒ ["test", "test", "test"]
+repeat(3)("test");
+// ⇒ ["test", "test", "test"]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to repeat a value N times?

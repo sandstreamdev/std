@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "dot([3, 5], [-1, 8]); // ⇒ 37"
+      "content": "dot([3, 5], [-1, 8]);\n// ⇒ 37"
     },
     {
       "language": "javascript",
-      "content": "dot([3, 5], [-1, -8]); // ⇒ -43"
+      "content": "dot([3, 5], [-1, -8]);\n// ⇒ -43"
     }
   ],
   "questions": ["How to compute a dot product of two vectors?"]

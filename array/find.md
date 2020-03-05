@@ -17,10 +17,16 @@ Finds an element by a predicate function within given array, otherwise returns t
 
 <!-- prettier-ignore-start -->
 ```javascript
-find(x => x > 2)([1, 2, 3, 5, 7]); // ⇒ 3
+find(x => x > 2)([1, 2, 3, 5, 7]);
+// ⇒ 3
 ```
 
 ```javascript
-find(x => x > 2)([1, 2, -3, -5, -7]); // ⇒ undefined
+find(x => x > 2)([1, 2, -3, -5, -7]);
+// ⇒ undefined
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find an element of an array by a given predicate?

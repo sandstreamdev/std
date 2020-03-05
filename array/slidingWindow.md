@@ -28,3 +28,7 @@ slidingWindow(1)([1, 2, 3, 4, 5, 6]);
 // ⇒ [[1], [2], [3], [4], [5], [6]]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to iterate an array pairwise?

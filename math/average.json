@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "average([2, 4, 15]); // ⇒ 7"
+      "content": "average([2, 4, 15]);\n// ⇒ 7"
     }
   ],
   "questions": ["How to compute average of an array?"]

@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "map(x => x ** 2)({ a: 1, b: 2, c: 3 }); // ⇒ { a: 1, b: 4, c: 9 }"
+      "content": "map(x => x ** 2)({ a: 1, b: 2, c: 3 });\n// ⇒ { a: 1, b: 4, c: 9 }"
     }
   ],
   "questions": ["How to map an object?", "How to transform an object?"]

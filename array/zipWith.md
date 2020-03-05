@@ -20,3 +20,7 @@ zipWith((x, y) => x * x + y)([1, 2, 3], [4, 5, 6]);
 // ⇒ [5, 9, 15]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to zip two arrays with a given function?

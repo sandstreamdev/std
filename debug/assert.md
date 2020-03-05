@@ -12,3 +12,17 @@ Asserts given conditions.
 ) => void
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+assert(true === false);
+// ⇒ TypeError("Assertion failed!")
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to assert a condition?
+- How to throw when a condition is not satisfied?

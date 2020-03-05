@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "find(x => x > 2)([1, 2, 3, 5, 7]); // ⇒ 3"
+      "content": "find(x => x > 2)([1, 2, 3, 5, 7]);\n// ⇒ 3"
     },
     {
       "language": "javascript",
-      "content": "find(x => x > 2)([1, 2, -3, -5, -7]); // ⇒ undefined"
+      "content": "find(x => x > 2)([1, 2, -3, -5, -7]);\n// ⇒ undefined"
     }
   ],
   "questions": ["How to find an element of an array by a given predicate?"]

@@ -5,19 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "any({ a: 1, b: 2, c: 3 }); // ⇒ true"
+      "content": "any({ a: 1, b: 2, c: 3 });\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "any({ }); // ⇒ false"
+      "content": "any({ });\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "any(null); // ⇒ false"
+      "content": "any(null);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "any(undefined); // ⇒ false"
+      "content": "any(undefined);\n// ⇒ false"
     }
   ],
   "questions": [

@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "secondToLast([1, 2, 3, 4, 5]); // ⇒ 4"
+      "content": "secondToLast([1, 2, 3, 4, 5]);\n// ⇒ 4"
     },
     {
       "language": "javascript",
-      "content": "secondToLast([1]); // ⇒ undefined"
+      "content": "secondToLast([1]);\n// ⇒ undefined"
     },
     {
       "language": "javascript",
-      "content": "secondToLast([]); // ⇒ undefined"
+      "content": "secondToLast([]);\n// ⇒ undefined"
     }
   ],
   "questions": ["How to get the second to last element of an array?"]

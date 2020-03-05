@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "noOp(\"anything\"); // ⇒ undefined"
+      "content": "noOp(\"anything\");\n// ⇒ undefined"
     }
   ],
   "questions": ["How to create a function that does nothing?"]

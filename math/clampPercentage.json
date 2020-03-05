@@ -5,15 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "clampPercentage(50); // ⇒ 50"
+      "content": "clampPercentage(50);\n// ⇒ 50"
     },
     {
       "language": "javascript",
-      "content": "clampPercentage(-50); // ⇒ 0"
+      "content": "clampPercentage(-50);\n// ⇒ 0"
     },
     {
       "language": "javascript",
-      "content": "clampPercentage(150); // ⇒ 100"
+      "content": "clampPercentage(150);\n// ⇒ 100"
     }
   ],
   "questions": ["How to enforce percentage be between 0% and 100%?"]

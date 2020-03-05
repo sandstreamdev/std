@@ -5,19 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "validName(\"my:file.png\"); // ⇒ false"
+      "content": "validName(\"my:file.png\");\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "validName(\"file.txt\"); // ⇒ true"
+      "content": "validName(\"file.txt\");\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "validName(\"../file.txt\"); // ⇒ false"
+      "content": "validName(\"../file.txt\");\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "validName(\"COM1\"); // ⇒ false"
+      "content": "validName(\"COM1\");\n// ⇒ false"
     }
   ],
   "questions": [

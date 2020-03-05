@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "pipe(x => x * x, x => x + 1)(3); // ⇒ 10"
+      "content": "pipe(x => x * x, x => x + 1)(3);\n// ⇒ 10"
     }
   ],
   "questions": ["How to pipe an argument through a function?"]

@@ -9,3 +9,21 @@ Checks if given value is a string.
 (x?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+string("Test");
+// ⇒ true
+```
+
+```javascript
+string(['T', 'e', 's', 't']);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check is a given value is a string?

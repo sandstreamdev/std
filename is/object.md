@@ -9,3 +9,21 @@ Checks if given value is an object.
 (x?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+object({ a: 1, b: 2 });
+// ⇒ true
+```
+
+```javascript
+object([1, 2, 3]);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check is a given value is an object?

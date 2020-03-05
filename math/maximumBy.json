@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "maximumBy(({ age }) => age)([{ age: 13 }, { age: 20 }, { age: 7 }, { age: 18 }]); // ⇒ { age: 20 }"
+      "content": "maximumBy(({ age }) => age)([{ age: 13 }, { age: 20 }, { age: 7 }, { age: 18 }]);\n// ⇒ { age: 20 }"
     }
   ],
   "questions": ["How to find a maximum element by a given function?"]

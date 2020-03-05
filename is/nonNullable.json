@@ -5,19 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "nonNullable(null); // ⇒ false"
+      "content": "nonNullable(null);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "nonNullable(undefined); // ⇒ false"
+      "content": "nonNullable(undefined);\n// ⇒ false"
     },
     {
       "language": "javascript",
-      "content": "nonNullable(false); // ⇒ true"
+      "content": "nonNullable(false);\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "nonNullable({ a: 1 }); // ⇒ true"
+      "content": "nonNullable({ a: 1 });\n// ⇒ true"
     }
   ],
   "questions": [

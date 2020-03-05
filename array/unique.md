@@ -14,6 +14,11 @@ Returns only unique elements of the given array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-unique([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [1, 2, 3, 4, 6]
+unique([1, 2, 3, 4, 3, 4, 3, 6]);
+// ⇒ [1, 2, 3, 4, 6]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get all unique values in an array?

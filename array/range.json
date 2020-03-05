@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "range(3); // ⇒ [0, 1, 2]"
+      "content": "range(3);\n// ⇒ [0, 1, 2]"
     }
   ],
   "questions": ["How to create array of all integers from 0 to N exclusive?"]

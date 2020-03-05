@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "some(x => x >= 4)({ x: 5, y: 3, z: 0 }); // ⇒ true"
+      "content": "some(x => x >= 4)({ x: 5, y: 3, z: 0 });\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "some(x => x < 0)({ x: 5, y: 3, z: 0 }); // ⇒ false"
+      "content": "some(x => x < 0)({ x: 5, y: 3, z: 0 });\n// ⇒ false"
     }
   ],
   "questions": [

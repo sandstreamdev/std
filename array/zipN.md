@@ -28,3 +28,7 @@ zipN([1, 2], [4, 5, 6], [7, 8, 9]);
 // ⇒ [[1, 4, 7],[2, 5, 8]]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to zip multiple arrays?

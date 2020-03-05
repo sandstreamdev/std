@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "const xs = [1, 2, 3, 4, 5, 6, 7];\nconst odd = x => x % 2 === 1;\n\nconst ys = filterInPlace(odd)(xs);\n\nys === xs; // ⇒ true\nys; // ⇒ [1, 3, 5, 7]"
+      "content": "const xs = [1, 2, 3, 4, 5, 6, 7];\nconst odd = x => x % 2 === 1;\n\nconst ys = filterInPlace(odd)(xs);\n\nys === xs;\n// ⇒ true\nys;\n// ⇒ [1, 3, 5, 7]"
     }
   ],
   "questions": ["How to filter an array in place?"]

@@ -9,3 +9,16 @@ Empty string.
 ""
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+empty();
+// ⇒ ""
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get an empty string?

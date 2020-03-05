@@ -5,11 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "containsWhitespace(\"test string\"); // ⇒ true"
+      "content": "containsWhitespace(\"test string\");\n// ⇒ true"
     },
     {
       "language": "javascript",
-      "content": "containsWhitespace(\"test\"); // ⇒ false"
+      "content": "containsWhitespace(\"test\");\n// ⇒ false"
     }
   ],
   "questions": ["How to check if a string contains whitespace?"]
