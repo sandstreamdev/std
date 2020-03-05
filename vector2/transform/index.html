@@ -73,8 +73,30 @@
 }</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> originX = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">const</span> originY = <span class="hljs-number">6</span>;
+<span class="hljs-keyword">const</span> angle = <span class="hljs-built_in">Math</span>.PI;
+
+transform(
+  translate(originX, originY),
+  rotate(angle),
+  translate(-originX, -originY)
+);
+<span class="hljs-comment">// ⇒ rotate(Math.PI, originX, originY)</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { transform } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compose multiple matrix transformations into a single matrix?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/transform.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/transform.js">JavaScript source</a>
     </p>

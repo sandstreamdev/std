@@ -61,14 +61,29 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>encodeBytes([<span class="hljs-number">0xc2</span>, <span class="hljs-number">0x67</span>, <span class="hljs-number">0xeb</span>, <span class="hljs-number">0xa7</span>, <span class="hljs-number">0x6d</span>, <span class="hljs-number">0x3e</span>, <span class="hljs-number">0x6c</span>, <span class="hljs-number">0x1b</span>, <span class="hljs-number">0x10</span>, <span class="hljs-number">0x7c</span>]);
-<span class="hljs-comment">// ⇒ "w4Jnw6vCp20-bBsQfA"</span></span></code></pre>
+      <pre><code class="hljs"><span>encodeBytes([
+  <span class="hljs-number">0xc2</span>,
+  <span class="hljs-number">0x67</span>,
+  <span class="hljs-number">0xeb</span>,
+  <span class="hljs-number">0xa7</span>,
+  <span class="hljs-number">0x6d</span>,
+  <span class="hljs-number">0x3e</span>,
+  <span class="hljs-number">0x6c</span>,
+  <span class="hljs-number">0x1b</span>,
+  <span class="hljs-number">0x10</span>,
+  <span class="hljs-number">0x7c</span>
+]);
+<span class="hljs-comment">// ⇒ "w4Jnw6vCp20-bBsQfA"</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ encoding: { base64url: { encodeBytes } } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to encode bytes as Base64URL?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/encodeBytes.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/encodeBytes.js">JavaScript source</a>
     </p>

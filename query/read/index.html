@@ -57,8 +57,22 @@
       <pre><code class="hljs"><span>(source: <span class="hljs-built_in">string</span>) =&gt; {}</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>read(<span class="hljs-string">"test&amp;count=5"</span>);
+<span class="hljs-comment">// ⇒ { test: "", count: "5" }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ query: { read } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to parse a query string using URLSearchParams?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/query/read.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/query/read.js">JavaScript source</a>
     </p>

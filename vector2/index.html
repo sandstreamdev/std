@@ -60,8 +60,22 @@
 ) =&gt; [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>add([<span class="hljs-number">3</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">-1</span>, <span class="hljs-number">8</span>]);
+<span class="hljs-comment">// ⇒ [2, 13]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { add } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to add two vectors?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/add.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/add.js">JavaScript source</a>
     </p>
@@ -81,8 +95,25 @@
 }) =&gt; <span class="hljs-function">(<span class="hljs-params">[x, y]: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span>) =&gt;</span> <span class="hljs-built_in">number</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>convertSpace(rotate(<span class="hljs-built_in">Math</span>.PI))([
+  <span class="hljs-number">2</span>,
+  <span class="hljs-number">3</span>
+]);
+<span class="hljs-comment">// ⇒ [-2, -3]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { convertSpace } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to transform a vector with a matrix?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/convertSpace.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/convertSpace.js">JavaScript source</a>
     </p>
@@ -98,8 +129,31 @@
 ) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>cross([<span class="hljs-number">3</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">-1</span>, <span class="hljs-number">8</span>]);
+<span class="hljs-comment">// ⇒ 29</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { cross } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>cross([<span class="hljs-number">3</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">-1</span>, <span class="hljs-number">-8</span>]);
+<span class="hljs-comment">// ⇒ -19</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { cross } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute a cross product of two vectors?</li><li>How to check on which side of a line point is?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/cross.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/cross.js">JavaScript source</a>
     </p>
@@ -115,8 +169,31 @@
 ) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>dot([<span class="hljs-number">3</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">-1</span>, <span class="hljs-number">8</span>]);
+<span class="hljs-comment">// ⇒ 37</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { dot } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>dot([<span class="hljs-number">3</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">-1</span>, <span class="hljs-number">-8</span>]);
+<span class="hljs-comment">// ⇒ -43</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { dot } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute a dot product of two vectors?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/dot.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/dot.js">JavaScript source</a>
     </p>
@@ -129,8 +206,22 @@
       <pre><code class="hljs"><span>([x, y]: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>length([<span class="hljs-number">3</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ Math.sqrt(3 * 3 + 5 * 5)</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { length } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute length of a vector?</li><li>How to compute magnitude of a vector?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/length.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/length.js">JavaScript source</a>
     </p>
@@ -160,8 +251,22 @@
 ) =&gt; <span class="hljs-built_in">number</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>mul(scale(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>), [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [8, 15]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { mul } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to apply a matrix transformation to a vector?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/mul.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/mul.js">JavaScript source</a>
     </p>
@@ -198,8 +303,39 @@
 }</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>multiply(
+  {
+    <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">c</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-attr">e</span>: <span class="hljs-number">3</span>,
+    <span class="hljs-attr">b</span>: <span class="hljs-number">4</span>,
+    <span class="hljs-attr">d</span>: <span class="hljs-number">5</span>,
+    <span class="hljs-attr">f</span>: <span class="hljs-number">6</span>
+  },
+  {
+    <span class="hljs-attr">a</span>: <span class="hljs-number">7</span>,
+    <span class="hljs-attr">c</span>: <span class="hljs-number">8</span>,
+    <span class="hljs-attr">e</span>: <span class="hljs-number">9</span>,
+    <span class="hljs-attr">b</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-attr">d</span>: <span class="hljs-number">11</span>,
+    <span class="hljs-attr">f</span>: <span class="hljs-number">12</span>
+  }
+);
+<span class="hljs-comment">// ⇒ { a: 27, b: 78, c: 30, d: 87, e: 36, f: 102 }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { multiply } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to multiply two matrices?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/multiply.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/multiply.js">JavaScript source</a>
     </p>
@@ -212,8 +348,22 @@
       <pre><code class="hljs"><span>(vector: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]) =&gt; [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>normalize([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [2 / length([2, 3]), 3 / length([2, 3])]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { normalize } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to normalize a vector?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/normalize.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/normalize.js">JavaScript source</a>
     </p>
@@ -229,8 +379,22 @@
 ) =&gt; [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>reflect([<span class="hljs-number">1</span>, <span class="hljs-number">-2</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>]);
+<span class="hljs-comment">// ⇒ [0.6, 0.8]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { reflect } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to reflect a vector on an another vector?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/reflect.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/reflect.js">JavaScript source</a>
     </p>
@@ -254,8 +418,25 @@
 }</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> angle = <span class="hljs-built_in">Math</span>.PI;
+<span class="hljs-keyword">const</span> sine = <span class="hljs-built_in">Math</span>.sin(angle);
+<span class="hljs-keyword">const</span> cosine = <span class="hljs-built_in">Math</span>.cos(angle);
+
+rotate(angle); <span class="hljs-comment">// { a: cosine, b: sine, c: -sine, d: cosine, e: 0, f: 0 }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { rotate } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to create a rotation matrix?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/rotate.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/rotate.js">JavaScript source</a>
     </p>
@@ -278,8 +459,22 @@
 }</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>scale(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+<span class="hljs-comment">// ⇒ { a: 2, b: 0, c: 0, d: 3, e: 0, f: 0 }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { scale } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to create a scale matrix?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/scale.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/scale.js">JavaScript source</a>
     </p>
@@ -295,8 +490,22 @@
 ) =&gt; [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>sub([<span class="hljs-number">3</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">-1</span>, <span class="hljs-number">8</span>]);
+<span class="hljs-comment">// ⇒ [4, -3]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { sub } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to subtract two vectors?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/sub.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/sub.js">JavaScript source</a>
     </p>
@@ -325,8 +534,30 @@
 }</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> originX = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">const</span> originY = <span class="hljs-number">6</span>;
+<span class="hljs-keyword">const</span> angle = <span class="hljs-built_in">Math</span>.PI;
+
+transform(
+  translate(originX, originY),
+  rotate(angle),
+  translate(-originX, -originY)
+);
+<span class="hljs-comment">// ⇒ rotate(Math.PI, originX, originY)</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { transform } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compose multiple matrix transformations into a single matrix?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/transform.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/transform.js">JavaScript source</a>
     </p>
@@ -349,8 +580,22 @@
 }</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>translate(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+<span class="hljs-comment">// ⇒ { a: 1, b: 0, c: 0, d: 1, e: 2, f: 3 }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { translate } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to create a translation matrix?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/translate.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/translate.js">JavaScript source</a>
     </p>

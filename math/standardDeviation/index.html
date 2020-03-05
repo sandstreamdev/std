@@ -57,8 +57,33 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[], origin?: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>standardDeviation([
+  <span class="hljs-number">96</span>,
+  <span class="hljs-number">81</span>,
+  <span class="hljs-number">68</span>,
+  <span class="hljs-number">79</span>,
+  <span class="hljs-number">23</span>,
+  <span class="hljs-number">13</span>,
+  <span class="hljs-number">13</span>,
+  <span class="hljs-number">59</span>,
+  <span class="hljs-number">44</span>,
+  <span class="hljs-number">86</span>
+]);
+<span class="hljs-comment">// ⇒ (2 * Math.sqrt(10922 / 5)) / 3</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { standardDeviation } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute a standard deviation of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/standardDeviation.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/standardDeviation.js">JavaScript source</a>
     </p>

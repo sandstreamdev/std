@@ -61,20 +61,27 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>empty([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>]); <span class="hljs-comment">// ⇒ true</span></span></code></pre>
+      <pre><code class="hljs"><span>empty([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ range: { empty } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// ⇒ false</span></span></code></pre>
+      <pre><code class="hljs"><span>empty([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ range: { empty } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if a given range is empty (0-length)?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/range/empty.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/range/empty.js">JavaScript source</a>
     </p>
@@ -90,8 +97,31 @@
 ) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>equals([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ range: { equals } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>equals([<span class="hljs-number">4</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ range: { equals } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if two ranges are equal?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/range/equals.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/range/equals.js">JavaScript source</a>
     </p>
@@ -104,14 +134,37 @@
       <pre><code class="hljs"><span>([min, max]: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>length([<span class="hljs-number">3</span>, <span class="hljs-number">15</span>]);
+<span class="hljs-comment">// ⇒ 12</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ range: { length } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>length([<span class="hljs-number">1</span>, <span class="hljs-number">0</span>]);
+<span class="hljs-comment">// ⇒ -1</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ range: { length } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute a signed length of a range?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/range/length.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/range/length.js">JavaScript source</a>
     </p>
   </article><article>
     <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="range">range</a><span>/</span><a href="range/split">split</a></h3>
-    <div class="description"><span>Splits the given range in subranges by excluding the given used ranged.</span></div>
+    <div class="description"><span>Splits the given range into subranges by excluding the given used ranged.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -121,8 +174,25 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">range: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span>) =&gt;</span> [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>][]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>split([
+  [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+  [<span class="hljs-number">5</span>, <span class="hljs-number">7</span>]
+]);
+<span class="hljs-comment">// ⇒ [[0, 2], [3, 5], [7, 10]]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ range: { split } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to split a range into subranges?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/range/split.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/range/split.js">JavaScript source</a>
     </p>

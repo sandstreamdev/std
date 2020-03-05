@@ -57,8 +57,31 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>string(<span class="hljs-string">"Test"</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { string } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>string([<span class="hljs-string">"T"</span>, <span class="hljs-string">"e"</span>, <span class="hljs-string">"s"</span>, <span class="hljs-string">"t"</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { string } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is a string?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/string.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/string.js">JavaScript source</a>
     </p>

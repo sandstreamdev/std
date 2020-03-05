@@ -57,8 +57,25 @@
       <pre><code class="hljs"><span>(...fs: <span class="hljs-function">(<span class="hljs-params">(<span class="hljs-params">x: <span class="hljs-built_in">any</span></span>) =&gt; <span class="hljs-built_in">any</span></span>)[]) =&gt;</span> (x: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>compose(
+  <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x * x,
+  x =&gt; x + <span class="hljs-number">1</span>
+)(<span class="hljs-number">3</span>);
+<span class="hljs-comment">// ⇒ 16</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { compose } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compose functions?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/compose.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/compose.js">JavaScript source</a>
     </p>
@@ -71,8 +88,22 @@
       <pre><code class="hljs"><span>(x: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>constant(<span class="hljs-number">3</span>)(<span class="hljs-string">"anything"</span>);
+<span class="hljs-comment">// ⇒ 3</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { constant } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to create a function that always returns the same value despite given arguments?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/constant.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/constant.js">JavaScript source</a>
     </p>
@@ -85,8 +116,31 @@
       <pre><code class="hljs"><span>(x: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>identity(<span class="hljs-number">5</span>);
+<span class="hljs-comment">// ⇒ 5</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { identity } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>identity(<span class="hljs-string">"test"</span>);
+<span class="hljs-comment">// ⇒ "test"</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { identity } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to use identity function?</li><li>Where and why is identity function useful?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/identity.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/identity.js">JavaScript source</a>
     </p>
@@ -99,8 +153,31 @@
       <pre><code class="hljs"><span>(f: <span class="hljs-function">(<span class="hljs-params">...xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">...args: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> f = <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(x);
+  <span class="hljs-keyword">return</span> x + <span class="hljs-number">1</span>;
+};
+
+<span class="hljs-keyword">const</span> memoized = memoize(f);
+
+memoized(<span class="hljs-number">5</span>);
+memoized(<span class="hljs-number">5</span>);
+memoized(<span class="hljs-number">5</span>);
+memoized(<span class="hljs-number">3</span>);
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { memoize } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to memoize a function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/memoize.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/memoize.js">JavaScript source</a>
     </p>
@@ -113,8 +190,31 @@
       <pre><code class="hljs"><span>(f: <span class="hljs-function">(<span class="hljs-params">...xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">...args: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> f = <span class="hljs-function">(<span class="hljs-params">{ x }</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(x);
+  <span class="hljs-keyword">return</span> x + <span class="hljs-number">1</span>;
+};
+
+<span class="hljs-keyword">const</span> memoized = memoizeShallow(f);
+
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">3</span> });
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { memoizeShallow } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to memoize a function with shallow equality?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/memoizeShallow.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/memoizeShallow.js">JavaScript source</a>
     </p>
@@ -129,8 +229,33 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">f: (<span class="hljs-params">...xs: <span class="hljs-built_in">any</span>[]</span>) =&gt; <span class="hljs-built_in">any</span></span>) =&gt;</span> (...args: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> f = <span class="hljs-function">(<span class="hljs-params">{ x }</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(x);
+  <span class="hljs-keyword">return</span> x + <span class="hljs-number">1</span>;
+};
+
+<span class="hljs-keyword">const</span> memoized = memoizeWith(
+  <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.x === b.x
+)(f);
+
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">3</span> });
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { memoizeWith } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to memoize a function with custom equality function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/memoizeWith.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/memoizeWith.js">JavaScript source</a>
     </p>
@@ -143,8 +268,22 @@
       <pre><code class="hljs"><span>() =&gt; <span class="hljs-built_in">void</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>noOp(<span class="hljs-string">"anything"</span>);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { noOp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to create a function that does nothing?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/noOp.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/noOp.js">JavaScript source</a>
     </p>
@@ -159,8 +298,22 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">...args: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>not(x &gt; <span class="hljs-number">10</span>)(<span class="hljs-number">15</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { not } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to invert a boolean function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/not.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/not.js">JavaScript source</a>
     </p>
@@ -173,8 +326,25 @@
       <pre><code class="hljs"><span>(...fs: <span class="hljs-function">(<span class="hljs-params">(<span class="hljs-params">x: <span class="hljs-built_in">any</span></span>) =&gt; <span class="hljs-built_in">any</span></span>)[]) =&gt;</span> (x: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>pipe(
+  <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x * x,
+  x =&gt; x + <span class="hljs-number">1</span>
+)(<span class="hljs-number">3</span>);
+<span class="hljs-comment">// ⇒ 10</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { pipe } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to pipe an argument through a function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/pipe.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/pipe.js">JavaScript source</a>
     </p>
@@ -189,8 +359,26 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">action: (<span class="hljs-params">...xs: <span class="hljs-built_in">any</span>[]</span>) =&gt; <span class="hljs-built_in">any</span></span>) =&gt;</span> (...args: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>when(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x &gt; <span class="hljs-number">0</span>)(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span>
+  <span class="hljs-built_in">console</span>.log(x)
+)(<span class="hljs-number">5</span>);
+when(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x &gt; <span class="hljs-number">0</span>)(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span>
+  <span class="hljs-built_in">console</span>.log(x)
+)(<span class="hljs-number">-3</span>);
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { when } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to run a function only when a condition is satisfied?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/when.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/when.js">JavaScript source</a>
     </p>
@@ -205,8 +393,26 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">...args: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>whenTrue(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(x))(
+  <span class="hljs-literal">false</span>
+);
+when(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x &gt; <span class="hljs-number">0</span>)(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span>
+  <span class="hljs-built_in">console</span>.log(x)
+)(<span class="hljs-literal">true</span>);
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { whenTrue } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to run a function only if its argument is true?</li><li>How to execute function only if a variable is true?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/whenTrue.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/whenTrue.js">JavaScript source</a>
     </p>

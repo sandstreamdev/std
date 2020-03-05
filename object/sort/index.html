@@ -59,8 +59,30 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: object</span>) =&gt;</span> object</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>sort({
+  <span class="hljs-attr">a</span>: <span class="hljs-number">3</span>,
+  <span class="hljs-attr">b</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-attr">c</span>: <span class="hljs-number">3</span>,
+  <span class="hljs-attr">d</span>: <span class="hljs-number">-7</span>,
+  <span class="hljs-attr">e</span>: <span class="hljs-number">13</span>,
+  <span class="hljs-attr">f</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">g</span>: <span class="hljs-number">8</span>
+});
+<span class="hljs-comment">// ⇒ {"d": -7,"f": 0,"b": 2,"a": 3,"c": 3,"g": 8,"e": 13}</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ object: { sort } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to sort an object?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/object/sort.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/object/sort.js">JavaScript source</a>
     </p>

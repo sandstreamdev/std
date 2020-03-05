@@ -59,8 +59,27 @@
 ) =&gt;</span> (...xs: <span class="hljs-built_in">any</span>[]) =&gt; object</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> lower = <span class="hljs-function"><span class="hljs-params">text</span> =&gt;</span>
+  text.toLowerCase();
+<span class="hljs-keyword">const</span> upper = <span class="hljs-function"><span class="hljs-params">text</span> =&gt;</span>
+  text.toUpperCase();
+
+apply({ lower, upper })(<span class="hljs-string">"TeSt"</span>);
+<span class="hljs-comment">// ⇒ { lower: "test", upper: "TEST" }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ object: { apply } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to apply a value over an object of functions?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/object/apply.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/object/apply.js">JavaScript source</a>
     </p>

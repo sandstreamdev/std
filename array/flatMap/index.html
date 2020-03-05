@@ -59,8 +59,25 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>flatMap(<span class="hljs-function"><span class="hljs-params">text</span> =&gt;</span> [...text])([
+  <span class="hljs-string">"test"</span>,
+  <span class="hljs-string">"123"</span>
+]);
+<span class="hljs-comment">// ⇒ ["t", "e", "s", "t", "1", "2", "3"]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { flatMap } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to flat map an array?</li><li>How to map and then flatten an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/flatMap.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/flatMap.js">JavaScript source</a>
     </p>

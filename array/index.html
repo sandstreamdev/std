@@ -61,14 +61,18 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>any([]); <span class="hljs-comment">// ⇒ false</span></span></code></pre>
+      <pre><code class="hljs"><span>any([]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { any } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>any([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// ⇒ true</span></span></code></pre>
+      <pre><code class="hljs"><span>any([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { any } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
@@ -76,7 +80,7 @@
   </div>
     <div class="questions">
       <h3>Questions</h3>
-      <ul><li>How to check if an array is empty (in JavaScript)?</li><li>How to check if array is empty or null or undefined (in JavaScript)?</li><li>Check if an array is empty or not (in JavaScript).</li><li>Check if an array is empty or exists (in JavaScript).</li></ul>
+      <ul><li>How to check if an array is empty?</li><li>How to check if an array is empty or null or undefined?</li><li>How to check if an array is empty or not?</li><li>How to check if an array is empty or doesn't exist?</li></ul>
     </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/any.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/any.js">JavaScript source</a>
@@ -90,8 +94,40 @@
       <pre><code class="hljs"><span>(...xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>are([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { are } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>are([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], []);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { are } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>are([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">8</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>], <span class="hljs-string">"test"</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { are } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if all the given values are arrays?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/are.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/are.js">JavaScript source</a>
     </p>
@@ -108,36 +144,58 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>chunk(<span class="hljs-number">2</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>]);
-<span class="hljs-comment">// ⇒ [['a', 'b'], ['c', 'd']]</span></span></code></pre>
+      <pre><code class="hljs"><span>chunk(<span class="hljs-number">2</span>)([<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>, <span class="hljs-string">"d"</span>]);
+<span class="hljs-comment">// ⇒ [['a', 'b'], ['c', 'd']]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { chunk } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>chunk(<span class="hljs-number">3</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>]);
-<span class="hljs-comment">// ⇒ [['a', 'b', 'c'], ['d']]</span></span></code></pre>
+      <pre><code class="hljs"><span>chunk(<span class="hljs-number">3</span>)([<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>, <span class="hljs-string">"d"</span>]);
+<span class="hljs-comment">// ⇒ [['a', 'b', 'c'], ['d']]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { chunk } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to split an array into chunks?</li><li>How to split an array into chunks of the same size?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/chunk.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/chunk.js">JavaScript source</a>
     </p>
   </article><article>
     <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/difference">difference</a></h3>
-    
+    <div class="description"><span>Computes a set difference between the two given arrays.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[], ys: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>difference(
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>],
+  [<span class="hljs-number">2</span>, <span class="hljs-number">4</span>]
+);
+<span class="hljs-comment">// ⇒ [1, 3, 5, 6]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { difference } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to find elements which are present in first array and not in the second?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/difference.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/difference.js">JavaScript source</a>
     </p>
@@ -150,8 +208,31 @@
       <pre><code class="hljs"><span>(xs?: <span class="hljs-built_in">any</span>[], ys?: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>differs([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { differs } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>differs([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { differs } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if two arrays differs?</li><li>How to check if two arrays are not equal?</li><li>How to check if two arrays are equal or not?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/differs.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/differs.js">JavaScript source</a>
     </p>
@@ -164,8 +245,31 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>duplicates([
+  <span class="hljs-number">1</span>,
+  <span class="hljs-number">2</span>,
+  <span class="hljs-number">3</span>,
+  <span class="hljs-number">4</span>,
+  <span class="hljs-number">3</span>,
+  <span class="hljs-number">4</span>,
+  <span class="hljs-number">3</span>,
+  <span class="hljs-number">6</span>
+]);
+<span class="hljs-comment">// ⇒ [3, 4, 3]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { duplicates } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to find duplicates in an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/duplicates.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/duplicates.js">JavaScript source</a>
     </p>
@@ -182,13 +286,18 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>empty; <span class="hljs-comment">// ⇒ []</span></span></code></pre>
+      <pre><code class="hljs"><span>empty;
+<span class="hljs-comment">// ⇒ []</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { empty } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get an empty array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/empty.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/empty.js">JavaScript source</a>
     </p>
@@ -201,8 +310,31 @@
       <pre><code class="hljs"><span>(count: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>exact(<span class="hljs-number">5</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [1, 2, 3, undefined, undefined]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { exact } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>exact(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [1, 2]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { exact } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get exactly N elements out of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/exact.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/exact.js">JavaScript source</a>
     </p>
@@ -215,8 +347,31 @@
       <pre><code class="hljs"><span>(y: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>except(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [1, 3, 4, 5]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { except } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>except(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>]);
+<span class="hljs-comment">// ⇒ [1, 4]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { except } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get all the values of an array except the given one?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/except.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/except.js">JavaScript source</a>
     </p>
@@ -231,8 +386,29 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> xs = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>];
+<span class="hljs-keyword">const</span> odd = <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x % <span class="hljs-number">2</span> === <span class="hljs-number">1</span>;
+
+<span class="hljs-keyword">const</span> ys = filterInPlace(odd)(xs);
+
+ys === xs;
+<span class="hljs-comment">// ⇒ true</span>
+ys;
+<span class="hljs-comment">// ⇒ [1, 3, 5, 7]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { filterInPlace } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to filter an array in place?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/filterInPlace.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/filterInPlace.js">JavaScript source</a>
     </p>
@@ -248,8 +424,37 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>find(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x &gt; <span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>]);
+<span class="hljs-comment">// ⇒ 3</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { find } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>find(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x &gt; <span class="hljs-number">2</span>)([
+  <span class="hljs-number">1</span>,
+  <span class="hljs-number">2</span>,
+  <span class="hljs-number">-3</span>,
+  <span class="hljs-number">-5</span>,
+  <span class="hljs-number">-7</span>
+]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { find } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to find an element of an array by a given predicate?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/find.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/find.js">JavaScript source</a>
     </p>
@@ -262,8 +467,31 @@
       <pre><code class="hljs"><span>([x]: [<span class="hljs-built_in">any</span>]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>first([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ 1</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { first } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>first([]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { first } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get the first element of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/first.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/first.js">JavaScript source</a>
     </p>
@@ -278,8 +506,25 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>flatMap(<span class="hljs-function"><span class="hljs-params">text</span> =&gt;</span> [...text])([
+  <span class="hljs-string">"test"</span>,
+  <span class="hljs-string">"123"</span>
+]);
+<span class="hljs-comment">// ⇒ ["t", "e", "s", "t", "1", "2", "3"]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { flatMap } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to flat map an array?</li><li>How to map and then flatten an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/flatMap.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/flatMap.js">JavaScript source</a>
     </p>
@@ -292,8 +537,36 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>flatten([<span class="hljs-number">1</span>, [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">4</span>, [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>]]);
+<span class="hljs-comment">// ⇒ [1, 2, 3, 4, 5, 6]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { flatten } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>flatten([
+  <span class="hljs-number">1</span>,
+  [<span class="hljs-number">2</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">6</span>]],
+  <span class="hljs-number">4</span>,
+  [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>]
+]);
+<span class="hljs-comment">// ⇒ [1, 2, [3, 6], 4, 5, 6]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { flatten } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to flatten an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/flatten.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/flatten.js">JavaScript source</a>
     </p>
@@ -312,50 +585,95 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>insert(<span class="hljs-number">0</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]);
-<span class="hljs-comment">// ⇒ ['d', 'a', 'b', 'c']</span></span></code></pre>
+      <pre><code class="hljs"><span>insert(<span class="hljs-number">0</span>)(<span class="hljs-string">"d"</span>)([<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>]);
+<span class="hljs-comment">// ⇒ ['d', 'a', 'b', 'c']</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { insert } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>insert(<span class="hljs-number">1</span>)(<span class="hljs-string">'d'</span>)([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]);
-<span class="hljs-comment">// ⇒ ['a', 'd', 'b', 'c']</span></span></code></pre>
+      <pre><code class="hljs"><span>insert(<span class="hljs-number">1</span>)(<span class="hljs-string">"d"</span>)([<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>]);
+<span class="hljs-comment">// ⇒ ['a', 'd', 'b', 'c']</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { insert } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to insert an element to an array at a given position?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/insert.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/insert.js">JavaScript source</a>
     </p>
   </article><article>
     <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/intersection">intersection</a></h3>
-    <div class="description"><span>Finds common items between both arrays.</span></div>
+    <div class="description"><span>Finds common elements between both arrays.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[], ys: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>intersection(
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>],
+  [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>]
+);
+<span class="hljs-comment">// ⇒ [2, 3, 5]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { intersection } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to find common elements present in both arrays?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/intersection.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/intersection.js">JavaScript source</a>
     </p>
   </article><article>
     <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="array">array</a><span>/</span><a href="array/is">is</a></h3>
-    
+    <div class="description"><span>Checks if the given argument is an array.</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
       <pre><code class="hljs"><span>(value?: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>is([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { is } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>is({ <span class="hljs-attr">a</span>: <span class="hljs-number">5</span> });
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { is } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if a value is an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/is.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/is.js">JavaScript source</a>
     </p>
@@ -368,8 +686,31 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>last([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ 3</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { last } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>last([]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { last } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get the last element of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/last.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/last.js">JavaScript source</a>
     </p>
@@ -382,8 +723,31 @@
       <pre><code class="hljs"><span>(a: <span class="hljs-built_in">any</span>[], b: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>lengthDiffers([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { lengthDiffers } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>lengthDiffers([<span class="hljs-number">6</span>, <span class="hljs-number">7</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { lengthDiffers } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if array lengths differ?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/lengthDiffers.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/lengthDiffers.js">JavaScript source</a>
     </p>
@@ -396,8 +760,34 @@
       <pre><code class="hljs"><span>(...fs: <span class="hljs-function">(<span class="hljs-params">(<span class="hljs-params">x: <span class="hljs-built_in">any</span></span>) =&gt; <span class="hljs-built_in">any</span></span>)[]) =&gt;</span> (xs: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>map(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x * x)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [1, 4, 9]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { map } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>map(
+  <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x * x,
+  x =&gt; x + <span class="hljs-number">1</span>
+)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [2, 5, 10]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { map } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to map an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/map.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/map.js">JavaScript source</a>
     </p>
@@ -410,8 +800,31 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>midpoint([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ 3</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { midpoint } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>midpoint([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]);
+<span class="hljs-comment">// ⇒ 3</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { midpoint } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get the element in the middle of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/midpoint.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/midpoint.js">JavaScript source</a>
     </p>
@@ -421,11 +834,54 @@
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
-      <pre><code class="hljs"><span>([head, ...tail]: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span>[]</span></code></pre>
+      <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>minMax([
+  <span class="hljs-number">10</span>,
+  <span class="hljs-number">5</span>,
+  <span class="hljs-number">3</span>,
+  <span class="hljs-number">-5</span>,
+  <span class="hljs-number">-4</span>,
+  <span class="hljs-number">23</span>,
+  <span class="hljs-number">32</span>,
+  <span class="hljs-number">8</span>,
+  <span class="hljs-number">1</span>,
+  <span class="hljs-number">0</span>
+]);
+<span class="hljs-comment">// ⇒ [-5, 32]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { minMax } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>minMax([<span class="hljs-number">1</span>]);
+<span class="hljs-comment">// ⇒ [1, 1]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { minMax } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>minMax([]);
+<span class="hljs-comment">// ⇒ [undefined, undefined]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { minMax } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to find minimum and maximum values of an array?</li><li>How to get the min/max element of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/minMax.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/minMax.js">JavaScript source</a>
     </p>
@@ -438,8 +894,49 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>multiple([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { multiple } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>multiple([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { multiple } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>multiple([<span class="hljs-number">1</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { multiple } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>multiple([]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { multiple } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if an array contains multiple elements?</li><li>How to check whether multiple values exist within an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/multiple.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/multiple.js">JavaScript source</a>
     </p>
@@ -452,8 +949,31 @@
       <pre><code class="hljs"><span>(xs?: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>none([]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { none } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>none([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { none } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if array is empty?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/none.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/none.js">JavaScript source</a>
     </p>
@@ -466,8 +986,28 @@
       <pre><code class="hljs"><span>(predicate: <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">any</span></span>) =&gt;</span> <span class="hljs-built_in">boolean</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>partition(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x % <span class="hljs-number">2</span> === <span class="hljs-number">1</span>)([
+  <span class="hljs-number">1</span>,
+  <span class="hljs-number">2</span>,
+  <span class="hljs-number">3</span>,
+  <span class="hljs-number">4</span>,
+  <span class="hljs-number">5</span>
+]);
+<span class="hljs-comment">// ⇒ [[2, 4], [1, 3, 5]])</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { partition } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to partition an array based on a condition?</li><li>How to divide an array by a filter function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/partition.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/partition.js">JavaScript source</a>
     </p>
@@ -480,8 +1020,22 @@
       <pre><code class="hljs"><span>(n: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">number</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>range(<span class="hljs-number">3</span>);
+<span class="hljs-comment">// ⇒ [0, 1, 2]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { range } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to create array of all integers from 0 to N exclusive?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/range.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/range.js">JavaScript source</a>
     </p>
@@ -498,7 +1052,9 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>removeAt(<span class="hljs-number">3</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]) <span class="hljs-comment">// ⇒ [1, 2, 3, 5, 6]</span></span></code></pre>
+      <pre><code class="hljs"><span>removeAt(<span class="hljs-number">3</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]);
+<span class="hljs-comment">// ⇒ [1, 2, 3, 5, 6]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { removeAt } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
@@ -506,7 +1062,7 @@
   </div>
     <div class="questions">
       <h3>Questions</h3>
-      <ul><li>How to remove an item at a particular index?</li></ul>
+      <ul><li>How to remove an item from an array at a particular index?</li></ul>
     </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/removeAt.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/removeAt.js">JavaScript source</a>
@@ -520,8 +1076,22 @@
       <pre><code class="hljs"><span>(count: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">value: <span class="hljs-built_in">any</span></span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>repeat(<span class="hljs-number">3</span>)(<span class="hljs-string">"test"</span>);
+<span class="hljs-comment">// ⇒ ["test", "test", "test"]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { repeat } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to repeat a value N times?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/repeat.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/repeat.js">JavaScript source</a>
     </p>
@@ -534,8 +1104,22 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>reverse([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [5, 4, 3, 2, 1]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { reverse } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to reverse an array without mutating it?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/reverse.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/reverse.js">JavaScript source</a>
     </p>
@@ -548,8 +1132,31 @@
       <pre><code class="hljs"><span>(enabled: <span class="hljs-built_in">boolean</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span></span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>reverseIf(<span class="hljs-literal">true</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [5, 4, 3, 2, 1]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { reverseIf } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>reverseIf(<span class="hljs-literal">false</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [1, 2, 3, 4, 5]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { reverseIf } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to reverse an array without mutating it only when a condition is satisfied?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/reverseIf.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/reverseIf.js">JavaScript source</a>
     </p>
@@ -559,11 +1166,43 @@
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
-      <pre><code class="hljs"><span>([, x]: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
+      <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>second([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ 2</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { second } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>second([<span class="hljs-number">1</span>]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { second } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>second([]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { second } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get the second element of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/second.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/second.js">JavaScript source</a>
     </p>
@@ -576,8 +1215,40 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>secondToLast([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ 4</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { secondToLast } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>secondToLast([<span class="hljs-number">1</span>]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { secondToLast } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>secondToLast([]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { secondToLast } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get the second to last element of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/secondToLast.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/secondToLast.js">JavaScript source</a>
     </p>
@@ -590,8 +1261,40 @@
       <pre><code class="hljs"><span>(count: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>shift(<span class="hljs-number">1</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [2, 3, 4, 5, 1]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { shift } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>shift(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [3, 4, 5, 1, 2]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { shift } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>shift(<span class="hljs-number">3</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [4, 5, 1, 2, 3]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { shift } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to shift an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/shift.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/shift.js">JavaScript source</a>
     </p>
@@ -604,8 +1307,32 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>, random?: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">const</span> random = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span>
+  [
+    <span class="hljs-number">0.013606630487694282</span>,
+    <span class="hljs-number">0.21052486239086554</span>,
+    <span class="hljs-number">0.28299838254636556</span>,
+    <span class="hljs-number">0.696161009199874</span>,
+    <span class="hljs-number">0.32165320593537117</span>
+  ][i++];
+
+shuffle([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], random); <span class="hljs-comment">// =&gt; [3, 5, 4, 2, 1]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { shuffle } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to shuffle an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/shuffle.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/shuffle.js">JavaScript source</a>
     </p>
@@ -618,8 +1345,35 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[], random?: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">const</span> random = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span>
+  [
+    <span class="hljs-number">0.013606630487694282</span>,
+    <span class="hljs-number">0.21052486239086554</span>,
+    <span class="hljs-number">0.28299838254636556</span>,
+    <span class="hljs-number">0.696161009199874</span>,
+    <span class="hljs-number">0.32165320593537117</span>
+  ][i++];
+
+shuffleInPlace(
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>],
+  random
+); <span class="hljs-comment">// =&gt; [3, 5, 4, 2, 1]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { shuffleInPlace } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to shuffle an array in place?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/shuffleInPlace.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/shuffleInPlace.js">JavaScript source</a>
     </p>
@@ -632,8 +1386,40 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>single([<span class="hljs-number">1</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { single } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>single([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { single } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>single([]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { single } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if an array contains only one element?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/single.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/single.js">JavaScript source</a>
     </p>
@@ -646,8 +1432,22 @@
       <pre><code class="hljs"><span>(count: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>skip(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [3, 4, 5]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { skip } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to skip first few elements of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/skip.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/skip.js">JavaScript source</a>
     </p>
@@ -665,7 +1465,8 @@
     
     <div class="content">
       <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]);
-<span class="hljs-comment">// ⇒ [[1, 2], [2, 3], [3, 4]]</span></span></code></pre>
+<span class="hljs-comment">// ⇒ [[1, 2], [2, 3], [3, 4]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
@@ -673,21 +1474,33 @@
 
     <div class="content">
       <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">3</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
-<span class="hljs-comment">// ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]</span></span></code></pre>
+<span class="hljs-comment">// ⇒ [[1, 2, 3], [2, 3, 4], [3, 4, 5]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">1</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]);
-<span class="hljs-comment">// ⇒ [[1], [2], [3], [4], [5], [6]]</span></span></code></pre>
+      <pre><code class="hljs"><span>slidingWindow(<span class="hljs-number">1</span>)([
+  <span class="hljs-number">1</span>,
+  <span class="hljs-number">2</span>,
+  <span class="hljs-number">3</span>,
+  <span class="hljs-number">4</span>,
+  <span class="hljs-number">5</span>,
+  <span class="hljs-number">6</span>
+]);
+<span class="hljs-comment">// ⇒ [[1], [2], [3], [4], [5], [6]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { slidingWindow } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to iterate an array pairwise?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/slidingWindow.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/slidingWindow.js">JavaScript source</a>
     </p>
@@ -702,8 +1515,33 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b)([
+  <span class="hljs-number">13</span>,
+  <span class="hljs-number">79</span>,
+  <span class="hljs-number">20</span>,
+  <span class="hljs-number">69</span>,
+  <span class="hljs-number">44</span>,
+  <span class="hljs-number">67</span>,
+  <span class="hljs-number">18</span>,
+  <span class="hljs-number">95</span>,
+  <span class="hljs-number">26</span>,
+  <span class="hljs-number">55</span>
+]);
+<span class="hljs-comment">// ⇒ [13, 18, 20, 26, 44, 55, 67, 69, 79, 95]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { sort } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to sort an array without mutating it?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/sort.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/sort.js">JavaScript source</a>
     </p>
@@ -716,8 +1554,22 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>sum([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ 15</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { sum } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to sum elements of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/sum.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/sum.js">JavaScript source</a>
     </p>
@@ -730,8 +1582,31 @@
       <pre><code class="hljs"><span>(count: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>take(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [1, 2]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { take } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>take(<span class="hljs-number">10</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [1, 2, 3, 4, 5]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { take } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get first N number of elements from an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/take.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/take.js">JavaScript source</a>
     </p>
@@ -744,8 +1619,22 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>unique([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">6</span>]);
+<span class="hljs-comment">// ⇒ [1, 2, 3, 4, 6]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { unique } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get all unique values in an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/unique.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/unique.js">JavaScript source</a>
     </p>
@@ -763,17 +1652,21 @@
     
     <div class="content">
       <pre><code class="hljs"><span>uniqueBy(<span class="hljs-function">(<span class="hljs-params">{ id }</span>) =&gt;</span> id)([
-  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'a'</span> },
-  { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'b'</span> },
-  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'c'</span> }
-])
-<span class="hljs-comment">// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]</span></span></code></pre>
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">"a"</span> },
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">"b"</span> },
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">"c"</span> }
+]);
+<span class="hljs-comment">// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { uniqueBy } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get all unique values in an array by some predicate?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/uniqueBy.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/uniqueBy.js">JavaScript source</a>
     </p>
@@ -786,8 +1679,22 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[], ys: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span>[][]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>zip([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]);
+<span class="hljs-comment">// ⇒ [[1, 4],[2, 5],[3, 6]]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zip } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to zip two arrays?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/zip.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/zip.js">JavaScript source</a>
     </p>
@@ -805,15 +1712,21 @@
     
     <div class="content">
       <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]);
-<span class="hljs-comment">// ⇒ [[1, 4], [2, 5], [3, 6]]</span></span></code></pre>
+<span class="hljs-comment">// ⇒ [[1, 4], [2, 5], [3, 6]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]);
-<span class="hljs-comment">// ⇒ [[1, 4, 7], [2, 5, 8], [3, 6, 9]]</span></span></code></pre>
+      <pre><code class="hljs"><span>zipN(
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+  [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>],
+  [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]
+);
+<span class="hljs-comment">// ⇒ [[1, 4, 7], [2, 5, 8], [3, 6, 9]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
@@ -821,13 +1734,17 @@
 
     <div class="content">
       <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]);
-<span class="hljs-comment">// ⇒ [[1, 4, 7],[2, 5, 8]]</span></span></code></pre>
+<span class="hljs-comment">// ⇒ [[1, 4, 7],[2, 5, 8]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to zip multiple arrays?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/zipN.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/zipN.js">JavaScript source</a>
     </p>
@@ -842,8 +1759,25 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[], ys: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[][]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>zipWith(<span class="hljs-function">(<span class="hljs-params">x, y</span>) =&gt;</span> x * x + y)(
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+  [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]
+);
+<span class="hljs-comment">// ⇒ [5, 9, 15]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipWith } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to zip two arrays with a given function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/zipWith.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/zipWith.js">JavaScript source</a>
     </p>

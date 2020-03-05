@@ -67,7 +67,8 @@
     
     <div class="content">
       <pre><code class="hljs"><span>merge({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">3</span> }, {});
-<span class="hljs-comment">// ⇒ { a: 1, b: 3 }</span></span></code></pre>
+<span class="hljs-comment">// ⇒ { a: 1, b: 3 }</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ object: { merge } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
@@ -75,29 +76,41 @@
 
     <div class="content">
       <pre><code class="hljs"><span>merge({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">3</span> }, { <span class="hljs-attr">b</span>: <span class="hljs-number">7</span> });
-<span class="hljs-comment">// ⇒ { a: 1, b: 7 }</span></span></code></pre>
+<span class="hljs-comment">// ⇒ { a: 1, b: 7 }</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ object: { merge } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>merge({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">3</span> }, { <span class="hljs-attr">b</span>: { <span class="hljs-attr">d</span>: <span class="hljs-number">8</span> } });
-<span class="hljs-comment">// ⇒ { a: 1, b: { d: 8 } }</span></span></code></pre>
+      <pre><code class="hljs"><span>merge(
+  { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">3</span> },
+  { <span class="hljs-attr">b</span>: { <span class="hljs-attr">d</span>: <span class="hljs-number">8</span> } }
+);
+<span class="hljs-comment">// ⇒ { a: 1, b: { d: 8 } }</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ object: { merge } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>merge({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: { <span class="hljs-attr">c</span>: <span class="hljs-number">3</span> } }, { <span class="hljs-attr">b</span>: { <span class="hljs-attr">d</span>: <span class="hljs-number">8</span> } });
-<span class="hljs-comment">// ⇒ { a: 1, b: { c: 3, d: 8 } }</span></span></code></pre>
+      <pre><code class="hljs"><span>merge(
+  { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: { <span class="hljs-attr">c</span>: <span class="hljs-number">3</span> } },
+  { <span class="hljs-attr">b</span>: { <span class="hljs-attr">d</span>: <span class="hljs-number">8</span> } }
+);
+<span class="hljs-comment">// ⇒ { a: 1, b: { c: 3, d: 8 } }</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ object: { merge } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to merge two objects together?</li><li>How to deeply merge two objects?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/object/merge.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/object/merge.js">JavaScript source</a>
     </p>

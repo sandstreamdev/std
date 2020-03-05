@@ -62,17 +62,21 @@
     
     <div class="content">
       <pre><code class="hljs"><span>uniqueBy(<span class="hljs-function">(<span class="hljs-params">{ id }</span>) =&gt;</span> id)([
-  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'a'</span> },
-  { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'b'</span> },
-  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'c'</span> }
-])
-<span class="hljs-comment">// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]</span></span></code></pre>
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">"a"</span> },
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">"b"</span> },
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">"c"</span> }
+]);
+<span class="hljs-comment">// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { uniqueBy } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get all unique values in an array by some predicate?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/uniqueBy.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/uniqueBy.js">JavaScript source</a>
     </p>

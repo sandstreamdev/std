@@ -57,8 +57,31 @@
       <pre><code class="hljs"><span>(x: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>containsWhitespace(<span class="hljs-string">"test string"</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { containsWhitespace } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>containsWhitespace(<span class="hljs-string">"test"</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { containsWhitespace } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if a string contains whitespace?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/containsWhitespace.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/containsWhitespace.js">JavaScript source</a>
     </p>
@@ -71,8 +94,22 @@
       <pre><code class="hljs"><span><span class="hljs-string">""</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>empty();
+<span class="hljs-comment">// ⇒ ""</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { empty } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get an empty string?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/empty.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/empty.js">JavaScript source</a>
     </p>
@@ -85,8 +122,22 @@
       <pre><code class="hljs"><span>(text: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">string</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>firstToLower(<span class="hljs-string">"TeSt"</span>);
+<span class="hljs-comment">// ⇒ "teSt"</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { firstToLower } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to make the first letter of a string lowercase?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/firstToLower.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/firstToLower.js">JavaScript source</a>
     </p>
@@ -99,8 +150,22 @@
       <pre><code class="hljs"><span>(text: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">string</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>firstToUpper(<span class="hljs-string">"teSt"</span>);
+<span class="hljs-comment">// ⇒ "TeSt"</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { firstToUpper } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to make the first letter of a string uppercase?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/firstToUpper.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/firstToUpper.js">JavaScript source</a>
     </p>
@@ -113,8 +178,35 @@
       <pre><code class="hljs"><span>(search: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">text: <span class="hljs-built_in">string</span></span>) =&gt;</span> <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>includes(<span class="hljs-string">"brown fox"</span>)(
+  <span class="hljs-string">"The quick brown fox jumps over the lazy dog"</span>
+);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { includes } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>includes(<span class="hljs-string">"brown dog"</span>)(
+  <span class="hljs-string">"The quick brown fox jumps over the lazy dog"</span>
+);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { includes } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a string contains a given substring?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/includes.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/includes.js">JavaScript source</a>
     </p>
@@ -131,13 +223,18 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>nbsp; <span class="hljs-comment">// ⇒ " "</span></span></code></pre>
+      <pre><code class="hljs"><span>nbsp;
+<span class="hljs-comment">// ⇒ " "</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ string: { nbsp } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get a non-breaking space?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/nbsp.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/nbsp.js">JavaScript source</a>
     </p>
@@ -150,8 +247,40 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>nonEmpty(<span class="hljs-string">"test with spaces"</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { nonEmpty } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>nonEmpty(<span class="hljs-string">"   "</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { nonEmpty } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>nonEmpty(<span class="hljs-literal">null</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { nonEmpty } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if a string is non empty?</li><li>How to check is string is not all whitespace?</li><li>How to check is string is not null or undefined?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/nonEmpty.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/nonEmpty.js">JavaScript source</a>
     </p>
@@ -164,8 +293,35 @@
       <pre><code class="hljs"><span>(prefix: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">string</span></span>) =&gt;</span> <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>startsWith(<span class="hljs-string">"The"</span>)(
+  <span class="hljs-string">"The quick brown fox jumps over the lazy dog"</span>
+);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { startsWith } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>startsWith(<span class="hljs-string">"Quick"</span>)(
+  <span class="hljs-string">"The quick brown fox jumps over the lazy dog"</span>
+);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { startsWith } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if a string starts with a given substring?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/startsWith.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/startsWith.js">JavaScript source</a>
     </p>

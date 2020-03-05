@@ -109,10 +109,16 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> date = <span class="hljs-keyword">new</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">'2019-04-24T13:54:33.232Z'</span>);
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> date = <span class="hljs-keyword">new</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(
+  <span class="hljs-string">"2019-04-24T13:54:33.232Z"</span>
+)();
 <span class="hljs-keyword">const</span> cloned = clone(date);
 
-cloned !== date &amp;&amp; cloned.valueOf() === date.valueOf(); <span class="hljs-comment">// ⇒ true</span></span></code></pre>
+cloned !== date &amp;&amp;
+  cloned.valueOf() ===
+    date.valueOf();
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ date: { clone } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>

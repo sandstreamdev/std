@@ -59,8 +59,33 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">f: (<span class="hljs-params">...xs: <span class="hljs-built_in">any</span>[]</span>) =&gt; <span class="hljs-built_in">any</span></span>) =&gt;</span> (...args: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> f = <span class="hljs-function">(<span class="hljs-params">{ x }</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(x);
+  <span class="hljs-keyword">return</span> x + <span class="hljs-number">1</span>;
+};
+
+<span class="hljs-keyword">const</span> memoized = memoizeWith(
+  <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.x === b.x
+)(f);
+
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">3</span> });
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { memoizeWith } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to memoize a function with custom equality function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/memoizeWith.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/memoizeWith.js">JavaScript source</a>
     </p>

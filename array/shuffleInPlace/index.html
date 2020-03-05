@@ -57,8 +57,35 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[], random?: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">const</span> random = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span>
+  [
+    <span class="hljs-number">0.013606630487694282</span>,
+    <span class="hljs-number">0.21052486239086554</span>,
+    <span class="hljs-number">0.28299838254636556</span>,
+    <span class="hljs-number">0.696161009199874</span>,
+    <span class="hljs-number">0.32165320593537117</span>
+  ][i++];
+
+shuffleInPlace(
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>],
+  random
+); <span class="hljs-comment">// =&gt; [3, 5, 4, 2, 1]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { shuffleInPlace } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to shuffle an array in place?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/shuffleInPlace.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/shuffleInPlace.js">JavaScript source</a>
     </p>

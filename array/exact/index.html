@@ -57,8 +57,31 @@
       <pre><code class="hljs"><span>(count: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>[]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>exact(<span class="hljs-number">5</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [1, 2, 3, undefined, undefined]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { exact } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>exact(<span class="hljs-number">2</span>)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [1, 2]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { exact } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get exactly N elements out of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/exact.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/exact.js">JavaScript source</a>
     </p>

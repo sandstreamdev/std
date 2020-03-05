@@ -57,8 +57,31 @@
       <pre><code class="hljs"><span>(f: <span class="hljs-function">(<span class="hljs-params">...xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">...args: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> f = <span class="hljs-function">(<span class="hljs-params">{ x }</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(x);
+  <span class="hljs-keyword">return</span> x + <span class="hljs-number">1</span>;
+};
+
+<span class="hljs-keyword">const</span> memoized = memoizeShallow(f);
+
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">5</span> });
+memoized({ <span class="hljs-attr">x</span>: <span class="hljs-number">3</span> });
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ function: { memoizeShallow } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to memoize a function with shallow equality?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/function/memoizeShallow.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/function/memoizeShallow.js">JavaScript source</a>
     </p>

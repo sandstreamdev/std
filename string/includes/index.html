@@ -57,8 +57,35 @@
       <pre><code class="hljs"><span>(search: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">text: <span class="hljs-built_in">string</span></span>) =&gt;</span> <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>includes(<span class="hljs-string">"brown fox"</span>)(
+  <span class="hljs-string">"The quick brown fox jumps over the lazy dog"</span>
+);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { includes } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>includes(<span class="hljs-string">"brown dog"</span>)(
+  <span class="hljs-string">"The quick brown fox jumps over the lazy dog"</span>
+);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ string: { includes } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a string contains a given substring?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/string/includes.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/string/includes.js">JavaScript source</a>
     </p>

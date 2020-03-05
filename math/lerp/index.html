@@ -57,8 +57,40 @@
       <pre><code class="hljs"><span>(t: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>lerp(<span class="hljs-number">0.5</span>)(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ⇒ 5</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { lerp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>lerp(<span class="hljs-number">0</span>)(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ⇒ 0</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { lerp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>lerp(<span class="hljs-number">1</span>)(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ⇒ 10</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { lerp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to linearly interpolate between two values?</li><li>How to interpolate two numbers?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/lerp.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/lerp.js">JavaScript source</a>
     </p>

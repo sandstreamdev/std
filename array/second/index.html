@@ -54,11 +54,43 @@
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
-      <pre><code class="hljs"><span>([, x]: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
+      <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">any</span>[]) =&gt; <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>second([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ 2</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { second } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>second([<span class="hljs-number">1</span>]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { second } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>second([]);
+<span class="hljs-comment">// ⇒ undefined</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ array: { second } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get the second element of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/second.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/second.js">JavaScript source</a>
     </p>

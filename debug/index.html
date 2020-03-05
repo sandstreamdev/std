@@ -60,14 +60,28 @@
 ) =&gt;</span> <span class="hljs-built_in">void</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>assert(<span class="hljs-literal">true</span> === <span class="hljs-literal">false</span>);
+<span class="hljs-comment">// ⇒ TypeError("Assertion failed!")</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ debug: { assert } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to assert a condition?</li><li>How to throw when a condition is not satisfied?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/debug/assert.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/debug/assert.js">JavaScript source</a>
     </p>
   </article><article>
     <h3 class="name breadcrumbs"><span class="toc-button" onclick="toggleTableOfContents()">☰</span><a href="">std</a><span>/</span><a href="debug">debug</a><span>/</span><a href="debug/diff">diff</a></h3>
-    <div class="description"><span>Computes a difference between two objects.</span></div>
+    <div class="description"><span>Computes a deep difference between two values (primitives, objects, arrays, etc.).</span></div>
     <div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
@@ -81,8 +95,22 @@
 ) =&gt; object</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>diff({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span> }, { <span class="hljs-attr">a</span>: <span class="hljs-number">2</span> });
+<span class="hljs-comment">// ⇒ { a: { data: [1, 2], type: '~' }}</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ debug: { diff } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute a diff?</li><li>How to compute a deep diff?</li><li>How to compute a diff between two objects?</li><li>How to compute a diff between two arrays?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/debug/diff.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/debug/diff.js">JavaScript source</a>
     </p>

@@ -62,15 +62,21 @@
     
     <div class="content">
       <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]);
-<span class="hljs-comment">// ⇒ [[1, 4], [2, 5], [3, 6]]</span></span></code></pre>
+<span class="hljs-comment">// ⇒ [[1, 4], [2, 5], [3, 6]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
 
     <div class="content">
-      <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]);
-<span class="hljs-comment">// ⇒ [[1, 4, 7], [2, 5, 8], [3, 6, 9]]</span></span></code></pre>
+      <pre><code class="hljs"><span>zipN(
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+  [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>],
+  [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]
+);
+<span class="hljs-comment">// ⇒ [[1, 4, 7], [2, 5, 8], [3, 6, 9]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
@@ -78,13 +84,17 @@
 
     <div class="content">
       <pre><code class="hljs"><span>zipN([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]);
-<span class="hljs-comment">// ⇒ [[1, 4, 7],[2, 5, 8]]</span></span></code></pre>
+<span class="hljs-comment">// ⇒ [[1, 4, 7],[2, 5, 8]]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ array: { zipN } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to zip multiple arrays?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/array/zipN.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/array/zipN.js">JavaScript source</a>
     </p>

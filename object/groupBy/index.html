@@ -57,8 +57,24 @@
       <pre><code class="hljs"><span>(selector: <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">any</span></span>) =&gt;</span> <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> object</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>groupBy(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span>
+  x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> ? <span class="hljs-string">"even"</span> : <span class="hljs-string">"odd"</span>
+)([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]);
+<span class="hljs-comment">// ⇒ { even: [2, 4, 6], odd: [1, 3, 5, 7] }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ object: { groupBy } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to group an array by a function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/object/groupBy.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/object/groupBy.js">JavaScript source</a>
     </p>

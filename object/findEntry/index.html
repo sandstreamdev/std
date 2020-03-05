@@ -59,8 +59,26 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: object</span>) =&gt;</span> <span class="hljs-built_in">any</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>findEntry(<span class="hljs-function">(<span class="hljs-params">{ x }</span>) =&gt;</span> x % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>)({
+  <span class="hljs-attr">a</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">1</span> },
+  <span class="hljs-attr">b</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">2</span> },
+  <span class="hljs-attr">c</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">3</span> }
+});
+<span class="hljs-comment">// ⇒ ["b", { x: 2 }]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ object: { findEntry } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to find an entry of an object by a function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/object/findEntry.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/object/findEntry.js">JavaScript source</a>
     </p>

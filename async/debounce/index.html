@@ -60,8 +60,27 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">...args: <span class="hljs-built_in">any</span>[]</span>) =&gt;</span> <span class="hljs-built_in">void</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> f = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Test"</span>);
+
+<span class="hljs-keyword">const</span> debounced = debounce(f, <span class="hljs-number">2000</span>);
+
+debounced();
+setTimeout(debounced, <span class="hljs-number">1000</span>);
+setTimeout(debounced, <span class="hljs-number">3000</span>);
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ async: { debounce } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to make function fire after some time not being called?</li><li>How to debounce input events?</li><li>How to debounce a function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/async/debounce.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/async/debounce.js">JavaScript source</a>
     </p>

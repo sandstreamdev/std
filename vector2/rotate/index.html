@@ -68,8 +68,25 @@
 }</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span><span class="hljs-keyword">const</span> angle = <span class="hljs-built_in">Math</span>.PI;
+<span class="hljs-keyword">const</span> sine = <span class="hljs-built_in">Math</span>.sin(angle);
+<span class="hljs-keyword">const</span> cosine = <span class="hljs-built_in">Math</span>.cos(angle);
+
+rotate(angle); <span class="hljs-comment">// { a: cosine, b: sine, c: -sine, d: cosine, e: 0, f: 0 }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ vector2: { rotate } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to create a rotation matrix?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/vector2/rotate.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/vector2/rotate.js">JavaScript source</a>
     </p>

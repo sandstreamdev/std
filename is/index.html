@@ -61,13 +61,27 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>array([]); <span class="hljs-comment">// ⇒ true</span></span></code></pre>
+      <pre><code class="hljs"><span>array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { array } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>array({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span> });
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ is: { array } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/array.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/array.js">JavaScript source</a>
     </p>
@@ -84,13 +98,36 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>byte(<span class="hljs-number">128</span>); <span class="hljs-comment">// ⇒ true</span></span></code></pre>
+      <pre><code class="hljs"><span>byte(<span class="hljs-number">128</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { byte } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>byte(<span class="hljs-number">325</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { byte } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>byte(<span class="hljs-number">65.5</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ is: { byte } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is a byte?</li><li>How to check is a given number is a byte?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/byte.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/byte.js">JavaScript source</a>
     </p>
@@ -103,8 +140,31 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>date(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>());
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { date } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>date(<span class="hljs-number">123</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { date } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is Date object?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/date.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/date.js">JavaScript source</a>
     </p>
@@ -121,13 +181,45 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>defined(<span class="hljs-literal">undefined</span>); <span class="hljs-comment">// ⇒ false</span></span></code></pre>
+      <pre><code class="hljs"><span>defined(<span class="hljs-literal">undefined</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { defined } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>defined(<span class="hljs-literal">null</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { defined } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>defined(<span class="hljs-number">0</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { defined } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>defined({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span> });
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ is: { defined } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is defined?</li><li>How to check is a given value is not undefined?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/defined.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/defined.js">JavaScript source</a>
     </p>
@@ -140,8 +232,22 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>_function(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x + <span class="hljs-number">5</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { function } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is a function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/function.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/function.js">JavaScript source</a>
     </p>
@@ -154,8 +260,31 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>integer(<span class="hljs-number">5</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { integer } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>integer(<span class="hljs-number">32.5</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { integer } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is an integer?</li><li>How to check is a given number is an integer?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/integer.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/integer.js">JavaScript source</a>
     </p>
@@ -168,8 +297,49 @@
       <pre><code class="hljs"><span>&lt;T&gt;<span class="hljs-function">(<span class="hljs-params">val: T</span>) =&gt;</span> val is NonNullable&lt;T&gt;</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>nonNullable(<span class="hljs-literal">null</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { nonNullable } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>nonNullable(<span class="hljs-literal">undefined</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { nonNullable } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>nonNullable(<span class="hljs-literal">false</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { nonNullable } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>nonNullable({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span> });
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { nonNullable } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is non nullable?</li><li>How to check is a given value is not null?</li><li>How to check is a given value is not undefined?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/nonNullable.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/nonNullable.js">JavaScript source</a>
     </p>
@@ -182,8 +352,40 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>normal(<span class="hljs-number">0.75</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { normal } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>normal(<span class="hljs-number">-1</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { normal } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>normal(<span class="hljs-number">2.5</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { normal } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is in 0 to 1 inclusive range?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/normal.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/normal.js">JavaScript source</a>
     </p>
@@ -196,8 +398,31 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>number(<span class="hljs-number">0</span> / <span class="hljs-number">0</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { number } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>number(<span class="hljs-number">15.6</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { number } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is a valid number?</li><li>How to check is a given value is not NaN?</li><li>How to check is a given value is finite?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/number.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/number.js">JavaScript source</a>
     </p>
@@ -210,8 +435,31 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>object({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span> });
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { object } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>object([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { object } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is an object?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/object.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/object.js">JavaScript source</a>
     </p>
@@ -224,8 +472,31 @@
       <pre><code class="hljs"><span>(x?: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>string(<span class="hljs-string">"Test"</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { string } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>string([<span class="hljs-string">"T"</span>, <span class="hljs-string">"e"</span>, <span class="hljs-string">"s"</span>, <span class="hljs-string">"t"</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { string } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is a string?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/string.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/string.js">JavaScript source</a>
     </p>

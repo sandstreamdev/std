@@ -57,8 +57,26 @@
       <pre><code class="hljs"><span>(keyValuePairs: [<span class="hljs-built_in">string</span>, <span class="hljs-built_in">any</span>][]) =&gt; object</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>fromEntries([
+  [<span class="hljs-string">"a"</span>, <span class="hljs-number">1</span>],
+  [<span class="hljs-string">"b"</span>, <span class="hljs-number">2</span>],
+  [<span class="hljs-string">"c"</span>, <span class="hljs-number">3</span>]
+]);
+<span class="hljs-comment">// ⇒ { a: 1, b: 2, c: 3 }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ object: { fromEntries } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to create an object from an array of key value pairs?</li><li>How to create an object from array of entries?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/object/fromEntries.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/object/fromEntries.js">JavaScript source</a>
     </p>

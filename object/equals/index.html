@@ -57,8 +57,34 @@
       <pre><code class="hljs"><span>(a: <span class="hljs-built_in">any</span>, b: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>equals({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span> }, { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span> });
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ object: { equals } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>equals(
+  { <span class="hljs-attr">b</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>] },
+  { <span class="hljs-attr">b</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>] }
+);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ object: { equals } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if two object are equal?</li><li>How to check deep object equality?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/object/equals.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/object/equals.js">JavaScript source</a>
     </p>

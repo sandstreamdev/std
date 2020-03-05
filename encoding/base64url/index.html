@@ -61,13 +61,18 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>decode(<span class="hljs-string">"PDw_Pz8-Pg"</span>); <span class="hljs-comment">// ⇒ "&lt;&lt;???&gt;&gt;"</span></span></code></pre>
+      <pre><code class="hljs"><span>decode(<span class="hljs-string">"PDw_Pz8-Pg"</span>);
+<span class="hljs-comment">// ⇒ "&lt;&lt;???&gt;&gt;"</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ encoding: { base64url: { decode } } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to decode Base64URL?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/decode.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/decode.js">JavaScript source</a>
     </p>
@@ -85,13 +90,17 @@
     
     <div class="content">
       <pre><code class="hljs"><span>decodeBytes(<span class="hljs-string">"w4Jnw6vCp20-bBsQfA"</span>);
-<span class="hljs-comment">// ⇒ [0xc2, 0x67, 0xeb, 0xa7, 0x6d, 0x3e, 0x6c, 0x1b, 0x10, 0x7c]</span></span></code></pre>
+<span class="hljs-comment">// ⇒ [0xc2, 0x67, 0xeb, 0xa7, 0x6d, 0x3e, 0x6c, 0x1b, 0x10, 0x7c]</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ encoding: { base64url: { decodeBytes } } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to decode Base64URL into a byte array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/decodeBytes.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/decodeBytes.js">JavaScript source</a>
     </p>
@@ -108,13 +117,18 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>encode(<span class="hljs-string">"&lt;&lt;???&gt;&gt;"</span>); <span class="hljs-comment">// ⇒ "PDw_Pz8-Pg"</span></span></code></pre>
+      <pre><code class="hljs"><span>encode(<span class="hljs-string">"&lt;&lt;???&gt;&gt;"</span>);
+<span class="hljs-comment">// ⇒ "PDw_Pz8-Pg"</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ encoding: { base64url: { encode } } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to encode a string as Base64URL?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/encode.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/encode.js">JavaScript source</a>
     </p>
@@ -131,14 +145,29 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>encodeBytes([<span class="hljs-number">0xc2</span>, <span class="hljs-number">0x67</span>, <span class="hljs-number">0xeb</span>, <span class="hljs-number">0xa7</span>, <span class="hljs-number">0x6d</span>, <span class="hljs-number">0x3e</span>, <span class="hljs-number">0x6c</span>, <span class="hljs-number">0x1b</span>, <span class="hljs-number">0x10</span>, <span class="hljs-number">0x7c</span>]);
-<span class="hljs-comment">// ⇒ "w4Jnw6vCp20-bBsQfA"</span></span></code></pre>
+      <pre><code class="hljs"><span>encodeBytes([
+  <span class="hljs-number">0xc2</span>,
+  <span class="hljs-number">0x67</span>,
+  <span class="hljs-number">0xeb</span>,
+  <span class="hljs-number">0xa7</span>,
+  <span class="hljs-number">0x6d</span>,
+  <span class="hljs-number">0x3e</span>,
+  <span class="hljs-number">0x6c</span>,
+  <span class="hljs-number">0x1b</span>,
+  <span class="hljs-number">0x10</span>,
+  <span class="hljs-number">0x7c</span>
+]);
+<span class="hljs-comment">// ⇒ "w4Jnw6vCp20-bBsQfA"</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ encoding: { base64url: { encodeBytes } } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to encode bytes as Base64URL?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/encodeBytes.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/encodeBytes.js">JavaScript source</a>
     </p>
@@ -155,13 +184,18 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>fromBase64(<span class="hljs-string">"PDw/Pz8+Pg=="</span>); <span class="hljs-comment">// ⇒ "PDw_Pz8-Pg"</span></span></code></pre>
+      <pre><code class="hljs"><span>fromBase64(<span class="hljs-string">"PDw/Pz8+Pg=="</span>);
+<span class="hljs-comment">// ⇒ "PDw_Pz8-Pg"</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ encoding: { base64url: { fromBase64 } } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to convert Base64 to Base64URL?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/fromBase64.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/fromBase64.js">JavaScript source</a>
     </p>
@@ -178,13 +212,18 @@
     <h3>Examples</h3>
     
     <div class="content">
-      <pre><code class="hljs"><span>toBase64(<span class="hljs-string">"PDw_Pz8-Pg"</span>); <span class="hljs-comment">// ⇒ "PDw/Pz8+Pg=="</span></span></code></pre>
+      <pre><code class="hljs"><span>toBase64(<span class="hljs-string">"PDw_Pz8-Pg"</span>);
+<span class="hljs-comment">// ⇒ "PDw/Pz8+Pg=="</span>
+</span></code></pre>
       <a class="btn-repl" onclick="tryInREPL(event, '{ encoding: { base64url: { toBase64 } } }')">Try in REPL</a>
     </div>
     <div class="repl"></div>
   
   </div>
-    
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to convert Base64URL to Base64?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/toBase64.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/encoding,base64url/toBase64.js">JavaScript source</a>
     </p>

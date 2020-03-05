@@ -57,8 +57,49 @@
       <pre><code class="hljs"><span>&lt;T&gt;<span class="hljs-function">(<span class="hljs-params">val: T</span>) =&gt;</span> val is NonNullable&lt;T&gt;</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>nonNullable(<span class="hljs-literal">null</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { nonNullable } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>nonNullable(<span class="hljs-literal">undefined</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { nonNullable } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>nonNullable(<span class="hljs-literal">false</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { nonNullable } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>nonNullable({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span> });
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ is: { nonNullable } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check is a given value is non nullable?</li><li>How to check is a given value is not null?</li><li>How to check is a given value is not undefined?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/is/nonNullable.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/is/nonNullable.js">JavaScript source</a>
     </p>

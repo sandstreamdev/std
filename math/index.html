@@ -57,8 +57,22 @@
       <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>add(<span class="hljs-number">3</span>, <span class="hljs-number">5</span>);
+<span class="hljs-comment">// ⇒ 8</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { add } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to add two values?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/add.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/add.js">JavaScript source</a>
     </p>
@@ -71,8 +85,22 @@
       <pre><code class="hljs"><span>(xs?: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>average([<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">15</span>]);
+<span class="hljs-comment">// ⇒ 7</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { average } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute average of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/average.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/average.js">JavaScript source</a>
     </p>
@@ -85,8 +113,22 @@
       <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>ceilToNearestPowerOfTwo(<span class="hljs-number">345</span>);
+<span class="hljs-comment">// ⇒ 512</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { ceilToNearestPowerOfTwo } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get the nearest power of two greater or equal to the given value/</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/ceilToNearestPowerOfTwo.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/ceilToNearestPowerOfTwo.js">JavaScript source</a>
     </p>
@@ -99,8 +141,40 @@
       <pre><code class="hljs"><span>(min: <span class="hljs-built_in">number</span>, max: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>clamp(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>)(<span class="hljs-number">5</span>);
+<span class="hljs-comment">// ⇒ 5</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clamp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>clamp(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>)(<span class="hljs-number">-5</span>);
+<span class="hljs-comment">// ⇒ 0</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clamp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>clamp(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>)(<span class="hljs-number">15</span>);
+<span class="hljs-comment">// ⇒ 10</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clamp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to clamp a value to a desired range?</li><li>How to enforce a value to be in a given range?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/clamp.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/clamp.js">JavaScript source</a>
     </p>
@@ -113,8 +187,40 @@
       <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>clampNormal(<span class="hljs-number">0.5</span>);
+<span class="hljs-comment">// ⇒ 0.5</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clampNormal } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>clampNormal(<span class="hljs-number">-0.5</span>);
+<span class="hljs-comment">// ⇒ 0</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clampNormal } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>clampNormal(<span class="hljs-number">1.5</span>);
+<span class="hljs-comment">// ⇒ 1</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clampNormal } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to clamp a value to be in 0 to 1 inclusive range?</li><li>How to clamp a value to be in the normal range?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/clampNormal.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/clampNormal.js">JavaScript source</a>
     </p>
@@ -127,8 +233,40 @@
       <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>clampPercentage(<span class="hljs-number">50</span>);
+<span class="hljs-comment">// ⇒ 50</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clampPercentage } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>clampPercentage(<span class="hljs-number">-50</span>);
+<span class="hljs-comment">// ⇒ 0</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clampPercentage } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>clampPercentage(<span class="hljs-number">150</span>);
+<span class="hljs-comment">// ⇒ 100</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { clampPercentage } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to enforce percentage be between 0% and 100%?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/clampPercentage.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/clampPercentage.js">JavaScript source</a>
     </p>
@@ -141,8 +279,22 @@
       <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>delta(<span class="hljs-number">-3</span>, <span class="hljs-number">5</span>);
+<span class="hljs-comment">// ⇒ 8</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { delta } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to calculate an absolute distance between two numbers?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/delta.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/delta.js">JavaScript source</a>
     </p>
@@ -158,8 +310,31 @@
 ) =&gt; <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>inRectangleRange(<span class="hljs-number">50</span>, <span class="hljs-number">100</span>)(<span class="hljs-number">25</span>, <span class="hljs-number">50</span>);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { inRectangleRange } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>inRectangleRange(<span class="hljs-number">50</span>, <span class="hljs-number">100</span>)(<span class="hljs-number">-25</span>, <span class="hljs-number">50</span>);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { inRectangleRange } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if a point is inside a rectangle defined by width and height?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/inRectangleRange.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/inRectangleRange.js">JavaScript source</a>
     </p>
@@ -172,8 +347,40 @@
       <pre><code class="hljs"><span>(t: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>lerp(<span class="hljs-number">0.5</span>)(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ⇒ 5</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { lerp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>lerp(<span class="hljs-number">0</span>)(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ⇒ 0</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { lerp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>lerp(<span class="hljs-number">1</span>)(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ⇒ 10</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { lerp } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to linearly interpolate between two values?</li><li>How to interpolate two numbers?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/lerp.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/lerp.js">JavaScript source</a>
     </p>
@@ -186,8 +393,27 @@
       <pre><code class="hljs"><span>(f: <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">xs: <span class="hljs-built_in">number</span>[]</span>) =&gt;</span> <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>maximumBy(<span class="hljs-function">(<span class="hljs-params">{ age }</span>) =&gt;</span> age)([
+  { <span class="hljs-attr">age</span>: <span class="hljs-number">13</span> },
+  { <span class="hljs-attr">age</span>: <span class="hljs-number">20</span> },
+  { <span class="hljs-attr">age</span>: <span class="hljs-number">7</span> },
+  { <span class="hljs-attr">age</span>: <span class="hljs-number">18</span> }
+]);
+<span class="hljs-comment">// ⇒ { age: 20 }</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { maximumBy } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to find a maximum element by a given function?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/maximumBy.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/maximumBy.js">JavaScript source</a>
     </p>
@@ -200,8 +426,22 @@
       <pre><code class="hljs"><span>(xs?: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>median([<span class="hljs-number">-5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">29</span>, <span class="hljs-number">43</span>]);
+<span class="hljs-comment">// ⇒ 3</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { median } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute a median of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/median.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/median.js">JavaScript source</a>
     </p>
@@ -214,8 +454,31 @@
       <pre><code class="hljs"><span>([a, b]: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]) =&gt; [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>]</span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>minMax([<span class="hljs-number">5</span>, <span class="hljs-number">3</span>]);
+<span class="hljs-comment">// ⇒ [3, 5]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { minMax } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>minMax([<span class="hljs-number">3</span>, <span class="hljs-number">5</span>]);
+<span class="hljs-comment">// ⇒ [3, 5]</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { minMax } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get ordered values where the lower is the first and the higher is the second?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/minMax.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/minMax.js">JavaScript source</a>
     </p>
@@ -228,8 +491,31 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[]) =&gt; <span class="hljs-built_in">boolean</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>sameSign([<span class="hljs-number">-1</span>, <span class="hljs-number">-2</span>, <span class="hljs-number">-3</span>]);
+<span class="hljs-comment">// ⇒ true</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { sameSign } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>sameSign([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">-3</span>]);
+<span class="hljs-comment">// ⇒ false</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { sameSign } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to check if all values has the same sign?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/sameSign.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/sameSign.js">JavaScript source</a>
     </p>
@@ -242,8 +528,49 @@
       <pre><code class="hljs"><span>(x: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>sign(<span class="hljs-number">3</span>);
+<span class="hljs-comment">// ⇒ 1</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { sign } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>sign(<span class="hljs-number">-5</span>);
+<span class="hljs-comment">// ⇒ 5</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { sign } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>sign(<span class="hljs-number">0</span>);
+<span class="hljs-comment">// ⇒ 0</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { sign } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+
+    <div class="content">
+      <pre><code class="hljs"><span>sign(<span class="hljs-number">-0</span>);
+<span class="hljs-comment">// ⇒ 0</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { sign } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to get a sign of a number?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/sign.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/sign.js">JavaScript source</a>
     </p>
@@ -256,8 +583,33 @@
       <pre><code class="hljs"><span>(xs: <span class="hljs-built_in">number</span>[], origin?: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>standardDeviation([
+  <span class="hljs-number">96</span>,
+  <span class="hljs-number">81</span>,
+  <span class="hljs-number">68</span>,
+  <span class="hljs-number">79</span>,
+  <span class="hljs-number">23</span>,
+  <span class="hljs-number">13</span>,
+  <span class="hljs-number">13</span>,
+  <span class="hljs-number">59</span>,
+  <span class="hljs-number">44</span>,
+  <span class="hljs-number">86</span>
+]);
+<span class="hljs-comment">// ⇒ (2 * Math.sqrt(10922 / 5)) / 3</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { standardDeviation } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to compute a standard deviation of an array?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/standardDeviation.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/standardDeviation.js">JavaScript source</a>
     </p>
@@ -270,8 +622,22 @@
       <pre><code class="hljs"><span>(a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span></span></code></pre>
     </div>
   </div>
+    <div class="examples">
+    <h3>Examples</h3>
     
-    
+    <div class="content">
+      <pre><code class="hljs"><span>subtract(<span class="hljs-number">3</span>, <span class="hljs-number">5</span>);
+<span class="hljs-comment">// ⇒ -2</span>
+</span></code></pre>
+      <a class="btn-repl" onclick="tryInREPL(event, '{ math: { subtract } }')">Try in REPL</a>
+    </div>
+    <div class="repl"></div>
+  
+  </div>
+    <div class="questions">
+      <h3>Questions</h3>
+      <ul><li>How to subtract two numbers?</li></ul>
+    </div>
     <p class="meta">
       <a href="https://github.com/sandstreamdev/std/blob/master/math/subtract.ts">TypeScript source</a> • <a href="https://github.com/sandstreamdev/std/blob/master/math/subtract.js">JavaScript source</a>
     </p>
