@@ -16,5 +16,5 @@
       "content": "are([1, 2, 3], 8, [1, 3], \"test\"); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if all the given values are arrays?"]
 }

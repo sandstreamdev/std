@@ -12,5 +12,5 @@
       "content": "lengthDiffers([6, 7], [1, 2]); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if array lengths differ?"]
 }

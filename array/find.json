@@ -12,5 +12,5 @@
       "content": "find(x => x > 2)([1, 2, -3, -5, -7]); // ⇒ undefined"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to find an element of an array by a given predicate?"]
 }

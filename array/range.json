@@ -8,5 +8,5 @@
       "content": "range(3); // ⇒ [0, 1, 2]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to create array of all integers from 0 to N exclusive?"]
 }

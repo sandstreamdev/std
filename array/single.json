@@ -16,5 +16,5 @@
       "content": "single([]); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if an array contains only one element?"]
 }

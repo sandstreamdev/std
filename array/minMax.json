@@ -16,5 +16,8 @@
       "content": "minMax([]); // ⇒ [undefined, undefined]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to find minimum and maximum values of an array?",
+    "How to get the min/max element of an array?"
+  ]
 }

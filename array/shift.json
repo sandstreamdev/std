@@ -16,5 +16,5 @@
       "content": "shift(3)([1, 2, 3, 4, 5]); // ⇒ [4, 5, 1, 2, 3]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to shift an array?"]
 }

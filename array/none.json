@@ -12,5 +12,5 @@
       "content": "none([1, 2, 3]); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if array is empty?"]
 }

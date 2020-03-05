@@ -12,5 +12,5 @@
       "content": "take(10)([1, 2, 3, 4, 5]); // ⇒ [1, 2, 3, 4, 5]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to get first N number of elements from an array?"]
 }

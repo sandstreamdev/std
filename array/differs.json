@@ -12,5 +12,9 @@
       "content": "differs([1, 2, 3], [1, 2, 3]); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if two arrays differs?",
+    "How to check if two arrays are not equal?",
+    "How to check if two arrays are equal or not?"
+  ]
 }

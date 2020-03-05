@@ -20,5 +20,8 @@
       "content": "multiple([]); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if an array contains multiple elements?",
+    "How to check whether multiple values exist within an array?"
+  ]
 }

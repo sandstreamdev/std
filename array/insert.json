@@ -12,5 +12,5 @@
       "content": "insert(1)('d')(['a', 'b', 'c']);\n// ⇒ ['a', 'd', 'b', 'c']"
     }
   ],
-  "questions": ["TODO: List questions that may this function answer."]
+  "questions": ["How to insert an element to an array at a given position?"]
 }

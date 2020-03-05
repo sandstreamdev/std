@@ -8,5 +8,5 @@
       "content": "duplicates([1, 2, 3, 4, 3, 4, 3, 6]); // ⇒ [3, 4, 3]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to find duplicates in an array?"]
 }

@@ -8,5 +8,5 @@
       "content": "repeat(3)(\"test\"); // ⇒ [\"test\", \"test\", \"test\"]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to repeat a value N times?"]
 }
