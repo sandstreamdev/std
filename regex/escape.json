@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "escape(); // ⇒ TODO"
+      "content": "escape(\"te.t\").test(\"text\"); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to properly escape a regex string?"]
 }
