@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "includes(); // ⇒ TODO"
+      "content": "includes(\"brown fox\")(\"The quick brown fox jumps over the lazy dog\"); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "includes(\"brown dog\")(\"The quick brown fox jumps over the lazy dog\"); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check is a string contains a given substring?"]
 }

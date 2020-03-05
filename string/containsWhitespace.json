@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "containsWhitespace(); // ⇒ TODO"
+      "content": "containsWhitespace(\"test string\"); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "containsWhitespace(\"test\"); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a string contains whitespace?"]
 }

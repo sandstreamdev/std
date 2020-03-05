@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "startsWith(); // ⇒ TODO"
+      "content": "startsWith(\"The\")(\"The quick brown fox jumps over the lazy dog\"); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "startsWith(\"Quick\")(\"The quick brown fox jumps over the lazy dog\"); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a string starts with a given substring?"]
 }

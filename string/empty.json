@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "empty(); // ⇒ TODO"
+      "content": "empty(); // ⇒ \"\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check get an empty string?"]
 }
