@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "debounce(); // ⇒ TODO"
+      "content": "const f = () => console.log(\"Test\");\nconst debounced = debounce(f, 2000);\ndebounced();\nsetTimeout(debounced, 1000);\nsetTimeout(debounced, 3000);"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to make function fire after some time not being called?",
+    "How to debounce input events?",
+    "How to debounce a function?"
+  ]
 }
