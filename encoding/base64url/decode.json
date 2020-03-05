@@ -8,5 +8,5 @@
       "content": "decode(\"PDw_Pz8-Pg\"); // ⇒ \"<<???>>\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to decode Base64URL?"]
 }
