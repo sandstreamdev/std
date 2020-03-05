@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "when(); // ⇒ TODO"
+      "content": "when(x => x > 0)(x => console.log(x))(5);\nwhen(x => x > 0)(x => console.log(x))(-3);"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to run a function only when a condition is satisfied?"]
 }

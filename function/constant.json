@@ -5,8 +5,10 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "constant(); // ⇒ TODO"
+      "content": "constant(3)(\"anything\"); // ⇒ 3"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to create a function that always returns the same value despite given arguments?"
+  ]
 }

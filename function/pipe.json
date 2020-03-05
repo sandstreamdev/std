@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "pipe(); // ⇒ TODO"
+      "content": "pipe(x => x * x, x => x + 1)(3); // ⇒ 10"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to pipe an argument through a function?"]
 }

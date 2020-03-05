@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "compose(); // ⇒ TODO"
+      "content": "compose(x => x * x, x => x + 1)(3); // ⇒ 16"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to compose functions?"]
 }

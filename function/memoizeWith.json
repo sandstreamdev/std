@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "memoizeWith(); // ⇒ TODO"
+      "content": "const f = ({ x }) => { console.log(x); return x + 1; };\nconst memoized = memoizeWith((a, b) => a.x === b.x)(f);\nmemoized({ x: 5 });\nmemoized({ x: 5 });\nmemoized({ x: 5 });\nmemoized({ x: 3 });"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to memoize a function with custom equality function?"]
 }

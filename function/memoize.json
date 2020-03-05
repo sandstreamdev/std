@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "memoize(); // ⇒ TODO"
+      "content": "const f = x => { console.log(x); return x + 1; };\nconst memoized = memoize(f);\nmemoized(5);\nmemoized(5);\nmemoized(5);\nmemoized(3);"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to memoize a function?"]
 }
