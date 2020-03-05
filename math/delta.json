@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "delta(); // ⇒ TODO"
+      "content": "delta(-3, 5); // ⇒ 8"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to calculate an absolute distance between two numbers?"]
 }

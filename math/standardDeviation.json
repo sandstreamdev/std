@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "standardDeviation(); // ⇒ TODO"
+      "content": "standardDeviation([96, 81, 68, 79, 23, 13, 13, 59, 44, 86]); // ⇒ (2 * Math.sqrt(10922 / 5)) / 3"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to compute a standard deviation of an array?"]
 }

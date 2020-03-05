@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sameSign(); // ⇒ TODO"
+      "content": "sameSign([-1, -2, -3]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "sameSign([1, 2, -3]); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if all values has the same sign?"]
 }

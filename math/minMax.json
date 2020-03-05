@@ -5,8 +5,14 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "minMax(); // ⇒ TODO"
+      "content": "minMax([5, 3]); // ⇒ [3, 5]"
+    },
+    {
+      "language": "javascript",
+      "content": "minMax([3, 5]); // ⇒ [3, 5]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to get ordered values where the lower is the first and the higher is the second?"
+  ]
 }

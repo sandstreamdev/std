@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "subtract(); // ⇒ TODO"
+      "content": "subtract(3, 5); // ⇒ -2"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to subtract two numbers?"]
 }

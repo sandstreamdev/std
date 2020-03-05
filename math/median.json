@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "median(); // ⇒ TODO"
+      "content": "median([-5, 3, 2, 29, 43]); // ⇒ 3"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to compute a median of an array?"]
 }

@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "average(); // ⇒ TODO"
+      "content": "average([2, 4, 15]); // ⇒ 7"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to compute average of an array?"]
 }

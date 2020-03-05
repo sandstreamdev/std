@@ -5,8 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "clamp(); // ⇒ TODO"
+      "content": "clamp(0, 10)(5); // ⇒ 5"
+    },
+    {
+      "language": "javascript",
+      "content": "clamp(0, 10)(-5); // ⇒ 0"
+    },
+    {
+      "language": "javascript",
+      "content": "clamp(0, 10)(15); // ⇒ 10"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to clamp a value to a desired range?",
+    "How to enforce a value to be in a given range?"
+  ]
 }

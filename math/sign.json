@@ -5,8 +5,20 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sign(); // ⇒ TODO"
+      "content": "sign(3); // ⇒ 1"
+    },
+    {
+      "language": "javascript",
+      "content": "sign(-5); // ⇒ 5"
+    },
+    {
+      "language": "javascript",
+      "content": "sign(0); // ⇒ 0"
+    },
+    {
+      "language": "javascript",
+      "content": "sign(-0); // ⇒ 0"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to get a sign of a number?"]
 }
