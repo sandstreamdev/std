@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "length(); // ⇒ TODO"
+      "content": "length({ a: 1, b: 2, c: 3 }); // ⇒ 3"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check how many entries are in an object?"]
 }

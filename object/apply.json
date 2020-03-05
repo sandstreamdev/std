@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "apply(); // ⇒ TODO"
+      "content": "const lower = text => text.toLowerCase();\nconst upper = text => text.toUpperCase();\n\napply({ lower, upper })(\"TeSt\"); // ⇒ { lower: \"test\", upper: \"TEST\" }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to apply a value over an object of functions?"]
 }

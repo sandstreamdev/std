@@ -5,8 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "equals(); // ⇒ TODO"
+      "content": "equals({ a: 1 }, { a: 1 }); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "equals({ b: [1, 2] }, { b: [1, 2] }); // ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if two object are equal?",
+    "How to check deep object equality?"
+  ]
 }

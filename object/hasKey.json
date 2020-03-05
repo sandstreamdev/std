@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "hasKey(); // ⇒ TODO"
+      "content": "hasKey(\"c\")({ a: 1, b: 2, c: 3 }); // ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if an object contains a given key?"]
 }

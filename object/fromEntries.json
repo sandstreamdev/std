@@ -5,8 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "fromEntries(); // ⇒ TODO"
+      "content": "fromEntries([[\"a\", 1], [\"b\", 2], [\"c\", 3]]); // ⇒ { a: 1, b: 2, c: 3 }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to create an object from an array of key value pairs?",
+    "How to create an object from array of entries?"
+  ]
 }

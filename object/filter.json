@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "filter(); // ⇒ TODO"
+      "content": "filter(x => x % 2 !== 0)(({ a: 1, b: 2, c: 3 }); // ⇒ { a: 1, c: 3 }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to filter an object?"]
 }

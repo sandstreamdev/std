@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "findKey(); // ⇒ TODO"
+      "content": "findKey(({ x }) => x % 2 === 0)(({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } }); // ⇒ \"b\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to find a key of an object by a function?"]
 }

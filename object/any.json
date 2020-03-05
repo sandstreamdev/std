@@ -5,8 +5,24 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "any(); // ⇒ TODO"
+      "content": "any({ a: 1, b: 2, c: 3 }); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "any({ }); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "any(null); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "any(undefined); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if an object is not empty?",
+    "How to check if an object contains some values?",
+    "How to check if an object is not null or undefined?"
+  ]
 }
