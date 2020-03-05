@@ -1,6 +1,6 @@
 {
   "name": "enumerable",
-  "description": "Creates a 1 to 1 mapping of given values as an object.",
+  "description": "Creates a 1 to 1 mapping of the given values as an object.",
   "signature": "(...xs: string[]) => object",
   "examples": [
     {
@@ -8,5 +8,5 @@
       "content": "enumerable('TEST', 'X', 'Y');\n// ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }"
     }
   ],
-  "questions": ["How to create object of the same keys and values?"]
+  "questions": ["How to create an object of the same keys and values?"]
 }

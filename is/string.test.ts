@@ -3,7 +3,7 @@
 import string from "./string.ts";
 
 describe("string", () => {
-  it("checks if given value is a string", () => {
+  it("checks if the given value is a string", () => {
     expect(string("test")).toBe(true);
     expect(string("")).toBe(true);
 

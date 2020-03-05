@@ -1,6 +1,6 @@
 {
   "name": "function",
-  "description": "Checks if given value is a function.",
+  "description": "Checks if the given value is a function.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
@@ -8,5 +8,5 @@
       "content": "_function(x => x + 5);\n// ⇒ true"
     }
   ],
-  "questions": ["How to check is a given value is a function?"]
+  "questions": ["How to check if a given value is a function?"]
 }

@@ -13,7 +13,7 @@
     }
   ],
   "questions": [
-    "How to check if two object are equal?",
+    "How to check if two objects are equal?",
     "How to check deep object equality?"
   ]
 }

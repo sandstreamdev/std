@@ -6,7 +6,7 @@ import integer from "./integer.ts";
 import range from "../array/range.ts";
 
 describe("integer", () => {
-  it("checks if given value is an integer", () => {
+  it("checks if the given value is an integer", () => {
     expect(integer(128)).toBe(true);
     expect(integer(0.5)).toBe(false);
     expect(integer(2 / 3)).toBe(false);

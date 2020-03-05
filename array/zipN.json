@@ -1,6 +1,6 @@
 {
   "name": "zipN",
-  "description": "Zips given arrays",
+  "description": "Zips the given arrays together into pairs.",
   "signature": "(...xs: any[][]) => any[][]",
   "examples": [
     {

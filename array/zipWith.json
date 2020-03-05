@@ -1,6 +1,6 @@
 {
   "name": "zipWith",
-  "description": "Zips given arrays together with the given function.",
+  "description": "Zips the given arrays together with the given function.",
   "signature": "(\n  f?: (x: any, y: any) => any[]\n) => (xs: any[], ys: any[]) => any[][]",
   "examples": [
     {

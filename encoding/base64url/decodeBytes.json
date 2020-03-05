@@ -1,6 +1,6 @@
 {
   "name": "decodeBytes",
-  "description": "Decodes the given Base64URL back into byte array.",
+  "description": "Decodes the given Base64URL back into a byte array.",
   "signature": "(text: string, context?: DecodeContext) => number[]",
   "examples": [
     {

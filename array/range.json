@@ -8,5 +8,5 @@
       "content": "range(3);\n// ⇒ [0, 1, 2]"
     }
   ],
-  "questions": ["How to create array of all integers from 0 to N exclusive?"]
+  "questions": ["How to create an array of all integers from 0 to N exclusive?"]
 }

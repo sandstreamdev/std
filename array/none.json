@@ -12,5 +12,5 @@
       "content": "none([1, 2, 3]);\n// ⇒ false"
     }
   ],
-  "questions": ["How to check if array is empty?"]
+  "questions": ["How to check if an array is empty?"]
 }

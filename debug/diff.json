@@ -1,6 +1,6 @@
 {
   "name": "diff",
-  "description": "Computes a deep difference between two values (primitives, objects, arrays, etc.).",
+  "description": "Computes a deep difference between the two values (primitives, objects, arrays, etc.).",
   "signature": "(\n  obj1?: {\n    [index: string]: any;\n  },\n  obj2?: {\n    [index: string]: any;\n  }\n) => object",
   "examples": [
     {

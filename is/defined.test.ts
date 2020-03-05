@@ -3,7 +3,7 @@
 import defined from "./defined.ts";
 
 describe("defined", () => {
-  it("checks if given value is defined", () => {
+  it("checks if the given value is defined", () => {
     expect(defined(undefined)).toBe(false);
 
     expect(defined(null)).toBe(true);

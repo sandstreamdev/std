@@ -1,6 +1,6 @@
 {
   "name": "number",
-  "description": "Checks if given value is a number.",
+  "description": "Checks if the given value is a number.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
@@ -13,8 +13,8 @@
     }
   ],
   "questions": [
-    "How to check is a given value is a valid number?",
-    "How to check is a given value is not NaN?",
-    "How to check is a given value is finite?"
+    "How to check if a given value is a valid number?",
+    "How to check if a given value is not NaN?",
+    "How to check if a given value is finite?"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "date",
-  "description": "Checks if given value is a Date object.",
+  "description": "Checks if the given value is a Date object.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
@@ -12,5 +12,5 @@
       "content": "date(123);\n// ⇒ false"
     }
   ],
-  "questions": ["How to check is a given value is Date object?"]
+  "questions": ["How to check if a given value is a Date object?"]
 }

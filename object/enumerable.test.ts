@@ -3,7 +3,7 @@
 import enumerable from "./enumerable.ts";
 
 describe("enumerable", () => {
-  it("creates a 1 to 1 mapping of given values as an object", () => {
+  it("creates a 1 to 1 mapping of the given values as an object", () => {
     expect(enumerable("TEST", "X", "Y")).toEqual({
       TEST: "TEST",
       X: "X",

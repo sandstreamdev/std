@@ -16,5 +16,5 @@
       "content": "clampPercentage(150);\n// ⇒ 100"
     }
   ],
-  "questions": ["How to enforce percentage be between 0% and 100%?"]
+  "questions": ["How to enforce a percentage be between 0% and 100%?"]
 }

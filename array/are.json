@@ -1,6 +1,6 @@
 {
   "name": "are",
-  "description": "Checks if given arguments are all `Arrays`.",
+  "description": "Checks if the given arguments are all `Arrays`.",
   "signature": "(...xs: any[]) => boolean",
   "examples": [
     {

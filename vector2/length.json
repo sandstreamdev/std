@@ -1,6 +1,6 @@
 {
   "name": "length",
-  "description": "Calculates length/magnitude of the given vector.",
+  "description": "Calculates the length/magnitude of the given vector.",
   "signature": "([x, y]: [number, number]) => number",
   "examples": [
     {
@@ -9,7 +9,7 @@
     }
   ],
   "questions": [
-    "How to compute length of a vector?",
-    "How to compute magnitude of a vector?"
+    "How to compute the length of a vector?",
+    "How to compute the magnitude of a vector?"
   ]
 }

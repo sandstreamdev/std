@@ -1,6 +1,6 @@
 {
   "name": "fromEntries",
-  "description": "Creates an object from array of key value pairs (entries).",
+  "description": "Creates an object from an array  of key-value pairs (entries).",
   "signature": "(keyValuePairs: [string, any][]) => object",
   "examples": [
     {
@@ -9,7 +9,7 @@
     }
   ],
   "questions": [
-    "How to create an object from an array of key value pairs?",
-    "How to create an object from array of entries?"
+    "How to create an object from an array of key-value pairs?",
+    "How to create an object from an array  of entries?"
   ]
 }

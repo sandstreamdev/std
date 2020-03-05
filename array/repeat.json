@@ -1,6 +1,6 @@
 {
   "name": "repeat",
-  "description": "Repeats the given element by given count of times.",
+  "description": "Repeats the given element by the given count of times.",
   "signature": "(count: number) => (value: any) => any[]",
   "examples": [
     {

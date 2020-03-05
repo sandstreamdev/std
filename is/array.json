@@ -1,6 +1,6 @@
 {
   "name": "array",
-  "description": "Checks if the given argument is array.",
+  "description": "Checks if the given argument is an array.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
@@ -12,5 +12,5 @@
       "content": "array({ a: 1 });\n// ⇒ false"
     }
   ],
-  "questions": ["How to check is a given value is an array?"]
+  "questions": ["How to check if a given value is an array?"]
 }

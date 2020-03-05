@@ -1,6 +1,6 @@
 {
   "name": "find",
-  "description": "Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.",
+  "description": "Finds an element by a predicate function within the given array, otherwise, it returns the given fallback value or undefined when fallback is not present.",
   "signature": "(\n  predicate: (value: any, index: number, context: any[]) => boolean,\n  fallback?: any\n) => (xs: any[]) => any",
   "examples": [
     {

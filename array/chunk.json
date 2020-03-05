@@ -1,6 +1,6 @@
 {
   "name": "chunk",
-  "description": "Splits the given array into array of chunks of up to the given length.",
+  "description": "Splits the given array into an array of chunks of up to the given length.",
   "signature": "(count: number) => (xs: any[]) => any[]",
   "examples": [
     {

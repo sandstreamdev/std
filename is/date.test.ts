@@ -3,7 +3,7 @@
 import date from "./date.ts";
 
 describe("date", () => {
-  it("checks if given value is a Date object", () => {
+  it("checks if the given value is a Date object", () => {
     const a = new Date("2019-12-13T12:15:00.000Z");
 
     expect(date(a)).toBe(true);

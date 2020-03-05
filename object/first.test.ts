@@ -7,7 +7,7 @@ describe("first", () => {
     expect(first({ a: 1, b: 2, c: 3 })).toBe(1);
   });
 
-  it("follows default object iteration order", () => {
+  it("follows the default object iteration order", () => {
     expect(first({ a: 1, 0: "test", 76: "test2", b: 2, c: 3 })).toBe("test");
   });
 

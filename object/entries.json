@@ -1,6 +1,6 @@
 {
   "name": "entries",
-  "description": "Lists key value pairs (entries) present in the given object.",
+  "description": "Lists key-value pairs (entries) present in the given object.",
   "signature": "{\n  <T>(\n    o:\n      | {\n          [s: string]: T;\n        }\n      | ArrayLike<T>\n  ): [string, T][];\n  (o: {}): [string, any][];\n}",
   "examples": [
     {
@@ -10,6 +10,6 @@
   ],
   "questions": [
     "How to get entries of an object?",
-    "How to get an array of key value pairs of an object?"
+    "How to get an array of key-value pairs of an object?"
   ]
 }

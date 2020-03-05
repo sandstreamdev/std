@@ -9,6 +9,6 @@
     }
   ],
   "questions": [
-    "How to find elements which are present in first array and not in the second?"
+    "How to find elements which are present in the first array and not in the second?"
   ]
 }

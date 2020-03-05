@@ -8,5 +8,5 @@
       "content": "skip(2)([1, 2, 3, 4, 5]);\n// ⇒ [3, 4, 5]"
     }
   ],
-  "questions": ["How to skip first few elements of an array?"]
+  "questions": ["How to skip the first few elements of an array?"]
 }

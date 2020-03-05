@@ -1,6 +1,6 @@
 {
   "name": "average",
-  "description": "Calculates the average of given array of numbers.",
+  "description": "Calculates the average of the given array of numbers.",
   "signature": "(xs?: number[]) => number",
   "examples": [
     {
@@ -8,5 +8,5 @@
       "content": "average([2, 4, 15]);\n// ⇒ 7"
     }
   ],
-  "questions": ["How to compute average of an array?"]
+  "questions": ["How to compute the average of an array?"]
 }

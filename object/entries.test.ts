@@ -3,7 +3,7 @@
 import entries from "./entries.ts";
 
 describe("entries", () => {
-  it("lists key value pairs (entries) present in the given object", () => {
+  it("lists key-value pairs (entries) present in the given object", () => {
     expect(entries({ a: 1, b: 2, c: 3 })).toEqual([
       ["a", 1],
       ["b", 2],

@@ -1,6 +1,6 @@
 {
   "name": "lengthDiffers",
-  "description": "Checks if lengths of given arrays differ.",
+  "description": "Checks if lengths of the given arrays differ.",
   "signature": "(a: any[], b: any[]) => boolean",
   "examples": [
     {
@@ -12,5 +12,8 @@
       "content": "lengthDiffers([6, 7], [1, 2]);\n// ⇒ false"
     }
   ],
-  "questions": ["How to check if array lengths differ?"]
+  "questions": [
+    "How to check if array lengths differ?",
+    "How to check if the given arrays have different lengths?"
+  ]
 }

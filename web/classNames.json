@@ -1,6 +1,6 @@
 {
   "name": "classNames",
-  "description": "Composes class name from truthy values with support of string and objects.",
+  "description": "Composes class name from truthy values with the support of string and objects.",
   "signature": "(...xs: any[]) => any",
   "examples": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "questions": [
-    "How to create a class name from list of string and/or objects?"
+    "How to create a class name from an array of strings and/or objects?"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "lerp",
-  "description": "Linearly interpolates two given values by normal value of their distance.",
+  "description": "Linearly interpolates two given values by the normal value of their distance.",
   "signature": "(t: number) => (a: number, b: number) => number",
   "examples": [
     {

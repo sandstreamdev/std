@@ -1,6 +1,6 @@
 {
   "name": "take",
-  "description": "Takes up to given count of elements.",
+  "description": "Takes up to a given count of elements.",
   "signature": "(count: number) => (xs: any[]) => any[]",
   "examples": [
     {
@@ -12,5 +12,5 @@
       "content": "take(10)([1, 2, 3, 4, 5]);\n// ⇒ [1, 2, 3, 4, 5]"
     }
   ],
-  "questions": ["How to get first N number of elements from an array?"]
+  "questions": ["How to get the first N number of elements from an array?"]
 }

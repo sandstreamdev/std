@@ -3,7 +3,7 @@
 import object from "./object.ts";
 
 describe("object", () => {
-  it("checks if given value is an object", () => {
+  it("checks if the given value is an object", () => {
     expect(object({})).toBe(true);
     expect(object({ a: 1, b: 2, c: 3 })).toBe(true);
     expect(object([])).toBe(false);

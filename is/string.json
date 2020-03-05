@@ -1,6 +1,6 @@
 {
   "name": "string",
-  "description": "Checks if given value is a string.",
+  "description": "Checks if the given value is a string.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
@@ -12,5 +12,5 @@
       "content": "string(['T', 'e', 's', 't']);\n// ⇒ false"
     }
   ],
-  "questions": ["How to check is a given value is a string?"]
+  "questions": ["How to check if a given value is a string?"]
 }

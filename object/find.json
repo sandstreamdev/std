@@ -8,5 +8,5 @@
       "content": "find(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });\n// ⇒ { x: 2 }"
     }
   ],
-  "questions": ["How to find a value of an object by a function?"]
+  "questions": ["How to find the value of an object by a predicate function?"]
 }

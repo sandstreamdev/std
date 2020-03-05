@@ -1,6 +1,6 @@
 {
   "name": "integer",
-  "description": "Checks if given value is an integer.",
+  "description": "Checks if the given value is an integer.",
   "signature": "(x?: number) => boolean",
   "examples": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "questions": [
-    "How to check is a given value is an integer?",
-    "How to check is a given number is an integer?"
+    "How to check if a given value is an integer?",
+    "How to check if a given number is an integer?"
   ]
 }

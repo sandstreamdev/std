@@ -8,5 +8,5 @@
       "content": "const event = {\n  preventDefault: () => console.log(\"preventDefault\"),\n  stopPropagation: () => console.log(\"stopPropagation\")\n};\n\ncancel(event);"
     }
   ],
-  "questions": ["How to stop propagation and prevent default at once?"]
+  "questions": ["How to stop event propagation and prevent default at once?"]
 }

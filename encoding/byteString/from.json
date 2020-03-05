@@ -1,6 +1,6 @@
 {
   "name": "from",
-  "description": "Converts string to byte array.",
+  "description": "Converts a string to a byte array.",
   "signature": "(byteString: string) => number[]",
   "examples": [
     {

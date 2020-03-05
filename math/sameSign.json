@@ -12,5 +12,5 @@
       "content": "sameSign([1, 2, -3]);\n// ⇒ false"
     }
   ],
-  "questions": ["How to check if all values has the same sign?"]
+  "questions": ["How to check if all values have the same sign?"]
 }

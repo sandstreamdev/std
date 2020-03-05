@@ -1,6 +1,6 @@
 {
   "name": "unique",
-  "description": "Returns only unique elements of the given array.",
+  "description": "Returns unique elements of the given array.",
   "signature": "(xs: any[]) => any[]",
   "examples": [
     {

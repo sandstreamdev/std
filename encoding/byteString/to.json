@@ -1,6 +1,6 @@
 {
   "name": "to",
-  "description": "Coverts byte array to string.",
+  "description": "Coverts a byte array into a string.",
   "signature": "(bytes: number[]) => string",
   "examples": [
     {

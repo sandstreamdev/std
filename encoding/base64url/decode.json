@@ -1,6 +1,6 @@
 {
   "name": "decode",
-  "description": "Decodes the given Base64URL back into string.",
+  "description": "Decodes the given Base64URL back into a string.",
   "signature": "(text: string, context?: DecodeContext) => string",
   "examples": [
     {
