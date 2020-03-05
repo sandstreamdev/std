@@ -5,8 +5,23 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "validName(); // ⇒ TODO"
+      "content": "validName(\"my:file.png\"); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "validName(\"file.txt\"); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "validName(\"../file.txt\"); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "validName(\"COM1\"); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to find valid Windows file name?",
+    "How to check if a given string is a legal/valid file name under Windows?"
+  ]
 }
