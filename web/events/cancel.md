@@ -28,4 +28,4 @@ cancel(event);
 
 ## Questions
 
-- How to stop propagation and prevent default at once?
+- How to stop event propagation and prevent default at once?

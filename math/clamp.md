@@ -31,5 +31,5 @@ clamp(0, 10)(15);
 
 ## Questions
 
-- How to clamp a value to a desired range?
+- How to clamp value to the desired range?
 - How to enforce a value to be in a given range?

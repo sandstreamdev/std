@@ -31,4 +31,4 @@ openInNewTabIntent({ ctrlKey: true });
 
 ## Questions
 
-- How to check if user wants to open a new tab using history API?
+- How to check if the user wants to open a new tab using history API?

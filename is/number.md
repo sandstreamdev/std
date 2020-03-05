@@ -1,6 +1,6 @@
 # number
 
-Checks if given value is a number.
+Checks if the given value is a number.
 
 ## Type signature
 
@@ -26,6 +26,6 @@ number(15.6);
 
 ## Questions
 
-- How to check is a given value is a valid number?
-- How to check is a given value is not NaN?
-- How to check is a given value is finite?
+- How to check if a given value is a valid number?
+- How to check if a given value is not NaN?
+- How to check if a given value is finite?

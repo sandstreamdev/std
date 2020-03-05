@@ -1,6 +1,6 @@
 # zip
 
-Zips given arrays together into pairs.
+Zips the given arrays together into pairs.
 
 ## Type signature
 

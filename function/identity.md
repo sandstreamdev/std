@@ -26,5 +26,5 @@ identity("test");
 
 ## Questions
 
-- How to use identity function?
+- How to use the identity function?
 - Where and why is identity function useful?

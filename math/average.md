@@ -1,6 +1,6 @@
 # average
 
-Calculates the average of given array of numbers.
+Calculates the average of the given array of numbers.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ average([2, 4, 15]);
 
 ## Questions
 
-- How to compute average of an array?
+- How to compute the average of an array?

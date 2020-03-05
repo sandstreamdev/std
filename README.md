@@ -50,7 +50,7 @@ any([1, 2, 3]);
 
 #### are
 
-Checks if given arguments are all `Arrays`.
+Checks if the given arguments are all `Arrays`.
 
 ##### Type signature
 
@@ -85,7 +85,7 @@ are([1, 2, 3], 8, [1, 3], "test");
 
 #### chunk
 
-Splits the given array into array of chunks of up to the given length.
+Splits the given array into an array of chunks of up to the given length.
 
 ##### Type signature
 
@@ -137,7 +137,7 @@ difference([1, 2, 3, 4, 5, 6], [2, 4]);
 
 ##### Questions
 
-- How to find elements which are present in first array and not in the second?
+- How to find elements which are present in the first array and not in the second?
 
 #### differs
 
@@ -167,7 +167,7 @@ differs([1, 2, 3], [1, 2, 3]);
 
 ##### Questions
 
-- How to check if two arrays differs?
+- How to check if two arrays differ?
 - How to check if two arrays are not equal?
 - How to check if two arrays are equal or not?
 
@@ -317,7 +317,7 @@ ys;
 
 #### find
 
-Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.
+Finds an element by a predicate function within the given array, otherwise, it returns the given fallback value or undefined when fallback is not present.
 
 ##### Type signature
 
@@ -555,7 +555,7 @@ last([]);
 
 #### lengthDiffers
 
-Checks if lengths of given arrays differ.
+Checks if lengths of the given arrays differ.
 
 ##### Type signature
 
@@ -582,6 +582,7 @@ lengthDiffers([6, 7], [1, 2]);
 ##### Questions
 
 - How to check if array lengths differ?
+- How to check if the given arrays have different lengths?
 
 #### map
 
@@ -642,10 +643,11 @@ midpoint([1, 2, 3, 4]);
 ##### Questions
 
 - How to get the element in the middle of an array?
+- How to get the middle element of an array?
 
 #### minMax
 
-Computes minimum and maximum of the given array in a single run.
+Computes minimum and maximum values of the given array in a single run.
 
 ##### Type signature
 
@@ -676,7 +678,7 @@ minMax([]);
 
 ##### Questions
 
-- How to find minimum and maximum values of an array?
+- How to find the minimum and maximum values of an array?
 - How to get the min/max element of an array?
 
 #### multiple
@@ -748,11 +750,11 @@ none([1, 2, 3]);
 
 ##### Questions
 
-- How to check if array is empty?
+- How to check if an array is empty?
 
 #### partition
 
-Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at right.
+Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at the right.
 
 ##### Type signature
 
@@ -799,7 +801,7 @@ range(3);
 
 ##### Questions
 
-- How to create array of all integers from 0 to N exclusive?
+- How to create an array of all integers from 0 to N exclusive?
 
 #### removeAt
 
@@ -828,7 +830,7 @@ removeAt(3)([1, 2, 3, 4, 5, 6])
 
 #### repeat
 
-Repeats the given element by given count of times.
+Repeats the given element by the given count of times.
 
 ##### Type signature
 
@@ -1139,7 +1141,7 @@ skip(2)([1, 2, 3, 4, 5]);
 
 ##### Questions
 
-- How to skip first few elements of an array?
+- How to skip the first few elements of an array?
 
 #### slidingWindow
 
@@ -1230,7 +1232,7 @@ sum([1, 2, 3, 4, 5]);
 
 #### take
 
-Takes up to given count of elements.
+Takes up to a given count of elements.
 
 ##### Type signature
 
@@ -1256,11 +1258,11 @@ take(10)([1, 2, 3, 4, 5]);
 
 ##### Questions
 
-- How to get first N number of elements from an array?
+- How to get the first N number of elements from an array?
 
 #### unique
 
-Returns only unique elements of the given array.
+Returns unique elements of the given array.
 
 ##### Type signature
 
@@ -1314,7 +1316,7 @@ uniqueBy(({ id }) => id)([
 
 #### zip
 
-Zips given arrays together into pairs.
+Zips the given arrays together into pairs.
 
 ##### Type signature
 
@@ -1339,7 +1341,7 @@ zip([1, 2, 3], [4, 5, 6]);
 
 #### zipN
 
-Zips given arrays
+Zips the given arrays together into pairs.
 
 ##### Type signature
 
@@ -1374,7 +1376,7 @@ zipN([1, 2], [4, 5, 6], [7, 8, 9]);
 
 #### zipWith
 
-Zips given arrays together with the given function.
+Zips the given arrays together with the given function.
 
 ##### Type signature
 
@@ -1403,7 +1405,7 @@ zipWith((x, y) => x * x + y)([1, 2, 3], [4, 5, 6]);
 
 #### debounce
 
-Makes the function run after the given period of not being called. Useful to delay input submission for autocomplete etc.
+Makes the function run after the given period of not being called. Useful to delay input submission for Makes the function run after the given period of not being called. Useful to delay input submission for auto-complete etc.
 
 ##### Type signature
 
@@ -1996,7 +1998,7 @@ assert(true === false);
 
 #### diff
 
-Computes a deep difference between two values (primitives, objects, arrays, etc.).
+Computes a deep difference between the two values (primitives, objects, arrays, etc.).
 
 ##### Type signature
 
@@ -2035,7 +2037,7 @@ diff({ a: 1 }, { a: 2 });
 
 ##### decode
 
-Decodes the given Base64URL back into string.
+Decodes the given Base64URL back into a string.
 
 ###### Type signature
 
@@ -2060,7 +2062,7 @@ decode("PDw_Pz8-Pg");
 
 ##### decodeBytes
 
-Decodes the given Base64URL back into byte array.
+Decodes the given Base64URL back into a byte array.
 
 ###### Type signature
 
@@ -2187,7 +2189,7 @@ toBase64("PDw_Pz8-Pg");
 
 ##### from
 
-Converts string to byte array.
+Converts a string to a byte array.
 
 ###### Type signature
 
@@ -2212,7 +2214,7 @@ from("PQR");
 
 ##### to
 
-Coverts byte array to string.
+Coverts a byte array into a string.
 
 ###### Type signature
 
@@ -2282,7 +2284,7 @@ validName("COM1");
 
 #### compose
 
-Composes multiple functions into a higher order one. Goes right to left.
+Composes multiple functions into a higher-order one. Goes right to left.
 
 ##### Type signature
 
@@ -2307,7 +2309,7 @@ compose(x => x * x, x => x + 1)(3);
 
 #### constant
 
-Returns the given constant no matter of the input.
+Returns the given constant no matter the input.
 
 ##### Type signature
 
@@ -2358,7 +2360,7 @@ identity("test");
 
 ##### Questions
 
-- How to use identity function?
+- How to use the identity function?
 - Where and why is identity function useful?
 
 #### memoize
@@ -2454,11 +2456,11 @@ memoized({ x: 3 });
 
 ##### Questions
 
-- How to memoize a function with custom equality function?
+- How to memoize a function with a custom equality function?
 
 #### noOp
 
-Does exactly nothing.
+It does exactly nothing.
 
 ##### Type signature
 
@@ -2592,7 +2594,7 @@ when(x => x > 0)(x => console.log(x))(true);
 
 #### array
 
-Checks if the given argument is array.
+Checks if the given argument is an array.
 
 ##### Type signature
 
@@ -2618,7 +2620,7 @@ array({ a: 1 });
 
 ##### Questions
 
-- How to check is a given value is an array?
+- How to check if a given value is an array?
 
 #### byte
 
@@ -2653,12 +2655,12 @@ byte(65.5);
 
 ##### Questions
 
-- How to check is a given value is a byte?
-- How to check is a given number is a byte?
+- How to check if a given value is a byte?
+- How to check if a given number is a byte?
 
 #### date
 
-Checks if given value is a Date object.
+Checks if the given value is a Date object.
 
 ##### Type signature
 
@@ -2684,11 +2686,11 @@ date(123);
 
 ##### Questions
 
-- How to check is a given value is Date object?
+- How to check if a given value is a Date object?
 
 #### defined
 
-Checks if given value is defined.
+Checks if the given value is defined.
 
 ##### Type signature
 
@@ -2724,12 +2726,12 @@ defined({ a: 1 });
 
 ##### Questions
 
-- How to check is a given value is defined?
-- How to check is a given value is not undefined?
+- How to check if a given value is defined?
+- How to check if a given value is not undefined?
 
 #### function
 
-Checks if given value is a function.
+Checks if the given value is a function.
 
 ##### Type signature
 
@@ -2750,11 +2752,11 @@ _function(x => x + 5);
 
 ##### Questions
 
-- How to check is a given value is a function?
+- How to check if a given value is a function?
 
 #### integer
 
-Checks if given value is an integer.
+Checks if the given value is an integer.
 
 ##### Type signature
 
@@ -2780,12 +2782,12 @@ integer(32.5);
 
 ##### Questions
 
-- How to check is a given value is an integer?
-- How to check is a given number is an integer?
+- How to check if a given value is an integer?
+- How to check if a given number is an integer?
 
 #### nonNullable
 
-Checks and asserts the given value is not a null or undefined.
+Checks and asserts the given value is not null or undefined.
 
 ##### Type signature
 
@@ -2821,9 +2823,9 @@ nonNullable({ a: 1 });
 
 ##### Questions
 
-- How to check is a given value is non nullable?
-- How to check is a given value is not null?
-- How to check is a given value is not undefined?
+- How to check if a given value is non-nullable?
+- How to check if a given value is not null?
+- How to check if a given value is not undefined?
 
 #### normal
 
@@ -2858,11 +2860,11 @@ normal(2.5);
 
 ##### Questions
 
-- How to check is a given value is in 0 to 1 inclusive range?
+- How to check if a given value is in 0 to 1 inclusive range?
 
 #### number
 
-Checks if given value is a number.
+Checks if the given value is a number.
 
 ##### Type signature
 
@@ -2888,13 +2890,13 @@ number(15.6);
 
 ##### Questions
 
-- How to check is a given value is a valid number?
-- How to check is a given value is not NaN?
-- How to check is a given value is finite?
+- How to check if a given value is a valid number?
+- How to check if a given value is not NaN?
+- How to check if a given value is finite?
 
 #### object
 
-Checks if given value is an object.
+Checks if the given value is an object.
 
 ##### Type signature
 
@@ -2920,11 +2922,11 @@ object([1, 2, 3]);
 
 ##### Questions
 
-- How to check is a given value is an object?
+- How to check if a given value is an object?
 
 #### string
 
-Checks if given value is a string.
+Checks if the given value is a string.
 
 ##### Type signature
 
@@ -2950,7 +2952,7 @@ string(['T', 'e', 's', 't']);
 
 ##### Questions
 
-- How to check is a given value is a string?
+- How to check if a given value is a string?
 
 ### math
 
@@ -2981,7 +2983,7 @@ add(3, 5);
 
 #### average
 
-Calculates the average of given array of numbers.
+Calculates the average of the given array of numbers.
 
 ##### Type signature
 
@@ -3002,7 +3004,7 @@ average([2, 4, 15]);
 
 ##### Questions
 
-- How to compute average of an array?
+- How to compute the average of an array?
 
 #### ceilToNearestPowerOfTwo
 
@@ -3027,7 +3029,7 @@ ceilToNearestPowerOfTwo(345);
 
 ##### Questions
 
-- How to get the nearest power of two greater or equal to the given value/
+- How to get the nearest power of two greater or equal to the given value?
 
 #### clamp
 
@@ -3062,7 +3064,7 @@ clamp(0, 10)(15);
 
 ##### Questions
 
-- How to clamp a value to a desired range?
+- How to clamp value to the desired range?
 - How to enforce a value to be in a given range?
 
 #### clampNormal
@@ -3098,8 +3100,8 @@ clampNormal(1.5);
 
 ##### Questions
 
-- How to clamp a value to be in 0 to 1 inclusive range?
-- How to clamp a value to be in the normal range?
+- How to clamp value to be in 0 to 1 inclusive range?
+- How to clamp value to be in the normal range?
 
 #### clampPercentage
 
@@ -3134,7 +3136,7 @@ clampPercentage(150);
 
 ##### Questions
 
-- How to enforce percentage be between 0% and 100%?
+- How to enforce a percentage be between 0% and 100%?
 
 #### delta
 
@@ -3196,7 +3198,7 @@ inRectangleRange(50, 100)(-25, 50);
 
 #### lerp
 
-Linearly interpolates two given values by normal value of their distance.
+Linearly interpolates two given values by the normal value of their distance.
 
 ##### Type signature
 
@@ -3338,7 +3340,7 @@ sameSign([1, 2, -3]);
 
 ##### Questions
 
-- How to check if all values has the same sign?
+- How to check if all values have the same sign?
 
 #### sign
 
@@ -3382,7 +3384,7 @@ sign(-0);
 
 #### standardDeviation
 
-Calculates standard deviation of the given array of numbers.
+Calculates the standard deviation of the given array of numbers.
 
 ##### Type signature
 
@@ -3527,7 +3529,7 @@ empty;
 
 #### entries
 
-Lists key value pairs (entries) present in the given object.
+Lists key-value pairs (entries) present in the given object.
 
 ##### Type signature
 
@@ -3558,11 +3560,11 @@ entries({ a: 1, b: 2, c: 3 });
 ##### Questions
 
 - How to get entries of an object?
-- How to get an array of key value pairs of an object?
+- How to get an array of key-value pairs of an object?
 
 #### enumerable
 
-Creates a 1 to 1 mapping of given values as an object.
+Creates a 1 to 1 mapping of the given values as an object.
 
 ##### Type signature
 
@@ -3583,7 +3585,7 @@ enumerable('TEST', 'X', 'Y');
 
 ##### Questions
 
-- How to create object of the same keys and values?
+- How to create an object of the same keys and values?
 
 #### equals
 
@@ -3613,7 +3615,7 @@ equals({ b: [1, 2] }, { b: [1, 2] });
 
 ##### Questions
 
-- How to check if two object are equal?
+- How to check if two objects are equal?
 - How to check deep object equality?
 
 #### every
@@ -3700,7 +3702,7 @@ find(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
 
 ##### Questions
 
-- How to find a value of an object by a function?
+- How to find the value of an object by a predicate function?
 
 #### findEntry
 
@@ -3727,7 +3729,7 @@ findEntry(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
 
 ##### Questions
 
-- How to find an entry of an object by a function?
+- How to find an entry of an object by a predicate function?
 
 #### findKey
 
@@ -3754,11 +3756,11 @@ findKey(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
 
 ##### Questions
 
-- How to find a key of an object by a function?
+- How to find a key of an object by a predicate function?
 
 #### first
 
-Returns the first value in the given object. Follows default object iteration order.
+Returns the first value in the given object. Follows the default object iteration order.
 
 ##### Type signature
 
@@ -3810,7 +3812,7 @@ flatMapValues(x => [x, x * 2])({ a: 1, b: 2, c: 3 });
 
 #### fromEntries
 
-Creates an object from array of key value pairs (entries).
+Creates an object from an array of key-value pairs (entries).
 
 ##### Type signature
 
@@ -3831,12 +3833,12 @@ fromEntries([["a", 1], ["b", 2], ["c", 3]]);
 
 ##### Questions
 
-- How to create an object from an array of key value pairs?
-- How to create an object from array of entries?
+- How to create an object from an array of key-value pairs?
+- How to create an object from an array of entries?
 
 #### groupBy
 
-Groups given array of values by the given key selector.
+Groups the given array of values by the given key selector.
 
 ##### Type signature
 
@@ -3857,11 +3859,11 @@ groupBy(x => x % 2 == 0 ? "even" : "odd")([1, 2, 3, 4, 5, 6, 7]);
 
 ##### Questions
 
-- How to group an array by a function?
+- How to group an array by a key function?
 
 #### hasKey
 
-Checks if given key is present in the object.
+Checks if the given key is present in the object.
 
 ##### Type signature
 
@@ -4520,7 +4522,7 @@ includes("brown dog")("The quick brown fox jumps over the lazy dog");
 
 ##### Questions
 
-- How to check is a string contains a given substring?
+- How to check if a string contains a given substring?
 
 #### nbsp
 
@@ -4580,9 +4582,9 @@ nonEmpty(null);
 
 ##### Questions
 
-- How to check if a string is non empty?
-- How to check is string is not all whitespace?
-- How to check is string is not null or undefined?
+- How to check if a string is non-empty?
+- How to check if a string is not all whitespace?
+- How to check if a string is not null or undefined?
 
 #### startsWith
 
@@ -4708,7 +4710,7 @@ cross([3, 5], [-1, -8]);
 ##### Questions
 
 - How to compute a cross product of two vectors?
-- How to check on which side of a line point is?
+- How to check on which side of a line a point is?
 
 #### dot
 
@@ -4745,7 +4747,7 @@ dot([3, 5], [-1, -8]);
 
 #### length
 
-Calculates length/magnitude of the given vector.
+Calculates the length/magnitude of the given vector.
 
 ##### Type signature
 
@@ -4766,8 +4768,8 @@ length([3, 5]);
 
 ##### Questions
 
-- How to compute length of a vector?
-- How to compute magnitude of a vector?
+- How to compute the length of a vector?
+- How to compute the magnitude of a vector?
 
 #### mul
 
@@ -4911,7 +4913,7 @@ reflect([1, -2], [1, 0]);
 
 ##### Questions
 
-- How to reflect a vector on an another vector?
+- How to reflect a vector on another vector?
 
 #### rotate
 
@@ -5099,7 +5101,7 @@ translate(2, 3);
 
 #### classNames
 
-Composes class name from truthy values with support of string and objects.
+Composes class name from truthy values with the support of string and objects.
 
 ##### Type signature
 
@@ -5120,7 +5122,7 @@ classNames("test", { active: true, disabled: false, on: undefined });
 
 ##### Questions
 
-- How to create a class name from list of string and/or objects?
+- How to create a class name from an array of strings and/or objects?
 
 #### events
 
@@ -5154,7 +5156,7 @@ cancel(event);
 
 ###### Questions
 
-- How to stop propagation and prevent default at once?
+- How to stop event propagation and prevent default at once?
 
 ##### openInNewTabIntent
 
@@ -5189,7 +5191,7 @@ openInNewTabIntent({ ctrlKey: true });
 
 ###### Questions
 
-- How to check if user wants to open a new tab using history API?
+- How to check if the user wants to open a new tab using history API?
 
 ##### prevent
 
@@ -5247,7 +5249,7 @@ stop(event);
 
 ###### Questions
 
-- How to stop propagation of an event?
+- How to stop the propagation of an event?
   <!-- DOCS:END -->
 
 ## Contributors ✨

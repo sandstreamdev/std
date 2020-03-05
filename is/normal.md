@@ -31,4 +31,4 @@ normal(2.5);
 
 ## Questions
 
-- How to check is a given value is in 0 to 1 inclusive range?
+- How to check if a given value is in 0 to 1 inclusive range?

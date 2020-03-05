@@ -31,5 +31,5 @@ byte(65.5);
 
 ## Questions
 
-- How to check is a given value is a byte?
-- How to check is a given number is a byte?
+- How to check if a given value is a byte?
+- How to check if a given number is a byte?

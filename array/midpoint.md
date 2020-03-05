@@ -27,3 +27,4 @@ midpoint([1, 2, 3, 4]);
 ## Questions
 
 - How to get the element in the middle of an array?
+- How to get the middle element of an array?

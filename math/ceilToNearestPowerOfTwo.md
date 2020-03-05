@@ -21,4 +21,4 @@ ceilToNearestPowerOfTwo(345);
 
 ## Questions
 
-- How to get the nearest power of two greater or equal to the given value/
+- How to get the nearest power of two greater or equal to the given value?

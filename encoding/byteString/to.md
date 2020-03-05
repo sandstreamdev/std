@@ -1,6 +1,6 @@
 # to
 
-Coverts byte array to string.
+Coverts a byte array into a string.
 
 ## Type signature
 

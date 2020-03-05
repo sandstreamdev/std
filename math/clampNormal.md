@@ -31,5 +31,5 @@ clampNormal(1.5);
 
 ## Questions
 
-- How to clamp a value to be in 0 to 1 inclusive range?
-- How to clamp a value to be in the normal range?
+- How to clamp value to be in 0 to 1 inclusive range?
+- How to clamp value to be in the normal range?

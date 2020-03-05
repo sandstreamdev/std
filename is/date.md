@@ -1,6 +1,6 @@
 # date
 
-Checks if given value is a Date object.
+Checks if the given value is a Date object.
 
 ## Type signature
 
@@ -26,4 +26,4 @@ date(123);
 
 ## Questions
 
-- How to check is a given value is Date object?
+- How to check if a given value is a Date object?

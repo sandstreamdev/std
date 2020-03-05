@@ -26,4 +26,4 @@ sameSign([1, 2, -3]);
 
 ## Questions
 
-- How to check if all values has the same sign?
+- How to check if all values have the same sign?

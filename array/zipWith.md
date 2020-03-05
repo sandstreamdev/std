@@ -1,6 +1,6 @@
 # zipWith
 
-Zips given arrays together with the given function.
+Zips the given arrays together with the given function.
 
 ## Type signature
 

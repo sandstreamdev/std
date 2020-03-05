@@ -93,7 +93,7 @@ empty;
 
 # entries
 
-Lists key value pairs (entries) present in the given object.
+Lists key-value pairs (entries) present in the given object.
 
 ## Type signature
 
@@ -124,11 +124,11 @@ entries({ a: 1, b: 2, c: 3 });
 ## Questions
 
 - How to get entries of an object?
-- How to get an array of key value pairs of an object?
+- How to get an array of key-value pairs of an object?
 
 # enumerable
 
-Creates a 1 to 1 mapping of given values as an object.
+Creates a 1 to 1 mapping of the given values as an object.
 
 ## Type signature
 
@@ -149,7 +149,7 @@ enumerable('TEST', 'X', 'Y');
 
 ## Questions
 
-- How to create object of the same keys and values?
+- How to create an object of the same keys and values?
 
 # equals
 
@@ -179,7 +179,7 @@ equals({ b: [1, 2] }, { b: [1, 2] });
 
 ## Questions
 
-- How to check if two object are equal?
+- How to check if two objects are equal?
 - How to check deep object equality?
 
 # every
@@ -266,7 +266,7 @@ find(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
 
 ## Questions
 
-- How to find a value of an object by a function?
+- How to find the value of an object by a predicate function?
 
 # findEntry
 
@@ -293,7 +293,7 @@ findEntry(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
 
 ## Questions
 
-- How to find an entry of an object by a function?
+- How to find an entry of an object by a predicate function?
 
 # findKey
 
@@ -320,11 +320,11 @@ findKey(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
 
 ## Questions
 
-- How to find a key of an object by a function?
+- How to find a key of an object by a predicate function?
 
 # first
 
-Returns the first value in the given object. Follows default object iteration order.
+Returns the first value in the given object. Follows the default object iteration order.
 
 ## Type signature
 
@@ -376,7 +376,7 @@ flatMapValues(x => [x, x * 2])({ a: 1, b: 2, c: 3 });
 
 # fromEntries
 
-Creates an object from array of key value pairs (entries).
+Creates an object from an array of key-value pairs (entries).
 
 ## Type signature
 
@@ -397,12 +397,12 @@ fromEntries([["a", 1], ["b", 2], ["c", 3]]);
 
 ## Questions
 
-- How to create an object from an array of key value pairs?
-- How to create an object from array of entries?
+- How to create an object from an array of key-value pairs?
+- How to create an object from an array of entries?
 
 # groupBy
 
-Groups given array of values by the given key selector.
+Groups the given array of values by the given key selector.
 
 ## Type signature
 
@@ -423,11 +423,11 @@ groupBy(x => x % 2 == 0 ? "even" : "odd")([1, 2, 3, 4, 5, 6, 7]);
 
 ## Questions
 
-- How to group an array by a function?
+- How to group an array by a key function?
 
 # hasKey
 
-Checks if given key is present in the object.
+Checks if the given key is present in the object.
 
 ## Type signature
 

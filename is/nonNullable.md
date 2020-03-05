@@ -1,6 +1,6 @@
 # nonNullable
 
-Checks and asserts the given value is not a null or undefined.
+Checks and asserts the given value is not null or undefined.
 
 ## Type signature
 
@@ -36,6 +36,6 @@ nonNullable({ a: 1 });
 
 ## Questions
 
-- How to check is a given value is non nullable?
-- How to check is a given value is not null?
-- How to check is a given value is not undefined?
+- How to check if a given value is non-nullable?
+- How to check if a given value is not null?
+- How to check if a given value is not undefined?

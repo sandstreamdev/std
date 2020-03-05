@@ -29,7 +29,7 @@ assert(true === false);
 
 # diff
 
-Computes a deep difference between two values (primitives, objects, arrays, etc.).
+Computes a deep difference between the two values (primitives, objects, arrays, etc.).
 
 ## Type signature
 

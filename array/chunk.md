@@ -1,6 +1,6 @@
 # chunk
 
-Splits the given array into array of chunks of up to the given length.
+Splits the given array into an array of chunks of up to the given length.
 
 ## Type signature
 

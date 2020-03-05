@@ -1,6 +1,6 @@
 # classNames
 
-Composes class name from truthy values with support of string and objects.
+Composes class name from truthy values with the support of string and objects.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ classNames("test", { active: true, disabled: false, on: undefined });
 
 ## Questions
 
-- How to create a class name from list of string and/or objects?
+- How to create a class name from an array of strings and/or objects?

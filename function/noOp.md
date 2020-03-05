@@ -1,6 +1,6 @@
 # noOp
 
-Does exactly nothing.
+It does exactly nothing.
 
 ## Type signature
 

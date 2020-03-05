@@ -1,6 +1,6 @@
 # array
 
-Checks if the given argument is array.
+Checks if the given argument is an array.
 
 ## Type signature
 
@@ -26,7 +26,7 @@ array({ a: 1 });
 
 ## Questions
 
-- How to check is a given value is an array?
+- How to check if a given value is an array?
 
 # byte
 
@@ -61,12 +61,12 @@ byte(65.5);
 
 ## Questions
 
-- How to check is a given value is a byte?
-- How to check is a given number is a byte?
+- How to check if a given value is a byte?
+- How to check if a given number is a byte?
 
 # date
 
-Checks if given value is a Date object.
+Checks if the given value is a Date object.
 
 ## Type signature
 
@@ -92,11 +92,11 @@ date(123);
 
 ## Questions
 
-- How to check is a given value is Date object?
+- How to check if a given value is a Date object?
 
 # defined
 
-Checks if given value is defined.
+Checks if the given value is defined.
 
 ## Type signature
 
@@ -132,12 +132,12 @@ defined({ a: 1 });
 
 ## Questions
 
-- How to check is a given value is defined?
-- How to check is a given value is not undefined?
+- How to check if a given value is defined?
+- How to check if a given value is not undefined?
 
 # function
 
-Checks if given value is a function.
+Checks if the given value is a function.
 
 ## Type signature
 
@@ -158,11 +158,11 @@ _function(x => x + 5);
 
 ## Questions
 
-- How to check is a given value is a function?
+- How to check if a given value is a function?
 
 # integer
 
-Checks if given value is an integer.
+Checks if the given value is an integer.
 
 ## Type signature
 
@@ -188,12 +188,12 @@ integer(32.5);
 
 ## Questions
 
-- How to check is a given value is an integer?
-- How to check is a given number is an integer?
+- How to check if a given value is an integer?
+- How to check if a given number is an integer?
 
 # nonNullable
 
-Checks and asserts the given value is not a null or undefined.
+Checks and asserts the given value is not null or undefined.
 
 ## Type signature
 
@@ -229,9 +229,9 @@ nonNullable({ a: 1 });
 
 ## Questions
 
-- How to check is a given value is non nullable?
-- How to check is a given value is not null?
-- How to check is a given value is not undefined?
+- How to check if a given value is non-nullable?
+- How to check if a given value is not null?
+- How to check if a given value is not undefined?
 
 # normal
 
@@ -266,11 +266,11 @@ normal(2.5);
 
 ## Questions
 
-- How to check is a given value is in 0 to 1 inclusive range?
+- How to check if a given value is in 0 to 1 inclusive range?
 
 # number
 
-Checks if given value is a number.
+Checks if the given value is a number.
 
 ## Type signature
 
@@ -296,13 +296,13 @@ number(15.6);
 
 ## Questions
 
-- How to check is a given value is a valid number?
-- How to check is a given value is not NaN?
-- How to check is a given value is finite?
+- How to check if a given value is a valid number?
+- How to check if a given value is not NaN?
+- How to check if a given value is finite?
 
 # object
 
-Checks if given value is an object.
+Checks if the given value is an object.
 
 ## Type signature
 
@@ -328,11 +328,11 @@ object([1, 2, 3]);
 
 ## Questions
 
-- How to check is a given value is an object?
+- How to check if a given value is an object?
 
 # string
 
-Checks if given value is a string.
+Checks if the given value is a string.
 
 ## Type signature
 
@@ -358,4 +358,4 @@ string(['T', 'e', 's', 't']);
 
 ## Questions
 
-- How to check is a given value is a string?
+- How to check if a given value is a string?

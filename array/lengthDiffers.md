@@ -1,6 +1,6 @@
 # lengthDiffers
 
-Checks if lengths of given arrays differ.
+Checks if lengths of the given arrays differ.
 
 ## Type signature
 
@@ -27,3 +27,4 @@ lengthDiffers([6, 7], [1, 2]);
 ## Questions
 
 - How to check if array lengths differ?
+- How to check if the given arrays have different lengths?

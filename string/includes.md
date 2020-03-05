@@ -26,4 +26,4 @@ includes("brown dog")("The quick brown fox jumps over the lazy dog");
 
 ## Questions
 
-- How to check is a string contains a given substring?
+- How to check if a string contains a given substring?

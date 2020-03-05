@@ -31,6 +31,6 @@ nonEmpty(null);
 
 ## Questions
 
-- How to check if a string is non empty?
-- How to check is string is not all whitespace?
-- How to check is string is not null or undefined?
+- How to check if a string is non-empty?
+- How to check if a string is not all whitespace?
+- How to check if a string is not null or undefined?

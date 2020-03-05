@@ -1,6 +1,6 @@
 # length
 
-Calculates length/magnitude of the given vector.
+Calculates the length/magnitude of the given vector.
 
 ## Type signature
 
@@ -21,5 +21,5 @@ length([3, 5]);
 
 ## Questions
 
-- How to compute length of a vector?
-- How to compute magnitude of a vector?
+- How to compute the length of a vector?
+- How to compute the magnitude of a vector?

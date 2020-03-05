@@ -24,4 +24,4 @@ reflect([1, -2], [1, 0]);
 
 ## Questions
 
-- How to reflect a vector on an another vector?
+- How to reflect a vector on another vector?

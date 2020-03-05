@@ -21,4 +21,4 @@ range(3);
 
 ## Questions
 
-- How to create array of all integers from 0 to N exclusive?
+- How to create an array of all integers from 0 to N exclusive?

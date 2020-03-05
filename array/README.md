@@ -33,7 +33,7 @@ any([1, 2, 3]);
 
 # are
 
-Checks if given arguments are all `Arrays`.
+Checks if the given arguments are all `Arrays`.
 
 ## Type signature
 
@@ -68,7 +68,7 @@ are([1, 2, 3], 8, [1, 3], "test");
 
 # chunk
 
-Splits the given array into array of chunks of up to the given length.
+Splits the given array into an array of chunks of up to the given length.
 
 ## Type signature
 
@@ -120,7 +120,7 @@ difference([1, 2, 3, 4, 5, 6], [2, 4]);
 
 ## Questions
 
-- How to find elements which are present in first array and not in the second?
+- How to find elements which are present in the first array and not in the second?
 
 # differs
 
@@ -150,7 +150,7 @@ differs([1, 2, 3], [1, 2, 3]);
 
 ## Questions
 
-- How to check if two arrays differs?
+- How to check if two arrays differ?
 - How to check if two arrays are not equal?
 - How to check if two arrays are equal or not?
 
@@ -300,7 +300,7 @@ ys;
 
 # find
 
-Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.
+Finds an element by a predicate function within the given array, otherwise, it returns the given fallback value or undefined when fallback is not present.
 
 ## Type signature
 
@@ -538,7 +538,7 @@ last([]);
 
 # lengthDiffers
 
-Checks if lengths of given arrays differ.
+Checks if lengths of the given arrays differ.
 
 ## Type signature
 
@@ -565,6 +565,7 @@ lengthDiffers([6, 7], [1, 2]);
 ## Questions
 
 - How to check if array lengths differ?
+- How to check if the given arrays have different lengths?
 
 # map
 
@@ -625,10 +626,11 @@ midpoint([1, 2, 3, 4]);
 ## Questions
 
 - How to get the element in the middle of an array?
+- How to get the middle element of an array?
 
 # minMax
 
-Computes minimum and maximum of the given array in a single run.
+Computes minimum and maximum values of the given array in a single run.
 
 ## Type signature
 
@@ -659,7 +661,7 @@ minMax([]);
 
 ## Questions
 
-- How to find minimum and maximum values of an array?
+- How to find the minimum and maximum values of an array?
 - How to get the min/max element of an array?
 
 # multiple
@@ -731,11 +733,11 @@ none([1, 2, 3]);
 
 ## Questions
 
-- How to check if array is empty?
+- How to check if an array is empty?
 
 # partition
 
-Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at right.
+Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at the right.
 
 ## Type signature
 
@@ -782,7 +784,7 @@ range(3);
 
 ## Questions
 
-- How to create array of all integers from 0 to N exclusive?
+- How to create an array of all integers from 0 to N exclusive?
 
 # removeAt
 
@@ -811,7 +813,7 @@ removeAt(3)([1, 2, 3, 4, 5, 6])
 
 # repeat
 
-Repeats the given element by given count of times.
+Repeats the given element by the given count of times.
 
 ## Type signature
 
@@ -1122,7 +1124,7 @@ skip(2)([1, 2, 3, 4, 5]);
 
 ## Questions
 
-- How to skip first few elements of an array?
+- How to skip the first few elements of an array?
 
 # slidingWindow
 
@@ -1213,7 +1215,7 @@ sum([1, 2, 3, 4, 5]);
 
 # take
 
-Takes up to given count of elements.
+Takes up to a given count of elements.
 
 ## Type signature
 
@@ -1239,11 +1241,11 @@ take(10)([1, 2, 3, 4, 5]);
 
 ## Questions
 
-- How to get first N number of elements from an array?
+- How to get the first N number of elements from an array?
 
 # unique
 
-Returns only unique elements of the given array.
+Returns unique elements of the given array.
 
 ## Type signature
 
@@ -1297,7 +1299,7 @@ uniqueBy(({ id }) => id)([
 
 # zip
 
-Zips given arrays together into pairs.
+Zips the given arrays together into pairs.
 
 ## Type signature
 
@@ -1322,7 +1324,7 @@ zip([1, 2, 3], [4, 5, 6]);
 
 # zipN
 
-Zips given arrays
+Zips the given arrays together into pairs.
 
 ## Type signature
 
@@ -1357,7 +1359,7 @@ zipN([1, 2], [4, 5, 6], [7, 8, 9]);
 
 # zipWith
 
-Zips given arrays together with the given function.
+Zips the given arrays together with the given function.
 
 ## Type signature
 

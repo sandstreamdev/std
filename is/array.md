@@ -1,6 +1,6 @@
 # array
 
-Checks if the given argument is array.
+Checks if the given argument is an array.
 
 ## Type signature
 
@@ -26,4 +26,4 @@ array({ a: 1 });
 
 ## Questions
 
-- How to check is a given value is an array?
+- How to check if a given value is an array?

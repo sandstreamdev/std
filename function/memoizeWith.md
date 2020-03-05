@@ -29,4 +29,4 @@ memoized({ x: 3 });
 
 ## Questions
 
-- How to memoize a function with custom equality function?
+- How to memoize a function with a custom equality function?

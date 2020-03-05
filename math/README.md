@@ -25,7 +25,7 @@ add(3, 5);
 
 # average
 
-Calculates the average of given array of numbers.
+Calculates the average of the given array of numbers.
 
 ## Type signature
 
@@ -46,7 +46,7 @@ average([2, 4, 15]);
 
 ## Questions
 
-- How to compute average of an array?
+- How to compute the average of an array?
 
 # ceilToNearestPowerOfTwo
 
@@ -71,7 +71,7 @@ ceilToNearestPowerOfTwo(345);
 
 ## Questions
 
-- How to get the nearest power of two greater or equal to the given value/
+- How to get the nearest power of two greater or equal to the given value?
 
 # clamp
 
@@ -106,7 +106,7 @@ clamp(0, 10)(15);
 
 ## Questions
 
-- How to clamp a value to a desired range?
+- How to clamp value to the desired range?
 - How to enforce a value to be in a given range?
 
 # clampNormal
@@ -142,8 +142,8 @@ clampNormal(1.5);
 
 ## Questions
 
-- How to clamp a value to be in 0 to 1 inclusive range?
-- How to clamp a value to be in the normal range?
+- How to clamp value to be in 0 to 1 inclusive range?
+- How to clamp value to be in the normal range?
 
 # clampPercentage
 
@@ -178,7 +178,7 @@ clampPercentage(150);
 
 ## Questions
 
-- How to enforce percentage be between 0% and 100%?
+- How to enforce a percentage be between 0% and 100%?
 
 # delta
 
@@ -240,7 +240,7 @@ inRectangleRange(50, 100)(-25, 50);
 
 # lerp
 
-Linearly interpolates two given values by normal value of their distance.
+Linearly interpolates two given values by the normal value of their distance.
 
 ## Type signature
 
@@ -382,7 +382,7 @@ sameSign([1, 2, -3]);
 
 ## Questions
 
-- How to check if all values has the same sign?
+- How to check if all values have the same sign?
 
 # sign
 
@@ -426,7 +426,7 @@ sign(-0);
 
 # standardDeviation
 
-Calculates standard deviation of the given array of numbers.
+Calculates the standard deviation of the given array of numbers.
 
 ## Type signature
 

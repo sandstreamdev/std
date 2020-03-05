@@ -1,6 +1,6 @@
 # decode
 
-Decodes the given Base64URL back into string.
+Decodes the given Base64URL back into a string.
 
 ## Type signature
 
@@ -25,7 +25,7 @@ decode("PDw_Pz8-Pg");
 
 # decodeBytes
 
-Decodes the given Base64URL back into byte array.
+Decodes the given Base64URL back into a byte array.
 
 ## Type signature
 

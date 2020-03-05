@@ -1,6 +1,6 @@
 # groupBy
 
-Groups given array of values by the given key selector.
+Groups the given array of values by the given key selector.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ groupBy(x => x % 2 == 0 ? "even" : "odd")([1, 2, 3, 4, 5, 6, 7]);
 
 ## Questions
 
-- How to group an array by a function?
+- How to group an array by a key function?

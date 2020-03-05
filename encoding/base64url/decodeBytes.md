@@ -1,6 +1,6 @@
 # decodeBytes
 
-Decodes the given Base64URL back into byte array.
+Decodes the given Base64URL back into a byte array.
 
 ## Type signature
 

@@ -1,6 +1,6 @@
 # hasKey
 
-Checks if given key is present in the object.
+Checks if the given key is present in the object.
 
 ## Type signature
 

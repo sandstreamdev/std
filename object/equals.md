@@ -26,5 +26,5 @@ equals({ b: [1, 2] }, { b: [1, 2] });
 
 ## Questions
 
-- How to check if two object are equal?
+- How to check if two objects are equal?
 - How to check deep object equality?

@@ -1,6 +1,6 @@
 # integer
 
-Checks if given value is an integer.
+Checks if the given value is an integer.
 
 ## Type signature
 
@@ -26,5 +26,5 @@ integer(32.5);
 
 ## Questions
 
-- How to check is a given value is an integer?
-- How to check is a given number is an integer?
+- How to check if a given value is an integer?
+- How to check if a given number is an integer?

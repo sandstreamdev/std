@@ -1,6 +1,6 @@
 # defined
 
-Checks if given value is defined.
+Checks if the given value is defined.
 
 ## Type signature
 
@@ -36,5 +36,5 @@ defined({ a: 1 });
 
 ## Questions
 
-- How to check is a given value is defined?
-- How to check is a given value is not undefined?
+- How to check if a given value is defined?
+- How to check if a given value is not undefined?

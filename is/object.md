@@ -1,6 +1,6 @@
 # object
 
-Checks if given value is an object.
+Checks if the given value is an object.
 
 ## Type signature
 
@@ -26,4 +26,4 @@ object([1, 2, 3]);
 
 ## Questions
 
-- How to check is a given value is an object?
+- How to check if a given value is an object?

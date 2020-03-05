@@ -1,6 +1,6 @@
 # fromEntries
 
-Creates an object from array of key value pairs (entries).
+Creates an object from an array of key-value pairs (entries).
 
 ## Type signature
 
@@ -21,5 +21,5 @@ fromEntries([["a", 1], ["b", 2], ["c", 3]]);
 
 ## Questions
 
-- How to create an object from an array of key value pairs?
-- How to create an object from array of entries?
+- How to create an object from an array of key-value pairs?
+- How to create an object from an array of entries?

@@ -1,6 +1,6 @@
 # entries
 
-Lists key value pairs (entries) present in the given object.
+Lists key-value pairs (entries) present in the given object.
 
 ## Type signature
 
@@ -31,4 +31,4 @@ entries({ a: 1, b: 2, c: 3 });
 ## Questions
 
 - How to get entries of an object?
-- How to get an array of key value pairs of an object?
+- How to get an array of key-value pairs of an object?

@@ -31,4 +31,4 @@ clampPercentage(150);
 
 ## Questions
 
-- How to enforce percentage be between 0% and 100%?
+- How to enforce a percentage be between 0% and 100%?

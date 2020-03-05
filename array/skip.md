@@ -21,4 +21,4 @@ skip(2)([1, 2, 3, 4, 5]);
 
 ## Questions
 
-- How to skip first few elements of an array?
+- How to skip the first few elements of an array?

@@ -25,4 +25,4 @@ stop(event);
 
 ## Questions
 
-- How to stop propagation of an event?
+- How to stop the propagation of an event?

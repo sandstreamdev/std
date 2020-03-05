@@ -1,6 +1,6 @@
 # from
 
-Converts string to byte array.
+Converts a string to a byte array.
 
 ## Type signature
 
@@ -25,7 +25,7 @@ from("PQR");
 
 # to
 
-Coverts byte array to string.
+Coverts a byte array into a string.
 
 ## Type signature
 

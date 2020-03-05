@@ -26,4 +26,4 @@ none([1, 2, 3]);
 
 ## Questions
 
-- How to check if array is empty?
+- How to check if an array is empty?

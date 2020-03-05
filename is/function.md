@@ -1,6 +1,6 @@
 # function
 
-Checks if given value is a function.
+Checks if the given value is a function.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ _function(x => x + 5);
 
 ## Questions
 
-- How to check is a given value is a function?
+- How to check if a given value is a function?

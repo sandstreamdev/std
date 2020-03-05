@@ -30,4 +30,4 @@ cross([3, 5], [-1, -8]);
 ## Questions
 
 - How to compute a cross product of two vectors?
-- How to check on which side of a line point is?
+- How to check on which side of a line a point is?

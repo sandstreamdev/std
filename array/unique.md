@@ -1,6 +1,6 @@
 # unique
 
-Returns only unique elements of the given array.
+Returns unique elements of the given array.
 
 ## Type signature
 

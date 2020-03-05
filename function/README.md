@@ -1,6 +1,6 @@
 # compose
 
-Composes multiple functions into a higher order one. Goes right to left.
+Composes multiple functions into a higher-order one. Goes right to left.
 
 ## Type signature
 
@@ -25,7 +25,7 @@ compose(x => x * x, x => x + 1)(3);
 
 # constant
 
-Returns the given constant no matter of the input.
+Returns the given constant no matter the input.
 
 ## Type signature
 
@@ -76,7 +76,7 @@ identity("test");
 
 ## Questions
 
-- How to use identity function?
+- How to use the identity function?
 - Where and why is identity function useful?
 
 # memoize
@@ -172,11 +172,11 @@ memoized({ x: 3 });
 
 ## Questions
 
-- How to memoize a function with custom equality function?
+- How to memoize a function with a custom equality function?
 
 # noOp
 
-Does exactly nothing.
+It does exactly nothing.
 
 ## Type signature
 

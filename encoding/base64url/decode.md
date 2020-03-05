@@ -1,6 +1,6 @@
 # decode
 
-Decodes the given Base64URL back into string.
+Decodes the given Base64URL back into a string.
 
 ## Type signature
 

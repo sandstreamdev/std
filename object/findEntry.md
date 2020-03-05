@@ -23,4 +23,4 @@ findEntry(({ x }) => x % 2 === 0)({ a: { x: 1 }, b: { x: 2 }, c: { x: 3 } });
 
 ## Questions
 
-- How to find an entry of an object by a function?
+- How to find an entry of an object by a predicate function?

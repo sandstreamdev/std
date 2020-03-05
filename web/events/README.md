@@ -28,7 +28,7 @@ cancel(event);
 
 ## Questions
 
-- How to stop propagation and prevent default at once?
+- How to stop event propagation and prevent default at once?
 
 # openInNewTabIntent
 
@@ -63,7 +63,7 @@ openInNewTabIntent({ ctrlKey: true });
 
 ## Questions
 
-- How to check if user wants to open a new tab using history API?
+- How to check if the user wants to open a new tab using history API?
 
 # prevent
 
@@ -121,4 +121,4 @@ stop(event);
 
 ## Questions
 
-- How to stop propagation of an event?
+- How to stop the propagation of an event?

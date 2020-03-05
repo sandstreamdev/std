@@ -1,6 +1,6 @@
 # constant
 
-Returns the given constant no matter of the input.
+Returns the given constant no matter the input.
 
 ## Type signature
 

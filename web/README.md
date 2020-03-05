@@ -1,6 +1,6 @@
 # classNames
 
-Composes class name from truthy values with support of string and objects.
+Composes class name from truthy values with the support of string and objects.
 
 ## Type signature
 
@@ -21,7 +21,7 @@ classNames("test", { active: true, disabled: false, on: undefined });
 
 ## Questions
 
-- How to create a class name from list of string and/or objects?
+- How to create a class name from an array of strings and/or objects?
 
 # events
 
@@ -55,7 +55,7 @@ cancel(event);
 
 ### Questions
 
-- How to stop propagation and prevent default at once?
+- How to stop event propagation and prevent default at once?
 
 ## openInNewTabIntent
 
@@ -90,7 +90,7 @@ openInNewTabIntent({ ctrlKey: true });
 
 ### Questions
 
-- How to check if user wants to open a new tab using history API?
+- How to check if the user wants to open a new tab using history API?
 
 ## prevent
 
@@ -148,4 +148,4 @@ stop(event);
 
 ### Questions
 
-- How to stop propagation of an event?
+- How to stop the propagation of an event?

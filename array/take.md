@@ -1,6 +1,6 @@
 # take
 
-Takes up to given count of elements.
+Takes up to a given count of elements.
 
 ## Type signature
 
@@ -26,4 +26,4 @@ take(10)([1, 2, 3, 4, 5]);
 
 ## Questions
 
-- How to get first N number of elements from an array?
+- How to get the first N number of elements from an array?

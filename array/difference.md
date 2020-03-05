@@ -21,4 +21,4 @@ difference([1, 2, 3, 4, 5, 6], [2, 4]);
 
 ## Questions
 
-- How to find elements which are present in first array and not in the second?
+- How to find elements which are present in the first array and not in the second?

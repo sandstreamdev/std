@@ -1,6 +1,6 @@
 # lerp
 
-Linearly interpolates two given values by normal value of their distance.
+Linearly interpolates two given values by the normal value of their distance.
 
 ## Type signature
 

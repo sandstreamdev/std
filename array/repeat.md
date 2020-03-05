@@ -1,6 +1,6 @@
 # repeat
 
-Repeats the given element by given count of times.
+Repeats the given element by the given count of times.
 
 ## Type signature
 

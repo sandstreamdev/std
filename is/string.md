@@ -1,6 +1,6 @@
 # string
 
-Checks if given value is a string.
+Checks if the given value is a string.
 
 ## Type signature
 
@@ -26,4 +26,4 @@ string(['T', 'e', 's', 't']);
 
 ## Questions
 
-- How to check is a given value is a string?
+- How to check if a given value is a string?

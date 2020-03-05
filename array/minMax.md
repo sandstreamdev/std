@@ -1,6 +1,6 @@
 # minMax
 
-Computes minimum and maximum of the given array in a single run.
+Computes minimum and maximum values of the given array in a single run.
 
 ## Type signature
 
@@ -31,5 +31,5 @@ minMax([]);
 
 ## Questions
 
-- How to find minimum and maximum values of an array?
+- How to find the minimum and maximum values of an array?
 - How to get the min/max element of an array?
