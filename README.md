@@ -399,6 +399,11 @@ pop([]); // ⇒ []
 ```
 <!-- prettier-ignore-end -->
 
+##### Questions
+
+- How to get an array without the last element?
+- How to remove the last element from the array?
+
 #### range
 
 Generates an array of numbers from 0 to n - 1.

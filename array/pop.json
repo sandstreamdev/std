@@ -12,5 +12,8 @@
       "content": "pop([]); // ⇒ []"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to get an array without the last element?",
+    "How to remove the last element from the array?"
+  ]
 }

@@ -21,3 +21,8 @@ pop([1, 2, 3, 4]); // ⇒ [1, 2, 3]
 pop([]); // ⇒ []
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get an array without the last element?
+- How to remove the last element from the array?
