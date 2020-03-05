@@ -1,0 +1,16 @@
+{
+  "name": "pop",
+  "description": "Returns the given array without the last element.",
+  "signature": "(xs: any[]) => any[]",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "pop([1, 2, 3, 4]); // ⇒ [1, 2, 3]"
+    },
+    {
+      "language": "javascript",
+      "content": "pop([]); // ⇒ []"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}
