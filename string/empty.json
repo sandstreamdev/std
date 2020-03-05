@@ -8,5 +8,5 @@
       "content": "empty(); // ⇒ \"\""
     }
   ],
-  "questions": ["How to check get an empty string?"]
+  "questions": ["How to get an empty string?"]
 }
