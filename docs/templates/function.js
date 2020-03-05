@@ -71,13 +71,7 @@ const signatureFragment = signature => {
     return "";
   }
 
-  const formattedCode = prettier.format(signature, {
-    parser: "typescript",
-    printWidth: 36,
-    semi: true
-  });
-
-  const signatureFormatted = hljs.highlight("typescript", formattedCode).value;
+  const signatureFormatted = hljs.highlight("typescript", signature).value;
 
   return `<div class="type-signature">
     <h3>Type signature</h3>
