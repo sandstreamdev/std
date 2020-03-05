@@ -71,12 +71,18 @@ const signatureFragment = signature => {
     return "";
   }
 
-  const singatureFormatted = hljs.highlight("typescript", signature).value;
+  const formattedCode = prettier.format(signature, {
+    parser: "typescript",
+    printWidth: 36,
+    semi: true
+  });
+
+  const signatureFormatted = hljs.highlight("typescript", formattedCode).value;
 
   return `<div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
-      <pre><code class="hljs"><span>${singatureFormatted}</span></code></pre>
+      <pre><code class="hljs"><span>${signatureFormatted}</span></code></pre>
     </div>
   </div>`;
 };
@@ -97,8 +103,9 @@ const examplesFragment = (examples, pathParts, funcName) => {
 
   const examplesFormatted = examples.map(({ content, language }) => {
     const formattedCode = prettier.format(content, {
-      semi: true,
-      parser: "babel"
+      parser: "babel",
+      printWidth: 36,
+      semi: true
     });
 
     return `<span>${hljs.highlight(language, formattedCode).value}</span>`;
