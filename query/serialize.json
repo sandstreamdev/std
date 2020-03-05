@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "serialize(); // ⇒ TODO"
+      "content": "serialize({ test: true, value: \"a string with spaces\", missing: false }); // ⇒ \"test&value=a%20string%20with%20spaces\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to serialize an object to a query string?"]
 }

@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "parse(); // ⇒ TODO"
+      "content": "parse(\"test&count=5\"); // ⇒ { test: true, count: \"5\" }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to parse a query string?"]
 }
