@@ -5,8 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "assert(); // ⇒ TODO"
+      "content": "assert(true === false); // ⇒ TypeError(\"Assertion failed!\")"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to assert a condition?",
+    "How to throw when a condition is not satisfied?"
+  ]
 }
