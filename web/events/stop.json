@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "stop(); // ⇒ TODO"
+      "content": "const event = {\npreventDefault: () => console.log(\"preventDefault\"),\nstopPropagation: () => console.log(\"stopPropagation\")\n};\nstop(event);"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to stop propagation of an event?"]
 }

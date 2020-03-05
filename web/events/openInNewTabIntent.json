@@ -5,8 +5,10 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "openInNewTabIntent(); // ⇒ TODO"
+      "content": "openInNewTabIntent({ ctrlKey: true }); // ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if user wants to open a new tab using history API?"
+  ]
 }

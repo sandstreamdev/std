@@ -5,8 +5,10 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "classNames(); // ⇒ TODO"
+      "content": "classNames(\"test\", { active: true, disabled: false, on: undefined }); // ⇒ \"test active\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to create a class name from list of string and/or objects?"
+  ]
 }
