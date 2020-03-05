@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "mul(); // ⇒ TODO"
+      "content": "mul(scale(4, 5), [2, 3]); // ⇒ [8, 15]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to apply a matrix transformation to a vector?"]
 }

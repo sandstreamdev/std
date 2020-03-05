@@ -5,8 +5,10 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "transform(); // ⇒ TODO"
+      "content": "const originX = 5;\nconst originY = 6;\nconst angle = Math.PI;\n\ntransform(translate(originX, originY), rotate(angle), translate(-originX, -originY)); // ⇒ rotate(Math.PI, originX, originY)"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to compose multiple matrix transformations into a single matrix?"
+  ]
 }

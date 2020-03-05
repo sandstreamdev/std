@@ -5,8 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "length(); // ⇒ TODO"
+      "content": "length([3, 5])); // ⇒ Math.sqrt(3 * 3 + 5 * 5)"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to compute length of a vector?",
+    "How to compute magnitude of a vector?"
+  ]
 }

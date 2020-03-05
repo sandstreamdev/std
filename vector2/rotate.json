@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "rotate(); // ⇒ TODO"
+      "content": "const angle = Math.PI;\nconst sine = Math.sin(angle);\nconst cosine = Math.cos(angle);\n\nrotate(angle); // { a: cosine, b: sine, c: -sine, d: cosine, e: 0, f: 0 }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to create a rotation matrix?"]
 }

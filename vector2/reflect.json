@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "reflect(); // ⇒ TODO"
+      "content": "reflect([1, -2], [1, 0]); // ⇒ [0.6, 0.8]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to reflect a vector on an another vector?"]
 }

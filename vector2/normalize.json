@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "normalize(); // ⇒ TODO"
+      "content": "normalize([2, 3]); // ⇒ [2 / length([2, 3]), 3 / length([2, 3])]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to normalize a vector?"]
 }
