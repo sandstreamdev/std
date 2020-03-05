@@ -1,3 +1,3 @@
 import take from "./take";
 
-export default (xs: any[]) => take(xs.length - 1)(xs);
+export default (xs: any[]): any[] => take(xs.length - 1)(xs);
