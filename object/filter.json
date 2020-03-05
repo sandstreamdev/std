@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "filter(x => x % 2 !== 0)(({ a: 1, b: 2, c: 3 }); // ⇒ { a: 1, c: 3 }"
+      "content": "filter(x => x % 2 !== 0)({ a: 1, b: 2, c: 3 }); // ⇒ { a: 1, c: 3 }"
     }
   ],
   "questions": ["How to filter an object?"]

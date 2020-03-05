@@ -1,5 +1,6 @@
 import hljs from "highlight.js";
 import { promises } from "fs";
+import prettier from "prettier";
 
 import { outPath } from "../utils/io.js";
 import { getPath } from "../utils/url.js";
@@ -94,9 +95,14 @@ const examplesFragment = (examples, pathParts, funcName) => {
     `{ ${funcName} }`
   );
 
-  const examplesFormatted = examples.map(
-    ex => `<span>${hljs.highlight(ex.language, ex.content).value}</span>`
-  );
+  const examplesFormatted = examples.map(({ content, language }) => {
+    const formattedCode = prettier.format(content, {
+      semi: true,
+      parser: "babel"
+    });
+
+    return `<span>${hljs.highlight(language, formattedCode).value}</span>`;
+  });
 
   const fragment = exampleFormatted => `
     <div class="content">
