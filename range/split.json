@@ -1,12 +1,12 @@
 {
   "name": "split",
-  "description": "Splits the given range in subranges by excluding the given used ranged.",
+  "description": "Splits the given range into subranges by excluding the given used ranged.",
   "signature": "(\n  used: [number, number][],\n  sourceRange?: number[]\n) => (range: [number, number]) => [number, number][]",
   "examples": [
     {
       "language": "javascript",
-      "content": "split(); // ⇒ TODO"
+      "content": "split([[2, 3], [5, 7]]); // ⇒ [[0, 2], [3, 5], [7, 10]]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to split a range into subranges?"]
 }

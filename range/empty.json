@@ -12,5 +12,5 @@
       "content": "empty([1, 5]); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a given range is empty (0-length)?"]
 }
