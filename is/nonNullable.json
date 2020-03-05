@@ -5,8 +5,24 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "nonNullable(); // ⇒ TODO"
+      "content": "nonNullable(null); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "nonNullable(undefined); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "nonNullable(false); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "nonNullable({ a: 1 }); // ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check is a given value is non nullable?",
+    "How to check is a given value is not null?",
+    "How to check is a given value is not undefined?"
+  ]
 }

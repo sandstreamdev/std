@@ -5,8 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "integer(); // ⇒ TODO"
+      "content": "integer(5); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "integer(32.5); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check is a given value is an integer?",
+    "How to check is a given number is an integer?"
+  ]
 }

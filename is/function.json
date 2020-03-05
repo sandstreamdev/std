@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "_function(); // ⇒ TODO"
+      "content": "_function(x => x + 5); // ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check is a given value is a function?"]
 }

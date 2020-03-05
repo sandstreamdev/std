@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "object(); // ⇒ TODO"
+      "content": "object({ a: 1, b: 2 }); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "object([1, 2, 3]); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check is a given value is an object?"]
 }

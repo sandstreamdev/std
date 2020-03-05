@@ -6,7 +6,18 @@
     {
       "language": "javascript",
       "content": "byte(128); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "byte(325); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "byte(65.5); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check is a given value is a byte?",
+    "How to check is a given number is a byte?"
+  ]
 }

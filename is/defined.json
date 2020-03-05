@@ -6,7 +6,22 @@
     {
       "language": "javascript",
       "content": "defined(undefined); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "defined(null); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "defined(0); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "defined({ a: 1 }); // ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check is a given value is defined?",
+    "How to check is a given value is not undefined?"
+  ]
 }

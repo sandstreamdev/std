@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "array([]); // ⇒ true"
+      "content": "array([1, 2, 3]); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "array({ a: 1 }); // ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check is a given value is an array?"]
 }

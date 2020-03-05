@@ -5,8 +5,16 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "number(); // ⇒ TODO"
+      "content": "number(0 / 0); // ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "number(15.6); // ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check is a given value is a valid number?",
+    "How to check is a given value is not NaN?",
+    "How to check is a given value is finite?"
+  ]
 }
