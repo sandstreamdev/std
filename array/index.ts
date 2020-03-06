@@ -23,6 +23,7 @@ import minMax from "./minMax";
 import multiple from "./multiple";
 import none from "./none";
 import partition from "./partition";
+import pop from "./pop";
 import range from "./range";
 import removeAt from "./removeAt";
 import repeat from "./repeat";
@@ -71,6 +72,7 @@ export {
   multiple,
   none,
   partition,
+  pop,
   range,
   removeAt,
   repeat,
@@ -120,6 +122,7 @@ export default {
   multiple,
   none,
   partition,
+  pop,
   range,
   removeAt,
   repeat,

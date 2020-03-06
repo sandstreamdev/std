@@ -23,6 +23,7 @@ import minMax from "./minMax.js";
 import multiple from "./multiple.js";
 import none from "./none.js";
 import partition from "./partition.js";
+import pop from "./pop.js";
 import range from "./range.js";
 import removeAt from "./removeAt.js";
 import repeat from "./repeat.js";
@@ -71,6 +72,7 @@ export {
   multiple,
   none,
   partition,
+  pop,
   range,
   removeAt,
   repeat,
@@ -120,6 +122,7 @@ export default {
   multiple,
   none,
   partition,
+  pop,
   range,
   removeAt,
   repeat,
