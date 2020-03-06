@@ -402,7 +402,7 @@ pop([]); // ⇒ []
 ##### Questions
 
 - How to get an array without the last element?
-- How to remove the last element from the array?
+- How to remove the last element from an array?
 
 #### range
 
