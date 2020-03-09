@@ -8,5 +8,5 @@
       "content": "unique([1, 2, 3, 4, 3, 4, 3, 6]);\n// ⇒ [1, 2, 3, 4, 6]"
     }
   ],
-  "questions": ["How to get all unique values in an array?"]
+  "questions": ["How to find all unique values in an array?"]
 }

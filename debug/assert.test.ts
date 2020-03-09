@@ -26,7 +26,7 @@ describe("assert", () => {
     expect(() => assert(false, "Custom message")).toThrow("Custom message");
   });
 
-  it("calls a callback if the given", () => {
+  it("calls a callback if given", () => {
     const callback = jest.fn();
 
     assert(false, callback);
