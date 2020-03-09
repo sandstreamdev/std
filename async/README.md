@@ -1,6 +1,6 @@
 # debounce
 
-Makes the function run after the given period of not being called. Useful to delay input submission for Makes the function run after the given period of not being called. Useful to delay input submission for auto-complete etc.
+Makes the function run after the given period of not being called. Useful to delay input submission for auto-complete etc.
 
 ## Type signature
 

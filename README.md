@@ -1405,7 +1405,7 @@ zipWith((x, y) => x * x + y)([1, 2, 3], [4, 5, 6]);
 
 #### debounce
 
-Makes the function run after the given period of not being called. Useful to delay input submission for Makes the function run after the given period of not being called. Useful to delay input submission for auto-complete etc.
+Makes the function run after the given period of not being called. Useful to delay input submission for auto-complete etc.
 
 ##### Type signature
 

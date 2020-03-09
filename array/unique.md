@@ -21,4 +21,4 @@ unique([1, 2, 3, 4, 3, 4, 3, 6]);
 
 ## Questions
 
-- How to get all unique values in an array?
+- How to find all unique values in an array?
