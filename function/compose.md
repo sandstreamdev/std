@@ -1,6 +1,6 @@
 # compose
 
-Composes multiple functions into a higher order one. Goes right to left.
+Composes multiple functions into a higher-order one. Goes right to left.
 
 ## Type signature
 
@@ -9,3 +9,16 @@ Composes multiple functions into a higher order one. Goes right to left.
 (...fs: ((x: any) => any)[]) => (x: any) => any
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+compose(x => x * x, x => x + 1)(3);
+// ⇒ 16
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to compose functions?

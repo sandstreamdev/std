@@ -1,12 +1,12 @@
 {
   "name": "zip",
-  "description": "Zips given arrays together into pairs.",
+  "description": "Zips the given arrays together into pairs.",
   "signature": "(xs: any[], ys: any[]) => any[][]",
   "examples": [
     {
       "language": "javascript",
-      "content": "zip(); // ⇒ TODO"
+      "content": "zip([1, 2, 3], [4, 5, 6]);\n// ⇒ [[1, 4],[2, 5],[3, 6]]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to zip two arrays?"]
 }

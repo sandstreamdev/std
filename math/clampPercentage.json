@@ -5,8 +5,16 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "clampPercentage(); // ⇒ TODO"
+      "content": "clampPercentage(50);\n// ⇒ 50"
+    },
+    {
+      "language": "javascript",
+      "content": "clampPercentage(-50);\n// ⇒ 0"
+    },
+    {
+      "language": "javascript",
+      "content": "clampPercentage(150);\n// ⇒ 100"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to enforce a percentage be between 0% and 100%?"]
 }

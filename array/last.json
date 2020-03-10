@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "last(); // ⇒ TODO"
+      "content": "last([1, 2, 3]);\n// ⇒ 3"
+    },
+    {
+      "language": "javascript",
+      "content": "last([]);\n// ⇒ undefined"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to get the last element of an array?"]
 }

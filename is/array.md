@@ -1,6 +1,6 @@
 # array
 
-Checks if the given argument is array.
+Checks if the given argument is an array.
 
 ## Type signature
 
@@ -14,6 +14,16 @@ Checks if the given argument is array.
 
 <!-- prettier-ignore-start -->
 ```javascript
-array([]); // ⇒ true
+array([1, 2, 3]);
+// ⇒ true
+```
+
+```javascript
+array({ a: 1 });
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a given value is an array?

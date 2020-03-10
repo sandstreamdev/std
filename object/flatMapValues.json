@@ -1,12 +1,12 @@
 {
   "name": "flatMapValues",
   "description": "Flat maps the values of the given object.",
-  "signature": "(\n  f: (value: any, key: string, context: object) => boolean\n) => (xs: object) => any[]",
+  "signature": "(\n  f: (value: any, key: string, context: object) => any\n) => (xs: object) => any[]",
   "examples": [
     {
       "language": "javascript",
-      "content": "flatMapValues(); // ⇒ TODO"
+      "content": "flatMapValues(x => [x, x * 2])({ a: 1, b: 2, c: 3 });\n// ⇒ [1, 2, 2, 4, 3, 6]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to flat map an object?"]
 }

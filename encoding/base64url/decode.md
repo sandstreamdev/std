@@ -1,6 +1,6 @@
 # decode
 
-Decodes the given Base64URL back into string.
+Decodes the given Base64URL back into a string.
 
 ## Type signature
 
@@ -14,6 +14,11 @@ Decodes the given Base64URL back into string.
 
 <!-- prettier-ignore-start -->
 ```javascript
-decode("PDw_Pz8-Pg"); // ⇒ "<<???>>"
+decode("PDw_Pz8-Pg");
+// ⇒ "<<???>>"
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to decode Base64URL?

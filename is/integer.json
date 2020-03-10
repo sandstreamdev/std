@@ -1,12 +1,19 @@
 {
   "name": "integer",
-  "description": "Checks if given value is an integer.",
+  "description": "Checks if the given value is an integer.",
   "signature": "(x?: number) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "integer(); // ⇒ TODO"
+      "content": "integer(5);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "integer(32.5);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if a given value is an integer?",
+    "How to check if a given number is an integer?"
+  ]
 }

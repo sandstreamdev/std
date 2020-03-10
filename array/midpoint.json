@@ -5,8 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "midpoint(); // ⇒ TODO"
+      "content": "midpoint([1, 2, 3, 4, 5]);\n// ⇒ 3"
+    },
+    {
+      "language": "javascript",
+      "content": "midpoint([1, 2, 3, 4]);\n// ⇒ 3"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to get the element in the middle of an array?",
+    "How to get the middle element of an array?"
+  ]
 }

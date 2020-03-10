@@ -1,6 +1,6 @@
 # repeat
 
-Repeats the given element by given count of times.
+Repeats the given element by the given count of times.
 
 ## Type signature
 
@@ -9,3 +9,16 @@ Repeats the given element by given count of times.
 (count: number) => (value: any) => any[]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+repeat(3)("test");
+// ⇒ ["test", "test", "test"]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to repeat a value N times?

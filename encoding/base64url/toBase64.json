@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "toBase64(\"PDw_Pz8-Pg\"); // ⇒ \"PDw/Pz8+Pg==\""
+      "content": "toBase64(\"PDw_Pz8-Pg\");\n// ⇒ \"PDw/Pz8+Pg==\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to convert Base64URL to Base64?"]
 }

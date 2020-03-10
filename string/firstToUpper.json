@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "firstToUpper(); // ⇒ TODO"
+      "content": "firstToUpper(\"teSt\");\n// ⇒ \"TeSt\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to make the first letter of a string uppercase?"]
 }

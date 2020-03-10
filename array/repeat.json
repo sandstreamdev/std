@@ -1,12 +1,12 @@
 {
   "name": "repeat",
-  "description": "Repeats the given element by given count of times.",
+  "description": "Repeats the given element by the given count of times.",
   "signature": "(count: number) => (value: any) => any[]",
   "examples": [
     {
       "language": "javascript",
-      "content": "repeat(); // ⇒ TODO"
+      "content": "repeat(3)(\"test\");\n// ⇒ [\"test\", \"test\", \"test\"]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to repeat a value N times?"]
 }

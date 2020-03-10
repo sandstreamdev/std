@@ -2,7 +2,7 @@
 // @ts-ignore ambiguous import
 import find from "./find.ts";
 
-const greaterThan2 = x => x > 2;
+const greaterThan2 = (x: number) => x > 2;
 
 describe("find", () => {
   it("returns the first value that passes the predicate test", () => {

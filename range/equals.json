@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "equals(); // ⇒ TODO"
+      "content": "equals([1, 2], [1, 2]);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "equals([4, 3], [1, 2]);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if two ranges are equal?"]
 }

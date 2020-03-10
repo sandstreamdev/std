@@ -1,12 +1,20 @@
 {
   "name": "number",
-  "description": "Checks if given value is a number.",
+  "description": "Checks if the given value is a number.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "number(); // ⇒ TODO"
+      "content": "number(0 / 0);\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "number(15.6);\n// ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if a given value is a valid number?",
+    "How to check if a given value is not NaN?",
+    "How to check if a given value is finite?"
+  ]
 }

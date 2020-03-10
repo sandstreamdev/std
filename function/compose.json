@@ -1,12 +1,12 @@
 {
   "name": "compose",
-  "description": "Composes multiple functions into a higher order one. Goes right to left.",
+  "description": "Composes multiple functions into a higher-order one. Goes right to left.",
   "signature": "(...fs: ((x: any) => any)[]) => (x: any) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "compose(); // ⇒ TODO"
+      "content": "compose(x => x * x, x => x + 1)(3);\n// ⇒ 16"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to compose functions?"]
 }

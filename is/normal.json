@@ -5,8 +5,16 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "normal(); // ⇒ TODO"
+      "content": "normal(0.75);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "normal(-1);\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "normal(2.5);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a given value is in 0 to 1 inclusive range?"]
 }

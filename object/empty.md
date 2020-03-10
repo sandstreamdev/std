@@ -14,6 +14,7 @@ Empty object.
 
 <!-- prettier-ignore-start -->
 ```javascript
-empty; // ⇒ {}
+empty;
+// ⇒ {}
 ```
 <!-- prettier-ignore-end -->

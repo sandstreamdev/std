@@ -1,12 +1,16 @@
 {
   "name": "array",
-  "description": "Checks if the given argument is array.",
+  "description": "Checks if the given argument is an array.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "array([]); // ⇒ true"
+      "content": "array([1, 2, 3]);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "array({ a: 1 });\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a given value is an array?"]
 }

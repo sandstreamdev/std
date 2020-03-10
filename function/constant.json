@@ -1,12 +1,14 @@
 {
   "name": "constant",
-  "description": "Returns the given constant no matter of the input.",
+  "description": "Returns the given constant no matter the input.",
   "signature": "(x: any) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "constant(); // ⇒ TODO"
+      "content": "constant(3)(\"anything\");\n// ⇒ 3"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to create a function that always returns the same value despite given arguments?"
+  ]
 }

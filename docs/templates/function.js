@@ -1,5 +1,6 @@
 import hljs from "highlight.js";
 import { promises } from "fs";
+import prettier from "prettier";
 
 import { outPath } from "../utils/io.js";
 import { getPath } from "../utils/url.js";
@@ -70,12 +71,12 @@ const signatureFragment = signature => {
     return "";
   }
 
-  const singatureFormatted = hljs.highlight("typescript", signature).value;
+  const signatureFormatted = hljs.highlight("typescript", signature).value;
 
   return `<div class="type-signature">
     <h3>Type signature</h3>
     <div class="content">
-      <pre><code class="hljs"><span>${singatureFormatted}</span></code></pre>
+      <pre><code class="hljs"><span>${signatureFormatted}</span></code></pre>
     </div>
   </div>`;
 };
@@ -94,9 +95,15 @@ const examplesFragment = (examples, pathParts, funcName) => {
     `{ ${funcName} }`
   );
 
-  const examplesFormatted = examples.map(
-    ex => `<span>${hljs.highlight(ex.language, ex.content).value}</span>`
-  );
+  const examplesFormatted = examples.map(({ content, language }) => {
+    const formattedCode = prettier.format(content, {
+      parser: "babel",
+      printWidth: 36,
+      semi: true
+    });
+
+    return `<span>${hljs.highlight(language, formattedCode).value}</span>`;
+  });
 
   const fragment = exampleFormatted => `
     <div class="content">

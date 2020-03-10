@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "except(); // ⇒ TODO"
+      "content": "except(2)([1, 2, 3, 4, 5]);\n// ⇒ [1, 3, 4, 5]"
+    },
+    {
+      "language": "javascript",
+      "content": "except(2)([1, 2, 2, 4, 2]);\n// ⇒ [1, 4]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to get all the values of an array except the given one?"]
 }

@@ -1,12 +1,16 @@
 {
   "name": "date",
-  "description": "Checks if given value is a Date object.",
+  "description": "Checks if the given value is a Date object.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "date(); // ⇒ TODO"
+      "content": "date(new Date());\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "date(123);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a given value is a Date object?"]
 }

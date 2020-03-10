@@ -5,8 +5,16 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "differs(); // ⇒ TODO"
+      "content": "differs([1, 2, 3], [1, 2]);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "differs([1, 2, 3], [1, 2, 3]);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if two arrays differ?",
+    "How to check if two arrays are not equal?",
+    "How to check if two arrays are equal or not?"
+  ]
 }

@@ -1,12 +1,12 @@
 {
   "name": "function",
-  "description": "Checks if given value is a function.",
+  "description": "Checks if the given value is a function.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "_function(); // ⇒ TODO"
+      "content": "_function(x => x + 5);\n// ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a given value is a function?"]
 }

@@ -19,3 +19,16 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
 }) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+openInNewTabIntent({ ctrlKey: true });
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if the user wants to open a new tab using history API?

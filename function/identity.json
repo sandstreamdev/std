@@ -5,8 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "identity(); // ⇒ TODO"
+      "content": "identity(5);\n// ⇒ 5"
+    },
+    {
+      "language": "javascript",
+      "content": "identity(\"test\");\n// ⇒ \"test\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to use the identity function?",
+    "Where and why is identity function useful?"
+  ]
 }

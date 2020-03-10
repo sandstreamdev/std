@@ -1,12 +1,28 @@
 {
   "name": "nonNullable",
-  "description": "Checks and asserts the given value is not a null or undefined.",
+  "description": "Checks and asserts the given value is not null or undefined.",
   "signature": "<T>(val: T) => val is NonNullable<T>",
   "examples": [
     {
       "language": "javascript",
-      "content": "nonNullable(); // ⇒ TODO"
+      "content": "nonNullable(null);\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "nonNullable(undefined);\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "nonNullable(false);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "nonNullable({ a: 1 });\n// ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if a given value is non-nullable?",
+    "How to check if a given value is not null?",
+    "How to check if a given value is not undefined?"
+  ]
 }

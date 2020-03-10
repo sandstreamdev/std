@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "mapKeys(); // ⇒ TODO"
+      "content": "mapKeys((_, key) => key.toUpperCase())({ a: 1, b: 2, c: 3 });\n// ⇒ { A: 1, B: 2, C: 3 }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to map object keys?", "How to transform object keys?"]
 }

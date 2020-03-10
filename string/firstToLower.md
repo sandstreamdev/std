@@ -9,3 +9,16 @@ Transforms the first character to lowercase.
 (text: string) => string
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+firstToLower("TeSt");
+// ⇒ "teSt"
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to make the first letter of a string lowercase?

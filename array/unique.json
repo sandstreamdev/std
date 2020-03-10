@@ -1,12 +1,12 @@
 {
   "name": "unique",
-  "description": "Returns only unique elements of the given array.",
+  "description": "Returns unique elements of the given array.",
   "signature": "(xs: any[]) => any[]",
   "examples": [
     {
       "language": "javascript",
-      "content": "unique(); // ⇒ TODO"
+      "content": "unique([1, 2, 3, 4, 3, 4, 3, 6]);\n// ⇒ [1, 2, 3, 4, 6]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to find all unique values in an array?"]
 }

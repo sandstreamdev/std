@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "firstToLower(); // ⇒ TODO"
+      "content": "firstToLower(\"TeSt\");\n// ⇒ \"teSt\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to make the first letter of a string lowercase?"]
 }

@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sequence(); // ⇒ TODO"
+      "content": "const f = () => new Promise(resolve => setTimeout(resolve, 1000));\nconst g = () => new Promise(resolve => setTimeout(resolve, 2000));\n\nsequence([f, g]).then(() => console.log(\"Done\"));"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to run async tasks sequentially?"]
 }

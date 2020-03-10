@@ -5,8 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "whenTrue(); // ⇒ TODO"
+      "content": "whenTrue(x => console.log(x))(false);\nwhen(x => x > 0)(x => console.log(x))(true);"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to run a function only if its argument is true?",
+    "How to execute function only if a variable is true?"
+  ]
 }

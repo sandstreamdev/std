@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "encode(\"<<???>>\"); // ⇒ \"PDw_Pz8-Pg\""
+      "content": "encode(\"<<???>>\");\n// ⇒ \"PDw_Pz8-Pg\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to encode a string as Base64URL?"]
 }

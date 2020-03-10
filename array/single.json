@@ -5,8 +5,16 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "single(); // ⇒ TODO"
+      "content": "single([1]);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "single([1, 2, 3]);\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "single([]);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if an array contains only one element?"]
 }

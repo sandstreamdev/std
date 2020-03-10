@@ -1,6 +1,6 @@
 # enumerable
 
-Creates a 1 to 1 mapping of given values as an object.
+Creates a 1 to 1 mapping of the given values as an object.
 
 ## Type signature
 
@@ -18,3 +18,7 @@ enumerable('TEST', 'X', 'Y');
 // ⇒ { TEST: 'TEST', X: 'X', Y: 'Y' }
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to create an object of the same keys and values?

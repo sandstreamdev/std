@@ -5,8 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "byte(128); // ⇒ true"
+      "content": "byte(128);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "byte(325);\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "byte(65.5);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if a given value is a byte?",
+    "How to check if a given number is a byte?"
+  ]
 }

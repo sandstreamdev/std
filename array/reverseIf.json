@@ -5,8 +5,14 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "reverseIf(); // ⇒ TODO"
+      "content": "reverseIf(true)([1, 2, 3, 4, 5]);\n// ⇒ [5, 4, 3, 2, 1]"
+    },
+    {
+      "language": "javascript",
+      "content": "reverseIf(false)([1, 2, 3, 4, 5]);\n// ⇒ [1, 2, 3, 4, 5]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to reverse an array without mutating it only when a condition is satisfied?"
+  ]
 }

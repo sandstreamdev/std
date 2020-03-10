@@ -1,12 +1,20 @@
 {
   "name": "second",
   "description": "Returns the second element or undefined when there are less than two elements in the given array.",
-  "signature": "([, x]: any[]) => any",
+  "signature": "(xs: any[]) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "second(); // ⇒ TODO"
+      "content": "second([1, 2, 3, 4, 5]);\n// ⇒ 2"
+    },
+    {
+      "language": "javascript",
+      "content": "second([1]);\n// ⇒ undefined"
+    },
+    {
+      "language": "javascript",
+      "content": "second([]);\n// ⇒ undefined"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to get the second element of an array?"]
 }

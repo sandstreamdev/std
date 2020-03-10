@@ -5,8 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "flatMap(); // ⇒ TODO"
+      "content": "flatMap(text => [...text])([\"test\", \"123\"]);\n// ⇒ [\"t\", \"e\", \"s\", \"t\", \"1\", \"2\", \"3\"]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to flat map an array?",
+    "How to map and then flatten an array?"
+  ]
 }

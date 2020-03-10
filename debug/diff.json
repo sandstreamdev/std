@@ -1,12 +1,17 @@
 {
   "name": "diff",
-  "description": "Computes a difference between two objects.",
+  "description": "Computes a deep difference between the two values (primitives, objects, arrays, etc.).",
   "signature": "(\n  obj1?: {\n    [index: string]: any;\n  },\n  obj2?: {\n    [index: string]: any;\n  }\n) => object",
   "examples": [
     {
       "language": "javascript",
-      "content": "diff(); // ⇒ TODO"
+      "content": "diff({ a: 1 }, { a: 2 });\n// ⇒ { a: { data: [1, 2], type: '~' }}"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to compute a diff?",
+    "How to compute a deep diff?",
+    "How to compute a diff between two objects?",
+    "How to compute a diff between two arrays?"
+  ]
 }

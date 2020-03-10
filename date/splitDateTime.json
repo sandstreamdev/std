@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "splitDateTime(); // ⇒ TODO"
+      "content": "splitDateTime();\n// ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

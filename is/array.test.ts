@@ -3,7 +3,7 @@
 import array from "./array.ts";
 
 describe("array", () => {
-  it("checks if given argument is an array", () => {
+  it("checks if the given argument is an array", () => {
     expect(array([])).toBe(true);
     expect(array([1, 2, 3])).toBe(true);
     expect(array({})).toBe(false);

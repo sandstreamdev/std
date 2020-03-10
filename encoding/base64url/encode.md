@@ -14,6 +14,11 @@ Encodes the given string into Base64URL.
 
 <!-- prettier-ignore-start -->
 ```javascript
-encode("<<???>>"); // ⇒ "PDw_Pz8-Pg"
+encode("<<???>>");
+// ⇒ "PDw_Pz8-Pg"
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to encode a string as Base64URL?

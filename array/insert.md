@@ -25,3 +25,7 @@ insert(1)('d')(['a', 'b', 'c']);
 // ⇒ ['a', 'd', 'b', 'c']
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to insert an element to an array at a given position?

@@ -5,8 +5,10 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "ceilToNearestPowerOfTwo(); // ⇒ TODO"
+      "content": "ceilToNearestPowerOfTwo(345);\n// ⇒ 512"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to get the nearest power of two greater or equal to the given value?"
+  ]
 }

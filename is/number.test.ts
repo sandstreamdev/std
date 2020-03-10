@@ -3,7 +3,7 @@
 import number from "./number.ts";
 
 describe("number", () => {
-  it("checks if given value is a number", () => {
+  it("checks if the given value is a number", () => {
     expect(number(5)).toBe(true);
     expect(number(1.5)).toBe(true);
     expect(number(-2)).toBe(true);

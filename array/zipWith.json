@@ -1,12 +1,12 @@
 {
   "name": "zipWith",
-  "description": "Zips given arrays together with the given function.",
+  "description": "Zips the given arrays together with the given function.",
   "signature": "(\n  f?: (x: any, y: any) => any[]\n) => (xs: any[], ys: any[]) => any[][]",
   "examples": [
     {
       "language": "javascript",
-      "content": "zipWith(); // ⇒ TODO"
+      "content": "zipWith((x, y) => x * x + y)([1, 2, 3], [4, 5, 6]);\n// ⇒ [5, 9, 15]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to zip two arrays with a given function?"]
 }

@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "length(); // ⇒ TODO"
+      "content": "length([3, 15]);\n// ⇒ 12"
+    },
+    {
+      "language": "javascript",
+      "content": "length([1, 0]);\n// ⇒ -1"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to compute a signed length of a range?"]
 }

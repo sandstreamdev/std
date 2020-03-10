@@ -1,1 +1,5 @@
-export default ([, x]) => x;
+export default xs => {
+  const [, x] = xs;
+
+  return x;
+};

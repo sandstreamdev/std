@@ -1,12 +1,12 @@
 {
   "name": "to",
-  "description": "Coverts byte array to string.",
+  "description": "Coverts a byte array into a string.",
   "signature": "(bytes: number[]) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "to([0x50, 0x51, 0x52]); // ⇒ \"PQR\""
+      "content": "to([0x50, 0x51, 0x52]);\n// ⇒ \"PQR\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to convert a byte array to string?"]
 }

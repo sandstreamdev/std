@@ -1,12 +1,12 @@
 {
   "name": "decode",
-  "description": "Decodes the given Base64URL back into string.",
+  "description": "Decodes the given Base64URL back into a string.",
   "signature": "(text: string, context?: DecodeContext) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "decode(\"PDw_Pz8-Pg\"); // ⇒ \"<<???>>\""
+      "content": "decode(\"PDw_Pz8-Pg\");\n// ⇒ \"<<???>>\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to decode Base64URL?"]
 }

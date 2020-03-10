@@ -1,12 +1,16 @@
 {
   "name": "find",
-  "description": "Finds an element by a predicate function within given array, otherwise returns the given fallback value or undefined when fallback is not present.",
+  "description": "Finds an element by a predicate function within the given array, otherwise, it returns the given fallback value or undefined when fallback is not present.",
   "signature": "(\n  predicate: (value: any, index: number, context: any[]) => boolean,\n  fallback?: any\n) => (xs: any[]) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "find(); // ⇒ TODO"
+      "content": "find(x => x > 2)([1, 2, 3, 5, 7]);\n// ⇒ 3"
+    },
+    {
+      "language": "javascript",
+      "content": "find(x => x > 2)([1, 2, -3, -5, -7]);\n// ⇒ undefined"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to find an element of an array by a given predicate?"]
 }

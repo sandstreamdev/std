@@ -16,3 +16,16 @@ Applies transformations to the given vector.
 }) => ([x, y]: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+convertSpace(rotate(Math.PI))([2, 3]);
+// ⇒ [-2, -3]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to transform a vector with a matrix?

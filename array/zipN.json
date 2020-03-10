@@ -1,6 +1,6 @@
 {
   "name": "zipN",
-  "description": "Zips given arrays",
+  "description": "Zips the given arrays together into pairs.",
   "signature": "(...xs: any[][]) => any[][]",
   "examples": [
     {
@@ -16,5 +16,5 @@
       "content": "zipN([1, 2], [4, 5, 6], [7, 8, 9]);\n// ⇒ [[1, 4, 7],[2, 5, 8]]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to zip multiple arrays?"]
 }

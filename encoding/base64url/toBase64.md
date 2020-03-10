@@ -14,6 +14,11 @@ Converts Base64URL string into Base64 one.
 
 <!-- prettier-ignore-start -->
 ```javascript
-toBase64("PDw_Pz8-Pg"); // ⇒ "PDw/Pz8+Pg=="
+toBase64("PDw_Pz8-Pg");
+// ⇒ "PDw/Pz8+Pg=="
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert Base64URL to Base64?

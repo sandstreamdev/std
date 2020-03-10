@@ -1,12 +1,12 @@
 {
   "name": "average",
-  "description": "Calculates the average of given array of numbers.",
+  "description": "Calculates the average of the given array of numbers.",
   "signature": "(xs?: number[]) => number",
   "examples": [
     {
       "language": "javascript",
-      "content": "average(); // ⇒ TODO"
+      "content": "average([2, 4, 15]);\n// ⇒ 7"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to compute the average of an array?"]
 }

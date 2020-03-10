@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "reverse(); // ⇒ TODO"
+      "content": "reverse([1, 2, 3, 4, 5]);\n// ⇒ [5, 4, 3, 2, 1]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to reverse an array without mutating it?"]
 }

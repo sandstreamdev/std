@@ -1,12 +1,15 @@
 {
   "name": "fromEntries",
-  "description": "Creates an object from array of key value pairs (entries).",
+  "description": "Creates an object from an array of key-value pairs (entries).",
   "signature": "(keyValuePairs: [string, any][]) => object",
   "examples": [
     {
       "language": "javascript",
-      "content": "fromEntries(); // ⇒ TODO"
+      "content": "fromEntries([[\"a\", 1], [\"b\", 2], [\"c\", 3]]);\n// ⇒ { a: 1, b: 2, c: 3 }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to create an object from an array of key-value pairs?",
+    "How to create an object from an array of entries?"
+  ]
 }

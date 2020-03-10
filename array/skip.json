@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "skip(); // ⇒ TODO"
+      "content": "skip(2)([1, 2, 3, 4, 5]);\n// ⇒ [3, 4, 5]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to skip the first few elements of an array?"]
 }

@@ -5,8 +5,23 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "multiple(); // ⇒ TODO"
+      "content": "multiple([1, 2, 3]);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "multiple([1, 2]);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "multiple([1]);\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "multiple([]);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if an array contains multiple elements?",
+    "How to check whether multiple values exist within an array?"
+  ]
 }

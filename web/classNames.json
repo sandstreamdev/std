@@ -1,12 +1,14 @@
 {
   "name": "classNames",
-  "description": "Composes class name from truthy values with support of string and objects.",
+  "description": "Composes class name from truthy values with the support of string and objects.",
   "signature": "(...xs: any[]) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "classNames(); // ⇒ TODO"
+      "content": "classNames(\"test\", { active: true, disabled: false, on: undefined });\n// ⇒ \"test active\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to create a class name from an array of strings and/or objects?"
+  ]
 }

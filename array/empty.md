@@ -14,6 +14,11 @@ any[]
 
 <!-- prettier-ignore-start -->
 ```javascript
-empty; // ⇒ []
+empty;
+// ⇒ []
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get an empty array?

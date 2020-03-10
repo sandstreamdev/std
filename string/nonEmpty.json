@@ -5,8 +5,20 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "nonEmpty(); // ⇒ TODO"
+      "content": "nonEmpty(\"test with spaces\");\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "nonEmpty(\"   \");\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "nonEmpty(null);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if a string is non-empty?",
+    "How to check if a string is not all whitespace?",
+    "How to check if a string is not null or undefined?"
+  ]
 }

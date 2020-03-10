@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sort(); // ⇒ TODO"
+      "content": "sort({ a: 3, b: 2, c: 3, d: -7, e: 13, f: 0, g: 8 });\n// ⇒ {\"d\": -7,\"f\": 0,\"b\": 2,\"a\": 3,\"c\": 3,\"g\": 8,\"e\": 13}"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to sort an object?"]
 }

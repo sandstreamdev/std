@@ -5,8 +5,15 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "cross(); // ⇒ TODO"
+      "content": "cross([3, 5], [-1, 8]);\n// ⇒ 29"
+    },
+    {
+      "language": "javascript",
+      "content": "cross([3, 5], [-1, -8]);\n// ⇒ -19"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to compute a cross product of two vectors?",
+    "How to check on which side of a line a point is?"
+  ]
 }

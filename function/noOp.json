@@ -1,12 +1,12 @@
 {
   "name": "noOp",
-  "description": "Does exactly nothing.",
+  "description": "It does exactly nothing.",
   "signature": "() => void",
   "examples": [
     {
       "language": "javascript",
-      "content": "noOp(); // ⇒ TODO"
+      "content": "noOp(\"anything\");\n// ⇒ undefined"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to create a function that does nothing?"]
 }

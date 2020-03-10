@@ -1,12 +1,23 @@
 {
   "name": "lerp",
-  "description": "Linearly interpolates two given values by normal value of their distance.",
+  "description": "Linearly interpolates two given values by the normal value of their distance.",
   "signature": "(t: number) => (a: number, b: number) => number",
   "examples": [
     {
       "language": "javascript",
-      "content": "lerp(); // ⇒ TODO"
+      "content": "lerp(0.5)(0, 10);\n// ⇒ 5"
+    },
+    {
+      "language": "javascript",
+      "content": "lerp(0)(0, 10);\n// ⇒ 0"
+    },
+    {
+      "language": "javascript",
+      "content": "lerp(1)(0, 10);\n// ⇒ 10"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to linearly interpolate between two values?",
+    "How to interpolate two numbers?"
+  ]
 }

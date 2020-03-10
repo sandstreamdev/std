@@ -5,8 +5,14 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "inRectangleRange(); // ⇒ TODO"
+      "content": "inRectangleRange(50, 100)(25, 50);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "inRectangleRange(50, 100)(-25, 50);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if a point is inside a rectangle defined by width and height?"
+  ]
 }

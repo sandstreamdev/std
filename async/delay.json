@@ -5,8 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "delay(); // ⇒ TODO"
+      "content": "delay(2000)(() => console.log(\"Test\"));"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to delay a function?",
+    "What is the JavaScript version of sleep()?"
+  ]
 }

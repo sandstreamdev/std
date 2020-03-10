@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "read(); // ⇒ TODO"
+      "content": "read(\"test&count=5\");\n// ⇒ { test: \"\", count: \"5\" }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to parse a query string using URLSearchParams?"]
 }

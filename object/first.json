@@ -1,12 +1,12 @@
 {
   "name": "first",
-  "description": "Returns the first value in the given object. Follows default object iteration order.",
+  "description": "Returns the first value in the given object. Follows the default object iteration order.",
   "signature": "(xs: object) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "first({ a: 1, b: 2, c: 3 }); // ⇒ 1"
+      "content": "first({ a: 1, b: 2, c: 3 });\n// ⇒ 1"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to get the first value of an object?"]
 }

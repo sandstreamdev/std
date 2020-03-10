@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "scale(); // ⇒ TODO"
+      "content": "scale(2, 3);\n// ⇒ { a: 2, b: 0, c: 0, d: 3, e: 0, f: 0 }"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to create a scale matrix?"]
 }

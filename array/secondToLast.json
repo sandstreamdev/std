@@ -5,8 +5,16 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "secondToLast(); // ⇒ TODO"
+      "content": "secondToLast([1, 2, 3, 4, 5]);\n// ⇒ 4"
+    },
+    {
+      "language": "javascript",
+      "content": "secondToLast([1]);\n// ⇒ undefined"
+    },
+    {
+      "language": "javascript",
+      "content": "secondToLast([]);\n// ⇒ undefined"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to get the second to last element of an array?"]
 }

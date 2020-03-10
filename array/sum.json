@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "sum(); // ⇒ TODO"
+      "content": "sum([1, 2, 3, 4, 5]);\n// ⇒ 15"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to sum elements of an array?"]
 }

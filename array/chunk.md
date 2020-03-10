@@ -1,6 +1,6 @@
 # chunk
 
-Splits the given array into array of chunks of up to the given length.
+Splits the given array into an array of chunks of up to the given length.
 
 ## Type signature
 
@@ -23,3 +23,8 @@ chunk(3)(['a', 'b', 'c', 'd']);
 // ⇒ [['a', 'b', 'c'], ['d']]
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to split an array into chunks?
+- How to split an array into chunks of the same size?

@@ -1,12 +1,16 @@
 {
   "name": "object",
-  "description": "Checks if given value is an object.",
+  "description": "Checks if the given value is an object.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "object(); // ⇒ TODO"
+      "content": "object({ a: 1, b: 2 });\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "object([1, 2, 3]);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a given value is an object?"]
 }

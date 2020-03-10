@@ -3,7 +3,7 @@
 import split from "./split.ts";
 
 describe("split", () => {
-  it("splits the given range in subranges by excluding the given used ranged", () => {
+  it("splits the given range into subranges by excluding the given used ranged", () => {
     expect(
       split([
         [2, 3],

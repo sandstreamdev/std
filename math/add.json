@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "add(); // ⇒ TODO"
+      "content": "add(3, 5);\n// ⇒ 8"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to add two values?"]
 }

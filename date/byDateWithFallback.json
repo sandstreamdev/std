@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "byDateWithFallback(); // ⇒ TODO"
+      "content": "byDateWithFallback();\n// ⇒ TODO"
     }
   ],
   "questions": ["TODO: List questions that may this function answers."]

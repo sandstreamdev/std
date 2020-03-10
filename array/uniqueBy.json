@@ -8,5 +8,5 @@
       "content": "uniqueBy(({ id }) => id)([\n  { id: 1, value: 'a' },\n  { id: 2, value: 'b' },\n  { id: 1, value: 'c' }\n])\n// ⇒ [{ id: 1, value: 'c' }, { id: 2, value: 'b' }]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answer."]
+  "questions": ["How to find all unique values in an array by some predicate?"]
 }

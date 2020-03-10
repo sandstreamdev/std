@@ -38,3 +38,8 @@ merge({ a: 1, b: { c: 3 } }, { b: { d: 8 } });
 // ⇒ { a: 1, b: { c: 3, d: 8 } }
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to merge two objects together?
+- How to deeply merge two objects?

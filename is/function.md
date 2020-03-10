@@ -1,6 +1,6 @@
 # function
 
-Checks if given value is a function.
+Checks if the given value is a function.
 
 ## Type signature
 
@@ -9,3 +9,16 @@ Checks if given value is a function.
 (x?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+_function(x => x + 5);
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a given value is a function?

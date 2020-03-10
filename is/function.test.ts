@@ -3,7 +3,7 @@
 import _function from "./function.ts";
 
 describe("function", () => {
-  it("checks if given value is a function", () => {
+  it("checks if the given value is a function", () => {
     expect(
       _function(() => {
         {

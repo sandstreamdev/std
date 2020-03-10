@@ -5,8 +5,12 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "none(); // ⇒ TODO"
+      "content": "none([]);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "none([1, 2, 3]);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if an array is empty?"]
 }

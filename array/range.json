@@ -5,8 +5,8 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "range(); // ⇒ TODO"
+      "content": "range(3);\n// ⇒ [0, 1, 2]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to create an array of all integers from 0 to N exclusive?"]
 }

@@ -1,12 +1,15 @@
 {
   "name": "length",
-  "description": "Calculates length/magnitude of the given vector.",
+  "description": "Calculates the length/magnitude of the given vector.",
   "signature": "([x, y]: [number, number]) => number",
   "examples": [
     {
       "language": "javascript",
-      "content": "length(); // ⇒ TODO"
+      "content": "length([3, 5]);\n// ⇒ Math.sqrt(3 * 3 + 5 * 5)"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to compute the length of a vector?",
+    "How to compute the magnitude of a vector?"
+  ]
 }

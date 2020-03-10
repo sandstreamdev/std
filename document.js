@@ -67,7 +67,7 @@ const jsonTemplate = name => ({
   examples: [
     {
       language: "javascript",
-      content: `${name}(); // ⇒ TODO`
+      content: `${name}();\n// ⇒ TODO`
     }
   ],
   questions: ["TODO: List questions that may this function answers."]

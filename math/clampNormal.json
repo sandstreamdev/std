@@ -5,8 +5,19 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "clampNormal(); // ⇒ TODO"
+      "content": "clampNormal(0.5);\n// ⇒ 0.5"
+    },
+    {
+      "language": "javascript",
+      "content": "clampNormal(-0.5);\n// ⇒ 0"
+    },
+    {
+      "language": "javascript",
+      "content": "clampNormal(1.5);\n// ⇒ 1"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to clamp value to be in 0 to 1 inclusive range?",
+    "How to clamp value to be in the normal range?"
+  ]
 }

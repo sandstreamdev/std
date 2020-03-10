@@ -1,12 +1,12 @@
 {
   "name": "hasKey",
-  "description": "Checks if given key is present in the object.",
+  "description": "Checks if the given key is present in the object.",
   "signature": "(key: string) => (xs?: any) => any",
   "examples": [
     {
       "language": "javascript",
-      "content": "hasKey(); // ⇒ TODO"
+      "content": "hasKey(\"c\")({ a: 1, b: 2, c: 3 });\n// ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if an object contains a given key?"]
 }

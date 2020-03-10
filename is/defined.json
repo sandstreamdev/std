@@ -1,12 +1,27 @@
 {
   "name": "defined",
-  "description": "Checks if given value is defined.",
+  "description": "Checks if the given value is defined.",
   "signature": "(x?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "defined(undefined); // ⇒ false"
+      "content": "defined(undefined);\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "defined(null);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "defined(0);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "defined({ a: 1 });\n// ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to check if a given value is defined?",
+    "How to check if a given value is not undefined?"
+  ]
 }

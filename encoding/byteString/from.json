@@ -1,12 +1,12 @@
 {
   "name": "from",
-  "description": "Converts string to byte array.",
+  "description": "Converts a string to a byte array.",
   "signature": "(byteString: string) => number[]",
   "examples": [
     {
       "language": "javascript",
-      "content": "from(\"PQR\"); // ⇒ [80, 81, 82]"
+      "content": "from(\"PQR\");\n// ⇒ [80, 81, 82]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to convert a string into a byte array?"]
 }

@@ -1,12 +1,15 @@
 {
   "name": "entries",
-  "description": "Lists key value pairs (entries) present in the given object.",
+  "description": "Lists key-value pairs (entries) present in the given object.",
   "signature": "{\n  <T>(\n    o:\n      | {\n          [s: string]: T;\n        }\n      | ArrayLike<T>\n  ): [string, T][];\n  (o: {}): [string, any][];\n}",
   "examples": [
     {
       "language": "javascript",
-      "content": "entries(); // ⇒ TODO"
+      "content": "entries({ a: 1, b: 2, c: 3 });\n// ⇒ [[\"a\", 1], [\"b\", 2], [\"c\", 3]]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to get entries of an object?",
+    "How to get an array of key-value pairs of an object?"
+  ]
 }

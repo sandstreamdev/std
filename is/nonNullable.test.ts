@@ -3,7 +3,7 @@
 import nonNullable from "./nonNullable.ts";
 
 describe("nonNullable", () => {
-  it("checks and asserts the given value is not a null or undefined", () => {
+  it("checks and asserts the given value is not null or undefined", () => {
     expect(nonNullable(undefined)).toBe(false);
     expect(nonNullable(null)).toBe(false);
 
