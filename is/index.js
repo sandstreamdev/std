@@ -1,4 +1,5 @@
 import array from "./array.js";
+import boolean from "./boolean.js";
 import byte from "./byte.js";
 import date from "./date.js";
 import defined from "./defined.js";
@@ -12,6 +13,7 @@ import string from "./string.js";
 
 export {
   array,
+  boolean,
   byte,
   date,
   defined,
@@ -26,6 +28,7 @@ export {
 
 export default {
   array,
+  boolean,
   byte,
   date,
   defined,
