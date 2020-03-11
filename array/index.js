@@ -16,6 +16,7 @@ import insert from "./insert.js";
 import intersection from "./intersection.js";
 import is from "./is.js";
 import last from "./last.js";
+import length from "./length.js";
 import lengthDiffers from "./lengthDiffers.js";
 import map from "./map.js";
 import midpoint from "./midpoint.js";
@@ -65,6 +66,7 @@ export {
   intersection,
   is,
   last,
+  length,
   lengthDiffers,
   map,
   midpoint,
@@ -115,6 +117,7 @@ export default {
   intersection,
   is,
   last,
+  length,
   lengthDiffers,
   map,
   midpoint,
