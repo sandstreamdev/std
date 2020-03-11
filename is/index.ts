@@ -1,4 +1,5 @@
 import array from "./array";
+import boolean from "./boolean";
 import byte from "./byte";
 import date from "./date";
 import defined from "./defined";
@@ -12,6 +13,7 @@ import string from "./string";
 
 export {
   array,
+  boolean,
   byte,
   date,
   defined,
@@ -26,6 +28,7 @@ export {
 
 export default {
   array,
+  boolean,
   byte,
   date,
   defined,

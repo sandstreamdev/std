@@ -1,0 +1,16 @@
+{
+  "name": "boolean",
+  "description": "Checks if the given value is a boolean.",
+  "signature": "(x?: any) => boolean",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "boolean(false); // ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "boolean(1); // ⇒ false"
+    }
+  ],
+  "questions": ["How to check if a given value is a boolean?"]
+}
