@@ -1,12 +1,12 @@
 {
   "name": "toISO",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns an ISO compliant date time string.",
   "signature": "(x: Date) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "toISO();\n// ⇒ TODO"
+      "content": "toISO(new Date(\"2019-04-24T13:54:33.232Z\"));\n// ⇒ \"2019-04-24T13:54:33.232Z\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to convert Date object to ISO compliant date string?"]
 }

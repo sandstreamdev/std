@@ -1,1 +1,1 @@
-export default (x: Date) => x.toISOString();
+export default (x: Date): string => x.toISOString();
