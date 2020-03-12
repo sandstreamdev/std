@@ -569,9 +569,10 @@ length([]);
 
 ## Questions
 
-- How to check an array length?
-- How to check the size of the array?
-- How to check the number of elements in the array?
+- How to check an array's length?
+- How to compute an array's length?
+- How to check the size of an array?
+- How to check the number of elements in an array?
 
 # lengthDiffers
 
