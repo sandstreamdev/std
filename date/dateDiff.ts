@@ -1,4 +1,7 @@
-export default (a: string | number | Date, b: string | number | Date) => {
+export default (
+  a: string | number | Date,
+  b: string | number | Date
+): number => {
   const d1 = new Date(a);
   const d2 = new Date(b);
 
