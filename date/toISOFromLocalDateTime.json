@@ -1,6 +1,6 @@
 {
   "name": "toISOFromLocalDateTime",
-  "description": "TODO: Fill short description here.",
+  "description": "Converts a local date time into an UTC ISO compliant date time string. Keeps the original time.",
   "signature": "(date: Date) => string",
   "examples": [
     {
@@ -8,5 +8,8 @@
       "content": "toISOFromLocalDateTime();\n// ⇒ TODO"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to convert local time to UTC?",
+    "How to convert local time to ISO date time string?"
+  ]
 }
