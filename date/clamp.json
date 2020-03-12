@@ -1,12 +1,15 @@
 {
   "name": "clamp",
-  "description": "TODO: Fill short description here.",
+  "description": "Clamps the given date to the given date range.",
   "signature": "(\n  min: number | Date,\n  max: number | Date\n) => (dateStringOrDate: string | number | Date) => Date",
   "examples": [
     {
       "language": "javascript",
-      "content": "clamp();\n// ⇒ TODO"
+      "content": "const date = new Date(\"2019-06-15T13:54:33.232Z\");\nconst min = new Date(\"2019-02-23T13:54:33.232Z\");\nconst max = new Date(\"2019-03-13T13:54:33.232Z\");\n\nclamp(min, max)(date);\n// => new Date(\"2019-03-13T13:54:33.232Z\")"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to clamp a date to a desired date range?",
+    "How to enforce a date to be in a given date range?"
+  ]
 }
