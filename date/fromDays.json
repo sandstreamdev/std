@@ -1,12 +1,14 @@
 {
   "name": "fromDays",
-  "description": "TODO: Fill short description here.",
+  "description": "Converts given day count to milliseconds.",
   "signature": "(days: number) => number",
   "examples": [
     {
       "language": "javascript",
-      "content": "fromDays();\n// ⇒ TODO"
+      "content": "fromDays(1);\n// ⇒ 86400000"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to find how many milliseconds are in given number of days?"
+  ]
 }
