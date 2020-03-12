@@ -1,6 +1,7 @@
 # std
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/sandstreamdev/std.svg)](https://greenkeeper.io/)
+[![Codecov](https://codecov.io/gh/sandstreamdev/std/branch/master/graph/badge.svg)](https://codecov.io/gh/sandstreamdev/std)
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
 ## Installation
