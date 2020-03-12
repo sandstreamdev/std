@@ -8,5 +8,5 @@
       "content": "const date = new new Date('2019-04-24T13:54:33.232Z');\nconst cloned = clone(date);\n\ncloned !== date && cloned.valueOf() === date.valueOf();\n// ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answer."]
+  "questions": ["How to clone a Date object?"]
 }
