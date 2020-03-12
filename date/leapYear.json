@@ -1,6 +1,6 @@
 {
   "name": "leapYear",
-  "description": "TODO: Fill short description here.",
+  "description": "Detects if a given year is a leap year.",
   "signature": "(year: number) => boolean",
   "examples": [
     {
@@ -8,5 +8,5 @@
       "content": "leapYear();\n// ⇒ TODO"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to find if the given year is a leap year?"]
 }
