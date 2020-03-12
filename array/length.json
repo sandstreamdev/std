@@ -1,0 +1,25 @@
+{
+  "name": "length",
+  "description": "Returns the number of elements in the given array.",
+  "signature": "(xs: any[]) => number",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "length([true, 1]);\n// ⇒ 2"
+    },
+    {
+      "language": "javascript",
+      "content": "length([1, 2, 3]);\n// ⇒ 3"
+    },
+    {
+      "language": "javascript",
+      "content": "length([]);\n// ⇒ 0"
+    }
+  ],
+  "questions": [
+    "How to check an array's length?",
+    "How to compute an array's length?",
+    "How to check the size of an array?",
+    "How to check the number of elements in an array?"
+  ]
+}

@@ -16,6 +16,7 @@ import insert from "./insert";
 import intersection from "./intersection";
 import is from "./is";
 import last from "./last";
+import length from "./length";
 import lengthDiffers from "./lengthDiffers";
 import map from "./map";
 import midpoint from "./midpoint";
@@ -65,6 +66,7 @@ export {
   intersection,
   is,
   last,
+  length,
   lengthDiffers,
   map,
   midpoint,
@@ -115,6 +117,7 @@ export default {
   intersection,
   is,
   last,
+  length,
   lengthDiffers,
   map,
   midpoint,
