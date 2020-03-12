@@ -1,12 +1,19 @@
 {
   "name": "daysInMonths",
-  "description": "TODO: Fill short description here.",
+  "description": "Returns an array of days in particular months. Number of days in February varies if it is a leap year or not",
   "signature": "(\n  leapYear: boolean\n) => [\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number,\n  number\n]",
   "examples": [
     {
       "language": "javascript",
-      "content": "daysInMonths();\n// ⇒ TODO"
+      "content": "daysInMonths(false);\n// ⇒ [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]"
+    },
+    {
+      "language": "javascript",
+      "content": "daysInMonths(true);\n// ⇒ [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to find out how many days are in particular month?",
+    "How to find out how many days there are in a leap year?"
+  ]
 }
