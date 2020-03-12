@@ -1,9 +1,7 @@
-export default (from: string | number | Date, to: string | number | Date) => (
-  date = new Date()
-) => {
-  const dateTime = new Date(date).getTime();
-  const fromTime = new Date(from).getTime();
-  const toTime = new Date(to).getTime();
+export default (from: Date, to: Date) => (date: Date): boolean => {
+  const timestamp = date.valueOf();
+  const fromTimestamp = from.valueOf();
+  const toTimestamp = to.valueOf();
 
-  return dateTime >= fromTime && dateTime <= toTime;
+  return timestamp >= fromTimestamp && timestamp <= toTimestamp;
 };
