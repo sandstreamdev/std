@@ -1,12 +1,16 @@
 {
   "name": "displayTime",
-  "description": "TODO: Fill short description here.",
+  "description": "Displays padded time string.",
   "signature": "(\n  source: [number, number, number],\n  showSeconds: boolean\n) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "displayTime();\n// ⇒ TODO"
+      "content": "displayTime([5, 12, 16], false);\n// ⇒ 05:12"
+    },
+    {
+      "language": "javascript",
+      "content": "displayTime([5, 12, 16], true);\n// ⇒ 05:12:16"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to display padded time?"]
 }
