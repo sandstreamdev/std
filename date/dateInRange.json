@@ -1,12 +1,12 @@
 {
   "name": "dateInRange",
-  "description": "TODO: Fill short description here.",
+  "description": "Checks if the given date is between the given date range (inclusive).",
   "signature": "(\n  from: string | number | Date,\n  to: string | number | Date\n) => (date?: Date) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "dateInRange();\n// ⇒ TODO"
+      "content": "dateInRange(new Date(\"2018-06-10T12:00:00.000Z\"), new Date(\"2018-06-20T12:00:00.000Z\"))(new Date(\"2018-06-15T12:00:00.000Z\"));\n// ⇒ true"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a date is within given date range?"]
 }
