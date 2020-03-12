@@ -1,12 +1,14 @@
 {
   "name": "fromHours",
-  "description": "TODO: Fill short description here.",
+  "description": "Converts given hour count to milliseconds.",
   "signature": "(hours: number) => number",
   "examples": [
     {
       "language": "javascript",
-      "content": "fromHours();\n// ⇒ TODO"
+      "content": "fromHours(1);\n// ⇒ 3600000"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to find how many milliseconds are in given number of hours?"
+  ]
 }
