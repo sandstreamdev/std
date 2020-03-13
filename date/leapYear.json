@@ -5,7 +5,11 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "leapYear();\n// ⇒ TODO"
+      "content": "leapYear(2020);\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "leapYear(2019);\n// ⇒ false"
     }
   ],
   "questions": ["How to find if the given year is a leap year?"]

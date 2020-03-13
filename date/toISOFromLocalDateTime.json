@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "toISOFromLocalDateTime();\n// ⇒ TODO"
+      "content": "toISOFromLocalDateTime(new Date(\"2019-02-15T12:00:00\"));\n// ⇒ \"2019-02-15T12:00:00.000Z\""
     }
   ],
   "questions": [
