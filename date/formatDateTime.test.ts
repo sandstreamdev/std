@@ -14,13 +14,13 @@ describe("formatDateTime", () => {
   });
 
   it("should include seconds display if enabled", () => {
-    const a = new Date("2019-02-15T12:00:00Z");
-    const b = new Date("2019-02-23T23:30:59Z");
-    const c = new Date("2019-02-24T01:12:34Z");
+    const a = new Date("2019-02-15T12:00:00");
+    const b = new Date("2019-02-23T23:30:59");
+    const c = new Date("2019-02-24T01:12:34");
 
-    expect(formatDateTime(a, true)).toEqual("2019-02-15 13:00:00");
-    expect(formatDateTime(b, true)).toEqual("2019-02-24 00:30:59");
-    expect(formatDateTime(c, true)).toEqual("2019-02-24 02:12:34");
+    expect(formatDateTime(a, true)).toEqual("2019-02-15 12:00:00");
+    expect(formatDateTime(b, true)).toEqual("2019-02-23 23:30:59");
+    expect(formatDateTime(c, true)).toEqual("2019-02-24 01:12:34");
   });
 
   it("does not include seconds display by default", () => {
