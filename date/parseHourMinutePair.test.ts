@@ -44,4 +44,22 @@ describe("parseHourMinutePair", () => {
     expect(hours).toEqual(0);
     expect(minutes).toEqual(0);
   });
+
+  it("should fallback to zeros for missing hours", () => {
+    const pair = ":15";
+
+    const [hours, minutes] = parseHourMinutePair(pair);
+
+    expect(hours).toEqual(0);
+    expect(minutes).toEqual(15);
+  });
+
+  it("should fallback to zeros for missing minutes", () => {
+    const pair = "3:";
+
+    const [hours, minutes] = parseHourMinutePair(pair);
+
+    expect(hours).toEqual(3);
+    expect(minutes).toEqual(0);
+  });
 });
