@@ -29,14 +29,6 @@ describe("fromEntries", () => {
     expect(fromEntries([])).toEqual({});
   });
 
-  it("uses detects fallback implementation when Object.fromEntries is not present", () => {
-    if (Object.fromEntries) {
-      expect(fromEntries).toBe(Object.fromEntries);
-    } else {
-      expect(fromEntries).not.toBe(Object.fromEntries);
-    }
-  });
-
   it("uses fallback implementation when Object.fromEntries is not present", () => {
     const before = Object.fromEntries;
 
