@@ -5,7 +5,7 @@
   "examples": [
     {
       "language": "javascript",
-      "content": "fromMinutes();\n// ⇒ TODO"
+      "content": "fromMinutes(1);\n// ⇒ 60000"
     }
   ],
   "questions": [
