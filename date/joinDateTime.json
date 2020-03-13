@@ -1,7 +1,7 @@
 {
   "name": "joinDateTime",
   "description": "Joins a date time pair into a date time string.",
-  "signature": "(...xs: string[]) => string",
+  "signature": "(date: string, time: string) => string",
   "examples": [
     {
       "language": "javascript",

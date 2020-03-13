@@ -1,42 +1,32 @@
-# byDateWithFallback
-
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(
-  now: string | number | Date
-) => (
-  {
-    endedAt: aEnd,
-    startedAt: aStart
-  }: {
-    endedAt: string | number | Date;
-    startedAt: string | number | Date;
-  },
-  {
-    endedAt: bEnd,
-    startedAt: bStart
-  }: {
-    endedAt: string | number | Date;
-    startedAt: string | number | Date;
-  }
-) => number
-```
-<!-- prettier-ignore-end -->
-
 # clamp
 
+Clamps the given date to the given date range.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  min: number | Date,
-  max: number | Date
-) => (dateStringOrDate: string | number | Date) => Date
+(min: Date, max: Date) => (date: Date) => Date
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const date = new Date("2019-06-15T13:54:33.232Z");
+const min = new Date("2019-02-23T13:54:33.232Z");
+const max = new Date("2019-03-13T13:54:33.232Z");
+
+clamp(min, max)(date);
+// => new Date("2019-03-13T13:54:33.232Z")
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to clamp a date to a desired date range?
+- How to enforce a date to be in a given date range?
 
 # clone
 
@@ -54,7 +44,7 @@ Clones the given Date object.
 
 <!-- prettier-ignore-start -->
 ```javascript
-const date = new new Date('2019-04-24T13:54:33.232Z');
+const date = new new Date("2019-04-24T13:54:33.232Z");
 const cloned = clone(date);
 
 cloned !== date && cloned.valueOf() === date.valueOf();
@@ -62,53 +52,90 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
+## Questions
+
+- How to clone a Date object?
+
 # dateDiff
+
+Computes a signed difference between two Date objects as milliseconds.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  a: string | number | Date,
-  b: string | number | Date
-) => number
+(a: Date, b: Date) => number
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+dateDiff(new Date("2017-01-01T13:00:00.000Z"), new Date("2017-01-01T12:00:00.000Z"));
+// ⇒ 3600000
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to compute Date difference?
 
 # dateInRange
 
+Checks if the given date is between the given date range (inclusive).
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  from: string | number | Date,
-  to: string | number | Date
-) => (date?: Date) => boolean
+(from: Date, to: Date) => (date: Date) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+dateInRange(new Date("2018-06-10T12:00:00.000Z"), new Date("2018-06-20T12:00:00.000Z"))(new Date("2018-06-15T12:00:00.000Z"));
+// ⇒ true
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a date is within given date range?
 
 # dayRange
 
+Returns a local day range at a particular Date
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-({
-  iso,
-  local,
-  now,
-  timezoneOffset
-}: {
-  iso?: boolean;
-  local?: boolean;
-  now?: Date;
-  timezoneOffset?: number;
-}) => (date?: string | number | Date) => string[]
+(date: Date) => Date[]
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+const date = new Date("2018-12-31T13:54:33.232Z");
+
+dayRange(date);
+// ⇒ [startOfDay(date), endOfDay(date)]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find a date range of a given day?
+
 # daysInMonths
+
+Returns an array of days in particular months. Number of days in February varies if it is a leap year or not
 
 ## Type signature
 
@@ -133,27 +160,60 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+daysInMonths(false);
+// ⇒ [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+```
+
+```javascript
+daysInMonths(true);
+// ⇒ [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find out how many days are in particular month?
+- How to find out how many days there are in a leap year?
+
 # daysInYear
 
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(year: number) => number
-```
-<!-- prettier-ignore-end -->
-
-# displayMonth
+Calculates number of days in a particular year. Varies by the leap year.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(monthIndex: number) => string
+(year: number) => 366 | 365
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+daysInYear(2019);
+// ⇒ 365
+```
+
+```javascript
+daysInYear(2020);
+// ⇒ 366
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How many days are in a particular year?
+- How many days are in a leap year?
+- How many days are in a common year?
 
 # displayTime
+
+Displays padded time string.
 
 ## Type signature
 
@@ -166,19 +226,48 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+displayTime([5, 12, 16], false);
+// ⇒ 05:12
+```
+
+```javascript
+displayTime([5, 12, 16], true);
+// ⇒ 05:12:16
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to display padded time?
+
 # endOfDay
+
+Returns a local Date of an end of the day at a particular Date.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  date: string | number | Date,
-  timezoneOffset?: number,
-  local?: boolean
-) => Date
+(date: Date) => Date
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+endOfDay(new Date("2018-12-31T13:54:33.232Z"));
+// ⇒ new Date(new Date("2019-01-01T00:00:00.000Z").valueOf() + new Date("2018-12-31T13:54:33.232Z").getTimezoneOffset() * 60 * 1000)
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find a date of an end of a given day?
 
 # formatDate
 
@@ -204,21 +293,9 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
-# formatDisplayDate
-
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(
-  sourceDate: Date,
-  showDay?: boolean,
-  timezoneOffset?: number
-) => string
-```
-<!-- prettier-ignore-end -->
-
 # formatDuration
+
+Formats a duration in milliseconds to a padded time string.
 
 ## Type signature
 
@@ -227,6 +304,24 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 (duration: number, showSeconds?: boolean) => string
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+formatDuration(26100000);
+// ⇒ 07:15
+```
+
+```javascript
+formatDuration(26136000);
+// ⇒ 07:15:36
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to render formatted duration?
 
 # formatTime
 
@@ -244,6 +339,8 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 
 # fromDays
 
+Converts given day count to milliseconds.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
@@ -252,7 +349,22 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+fromDays(1);
+// ⇒ 86400000
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find how many milliseconds are in given number of days?
+
 # fromHours
+
+Converts given hour count to milliseconds.
 
 ## Type signature
 
@@ -262,7 +374,22 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+fromHours(1);
+// ⇒ 3600000
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find how many milliseconds are in given number of hours?
+
 # fromMinutes
+
+Converts given minute count to milliseconds.
 
 ## Type signature
 
@@ -272,7 +399,22 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+fromMinutes(1);
+// ⇒ 60000
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find how many milliseconds are in given number of minutes?
+
 # fromSeconds
+
+Converts given second count to milliseconds.
 
 ## Type signature
 
@@ -282,17 +424,47 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+fromSeconds(1);
+// ⇒ 1000
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find how many milliseconds are in given number of seconds?
+
 # joinDateTime
+
+Joins a date time pair into a date time string.
 
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: string[]) => string
+(date: string, time: string) => string
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+joinDateTime("2019-01-15", "13:54:33.232Z");
+// ⇒ "2019-01-15T13:54:33.232Z"
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to join date and time to get ISO compliant date time string?
+
 # leapYear
+
+Detects if a given year is a leap year.
 
 ## Type signature
 
@@ -302,74 +474,113 @@ cloned !== date && cloned.valueOf() === date.valueOf();
 ```
 <!-- prettier-ignore-end -->
 
-# monthNames
+## Questions
 
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-string[]
-```
-<!-- prettier-ignore-end -->
-
-# offsetByBit
-
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(date: number | Date) => Date
-```
-<!-- prettier-ignore-end -->
+- How to find if the given year is a leap year?
 
 # parseHourMinutePair
 
+Parses HH:MM string into hours and minutes.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(text?: string) => number[]
+(text?: string) => [number, number]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+parseHourMinutePair("12:34");
+// ⇒ [12, 34]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to parse time string into hours and minutes?
 
 # splitDateTime
 
+Splits a date time string into a date time pair.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(dateTimeString: string) => string[]
+(dateTimeString: string) => [string, string]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+splitDateTime("2019-01-15T13:54:33.232Z");
+// ⇒ ["2019-01-15", "13:54:33.232Z"]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to split ISO compliant date time string into a date and time pair?
 
 # startOfDay
 
+Returns a local Date of a start of the day at a particular Date.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  date: string | number | Date,
-  timezoneOffset?: number,
-  local?: boolean
-) => Date
+(date: Date) => Date
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+endOfDay(new Date("2019-01-01T13:54:33.232Z"));
+// ⇒ new Date(new Date("2019-01-01T00:00:00.000Z").valueOf() + new Date("2019-01-01T13:54:33.232Z").getTimezoneOffset() * 60 * 1000)
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find a date of a start of a given day?
 
 # subtractDays
 
+Subtracts the given number of days from the given Date object.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  sourceDate: string | number | Date,
-  numberOfDays: number
-) => Date
+(sourceDate: Date, numberOfDays: number) => Date
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+subtractDays(new Date("2019-01-15T13:54:33.232Z"), 1);
+// ⇒ new Date("2019-01-14T13:54:33.232Z")
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to subtract days from a given date?
+
 # toDate
+
+Extracts padded YYYY-MM-DD date string out of the given date object.
 
 ## Type signature
 
@@ -379,7 +590,22 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+toDate(new Date("2019-01-15T12:00:00.000Z"));
+// ⇒ "2019-01-15"
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get only the date from a Date object?
+
 # toDates
+
+Converts given array of values into Dates using the Date constructor.
 
 ## Type signature
 
@@ -389,7 +615,22 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+toDates(["2019-01-15T13:54:33.232Z", new Date("2019-01-15T13:54:33.232Z").valueOf(), new Date("2019-01-15T13:54:33.232Z")]);
+// ⇒ [new Date("2019-01-15T13:54:33.232Z"), new Date("2019-01-15T13:54:33.232Z"), new Date("2019-01-15T13:54:33.232Z")]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert array of string and timestamps into an array of Date objects?
+
 # toDays
+
+Converts milliseconds into days.
 
 ## Type signature
 
@@ -398,9 +639,24 @@ string[]
 (milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+toDays(86400000);
+// ⇒ 1
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert milliseconds into days?
 
 # toHours
 
+Converts milliseconds into hours.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
@@ -409,7 +665,22 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+toHours(3600000);
+// ⇒ 1
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert milliseconds into hours?
+
 # toISO
+
+Returns an ISO compliant date time string.
 
 ## Type signature
 
@@ -419,7 +690,22 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+toISO(new Date("2019-04-24T13:54:33.232Z"));
+// ⇒ "2019-04-24T13:54:33.232Z"
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert Date object to ISO compliant date string?
+
 # toISOFromLocalDateTime
+
+Converts a local date time into an UTC ISO compliant date time string. Keeps the original time.
 
 ## Type signature
 
@@ -428,6 +714,11 @@ string[]
 (date: Date) => string
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert local time to UTC?
+- How to convert local time to ISO date time string?
 
 # toLocalDateTime
 
@@ -441,6 +732,8 @@ string[]
 
 # toMinutes
 
+Converts milliseconds into minutes.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
@@ -448,9 +741,24 @@ string[]
 (milliseconds: number) => number
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+toMinutes(60000);
+// ⇒ 1
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert milliseconds into minutes?
 
 # toSeconds
 
+Converts milliseconds into seconds.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
@@ -459,9 +767,22 @@ string[]
 ```
 <!-- prettier-ignore-end -->
 
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+toSeconds(1000);
+// ⇒ 1
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to convert milliseconds into seconds?
+
 # valid
 
-Checks if the given date is valid.
+Checks if the given date is present and it is valid.
 
 ## Type signature
 
@@ -470,3 +791,31 @@ Checks if the given date is valid.
 (date?: any) => boolean
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+valid(new Date("2020-01-31T09:52:31.618Z"));
+// ⇒ true
+```
+
+```javascript
+valid(new Date("2020-01-42:52:31.618Z"));
+// ⇒ false
+```
+
+```javascript
+valid(new Date("test"));
+// ⇒ false
+```
+
+```javascript
+valid(undefined);
+// ⇒ false
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to check if a Date is valid or not?

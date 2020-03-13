@@ -18,3 +18,7 @@ empty;
 // ⇒ {}
 ```
 <!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get an empty object?

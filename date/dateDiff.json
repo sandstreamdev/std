@@ -1,7 +1,7 @@
 {
   "name": "dateDiff",
   "description": "Computes a signed difference between two Date objects as milliseconds.",
-  "signature": "(\n  a: string | number | Date,\n  b: string | number | Date\n) => number",
+  "signature": "(a: Date, b: Date) => number",
   "examples": [
     {
       "language": "javascript",

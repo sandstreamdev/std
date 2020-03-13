@@ -1,7 +1,7 @@
 {
   "name": "dateInRange",
   "description": "Checks if the given date is between the given date range (inclusive).",
-  "signature": "(\n  from: string | number | Date,\n  to: string | number | Date\n) => (date?: Date) => boolean",
+  "signature": "(from: Date, to: Date) => (date: Date) => boolean",
   "examples": [
     {
       "language": "javascript",

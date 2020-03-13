@@ -1,7 +1,7 @@
 {
   "name": "subtractDays",
   "description": "Subtracts the given number of days from the given Date object.",
-  "signature": "(\n  sourceDate: string | number | Date,\n  numberOfDays: number\n) => Date",
+  "signature": "(sourceDate: Date, numberOfDays: number) => Date",
   "examples": [
     {
       "language": "javascript",

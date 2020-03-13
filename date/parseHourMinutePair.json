@@ -1,7 +1,7 @@
 {
   "name": "parseHourMinutePair",
   "description": "Parses HH:MM string into hours and minutes.",
-  "signature": "(text?: string) => number[]",
+  "signature": "(text?: string) => [number, number]",
   "examples": [
     {
       "language": "javascript",

@@ -1,7 +1,7 @@
 {
   "name": "startOfDay",
   "description": "Returns a local Date of a start of the day at a particular Date.",
-  "signature": "(\n  date: string | number | Date,\n  timezoneOffset?: number,\n  local?: boolean\n) => Date",
+  "signature": "(date: Date) => Date",
   "examples": [
     {
       "language": "javascript",

@@ -1,5 +1,7 @@
 # daysInMonths
 
+Returns an array of days in particular months. Number of days in February varies if it is a leap year or not
+
 ## Type signature
 
 <!-- prettier-ignore-start -->
@@ -22,3 +24,22 @@
 ]
 ```
 <!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+daysInMonths(false);
+// ⇒ [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+```
+
+```javascript
+daysInMonths(true);
+// ⇒ [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to find out how many days are in particular month?
+- How to find out how many days there are in a leap year?

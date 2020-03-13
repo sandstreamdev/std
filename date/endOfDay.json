@@ -1,7 +1,7 @@
 {
   "name": "endOfDay",
   "description": "Returns a local Date of an end of the day at a particular Date.",
-  "signature": "(\n  date: string | number | Date,\n  timezoneOffset?: number,\n  local?: boolean\n) => Date",
+  "signature": "(date: Date) => Date",
   "examples": [
     {
       "language": "javascript",

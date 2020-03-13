@@ -1,7 +1,7 @@
 {
   "name": "clamp",
   "description": "Clamps the given date to the given date range.",
-  "signature": "(\n  min: number | Date,\n  max: number | Date\n) => (dateStringOrDate: string | number | Date) => Date",
+  "signature": "(min: Date, max: Date) => (date: Date) => Date",
   "examples": [
     {
       "language": "javascript",

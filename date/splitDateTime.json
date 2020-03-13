@@ -1,7 +1,7 @@
 {
   "name": "splitDateTime",
   "description": "Splits a date time string into a date time pair.",
-  "signature": "(dateTimeString: string) => string[]",
+  "signature": "(dateTimeString: string) => [string, string]",
   "examples": [
     {
       "language": "javascript",
