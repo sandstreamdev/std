@@ -26,8 +26,6 @@ import toDates from "./toDates";
 import toDays from "./toDays";
 import toHours from "./toHours";
 import toISO from "./toISO";
-import toISOFromLocalDateTime from "./toISOFromLocalDateTime";
-import toLocalDateTime from "./toLocalDateTime";
 import toMinutes from "./toMinutes";
 import toSeconds from "./toSeconds";
 import valid from "./valid";
@@ -61,8 +59,6 @@ export {
   toDays,
   toHours,
   toISO,
-  toISOFromLocalDateTime,
-  toLocalDateTime,
   toMinutes,
   toSeconds,
   valid
@@ -97,8 +93,6 @@ export default {
   toDays,
   toHours,
   toISO,
-  toISOFromLocalDateTime,
-  toLocalDateTime,
   toMinutes,
   toSeconds,
   valid

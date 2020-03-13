@@ -275,7 +275,7 @@ endOfDay(new Date("2018-12-31T13:54:33.232Z"));
 
 <!-- prettier-ignore-start -->
 ```typescript
-(sourceDate: Date, timezoneOffset?: number) => string
+(date: Date) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -285,11 +285,7 @@ endOfDay(new Date("2018-12-31T13:54:33.232Z"));
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  sourceDate: Date,
-  showSeconds?: boolean,
-  timezoneOffset?: number
-) => string
+(sourceDate: Date, showSeconds?: boolean) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -329,11 +325,7 @@ formatDuration(26136000);
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  sourceDate: Date,
-  showSeconds?: boolean,
-  timezoneOffset?: number
-) => string
+(date: Date, showSeconds?: boolean) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -471,6 +463,20 @@ Detects if a given year is a leap year.
 <!-- prettier-ignore-start -->
 ```typescript
 (year: number) => boolean
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+leapYear(2020);
+// ⇒ true
+```
+
+```javascript
+leapYear(2019);
+// ⇒ false
 ```
 <!-- prettier-ignore-end -->
 
@@ -702,33 +708,6 @@ toISO(new Date("2019-04-24T13:54:33.232Z"));
 ## Questions
 
 - How to convert Date object to ISO compliant date string?
-
-# toISOFromLocalDateTime
-
-Converts a local date time into an UTC ISO compliant date time string. Keeps the original time.
-
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(date: Date) => string
-```
-<!-- prettier-ignore-end -->
-
-## Questions
-
-- How to convert local time to UTC?
-- How to convert local time to ISO date time string?
-
-# toLocalDateTime
-
-## Type signature
-
-<!-- prettier-ignore-start -->
-```typescript
-(date: Date, timezoneOffset?: number) => Date
-```
-<!-- prettier-ignore-end -->
 
 # toMinutes
 

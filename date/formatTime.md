@@ -4,10 +4,6 @@
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  sourceDate: Date,
-  showSeconds?: boolean,
-  timezoneOffset?: number
-) => string
+(date: Date, showSeconds?: boolean) => string
 ```
 <!-- prettier-ignore-end -->

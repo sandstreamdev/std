@@ -26,8 +26,6 @@ import toDates from "./toDates.js";
 import toDays from "./toDays.js";
 import toHours from "./toHours.js";
 import toISO from "./toISO.js";
-import toISOFromLocalDateTime from "./toISOFromLocalDateTime.js";
-import toLocalDateTime from "./toLocalDateTime.js";
 import toMinutes from "./toMinutes.js";
 import toSeconds from "./toSeconds.js";
 import valid from "./valid.js";
@@ -61,8 +59,6 @@ export {
   toDays,
   toHours,
   toISO,
-  toISOFromLocalDateTime,
-  toLocalDateTime,
   toMinutes,
   toSeconds,
   valid
@@ -97,8 +93,6 @@ export default {
   toDays,
   toHours,
   toISO,
-  toISOFromLocalDateTime,
-  toLocalDateTime,
   toMinutes,
   toSeconds,
   valid
