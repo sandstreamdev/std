@@ -1,4 +1,4 @@
-export default (text = "") => {
+export default (text = ""): [number, number] => {
   const [hoursString, minutesString] = text.split(":");
   const hours = parseInt(hoursString || "0", 10);
   const minutes = parseInt(minutesString || "0", 10);
