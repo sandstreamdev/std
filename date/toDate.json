@@ -1,12 +1,12 @@
 {
   "name": "toDate",
-  "description": "TODO: Fill short description here.",
+  "description": "Extracts padded YYYY-MM-DD date string out of the given date object.",
   "signature": "(date: Date) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "toDate();\n// ⇒ TODO"
+      "content": "toDate(new Date(\"2019-01-15T12:00:00.000Z\"));\n// ⇒ \"2019-01-15\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to get only the date from a Date object?"]
 }
