@@ -4303,7 +4303,7 @@ Creates an object from an array of key-value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-(keyValuePairs: [string, any][]) => object
+(entries: [string, any][]) => object
 ```
 <!-- prettier-ignore-end -->
 

@@ -1,7 +1,7 @@
 {
   "name": "fromEntries",
   "description": "Creates an object from an array of key-value pairs (entries).",
-  "signature": "(keyValuePairs: [string, any][]) => object",
+  "signature": "(entries: [string, any][]) => object",
   "examples": [
     {
       "language": "javascript",
