@@ -1,12 +1,24 @@
 {
   "name": "valid",
-  "description": "Checks if the given date is valid.",
+  "description": "Checks if the given date is present and it is valid.",
   "signature": "(date?: any) => boolean",
   "examples": [
     {
       "language": "javascript",
-      "content": "valid();\n// ⇒ TODO"
+      "content": "valid(new Date(\"2020-01-31T09:52:31.618Z\"));\n// ⇒ true"
+    },
+    {
+      "language": "javascript",
+      "content": "valid(new Date(\"2020-01-42:52:31.618Z\"));\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "valid(new Date(\"test\"));\n// ⇒ false"
+    },
+    {
+      "language": "javascript",
+      "content": "valid(undefined);\n// ⇒ false"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to check if a Date is valid or not?"]
 }
