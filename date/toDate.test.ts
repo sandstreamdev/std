@@ -7,7 +7,7 @@ describe("toDate", () => {
     expect(toDate(new Date("2019-01-15T12:00:00.000Z"))).toBe("2019-01-15");
   });
 
-  it("is is computed within the local timezone", () => {
+  it("it is computed within the local timezone", () => {
     const start = new Date("2019-01-15T00:00:00.000Z");
     const end = new Date("2019-01-15T23:59:59.999Z");
     const timezoneOffset = start.getTimezoneOffset();
