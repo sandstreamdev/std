@@ -26,4 +26,4 @@ formatDuration(26136000);
 
 ## Questions
 
-- How to render formatted duration?
+- How to render a formatted duration?

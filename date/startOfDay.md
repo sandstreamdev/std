@@ -21,4 +21,4 @@ endOfDay(new Date("2019-01-01T13:54:33.232Z"));
 
 ## Questions
 
-- How to find a date of a start of a given day?
+- How to find a date of the start of a given day?

@@ -1,6 +1,6 @@
 {
   "name": "dayRange",
-  "description": "Returns a local day range at a particular Date",
+  "description": "Returns a local day range at a particular Date.",
   "signature": "(date: Date) => Date[]",
   "examples": [
     {

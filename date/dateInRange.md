@@ -21,4 +21,4 @@ dateInRange(new Date("2018-06-10T12:00:00.000Z"), new Date("2018-06-20T12:00:00.
 
 ## Questions
 
-- How to check if a date is within given date range?
+- How to check if a date is within a given date range?

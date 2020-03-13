@@ -3,7 +3,7 @@
 import joinDateTime from "./joinDateTime.ts";
 
 describe("joinDateTime", () => {
-  it("joins a date time pair into a date time string", () => {
+  it("joins a date-time pair into a date-time string", () => {
     const date = "2019-01-15";
     const time = "13:54:33.232Z";
 

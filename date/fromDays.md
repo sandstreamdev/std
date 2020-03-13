@@ -1,6 +1,6 @@
 # fromDays
 
-Converts given day count to milliseconds.
+Converts the given day count to milliseconds.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ fromDays(1);
 
 ## Questions
 
-- How to find how many milliseconds are in given number of days?
+- How to find how many milliseconds are in a given number of days?

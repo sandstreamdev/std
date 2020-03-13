@@ -8,5 +8,5 @@
       "content": "dateInRange(new Date(\"2018-06-10T12:00:00.000Z\"), new Date(\"2018-06-20T12:00:00.000Z\"))(new Date(\"2018-06-15T12:00:00.000Z\"));\n// ⇒ true"
     }
   ],
-  "questions": ["How to check if a date is within given date range?"]
+  "questions": ["How to check if a date is within a given date range?"]
 }

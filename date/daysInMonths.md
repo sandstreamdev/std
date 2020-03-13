@@ -1,6 +1,6 @@
 # daysInMonths
 
-Returns an array of days in particular months. Number of days in February varies if it is a leap year or not
+Returns an array of days in a particular months. Number of days in February varies if it is a leap year or not.
 
 ## Type signature
 
@@ -41,5 +41,5 @@ daysInMonths(true);
 
 ## Questions
 
-- How to find out how many days are in particular month?
+- How to find out how many days are in a particular month?
 - How to find out how many days there are in a leap year?

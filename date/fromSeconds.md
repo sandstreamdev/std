@@ -1,6 +1,6 @@
 # fromSeconds
 
-Converts given second count to milliseconds.
+Converts the given second count to milliseconds.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ fromSeconds(1);
 
 ## Questions
 
-- How to find how many milliseconds are in given number of seconds?
+- How to find how many milliseconds are in a given number of seconds?

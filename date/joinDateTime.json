@@ -1,6 +1,6 @@
 {
   "name": "joinDateTime",
-  "description": "Joins a date time pair into a date time string.",
+  "description": "Joins a date-time pair into a date-time string.",
   "signature": "(date: string, time: string) => string",
   "examples": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "questions": [
-    "How to join date and time to get ISO compliant date time string?"
+    "How to join date and time to get ISO-compliant date-time string?"
   ]
 }

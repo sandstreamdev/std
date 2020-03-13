@@ -1,6 +1,6 @@
 # toDates
 
-Converts given array of values into Dates using the Date constructor.
+Converts the given array of values into Dates using the Date constructor.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ toDates(["2019-01-15T13:54:33.232Z", new Date("2019-01-15T13:54:33.232Z").valueO
 
 ## Questions
 
-- How to convert array of string and timestamps into an array of Date objects?
+- How to convert an array of string and timestamps into an array of Date objects?

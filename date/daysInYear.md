@@ -1,6 +1,6 @@
 # daysInYear
 
-Calculates number of days in a particular year. Varies by the leap year.
+Calculates the number of days in a particular year. Varies by the leap year.
 
 ## Type signature
 

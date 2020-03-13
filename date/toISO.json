@@ -1,6 +1,6 @@
 {
   "name": "toISO",
-  "description": "Returns an ISO compliant date time string.",
+  "description": "Returns an ISO-compliant date-time string.",
   "signature": "(x: Date) => string",
   "examples": [
     {
@@ -8,5 +8,5 @@
       "content": "toISO(new Date(\"2019-04-24T13:54:33.232Z\"));\n// ⇒ \"2019-04-24T13:54:33.232Z\""
     }
   ],
-  "questions": ["How to convert Date object to ISO compliant date string?"]
+  "questions": ["How to convert Date object to ISO-compliant date string?"]
 }

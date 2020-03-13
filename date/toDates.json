@@ -1,6 +1,6 @@
 {
   "name": "toDates",
-  "description": "Converts given array of values into Dates using the Date constructor.",
+  "description": "Converts the given array of values into Dates using the Date constructor.",
   "signature": "(xs: (string | number | Date)[]) => Date[]",
   "examples": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "questions": [
-    "How to convert array of string and timestamps into an array of Date objects?"
+    "How to convert an array of string and timestamps into an array of Date objects?"
   ]
 }

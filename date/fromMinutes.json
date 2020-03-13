@@ -1,6 +1,6 @@
 {
   "name": "fromMinutes",
-  "description": "Converts given minute count to milliseconds.",
+  "description": "Converts the given minute count to milliseconds.",
   "signature": "(minutes: number) => number",
   "examples": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "questions": [
-    "How to find how many milliseconds are in given number of minutes?"
+    "How to find how many milliseconds are in a given number of minutes?"
   ]
 }

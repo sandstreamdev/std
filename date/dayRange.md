@@ -1,6 +1,6 @@
 # dayRange
 
-Returns a local day range at a particular Date
+Returns a local day range at a particular Date.
 
 ## Type signature
 

@@ -12,5 +12,5 @@
       "content": "formatDuration(26136000);\n// ⇒ 07:15:36"
     }
   ],
-  "questions": ["How to render formatted duration?"]
+  "questions": ["How to render a formatted duration?"]
 }

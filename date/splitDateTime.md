@@ -1,6 +1,6 @@
 # splitDateTime
 
-Splits a date time string into a date time pair.
+Splits a date-time string into a date-time pair.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ splitDateTime("2019-01-15T13:54:33.232Z");
 
 ## Questions
 
-- How to split ISO compliant date time string into a date and time pair?
+- How to split ISO-compliant date-time string into a date and time pair?

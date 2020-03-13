@@ -1587,7 +1587,7 @@ clamp(min, max)(date);
 
 ##### Questions
 
-- How to clamp a date to a desired date range?
+- How to clamp a date to the desired date range?
 - How to enforce a date to be in a given date range?
 
 #### clone
@@ -1666,11 +1666,11 @@ dateInRange(new Date("2018-06-10T12:00:00.000Z"), new Date("2018-06-20T12:00:00.
 
 ##### Questions
 
-- How to check if a date is within given date range?
+- How to check if a date is within a given date range?
 
 #### dayRange
 
-Returns a local day range at a particular Date
+Returns a local day range at a particular Date.
 
 ##### Type signature
 
@@ -1697,7 +1697,7 @@ dayRange(date);
 
 #### daysInMonths
 
-Returns an array of days in particular months. Number of days in February varies if it is a leap year or not
+Returns an array of days in a particular months. Number of days in February varies if it is a leap year or not.
 
 ##### Type signature
 
@@ -1738,12 +1738,12 @@ daysInMonths(true);
 
 ##### Questions
 
-- How to find out how many days are in particular month?
+- How to find out how many days are in a particular month?
 - How to find out how many days there are in a leap year?
 
 #### daysInYear
 
-Calculates number of days in a particular year. Varies by the leap year.
+Calculates the number of days in a particular year. Varies by the leap year.
 
 ##### Type signature
 
@@ -1915,7 +1915,7 @@ formatDuration(26136000);
 
 ##### Questions
 
-- How to render formatted duration?
+- How to render a formatted duration?
 
 #### formatTime
 
@@ -1950,7 +1950,7 @@ formatTime(new Date("2019-02-24T01:12:34"), true);
 
 #### fromDays
 
-Converts given day count to milliseconds.
+Converts the given day count to milliseconds.
 
 ##### Type signature
 
@@ -1971,11 +1971,11 @@ fromDays(1);
 
 ##### Questions
 
-- How to find how many milliseconds are in given number of days?
+- How to find how many milliseconds are in a given number of days?
 
 #### fromHours
 
-Converts given hour count to milliseconds.
+Converts the given hour count to milliseconds.
 
 ##### Type signature
 
@@ -1996,11 +1996,11 @@ fromHours(1);
 
 ##### Questions
 
-- How to find how many milliseconds are in given number of hours?
+- How to find how many milliseconds are in a given number of hours?
 
 #### fromMinutes
 
-Converts given minute count to milliseconds.
+Converts the given minute count to milliseconds.
 
 ##### Type signature
 
@@ -2021,11 +2021,11 @@ fromMinutes(1);
 
 ##### Questions
 
-- How to find how many milliseconds are in given number of minutes?
+- How to find how many milliseconds are in a given number of minutes?
 
 #### fromSeconds
 
-Converts given second count to milliseconds.
+Converts the given second count to milliseconds.
 
 ##### Type signature
 
@@ -2046,11 +2046,11 @@ fromSeconds(1);
 
 ##### Questions
 
-- How to find how many milliseconds are in given number of seconds?
+- How to find how many milliseconds are in a given number of seconds?
 
 #### joinDateTime
 
-Joins a date time pair into a date time string.
+Joins a date-time pair into a date-time string.
 
 ##### Type signature
 
@@ -2071,7 +2071,7 @@ joinDateTime("2019-01-15", "13:54:33.232Z");
 
 ##### Questions
 
-- How to join date and time to get ISO compliant date time string?
+- How to join date and time to get ISO-compliant date-time string?
 
 #### leapYear
 
@@ -2130,7 +2130,7 @@ parseHourMinutePair("12:34");
 
 #### splitDateTime
 
-Splits a date time string into a date time pair.
+Splits a date-time string into a date-time pair.
 
 ##### Type signature
 
@@ -2151,7 +2151,7 @@ splitDateTime("2019-01-15T13:54:33.232Z");
 
 ##### Questions
 
-- How to split ISO compliant date time string into a date and time pair?
+- How to split ISO-compliant date-time string into a date and time pair?
 
 #### startOfDay
 
@@ -2176,7 +2176,7 @@ endOfDay(new Date("2019-01-01T13:54:33.232Z"));
 
 ##### Questions
 
-- How to find a date of a start of a given day?
+- How to find a date of the start of a given day?
 
 #### subtractDays
 
@@ -2230,7 +2230,7 @@ toDate(new Date("2019-01-15T12:00:00.000Z"));
 
 #### toDates
 
-Converts given array of values into Dates using the Date constructor.
+Converts the given array of values into Dates using the Date constructor.
 
 ##### Type signature
 
@@ -2251,7 +2251,7 @@ toDates(["2019-01-15T13:54:33.232Z", new Date("2019-01-15T13:54:33.232Z").valueO
 
 ##### Questions
 
-- How to convert array of string and timestamps into an array of Date objects?
+- How to convert an array of string and timestamps into an array of Date objects?
 
 #### toDays
 
@@ -2305,7 +2305,7 @@ toHours(3600000);
 
 #### toISO
 
-Returns an ISO compliant date time string.
+Returns an ISO-compliant date-time string.
 
 ##### Type signature
 
@@ -2326,7 +2326,7 @@ toISO(new Date("2019-04-24T13:54:33.232Z"));
 
 ##### Questions
 
-- How to convert Date object to ISO compliant date string?
+- How to convert Date object to ISO-compliant date string?
 
 #### toMinutes
 

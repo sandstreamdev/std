@@ -1,6 +1,6 @@
 # fromMinutes
 
-Converts given minute count to milliseconds.
+Converts the given minute count to milliseconds.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ fromMinutes(1);
 
 ## Questions
 
-- How to find how many milliseconds are in given number of minutes?
+- How to find how many milliseconds are in a given number of minutes?

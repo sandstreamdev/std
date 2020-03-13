@@ -1,6 +1,6 @@
 {
   "name": "fromDays",
-  "description": "Converts given day count to milliseconds.",
+  "description": "Converts the given day count to milliseconds.",
   "signature": "(days: number) => number",
   "examples": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "questions": [
-    "How to find how many milliseconds are in given number of days?"
+    "How to find how many milliseconds are in a given number of days?"
   ]
 }

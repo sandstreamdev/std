@@ -1,6 +1,6 @@
 # toISO
 
-Returns an ISO compliant date time string.
+Returns an ISO-compliant date-time string.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ toISO(new Date("2019-04-24T13:54:33.232Z"));
 
 ## Questions
 
-- How to convert Date object to ISO compliant date string?
+- How to convert Date object to ISO-compliant date string?

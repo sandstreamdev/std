@@ -25,5 +25,5 @@ clamp(min, max)(date);
 
 ## Questions
 
-- How to clamp a date to a desired date range?
+- How to clamp a date to the desired date range?
 - How to enforce a date to be in a given date range?

@@ -1,6 +1,6 @@
 # fromHours
 
-Converts given hour count to milliseconds.
+Converts the given hour count to milliseconds.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ fromHours(1);
 
 ## Questions
 
-- How to find how many milliseconds are in given number of hours?
+- How to find how many milliseconds are in a given number of hours?

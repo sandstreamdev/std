@@ -1,6 +1,6 @@
 {
   "name": "fromHours",
-  "description": "Converts given hour count to milliseconds.",
+  "description": "Converts the given hour count to milliseconds.",
   "signature": "(hours: number) => number",
   "examples": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "questions": [
-    "How to find how many milliseconds are in given number of hours?"
+    "How to find how many milliseconds are in a given number of hours?"
   ]
 }

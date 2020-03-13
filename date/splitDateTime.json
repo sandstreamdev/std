@@ -1,6 +1,6 @@
 {
   "name": "splitDateTime",
-  "description": "Splits a date time string into a date time pair.",
+  "description": "Splits a date-time string into a date-time pair.",
   "signature": "(dateTimeString: string) => [string, string]",
   "examples": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "questions": [
-    "How to split ISO compliant date time string into a date and time pair?"
+    "How to split ISO-compliant date-time string into a date and time pair?"
   ]
 }

@@ -1,6 +1,6 @@
 # joinDateTime
 
-Joins a date time pair into a date time string.
+Joins a date-time pair into a date-time string.
 
 ## Type signature
 
@@ -21,4 +21,4 @@ joinDateTime("2019-01-15", "13:54:33.232Z");
 
 ## Questions
 
-- How to join date and time to get ISO compliant date time string?
+- How to join date and time to get ISO-compliant date-time string?

@@ -8,5 +8,5 @@
       "content": "endOfDay(new Date(\"2019-01-01T13:54:33.232Z\"));\n// ⇒ new Date(new Date(\"2019-01-01T00:00:00.000Z\").valueOf() + new Date(\"2019-01-01T13:54:33.232Z\").getTimezoneOffset() * 60 * 1000)"
     }
   ],
-  "questions": ["How to find a date of a start of a given day?"]
+  "questions": ["How to find a date of the start of a given day?"]
 }
