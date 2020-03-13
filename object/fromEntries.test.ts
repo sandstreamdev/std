@@ -29,12 +29,29 @@ describe("fromEntries", () => {
     expect(fromEntries([])).toEqual({});
   });
 
-  it("uses fallback implementation when Object.fromEntries is not present", () => {
+  it("uses detects fallback implementation when Object.fromEntries is not present", () => {
     if (Object.fromEntries) {
       expect(fromEntries).toBe(Object.fromEntries);
     } else {
       expect(fromEntries).not.toBe(Object.fromEntries);
     }
+  });
+
+  it("uses fallback implementation when Object.fromEntries is not present", () => {
+    const before = Object.fromEntries;
+
+    // @ts-ignore
+    Object.fromEntries = undefined;
+
+    expect(
+      fromEntries([
+        ["a", 1],
+        ["b", 2],
+        ["c", 3]
+      ])
+    ).toEqual({ a: 1, b: 2, c: 3 });
+
+    Object.fromEntries = before;
   });
 
   it("fallback implementation works as Object.fromEntries", () => {
