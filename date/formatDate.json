@@ -1,12 +1,12 @@
 {
   "name": "formatDate",
-  "description": "TODO: Fill short description here.",
+  "description": "Formats a given date as a simple YYYY-MM-DD string.",
   "signature": "(date: Date) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "formatDate();\n// ⇒ TODO"
+      "content": "formatDate(new Date(\"2019-02-24T01:12:34\"));\n// ⇒ \"2019-02-24\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to render a date in a YYYY-MM-DD format?"]
 }
