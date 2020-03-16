@@ -1,8 +1,4 @@
-export default (min: Date | number, max: Date | number) => (
-  dateStringOrDate: string | number | Date
-) => {
-  const date = new Date(dateStringOrDate);
-
+export default (min: Date, max: Date) => (date: Date): Date => {
   const clamped = new Date(
     Math.min(max.valueOf(), Math.max(min.valueOf(), date.valueOf()))
   );

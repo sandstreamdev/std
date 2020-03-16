@@ -1,12 +1,19 @@
 {
   "name": "formatDateTime",
-  "description": "TODO: Fill short description here.",
-  "signature": "(\n  sourceDate: Date,\n  showSeconds?: boolean,\n  timezoneOffset?: number\n) => string",
+  "description": "Formats a given date as a simple YYYY-MM-DD HH:MM(:SS) string.",
+  "signature": "(sourceDate: Date, showSeconds?: boolean) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "formatDateTime();\n// ⇒ TODO"
+      "content": "formatDateTime(new Date(\"2019-02-24T01:12:34\"));\n// ⇒ \"2019-02-24 01:12\""
+    },
+    {
+      "language": "javascript",
+      "content": "formatDateTime(new Date(\"2019-02-24T01:12:34\"), true);\n// ⇒ \"2019-02-24 01:12:34\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to render a date in a YYYY-MM-DD HH:MM format?",
+    "How to render a date in a YYYY-MM-DD HH:MM:SS format?"
+  ]
 }

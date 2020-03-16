@@ -1,5 +1,7 @@
 # mapKeys
 
+Transforms the object keys with the given function.
+
 ## Type signature
 
 <!-- prettier-ignore-start -->

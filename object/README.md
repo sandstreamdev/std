@@ -91,6 +91,10 @@ empty;
 ```
 <!-- prettier-ignore-end -->
 
+## Questions
+
+- How to get an empty object?
+
 # entries
 
 Lists key-value pairs (entries) present in the given object.
@@ -382,7 +386,7 @@ Creates an object from an array of key-value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-(keyValuePairs: [string, any][]) => object
+(entries: [string, any][]) => object
 ```
 <!-- prettier-ignore-end -->
 
@@ -531,6 +535,8 @@ mapEntries(x => x ** 2)({ a: 1, b: 2, c: 3 });
 - How to map object entries?
 
 # mapKeys
+
+Transforms the object keys with the given function.
 
 ## Type signature
 

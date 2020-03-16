@@ -1,12 +1,14 @@
 {
   "name": "toDates",
-  "description": "TODO: Fill short description here.",
+  "description": "Converts the given array of values into Dates using the Date constructor.",
   "signature": "(xs: (string | number | Date)[]) => Date[]",
   "examples": [
     {
       "language": "javascript",
-      "content": "toDates();\n// ⇒ TODO"
+      "content": "toDates([\"2019-01-15T13:54:33.232Z\", new Date(\"2019-01-15T13:54:33.232Z\").valueOf(), new Date(\"2019-01-15T13:54:33.232Z\")]);\n// ⇒ [new Date(\"2019-01-15T13:54:33.232Z\"), new Date(\"2019-01-15T13:54:33.232Z\"), new Date(\"2019-01-15T13:54:33.232Z\")]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to convert an array of string and timestamps into an array of Date objects?"
+  ]
 }

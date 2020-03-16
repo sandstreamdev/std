@@ -6,6 +6,7 @@ describe("valid", () => {
   it("checks if the given date is valid", () => {
     expect(valid(new Date())).toBe(true);
     expect(valid(new Date("2020-01-31T09:52:31.618Z"))).toBe(true);
+    expect(valid(new Date("2020-01-42T09:52:31.618Z"))).toBe(false);
   });
 
   it("should reject Invalid Date objects", () => {

@@ -1,13 +1,10 @@
-import toLocalDateTime from "./toLocalDateTime";
 import displayTime from "./displayTime";
 
-export default (sourceDate: Date, showSeconds = false, timezoneOffset = 0) => {
-  const localDate = toLocalDateTime(sourceDate, timezoneOffset);
-
+export default (date: Date, showSeconds = false) => {
   const [hours, minutes, seconds] = [
-    localDate.getUTCHours(),
-    localDate.getUTCMinutes(),
-    localDate.getUTCSeconds()
+    date.getHours(),
+    date.getMinutes(),
+    date.getSeconds()
   ];
 
   return displayTime([hours, minutes, seconds], showSeconds);

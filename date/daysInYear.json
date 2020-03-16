@@ -1,12 +1,20 @@
 {
   "name": "daysInYear",
-  "description": "TODO: Fill short description here.",
-  "signature": "(year: number) => number",
+  "description": "Calculates the number of days in a particular year. Varies by the leap year.",
+  "signature": "(year: number) => 366 | 365",
   "examples": [
     {
       "language": "javascript",
-      "content": "daysInYear();\n// ⇒ TODO"
+      "content": "daysInYear(2019);\n// ⇒ 365"
+    },
+    {
+      "language": "javascript",
+      "content": "daysInYear(2020);\n// ⇒ 366"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How many days are in a particular year?",
+    "How many days are in a leap year?",
+    "How many days are in a common year?"
+  ]
 }

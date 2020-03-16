@@ -1,6 +1,6 @@
 /* eslint-env jest */
 // @ts-ignore ambiguous import
-import length from "./length";
+import length from "./length.ts";
 
 describe("length", () => {
   it("returns the length of the given array", () => {

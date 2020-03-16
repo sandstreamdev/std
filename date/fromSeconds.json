@@ -1,12 +1,14 @@
 {
   "name": "fromSeconds",
-  "description": "TODO: Fill short description here.",
+  "description": "Converts the given second count to milliseconds.",
   "signature": "(seconds: number) => number",
   "examples": [
     {
       "language": "javascript",
-      "content": "fromSeconds();\n// ⇒ TODO"
+      "content": "fromSeconds(1);\n// ⇒ 1000"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to find how many milliseconds are in a given number of seconds?"
+  ]
 }

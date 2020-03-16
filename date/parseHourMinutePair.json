@@ -1,12 +1,12 @@
 {
   "name": "parseHourMinutePair",
-  "description": "TODO: Fill short description here.",
-  "signature": "(text?: string) => number[]",
+  "description": "Parses HH:MM string into hours and minutes.",
+  "signature": "(text?: string) => [number, number]",
   "examples": [
     {
       "language": "javascript",
-      "content": "parseHourMinutePair();\n// ⇒ TODO"
+      "content": "parseHourMinutePair(\"12:34\");\n// ⇒ [12, 34]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to parse time string into hours and minutes?"]
 }

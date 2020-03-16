@@ -1,12 +1,14 @@
 {
   "name": "splitDateTime",
-  "description": "TODO: Fill short description here.",
-  "signature": "(dateTimeString: string) => string[]",
+  "description": "Splits a date-time string into a date-time pair.",
+  "signature": "(dateTimeString: string) => [string, string]",
   "examples": [
     {
       "language": "javascript",
-      "content": "splitDateTime();\n// ⇒ TODO"
+      "content": "splitDateTime(\"2019-01-15T13:54:33.232Z\");\n// ⇒ [\"2019-01-15\", \"13:54:33.232Z\"]"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to split ISO-compliant date-time string into a date and time pair?"
+  ]
 }

@@ -1,12 +1,12 @@
 {
   "name": "dateDiff",
-  "description": "TODO: Fill short description here.",
-  "signature": "(\n  a: string | number | Date,\n  b: string | number | Date\n) => number",
+  "description": "Computes a signed difference between two Date objects as milliseconds.",
+  "signature": "(a: Date, b: Date) => number",
   "examples": [
     {
       "language": "javascript",
-      "content": "dateDiff();\n// ⇒ TODO"
+      "content": "dateDiff(new Date(\"2017-01-01T13:00:00.000Z\"), new Date(\"2017-01-01T12:00:00.000Z\"));\n// ⇒ 3600000"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to compute Date difference?"]
 }

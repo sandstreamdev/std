@@ -1,1 +1,1 @@
-export default (milliseconds: number) => milliseconds / 1000;
+export default (milliseconds: number): number => milliseconds / 1000;

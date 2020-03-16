@@ -1,3 +1,3 @@
 import toSeconds from "./toSeconds";
 
-export default (milliseconds: number) => toSeconds(milliseconds) / 60;
+export default (milliseconds: number): number => toSeconds(milliseconds) / 60;

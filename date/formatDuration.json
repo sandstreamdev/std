@@ -1,12 +1,16 @@
 {
   "name": "formatDuration",
-  "description": "TODO: Fill short description here.",
+  "description": "Formats a duration in milliseconds to a padded time string.",
   "signature": "(duration: number, showSeconds?: boolean) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "formatDuration();\n// ⇒ TODO"
+      "content": "formatDuration(26100000);\n// ⇒ 07:15"
+    },
+    {
+      "language": "javascript",
+      "content": "formatDuration(26136000);\n// ⇒ 07:15:36"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to render a formatted duration?"]
 }

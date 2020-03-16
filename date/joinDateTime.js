@@ -1,1 +1,1 @@
-export default (...xs) => xs.join("T");
+export default (date, time) => `${date}T${time}`;

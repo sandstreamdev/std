@@ -1,12 +1,12 @@
 {
   "name": "startOfDay",
-  "description": "TODO: Fill short description here.",
-  "signature": "(\n  date: string | number | Date,\n  timezoneOffset?: number,\n  local?: boolean\n) => Date",
+  "description": "Returns a local Date of a start of the day at a particular Date.",
+  "signature": "(date: Date) => Date",
   "examples": [
     {
       "language": "javascript",
-      "content": "startOfDay();\n// ⇒ TODO"
+      "content": "endOfDay(new Date(\"2019-01-01T13:54:33.232Z\"));\n// ⇒ new Date(new Date(\"2019-01-01T00:00:00.000Z\").valueOf() + new Date(\"2019-01-01T13:54:33.232Z\").getTimezoneOffset() * 60 * 1000)"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to find a date of the start of a given day?"]
 }

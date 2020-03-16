@@ -1,12 +1,14 @@
 {
   "name": "joinDateTime",
-  "description": "TODO: Fill short description here.",
-  "signature": "(...xs: string[]) => string",
+  "description": "Joins a date-time pair into a date-time string.",
+  "signature": "(date: string, time: string) => string",
   "examples": [
     {
       "language": "javascript",
-      "content": "joinDateTime();\n// ⇒ TODO"
+      "content": "joinDateTime(\"2019-01-15\", \"13:54:33.232Z\");\n// ⇒ \"2019-01-15T13:54:33.232Z\""
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": [
+    "How to join date and time to get ISO-compliant date-time string?"
+  ]
 }

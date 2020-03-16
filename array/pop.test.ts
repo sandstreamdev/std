@@ -1,6 +1,6 @@
 /* eslint-env jest */
 // @ts-ignore ambiguous import
-import pop from "./pop";
+import pop from "./pop.ts";
 
 describe("pop", () => {
   it("returns the given array without the last element", () => {

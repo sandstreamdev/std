@@ -1,12 +1,12 @@
 {
   "name": "toHours",
-  "description": "TODO: Fill short description here.",
+  "description": "Converts milliseconds into hours.",
   "signature": "(milliseconds: number) => number",
   "examples": [
     {
       "language": "javascript",
-      "content": "toHours();\n// ⇒ TODO"
+      "content": "toHours(3600000);\n// ⇒ 1"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to convert milliseconds into hours?"]
 }

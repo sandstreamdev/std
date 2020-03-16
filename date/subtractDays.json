@@ -1,12 +1,12 @@
 {
   "name": "subtractDays",
-  "description": "TODO: Fill short description here.",
-  "signature": "(\n  sourceDate: string | number | Date,\n  numberOfDays: number\n) => Date",
+  "description": "Subtracts the given number of days from the given Date object.",
+  "signature": "(sourceDate: Date, numberOfDays: number) => Date",
   "examples": [
     {
       "language": "javascript",
-      "content": "subtractDays();\n// ⇒ TODO"
+      "content": "subtractDays(new Date(\"2019-01-15T13:54:33.232Z\"), 1);\n// ⇒ new Date(\"2019-01-14T13:54:33.232Z\")"
     }
   ],
-  "questions": ["TODO: List questions that may this function answers."]
+  "questions": ["How to subtract days from a given date?"]
 }

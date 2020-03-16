@@ -1,9 +1,9 @@
 import formatDate from "./formatDate";
 import formatTime from "./formatTime";
 
-export default (sourceDate: Date, showSeconds = false, timezoneOffset = 0) => {
-  const date = formatDate(sourceDate, timezoneOffset);
-  const time = formatTime(sourceDate, showSeconds, timezoneOffset);
+export default (sourceDate: Date, showSeconds = false) => {
+  const date = formatDate(sourceDate);
+  const time = formatTime(sourceDate, showSeconds);
 
   return `${date} ${time}`;
 };
