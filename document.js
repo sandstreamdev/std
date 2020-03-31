@@ -109,10 +109,7 @@ const getSignature = async signaturePath => {
   const endTag = "\n\n";
   const endIndex = fileContent.indexOf(endTag, startIndex);
 
-  return fileContent
-    .slice(startIndex, endIndex)
-    .trim()
-    .slice(0, -1);
+  return fileContent.slice(startIndex, endIndex).trim().slice(0, -1);
 };
 
 const main = async cwd => {
