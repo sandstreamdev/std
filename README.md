@@ -5737,7 +5737,7 @@ stop(event);
 ###### Questions
 
 - How to stop the propagation of an event?
-  <!-- DOCS:END -->
+<!-- DOCS:END -->
 
 ## Contributors ✨
 
