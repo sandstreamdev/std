@@ -9,7 +9,7 @@
     },
     {
       "language": "javascript",
-      "content": "formatDuration(26136000);\n// ⇒ 07:15:36"
+      "content": "formatDuration(26136000, true);\n// ⇒ 07:15:36"
     }
   ],
   "questions": ["How to render a formatted duration?"]

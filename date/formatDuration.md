@@ -19,7 +19,7 @@ formatDuration(26100000);
 ```
 
 ```javascript
-formatDuration(26136000);
+formatDuration(26136000, true);
 // ⇒ 07:15:36
 ```
 <!-- prettier-ignore-end -->
