@@ -6,7 +6,7 @@ Calculates the median of the values. If there is an even number of items, the av
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: number[]) => number
+(xs?: number[]) => number | undefined
 ```
 <!-- prettier-ignore-end -->
 
