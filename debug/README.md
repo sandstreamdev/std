@@ -8,7 +8,11 @@ Asserts given conditions.
 ```typescript
 (
   condition: boolean,
-  callbackOrMessage: string | (() => void)
+  callbackOrMessage:
+    | {
+        (): void;
+      }
+    | string
 ) => void
 ```
 <!-- prettier-ignore-end -->

@@ -1539,7 +1539,11 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(tasks: (() => Promise<any>)[]) => Promise<any[]>
+(
+  tasks: {
+    (): Promise<any>;
+  }[]
+) => Promise<any[]>
 ```
 <!-- prettier-ignore-end -->
 
@@ -2430,7 +2434,11 @@ Asserts given conditions.
 ```typescript
 (
   condition: boolean,
-  callbackOrMessage: string | (() => void)
+  callbackOrMessage:
+    | {
+        (): void;
+      }
+    | string
 ) => void
 ```
 <!-- prettier-ignore-end -->
@@ -3746,7 +3754,7 @@ Calculates the median of the values. If there is an even number of items, the av
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: number[]) => number
+(xs?: number[]) => number | undefined
 ```
 <!-- prettier-ignore-end -->
 
