@@ -3,13 +3,11 @@
 import { promises } from "fs";
 import path from "path";
 import os from "os";
-import pQueue from "p-queue";
+import PQueue from "p-queue";
 
 import ignored from "./ignore.js";
 
 const CONCURRENCY = Math.max(1, os.cpus().length - 1);
-
-const { default: PQueue } = pQueue;
 
 const [, ignoredDirectories] = ignored;
 
