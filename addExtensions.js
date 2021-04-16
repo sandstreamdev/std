@@ -3,11 +3,9 @@
 import { promises } from "fs";
 import path from "path";
 import os from "os";
-import pQueue from "p-queue";
+import PQueue from "p-queue";
 
 const CONCURRENCY = Math.max(1, os.cpus().length - 1);
-
-const { default: PQueue } = pQueue;
 
 import ignored from "./ignore.js";
 
