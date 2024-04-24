@@ -1,4 +1,4 @@
-import diff, { VALUE_CREATED, VALUE_DELETED, VALUE_UPDATED } from "./diff.ts";
+import diff, { VALUE_CREATED, VALUE_DELETED, VALUE_UPDATED } from "./diff.js";
 
 describe("diff", () => {
   it("computes difference between two objects", () => {

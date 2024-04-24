@@ -7,7 +7,7 @@ import isDefined from "../is/defined.js";
 
 const assert = (condition, callbackOrMessage) => {
   if (!condition) {
-    if (typeof callbackOrMessage === "function") {
+    if (callbackOrMessage && typeof callbackOrMessage === "function") {
       callbackOrMessage();
     } else {
       throw new TypeError(

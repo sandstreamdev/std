@@ -1,7 +1,25 @@
 {
   "testEnvironment": "node",
   "collectCoverage": true,
-  "collectCoverageFrom": ["**/*.ts"],
-  "coveragePathIgnorePatterns": ["\\.d\\.ts$", "index\\.ts"],
+  "collectCoverageFrom": ["**/*.js"],
+  "coveragePathIgnorePatterns": [
+    ".coverage",
+    "\\.d\\.ts$",
+    "addExtensions.js",
+    "compile.js",
+    "docs",
+    "document.js",
+    "eslint.config.js",
+    "ignore.js",
+    "index.cjs.js",
+    "index.js",
+    "index.umd.js",
+    "index\\.ts",
+    "indexReadme.js",
+    "mappings.js",
+    "normalizeLineEndings.js",
+    "regenerate.js",
+    "rollup.config.js"
+  ],
   "coverageDirectory": ".coverage"
 }
