@@ -2405,7 +2405,7 @@ Asserts given conditions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(condition: boolean, callbackOrMessage: (() => void) | string) => void;
+(condition: boolean, callbackOrMessage?: (() => void) | string) => void;
 export declare const throws: (f: () => void) => unknown | undefined;
 export declare const assertNumber: (x?: unknown) => void;
 export declare const assertInteger: (x?: unknown) => void;

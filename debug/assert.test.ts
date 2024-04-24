@@ -6,7 +6,7 @@ import assert, {
   assertNumber,
   assertString,
   throws
-} from "./assert.ts";
+} from "./assert.js";
 
 import range from "../array/range.js";
 
@@ -119,9 +119,9 @@ describe("assert", () => {
     expect(() => assertNumber(-2)).not.toThrow();
     expect(() => assertNumber(0)).not.toThrow();
 
-    expect(() => assertNumber(Infinity)).toThrow();
-    expect(() => assertNumber(-Infinity)).toThrow();
-    expect(() => assertNumber(NaN)).toThrow();
+    expect(() => assertNumber(Number.POSITIVE_INFINITY)).toThrow();
+    expect(() => assertNumber(Number.NEGATIVE_INFINITY)).toThrow();
+    expect(() => assertNumber(Number.NaN)).toThrow();
 
     expect(() => assertNumber("test")).toThrow();
     expect(() => assertNumber("")).toThrow();

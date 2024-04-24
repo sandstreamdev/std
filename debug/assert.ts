@@ -7,10 +7,10 @@ import isDefined from "../is/defined";
 
 const assert = (
   condition: boolean,
-  callbackOrMessage: (() => void) | string
+  callbackOrMessage?: (() => void) | string
 ) => {
   if (!condition) {
-    if (typeof callbackOrMessage === "function") {
+    if (callbackOrMessage && typeof callbackOrMessage === "function") {
       callbackOrMessage();
     } else {
       throw new TypeError(

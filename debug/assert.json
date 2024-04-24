@@ -1,7 +1,7 @@
 {
   "name": "assert",
   "description": "Asserts given conditions.",
-  "signature": "(condition: boolean, callbackOrMessage: (() => void) | string) => void;\nexport declare const throws: (f: () => void) => unknown | undefined;\nexport declare const assertNumber: (x?: unknown) => void;\nexport declare const assertInteger: (x?: unknown) => void;\nexport declare const assertByte: (x?: unknown) => void;\nexport declare const assertNormal: (x?: unknown) => void;\nexport declare const assertString: (x?: unknown, message?: string) => void;\nexport declare const assertIsDefined: (x?: unknown, message?: string) => void;\nexport default assert",
+  "signature": "(condition: boolean, callbackOrMessage?: (() => void) | string) => void;\nexport declare const throws: (f: () => void) => unknown | undefined;\nexport declare const assertNumber: (x?: unknown) => void;\nexport declare const assertInteger: (x?: unknown) => void;\nexport declare const assertByte: (x?: unknown) => void;\nexport declare const assertNormal: (x?: unknown) => void;\nexport declare const assertString: (x?: unknown, message?: string) => void;\nexport declare const assertIsDefined: (x?: unknown, message?: string) => void;\nexport default assert",
   "examples": [
     {
       "language": "javascript",

@@ -3,20 +3,29 @@ export default (...xs: unknown[]) => {
 
   for (const x of xs) {
     if (!x) {
-      continue;
-    }
+    } else if (typeof x === "string") {
+      const trimmedValue = x.trim();
 
-    if (typeof x === "object") {
+      if (trimmedValue) {
+        names.push(trimmedValue);
+      }
+    } else if (Array.isArray(x)) {
+      for (const className of x) {
+        if (typeof className === "string") {
+          const trimmedValue = className.trim();
+
+          if (trimmedValue) {
+            names.push(trimmedValue);
+          }
+        }
+      }
+    } else if (typeof x === "object") {
       for (const [key, value] of Object.entries(x)) {
         if (value) {
           names.push(key);
         }
       }
-
-      continue;
     }
-
-    names.push(`${x}`);
   }
 
   return names.join(" ");
