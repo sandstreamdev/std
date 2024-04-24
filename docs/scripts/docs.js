@@ -13,7 +13,6 @@ function tryInREPL(event, scope) {
   parent.parentNode.removeChild(parent);
   target.parentNode.removeChild(target);
 
-  // eslint-disable-next-line no-undef
   RunKit.createNotebook({
     element: container,
     nodeVersion: "11",
