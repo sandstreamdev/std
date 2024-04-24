@@ -1,16 +1,14 @@
-/* eslint-env browser */
-
 function tryInREPL(event, scope) {
-  var target = event.target;
-  var isReplRun = target.matches(".btn-repl");
+  const target = event.target;
+  const isReplRun = target.matches(".btn-repl");
 
   if (!isReplRun) {
     return;
   }
 
-  var parent = target.parentNode.children[0];
-  var codeElement = parent.children[0];
-  var container = target.parentNode.nextElementSibling;
+  const parent = target.parentNode.children[0];
+  const codeElement = parent.children[0];
+  const container = target.parentNode.nextElementSibling;
 
   parent.parentNode.removeChild(parent);
   target.parentNode.removeChild(target);
@@ -25,7 +23,7 @@ function tryInREPL(event, scope) {
 }
 
 function toggleTableOfContents() {
-  var className = "toc-active";
+  const className = "toc-active";
 
   if (!document.body.classList.contains(className)) {
     document.body.classList.add(className);

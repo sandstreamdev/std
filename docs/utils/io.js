@@ -1,5 +1,5 @@
-import { promises, readdirSync } from "fs";
-import path from "path";
+import { promises, readdirSync } from "node:fs";
+import path from "node:path";
 
 import ignored from "../../ignore.js";
 
@@ -38,9 +38,9 @@ function* filesPaths(directoryIn) {
   }
 }
 
-export const docsPath = (...paths) => path.join("docs", ...paths);
+export const docsPath = (...paths) => path.join("./docs", ...paths);
 
-export const outPath = (...paths) => path.join("docs/dist", ...paths);
+export const outPath = (...paths) => path.join("./docs/dist", ...paths);
 
 export const copyDir = async (src, dest) => {
   const files = await readdirAsync(src);

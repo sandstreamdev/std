@@ -1,8 +1,10 @@
-import packageConfig from "../../package.json";
+import { readFile } from "node:fs/promises";
 import { getPath } from "../utils/url.js";
 import tocButton from "./tocButton.js";
 
-export default data => {
+export default async data => {
+  const packageConfig = JSON.parse(await readFile("./package.json", "utf-8"));
+
   const { name, version } = packageConfig;
 
   let result = `<h1>${tocButton}<a href="${getPath()}">${name} (${version})</a></h1>`;

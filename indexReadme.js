@@ -1,7 +1,5 @@
-/* eslint-env node */
-// eslint-disable console
-import { promises, existsSync } from "fs";
-import path from "path";
+import { promises, existsSync } from "node:fs";
+import path from "node:path";
 
 import ignored from "./ignore.js";
 import mappings from "./mappings.js";
@@ -64,7 +62,7 @@ const main = async (cwd, level = 0) => {
   const readmes = [];
 
   for (const [fileName, , , level, directory] of dependencies) {
-    const filePath = path.join(cwd, fileName + ".md");
+    const filePath = path.join(cwd, `${fileName}.md`);
 
     const readme = await readFileAsync(filePath, "utf-8");
 
