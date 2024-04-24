@@ -29,7 +29,8 @@ const ignoredFiles = [
   "README.md",
   "regenerate.js",
   "rollup.config.js",
-  "tsconfig.json"
+  "tsconfig.json",
+  "types.ts"
 ];
 
 const ignoredDirectories = [
