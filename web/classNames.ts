@@ -1,11 +1,3 @@
-import entries from "../object/entries";
-import type { GenericObject } from "../object/types";
-
-const booleanKeys = <T>(xs: GenericObject<T>) =>
-  entries(xs)
-    .filter(([, value]) => Boolean(value))
-    .map(([key]) => key);
-
 export default (...xs: unknown[]) => {
   const names: string[] = [];
 
@@ -15,9 +7,13 @@ export default (...xs: unknown[]) => {
     }
 
     if (typeof x === "object") {
-      for (const booleanKey of booleanKeys(x as GenericObject<unknown>)) {
-        names.push(booleanKey);
+      for (const [key, value] of Object.entries(x)) {
+        if (value) {
+          names.push(key);
+        }
       }
+
+      continue;
     }
 
     names.push(`${x}`);

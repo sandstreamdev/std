@@ -1,10 +1,3 @@
-import entries from "../object/entries.js";
-
-const booleanKeys = xs =>
-  entries(xs)
-    .filter(([, value]) => Boolean(value))
-    .map(([key]) => key);
-
 export default (...xs) => {
   const names = [];
 
@@ -14,9 +7,13 @@ export default (...xs) => {
     }
 
     if (typeof x === "object") {
-      for (const booleanKey of booleanKeys(x)) {
-        names.push(booleanKey);
+      for (const [key, value] of Object.entries(x)) {
+        if (value) {
+          names.push(key);
+        }
       }
+
+      continue;
     }
 
     names.push(`${x}`);
