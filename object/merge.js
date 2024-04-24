@@ -1,7 +1,9 @@
 import isNonNullable from "../is/nonNullable.js";
 import isObject from "../is/object.js";
 import map from "./map.js";
+
 const isNonNullableObject = x => x && isNonNullable(x) && isObject(x);
+
 const merge = (a, b) => ({
   ...a,
   ...map((value, key) =>
@@ -14,4 +16,5 @@ const merge = (a, b) => ({
       : value
   )(b)
 });
+
 export default merge;

@@ -1,5 +1,7 @@
 import fromByteString from "../byteString/from.js";
+
 const ENCODING = "utf-8";
+
 const atobImplementation = (
   text,
   context = typeof window !== "undefined" ? window : undefined
@@ -9,5 +11,6 @@ const atobImplementation = (
         new Uint8Array(fromByteString(context.atob(text)))
       )
     : Buffer.from(text, "base64").toString(ENCODING);
+
 export default (text, context) =>
   atobImplementation(text.replace(/-/g, "+").replace(/_/g, "/"), context);

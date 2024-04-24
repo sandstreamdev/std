@@ -10,6 +10,7 @@ import normal from "./normal.js";
 import number from "./number.js";
 import object from "./object.js";
 import string from "./string.js";
+
 export {
   array,
   boolean,
@@ -24,6 +25,7 @@ export {
   object,
   string
 };
+
 export default {
   array,
   boolean,

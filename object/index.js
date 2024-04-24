@@ -24,6 +24,7 @@ import merge from "./merge.js";
 import none from "./none.js";
 import some from "./some.js";
 import sort from "./sort.js";
+
 export {
   any,
   apply,
@@ -52,6 +53,7 @@ export {
   some,
   sort
 };
+
 export default {
   any,
   apply,

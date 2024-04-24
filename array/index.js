@@ -46,6 +46,7 @@ import uniqueBy from "./uniqueBy.js";
 import zip from "./zip.js";
 import zipN from "./zipN.js";
 import zipWith from "./zipWith.js";
+
 export {
   any,
   are,
@@ -96,6 +97,7 @@ export {
   zipN,
   zipWith
 };
+
 export default {
   any,
   are,

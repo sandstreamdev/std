@@ -1,4 +1,5 @@
 import isNonNullable from "../is/nonNullable.js";
+
 export default (xs, ys) =>
   Boolean(!xs && ys) ||
   Boolean(!ys && xs) ||

@@ -3,5 +3,6 @@ export default (xs, random = Math.random) => {
     const j = Math.floor(random() * (i + 1));
     [xs[i], xs[j]] = [xs[j], xs[i]];
   }
+
   return xs;
 };

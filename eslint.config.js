@@ -3,8 +3,14 @@
 import tsEslint from "typescript-eslint";
 
 export default tsEslint.config({
-  files: ["*.ts"],
-  ignores: ["*.d.ts", "index.cjs.js", "index.umd.js", ".coverage", "docs/dist"],
+  files: ["**/*.js"],
+  ignores: [
+    "**/*.d.ts",
+    "index.cjs.js",
+    "index.umd.js",
+    ".coverage",
+    "docs/dist"
+  ],
   rules: {
     "@typescript-eslint/no-unused-vars": 0,
     "@typescript-eslint/ban-types": 0,

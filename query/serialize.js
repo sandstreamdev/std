@@ -1,4 +1,5 @@
 import entries from "../object/entries.js";
+
 export default (xs = {}) =>
   entries(xs)
     .filter(([, value]) => Boolean(value) || value === 0)
