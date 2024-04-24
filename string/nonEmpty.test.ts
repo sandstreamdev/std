@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import nonEmpty from "./nonEmpty.ts";
+import nonEmpty from "./nonEmpty.js";
 
 describe("nonEmpty", () => {
   it("detects missing strings", () => {

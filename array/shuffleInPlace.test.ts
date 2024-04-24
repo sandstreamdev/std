@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import shuffleInPlace from "./shuffleInPlace.ts";
+import shuffleInPlace from "./shuffleInPlace.js";
 
 describe("shuffleInPlace", () => {
   it("shuffles the array in the given order and mutates the underlying array", () => {
@@ -10,11 +8,8 @@ describe("shuffleInPlace", () => {
 
     const random = () =>
       [
-        0.013606630487694282,
-        0.21052486239086554,
-        0.28299838254636556,
-        0.696161009199874,
-        0.32165320593537117
+        0.013606630487694282, 0.21052486239086554, 0.28299838254636556,
+        0.696161009199874, 0.32165320593537117
       ][i++];
 
     const result = shuffleInPlace(xs, random);
@@ -31,11 +26,8 @@ describe("shuffleInPlace", () => {
 
     const random = () =>
       [
-        0.013606630487694282,
-        0.21052486239086554,
-        0.28299838254636556,
-        0.696161009199874,
-        0.32165320593537117
+        0.013606630487694282, 0.21052486239086554, 0.28299838254636556,
+        0.696161009199874, 0.32165320593537117
       ][i++];
 
     const mockStore = Math.random;

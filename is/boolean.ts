@@ -1,1 +1,1 @@
-export default (x?: any) => typeof x === "boolean";
+export default (x?: unknown) => typeof x === "boolean";

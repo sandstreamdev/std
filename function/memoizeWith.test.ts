@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import memoizeWith from "./memoizeWith.ts";
+import memoizeWith from "./memoizeWith.js";
 
 describe("memoizeWith", () => {
   it("uses the given equality function", () => {

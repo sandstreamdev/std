@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import translate from "./translate.ts";
+import translate from "./translate.js";
 
-// @ts-ignore ambiguous import
-import convertSpace from "./convertSpace.ts";
+import convertSpace from "./convertSpace.js";
 
 describe("translate", () => {
   it("creates a scale transform", () => {

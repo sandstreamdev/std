@@ -6,9 +6,7 @@ Maps entries of the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => [string, any][]
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => [string, TResult][]
 ```
 <!-- prettier-ignore-end -->
 

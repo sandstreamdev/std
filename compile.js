@@ -1,10 +1,8 @@
-/* eslint-env node */
-// eslint-disable console
-import { promises } from "fs";
-import { promisify } from "util";
-import { exec } from "child_process";
-import path from "path";
-import os from "os";
+import { promises } from "node:fs";
+import { promisify } from "node:util";
+import { exec } from "node:child_process";
+import path from "node:path";
+import os from "node:os";
 import PQueue from "p-queue";
 
 import ignored from "./ignore.js";

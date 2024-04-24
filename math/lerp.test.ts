@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import lerp from "./lerp.ts";
+import lerp from "./lerp.js";
 
 describe("lerp", () => {
   it("linearly interpolates the given values", () => {

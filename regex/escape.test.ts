@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import escape from "./escape.ts";
+import escape from "./escape.js";
 
 describe("escape", () => {
   it("escapes the given regex text", () => {

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import ceilToNearestPowerOfTwo from "./ceilToNearestPowerOfTwo.ts";
+import ceilToNearestPowerOfTwo from "./ceilToNearestPowerOfTwo.js";
 
 describe("ceilToNearestPowerOfTwo", () => {
   it("finds the nearest power of two greater or equal to the given value", () => {

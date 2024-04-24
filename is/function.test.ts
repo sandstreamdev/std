@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import _function from "./function.ts";
+import _function from "./function.js";
 
 describe("function", () => {
   it("checks if the given value is a function", () => {

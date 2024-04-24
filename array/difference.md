@@ -6,7 +6,7 @@ Computes a set difference between the two given arrays.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[], ys: any[]) => any[]
+<T>(xs: T[], ys: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

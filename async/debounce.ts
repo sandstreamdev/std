@@ -1,16 +1,18 @@
-/* eslint-env browser */
+type F = (...args: unknown[]) => unknown;
 
-export default (f: { (...args: any[]): any }, wait: number) => {
-  let timeout: any;
+export default (f: F, wait: number) => {
+  let timeout: ReturnType<typeof setTimeout> | undefined = undefined;
 
-  return (...args: any[]) => {
+  return (...args: unknown[]) => {
     const resolve = () => {
-      timeout = null;
+      timeout = undefined;
 
       f(...args);
     };
 
-    clearTimeout(timeout);
+    if (timeout !== undefined) {
+      clearTimeout(timeout);
+    }
 
     timeout = setTimeout(resolve, wait);
   };

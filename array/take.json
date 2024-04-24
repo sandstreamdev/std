@@ -1,7 +1,7 @@
 {
   "name": "take",
   "description": "Takes up to a given count of elements.",
-  "signature": "(count: number) => (xs: any[]) => any[]",
+  "signature": "(count: number) => <T>(xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

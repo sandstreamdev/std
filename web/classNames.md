@@ -6,7 +6,7 @@ Composes class name from truthy values with the support of string and objects.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => any
+(...xs: unknown[]) => string
 ```
 <!-- prettier-ignore-end -->
 

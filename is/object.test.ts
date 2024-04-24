@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import object from "./object.ts";
+import object from "./object.js";
 
 describe("object", () => {
   it("checks if the given value is an object", () => {

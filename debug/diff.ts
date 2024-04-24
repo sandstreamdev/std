@@ -1,10 +1,11 @@
-import filter from "../object/filter";
-import none from "../object/none";
-import isDefined from "../is/defined";
 import isArray from "../is/array";
 import isDate from "../is/date";
+import isDefined from "../is/defined";
 import isFunction from "../is/function";
 import isObject from "../is/object";
+import filter from "../object/filter";
+import none from "../object/none";
+import type { GenericObject } from "../object/types";
 
 export const VALUE_CREATED = "+";
 
@@ -14,9 +15,9 @@ export const VALUE_UNCHANGED = "=";
 
 export const VALUE_UPDATED = "~";
 
-const isValue = (x: any) => !isObject(x) && !isArray(x);
+const isValue = (x: unknown) => !isObject(x) && !isArray(x);
 
-const compareValues = (value1: any, value2: any) => {
+const compareValues = (value1: unknown, value2: unknown) => {
   if (value1 === value2) {
     return VALUE_UNCHANGED;
   }
@@ -24,7 +25,7 @@ const compareValues = (value1: any, value2: any) => {
   if (
     isDate(value1) &&
     isDate(value2) &&
-    value1.getTime() === value2.getTime()
+    (value1 as Date).getTime() === (value2 as Date).getTime()
   ) {
     return VALUE_UNCHANGED;
   }
@@ -40,10 +41,9 @@ const compareValues = (value1: any, value2: any) => {
   return VALUE_UPDATED;
 };
 
-const diff = (
-  obj1?: { [index: string]: any },
-  obj2?: { [index: string]: any }
-): object => {
+type DiffResult = { [index: string]: unknown };
+
+const diff = (obj1?: unknown, obj2?: unknown): DiffResult => {
   if (!obj1 || !obj2 || isValue(obj1) || isValue(obj2)) {
     const comparisonResult = compareValues(obj1, obj2);
 
@@ -55,21 +55,24 @@ const diff = (
       : {};
   }
 
-  const result: { [index: string]: any } = {};
+  const result: DiffResult = {};
 
-  for (const key in obj1) {
+  for (const key of Object.keys(obj1)) {
+    // @ts-expect-error
     const value1 = obj1[key];
 
     if (isFunction(value1)) {
       continue;
     }
 
+    // @ts-expect-error
     const value2 = obj2[key];
 
     result[key] = diff(value1, value2);
   }
 
-  for (const key in obj2) {
+  for (const key of Object.keys(obj2)) {
+    // @ts-expect-error
     const value2 = obj2[key];
 
     const existingValue = result[key];
@@ -82,8 +85,15 @@ const diff = (
   }
 
   return filter(
-    (value: any) => value !== null && !(value && isObject(value) && none(value))
-  )(result);
+    (value: unknown) =>
+      value !== null &&
+      !(
+        value &&
+        isObject(value) &&
+        typeof value === "object" &&
+        none(value as GenericObject<unknown>)
+      )
+  )(result) as DiffResult;
 };
 
 export default diff;

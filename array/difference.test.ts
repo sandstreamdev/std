@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import difference from "./difference.ts";
+import difference from "./difference.js";
 
 describe("difference", () => {
   it("skips all the elements present in the second array and keeps the rest", () => {

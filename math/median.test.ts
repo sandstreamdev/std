@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import median from "./median.ts";
+import median from "./median.js";
 
 describe("median", () => {
   it("orders the value set by value and then calculates the median value", () => {

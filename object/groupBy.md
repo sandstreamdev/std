@@ -6,7 +6,7 @@ Groups the given array of values by the given key selector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(selector: (x: any) => string) => (xs: any[]) => object
+(selector: (x: unknown) => string) => (xs: unknown[]) => Result
 ```
 <!-- prettier-ignore-end -->
 

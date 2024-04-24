@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import normalize from "./normalize.ts";
+import normalize from "./normalize.js";
 
-// @ts-ignore ambiguous import
-import length from "./length.ts";
+import length from "./length.js";
 
 describe("normalize", () => {
   it("normalized the given vector", () => {

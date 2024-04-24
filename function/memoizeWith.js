@@ -3,7 +3,7 @@ export default equals => f => {
   let memoizedArgs = undefined;
 
   return (...args) => {
-    if (memoized && equals(args, memoizedArgs)) {
+    if (memoized && memoizedArgs && equals(args, memoizedArgs)) {
       return memoized;
     }
 

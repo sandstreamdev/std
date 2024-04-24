@@ -1,1 +1,1 @@
-export default (value?: any): boolean => Array.isArray(value);
+export default (value?: unknown): boolean => Array.isArray(value);

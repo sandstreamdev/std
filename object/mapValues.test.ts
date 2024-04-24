@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import mapValues from "./mapValues.ts";
+import mapValues from "./mapValues.js";
 
 describe("mapValues", () => {
   it("maps and returns an array of transformed object values", () => {

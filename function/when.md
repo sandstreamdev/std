@@ -6,9 +6,7 @@ Runs the given function only when the condition is met.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (...xs: any[]) => boolean
-) => (action: (...xs: any[]) => any) => (...args: any[]) => any
+(predicate: (...xs: unknown[]) => boolean) => (action: (...xs: unknown[]) => unknown) => (...args: unknown[]) => unknown
 ```
 <!-- prettier-ignore-end -->
 

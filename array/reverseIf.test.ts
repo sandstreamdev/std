@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import reverseIf from "./reverseIf.ts";
+import reverseIf from "./reverseIf.js";
 
 describe("reverseIf", () => {
   it("reverses the given array when enabled", () => {

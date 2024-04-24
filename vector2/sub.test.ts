@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import sub from "./sub.ts";
+import sub from "./sub.js";
 
 describe("sub", () => {
   it("subtracts two vectors", () => {

@@ -1,7 +1,5 @@
-/* eslint-env node */
-// eslint-disable console
-import { promises, existsSync } from "fs";
-import path from "path";
+import { promises, existsSync } from "node:fs";
+import path from "node:path";
 
 import ignored from "./ignore.js";
 import mappings from "./mappings.js";
@@ -109,7 +107,12 @@ const getSignature = async signaturePath => {
   const endTag = "\n\n";
   const endIndex = fileContent.indexOf(endTag, startIndex);
 
-  return fileContent.slice(startIndex, endIndex).trim().slice(0, -1);
+  return fileContent
+    .slice(startIndex, endIndex)
+    .trim()
+    .slice(0, -1)
+    .replace(";\nexport default _default", "")
+    .trim();
 };
 
 const main = async cwd => {
@@ -143,8 +146,8 @@ const main = async cwd => {
   });
 
   for (const [fileName, id] of submodules) {
-    const filePath = path.join(cwd, fileName + ".md");
-    const jsonPath = path.join(cwd, fileName + ".json");
+    const filePath = path.join(cwd, `${fileName}.md`);
+    const jsonPath = path.join(cwd, `${fileName}.json`);
 
     if (!existsSync(jsonPath)) {
       const content = jsonTemplate(id);
@@ -155,7 +158,7 @@ const main = async cwd => {
     const fileContent = await readFileAsync(jsonPath, "utf8");
     const data = JSON.parse(fileContent);
 
-    const signaturePath = path.join(cwd, fileName + ".d.ts");
+    const signaturePath = path.join(cwd, `${fileName}.d.ts`);
     const signature = await getSignature(signaturePath);
 
     if (signature !== data.signature) {

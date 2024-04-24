@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import partition from "./partition.ts";
+import partition from "./partition.js";
 
 const odd = (x: number) => x % 2 === 1;
 

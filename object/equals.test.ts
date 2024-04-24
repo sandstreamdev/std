@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import equals from "./equals.ts";
+import equals from "./equals.js";
 
 describe("equals", () => {
   it("checks if two objects are deeply equal", () => {

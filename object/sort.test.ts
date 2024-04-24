@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import sort from "./sort.ts";
+import sort from "./sort.js";
 
 describe("sort", () => {
   it("sorts the given object", () => {

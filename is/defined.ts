@@ -1,1 +1,1 @@
-export default (x?: any) => x !== undefined;
+export default (x?: unknown) => x !== undefined;

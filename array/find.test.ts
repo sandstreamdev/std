@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import find from "./find.ts";
+import find from "./find.js";
 
 const greaterThan2 = (x: number) => x > 2;
 

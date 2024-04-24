@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import differs from "./differs.ts";
+import differs from "./differs.js";
 
 describe("differs", () => {
   it("short-circuits over length differences", () => {

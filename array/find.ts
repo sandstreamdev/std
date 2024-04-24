@@ -1,8 +1,9 @@
-export default (
-  predicate: (value: any, index: number, context: any[]) => boolean,
-  fallback?: any
-) => (xs: any[]) => {
-  const targetIndex = xs.findIndex(predicate);
+export default <T>(
+    predicate: (value: T, index: number, context: T[]) => boolean,
+    fallback?: T
+  ) =>
+  (xs: T[]) => {
+    const targetIndex = xs.findIndex(predicate);
 
-  return targetIndex !== -1 ? xs[targetIndex] : fallback;
-};
+    return targetIndex !== -1 ? xs[targetIndex] : fallback;
+  };

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import shift from "./shift.ts";
+import shift from "./shift.js";
 
 describe("shift", () => {
   it("shifts to the left and creates a cycle", () => {

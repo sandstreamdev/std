@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import exact from "./exact.ts";
+import exact from "./exact.js";
 
 describe("exact", () => {
   it("takes exactly the given count of items and fills blanks with undefined values", () => {

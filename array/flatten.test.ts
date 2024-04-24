@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import flatten from "./flatten.ts";
+import flatten from "./flatten.js";
 
 describe("flatten", () => {
   it("flattens one level of nested arrays", () => {

@@ -1,4 +1,4 @@
-export default (xs: any[], random = Math.random) => {
+export default <T>(xs: T[], random = Math.random): T[] => {
   for (let i = 0; i < xs.length; i++) {
     const j = Math.floor(random() * (i + 1));
 

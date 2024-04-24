@@ -1,7 +1,7 @@
 {
   "name": "length",
   "description": "Returns the number of entries within the given object.",
-  "signature": "(xs: object) => number",
+  "signature": "<T>(xs: GenericObject<T>) => number",
   "examples": [
     {
       "language": "javascript",

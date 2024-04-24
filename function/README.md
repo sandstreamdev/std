@@ -6,7 +6,7 @@ Composes multiple functions into a higher-order one. Goes right to left.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: ((x: any) => any)[]) => (x: any) => any
+<T, TResult>(...fs: ((x: T) => T)[]) => (x: T) => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -31,7 +31,7 @@ Returns the given constant no matter the input.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+<T>(x: T) => () => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -56,7 +56,7 @@ Always return the given value.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+<T>(x: T) => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -87,7 +87,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (...xs: any[]) => any) => (...args: any[]) => any
+<TResult>(f: (...xs: unknown[]) => TResult) => (...args: unknown[]) => TResult
 ```
 <!-- prettier-ignore-end -->
 
@@ -118,7 +118,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (...xs: any[]) => any) => (...args: any[]) => any
+<TResult>(f: (...xs: unknown[]) => TResult) => (...args: unknown[]) => TResult
 ```
 <!-- prettier-ignore-end -->
 
@@ -149,9 +149,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  equals: (x: any, y: any) => boolean
-) => (f: (...xs: any[]) => any) => (...args: any[]) => any
+<T>(equals: (x: T[], y: T[]) => boolean) => <TResult>(f: (...xs: T[]) => TResult) => (...args: T[]) => TResult
 ```
 <!-- prettier-ignore-end -->
 
@@ -207,9 +205,7 @@ Inverts the given function result.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (...xs: any[]) => any
-) => (...args: any[]) => boolean
+(f: (...xs: unknown[]) => unknown) => (...args: unknown[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -234,7 +230,7 @@ Pipes an input through given functions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: ((x: any) => any)[]) => (x: any) => any
+<T>(...fs: ((x: T) => T)[]) => (x: T) => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -259,9 +255,7 @@ Runs the given function only when the condition is met.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (...xs: any[]) => boolean
-) => (action: (...xs: any[]) => any) => (...args: any[]) => any
+(predicate: (...xs: unknown[]) => boolean) => (action: (...xs: unknown[]) => unknown) => (...args: unknown[]) => unknown
 ```
 <!-- prettier-ignore-end -->
 
@@ -286,9 +280,7 @@ Runs the given function only when the condition is exactly true.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  action: (...xs: any[]) => any
-) => (...args: any[]) => any
+(action: (...xs: unknown[]) => unknown) => (...args: unknown[]) => unknown
 ```
 <!-- prettier-ignore-end -->
 

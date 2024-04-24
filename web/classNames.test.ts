@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import classNames from "./classNames.ts";
+import classNames from "./classNames.js";
 
 describe("classNames", () => {
   it("composes class name from truthy values", () => {

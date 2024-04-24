@@ -1,6 +1,4 @@
-/* eslint-env node */
-// eslint-disable console
-import { promises } from "fs";
+import { promises } from "node:fs";
 
 import { outPath } from "../utils/io.js";
 import { getPath } from "../utils/url.js";

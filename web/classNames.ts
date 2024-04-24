@@ -1,17 +1,23 @@
-import entries from "../object/entries";
-import isString from "../is/string";
+export default (...xs: unknown[]) => {
+  const names: string[] = [];
 
-const booleanKeys = (xs: object) =>
-  entries(xs)
-    .filter(([, value]) => Boolean(value))
-    .map(([key]) => key);
+  for (const x of xs) {
+    if (!x) {
+      continue;
+    }
 
-export default (...xs: any[]) =>
-  xs
-    .filter(Boolean)
-    .reduce((acc, curr) => {
-      const names = isString(curr) ? [curr] : booleanKeys(curr);
+    if (typeof x === "object") {
+      for (const [key, value] of Object.entries(x)) {
+        if (value) {
+          names.push(key);
+        }
+      }
 
-      return [...acc, ...names];
-    }, [])
-    .join(" ");
+      continue;
+    }
+
+    names.push(`${x}`);
+  }
+
+  return names.join(" ");
+};

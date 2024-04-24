@@ -1,7 +1,7 @@
 {
   "name": "map",
   "description": "Maps the given object with the given function.",
-  "signature": "(\n  f: (value: any, key: string, context: object) => any\n) => (xs: object) => object",
+  "signature": "<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => GenericObject<TResult>",
   "examples": [
     {
       "language": "javascript",

@@ -1,6 +1,9 @@
 import fromEntries from "./fromEntries";
 import mapEntries from "./mapEntries";
+import type { GenericObject } from "./types";
 
-export default (f: (value: any, key: string, context: object) => any) => (
-  xs: object
-): object => fromEntries(mapEntries(f)(xs));
+export default <T, TResult>(
+    f: (value: T, key: string, context: object) => TResult
+  ) =>
+  (xs: GenericObject<T>): GenericObject<TResult> =>
+    fromEntries(mapEntries(f)(xs));

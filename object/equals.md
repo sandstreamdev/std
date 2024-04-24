@@ -6,7 +6,8 @@ Checks if two objects are deeply equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, b: any) => boolean
+(a: unknown, b: unknown) => boolean;
+export default equalsDeep
 ```
 <!-- prettier-ignore-end -->
 

@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import convertSpace from "./convertSpace.ts";
+import convertSpace from "./convertSpace.js";
 
-// @ts-ignore ambiguous import
-import rotate from "./rotate.ts";
+import rotate from "./rotate.js";
 
 describe("convertSpace", () => {
   it("applies given transformations to the vector", () => {

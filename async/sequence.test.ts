@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import sequence from "./sequence.ts";
+import sequence from "./sequence.js";
 
-// @ts-ignore ambiguous import
-import delay from "./delay.ts";
+import delay from "./delay.js";
 
 describe("sequence", () => {
   it("runs given tasks in a sequence", async () => {

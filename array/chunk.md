@@ -6,7 +6,7 @@ Splits the given array into an array of chunks of up to the given length.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[] | T[][]
 ```
 <!-- prettier-ignore-end -->
 

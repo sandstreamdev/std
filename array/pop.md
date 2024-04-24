@@ -6,7 +6,7 @@ Returns the given array without the last element.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any[]
+<T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

@@ -1,7 +1,7 @@
 {
   "name": "reverseIf",
   "description": "Reverses the given array when enabled.",
-  "signature": "(enabled: boolean) => (xs: any) => any",
+  "signature": "(enabled: boolean) => <T>(xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

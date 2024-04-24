@@ -1,5 +1,14 @@
-export const implementation = (entries: [string, any][]): object =>
-  entries.reduce((acc, [key, value]) => ({ ...acc, [key]: value }), {});
+type Result<T> = { [index: string]: T };
 
-export default (entries: [string, any][]): object =>
+export const implementation = <T>(entries: [string, T][]): Result<T> => {
+  const result: Result<T> = {};
+
+  for (const [key, value] of entries) {
+    result[key] = value;
+  }
+
+  return result;
+};
+
+export default <T>(entries: [string, T][]): Result<T> =>
   Object.fromEntries ? Object.fromEntries(entries) : implementation(entries);

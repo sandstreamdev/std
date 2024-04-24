@@ -1,7 +1,7 @@
 {
   "name": "find",
   "description": "Searches the given object by the given predicate and returns the found value or undefined.",
-  "signature": "(\n  predicate: (value: any, key: string, context: object) => boolean\n) => (xs: object) => any",
+  "signature": "<T>(predicate: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => T | undefined",
   "examples": [
     {
       "language": "javascript",

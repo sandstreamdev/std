@@ -6,7 +6,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (...xs: any[]) => any) => (...args: any[]) => any
+<TResult>(f: (...xs: unknown[]) => TResult) => (...args: unknown[]) => TResult
 ```
 <!-- prettier-ignore-end -->
 

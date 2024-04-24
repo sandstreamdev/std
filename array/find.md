@@ -6,10 +6,7 @@ Finds an element by a predicate function within the given array, otherwise, it r
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, index: number, context: any[]) => boolean,
-  fallback?: any
-) => (xs: any[]) => any
+<T>(predicate: (value: T, index: number, context: T[]) => boolean, fallback?: T) => (xs: T[]) => T
 ```
 <!-- prettier-ignore-end -->
 

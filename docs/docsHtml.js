@@ -1,7 +1,5 @@
-/* eslint-env node */
-// eslint-disable console
-import { promises } from "fs";
-import path from "path";
+import { promises } from "node:fs";
+import path from "node:path";
 
 import filesPaths, { docsPath, outPath, copyDir } from "./utils/io.js";
 import pageTemplate from "./templates/page.js";
@@ -9,20 +7,20 @@ import tocContent from "./templates/toc.js";
 import generateModuleDocs from "./templates/module.js";
 
 const {
-  writeFile: writeFileAsync,
-  readFile: readFileAsync,
   mkdir: mkdirAsync,
-  rmdir: rmdirAsync
+  readFile: readFileAsync,
+  rm: rmdirAsync,
+  writeFile: writeFileAsync
 } = promises;
 
-let data = {};
+const data = {};
 
 const addData = (filePath, fileData) => {
   const pathParts = path
     .dirname(filePath)
     .slice(process.cwd().length)
     .split(path.sep)
-    .filter(x => x != "");
+    .filter(Boolean);
 
   const moduleName = [...pathParts].pop();
 
@@ -37,11 +35,16 @@ const addData = (filePath, fileData) => {
 };
 
 const main = async cwd => {
-  console.log("Clearing dist...");
   const outputPath = outPath();
 
-  await rmdirAsync(outputPath, { recursive: true });
+  console.log("Clearing dist...");
+  await rmdirAsync(outputPath, { recursive: true, force: true });
+  console.log("Cleared dist.");
+
+  console.log("Creating dist...");
   await mkdirAsync(outputPath, { recursive: true });
+  console.log("Created dist.");
+
   await copyDir(docsPath("css"), outPath("css"));
   await copyDir(docsPath("scripts"), outPath("scripts"));
 
@@ -54,7 +57,7 @@ const main = async cwd => {
     addData(path, data);
   }
 
-  const toc = tocContent(data);
+  const toc = await tocContent(data);
 
   let mainPageContent = "";
 

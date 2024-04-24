@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import insert from "./insert.ts";
+import insert from "./insert.js";
 
 describe("insert", () => {
   it("should insert item to the array on the second position", () => {

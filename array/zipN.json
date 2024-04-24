@@ -1,7 +1,7 @@
 {
   "name": "zipN",
   "description": "Zips the given arrays together into pairs.",
-  "signature": "(...xs: any[][]) => any[][]",
+  "signature": "<T>(...xs: T[][]) => T[][]",
   "examples": [
     {
       "language": "javascript",

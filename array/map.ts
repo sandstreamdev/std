@@ -1,5 +1,5 @@
-export default (...fs: { (x: any): any }[]) => {
-  const f = (x: any) => fs.reduce((x, f) => f(x), x);
+export default <T>(...fs: ((x: T) => T)[]) => {
+  const f = (x: T) => fs.reduce((x, f) => f(x), x);
 
-  return (xs: any) => xs.map(f);
+  return (xs: T[]) => xs.map(f);
 };

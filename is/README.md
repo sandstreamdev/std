@@ -6,7 +6,7 @@ Checks if the given argument is an array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -36,7 +36,7 @@ Checks if the given value is a boolean.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -64,7 +64,7 @@ Checks if the given value is a byte.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -100,7 +100,7 @@ Checks if the given value is a Date object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -130,7 +130,7 @@ Checks if the given value is defined.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -171,7 +171,7 @@ Checks if the given value is a function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -196,7 +196,7 @@ Checks if the given value is an integer.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -269,7 +269,7 @@ Checks if the given value is a number in a normal range [0, 1].
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -304,7 +304,7 @@ Checks if the given value is a number.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -336,7 +336,7 @@ Checks if the given value is an object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -366,7 +366,7 @@ Checks if the given value is a string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 

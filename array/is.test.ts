@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import is from "./is.ts";
+import is from "./is.js";
 
 describe("is", () => {
   it("checks is the given argument is an array", () => {

@@ -1,2 +1,3 @@
-export default (...fs: { (x: any): any }[]) => (x: any) =>
-  fs.reduce((x, f) => f(x), x);
+export default <T>(...fs: ((x: T) => T)[]) =>
+  (x: T): T =>
+    fs.reduce((x, f) => f(x), x);

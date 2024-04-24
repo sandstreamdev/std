@@ -6,9 +6,7 @@ Transforms the object keys with the given function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => object
+<T>(f: (value: T, key: string, context: object) => string) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 

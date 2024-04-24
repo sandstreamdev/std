@@ -6,7 +6,7 @@ Checks if the given date is present and it is valid.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date?: any) => boolean
+(date?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 

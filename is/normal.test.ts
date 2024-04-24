@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import normal from "./normal.ts";
+import normal from "./normal.js";
 
-// @ts-ignore ambiguous import
-import range from "../array/range.ts";
+import range from "../array/range.js";
 
 describe("normal", () => {
   it("checks is a number in a normal range [0, 1]", () => {

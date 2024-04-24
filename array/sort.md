@@ -6,9 +6,7 @@ Sorts the given array without mutating it.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f?: (a: any, b: any) => number
-) => (xs: any[]) => any[]
+<T>(f?: (a: T, b: T) => number) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

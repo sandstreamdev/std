@@ -1,8 +1,9 @@
+!*.interface.d.ts
+.coverage
 .coverage/
-node_modules/
+.DS_STORE
+**/*.d.ts
+docs/dist
 index.cjs.js
 index.umd.js
-**/*.d.ts
-.coverage
-docs/dist
-!*.interface.d.ts
+node_modules/

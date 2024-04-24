@@ -6,9 +6,7 @@ Maps the given object with the given function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => object
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => GenericObject<TResult>
 ```
 <!-- prettier-ignore-end -->
 

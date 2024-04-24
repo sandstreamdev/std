@@ -6,9 +6,7 @@ Maps and returns an array of transformed object values.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => any[]
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => TResult[]
 ```
 <!-- prettier-ignore-end -->
 

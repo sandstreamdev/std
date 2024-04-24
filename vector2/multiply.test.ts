@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import multiply from "./multiply.ts";
+import multiply from "./multiply.js";
 
 describe("multiply", () => {
   it("multiples two matrices", () => {

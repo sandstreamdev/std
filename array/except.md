@@ -6,7 +6,7 @@ Filters out the given value.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(y: any) => (xs: any[]) => any[]
+<T>(y: T) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

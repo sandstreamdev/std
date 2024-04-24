@@ -1,7 +1,7 @@
 {
   "name": "debounce",
   "description": "Makes the function run after the given period of not being called. Useful to delay input submission for auto-complete etc.",
-  "signature": "(\n  f: (...args: any[]) => any,\n  wait: number\n) => (...args: any[]) => void",
+  "signature": "(f: F, wait: number) => (...args: unknown[]) => void",
   "examples": [
     {
       "language": "javascript",

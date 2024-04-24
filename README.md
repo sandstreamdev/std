@@ -22,7 +22,7 @@ Checks if the given array is present and it is not empty (contains at least one 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: any[]) => boolean
+<T>(xs?: T[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -55,7 +55,7 @@ Checks if the given arguments are all `Arrays`.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => boolean
+<T>(...xs: T[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -90,7 +90,7 @@ Splits the given array into an array of chunks of up to the given length.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[] | T[][]
 ```
 <!-- prettier-ignore-end -->
 
@@ -121,7 +121,7 @@ Computes a set difference between the two given arrays.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[], ys: any[]) => any[]
+<T>(xs: T[], ys: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -146,7 +146,7 @@ Checks if two arrays are not equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: any[], ys?: any[]) => boolean
+<T>(xs?: T[], ys?: T[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -178,7 +178,7 @@ Lists all the duplicated values in the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any[]
+<T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -203,7 +203,7 @@ Empty array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-any[]
+unknown[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -228,7 +228,7 @@ Takes exactly the given count of elements.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -258,7 +258,7 @@ Filters out the given value.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(y: any) => (xs: any[]) => any[]
+<T>(y: T) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -288,9 +288,7 @@ Filters the given array with the given predicate just like Array.filter but does
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, index: number, context: any[]) => boolean
-) => (xs: any[]) => any[]
+<T>(f: (value: T, index: number, context: T[]) => boolean) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -322,10 +320,7 @@ Finds an element by a predicate function within the given array, otherwise, it r
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, index: number, context: any[]) => boolean,
-  fallback?: any
-) => (xs: any[]) => any
+<T>(predicate: (value: T, index: number, context: T[]) => boolean, fallback?: T) => (xs: T[]) => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -355,7 +350,7 @@ Returns the first element or undefined when there are no elements in the given a
 
 <!-- prettier-ignore-start -->
 ```typescript
-([x]: [any]) => any
+<T>([x]: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -385,9 +380,7 @@ Maps and flattens the result.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, index: number, context: any[]) => any
-) => (xs: any[]) => any
+<T, TResult>(f: (value: T, index: number, context: T[]) => TResult[]) => (xs: T[]) => TResult[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -413,7 +406,7 @@ Flattens the nested arrays by a single level.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any[]
+<T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -443,9 +436,7 @@ Inserts the given item to the array at a specific index.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  index: number
-) => (item: any) => ([...xs]: any[]) => any[]
+(index: number) => <T>(item: T) => ([...xs]: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -475,7 +466,7 @@ Finds common elements between both arrays.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[], ys: any[]) => any[]
+<T>(xs: T[], ys: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -500,7 +491,7 @@ Checks if the given argument is an array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(value?: any) => boolean
+(value?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -530,7 +521,7 @@ Returns the last element or undefined when there are no elements in the given ar
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any
+<T>(xs: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -560,7 +551,7 @@ Returns the number of elements in the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => number
+<T>(xs: T[]) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -598,7 +589,7 @@ Checks if lengths of the given arrays differ.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any[], b: any[]) => boolean
+<T1, T2>(a: T1[], b: T2[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -629,7 +620,7 @@ Maps the given array with the given functions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: ((x: any) => any)[]) => (xs: any) => any
+<T>(...fs: ((x: T) => T)[]) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -659,7 +650,7 @@ Returns the middle element or the right one when the number of elements is even.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any
+<T>(xs: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -726,7 +717,7 @@ Checks if the given array contains more than one element.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => boolean
+<T>(xs: T[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -767,7 +758,7 @@ Checks if the given array is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: any) => boolean
+<T>(xs?: T[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -797,7 +788,7 @@ Partitions the given array to the ones that pass the given predicate function an
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: (x: any) => boolean) => (xs: any[]) => any
+<T>(predicate: (x: T) => boolean) => (xs: T[]) => readonly [T[], T[]]
 ```
 <!-- prettier-ignore-end -->
 
@@ -823,7 +814,7 @@ Returns the given array without the last element.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any[]
+<T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -852,7 +843,7 @@ Generates an array of numbers from 0 to n - 1.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => number[]
+(n: number) => number[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -877,7 +868,7 @@ Removes an element at the given index from the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(index: number) => (xs: any[]) => any[]
+(index: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -902,7 +893,7 @@ Repeats the given element by the given count of times.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (value: any) => any[]
+(count: number) => <T>(value: T) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -927,7 +918,7 @@ Reverses the given array without mutating it (in contrast to Array.reverse).
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any[]
+<T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -952,7 +943,7 @@ Reverses the given array when enabled.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(enabled: boolean) => (xs: any) => any
+(enabled: boolean) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -982,7 +973,7 @@ Returns the second element or undefined when there are less than two elements in
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any
+<T>(xs: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -1017,7 +1008,7 @@ Returns the second to last element or undefined when there are less than two ele
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any
+<T>(xs: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -1052,7 +1043,7 @@ Shifts the given array to the left and circulates the elements back by modulo of
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1087,7 +1078,7 @@ Shuffles the given array in random order with Math.random as the default.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any, random?: () => number) => any[]
+<T>(xs: T[], random?: () => number) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1122,7 +1113,7 @@ Shuffles the given array in-place in random order with Math.random as the defaul
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[], random?: () => number) => any[]
+<T>(xs: T[], random?: () => number) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1157,7 +1148,7 @@ Checks if the given array contains exactly one element.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => boolean
+<T>(xs: T[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -1192,7 +1183,7 @@ Skips the given count of elements from the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1217,7 +1208,7 @@ Returns a new array composed of tuples of the given sliding window length of con
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[][]
+(count: number) => <T>(xs: T[]) => T[][]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1252,9 +1243,7 @@ Sorts the given array without mutating it.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f?: (a: any, b: any) => number
-) => (xs: any[]) => any[]
+<T>(f?: (a: T, b: T) => number) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1304,7 +1293,7 @@ Takes up to a given count of elements.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1334,7 +1323,7 @@ Returns unique elements of the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any[]
+<T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1359,7 +1348,7 @@ Filters out duplicated values based on the result of the given key selector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (x: any) => any) => (xs: any[]) => any[]
+<T, TResult>(f: (x: T) => TResult) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1388,7 +1377,7 @@ Zips the given arrays together into pairs.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[], ys: any[]) => any[][]
+(xs: unknown[], ys: unknown[]) => [unknown, unknown][]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1413,7 +1402,7 @@ Zips the given arrays together into pairs.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[][]) => any[][]
+<T>(...xs: T[][]) => T[][]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1448,9 +1437,7 @@ Zips the given arrays together with the given function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f?: (x: any, y: any) => any[]
-) => (xs: any[], ys: any[]) => any[][]
+<T1, T2>(f?: (x: T1, y: T2) => [T1, T2]) => (xs: T1[], ys: T2[]) => [T1, T2][]
 ```
 <!-- prettier-ignore-end -->
 
@@ -1477,10 +1464,7 @@ Makes the function run after the given period of not being called. Useful to del
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (...args: any[]) => any,
-  wait: number
-) => (...args: any[]) => void
+(f: F, wait: number) => (...args: unknown[]) => void
 ```
 <!-- prettier-ignore-end -->
 
@@ -1537,11 +1521,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  tasks: {
-    (): Promise<any>;
-  }[]
-) => Promise<any[]>
+<T>(tasks: Task<T>[]) => Promise<Awaited<T>[]>
 ```
 <!-- prettier-ignore-end -->
 
@@ -1705,21 +1685,19 @@ Returns an array of days in a particular months. Number of days in February vari
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  leapYear: boolean
-) => [
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number
+(leapYear: boolean) => [
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number
 ]
 ```
 <!-- prettier-ignore-end -->
@@ -1783,10 +1761,7 @@ Displays padded time string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  source: [number, number, number],
-  showSeconds: boolean
-) => string
+(source: [number, number, number], showSeconds: boolean) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -2388,7 +2363,7 @@ Checks if the given date is present and it is valid.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(date?: any) => boolean
+(date?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -2430,14 +2405,15 @@ Asserts given conditions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  condition: boolean,
-  callbackOrMessage:
-    | {
-        (): void;
-      }
-    | string
-) => void
+(condition: boolean, callbackOrMessage: (() => void) | string) => void;
+export declare const throws: (f: () => void) => unknown | undefined;
+export declare const assertNumber: (x?: unknown) => void;
+export declare const assertInteger: (x?: unknown) => void;
+export declare const assertByte: (x?: unknown) => void;
+export declare const assertNormal: (x?: unknown) => void;
+export declare const assertString: (x?: unknown, message?: string) => void;
+export declare const assertIsDefined: (x?: unknown, message?: string) => void;
+export default assert
 ```
 <!-- prettier-ignore-end -->
 
@@ -2463,14 +2439,8 @@ Computes a deep difference between the two values (primitives, objects, arrays, 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  obj1?: {
-    [index: string]: any;
-  },
-  obj2?: {
-    [index: string]: any;
-  }
-) => object
+(obj1?: unknown, obj2?: unknown) => DiffResult;
+export default diff
 ```
 <!-- prettier-ignore-end -->
 
@@ -2749,7 +2719,7 @@ Composes multiple functions into a higher-order one. Goes right to left.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: ((x: any) => any)[]) => (x: any) => any
+<T, TResult>(...fs: ((x: T) => T)[]) => (x: T) => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -2774,7 +2744,7 @@ Returns the given constant no matter the input.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+<T>(x: T) => () => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -2799,7 +2769,7 @@ Always return the given value.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+<T>(x: T) => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -2830,7 +2800,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (...xs: any[]) => any) => (...args: any[]) => any
+<TResult>(f: (...xs: unknown[]) => TResult) => (...args: unknown[]) => TResult
 ```
 <!-- prettier-ignore-end -->
 
@@ -2861,7 +2831,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (...xs: any[]) => any) => (...args: any[]) => any
+<TResult>(f: (...xs: unknown[]) => TResult) => (...args: unknown[]) => TResult
 ```
 <!-- prettier-ignore-end -->
 
@@ -2892,9 +2862,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  equals: (x: any, y: any) => boolean
-) => (f: (...xs: any[]) => any) => (...args: any[]) => any
+<T>(equals: (x: T[], y: T[]) => boolean) => <TResult>(f: (...xs: T[]) => TResult) => (...args: T[]) => TResult
 ```
 <!-- prettier-ignore-end -->
 
@@ -2950,9 +2918,7 @@ Inverts the given function result.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (...xs: any[]) => any
-) => (...args: any[]) => boolean
+(f: (...xs: unknown[]) => unknown) => (...args: unknown[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -2977,7 +2943,7 @@ Pipes an input through given functions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: ((x: any) => any)[]) => (x: any) => any
+<T>(...fs: ((x: T) => T)[]) => (x: T) => T
 ```
 <!-- prettier-ignore-end -->
 
@@ -3002,9 +2968,7 @@ Runs the given function only when the condition is met.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (...xs: any[]) => boolean
-) => (action: (...xs: any[]) => any) => (...args: any[]) => any
+(predicate: (...xs: unknown[]) => boolean) => (action: (...xs: unknown[]) => unknown) => (...args: unknown[]) => unknown
 ```
 <!-- prettier-ignore-end -->
 
@@ -3029,9 +2993,7 @@ Runs the given function only when the condition is exactly true.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  action: (...xs: any[]) => any
-) => (...args: any[]) => any
+(action: (...xs: unknown[]) => unknown) => (...args: unknown[]) => unknown
 ```
 <!-- prettier-ignore-end -->
 
@@ -3059,7 +3021,7 @@ Checks if the given argument is an array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3089,7 +3051,7 @@ Checks if the given value is a boolean.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3117,7 +3079,7 @@ Checks if the given value is a byte.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3153,7 +3115,7 @@ Checks if the given value is a Date object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3183,7 +3145,7 @@ Checks if the given value is defined.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3224,7 +3186,7 @@ Checks if the given value is a function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3249,7 +3211,7 @@ Checks if the given value is an integer.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3322,7 +3284,7 @@ Checks if the given value is a number in a normal range [0, 1].
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: number) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3357,7 +3319,7 @@ Checks if the given value is a number.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3389,7 +3351,7 @@ Checks if the given value is an object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3419,7 +3381,7 @@ Checks if the given value is a string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3526,7 +3488,7 @@ Clamps the given value to the given range.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(min: number, max: number) => (x: number) => number
+(min: number, max: number) => ((x: number) => number)
 ```
 <!-- prettier-ignore-end -->
 
@@ -3658,10 +3620,7 @@ Checks if the given value is in the rectangular range of [0, width] and [0, heig
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  width: number,
-  height: number
-) => (x: number, y: number) => boolean
+(width: number, height: number) => ((x: number, y: number) => boolean)
 ```
 <!-- prettier-ignore-end -->
 
@@ -3691,7 +3650,7 @@ Linearly interpolates two given values by the normal value of their distance.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(t: number) => (a: number, b: number) => number
+(t: number) => ((a: number, b: number) => number)
 ```
 <!-- prettier-ignore-end -->
 
@@ -3727,7 +3686,7 @@ Calculates the maximum by a given selector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (x: number) => number) => (xs: number[]) => number
+(f: (x: number) => number) => ((xs: number[]) => number)
 ```
 <!-- prettier-ignore-end -->
 
@@ -3929,7 +3888,7 @@ Checks if the given object is present and it is not empty (contains at least one
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object) => boolean
+<T>(xs?: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3971,9 +3930,9 @@ Applies the given parameters to the given dictionary of functions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  fs: ((...xs: any[]) => any)[]
-) => (...xs: any[]) => object
+<T>(fs: {
+    [index: string]: (...xs: T[]) => T;
+}) => (...xs: T[]) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -4001,7 +3960,8 @@ Empty object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-{}
+GenericObject<unknown>;
+export default empty
 ```
 <!-- prettier-ignore-end -->
 
@@ -4026,16 +3986,7 @@ Lists key-value pairs (entries) present in the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-{
-  <T>(
-    o:
-      | {
-          [s: string]: T;
-        }
-      | ArrayLike<T>
-  ): [string, T][];
-  (o: {}): [string, any][];
-}
+ObjectEntries
 ```
 <!-- prettier-ignore-end -->
 
@@ -4086,7 +4037,8 @@ Checks if two objects are deeply equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, b: any) => boolean
+(a: unknown, b: unknown) => boolean;
+export default equalsDeep
 ```
 <!-- prettier-ignore-end -->
 
@@ -4117,9 +4069,7 @@ Test if every element passes the given predicate.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => boolean
-) => (xs: object) => boolean
+<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -4149,9 +4099,7 @@ Filters the given object with the given predicate.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => boolean
-) => (xs: object) => object
+<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -4176,9 +4124,7 @@ Searches the given object by the given predicate and returns the found value or 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, key: string, context: object) => boolean
-) => (xs: object) => any
+<T>(predicate: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -4203,9 +4149,7 @@ Searches the given object by the given predicate and returns the found entry or 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, key: string, context: object) => boolean
-) => (xs: object) => any
+<T>(predicate: (value: T, key: string, context: GenericObject<T>) => boolean) => (xs: GenericObject<T>) => [string, T] | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -4230,9 +4174,7 @@ Searches the given object by the given predicate and returns the found key or un
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, key: string, context: object) => boolean
-) => (xs: object) => any
+<T>(predicate: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => string | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -4257,7 +4199,7 @@ Returns the first value in the given object. Follows the default object iteratio
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: object) => any
+<T>(xs: GenericObject<T>) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -4282,9 +4224,7 @@ Flat maps the values of the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => any[]
+<T, TResult>(f: (value: T, key: string, context: GenericObject<T>) => TResult[]) => (xs: GenericObject<T>) => TResult[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -4309,7 +4249,7 @@ Creates an object from an array of key-value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-(entries: [string, any][]) => object
+<T>(entries: [string, T][]) => Result<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -4335,7 +4275,7 @@ Groups the given array of values by the given key selector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(selector: (x: any) => string) => (xs: any[]) => object
+(selector: (x: unknown) => string) => (xs: unknown[]) => Result
 ```
 <!-- prettier-ignore-end -->
 
@@ -4360,7 +4300,7 @@ Checks if the given key is present in the object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(key: string) => (xs?: any) => any
+(key: string) => (xs?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -4377,6 +4317,31 @@ hasKey("c")({ a: 1, b: 2, c: 3 });
 
 - How to check if an object contains a given key?
 
+#### last
+
+Returns the last value in the given object. Follows the default object iteration order.
+
+##### Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+<T>(xs: GenericObject<T>) => T | undefined
+```
+<!-- prettier-ignore-end -->
+
+##### Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+last({ a: 1, b: 2, c: 3 });
+// ⇒ 3
+```
+<!-- prettier-ignore-end -->
+
+##### Questions
+
+- How to get the last value of an object?
+
 #### length
 
 Returns the number of entries within the given object.
@@ -4385,7 +4350,7 @@ Returns the number of entries within the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: object) => number
+<T>(xs: GenericObject<T>) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -4410,9 +4375,7 @@ Maps the given object with the given function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => object
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => GenericObject<TResult>
 ```
 <!-- prettier-ignore-end -->
 
@@ -4438,9 +4401,7 @@ Maps entries of the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => [string, any][]
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => [string, TResult][]
 ```
 <!-- prettier-ignore-end -->
 
@@ -4465,9 +4426,7 @@ Transforms the object keys with the given function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => object
+<T>(f: (value: T, key: string, context: object) => string) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -4493,9 +4452,7 @@ Maps and returns an array of transformed object values.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => any[]
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => TResult[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -4520,12 +4477,8 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  a: {
-    [index: string]: any;
-  },
-  b: object
-) => object
+(a: GenericObject, b: GenericObject) => GenericObject;
+export default merge
 ```
 <!-- prettier-ignore-end -->
 
@@ -4566,7 +4519,7 @@ Checks if the given object is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object) => boolean
+<T>(xs?: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -4602,9 +4555,7 @@ Test if any element passes the given predicate.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => boolean
-) => (xs: object) => boolean
+<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -4634,9 +4585,7 @@ Sorts the given object by a comparator.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (a: any, b: any) => number
-) => (xs: object) => object
+<T>(f: (a: T, b: T) => number) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -4663,7 +4612,9 @@ Parses a query string into an object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: string) => object
+(xs?: string) => {
+    [index: string]: string | boolean;
+}
 ```
 <!-- prettier-ignore-end -->
 
@@ -4688,7 +4639,7 @@ Parses the given query string into an object using URLSearchParams.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(source: string) => {}
+(source: string) => Result
 ```
 <!-- prettier-ignore-end -->
 
@@ -4713,7 +4664,7 @@ Serializes the given object into a query string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: { [index: string]: any }) => string
+<T>(xs?: GenericObject<T>) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -4770,10 +4721,7 @@ Checks if the given ranges are equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [a, b]: [number, number],
-  [c, d]: [number, number]
-) => boolean
+([a, b]: [number, number], [c, d]: [number, number]) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -4833,10 +4781,8 @@ Splits the given range into subranges by excluding the given used ranged.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  used: [number, number][],
-  sourceRange?: number[]
-) => (range: [number, number]) => [number, number][]
+(used: [number, number][], sourceRange?: number[]) => (range: [number, number]) => [number, number][];
+export default split
 ```
 <!-- prettier-ignore-end -->
 
@@ -5119,10 +5065,7 @@ Adds two vectors.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [x1, y1]: [number, number],
-  [x2, y2]: [number, number]
-) => [number, number]
+([x1, y1]: [number, number], [x2, y2]: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
@@ -5148,12 +5091,12 @@ Applies transformations to the given vector.
 <!-- prettier-ignore-start -->
 ```typescript
 (space: {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }) => ([x, y]: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
@@ -5179,10 +5122,7 @@ Calculates a cross product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [a, b]: [number, number],
-  [c, d]: [number, number]
-) => number
+([a, b]: [number, number], [c, d]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -5213,10 +5153,7 @@ Calculates a dot product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [a, b]: [number, number],
-  [c, d]: [number, number]
-) => number
+([a, b]: [number, number], [c, d]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -5272,24 +5209,14 @@ Applies matrix transformation to the given vector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  {
-    a,
-    b,
-    c,
-    d,
-    e,
-    f
-  }: {
+({ a, b, c, d, e, f }: {
     a: number;
     c: number;
     e: number;
     b: number;
     d: number;
     f: number;
-  },
-  [x, y]: [number, number]
-) => number[]
+}, [x, y]: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -5314,30 +5241,27 @@ Multiples two matrices.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  m1: {
+(m1: {
     a: number;
     c: number;
     e: number;
     b: number;
     d: number;
     f: number;
-  },
-  m2: {
+}, m2: {
     a: number;
     b: number;
     c: number;
     d: number;
     e: number;
     f: number;
-  }
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+}) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -5388,10 +5312,7 @@ Reflects the given vector on the given surface.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  a: [number, number],
-  v: [number, number]
-) => [number, number]
+(a: [number, number], v: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
@@ -5416,17 +5337,13 @@ Creates a rotation matrix around given origin [0, 0] by default.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  angle?: number,
-  cx?: number,
-  cy?: number
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+(angle?: number, cx?: number, cy?: number) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -5455,16 +5372,13 @@ Creates a scale matrix.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  sx?: number,
-  sy?: number
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+(sx?: number, sy?: number) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -5490,10 +5404,7 @@ Subtracts two vectors.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [x1, y1]: [number, number],
-  [x2, y2]: [number, number]
-) => [number, number]
+([x1, y1]: [number, number], [x2, y2]: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
@@ -5518,22 +5429,20 @@ Composes a single transformation by matrix multiplication.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  ...matrices: {
+(...matrices: {
     a: number;
     c: number;
     e: number;
     b: number;
     d: number;
     f: number;
-  }[]
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+}[]) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -5563,16 +5472,13 @@ Creates a translation matrix.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  tx?: number,
-  ty?: number
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+(tx?: number, ty?: number) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -5600,7 +5506,7 @@ Composes class name from truthy values with the support of string and objects.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => any
+(...xs: unknown[]) => string
 ```
 <!-- prettier-ignore-end -->
 
@@ -5628,8 +5534,8 @@ Stops propagation and prevents the default handler of the given event.
 <!-- prettier-ignore-start -->
 ```typescript
 (event: {
-  preventDefault: () => void;
-  stopPropagation: () => void;
+    preventDefault: () => void;
+    stopPropagation: () => void;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->
@@ -5659,16 +5565,11 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
 
 <!-- prettier-ignore-start -->
 ```typescript
-({
-  button,
-  ctrlKey,
-  metaKey,
-  shiftKey
-}: {
-  button?: number;
-  ctrlKey?: boolean;
-  metaKey?: boolean;
-  shiftKey?: boolean;
+({ button, ctrlKey, metaKey, shiftKey }: {
+    button?: number;
+    ctrlKey?: boolean;
+    metaKey?: boolean;
+    shiftKey?: boolean;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->
@@ -5694,7 +5595,9 @@ Prevents the default handler of the given event.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: { preventDefault: () => void }) => boolean
+(event: {
+    preventDefault: () => void;
+}) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -5723,7 +5626,9 @@ Stops propagation of the given event.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: { stopPropagation: () => void }) => boolean
+(event: {
+    stopPropagation: () => void;
+}) => boolean
 ```
 <!-- prettier-ignore-end -->
 

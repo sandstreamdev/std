@@ -6,10 +6,7 @@ Reflects the given vector on the given surface.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  a: [number, number],
-  v: [number, number]
-) => [number, number]
+(a: [number, number], v: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 

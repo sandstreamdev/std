@@ -1,7 +1,7 @@
 {
   "name": "shift",
   "description": "Shifts the given array to the left and circulates the elements back by modulo of the array's length.",
-  "signature": "(count: number) => (xs: any[]) => any[]",
+  "signature": "(count: number) => <T>(xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

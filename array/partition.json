@@ -1,7 +1,7 @@
 {
   "name": "partition",
   "description": "Partitions the given array to the ones that pass the given predicate function and the ones that do not. By [convention of the Haskell's Data.Either](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Either.html), values that pass the predicate are placed at the right.",
-  "signature": "(predicate: (x: any) => boolean) => (xs: any[]) => any",
+  "signature": "<T>(predicate: (x: T) => boolean) => (xs: T[]) => readonly [T[], T[]]",
   "examples": [
     {
       "language": "javascript",

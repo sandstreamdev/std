@@ -1,7 +1,7 @@
 {
   "name": "filter",
   "description": "Filters the given object with the given predicate.",
-  "signature": "(\n  f: (value: any, key: string, context: object) => boolean\n) => (xs: object) => object",
+  "signature": "<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => GenericObject<T>",
   "examples": [
     {
       "language": "javascript",

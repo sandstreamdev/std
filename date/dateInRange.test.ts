@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import dateInRange from "./dateInRange.ts";
+import dateInRange from "./dateInRange.js";
 
 describe("dateInRange", () => {
   it("checks if the given date is between the given date range", () => {

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import unique from "./unique.ts";
+import unique from "./unique.js";
 
 describe("unique", () => {
   it("removes duplicated values", () => {

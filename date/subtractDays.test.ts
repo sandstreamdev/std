@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import subtractDays from "./subtractDays.ts";
+import subtractDays from "./subtractDays.js";
 
 describe("subtractDays", () => {
   it("subtracts the given number of days from the given Date object", () => {

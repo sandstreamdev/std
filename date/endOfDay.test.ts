@@ -1,8 +1,5 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import endOfDay from "./endOfDay.ts";
-// @ts-ignore ambiguous import
-import fromMinutes from "./fromMinutes.ts";
+import endOfDay from "./endOfDay.js";
+import fromMinutes from "./fromMinutes.js";
 
 describe("endOfDay", () => {
   it("returns a local Date of an end of the day at a particular Date", () => {

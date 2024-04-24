@@ -1,15 +1,16 @@
 const ignoredFiles = [
   ".all-contributorsrc",
-  ".eslintignore",
-  ".eslintrc.js",
+  ".DS_STORE",
   ".gitignore",
   ".npmignore",
+  ".nvmrc",
   ".prettierignore",
   ".prettierrc",
   "addExtensions.js",
   "babel.config.json",
   "compile.js",
   "document.js",
+  "eslint.config.js",
   "ignore.js",
   "index.cjs.js",
   "index.d.ts",
@@ -28,7 +29,8 @@ const ignoredFiles = [
   "README.md",
   "regenerate.js",
   "rollup.config.js",
-  "tsconfig.json"
+  "tsconfig.json",
+  "types.ts"
 ];
 
 const ignoredDirectories = [

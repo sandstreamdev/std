@@ -1,7 +1,7 @@
 {
   "name": "pop",
   "description": "Returns the given array without the last element.",
-  "signature": "(xs: any[]) => any[]",
+  "signature": "<T>(xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

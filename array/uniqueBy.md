@@ -6,7 +6,7 @@ Filters out duplicated values based on the result of the given key selector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (x: any) => any) => (xs: any[]) => any[]
+<T, TResult>(f: (x: T) => TResult) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

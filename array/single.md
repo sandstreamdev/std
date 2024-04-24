@@ -6,7 +6,7 @@ Checks if the given array contains exactly one element.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => boolean
+<T>(xs: T[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 

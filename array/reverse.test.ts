@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import reverse from "./reverse.ts";
+import reverse from "./reverse.js";
 
 describe("reverse", () => {
   it("reverses the array without mutating it", () => {

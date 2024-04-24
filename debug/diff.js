@@ -1,10 +1,10 @@
-import filter from "../object/filter.js";
-import none from "../object/none.js";
-import isDefined from "../is/defined.js";
 import isArray from "../is/array.js";
 import isDate from "../is/date.js";
+import isDefined from "../is/defined.js";
 import isFunction from "../is/function.js";
 import isObject from "../is/object.js";
+import filter from "../object/filter.js";
+import none from "../object/none.js";
 
 export const VALUE_CREATED = "+";
 
@@ -54,18 +54,21 @@ const diff = (obj1, obj2) => {
 
   const result = {};
 
-  for (const key in obj1) {
+  for (const key of Object.keys(obj1)) {
+    // @ts-expect-error
     const value1 = obj1[key];
 
     if (isFunction(value1)) {
       continue;
     }
 
+    // @ts-expect-error
     const value2 = obj2[key];
     result[key] = diff(value1, value2);
   }
 
-  for (const key in obj2) {
+  for (const key of Object.keys(obj2)) {
+    // @ts-expect-error
     const value2 = obj2[key];
     const existingValue = result[key];
 
@@ -77,7 +80,9 @@ const diff = (obj1, obj2) => {
   }
 
   return filter(
-    value => value !== null && !(value && isObject(value) && none(value))
+    value =>
+      value !== null &&
+      !(value && isObject(value) && typeof value === "object" && none(value))
   )(result);
 };
 

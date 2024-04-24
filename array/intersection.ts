@@ -1,1 +1,2 @@
-export default (xs: any[], ys: any[]) => xs.filter(value => ys.includes(value));
+export default <T>(xs: T[], ys: T[]): T[] =>
+  xs.filter(value => ys.includes(value));

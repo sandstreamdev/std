@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import except from "./except.ts";
+import except from "./except.js";
 
 describe("except", () => {
   it("filters out the given value", () => {

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import includes from "./includes.ts";
+import includes from "./includes.js";
 
 const text = "The quick brown fox jumps over the lazy dog";
 

@@ -1,7 +1,7 @@
 {
   "name": "length",
   "description": "Returns the number of elements in the given array.",
-  "signature": "(xs: any[]) => number",
+  "signature": "<T>(xs: T[]) => number",
   "examples": [
     {
       "language": "javascript",

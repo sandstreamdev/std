@@ -1,7 +1,7 @@
 {
   "name": "equals",
   "description": "Checks if two objects are deeply equal.",
-  "signature": "(a: any, b: any) => boolean",
+  "signature": "(a: unknown, b: unknown) => boolean;\nexport default equalsDeep",
   "examples": [
     {
       "language": "javascript",

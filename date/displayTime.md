@@ -6,10 +6,7 @@ Displays padded time string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  source: [number, number, number],
-  showSeconds: boolean
-) => string
+(source: [number, number, number], showSeconds: boolean) => string
 ```
 <!-- prettier-ignore-end -->
 

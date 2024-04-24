@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import multiple from "./multiple.ts";
+import multiple from "./multiple.js";
 
 describe("multiple", () => {
   it("checks if the given array contains more than one element", () => {

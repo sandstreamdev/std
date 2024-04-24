@@ -1,6 +1,22 @@
-export default (selector: (x: any) => string) => (xs: any[]): object =>
-  xs.reduce((acc, x) => {
-    const key = selector(x);
+type Result = { [index: string]: unknown[] | undefined };
 
-    return { ...acc, [key]: [...(acc[key] || []), x] };
-  }, {});
+export default (selector: (x: unknown) => string) =>
+  (xs: unknown[]): Result => {
+    const result: Result = {};
+
+    for (const x of xs) {
+      const key = selector(x);
+
+      let slot = result[key];
+
+      if (!slot) {
+        slot = [];
+
+        result[key] = slot;
+      }
+
+      slot.push(x);
+    }
+
+    return result;
+  };

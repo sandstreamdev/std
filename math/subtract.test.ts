@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import subtract from "./subtract.ts";
+import subtract from "./subtract.js";
 
 describe("subtract", () => {
   it("subtracts two numbers", () => {

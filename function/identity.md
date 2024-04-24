@@ -6,7 +6,7 @@ Always return the given value.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+<T>(x: T) => T
 ```
 <!-- prettier-ignore-end -->
 

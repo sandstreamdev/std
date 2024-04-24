@@ -1,5 +1,13 @@
 import entries from "./entries.js";
-import fromEntries from "./fromEntries.js";
 
-export default f => xs =>
-  fromEntries(entries(xs).filter(([key, value]) => f(value, key, xs)));
+export default f => xs => {
+  const result = {};
+
+  for (const [key, value] of entries(xs)) {
+    if (f(value, key, xs)) {
+      result[key] = value;
+    }
+  }
+
+  return result;
+};

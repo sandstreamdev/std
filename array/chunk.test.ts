@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import chunk from "./chunk.ts";
+import chunk from "./chunk.js";
 
 describe("chunk", () => {
   it("should return an array of elements split into groups of the given length", () => {

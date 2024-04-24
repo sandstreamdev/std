@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import toDates from "./toDates.ts";
+import toDates from "./toDates.js";
 
 describe("toDates", () => {
   it("converts given array of values into Dates using the Date constructor", () => {

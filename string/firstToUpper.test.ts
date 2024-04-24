@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import firstToUpper from "./firstToUpper.ts";
+import firstToUpper from "./firstToUpper.js";
 
 describe("firstToUpper", () => {
   it("transforms the first character to lowercase", () => {

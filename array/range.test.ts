@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import range from "./range.ts";
+import range from "./range.js";
 
 describe("range", () => {
   it("generates and array from 0 to n - 1", () => {

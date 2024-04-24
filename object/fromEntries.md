@@ -6,7 +6,7 @@ Creates an object from an array of key-value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-(entries: [string, any][]) => object
+<T>(entries: [string, T][]) => Result<T>
 ```
 <!-- prettier-ignore-end -->
 

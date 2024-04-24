@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import mapEntries from "./mapEntries.ts";
+import mapEntries from "./mapEntries.js";
 
 describe("mapEntries", () => {
   it("maps entries of the given object", () => {

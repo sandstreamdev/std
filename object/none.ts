@@ -1,3 +1,5 @@
 import any from "./any";
+import type { GenericObject } from "./types";
 
-export default (xs?: object) => !any(xs);
+export default <T>(xs?: GenericObject<T>): boolean =>
+  xs && typeof xs === "object" ? !any(xs) : true;

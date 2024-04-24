@@ -1,10 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import dayRange from "./dayRange.ts";
-// @ts-ignore ambiguous import
-import startOfDay from "./startOfDay.ts";
-// @ts-ignore ambiguous import
-import endOfDay from "./endOfDay.ts";
+import dayRange from "./dayRange.js";
+import startOfDay from "./startOfDay.js";
+import endOfDay from "./endOfDay.js";
 
 describe("dayRange", () => {
   it("returns a local day range at a particular Date", () => {

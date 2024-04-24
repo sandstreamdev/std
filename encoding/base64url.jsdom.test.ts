@@ -1,8 +1,6 @@
 /* eslint-env jest, node */
-// @ts-ignore ambiguous import
-import encode from "./base64url/encode.ts";
-// @ts-ignore ambiguous import
-import decode from "./base64url/decode.ts";
+import encode from "./base64url/encode.js";
+import decode from "./base64url/decode.js";
 
 const unicodeText = "Zombies everywhere 🧟";
 
@@ -127,7 +125,7 @@ describe("base64url", () => {
       throw new RangeError("Index out of range.");
     };
 
-    const globalAny: any = global;
+    const globalAny: unknown = global;
 
     const context = {
       atob,

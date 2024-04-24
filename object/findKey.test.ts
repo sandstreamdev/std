@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import findKey from "./findKey.ts";
+import findKey from "./findKey.js";
 
 const odd = (x: number) => x % 2 === 1;
 const greaterThan5 = (x: number) => x > 5;

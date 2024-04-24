@@ -6,7 +6,7 @@ Returns the first value in the given object. Follows the default object iteratio
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: object) => any
+<T>(xs: GenericObject<T>) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 

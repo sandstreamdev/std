@@ -1,3 +1,3 @@
 import any from "./any.js";
 
-export default xs => !any(xs);
+export default xs => (xs && typeof xs === "object" ? !any(xs) : true);

@@ -1,7 +1,7 @@
 {
   "name": "except",
   "description": "Filters out the given value.",
-  "signature": "(y: any) => (xs: any[]) => any[]",
+  "signature": "<T>(y: T) => (xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

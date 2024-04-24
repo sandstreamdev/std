@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import splitDateTime from "./splitDateTime.ts";
+import splitDateTime from "./splitDateTime.js";
 
 describe("splitDateTime", () => {
   it("splits a date-time string into a date-time pair", () => {

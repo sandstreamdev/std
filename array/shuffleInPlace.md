@@ -6,7 +6,7 @@ Shuffles the given array in-place in random order with Math.random as the defaul
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[], random?: () => number) => any[]
+<T>(xs: T[], random?: () => number) => T[]
 ```
 <!-- prettier-ignore-end -->
 

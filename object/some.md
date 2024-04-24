@@ -6,9 +6,7 @@ Test if any element passes the given predicate.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => boolean
-) => (xs: object) => boolean
+<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 

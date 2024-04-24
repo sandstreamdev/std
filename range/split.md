@@ -6,10 +6,8 @@ Splits the given range into subranges by excluding the given used ranged.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  used: [number, number][],
-  sourceRange?: number[]
-) => (range: [number, number]) => [number, number][]
+(used: [number, number][], sourceRange?: number[]) => (range: [number, number]) => [number, number][];
+export default split
 ```
 <!-- prettier-ignore-end -->
 

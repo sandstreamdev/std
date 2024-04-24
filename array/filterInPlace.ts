@@ -1,20 +1,19 @@
-export default (f: (value: any, index: number, context: any[]) => boolean) => (
-  xs: any[]
-) => {
-  let i = 0;
-  let j = 0;
+export default <T>(f: (value: T, index: number, context: T[]) => boolean) =>
+  (xs: T[]): T[] => {
+    let i = 0;
+    let j = 0;
 
-  while (i < xs.length) {
-    const value = xs[i];
+    while (i < xs.length) {
+      const value = xs[i];
 
-    if (f(value, i, xs)) {
-      xs[j++] = value;
+      if (f(value, i, xs)) {
+        xs[j++] = value;
+      }
+
+      i++;
     }
 
-    i++;
-  }
+    xs.length = j;
 
-  xs.length = j;
-
-  return xs;
-};
+    return xs;
+  };

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import filter from "./filter.ts";
+import filter from "./filter.js";
 
 describe("filter", () => {
   it("filters the given object with the given predicate", () => {

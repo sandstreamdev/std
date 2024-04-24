@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import mul from "./mul.ts";
+import mul from "./mul.js";
 
-// @ts-ignore ambiguous import
-import scale from "./scale.ts";
+import scale from "./scale.js";
 
 describe("mul", () => {
   it("applies matrix transformation to the given vector", () => {

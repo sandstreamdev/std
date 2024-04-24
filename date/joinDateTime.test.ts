@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import joinDateTime from "./joinDateTime.ts";
+import joinDateTime from "./joinDateTime.js";
 
 describe("joinDateTime", () => {
   it("joins a date-time pair into a date-time string", () => {

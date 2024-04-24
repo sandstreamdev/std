@@ -1,7 +1,5 @@
-/* eslint-env node */
-// eslint-disable console
-import { promises } from "fs";
-import path from "path";
+import { promises } from "node:fs";
+import path from "node:path";
 
 import ignored from "./ignore.js";
 import mappings from "./mappings.js";
@@ -19,6 +17,7 @@ const identifier = name => mappings[name] || name;
 const extension = /(^.?|\.[^d]|[^.]d|[^.][^d])\.ts$/i;
 
 const testFilePattern = /\.test\.[tj]s$/i;
+const typesFilePattern = /types\.[tj]s$/i;
 
 const importFormat = ""; // js = ".js";
 const indexName = "/index"; // js = "/index.js";
@@ -34,6 +33,7 @@ const main = async cwd => {
     .map(x => x.name)
     .filter(x => extension.test(x))
     .filter(x => !testFilePattern.test(x))
+    .filter(x => !typesFilePattern.test(x))
     .filter(x => !ignoredFiles.includes(x));
 
   const directories = entries

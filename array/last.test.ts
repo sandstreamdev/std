@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import last from "./last.ts";
+import last from "./last.js";
 
 describe("last", () => {
   it("returns the last element of the given array when there are any", () => {

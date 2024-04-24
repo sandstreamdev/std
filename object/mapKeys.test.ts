@@ -1,10 +1,8 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import mapKeys from "./mapKeys.ts";
+import mapKeys from "./mapKeys.js";
 
 describe("mapKeys", () => {
   it("maps keys of the given object", () => {
-    const upperCaseKey = (_: any, key: string) => key.toUpperCase();
+    const upperCaseKey = (_: unknown, key: string) => key.toUpperCase();
 
     expect(
       mapKeys(upperCaseKey)({

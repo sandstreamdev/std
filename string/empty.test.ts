@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import empty from "./empty.ts";
+import empty from "./empty.js";
 
 describe("empty", () => {
   it("equals to the empty string", () => {

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import hasKey from "./hasKey.ts";
+import hasKey from "./hasKey.js";
 
 describe("hasKey", () => {
   it("checks key presence", () => {

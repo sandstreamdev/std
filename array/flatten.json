@@ -1,7 +1,7 @@
 {
   "name": "flatten",
   "description": "Flattens the nested arrays by a single level.",
-  "signature": "(xs: any) => any[]",
+  "signature": "<T>(xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

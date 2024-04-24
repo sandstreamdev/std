@@ -1,14 +1,9 @@
 import entries from "../object/entries";
+import type { GenericObject } from "../object/types";
 
-export default (xs: { [index: string]: any } = {}): string =>
+export default <T>(xs: GenericObject<T> = {}): string =>
   entries(xs)
     .filter(([, value]) => Boolean(value) || value === 0)
-    .map(pair => pair.map(value => encodeURIComponent(value)))
-    .reduce(
-      (acc, [key, value]) => [
-        ...acc,
-        xs[key] === true ? key : `${key}=${value}`
-      ],
-      []
-    )
+    .map(pair => pair.map(value => encodeURIComponent(`${value}`)))
+    .map(([key, value]) => (xs[key] === true ? key : `${key}=${value}`))
     .join("&");

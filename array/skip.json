@@ -1,7 +1,7 @@
 {
   "name": "skip",
   "description": "Skips the given count of elements from the given array.",
-  "signature": "(count: number) => (xs: any[]) => any[]",
+  "signature": "(count: number) => <T>(xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

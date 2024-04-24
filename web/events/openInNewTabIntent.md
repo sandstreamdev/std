@@ -6,16 +6,11 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
 
 <!-- prettier-ignore-start -->
 ```typescript
-({
-  button,
-  ctrlKey,
-  metaKey,
-  shiftKey
-}: {
-  button?: number;
-  ctrlKey?: boolean;
-  metaKey?: boolean;
-  shiftKey?: boolean;
+({ button, ctrlKey, metaKey, shiftKey }: {
+    button?: number;
+    ctrlKey?: boolean;
+    metaKey?: boolean;
+    shiftKey?: boolean;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->

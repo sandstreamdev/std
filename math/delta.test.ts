@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import delta from "./delta.ts";
+import delta from "./delta.js";
 
 describe("delta", () => {
   it("is symmetric", () => {

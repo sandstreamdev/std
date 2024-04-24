@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import formatDateTime from "./formatDateTime.ts";
+import formatDateTime from "./formatDateTime.js";
 
 describe("formatDateTime", () => {
   it("formats a given date as a simple YYYY-MM-DD HH:MM(:SS) string", () => {

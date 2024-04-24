@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import standardDeviation from "./standardDeviation.ts";
+import standardDeviation from "./standardDeviation.js";
 
-// @ts-ignore ambiguous import
-import average from "./average.ts";
+import average from "./average.js";
 
 const data = [96, 81, 68, 79, 23, 13, 13, 59, 44, 86];
 

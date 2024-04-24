@@ -1,10 +1,4 @@
-/* eslint-env jest */
-import diff, {
-  VALUE_CREATED,
-  VALUE_DELETED,
-  VALUE_UPDATED
-  // @ts-ignore ambiguous import
-} from "./diff.ts";
+import diff, { VALUE_CREATED, VALUE_DELETED, VALUE_UPDATED } from "./diff.ts";
 
 describe("diff", () => {
   it("computes difference between two objects", () => {

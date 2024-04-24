@@ -7,8 +7,8 @@ Stops propagation and prevents the default handler of the given event.
 <!-- prettier-ignore-start -->
 ```typescript
 (event: {
-  preventDefault: () => void;
-  stopPropagation: () => void;
+    preventDefault: () => void;
+    stopPropagation: () => void;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->
@@ -38,16 +38,11 @@ Tests if the current event seems like an intent to open a new tab. Useful for cl
 
 <!-- prettier-ignore-start -->
 ```typescript
-({
-  button,
-  ctrlKey,
-  metaKey,
-  shiftKey
-}: {
-  button?: number;
-  ctrlKey?: boolean;
-  metaKey?: boolean;
-  shiftKey?: boolean;
+({ button, ctrlKey, metaKey, shiftKey }: {
+    button?: number;
+    ctrlKey?: boolean;
+    metaKey?: boolean;
+    shiftKey?: boolean;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->
@@ -73,7 +68,9 @@ Prevents the default handler of the given event.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: { preventDefault: () => void }) => boolean
+(event: {
+    preventDefault: () => void;
+}) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -102,7 +99,9 @@ Stops propagation of the given event.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: { stopPropagation: () => void }) => boolean
+(event: {
+    stopPropagation: () => void;
+}) => boolean
 ```
 <!-- prettier-ignore-end -->
 

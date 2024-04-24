@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import toDate from "./toDate.ts";
+import toDate from "./toDate.js";
 
 describe("toDate", () => {
   it("extracts padded YYYY-MM-DD date string out of the given date object", () => {

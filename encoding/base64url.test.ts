@@ -1,57 +1,18 @@
 /* eslint-env jest, node */
-// @ts-ignore ambiguous import
-import encode from "./base64url/encode.ts";
-// @ts-ignore ambiguous import
-import decode from "./base64url/decode.ts";
-// @ts-ignore ambiguous import
-import encodeBytes from "./base64url/encodeBytes.ts";
-// @ts-ignore ambiguous import
-import decodeBytes from "./base64url/decodeBytes.ts";
-// @ts-ignore ambiguous import
-import toBase64 from "./base64url/toBase64.ts";
-// @ts-ignore ambiguous import
-import fromBase64 from "./base64url/fromBase64.ts";
-// @ts-ignore ambiguous import
-import fromByteString from "./byteString/from.ts";
-// @ts-ignore ambiguous import
-import toByteString from "./byteString/to.ts";
+import encode from "./base64url/encode.js";
+import decode from "./base64url/decode.js";
+import encodeBytes from "./base64url/encodeBytes.js";
+import decodeBytes from "./base64url/decodeBytes.js";
+import toBase64 from "./base64url/toBase64.js";
+import fromBase64 from "./base64url/fromBase64.js";
+import fromByteString from "./byteString/from.js";
+import toByteString from "./byteString/to.js";
 
-// @ts-ignore ambiguous import
-import range from "../array/range.ts";
+import range from "../array/range.js";
 
 const bytes = [
-  104,
-  201,
-  31,
-  1,
-  54,
-  60,
-  36,
-  154,
-  46,
-  88,
-  206,
-  206,
-  8,
-  107,
-  19,
-  154,
-  43,
-  146,
-  30,
-  192,
-  183,
-  212,
-  234,
-  155,
-  167,
-  244,
-  230,
-  228,
-  232,
-  161,
-  74,
-  180
+  104, 201, 31, 1, 54, 60, 36, 154, 46, 88, 206, 206, 8, 107, 19, 154, 43, 146,
+  30, 192, 183, 212, 234, 155, 167, 244, 230, 228, 232, 161, 74, 180
 ];
 
 const text = "Base64URL encode/decode test";

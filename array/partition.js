@@ -3,7 +3,11 @@ export default predicate => xs =>
     ([left, right], current) => {
       const pass = predicate(current);
 
-      return pass ? [left, [...right, current]] : [[...left, current], right];
+      const result = pass
+        ? [left, [...right, current]]
+        : [[...left, current], right];
+
+      return result;
     },
     [[], []]
   );

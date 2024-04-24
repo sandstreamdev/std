@@ -6,14 +6,8 @@ Computes a deep difference between the two values (primitives, objects, arrays, 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  obj1?: {
-    [index: string]: any;
-  },
-  obj2?: {
-    [index: string]: any;
-  }
-) => object
+(obj1?: unknown, obj2?: unknown) => DiffResult;
+export default diff
 ```
 <!-- prettier-ignore-end -->
 

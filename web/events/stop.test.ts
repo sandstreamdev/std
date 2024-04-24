@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import stop from "./stop.ts";
+import stop from "./stop.js";
 
 describe("stop", () => {
   it("stops propagation and prevents the default handler of the given event", () => {

@@ -1,1 +1,3 @@
-export default (y: any) => (xs: any[]) => xs.filter(x => x !== y);
+export default <T>(y: T) =>
+  (xs: T[]) =>
+    xs.filter(x => x !== y);

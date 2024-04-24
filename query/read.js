@@ -1,6 +1,10 @@
-/* eslint-env browser */
-export default source =>
-  [...new URLSearchParams(source).entries()].reduce(
-    (q, [k, v]) => ({ ...q, ...{ [k]: v } }),
-    {}
-  );
+export default source => {
+  const result = {};
+  const urlSearchParams = new URLSearchParams(source);
+
+  for (const [key, value] of urlSearchParams.entries()) {
+    result[key] = value;
+  }
+
+  return result;
+};

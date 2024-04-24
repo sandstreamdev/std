@@ -1,1 +1,1 @@
-export default ([x]: [any]) => x;
+export default <T>([x]: T[]): T | undefined => x;

@@ -1,7 +1,7 @@
 {
   "name": "apply",
   "description": "Applies the given parameters to the given dictionary of functions.",
-  "signature": "(\n  fs: ((...xs: any[]) => any)[]\n) => (...xs: any[]) => object",
+  "signature": "<T>(fs: {\n    [index: string]: (...xs: T[]) => T;\n}) => (...xs: T[]) => GenericObject<T>",
   "examples": [
     {
       "language": "javascript",

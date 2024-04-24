@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import boolean from "./boolean.ts";
+import boolean from "./boolean.js";
 
 describe("boolean", () => {
   it("checks if the given value is a boolean", () => {

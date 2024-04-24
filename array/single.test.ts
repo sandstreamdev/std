@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import single from "./single.ts";
+import single from "./single.js";
 
 describe("single", () => {
   it("checks if the given array contains exactly one element", () => {

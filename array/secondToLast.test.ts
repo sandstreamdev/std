@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import secondToLast from "./secondToLast.ts";
+import secondToLast from "./secondToLast.js";
 
 describe("secondToLast", () => {
   it("returns the second to last element of the given array when there are at least two elements", () => {

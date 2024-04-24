@@ -1,7 +1,7 @@
-export default (predicate: (...xs: any[]) => boolean) => (
-  action: (...xs: any[]) => any
-) => (...args: any[]) => {
-  if (predicate(...args)) {
-    return action(...args);
-  }
-};
+export default (predicate: (...xs: unknown[]) => boolean) =>
+  (action: (...xs: unknown[]) => unknown) =>
+  (...args: unknown[]) => {
+    if (predicate(...args)) {
+      return action(...args);
+    }
+  };

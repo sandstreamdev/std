@@ -6,7 +6,7 @@ Linearly interpolates two given values by the normal value of their distance.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(t: number) => (a: number, b: number) => number
+(t: number) => ((a: number, b: number) => number)
 ```
 <!-- prettier-ignore-end -->
 

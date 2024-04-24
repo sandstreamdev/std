@@ -1,7 +1,7 @@
 {
   "name": "chunk",
   "description": "Splits the given array into an array of chunks of up to the given length.",
-  "signature": "(count: number) => (xs: any[]) => any[]",
+  "signature": "(count: number) => <T>(xs: T[]) => T[] | T[][]",
   "examples": [
     {
       "language": "javascript",

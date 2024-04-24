@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import memoizeShallow from "./memoizeShallow.ts";
+import memoizeShallow from "./memoizeShallow.js";
 
 describe("memoizeShallow", () => {
   it("memoizes the result", () => {

@@ -1,7 +1,7 @@
 {
   "name": "empty",
   "description": "Empty object.",
-  "signature": "{}",
+  "signature": "GenericObject<unknown>;\nexport default empty",
   "examples": [
     {
       "language": "javascript",

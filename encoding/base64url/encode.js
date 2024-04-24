@@ -1,4 +1,3 @@
-/* eslint-env browser, node */
 import toByteString from "../byteString/to.js";
 
 const toArray = typedArray => [...typedArray];

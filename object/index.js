@@ -14,6 +14,7 @@ import flatMapValues from "./flatMapValues.js";
 import fromEntries from "./fromEntries.js";
 import groupBy from "./groupBy.js";
 import hasKey from "./hasKey.js";
+import last from "./last.js";
 import length from "./length.js";
 import map from "./map.js";
 import mapEntries from "./mapEntries.js";
@@ -41,6 +42,7 @@ export {
   fromEntries,
   groupBy,
   hasKey,
+  last,
   length,
   map,
   mapEntries,
@@ -69,6 +71,7 @@ export default {
   fromEntries,
   groupBy,
   hasKey,
+  last,
   length,
   map,
   mapEntries,

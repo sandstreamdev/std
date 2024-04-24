@@ -1,4 +1,3 @@
-/* eslint-env browser, node */
 import decode from "./decode.js";
 import fromByteString from "../byteString/from.js";
 

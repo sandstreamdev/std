@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import inRectangleRange from "./inRectangleRange.ts";
+import inRectangleRange from "./inRectangleRange.js";
 
 describe("inRectangleRange", () => {
   it("tests if the given coordinates fits the rectangular range", () => {

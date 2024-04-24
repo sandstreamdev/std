@@ -6,9 +6,7 @@ Searches the given object by the given predicate and returns the found key or un
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, key: string, context: object) => boolean
-) => (xs: object) => any
+<T>(predicate: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => string | undefined
 ```
 <!-- prettier-ignore-end -->
 

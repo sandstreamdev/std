@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import entries from "./entries.ts";
+import entries from "./entries.js";
 
 describe("entries", () => {
   it("lists key-value pairs (entries) present in the given object", () => {

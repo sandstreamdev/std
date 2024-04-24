@@ -6,7 +6,7 @@ Zips the given arrays together into pairs.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[], ys: any[]) => any[][]
+(xs: unknown[], ys: unknown[]) => [unknown, unknown][]
 ```
 <!-- prettier-ignore-end -->
 

@@ -1,4 +1,4 @@
-export default (...xs: any[][]) => {
+export default <T>(...xs: T[][]) => {
   const [head = [], ...tail] = xs;
 
   return head.map((value, index) =>

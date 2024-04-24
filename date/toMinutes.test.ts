@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import toMinutes from "./toMinutes.ts";
+import toMinutes from "./toMinutes.js";
 
 describe("toMinutes", () => {
   it("converts milliseconds into minutes", () => {

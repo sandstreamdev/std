@@ -1,7 +1,7 @@
 {
   "name": "first",
   "description": "Returns the first element or undefined when there are no elements in the given array.",
-  "signature": "([x]: [any]) => any",
+  "signature": "<T>([x]: T[]) => T | undefined",
   "examples": [
     {
       "language": "javascript",

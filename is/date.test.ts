@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import date from "./date.ts";
+import date from "./date.js";
 
 describe("date", () => {
   it("checks if the given value is a Date object", () => {

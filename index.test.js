@@ -1,4 +1,3 @@
-/* eslint-env jest */
 // @ts-check
 import std from "./index.js";
 

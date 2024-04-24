@@ -6,9 +6,7 @@ Maps and flattens the result.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, index: number, context: any[]) => any
-) => (xs: any[]) => any
+<T, TResult>(f: (value: T, index: number, context: T[]) => TResult[]) => (xs: T[]) => TResult[]
 ```
 <!-- prettier-ignore-end -->
 

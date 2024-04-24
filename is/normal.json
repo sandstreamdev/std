@@ -1,7 +1,7 @@
 {
   "name": "normal",
   "description": "Checks if the given value is a number in a normal range [0, 1].",
-  "signature": "(x?: number) => boolean",
+  "signature": "(x?: unknown) => boolean",
   "examples": [
     {
       "language": "javascript",

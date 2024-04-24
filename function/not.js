@@ -1,1 +1,3 @@
-export default f => (...args) => !f(...args);
+export default f =>
+  (...args) =>
+    !f(...args);

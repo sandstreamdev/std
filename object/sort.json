@@ -1,7 +1,7 @@
 {
   "name": "sort",
   "description": "Sorts the given object by a comparator.",
-  "signature": "(\n  f: (a: any, b: any) => number\n) => (xs: object) => object",
+  "signature": "<T>(f: (a: T, b: T) => number) => (xs: GenericObject<T>) => GenericObject<T>",
   "examples": [
     {
       "language": "javascript",

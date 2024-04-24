@@ -2,47 +2,46 @@ import isNumber from "../is/number";
 import clamp from "../math/clamp";
 import empty from "./empty";
 
-const split = (
-  used: [number, number][],
-  sourceRange = [-Infinity, Infinity]
-) => (range: [number, number]): [number, number][] => {
-  if (empty(range) || !range.every(isNumber)) {
-    return [];
-  }
+const split =
+  (used: [number, number][], sourceRange = [-Infinity, Infinity]) =>
+  (range: [number, number]): [number, number][] => {
+    if (empty(range) || !range.every(isNumber)) {
+      return [];
+    }
 
-  if (!used || used.length === 0) {
-    return [range];
-  }
+    if (!used || used.length === 0) {
+      return [range];
+    }
 
-  const [x, ...xs] = used;
-  const [usedMin, usedMax] = x;
+    const [x, ...xs] = used;
+    const [usedMin, usedMax] = x;
 
-  if (empty(x)) {
-    return split(xs, sourceRange)(range);
-  }
+    if (empty(x)) {
+      return split(xs, sourceRange)(range);
+    }
 
-  const [sourceMin, sourceMax] = sourceRange;
-  const clampToSourceRange = clamp(sourceMin, sourceMax);
+    const [sourceMin, sourceMax] = sourceRange;
+    const clampToSourceRange = clamp(sourceMin, sourceMax);
 
-  const [freeLeftMin, freeLeftMax] = [sourceMin, usedMin].map(
-    clampToSourceRange
-  );
+    const [freeLeftMin, freeLeftMax] = [sourceMin, usedMin].map(
+      clampToSourceRange
+    );
 
-  const [freeRightMin, freeRightMax] = [usedMax, sourceMax].map(
-    clampToSourceRange
-  );
+    const [freeRightMin, freeRightMax] = [usedMax, sourceMax].map(
+      clampToSourceRange
+    );
 
-  const clampLeft = clamp(freeLeftMin, freeLeftMax);
-  const [clampedLeftMin, clampedLeftMax] = range.map(clampLeft);
+    const clampLeft = clamp(freeLeftMin, freeLeftMax);
+    const [clampedLeftMin, clampedLeftMax] = range.map(clampLeft);
 
-  const lefts = split(xs, sourceRange)([clampedLeftMin, clampedLeftMax]);
+    const lefts = split(xs, sourceRange)([clampedLeftMin, clampedLeftMax]);
 
-  const clampRight = clamp(freeRightMin, freeRightMax);
-  const [clampedRightMin, clampedRightMax] = range.map(clampRight);
+    const clampRight = clamp(freeRightMin, freeRightMax);
+    const [clampedRightMin, clampedRightMax] = range.map(clampRight);
 
-  const rights = split(xs, sourceRange)([clampedRightMin, clampedRightMax]);
+    const rights = split(xs, sourceRange)([clampedRightMin, clampedRightMax]);
 
-  return [...lefts, ...rights].filter(range => !empty(range));
-};
+    return [...lefts, ...rights].filter(range => !empty(range));
+  };
 
 export default split;

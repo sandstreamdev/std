@@ -1,1 +1,1 @@
-export default x => ({}.toString.apply(x) === "[object Object]");
+export default x => ({}).toString.apply(x) === "[object Object]";

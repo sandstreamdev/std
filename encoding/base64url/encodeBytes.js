@@ -1,4 +1,3 @@
-/* eslint-env browser, node */
 import encode from "./encode.js";
 import toByteString from "../byteString/to.js";
 

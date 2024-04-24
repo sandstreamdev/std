@@ -1,2 +1,3 @@
-export default (count: number): ((xs: any[]) => any[]) => (xs: any[]): any[] =>
-  xs.slice(0, count);
+export default (count: number) =>
+  <T>(xs: T[]): T[] =>
+    xs.slice(0, count);

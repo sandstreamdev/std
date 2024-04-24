@@ -6,7 +6,7 @@ Checks if the given argument is an array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 

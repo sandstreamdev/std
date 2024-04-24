@@ -1,4 +1,3 @@
-/* eslint-env browser, node */
 import fromByteString from "../byteString/from.js";
 
 const ENCODING = "utf-8";

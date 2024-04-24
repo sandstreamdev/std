@@ -6,21 +6,19 @@ Returns an array of days in a particular months. Number of days in February vari
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  leapYear: boolean
-) => [
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number
+(leapYear: boolean) => [
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number,
+    number
 ]
 ```
 <!-- prettier-ignore-end -->

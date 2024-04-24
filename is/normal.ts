@@ -1,4 +1,5 @@
 import number from "./number";
 import nonNullable from "./nonNullable";
 
-export default (x?: number) => nonNullable(x) && number(x) && x >= 0 && x <= 1;
+export default (x?: unknown) =>
+  nonNullable(x) && number(x) && (x as number) >= 0 && (x as number) <= 1;

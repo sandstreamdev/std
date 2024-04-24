@@ -6,10 +6,7 @@ Makes the function run after the given period of not being called. Useful to del
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (...args: any[]) => any,
-  wait: number
-) => (...args: any[]) => void
+(f: F, wait: number) => (...args: unknown[]) => void
 ```
 <!-- prettier-ignore-end -->
 
@@ -66,11 +63,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  tasks: {
-    (): Promise<any>;
-  }[]
-) => Promise<any[]>
+<T>(tasks: Task<T>[]) => Promise<Awaited<T>[]>
 ```
 <!-- prettier-ignore-end -->
 

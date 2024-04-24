@@ -1,5 +1,7 @@
 import hljs from "highlight.js";
-import { promises } from "fs";
+import javascript from "highlight.js/lib/languages/javascript";
+import typescript from "highlight.js/lib/languages/typescript";
+import { promises } from "node:fs";
 import prettier from "prettier";
 
 import { outPath } from "../utils/io.js";
@@ -9,6 +11,9 @@ import pageTemplate from "./page.js";
 import last from "../../array/last.js";
 import reverse from "../../array/reverse.js";
 import tocButton from "./tocButton.js";
+
+hljs.registerLanguage("javascript", javascript);
+hljs.registerLanguage("typescript", typescript);
 
 const { writeFile: writeFileAsync, mkdir: mkdirAsync } = promises;
 
@@ -71,7 +76,9 @@ const signatureFragment = signature => {
     return "";
   }
 
-  const signatureFormatted = hljs.highlight("typescript", signature).value;
+  const signatureFormatted = hljs.highlight(signature, {
+    language: "typescript"
+  }).value;
 
   return `<div class="type-signature">
     <h3>Type signature</h3>
@@ -81,7 +88,7 @@ const signatureFragment = signature => {
   </div>`;
 };
 
-const examplesFragment = (examples, pathParts, funcName) => {
+const examplesFragment = async (examples, pathParts, funcName) => {
   if (
     !examples ||
     examples.length === 0 ||
@@ -95,15 +102,17 @@ const examplesFragment = (examples, pathParts, funcName) => {
     `{ ${funcName} }`
   );
 
-  const examplesFormatted = examples.map(({ content, language }) => {
-    const formattedCode = prettier.format(content, {
-      parser: "babel",
-      printWidth: 36,
-      semi: true
-    });
+  const examplesFormatted = await Promise.all(
+    examples.map(async ({ content, language }) => {
+      const formattedCode = await prettier.format(content, {
+        parser: "babel",
+        printWidth: 36,
+        semi: true
+      });
 
-    return `<span>${hljs.highlight(language, formattedCode).value}</span>`;
-  });
+      return `<span>${hljs.highlight(formattedCode, { language }).value}</span>`;
+    })
+  );
 
   const fragment = exampleFormatted => `
     <div class="content">
@@ -138,7 +147,7 @@ const questionsFragment = questions => {
     </div>`;
 };
 
-const funcTemplate = (
+const funcTemplate = async (
   { name, description, signature, examples, questions },
   pathParts
 ) => {
@@ -146,7 +155,7 @@ const funcTemplate = (
     ${nameFragment(name, pathParts)}
     ${descriptionFragment(description)}
     ${signatureFragment(signature)}
-    ${examplesFragment(examples, pathParts, name)}
+    ${await examplesFragment(examples, pathParts, name)}
     ${questionsFragment(questions)}
     ${metaFragment(name, pathParts)}
   </article>`.trimLeft();
@@ -159,7 +168,7 @@ export default async ({ func, toc, pathParts }) => {
     recursive: true
   });
 
-  const functionPageContent = funcTemplate(func, pathParts);
+  const functionPageContent = await funcTemplate(func, pathParts);
 
   await writeFileAsync(
     outPath(...pathParts, func.name, "index.html"),

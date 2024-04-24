@@ -1,7 +1,7 @@
 {
   "name": "diff",
   "description": "Computes a deep difference between the two values (primitives, objects, arrays, etc.).",
-  "signature": "(\n  obj1?: {\n    [index: string]: any;\n  },\n  obj2?: {\n    [index: string]: any;\n  }\n) => object",
+  "signature": "(obj1?: unknown, obj2?: unknown) => DiffResult;\nexport default diff",
   "examples": [
     {
       "language": "javascript",

@@ -6,7 +6,7 @@ Partitions the given array to the ones that pass the given predicate function an
 
 <!-- prettier-ignore-start -->
 ```typescript
-(predicate: (x: any) => boolean) => (xs: any[]) => any
+<T>(predicate: (x: T) => boolean) => (xs: T[]) => readonly [T[], T[]]
 ```
 <!-- prettier-ignore-end -->
 

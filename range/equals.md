@@ -6,10 +6,7 @@ Checks if the given ranges are equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [a, b]: [number, number],
-  [c, d]: [number, number]
-) => boolean
+([a, b]: [number, number], [c, d]: [number, number]) => boolean
 ```
 <!-- prettier-ignore-end -->
 

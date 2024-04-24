@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import repeat from "./repeat.ts";
+import repeat from "./repeat.js";
 
 describe("repeat", () => {
   it("repeats the given element by given count of times", () => {

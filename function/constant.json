@@ -1,7 +1,7 @@
 {
   "name": "constant",
   "description": "Returns the given constant no matter the input.",
-  "signature": "(x: any) => any",
+  "signature": "<T>(x: T) => () => T",
   "examples": [
     {
       "language": "javascript",

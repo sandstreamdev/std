@@ -1,7 +1,7 @@
 {
   "name": "insert",
   "description": "Inserts the given item to the array at a specific index.",
-  "signature": "(\n  index: number\n) => (item: any) => ([...xs]: any[]) => any[]",
+  "signature": "(index: number) => <T>(item: T) => ([...xs]: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

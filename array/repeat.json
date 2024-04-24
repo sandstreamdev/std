@@ -1,7 +1,7 @@
 {
   "name": "repeat",
   "description": "Repeats the given element by the given count of times.",
-  "signature": "(count: number) => (value: any) => any[]",
+  "signature": "(count: number) => <T>(value: T) => T[]",
   "examples": [
     {
       "language": "javascript",

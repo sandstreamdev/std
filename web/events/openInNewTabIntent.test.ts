@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import openInNewTabIntent from "./openInNewTabIntent.ts";
+import openInNewTabIntent from "./openInNewTabIntent.js";
 
 describe("openInNewTabIntent", () => {
   it("handles CTRL key", () => {

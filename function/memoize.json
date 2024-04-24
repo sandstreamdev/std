@@ -1,7 +1,7 @@
 {
   "name": "memoize",
   "description": "Memoizes the function result so it is not computed for the same parameters. Uses deep equality.",
-  "signature": "(f: (...xs: any[]) => any) => (...args: any[]) => any",
+  "signature": "<TResult>(f: (...xs: unknown[]) => TResult) => (...args: unknown[]) => TResult",
   "examples": [
     {
       "language": "javascript",

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import sameSign from "./sameSign.ts";
+import sameSign from "./sameSign.js";
 
 describe("sameSign", () => {
   it("passes when all the values have the same sign", () => {

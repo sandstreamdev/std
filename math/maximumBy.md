@@ -6,7 +6,7 @@ Calculates the maximum by a given selector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (x: number) => number) => (xs: number[]) => number
+(f: (x: number) => number) => ((xs: number[]) => number)
 ```
 <!-- prettier-ignore-end -->
 

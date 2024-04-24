@@ -1,6 +1,17 @@
-export default selector => xs =>
-  xs.reduce((acc, x) => {
-    const key = selector(x);
+export default selector => xs => {
+  const result = {};
 
-    return { ...acc, [key]: [...(acc[key] || []), x] };
-  }, {});
+  for (const x of xs) {
+    const key = selector(x);
+    let slot = result[key];
+
+    if (!slot) {
+      slot = [];
+      result[key] = slot;
+    }
+
+    slot.push(x);
+  }
+
+  return result;
+};

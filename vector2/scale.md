@@ -6,16 +6,13 @@ Creates a scale matrix.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  sx?: number,
-  sy?: number
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+(sx?: number, sy?: number) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->

@@ -1,3 +1,3 @@
 import any from "./any";
 
-export default (xs?: any) => !any(xs);
+export default <T>(xs?: T[]) => !any(xs);

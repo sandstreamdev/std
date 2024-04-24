@@ -6,9 +6,7 @@ Flat maps the values of the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => any[]
+<T, TResult>(f: (value: T, key: string, context: GenericObject<T>) => TResult[]) => (xs: GenericObject<T>) => TResult[]
 ```
 <!-- prettier-ignore-end -->
 
