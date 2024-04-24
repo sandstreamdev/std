@@ -14,7 +14,6 @@ import sameSign from "./sameSign.js";
 import sign from "./sign.js";
 import standardDeviation from "./standardDeviation.js";
 import subtract from "./subtract.js";
-
 export {
   add,
   average,
@@ -33,7 +32,6 @@ export {
   standardDeviation,
   subtract
 };
-
 export default {
   add,
   average,

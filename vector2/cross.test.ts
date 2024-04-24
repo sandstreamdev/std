@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import cross from "./cross.ts";
+import cross from "./cross.js";
 
 describe("cross", () => {
   it("calculates a cross product", () => {

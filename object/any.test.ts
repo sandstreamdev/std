@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import any from "./any.ts";
+import any from "./any.js";
 
 describe("any", () => {
   it("returns true if the object is not empty", () => {

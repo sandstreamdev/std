@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import cancel from "./cancel.ts";
+import cancel from "./cancel.js";
 
 describe("cancel", () => {
   it("stops propagation and prevents the default handler of the given event", () => {

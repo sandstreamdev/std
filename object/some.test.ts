@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import some from "./some.ts";
+import some from "./some.js";
 
 describe("some", () => {
   it("test if any element passes the given predicate", () => {

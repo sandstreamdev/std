@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import whenTrue from "./whenTrue.ts";
+import whenTrue from "./whenTrue.js";
 
 describe("whenTrue", () => {
   it("runs the function only when the condition is true", () => {

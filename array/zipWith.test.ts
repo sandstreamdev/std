@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import zipWith from "./zipWith.ts";
+import zipWith from "./zipWith.js";
 
 describe("zipWith", () => {
   it("zips with pair constructor by default", () => {

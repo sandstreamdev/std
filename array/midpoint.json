@@ -1,7 +1,7 @@
 {
   "name": "midpoint",
   "description": "Returns the middle element or the right one when the number of elements is even.",
-  "signature": "(xs: any[]) => any",
+  "signature": "<T>(xs: T[]) => T | undefined",
   "examples": [
     {
       "language": "javascript",

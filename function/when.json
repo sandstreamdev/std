@@ -1,7 +1,7 @@
 {
   "name": "when",
   "description": "Runs the given function only when the condition is met.",
-  "signature": "(\n  predicate: (...xs: any[]) => boolean\n) => (action: (...xs: any[]) => any) => (...args: any[]) => any",
+  "signature": "(predicate: (...xs: unknown[]) => boolean) => (action: (...xs: unknown[]) => unknown) => (...args: unknown[]) => unknown",
   "examples": [
     {
       "language": "javascript",

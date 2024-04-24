@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import rotate from "./rotate.ts";
+import rotate from "./rotate.js";
 
 describe("rotate", () => {
   it("creates a rotation matrix", () => {

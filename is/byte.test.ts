@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import byte from "./byte.ts";
+import byte from "./byte.js";
 
-// @ts-ignore ambiguous import
-import range from "../array/range.ts";
+import range from "../array/range.js";
 
 describe("byte", () => {
   it("checks if the given value is a byte", () => {

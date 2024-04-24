@@ -1,7 +1,7 @@
 {
   "name": "lengthDiffers",
   "description": "Checks if lengths of the given arrays differ.",
-  "signature": "(a: any[], b: any[]) => boolean",
+  "signature": "<T1, T2>(a: T1[], b: T2[]) => boolean",
   "examples": [
     {
       "language": "javascript",

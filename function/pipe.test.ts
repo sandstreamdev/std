@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import pipe from "./pipe.ts";
+import pipe from "./pipe.js";
 
 const square = (x: number) => x * x;
 const addOne = (x: number) => x + 1;

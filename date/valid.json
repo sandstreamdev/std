@@ -1,7 +1,7 @@
 {
   "name": "valid",
   "description": "Checks if the given date is present and it is valid.",
-  "signature": "(date?: any) => boolean",
+  "signature": "(date?: unknown) => boolean",
   "examples": [
     {
       "language": "javascript",

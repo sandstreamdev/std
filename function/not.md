@@ -6,9 +6,7 @@ Inverts the given function result.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (...xs: any[]) => any
-) => (...args: any[]) => boolean
+(f: (...xs: unknown[]) => unknown) => (...args: unknown[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 

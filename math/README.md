@@ -81,7 +81,7 @@ Clamps the given value to the given range.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(min: number, max: number) => (x: number) => number
+(min: number, max: number) => ((x: number) => number)
 ```
 <!-- prettier-ignore-end -->
 
@@ -213,10 +213,7 @@ Checks if the given value is in the rectangular range of [0, width] and [0, heig
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  width: number,
-  height: number
-) => (x: number, y: number) => boolean
+(width: number, height: number) => ((x: number, y: number) => boolean)
 ```
 <!-- prettier-ignore-end -->
 
@@ -246,7 +243,7 @@ Linearly interpolates two given values by the normal value of their distance.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(t: number) => (a: number, b: number) => number
+(t: number) => ((a: number, b: number) => number)
 ```
 <!-- prettier-ignore-end -->
 
@@ -282,7 +279,7 @@ Calculates the maximum by a given selector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(f: (x: number) => number) => (xs: number[]) => number
+(f: (x: number) => number) => ((xs: number[]) => number)
 ```
 <!-- prettier-ignore-end -->
 

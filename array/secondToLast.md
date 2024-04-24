@@ -6,7 +6,7 @@ Returns the second to last element or undefined when there are less than two ele
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any
+<T>(xs: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 

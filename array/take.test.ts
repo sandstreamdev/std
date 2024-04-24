@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import take from "./take.ts";
+import take from "./take.js";
 
 describe("take", () => {
   it("takes the given count of elements", () => {

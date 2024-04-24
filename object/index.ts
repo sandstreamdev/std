@@ -14,6 +14,7 @@ import flatMapValues from "./flatMapValues";
 import fromEntries from "./fromEntries";
 import groupBy from "./groupBy";
 import hasKey from "./hasKey";
+import last from "./last";
 import length from "./length";
 import map from "./map";
 import mapEntries from "./mapEntries";
@@ -41,6 +42,7 @@ export {
   fromEntries,
   groupBy,
   hasKey,
+  last,
   length,
   map,
   mapEntries,
@@ -69,6 +71,7 @@ export default {
   fromEntries,
   groupBy,
   hasKey,
+  last,
   length,
   map,
   mapEntries,

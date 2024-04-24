@@ -1,7 +1,7 @@
 {
   "name": "exact",
   "description": "Takes exactly the given count of elements.",
-  "signature": "(count: number) => (xs: any[]) => any[]",
+  "signature": "(count: number) => <T>(xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import validName from "./validName.ts";
+import validName from "./validName.js";
 
-// @ts-ignore ambiguous import
-import range from "../array/range.ts";
+import range from "../array/range.js";
 
 describe("validName", () => {
   it("detects reserved names", () => {

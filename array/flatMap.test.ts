@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import flatMap from "./flatMap.ts";
+import flatMap from "./flatMap.js";
 
-// @ts-ignore ambiguous import
-import flatten from "./flatten.ts";
+import flatten from "./flatten.js";
 
 const splitLetters = (text: string) => [...text];
 

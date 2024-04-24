@@ -1,7 +1,7 @@
 {
   "name": "slidingWindow",
   "description": "Returns a new array composed of tuples of the given sliding window length of consecutive elements.",
-  "signature": "(count: number) => (xs: any[]) => any[][]",
+  "signature": "(count: number) => <T>(xs: T[]) => T[][]",
   "examples": [
     {
       "language": "javascript",

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import startsWith from "./startsWith.ts";
+import startsWith from "./startsWith.js";
 
 const text = "The quick brown fox jumps over the lazy dog";
 

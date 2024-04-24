@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import fromEntries, { implementation } from "./fromEntries.ts";
+import fromEntries, { implementation } from "./fromEntries.js";
 
 describe("fromEntries", () => {
   it("creates an object from an array of entries", () => {
@@ -32,7 +30,7 @@ describe("fromEntries", () => {
   it("uses fallback implementation when Object.fromEntries is not present", () => {
     const before = Object.fromEntries;
 
-    // @ts-ignore
+    // @ts-expect-error
     Object.fromEntries = undefined;
 
     expect(

@@ -1,7 +1,7 @@
 {
   "name": "displayTime",
   "description": "Displays padded time string.",
-  "signature": "(\n  source: [number, number, number],\n  showSeconds: boolean\n) => string",
+  "signature": "(source: [number, number, number], showSeconds: boolean) => string",
   "examples": [
     {
       "language": "javascript",

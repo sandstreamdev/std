@@ -6,7 +6,7 @@ Returns the last element or undefined when there are no elements in the given ar
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any
+<T>(xs: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 

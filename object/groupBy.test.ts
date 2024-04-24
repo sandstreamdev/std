@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import groupBy from "./groupBy.ts";
+import groupBy from "./groupBy.js";
 
 describe("groupBy", () => {
   it("groups given data by the given selector", () => {

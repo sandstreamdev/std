@@ -1,9 +1,7 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import uniqueBy from "./uniqueBy.ts";
+import uniqueBy from "./uniqueBy.js";
 
 describe("uniqueBy", () => {
-  const selector: (x: any) => any = ({ id }) => id;
+  const selector: (x: unknown) => unknown = ({ id }) => id;
 
   it("removes duplicated values", () => {
     expect(

@@ -6,7 +6,9 @@ Prevents the default handler of the given event.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: { preventDefault: () => void }) => boolean
+(event: {
+    preventDefault: () => void;
+}) => boolean
 ```
 <!-- prettier-ignore-end -->
 

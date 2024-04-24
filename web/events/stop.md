@@ -6,7 +6,9 @@ Stops propagation of the given event.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(event: { stopPropagation: () => void }) => boolean
+(event: {
+    stopPropagation: () => void;
+}) => boolean
 ```
 <!-- prettier-ignore-end -->
 

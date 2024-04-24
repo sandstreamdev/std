@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import enumerable from "./enumerable.ts";
+import enumerable from "./enumerable.js";
 
 describe("enumerable", () => {
   it("creates a 1 to 1 mapping of the given values as an object", () => {

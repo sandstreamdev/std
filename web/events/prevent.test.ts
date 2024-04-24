@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import prevent from "./prevent.ts";
+import prevent from "./prevent.js";
 
 describe("prevent", () => {
   it("prevents the default handler of the given event", () => {

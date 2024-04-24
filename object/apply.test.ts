@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import apply from "./apply.ts";
+import apply from "./apply.js";
 
 describe("apply", () => {
   it("applies the given parameters to the given dictionary of functions", () => {

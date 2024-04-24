@@ -1,0 +1,12 @@
+{
+  "name": "last",
+  "description": "Returns the last value in the given object. Follows the default object iteration order.",
+  "signature": "<T>(xs: GenericObject<T>) => T | undefined",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "last({ a: 1, b: 2, c: 3 });\n// ⇒ 3"
+    }
+  ],
+  "questions": ["How to get the last value of an object?"]
+}

@@ -1,7 +1,7 @@
 {
   "name": "zip",
   "description": "Zips the given arrays together into pairs.",
-  "signature": "(xs: any[], ys: any[]) => any[][]",
+  "signature": "(xs: unknown[], ys: unknown[]) => [unknown, unknown][]",
   "examples": [
     {
       "language": "javascript",

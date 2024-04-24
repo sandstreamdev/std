@@ -6,7 +6,7 @@ Returns a new array composed of tuples of the given sliding window length of con
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[][]
+(count: number) => <T>(xs: T[]) => T[][]
 ```
 <!-- prettier-ignore-end -->
 

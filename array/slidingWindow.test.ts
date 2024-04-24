@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import slidingWindow from "./slidingWindow.ts";
+import slidingWindow from "./slidingWindow.js";
 
 describe("slidingWindow", () => {
   it("should return an array of pairs of consecutive elements for sliding window length of 2", () => {

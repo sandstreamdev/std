@@ -1,4 +1,4 @@
 import shuffleInPlace from "./shuffleInPlace";
 
-export default (xs: any, random?: () => number) =>
+export default <T>(xs: T[], random?: () => number): T[] =>
   shuffleInPlace([...xs], random);

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import containsWhitespace from "./containsWhitespace.ts";
+import containsWhitespace from "./containsWhitespace.js";
 
 describe("containsWhitespace", () => {
   it("detects whitespace", () => {

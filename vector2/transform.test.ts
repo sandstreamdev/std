@@ -1,12 +1,8 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import transform from "./transform.ts";
+import transform from "./transform.js";
 
-// @ts-ignore ambiguous import
-import rotate from "./rotate.ts";
+import rotate from "./rotate.js";
 
-// @ts-ignore ambiguous import
-import translate from "./translate.ts";
+import translate from "./translate.js";
 
 describe("transform", () => {
   it("multiplies multiple transformation into a single matrix", () => {

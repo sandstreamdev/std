@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import fromDays from "./fromDays.ts";
+import fromDays from "./fromDays.js";
 
 describe("fromDays", () => {
   it("converts given day count to milliseconds", () => {

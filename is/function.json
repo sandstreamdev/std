@@ -1,7 +1,7 @@
 {
   "name": "function",
   "description": "Checks if the given value is a function.",
-  "signature": "(x?: any) => boolean",
+  "signature": "(x?: unknown) => boolean",
   "examples": [
     {
       "language": "javascript",

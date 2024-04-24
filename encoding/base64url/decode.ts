@@ -1,4 +1,3 @@
-/* eslint-env browser, node */
 import fromByteString from "../byteString/from";
 import { DecodeContext } from "./DecodeContext.interface";
 

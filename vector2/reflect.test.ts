@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import reflect from "./reflect.ts";
+import reflect from "./reflect.js";
 
 describe("reflect", () => {
   it("reflects the given vector on the given surface", () => {

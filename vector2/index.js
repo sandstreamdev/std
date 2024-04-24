@@ -12,7 +12,6 @@ import scale from "./scale.js";
 import sub from "./sub.js";
 import transform from "./transform.js";
 import translate from "./translate.js";
-
 export {
   add,
   convertSpace,
@@ -29,7 +28,6 @@ export {
   transform,
   translate
 };
-
 export default {
   add,
   convertSpace,

@@ -1,7 +1,7 @@
 {
   "name": "range",
   "description": "Generates an array of numbers from 0 to n - 1.",
-  "signature": "(n: any) => number[]",
+  "signature": "(n: number) => number[]",
   "examples": [
     {
       "language": "javascript",

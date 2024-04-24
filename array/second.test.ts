@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import second from "./second.ts";
+import second from "./second.js";
 
 describe("second", () => {
   it("returns the second element of the given array when there are at least two elements", () => {

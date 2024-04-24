@@ -1,7 +1,7 @@
 {
   "name": "transform",
   "description": "Composes a single transformation by matrix multiplication.",
-  "signature": "(\n  ...matrices: {\n    a: number;\n    c: number;\n    e: number;\n    b: number;\n    d: number;\n    f: number;\n  }[]\n) => {\n  a: number;\n  c: number;\n  e: number;\n  b: number;\n  d: number;\n  f: number;\n}",
+  "signature": "(...matrices: {\n    a: number;\n    c: number;\n    e: number;\n    b: number;\n    d: number;\n    f: number;\n}[]) => {\n    a: number;\n    c: number;\n    e: number;\n    b: number;\n    d: number;\n    f: number;\n}",
   "examples": [
     {
       "language": "javascript",

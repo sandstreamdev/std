@@ -1,7 +1,7 @@
 {
   "name": "serialize",
   "description": "Serializes the given object into a query string.",
-  "signature": "(xs?: { [index: string]: any }) => string",
+  "signature": "<T>(xs?: GenericObject<T>) => string",
   "examples": [
     {
       "language": "javascript",

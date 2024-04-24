@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import average from "./average.ts";
+import average from "./average.js";
 
 describe("average", () => {
   it("returns average for the given data", () => {

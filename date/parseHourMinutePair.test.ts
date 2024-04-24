@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import parseHourMinutePair from "./parseHourMinutePair.ts";
+import parseHourMinutePair from "./parseHourMinutePair.js";
 
 describe("parseHourMinutePair", () => {
   it("should handle basic case", () => {

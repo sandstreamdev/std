@@ -6,7 +6,7 @@ Repeats the given element by the given count of times.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (value: any) => any[]
+(count: number) => <T>(value: T) => T[]
 ```
 <!-- prettier-ignore-end -->
 

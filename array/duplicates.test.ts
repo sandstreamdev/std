@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import duplicates from "./duplicates.ts";
+import duplicates from "./duplicates.js";
 
 describe("duplicates", () => {
   it("returns duplicated values", () => {

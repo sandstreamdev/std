@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import clampPercentage from "./clampPercentage.ts";
+import clampPercentage from "./clampPercentage.js";
 
 describe("clampPercentage", () => {
   it("does nothing when the value is in range", () => {

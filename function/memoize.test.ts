@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import memoize from "./memoize.ts";
+import memoize from "./memoize.js";
 
 describe("memoize", () => {
   it("memoizes the result", () => {

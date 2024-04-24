@@ -6,7 +6,7 @@ Pipes an input through given functions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: ((x: any) => any)[]) => (x: any) => any
+<T>(...fs: ((x: T) => T)[]) => (x: T) => T
 ```
 <!-- prettier-ignore-end -->
 

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import sum from "./sum.ts";
+import sum from "./sum.js";
 
 describe("sum", () => {
   it("sums the given array of numbers", () => {

@@ -1,12 +1,7 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import formatDuration from "./formatDuration.ts";
-// @ts-ignore ambiguous import
-import fromHours from "./fromHours.ts";
-// @ts-ignore ambiguous import
-import fromMinutes from "./fromMinutes.ts";
-// @ts-ignore ambiguous import
-import fromSeconds from "./fromSeconds.ts";
+import formatDuration from "./formatDuration.js";
+import fromHours from "./fromHours.js";
+import fromMinutes from "./fromMinutes.js";
+import fromSeconds from "./fromSeconds.js";
 
 describe("formatDuration", () => {
   it("formats a duration into a padded time string", () => {

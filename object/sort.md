@@ -6,9 +6,7 @@ Sorts the given object by a comparator.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (a: any, b: any) => number
-) => (xs: object) => object
+<T>(f: (a: T, b: T) => number) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 

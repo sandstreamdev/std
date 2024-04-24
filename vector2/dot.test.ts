@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import dot from "./dot.ts";
+import dot from "./dot.js";
 
 describe("dot", () => {
   it("calculates a dot product", () => {

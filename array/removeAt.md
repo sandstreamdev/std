@@ -6,7 +6,7 @@ Removes an element at the given index from the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(index: number) => (xs: any[]) => any[]
+(index: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

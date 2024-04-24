@@ -6,9 +6,7 @@ Filters the given object with the given predicate.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => boolean
-) => (xs: object) => object
+<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 

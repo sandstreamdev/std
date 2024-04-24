@@ -6,7 +6,6 @@ import includes from "./includes.js";
 import nbsp from "./nbsp.js";
 import nonEmpty from "./nonEmpty.js";
 import startsWith from "./startsWith.js";
-
 export {
   containsWhitespace,
   empty,
@@ -17,7 +16,6 @@ export {
   nonEmpty,
   startsWith
 };
-
 export default {
   containsWhitespace,
   empty,

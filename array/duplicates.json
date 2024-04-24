@@ -1,7 +1,7 @@
 {
   "name": "duplicates",
   "description": "Lists all the duplicated values in the given array.",
-  "signature": "(xs: any[]) => any[]",
+  "signature": "<T>(xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

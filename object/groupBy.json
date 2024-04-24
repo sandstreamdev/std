@@ -1,7 +1,7 @@
 {
   "name": "groupBy",
   "description": "Groups the given array of values by the given key selector.",
-  "signature": "(selector: (x: any) => string) => (xs: any[]) => object",
+  "signature": "(selector: (x: unknown) => string) => (xs: unknown[]) => Result",
   "examples": [
     {
       "language": "javascript",

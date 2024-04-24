@@ -1,7 +1,7 @@
 {
   "name": "rotate",
   "description": "Creates a rotation matrix around given origin [0, 0] by default.",
-  "signature": "(\n  angle?: number,\n  cx?: number,\n  cy?: number\n) => {\n  a: number;\n  c: number;\n  e: number;\n  b: number;\n  d: number;\n  f: number;\n}",
+  "signature": "(angle?: number, cx?: number, cy?: number) => {\n    a: number;\n    c: number;\n    e: number;\n    b: number;\n    d: number;\n    f: number;\n}",
   "examples": [
     {
       "language": "javascript",

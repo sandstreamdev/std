@@ -1,7 +1,7 @@
 {
   "name": "pipe",
   "description": "Pipes an input through given functions.",
-  "signature": "(...fs: ((x: any) => any)[]) => (x: any) => any",
+  "signature": "<T>(...fs: ((x: T) => T)[]) => (x: T) => T",
   "examples": [
     {
       "language": "javascript",

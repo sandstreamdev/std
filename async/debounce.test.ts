@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import debounce from "./debounce.ts";
+import debounce from "./debounce.js";
 
-// @ts-ignore ambiguous import
-import delay from "./delay.ts";
+import delay from "./delay.js";
 
 describe("debounce", () => {
   it("makes the function run after given delay", async () => {

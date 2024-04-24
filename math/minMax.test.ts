@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import minMax from "./minMax.ts";
+import minMax from "./minMax.js";
 
 describe("minMax", () => {
   it("does nothing when the data is already ordered", () => {

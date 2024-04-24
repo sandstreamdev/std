@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import merge from "./merge.ts";
+import merge from "./merge.js";
 
 describe("merge", () => {
   it("should merge with empty object", () => {

@@ -6,7 +6,9 @@ Parses a query string into an object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: string) => object
+(xs?: string) => {
+    [index: string]: string | boolean;
+}
 ```
 <!-- prettier-ignore-end -->
 
@@ -31,7 +33,7 @@ Parses the given query string into an object using URLSearchParams.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(source: string) => {}
+(source: string) => Result
 ```
 <!-- prettier-ignore-end -->
 
@@ -56,7 +58,7 @@ Serializes the given object into a query string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: { [index: string]: any }) => string
+<T>(xs?: GenericObject<T>) => string
 ```
 <!-- prettier-ignore-end -->
 

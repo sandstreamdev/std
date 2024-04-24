@@ -6,7 +6,7 @@ Returns the middle element or the right one when the number of elements is even.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any
+<T>(xs: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 

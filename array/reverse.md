@@ -6,7 +6,7 @@ Reverses the given array without mutating it (in contrast to Array.reverse).
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any) => any[]
+<T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

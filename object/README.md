@@ -6,7 +6,7 @@ Checks if the given object is present and it is not empty (contains at least one
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object) => boolean
+<T>(xs?: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -48,9 +48,9 @@ Applies the given parameters to the given dictionary of functions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  fs: ((...xs: any[]) => any)[]
-) => (...xs: any[]) => object
+<T>(fs: {
+    [index: string]: (...xs: T[]) => T;
+}) => (...xs: T[]) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -78,7 +78,8 @@ Empty object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-{}
+GenericObject<unknown>;
+export default empty
 ```
 <!-- prettier-ignore-end -->
 
@@ -103,16 +104,7 @@ Lists key-value pairs (entries) present in the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-{
-  <T>(
-    o:
-      | {
-          [s: string]: T;
-        }
-      | ArrayLike<T>
-  ): [string, T][];
-  (o: {}): [string, any][];
-}
+ObjectEntries
 ```
 <!-- prettier-ignore-end -->
 
@@ -163,7 +155,8 @@ Checks if two objects are deeply equal.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any, b: any) => boolean
+(a: unknown, b: unknown) => boolean;
+export default equalsDeep
 ```
 <!-- prettier-ignore-end -->
 
@@ -194,9 +187,7 @@ Test if every element passes the given predicate.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => boolean
-) => (xs: object) => boolean
+<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -226,9 +217,7 @@ Filters the given object with the given predicate.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => boolean
-) => (xs: object) => object
+<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -253,9 +242,7 @@ Searches the given object by the given predicate and returns the found value or 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, key: string, context: object) => boolean
-) => (xs: object) => any
+<T>(predicate: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -280,9 +267,7 @@ Searches the given object by the given predicate and returns the found entry or 
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, key: string, context: object) => boolean
-) => (xs: object) => any
+<T>(predicate: (value: T, key: string, context: GenericObject<T>) => boolean) => (xs: GenericObject<T>) => [string, T] | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -307,9 +292,7 @@ Searches the given object by the given predicate and returns the found key or un
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  predicate: (value: any, key: string, context: object) => boolean
-) => (xs: object) => any
+<T>(predicate: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => string | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -334,7 +317,7 @@ Returns the first value in the given object. Follows the default object iteratio
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: object) => any
+<T>(xs: GenericObject<T>) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 
@@ -359,9 +342,7 @@ Flat maps the values of the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => any[]
+<T, TResult>(f: (value: T, key: string, context: GenericObject<T>) => TResult[]) => (xs: GenericObject<T>) => TResult[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -386,7 +367,7 @@ Creates an object from an array of key-value pairs (entries).
 
 <!-- prettier-ignore-start -->
 ```typescript
-(entries: [string, any][]) => object
+<T>(entries: [string, T][]) => Result<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -412,7 +393,7 @@ Groups the given array of values by the given key selector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(selector: (x: any) => string) => (xs: any[]) => object
+(selector: (x: unknown) => string) => (xs: unknown[]) => Result
 ```
 <!-- prettier-ignore-end -->
 
@@ -437,7 +418,7 @@ Checks if the given key is present in the object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(key: string) => (xs?: any) => any
+(key: string) => (xs?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -454,6 +435,31 @@ hasKey("c")({ a: 1, b: 2, c: 3 });
 
 - How to check if an object contains a given key?
 
+# last
+
+Returns the last value in the given object. Follows the default object iteration order.
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+<T>(xs: GenericObject<T>) => T | undefined
+```
+<!-- prettier-ignore-end -->
+
+## Examples
+
+<!-- prettier-ignore-start -->
+```javascript
+last({ a: 1, b: 2, c: 3 });
+// ⇒ 3
+```
+<!-- prettier-ignore-end -->
+
+## Questions
+
+- How to get the last value of an object?
+
 # length
 
 Returns the number of entries within the given object.
@@ -462,7 +468,7 @@ Returns the number of entries within the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: object) => number
+<T>(xs: GenericObject<T>) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -487,9 +493,7 @@ Maps the given object with the given function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => object
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => GenericObject<TResult>
 ```
 <!-- prettier-ignore-end -->
 
@@ -515,9 +519,7 @@ Maps entries of the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => [string, any][]
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => [string, TResult][]
 ```
 <!-- prettier-ignore-end -->
 
@@ -542,9 +544,7 @@ Transforms the object keys with the given function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => object
+<T>(f: (value: T, key: string, context: object) => string) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -570,9 +570,7 @@ Maps and returns an array of transformed object values.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => any
-) => (xs: object) => any[]
+<T, TResult>(f: (value: T, key: string, context: object) => TResult) => (xs: GenericObject<T>) => TResult[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -597,12 +595,8 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  a: {
-    [index: string]: any;
-  },
-  b: object
-) => object
+(a: GenericObject, b: GenericObject) => GenericObject;
+export default merge
 ```
 <!-- prettier-ignore-end -->
 
@@ -643,7 +637,7 @@ Checks if the given object is empty.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object) => boolean
+<T>(xs?: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -679,9 +673,7 @@ Test if any element passes the given predicate.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, key: string, context: object) => boolean
-) => (xs: object) => boolean
+<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -711,9 +703,7 @@ Sorts the given object by a comparator.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (a: any, b: any) => number
-) => (xs: object) => object
+<T>(f: (a: T, b: T) => number) => (xs: GenericObject<T>) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 
@@ -729,3 +719,14 @@ sort({ a: 3, b: 2, c: 3, d: -7, e: 13, f: 0, g: 8 });
 ## Questions
 
 - How to sort an object?
+
+# types
+
+## Type signature
+
+<!-- prettier-ignore-start -->
+```typescript
+string]: T;
+}
+```
+<!-- prettier-ignore-end -->

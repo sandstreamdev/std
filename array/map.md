@@ -6,7 +6,7 @@ Maps the given array with the given functions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: ((x: any) => any)[]) => (xs: any) => any
+<T>(...fs: ((x: T) => T)[]) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

@@ -6,7 +6,7 @@ Returns the given constant no matter the input.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x: any) => any
+<T>(x: T) => () => T
 ```
 <!-- prettier-ignore-end -->
 

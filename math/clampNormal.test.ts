@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import clampNormal from "./clampNormal.ts";
+import clampNormal from "./clampNormal.js";
 
 describe("clampNormal", () => {
   it("does nothing when the value is in range", () => {

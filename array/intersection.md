@@ -6,7 +6,7 @@ Finds common elements between both arrays.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[], ys: any[]) => any[]
+<T>(xs: T[], ys: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

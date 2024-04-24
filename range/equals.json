@@ -1,7 +1,7 @@
 {
   "name": "equals",
   "description": "Checks if the given ranges are equal.",
-  "signature": "(\n  [a, b]: [number, number],\n  [c, d]: [number, number]\n) => boolean",
+  "signature": "([a, b]: [number, number], [c, d]: [number, number]) => boolean",
   "examples": [
     {
       "language": "javascript",

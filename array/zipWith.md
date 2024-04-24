@@ -6,9 +6,7 @@ Zips the given arrays together with the given function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f?: (x: any, y: any) => any[]
-) => (xs: any[], ys: any[]) => any[][]
+<T1, T2>(f?: (x: T1, y: T2) => [T1, T2]) => (xs: T1[], ys: T2[]) => [T1, T2][]
 ```
 <!-- prettier-ignore-end -->
 

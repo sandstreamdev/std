@@ -6,7 +6,7 @@ Checks if the given object is present and it is not empty (contains at least one
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: object) => boolean
+<T>(xs?: GenericObject<T>) => boolean
 ```
 <!-- prettier-ignore-end -->
 

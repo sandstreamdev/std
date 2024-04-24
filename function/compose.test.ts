@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import compose from "./compose.ts";
+import compose from "./compose.js";
 
 const square = (x: number) => x * x;
 const addOne = (x: number) => x + 1;

@@ -1,7 +1,7 @@
 {
   "name": "map",
   "description": "Maps the given array with the given functions.",
-  "signature": "(...fs: ((x: any) => any)[]) => (xs: any) => any",
+  "signature": "<T>(...fs: ((x: T) => T)[]) => (xs: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

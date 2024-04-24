@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import constant from "./constant.ts";
+import constant from "./constant.js";
 
 describe("constant", () => {
   it("returns the given constant no matter the input", () => {

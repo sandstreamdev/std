@@ -1,7 +1,7 @@
 {
   "name": "identity",
   "description": "Always return the given value.",
-  "signature": "(x: any) => any",
+  "signature": "<T>(x: T) => T",
   "examples": [
     {
       "language": "javascript",

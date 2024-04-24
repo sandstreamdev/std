@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import every from "./every.ts";
+import every from "./every.js";
 
 describe("every", () => {
   it("test if every element passes the given predicate", () => {

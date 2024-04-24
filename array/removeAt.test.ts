@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import removeAt from "./removeAt.ts";
+import removeAt from "./removeAt.js";
 
 describe("removeAt", () => {
   it("should remove an element at the specified index", () => {

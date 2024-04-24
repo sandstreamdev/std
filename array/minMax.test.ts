@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import minMax from "./minMax.ts";
+import minMax from "./minMax.js";
 
 describe("minMax", () => {
   it("computes minimum and maximum of the given array", () => {

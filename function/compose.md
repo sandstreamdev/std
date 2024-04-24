@@ -6,7 +6,7 @@ Composes multiple functions into a higher-order one. Goes right to left.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...fs: ((x: any) => any)[]) => (x: any) => any
+<T, TResult>(...fs: ((x: T) => T)[]) => (x: T) => T
 ```
 <!-- prettier-ignore-end -->
 

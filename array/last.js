@@ -1,1 +1,1 @@
-export default xs => xs[xs.length - 1];
+export default xs => xs.at(-1);

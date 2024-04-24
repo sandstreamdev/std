@@ -1,7 +1,7 @@
 {
   "name": "entries",
   "description": "Lists key-value pairs (entries) present in the given object.",
-  "signature": "{\n  <T>(\n    o:\n      | {\n          [s: string]: T;\n        }\n      | ArrayLike<T>\n  ): [string, T][];\n  (o: {}): [string, any][];\n}",
+  "signature": "ObjectEntries",
   "examples": [
     {
       "language": "javascript",

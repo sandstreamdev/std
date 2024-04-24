@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import maximumBy from "./maximumBy.ts";
+import maximumBy from "./maximumBy.js";
 
 describe("maximumBy", () => {
   it("uses the given selector to extract value for comparison", () => {

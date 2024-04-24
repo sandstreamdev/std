@@ -1,7 +1,7 @@
 {
   "name": "some",
   "description": "Test if any element passes the given predicate.",
-  "signature": "(\n  f: (value: any, key: string, context: object) => boolean\n) => (xs: object) => boolean",
+  "signature": "<T>(f: (value: T, key: string, context: object) => boolean) => (xs: GenericObject<T>) => boolean",
   "examples": [
     {
       "language": "javascript",

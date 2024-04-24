@@ -1,7 +1,7 @@
 {
   "name": "convertSpace",
   "description": "Applies transformations to the given vector.",
-  "signature": "(space: {\n  a: number;\n  c: number;\n  e: number;\n  b: number;\n  d: number;\n  f: number;\n}) => ([x, y]: [number, number]) => number[]",
+  "signature": "(space: {\n    a: number;\n    c: number;\n    e: number;\n    b: number;\n    d: number;\n    f: number;\n}) => ([x, y]: [number, number]) => number[]",
   "examples": [
     {
       "language": "javascript",

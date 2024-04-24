@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import filterInPlace from "./filterInPlace.ts";
+import filterInPlace from "./filterInPlace.js";
 
 describe("filterInPlace", () => {
   it("mutates the given array", () => {

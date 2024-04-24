@@ -29,7 +29,6 @@ import toISO from "./toISO.js";
 import toMinutes from "./toMinutes.js";
 import toSeconds from "./toSeconds.js";
 import valid from "./valid.js";
-
 export {
   clamp,
   clone,
@@ -63,7 +62,6 @@ export {
   toSeconds,
   valid
 };
-
 export default {
   clamp,
   clone,

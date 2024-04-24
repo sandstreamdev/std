@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import daysInYear from "./daysInYear.ts";
+import daysInYear from "./daysInYear.js";
 
 describe("daysInYear", () => {
   it("should handle common years", () => {

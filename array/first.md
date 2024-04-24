@@ -6,7 +6,7 @@ Returns the first element or undefined when there are no elements in the given a
 
 <!-- prettier-ignore-start -->
 ```typescript
-([x]: [any]) => any
+<T>([x]: T[]) => T | undefined
 ```
 <!-- prettier-ignore-end -->
 

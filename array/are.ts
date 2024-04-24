@@ -1,3 +1,3 @@
 import is from "./is";
 
-export default (...xs: any[]): boolean => xs.every(is);
+export default <T>(...xs: T[]): boolean => xs.every(is);

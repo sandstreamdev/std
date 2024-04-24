@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import parse from "./parse.ts";
+import parse from "./parse.js";
 
-// @ts-ignore ambiguous import
-import serialize from "./serialize.ts";
+import serialize from "./serialize.js";
 
 describe("parse", () => {
   it("parses query string into an object", () => {

@@ -1,7 +1,7 @@
 {
   "name": "maximumBy",
   "description": "Calculates the maximum by a given selector.",
-  "signature": "(f: (x: number) => number) => (xs: number[]) => number",
+  "signature": "(f: (x: number) => number) => ((xs: number[]) => number)",
   "examples": [
     {
       "language": "javascript",

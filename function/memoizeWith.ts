@@ -1,17 +1,16 @@
-export default (equals: (x: any, y: any) => boolean) => (
-  f: (...xs: any[]) => any
-) => {
-  let memoized: any = undefined;
-  let memoizedArgs: any[] | undefined = undefined;
+export default <T>(equals: (x: T[], y: T[]) => boolean) =>
+  <TResult>(f: (...xs: T[]) => TResult) => {
+    let memoized: TResult | undefined = undefined;
+    let memoizedArgs: T[] | undefined = undefined;
 
-  return (...args: any[]) => {
-    if (memoized && equals(args, memoizedArgs)) {
+    return (...args: T[]): TResult => {
+      if (memoized && memoizedArgs && equals(args, memoizedArgs)) {
+        return memoized;
+      }
+
+      memoized = f(...args);
+      memoizedArgs = args;
+
       return memoized;
-    }
-
-    memoized = f(...args);
-    memoizedArgs = args;
-
-    return memoized;
+    };
   };
-};

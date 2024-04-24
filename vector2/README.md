@@ -6,10 +6,7 @@ Adds two vectors.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [x1, y1]: [number, number],
-  [x2, y2]: [number, number]
-) => [number, number]
+([x1, y1]: [number, number], [x2, y2]: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
@@ -35,12 +32,12 @@ Applies transformations to the given vector.
 <!-- prettier-ignore-start -->
 ```typescript
 (space: {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }) => ([x, y]: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
@@ -66,10 +63,7 @@ Calculates a cross product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [a, b]: [number, number],
-  [c, d]: [number, number]
-) => number
+([a, b]: [number, number], [c, d]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -100,10 +94,7 @@ Calculates a dot product of the given vectors. Returns a scalar.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [a, b]: [number, number],
-  [c, d]: [number, number]
-) => number
+([a, b]: [number, number], [c, d]: [number, number]) => number
 ```
 <!-- prettier-ignore-end -->
 
@@ -159,24 +150,14 @@ Applies matrix transformation to the given vector.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  {
-    a,
-    b,
-    c,
-    d,
-    e,
-    f
-  }: {
+({ a, b, c, d, e, f }: {
     a: number;
     c: number;
     e: number;
     b: number;
     d: number;
     f: number;
-  },
-  [x, y]: [number, number]
-) => number[]
+}, [x, y]: [number, number]) => number[]
 ```
 <!-- prettier-ignore-end -->
 
@@ -201,30 +182,27 @@ Multiples two matrices.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  m1: {
+(m1: {
     a: number;
     c: number;
     e: number;
     b: number;
     d: number;
     f: number;
-  },
-  m2: {
+}, m2: {
     a: number;
     b: number;
     c: number;
     d: number;
     e: number;
     f: number;
-  }
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+}) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -275,10 +253,7 @@ Reflects the given vector on the given surface.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  a: [number, number],
-  v: [number, number]
-) => [number, number]
+(a: [number, number], v: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
@@ -303,17 +278,13 @@ Creates a rotation matrix around given origin [0, 0] by default.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  angle?: number,
-  cx?: number,
-  cy?: number
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+(angle?: number, cx?: number, cy?: number) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -342,16 +313,13 @@ Creates a scale matrix.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  sx?: number,
-  sy?: number
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+(sx?: number, sy?: number) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -377,10 +345,7 @@ Subtracts two vectors.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  [x1, y1]: [number, number],
-  [x2, y2]: [number, number]
-) => [number, number]
+([x1, y1]: [number, number], [x2, y2]: [number, number]) => [number, number]
 ```
 <!-- prettier-ignore-end -->
 
@@ -405,22 +370,20 @@ Composes a single transformation by matrix multiplication.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  ...matrices: {
+(...matrices: {
     a: number;
     c: number;
     e: number;
     b: number;
     d: number;
     f: number;
-  }[]
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+}[]) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->
@@ -450,16 +413,13 @@ Creates a translation matrix.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  tx?: number,
-  ty?: number
-) => {
-  a: number;
-  c: number;
-  e: number;
-  b: number;
-  d: number;
-  f: number;
+(tx?: number, ty?: number) => {
+    a: number;
+    c: number;
+    e: number;
+    b: number;
+    d: number;
+    f: number;
 }
 ```
 <!-- prettier-ignore-end -->

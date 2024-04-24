@@ -1,1 +1,1 @@
-export default (xs: any[]) => xs[xs.length - 1];
+export default <T>(xs: T[]): T | undefined => xs.at(-1);

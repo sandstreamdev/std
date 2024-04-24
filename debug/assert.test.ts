@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import assert, {
   assertByte,
   assertInteger,
@@ -7,11 +6,9 @@ import assert, {
   assertNumber,
   assertString,
   throws
-  // @ts-ignore ambiguous import
 } from "./assert.ts";
 
-// @ts-ignore ambiguous import
-import range from "../array/range.ts";
+import range from "../array/range.js";
 
 describe("assert", () => {
   it("throws when assertion fails", () => {

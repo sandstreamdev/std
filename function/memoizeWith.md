@@ -6,9 +6,7 @@ Memoizes the function result so it is not computed for the same parameters. Uses
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  equals: (x: any, y: any) => boolean
-) => (f: (...xs: any[]) => any) => (...args: any[]) => any
+<T>(equals: (x: T[], y: T[]) => boolean) => <TResult>(f: (...xs: T[]) => TResult) => (...args: T[]) => TResult
 ```
 <!-- prettier-ignore-end -->
 

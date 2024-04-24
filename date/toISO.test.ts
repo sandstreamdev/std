@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import toISO from "./toISO.ts";
+import toISO from "./toISO.js";
 
 describe("toISO", () => {
   it("serializes the given Date object to an ISO-compliant date-time string", () => {

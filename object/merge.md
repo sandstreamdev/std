@@ -6,12 +6,8 @@ Merges two objects deeply.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  a: {
-    [index: string]: any;
-  },
-  b: object
-) => object
+(a: GenericObject, b: GenericObject) => GenericObject;
+export default merge
 ```
 <!-- prettier-ignore-end -->
 

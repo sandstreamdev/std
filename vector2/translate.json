@@ -1,7 +1,7 @@
 {
   "name": "translate",
   "description": "Creates a translation matrix.",
-  "signature": "(\n  tx?: number,\n  ty?: number\n) => {\n  a: number;\n  c: number;\n  e: number;\n  b: number;\n  d: number;\n  f: number;\n}",
+  "signature": "(tx?: number, ty?: number) => {\n    a: number;\n    c: number;\n    e: number;\n    b: number;\n    d: number;\n    f: number;\n}",
   "examples": [
     {
       "language": "javascript",

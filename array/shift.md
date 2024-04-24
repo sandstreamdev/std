@@ -6,7 +6,7 @@ Shifts the given array to the left and circulates the elements back by modulo of
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

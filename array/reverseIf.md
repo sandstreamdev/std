@@ -6,7 +6,7 @@ Reverses the given array when enabled.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(enabled: boolean) => (xs: any) => any
+(enabled: boolean) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

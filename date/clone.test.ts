@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import clone from "./clone.ts";
+import clone from "./clone.js";
 
 describe("clone", () => {
   it("should return cloned date", () => {

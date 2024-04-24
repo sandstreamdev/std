@@ -6,7 +6,7 @@ Checks if lengths of the given arrays differ.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(a: any[], b: any[]) => boolean
+<T1, T2>(a: T1[], b: T2[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 

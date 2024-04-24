@@ -14,6 +14,7 @@ import flatMapValues from "./flatMapValues.js";
 import fromEntries from "./fromEntries.js";
 import groupBy from "./groupBy.js";
 import hasKey from "./hasKey.js";
+import last from "./last.js";
 import length from "./length.js";
 import map from "./map.js";
 import mapEntries from "./mapEntries.js";
@@ -23,7 +24,6 @@ import merge from "./merge.js";
 import none from "./none.js";
 import some from "./some.js";
 import sort from "./sort.js";
-
 export {
   any,
   apply,
@@ -41,6 +41,7 @@ export {
   fromEntries,
   groupBy,
   hasKey,
+  last,
   length,
   map,
   mapEntries,
@@ -51,7 +52,6 @@ export {
   some,
   sort
 };
-
 export default {
   any,
   apply,
@@ -69,6 +69,7 @@ export default {
   fromEntries,
   groupBy,
   hasKey,
+  last,
   length,
   map,
   mapEntries,

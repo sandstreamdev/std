@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import intersection from "./intersection.ts";
+import intersection from "./intersection.js";
 
 describe("intersection", () => {
   it("finds common elements between both arrays and keeps the order of the first array without duplicates", () => {

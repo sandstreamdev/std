@@ -6,9 +6,7 @@ Filters the given array with the given predicate just like Array.filter but does
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  f: (value: any, index: number, context: any[]) => boolean
-) => (xs: any[]) => any[]
+<T>(f: (value: T, index: number, context: T[]) => boolean) => (xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

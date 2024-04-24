@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import not from "./not.ts";
+import not from "./not.js";
 
 describe("not", () => {
   it("inverts the result", () => {

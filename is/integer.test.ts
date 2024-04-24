@@ -1,9 +1,6 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import integer from "./integer.ts";
+import integer from "./integer.js";
 
-// @ts-ignore ambiguous import
-import range from "../array/range.ts";
+import range from "../array/range.js";
 
 describe("integer", () => {
   it("checks if the given value is an integer", () => {

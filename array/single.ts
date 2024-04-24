@@ -1,1 +1,1 @@
-export default (xs: any[]) => xs.length === 1;
+export default <T>(xs: T[]): boolean => xs.length === 1;

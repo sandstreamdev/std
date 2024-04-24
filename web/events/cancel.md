@@ -7,8 +7,8 @@ Stops propagation and prevents the default handler of the given event.
 <!-- prettier-ignore-start -->
 ```typescript
 (event: {
-  preventDefault: () => void;
-  stopPropagation: () => void;
+    preventDefault: () => void;
+    stopPropagation: () => void;
 }) => boolean
 ```
 <!-- prettier-ignore-end -->

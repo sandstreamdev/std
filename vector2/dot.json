@@ -1,7 +1,7 @@
 {
   "name": "dot",
   "description": "Calculates a dot product of the given vectors. Returns a scalar.",
-  "signature": "(\n  [a, b]: [number, number],\n  [c, d]: [number, number]\n) => number",
+  "signature": "([a, b]: [number, number], [c, d]: [number, number]) => number",
   "examples": [
     {
       "language": "javascript",

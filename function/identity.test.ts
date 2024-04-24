@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import identity from "./identity.ts";
+import identity from "./identity.js";
 
 describe("identity", () => {
   it("always returns the given value", () => {

@@ -1,6 +1,6 @@
 import nonNullable from "./nonNullable";
 
-export default (x?: any) =>
+export default (x?: unknown) =>
   nonNullable(x) &&
   typeof x === "number" &&
   !Number.isNaN(x) &&

@@ -1,6 +1,6 @@
 import isNonNullable from "../is/nonNullable";
 
-export default (xs?: any[], ys?: any[]) =>
+export default <T>(xs?: T[], ys?: T[]): boolean =>
   Boolean(!xs && ys) ||
   Boolean(!ys && xs) ||
   !isNonNullable(ys) ||

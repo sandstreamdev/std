@@ -6,9 +6,9 @@ Applies the given parameters to the given dictionary of functions.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  fs: ((...xs: any[]) => any)[]
-) => (...xs: any[]) => object
+<T>(fs: {
+    [index: string]: (...xs: T[]) => T;
+}) => (...xs: T[]) => GenericObject<T>
 ```
 <!-- prettier-ignore-end -->
 

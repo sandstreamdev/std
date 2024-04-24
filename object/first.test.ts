@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import first from "./first.ts";
+import first from "./first.js";
 
 describe("first", () => {
   it("returns the first value in the given object", () => {

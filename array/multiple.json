@@ -1,7 +1,7 @@
 {
   "name": "multiple",
   "description": "Checks if the given array contains more than one element.",
-  "signature": "(xs: any) => boolean",
+  "signature": "<T>(xs: T[]) => boolean",
   "examples": [
     {
       "language": "javascript",

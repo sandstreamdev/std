@@ -6,7 +6,7 @@ Takes up to a given count of elements.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

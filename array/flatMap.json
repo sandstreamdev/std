@@ -1,7 +1,7 @@
 {
   "name": "flatMap",
   "description": "Maps and flattens the result.",
-  "signature": "(\n  f: (value: any, index: number, context: any[]) => any\n) => (xs: any[]) => any",
+  "signature": "<T, TResult>(f: (value: T, index: number, context: T[]) => TResult[]) => (xs: T[]) => TResult[]",
   "examples": [
     {
       "language": "javascript",

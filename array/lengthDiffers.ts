@@ -1,1 +1,1 @@
-export default (a: any[], b: any[]) => a.length !== b.length;
+export default <T1, T2>(a: T1[], b: T2[]): boolean => a.length !== b.length;

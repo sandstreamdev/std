@@ -1,7 +1,7 @@
 {
   "name": "is",
   "description": "Checks if the given argument is an array.",
-  "signature": "(value?: any) => boolean",
+  "signature": "(value?: unknown) => boolean",
   "examples": [
     {
       "language": "javascript",

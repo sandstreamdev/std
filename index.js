@@ -14,7 +14,6 @@ import regex from "./regex/index.js";
 import string from "./string/index.js";
 import vector2 from "./vector2/index.js";
 import web from "./web/index.js";
-
 export {
   array,
   async,
@@ -33,7 +32,6 @@ export {
   vector2,
   web
 };
-
 export default {
   array,
   async,

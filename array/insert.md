@@ -6,9 +6,7 @@ Inserts the given item to the array at a specific index.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  index: number
-) => (item: any) => ([...xs]: any[]) => any[]
+(index: number) => <T>(item: T) => ([...xs]: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

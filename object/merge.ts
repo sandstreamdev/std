@@ -2,13 +2,20 @@ import isNonNullable from "../is/nonNullable";
 import isObject from "../is/object";
 import map from "./map";
 
-const isNonNullableObject = (x?: object) => isNonNullable(x) && isObject(x);
+const isNonNullableObject = (x?: unknown) =>
+  x && isNonNullable(x) && isObject(x);
 
-const merge = (a: { [index: string]: any }, b: object): object => ({
+type GenericObject = { [index: string]: unknown };
+
+const merge = (a: GenericObject, b: GenericObject): GenericObject => ({
   ...a,
   ...map((value, key) =>
-    isNonNullableObject(value) && isNonNullableObject(a[key])
-      ? merge(a[key], value)
+    value &&
+    typeof value === "object" &&
+    isNonNullableObject(value) &&
+    a &&
+    isNonNullableObject((a as GenericObject)[key])
+      ? merge(a[key] as GenericObject, value as GenericObject)
       : value
   )(b)
 });

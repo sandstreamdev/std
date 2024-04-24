@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import length from "./length.ts";
+import length from "./length.js";
 
 describe("length", () => {
   it("returns the number of entries within given object", () => {

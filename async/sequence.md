@@ -6,11 +6,7 @@ Runs the given tasks in a sequence.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(
-  tasks: {
-    (): Promise<any>;
-  }[]
-) => Promise<any[]>
+<T>(tasks: Task<T>[]) => Promise<Awaited<T>[]>
 ```
 <!-- prettier-ignore-end -->
 

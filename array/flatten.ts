@@ -1,1 +1,1 @@
-export default (xs: any) => [].concat(...xs);
+export default <T>(xs: T[]) => ([] as T[]).concat(...xs);

@@ -1,1 +1,3 @@
-export default (f: (...xs: any[]) => any) => (...args: any[]) => !f(...args);
+export default (f: (...xs: unknown[]) => unknown) =>
+  (...args: unknown[]) =>
+    !f(...args);

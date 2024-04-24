@@ -1,7 +1,7 @@
 {
   "name": "none",
   "description": "Checks if the given array is empty.",
-  "signature": "(xs?: any) => boolean",
+  "signature": "<T>(xs?: T[]) => boolean",
   "examples": [
     {
       "language": "javascript",

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import find from "./find.ts";
+import find from "./find.js";
 
 const odd = (x: number) => x % 2 === 1;
 const greaterThan5 = (x: number) => x > 5;

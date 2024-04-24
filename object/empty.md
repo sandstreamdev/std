@@ -6,7 +6,8 @@ Empty object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-{}
+GenericObject<unknown>;
+export default empty
 ```
 <!-- prettier-ignore-end -->
 

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import flatMapValues from "./flatMapValues.ts";
+import flatMapValues from "./flatMapValues.js";
 
 describe("flatMapValues", () => {
   it("flat maps the values of the given object", () => {

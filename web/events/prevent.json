@@ -1,7 +1,7 @@
 {
   "name": "prevent",
   "description": "Prevents the default handler of the given event.",
-  "signature": "(event: { preventDefault: () => void }) => boolean",
+  "signature": "(event: {\n    preventDefault: () => void;\n}) => boolean",
   "examples": [
     {
       "language": "javascript",

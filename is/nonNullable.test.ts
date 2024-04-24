@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import nonNullable from "./nonNullable.ts";
+import nonNullable from "./nonNullable.js";
 
 describe("nonNullable", () => {
   it("checks and asserts the given value is not null or undefined", () => {

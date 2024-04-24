@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import nbsp from "./nbsp.ts";
+import nbsp from "./nbsp.js";
 
 describe("nbsp", () => {
   it("equals to the escape code", () => {

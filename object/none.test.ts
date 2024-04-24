@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import none from "./none.ts";
+import none from "./none.js";
 
 describe("none", () => {
   it("checks if the given object is empty", () => {

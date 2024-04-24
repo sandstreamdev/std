@@ -1,7 +1,7 @@
 {
   "name": "merge",
   "description": "Merges two objects deeply.",
-  "signature": "(\n  a: {\n    [index: string]: any;\n  },\n  b: object\n) => object",
+  "signature": "(a: GenericObject, b: GenericObject) => GenericObject;\nexport default merge",
   "examples": [
     {
       "language": "javascript",

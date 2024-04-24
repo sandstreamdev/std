@@ -6,7 +6,7 @@ Generates an array of numbers from 0 to n - 1.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(n: any) => number[]
+(n: number) => number[]
 ```
 <!-- prettier-ignore-end -->
 

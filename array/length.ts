@@ -1,1 +1,1 @@
-export default (xs: any[]): number => xs.length;
+export default <T>(xs: T[]): number => xs.length;

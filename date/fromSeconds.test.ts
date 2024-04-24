@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import fromSeconds from "./fromSeconds.ts";
+import fromSeconds from "./fromSeconds.js";
 
 describe("fromSeconds", () => {
   it("converts given second count to milliseconds", () => {

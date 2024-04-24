@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import noOp from "./noOp.ts";
+import noOp from "./noOp.js";
 
 describe("noOp", () => {
   it("does nothing", () => {

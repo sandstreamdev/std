@@ -1,7 +1,7 @@
 {
   "name": "none",
   "description": "Checks if the given object is empty.",
-  "signature": "(xs?: object) => boolean",
+  "signature": "<T>(xs?: GenericObject<T>) => boolean",
   "examples": [
     {
       "language": "javascript",

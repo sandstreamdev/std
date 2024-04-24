@@ -6,7 +6,7 @@ Clamps the given value to the given range.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(min: number, max: number) => (x: number) => number
+(min: number, max: number) => ((x: number) => number)
 ```
 <!-- prettier-ignore-end -->
 

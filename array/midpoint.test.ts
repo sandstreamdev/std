@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import midpoint from "./midpoint.ts";
+import midpoint from "./midpoint.js";
 
 describe("midpoint", () => {
   it("returns the middle element when the number of elements is odd", () => {

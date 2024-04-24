@@ -1,7 +1,7 @@
 {
   "name": "intersection",
   "description": "Finds common elements between both arrays.",
-  "signature": "(xs: any[], ys: any[]) => any[]",
+  "signature": "<T>(xs: T[], ys: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

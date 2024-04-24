@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import number from "./number.ts";
+import number from "./number.js";
 
 describe("number", () => {
   it("checks if the given value is a number", () => {

@@ -6,7 +6,7 @@ Parses the given query string into an object using URLSearchParams.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(source: string) => {}
+(source: string) => Result
 ```
 <!-- prettier-ignore-end -->
 

@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import map from "./map.ts";
+import map from "./map.js";
 
 describe("map", () => {
   it("maps the values of the given object", () => {

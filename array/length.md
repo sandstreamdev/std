@@ -6,7 +6,7 @@ Returns the number of elements in the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => number
+<T>(xs: T[]) => number
 ```
 <!-- prettier-ignore-end -->
 

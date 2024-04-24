@@ -1,8 +1,5 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import dateDiff from "./dateDiff.ts";
-// @ts-ignore ambiguous import
-import fromHours from "./fromHours.ts";
+import dateDiff from "./dateDiff.js";
+import fromHours from "./fromHours.js";
 
 describe("dateDiff", () => {
   it("computes date difference between two Date objects as milliseconds", () => {

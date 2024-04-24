@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import string from "./string.ts";
+import string from "./string.js";
 
 describe("string", () => {
   it("checks if the given value is a string", () => {

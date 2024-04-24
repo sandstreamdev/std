@@ -1,7 +1,7 @@
 {
   "name": "sequence",
   "description": "Runs the given tasks in a sequence.",
-  "signature": "(\n  tasks: {\n    (): Promise<any>;\n  }[]\n) => Promise<any[]>",
+  "signature": "<T>(tasks: Task<T>[]) => Promise<Awaited<T>[]>",
   "examples": [
     {
       "language": "javascript",

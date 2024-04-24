@@ -6,7 +6,7 @@ Lists all the duplicated values in the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: any[]) => any[]
+<T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

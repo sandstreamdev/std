@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import map from "./map.ts";
+import map from "./map.js";
 
 const plusOne = (x: number) => x + 1;
 const square = (x: number) => x * x;

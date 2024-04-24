@@ -6,7 +6,7 @@ Checks if the given value is a Date object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: any) => boolean
+(x?: unknown) => boolean
 ```
 <!-- prettier-ignore-end -->
 

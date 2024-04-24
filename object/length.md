@@ -6,7 +6,7 @@ Returns the number of entries within the given object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs: object) => number
+<T>(xs: GenericObject<T>) => number
 ```
 <!-- prettier-ignore-end -->
 

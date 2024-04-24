@@ -1,7 +1,7 @@
 {
   "name": "clamp",
   "description": "Clamps the given value to the given range.",
-  "signature": "(min: number, max: number) => (x: number) => number",
+  "signature": "(min: number, max: number) => ((x: number) => number)",
   "examples": [
     {
       "language": "javascript",

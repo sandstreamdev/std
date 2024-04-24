@@ -1,7 +1,7 @@
 {
   "name": "difference",
   "description": "Computes a set difference between the two given arrays.",
-  "signature": "(xs: any[], ys: any[]) => any[]",
+  "signature": "<T>(xs: T[], ys: T[]) => T[]",
   "examples": [
     {
       "language": "javascript",

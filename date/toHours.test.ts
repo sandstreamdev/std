@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import toHours from "./toHours.ts";
+import toHours from "./toHours.js";
 
 describe("toHours", () => {
   it("converts milliseconds into hours", () => {

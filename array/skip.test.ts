@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import skip from "./skip.ts";
+import skip from "./skip.js";
 
 describe("skip", () => {
   it("skips the given count of elements", () => {

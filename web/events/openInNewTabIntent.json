@@ -1,7 +1,7 @@
 {
   "name": "openInNewTabIntent",
   "description": "Tests if the current event seems like an intent to open a new tab. Useful for client-side navigation handling.",
-  "signature": "({\n  button,\n  ctrlKey,\n  metaKey,\n  shiftKey\n}: {\n  button?: number;\n  ctrlKey?: boolean;\n  metaKey?: boolean;\n  shiftKey?: boolean;\n}) => boolean",
+  "signature": "({ button, ctrlKey, metaKey, shiftKey }: {\n    button?: number;\n    ctrlKey?: boolean;\n    metaKey?: boolean;\n    shiftKey?: boolean;\n}) => boolean",
   "examples": [
     {
       "language": "javascript",

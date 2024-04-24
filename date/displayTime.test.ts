@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import displayTime from "./displayTime.ts";
+import displayTime from "./displayTime.js";
 
 describe("displayTime", () => {
   it("displays padded time string", () => {

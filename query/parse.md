@@ -6,7 +6,9 @@ Parses a query string into an object.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: string) => object
+(xs?: string) => {
+    [index: string]: string | boolean;
+}
 ```
 <!-- prettier-ignore-end -->
 

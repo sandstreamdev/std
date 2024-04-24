@@ -1,7 +1,7 @@
 {
   "name": "flatMapValues",
   "description": "Flat maps the values of the given object.",
-  "signature": "(\n  f: (value: any, key: string, context: object) => any\n) => (xs: object) => any[]",
+  "signature": "<T, TResult>(f: (value: T, key: string, context: GenericObject<T>) => TResult[]) => (xs: GenericObject<T>) => TResult[]",
   "examples": [
     {
       "language": "javascript",

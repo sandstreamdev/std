@@ -6,7 +6,7 @@ Checks if the given arguments are all `Arrays`.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(...xs: any[]) => boolean
+<T>(...xs: T[]) => boolean
 ```
 <!-- prettier-ignore-end -->
 

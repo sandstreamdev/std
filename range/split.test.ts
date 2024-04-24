@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import split from "./split.ts";
+import split from "./split.js";
 
 describe("split", () => {
   it("splits the given range into subranges by excluding the given used ranged", () => {

@@ -1,7 +1,9 @@
-export default (f: (value: any, index: number, context: any[]) => any) => (
-  xs: any[]
-) =>
-  xs.reduce(
-    (ys, value, index, context) => ys.concat(f(value, index, context)),
-    []
-  );
+export default <T, TResult>(
+    f: (value: T, index: number, context: T[]) => TResult[]
+  ) =>
+  (xs: T[]) =>
+    xs.reduce(
+      (ys: TResult[], value, index, context) =>
+        ys.concat(f(value, index, context)),
+      []
+    );

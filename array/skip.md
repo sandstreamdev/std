@@ -6,7 +6,7 @@ Skips the given count of elements from the given array.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(count: number) => (xs: any[]) => any[]
+(count: number) => <T>(xs: T[]) => T[]
 ```
 <!-- prettier-ignore-end -->
 

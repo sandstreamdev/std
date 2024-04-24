@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import defined from "./defined.ts";
+import defined from "./defined.js";
 
 describe("defined", () => {
   it("checks if the given value is defined", () => {

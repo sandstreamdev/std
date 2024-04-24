@@ -6,7 +6,7 @@ Serializes the given object into a query string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(xs?: { [index: string]: any }) => string
+<T>(xs?: GenericObject<T>) => string
 ```
 <!-- prettier-ignore-end -->
 

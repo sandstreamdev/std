@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import leapYear from "./leapYear.ts";
+import leapYear from "./leapYear.js";
 
 describe("leapYear", () => {
   it("should detect leap years", () => {

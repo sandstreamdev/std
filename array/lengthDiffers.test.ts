@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import lengthDiffers from "./lengthDiffers.ts";
+import lengthDiffers from "./lengthDiffers.js";
 
 describe("lengthDiffers", () => {
   it("simply compares given arrays lengths", () => {

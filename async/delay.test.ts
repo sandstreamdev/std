@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import delay from "./delay.ts";
+import delay from "./delay.js";
 
 describe("delay", () => {
   it("delays the execution by the given time in milliseconds", async () => {

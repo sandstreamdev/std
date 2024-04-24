@@ -1,7 +1,7 @@
 {
   "name": "are",
   "description": "Checks if the given arguments are all `Arrays`.",
-  "signature": "(...xs: any[]) => boolean",
+  "signature": "<T>(...xs: T[]) => boolean",
   "examples": [
     {
       "language": "javascript",

@@ -1,1 +1,1 @@
-export default (x?: any) => typeof x === "function";
+export default (x?: unknown) => typeof x === "function";

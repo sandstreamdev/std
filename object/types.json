@@ -1,0 +1,12 @@
+{
+  "name": "types",
+  "description": "TODO: Fill short description here.",
+  "signature": "string]: T;\n}",
+  "examples": [
+    {
+      "language": "javascript",
+      "content": "types();\n// ⇒ TODO"
+    }
+  ],
+  "questions": ["TODO: List questions that may this function answers."]
+}

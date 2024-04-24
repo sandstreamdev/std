@@ -1,7 +1,7 @@
 {
   "name": "object",
   "description": "Checks if the given value is an object.",
-  "signature": "(x?: any) => boolean",
+  "signature": "(x?: unknown) => boolean",
   "examples": [
     {
       "language": "javascript",

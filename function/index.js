@@ -9,7 +9,6 @@ import not from "./not.js";
 import pipe from "./pipe.js";
 import when from "./when.js";
 import whenTrue from "./whenTrue.js";
-
 export {
   compose,
   constant,
@@ -23,7 +22,6 @@ export {
   when,
   whenTrue
 };
-
 export default {
   compose,
   constant,

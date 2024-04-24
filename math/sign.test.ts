@@ -1,6 +1,4 @@
-/* eslint-env jest */
-// @ts-ignore ambiguous import
-import sign from "./sign.ts";
+import sign from "./sign.js";
 
 describe("sign", () => {
   it("returns -1 for negative values", () => {
