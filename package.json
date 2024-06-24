@@ -29,6 +29,7 @@
     "prettier:check": "npm run prettier -- --check",
     "prettier:fix": "npm run prettier -- --write",
     "regenerate": "node --experimental-modules regenerate.js",
+    "reinstall": "rm -rf node_modules && rm -f package-lock.json && npm install && npm run build && npm run fix && npm run test",
     "rollup": "rollup -c",
     "test": "npm run jest && npm run prettier:check && npm run lint",
     "test:watch": "jest --watch"
@@ -58,21 +59,21 @@
   },
   "homepage": "https://github.com/sandstreamdev/std",
   "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@babel/preset-env": "^7.24.4",
-    "@babel/preset-typescript": "^7.24.1",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.14.8",
     "babel-jest": "^29.7.0",
-    "core-js": "^3.37.0",
-    "eslint": "^9.1.1",
+    "core-js": "^3.37.1",
+    "eslint": "^9.5.0",
     "gh-pages": "^6.1.1",
     "highlight.js": "^11.9.0",
     "jest": "^29.7.0",
-    "nodemon": "^3.1.0",
+    "nodemon": "^3.1.4",
     "p-queue": "^8.0.1",
-    "prettier": "^3.2.5",
-    "rollup": "^4.16.4",
-    "typescript": "^5.4.5"
+    "prettier": "^3.3.2",
+    "rollup": "^4.18.0",
+    "typescript": "^5.5.2"
   }
 }

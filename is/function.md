@@ -6,7 +6,7 @@ Checks if the given value is a function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: unknown) => boolean
+(x?: unknown) => x is Function
 ```
 <!-- prettier-ignore-end -->
 

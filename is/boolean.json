@@ -1,7 +1,7 @@
 {
   "name": "boolean",
   "description": "Checks if the given value is a boolean.",
-  "signature": "(x?: unknown) => boolean",
+  "signature": "(x?: unknown) => x is boolean",
   "examples": [
     {
       "language": "javascript",

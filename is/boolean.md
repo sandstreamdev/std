@@ -6,7 +6,7 @@ Checks if the given value is a boolean.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: unknown) => boolean
+(x?: unknown) => x is boolean
 ```
 <!-- prettier-ignore-end -->
 

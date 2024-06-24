@@ -1685,20 +1685,7 @@ Returns an array of days in a particular months. Number of days in February vari
 
 <!-- prettier-ignore-start -->
 ```typescript
-(leapYear: boolean) => [
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number
-]
+(leapYear: boolean) => [number, number, number, number, number, number, number, number, number, number, number, number]
 ```
 <!-- prettier-ignore-end -->
 
@@ -3051,7 +3038,7 @@ Checks if the given value is a boolean.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: unknown) => boolean
+(x?: unknown) => x is boolean
 ```
 <!-- prettier-ignore-end -->
 
@@ -3186,7 +3173,7 @@ Checks if the given value is a function.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: unknown) => boolean
+(x?: unknown) => x is Function
 ```
 <!-- prettier-ignore-end -->
 
@@ -3381,7 +3368,7 @@ Checks if the given value is a string.
 
 <!-- prettier-ignore-start -->
 ```typescript
-(x?: unknown) => boolean
+(x?: unknown) => x is string
 ```
 <!-- prettier-ignore-end -->
 
